@@ -1,0 +1,11 @@
+.env
+.env.*
+*.key
+*.secret
+
+data/raw/
+tmp/
+
+node_modules/
+
+.DS_Store
