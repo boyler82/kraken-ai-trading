@@ -56,3 +56,28 @@ Utrata 63400.
 
 Status:
 WATCH.
+---
+
+## Aktualizacja metodologii — BTC 15M Pullback
+
+Od teraz główna hipoteza krótkoterminowa dla BTC na 15m to nie breakout, tylko pullback / mean reversion.
+
+Preferowany model:
+
+- Nie kupować BTC w strefie lokalnego szczytu 63000-64000.
+- Czekać na spadek do strefy 61500-62000.
+- Szukać reakcji popytowej.
+- Kupować tylko wtedy, gdy Stop Loss jest blisko, a R/R do 63000 wynosi minimum 2.
+- Traktować 64333 jako opór obserwacyjny, a nie obowiązkowy cel.
+
+Scenariusz bazowy:
+BTC pozostaje w zakresie. Lepsze okazje pojawiają się po cofnięciu, nie po gonieniu wybicia.
+
+Scenariusz bullish:
+BTC spada do 61500-62000, znajduje popyt i wraca do 63000.
+
+Scenariusz bearish:
+BTC traci 61500 bez reakcji popytowej. Wtedy setup long jest nieważny.
+
+Status:
+WAIT FOR PULLBACK.

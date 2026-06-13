@@ -101,3 +101,40 @@ to:
 
 NIE OTWIERAJ POZYCJI
 EOF
+
+---
+
+# SPECJALNA ZASADA BTC 15M
+
+Główna krótkoterminowa strategia BTC:
+
+BTC 15M Pullback Mean Reversion.
+
+Nie kupuję wybicia na lokalnym szczycie.
+
+Preferowany proces:
+
+1. BTC jest lokalnie wysoko.
+2. Czekam na spadek do strefy wartości.
+3. Dla obecnego modelu strefa obserwacji to 61500-62000.
+4. Szukam reakcji popytowej.
+5. Kupuję tylko jeśli Stop Loss jest blisko.
+6. Cel podstawowy to powrót do 63000.
+7. Minimalne R/R to 2.0.
+8. Poziom 64333 to opór obserwacyjny, nie obowiązkowy target.
+
+Jeżeli cena jest w strefie 63000-64000:
+
+NO BUY.
+
+Jeżeli cena jest w środku zakresu:
+
+WAIT.
+
+Jeżeli cena schodzi do 61500-62000 i pojawia się reakcja:
+
+PREPARE PLAN.
+
+Jeżeli cena traci 61500 bez reakcji:
+
+SETUP INVALID.

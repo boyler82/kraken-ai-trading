@@ -17,19 +17,34 @@ DOGE
 ### BTC
 
 Powód:
-Najważniejsze aktywo kierunkowe rynku.
+Główne aktywo kierunkowe rynku. Obserwuję BTC pod strategię 15m pullback / mean reversion.
 
-Ryzyka:
-Utrata wsparcia 63400.
+Aktualna hipoteza:
+Nie kupuję lokalnego szczytu 63000-64000. Czekam na zejście do strefy wartości.
+
+Strefa zainteresowania long:
+61500-62000
+
+Preferowany TP:
+63000
+
+Preferowany SL:
+poniżej lokalnego dołka, orientacyjnie 60900-61100
+
+Minimalne R/R:
+2.0
 
 Scenariusz bullish:
-Wybicie 64333.
+BTC schodzi do 61500-62000, pojawia się reakcja popytowa, cena wraca do 63000.
 
 Scenariusz bearish:
-Spadek poniżej 63400.
+BTC traci 61500 bez reakcji popytowej.
+
+Poziom 64333:
+Tylko opór obserwacyjny. Nie jest obowiązkowym targetem.
 
 Status:
-WATCH
+WAIT FOR PULLBACK
 
 ---
 
