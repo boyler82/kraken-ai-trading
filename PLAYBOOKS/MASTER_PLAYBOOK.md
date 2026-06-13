@@ -1,6 +1,3 @@
-cd ~/kraken-ai-trading
-
-cat > PLAYBOOKS/MASTER_PLAYBOOK.md <<'EOF'
 # KRAKEN AI TRADING — DAILY OPERATIONS PLAYBOOK
 
 ## Cel projektu

@@ -43,3 +43,16 @@ BTC traci kluczowe wsparcia, rośnie zmienność i dominują spadki. W takim śr
 - Sentyment: TBD
 - Dominacja BTC: TBD
 - Preferowany styl: TBD
+
+## Update 2026-06-13
+
+BTC utrzymuje wsparcie 63400-63500.
+
+Scenariusz bullish:
+Wybicie 64333.
+
+Scenariusz bearish:
+Utrata 63400.
+
+Status:
+WATCH.
