@@ -1,0 +1,2 @@
+symbol,timeframe,date,close,rsi6,ma20,dist_ma20_pct,reclaim_prev_high,score,status
+BTCUSD,1H,2026-06-15 07:00:00,65935.1,69.73,64873.26,1.64,True,3,NO SETUP
