@@ -1,0 +1,2 @@
+model,trades,final_capital,total_return_pct,win_rate_pct,avg_trade_pct,median_trade_pct,worst_trade_pct,best_trade_pct,max_drawdown_pct,atr_median_pct
+ETH_D1_RSI2_MA200_HIGH_VOL,11,11995.07,19.95,54.55,1.89,0.01,-5.72,18.54,-8.23,5.25

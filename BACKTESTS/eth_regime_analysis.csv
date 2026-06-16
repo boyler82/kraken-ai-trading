@@ -1,0 +1,5 @@
+group,regime,trades,win_rate_pct,avg_return_pct,median_return_pct,worst_return_pct,best_return_pct
+regime_ma200,ABOVE_MA200,39,53.85,1.04,0.89,-8.09,18.54
+regime_ma200,BELOW_MA200,119,56.3,0.27,0.46,-19.54,42.7
+regime_volatility,HIGH_VOL,92,61.96,1.48,1.6,-12.9,18.54
+regime_volatility,LOW_VOL,66,46.97,-0.97,-0.14,-19.54,42.7
