@@ -1,6 +1,6 @@
-asset,date,close,rsi2,ma20,dist_ma20_pct,signal,suggested_position_size_pct,decision
-BTC,2026-06-16,66149.1,80.81,66056.38,0.14,False,0,NO SIGNAL
-SPY,2026-06-16,754.84,100.0,746.27,1.15,False,0,NO SIGNAL
-QQQ,2026-06-16,742.47,100.0,726.08,2.26,False,0,NO SIGNAL
-GLD,2026-06-16,399.45,96.73,400.26,-0.2,False,0,NO SIGNAL
-NVDA,2026-06-16,211.14,86.68,210.67,0.22,False,0,NO SIGNAL
+asset,date,close,rsi2,ma20,dist_ma20_pct,signal,suggested_position_size_pct,decision,near_signal
+BTC,2026-06-16,66149.1,80.81,66056.38,0.14,False,0,NO SIGNAL,False
+SPY,2026-06-16,754.84,100.0,746.27,1.15,False,0,NO SIGNAL,False
+QQQ,2026-06-16,742.47,100.0,726.08,2.26,False,0,NO SIGNAL,False
+GLD,2026-06-16,399.45,96.73,400.26,-0.2,False,0,NO SIGNAL,False
+NVDA,2026-06-16,211.14,86.68,210.67,0.22,False,0,NO SIGNAL,False

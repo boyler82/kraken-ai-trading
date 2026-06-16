@@ -20,6 +20,9 @@ Date: 2026-06-16
 - Max drawdown: -2.15%
 
 ## Current Signals
+## Watchlist Near Signal
+
+No markets near signal today.
 
 No active portfolio signals today.
 ## Full Market Scan

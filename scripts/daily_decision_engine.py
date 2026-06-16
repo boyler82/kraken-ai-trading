@@ -63,6 +63,7 @@ for symbol, file_path in FILES.items():
     last = df.iloc[-1]
 
     signal = last["rsi2"] < 10
+    near_signal = last["rsi2"] < 25
 
     rows.append(
         {
@@ -75,11 +76,16 @@ for symbol, file_path in FILES.items():
             "signal": bool(signal),
             "suggested_position_size_pct": MODEL["position_size_pct"] if signal else 0,
             "decision": "SIGNAL" if signal else "NO SIGNAL",
+            "near_signal": bool(near_signal),
         }
     )
 
 report = pd.DataFrame(rows)
 signals = report[report["signal"] == True].copy()
+near_signals = report[
+    (report["near_signal"] == True)
+    & (report["signal"] == False)
+].copy()
 
 today = pd.Timestamp.today().strftime("%Y-%m-%d")
 
@@ -113,6 +119,20 @@ lines.append(f"- Median trade: {MODEL['historical_median_trade']}%")
 lines.append(f"- Max drawdown: {MODEL['historical_max_drawdown']}%")
 lines.append("")
 lines.append("## Current Signals")
+lines.append("## Watchlist Near Signal")
+lines.append("")
+
+if near_signals.empty:
+    lines.append("No markets near signal today.")
+else:
+    for _, row in near_signals.iterrows():
+        lines.append(f"### {row['asset']}")
+        lines.append("")
+        lines.append(f"- Decision: **WATCH**")
+        lines.append(f"- Close: {row['close']}")
+        lines.append(f"- RSI(2): {row['rsi2']}")
+        lines.append(f"- Distance from MA20: {row['dist_ma20_pct']}%")
+        lines.append("")
 lines.append("")
 
 if signals.empty:
