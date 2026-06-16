@@ -1,0 +1,8 @@
+split,atr_threshold_train,train_trades,train_return_pct,train_win_rate_pct,train_avg_trade_pct,train_median_trade_pct,train_max_dd_pct,test_trades,test_return_pct,test_win_rate_pct,test_avg_trade_pct,test_median_trade_pct,test_max_dd_pct
+0.6,5.45,9,23.25,55.56,2.61,0.89,-8.23,0,0.0,,,,
+0.65,5.53,9,23.25,55.56,2.61,0.89,-8.23,0,0.0,,,,
+0.7,5.43,9,23.25,55.56,2.61,0.89,-8.23,0,0.0,,,,
+0.75,5.36,9,23.25,55.56,2.61,0.89,-8.23,0,0.0,,,,
+0.8,5.42,9,23.25,55.56,2.61,0.89,-8.23,0,0.0,,,,
+0.85,5.45,9,23.25,55.56,2.61,0.89,-8.23,0,0.0,,,,
+0.9,5.36,9,23.25,55.56,2.61,0.89,-8.23,0,0.0,,,,

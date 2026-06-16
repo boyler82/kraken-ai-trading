@@ -1,0 +1,7 @@
+asset,signals,win_rate_pct,avg_return_pct,median_return_pct,worst_return_pct,best_return_pct,expectancy_pct
+NVDA,81,58.02,0.76,0.58,-6.18,9.59,0.76
+SPY,61,72.13,0.64,0.76,-2.56,4.19,0.64
+BTC,210,60.95,0.59,0.83,-10.52,14.25,0.59
+QQQ,65,60.0,0.48,0.48,-4.46,4.81,0.48
+GLD,67,62.69,0.43,0.64,-9.95,12.92,0.43
+ETH,208,55.77,0.3,0.55,-19.54,42.7,0.3

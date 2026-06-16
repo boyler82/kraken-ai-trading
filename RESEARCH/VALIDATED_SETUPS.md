@@ -1,5 +1,39 @@
 # Validated Setups
 
+## Promising Research
+
+### Cross Asset RSI2 v1 — NO_ETH
+
+Status: PROMISING_RESEARCH
+
+Condition:
+- RSI(2) < 10
+- Hold 3 days
+- Position size: 5%
+- Roundtrip cost assumption: 0.25%
+
+Assets:
+- BTC
+- SPY
+- QQQ
+- GLD
+- NVDA
+
+Backtest:
+- Trades: 484
+- Total return: +8.43%
+- Average trade: +0.34%
+- Median trade: +0.42%
+- Max drawdown: -2.15%
+
+Reason:
+Portfolio variant without ETH produced nearly the same return as ALL, but with much lower drawdown.
+
+Source:
+- BACKTESTS/cross_asset_portfolio_variants.csv
+- BACKTESTS/cross_asset_rsi2_costs.csv
+- BACKTESTS/cross_asset_rsi2_position_sizing.csv 
+
 ## Active Candidates
 
 ### ETH D1 RSI2 + MA200

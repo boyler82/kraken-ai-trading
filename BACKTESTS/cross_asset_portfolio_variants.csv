@@ -1,0 +1,8 @@
+portfolio,assets,trades,final_capital,total_return_pct,avg_trade_pct,median_trade_pct,max_drawdown_pct
+ALL,6,692,10884.64,8.85,0.25,0.38,-4.97
+NO_ETH,5,484,10842.83,8.43,0.34,0.42,-2.15
+NO_BTC,5,482,10510.72,5.11,0.21,0.35,-4.22
+XSTOCKS_ONLY,4,274,10470.35,4.7,0.34,0.37,-2.0
+CRYPTO_ONLY,2,418,10395.68,3.96,0.19,0.51,-4.97
+BTC_ONLY,1,210,10355.75,3.56,0.34,0.58,-2.85
+ETH_ONLY,1,208,10038.56,0.39,0.05,0.3,-4.22

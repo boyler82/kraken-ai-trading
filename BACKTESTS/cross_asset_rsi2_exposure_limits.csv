@@ -1,0 +1,6 @@
+max_active_positions,position_size_pct,roundtrip_cost_pct,accepted_trades,skipped_trades,final_capital,total_return_pct,win_rate_pct,avg_net_trade_pct,median_net_trade_pct,worst_net_trade_pct,best_net_trade_pct,max_drawdown_pct
+3,5.0,0.25,387,305,10275.37,2.75,55.04,0.15,0.34,-19.79,42.45,-3.83
+5,5.0,0.25,525,167,10359.94,3.6,55.81,0.14,0.39,-19.79,42.45,-4.98
+8,5.0,0.25,640,52,10492.25,4.92,55.31,0.16,0.34,-19.79,42.45,-4.97
+12,5.0,0.25,684,8,10864.43,8.64,55.99,0.25,0.38,-19.79,42.45,-4.97
+unlimited,5.0,0.25,692,0,10884.64,8.85,56.07,0.25,0.38,-19.79,42.45,-4.97

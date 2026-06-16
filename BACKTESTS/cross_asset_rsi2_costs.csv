@@ -1,0 +1,5 @@
+scenario,position_size_pct,roundtrip_cost_pct,trades,final_capital,total_return_pct,win_rate_pct,avg_net_trade_pct,median_net_trade_pct,worst_net_trade_pct,best_net_trade_pct,max_drawdown_pct
+no_cost,5.0,0.0,692,11867.9,18.68,60.12,0.5,0.63,-19.54,42.7,-4.86
+low_cost_0.10pct_roundtrip,5.0,0.1,692,11464.38,14.64,57.95,0.4,0.53,-19.64,42.6,-4.91
+mid_cost_0.25pct_roundtrip,5.0,0.25,692,10884.64,8.85,56.07,0.25,0.38,-19.79,42.45,-4.97
+high_cost_0.50pct_roundtrip,5.0,0.5,692,9982.74,-0.17,53.32,0.0,0.13,-20.04,42.2,-5.82
