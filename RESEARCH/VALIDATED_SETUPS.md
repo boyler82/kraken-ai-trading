@@ -2,27 +2,53 @@
 
 ## Active Candidates
 
-### BTC D1 RSI2 Mean Reversion
-
-Status: Candidate  
-Condition: RSI(2) < 10  
-Exit model: 3 days  
-Win rate: 60.95%  
-Average return: +0.59%  
-Median return: +0.83%  
-Worst return: -10.52%  
-Source: BACKTESTS/rsi2_backtest_results.csv
-
 ### ETH D1 RSI2 + MA200
 
-Status: Candidate  
+Status: Candidate+  
 Condition: RSI(2) < 10 and Close > MA200  
 Exit model: 3 days  
-Win rate: 55.00%  
-Average return: +1.05%  
-Median return: +1.14%  
-Worst return: -8.09%  
-Source: BACKTESTS/rsi2_ma200_results.csv
+
+Backtest:
+- Trades: 21
+- Win rate: 52.38%
+- Average trade: +1.07%
+- Median trade: +0.01%
+- Worst trade: -8.09%
+- Best trade: +18.54%
+- Total return: +19.78%
+- Max drawdown: -20.79%
+
+Source:
+- BACKTESTS/rsi2_ma200_results.csv
+- BACKTESTS/equity_curve_summary.csv
+
+## Research Only
+
+### BTC D1 RSI2 Mean Reversion
+
+Status: Research Only  
+Condition: RSI(2) < 10  
+Exit model: 3 days  
+
+Reason:
+Simple return test looked promising, but equity curve failed.
+
+Backtest:
+- Trades: 82
+- Win rate: 56.10%
+- Average trade: -0.13%
+- Median trade: +0.48%
+- Worst trade: -10.52%
+- Best trade: +6.40%
+- Total return: -14.83%
+- Max drawdown: -31.32%
+
+Conclusion:
+Not tradable without additional filters.
+
+Source:
+- BACKTESTS/rsi2_backtest_results.csv
+- BACKTESTS/equity_curve_summary.csv
 
 ## Rejected
 
