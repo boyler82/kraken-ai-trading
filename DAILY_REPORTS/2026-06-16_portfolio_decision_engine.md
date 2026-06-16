@@ -24,11 +24,11 @@ Date: 2026-06-16
 No active portfolio signals today.
 ## Full Market Scan
 
-- BTC: NO SIGNAL | Close: 66825.5 | RSI2: 100.0 | Dist MA20: 0.5%
-- SPY: NO SIGNAL | Close: 743.68 | RSI2: 100.0 | Dist MA20: -0.31%
-- QQQ: NO SIGNAL | Close: 726.08 | RSI2: 87.76 | Dist MA20: 0.2%
-- GLD: NO SIGNAL | Close: 386.22 | RSI2: 47.26 | Dist MA20: -3.7%
-- NVDA: NO SIGNAL | Close: 205.56 | RSI2: 65.85 | Dist MA20: -2.44%
+- BTC: NO SIGNAL | Close: 66149.1 | RSI2: 80.81 | Dist MA20: 0.14%
+- SPY: NO SIGNAL | Close: 754.84 | RSI2: 100.0 | Dist MA20: 1.15%
+- QQQ: NO SIGNAL | Close: 742.47 | RSI2: 100.0 | Dist MA20: 2.26%
+- GLD: NO SIGNAL | Close: 399.45 | RSI2: 96.73 | Dist MA20: -0.2%
+- NVDA: NO SIGNAL | Close: 211.14 | RSI2: 86.68 | Dist MA20: 0.22%
 
 ## Process Note
 
