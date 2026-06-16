@@ -18,17 +18,19 @@ MODELS = {
         "historical_median_return": 0.48,
         "historical_worst_return": -10.52,
         "requires_above_ma200": False,
+        "requires_high_vol": False,
     },
     "ETH": {
-        "model": "ETH D1 RSI2 + MA200",
-        "status": "CANDIDATE_PLUS",
-        "condition": "RSI2 < 10 and Close > MA200",
+        "model": "ETH D1 RSI2 + MA200 + HIGH_VOL",
+        "status": "PROMISING_RESEARCH",
+        "condition": "RSI2 < 10 and Close > MA200 and ATR% > median ATR%",
         "exit": "3 days",
-        "historical_win_rate": 52.38,
-        "historical_avg_return": 1.07,
+        "historical_win_rate": 54.55,
+        "historical_avg_return": 1.89,
         "historical_median_return": 0.01,
-        "historical_worst_return": -8.09,
+        "historical_worst_return": -5.72,
         "requires_above_ma200": True,
+        "requires_high_vol": True,
     },
 }
 
@@ -57,6 +59,19 @@ def rsi(series, period=2):
     return 100 - (100 / (1 + rs))
 
 
+def atr(df, period=14):
+    tr = pd.concat(
+        [
+            df["high"] - df["low"],
+            (df["high"] - df["close"].shift()).abs(),
+            (df["low"] - df["close"].shift()).abs(),
+        ],
+        axis=1,
+    ).max(axis=1)
+
+    return tr.rolling(period).mean()
+
+
 def confidence_label(model, signal_active):
     if model["status"] == "RESEARCH_ONLY":
         return "NONE"
@@ -70,9 +85,6 @@ def confidence_label(model, signal_active):
     if avg >= 1.0 and win >= 52:
         return "MEDIUM"
 
-    if avg >= 0.5 and win >= 58:
-        return "MEDIUM"
-
     return "LOW"
 
 
@@ -83,18 +95,26 @@ for symbol, path in FILES.items():
 
     df["rsi2"] = rsi(df["close"], 2)
     df["ma200"] = df["close"].rolling(200).mean()
+    df["atr14"] = atr(df, 14)
+    df["atr_pct"] = df["atr14"] / df["close"] * 100
 
     df = df.dropna().reset_index(drop=True)
+
+    atr_median = df["atr_pct"].median()
 
     last = df.iloc[-1]
     model = MODELS[symbol]
 
     above_ma200 = last["close"] > last["ma200"]
+    high_vol = last["atr_pct"] > atr_median
 
     signal_active = last["rsi2"] < 10
 
     if model["requires_above_ma200"]:
         signal_active = signal_active and above_ma200
+
+    if model["requires_high_vol"]:
+        signal_active = signal_active and high_vol
 
     if model["status"] == "RESEARCH_ONLY":
         decision = "RESEARCH ONLY"
@@ -111,6 +131,9 @@ for symbol, path in FILES.items():
             "rsi2": round(last["rsi2"], 2),
             "ma200": round(last["ma200"], 2),
             "above_ma200": bool(above_ma200),
+            "atr_pct": round(last["atr_pct"], 2),
+            "atr_median_pct": round(atr_median, 2),
+            "high_vol": bool(high_vol),
             "status": model["status"],
             "decision": decision,
             "model": model["model"],
@@ -152,6 +175,9 @@ for _, row in report.iterrows():
     lines.append(f"- RSI(2): {row['rsi2']}")
     lines.append(f"- MA200: {row['ma200']}")
     lines.append(f"- Above MA200: {row['above_ma200']}")
+    lines.append(f"- ATR%: {row['atr_pct']}")
+    lines.append(f"- Median ATR%: {row['atr_median_pct']}")
+    lines.append(f"- High volatility regime: {row['high_vol']}")
     lines.append(f"- Model: {row['model']}")
     lines.append(f"- Condition: {row['condition']}")
     lines.append(f"- Exit: {row['exit']}")
@@ -164,9 +190,10 @@ for _, row in report.iterrows():
 
 lines.append("## Process Note")
 lines.append("")
-lines.append("- BTC D1 RSI2 is currently Research Only after failed equity curve validation.")
-lines.append("- ETH D1 RSI2 + MA200 is the only active candidate model.")
-lines.append("- No trade should be considered without active signal and risk review.")
+lines.append("- BTC D1 RSI2 remains Research Only after failed equity curve validation.")
+lines.append("- ETH D1 RSI2 + MA200 + HIGH_VOL is Promising Research, not production-ready.")
+lines.append("- Model has only 11 historical trades, so sample size risk is high.")
+lines.append("- No trade should be considered without active signal, risk review and manual context check.")
 lines.append("- This report is analytical, not financial advice.")
 lines.append("")
 
