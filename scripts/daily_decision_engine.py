@@ -10,21 +10,23 @@ FILES = {
 MODELS = {
     "BTC": {
         "model": "BTC D1 RSI2 Mean Reversion",
+        "status": "RESEARCH_ONLY",
         "condition": "RSI2 < 10",
         "exit": "3 days",
-        "historical_win_rate": 60.95,
-        "historical_avg_return": 0.59,
-        "historical_median_return": 0.83,
+        "historical_win_rate": 56.10,
+        "historical_avg_return": -0.13,
+        "historical_median_return": 0.48,
         "historical_worst_return": -10.52,
         "requires_above_ma200": False,
     },
     "ETH": {
         "model": "ETH D1 RSI2 + MA200",
+        "status": "CANDIDATE_PLUS",
         "condition": "RSI2 < 10 and Close > MA200",
         "exit": "3 days",
-        "historical_win_rate": 55.00,
-        "historical_avg_return": 1.05,
-        "historical_median_return": 1.14,
+        "historical_win_rate": 52.38,
+        "historical_avg_return": 1.07,
+        "historical_median_return": 0.01,
         "historical_worst_return": -8.09,
         "requires_above_ma200": True,
     },
@@ -37,16 +39,7 @@ def load_ohlc(path):
 
     df = pd.DataFrame(
         data[key],
-        columns=[
-            "time",
-            "open",
-            "high",
-            "low",
-            "close",
-            "vwap",
-            "volume",
-            "trades",
-        ],
+        columns=["time", "open", "high", "low", "close", "vwap", "volume", "trades"],
     )
 
     for col in ["open", "high", "low", "close", "volume"]:
@@ -65,13 +58,16 @@ def rsi(series, period=2):
 
 
 def confidence_label(model, signal_active):
+    if model["status"] == "RESEARCH_ONLY":
+        return "NONE"
+
     if not signal_active:
         return "NONE"
 
     avg = model["historical_avg_return"]
     win = model["historical_win_rate"]
 
-    if avg >= 1.0 and win >= 55:
+    if avg >= 1.0 and win >= 52:
         return "MEDIUM"
 
     if avg >= 0.5 and win >= 58:
@@ -100,7 +96,12 @@ for symbol, path in FILES.items():
     if model["requires_above_ma200"]:
         signal_active = signal_active and above_ma200
 
-    decision = "SIGNAL" if signal_active else "NO SIGNAL"
+    if model["status"] == "RESEARCH_ONLY":
+        decision = "RESEARCH ONLY"
+    elif signal_active:
+        decision = "SIGNAL"
+    else:
+        decision = "NO SIGNAL"
 
     rows.append(
         {
@@ -110,6 +111,7 @@ for symbol, path in FILES.items():
             "rsi2": round(last["rsi2"], 2),
             "ma200": round(last["ma200"], 2),
             "above_ma200": bool(above_ma200),
+            "status": model["status"],
             "decision": decision,
             "model": model["model"],
             "condition": model["condition"],
@@ -134,7 +136,7 @@ md_out = Path(f"DAILY_REPORTS/{today}_decision_engine.md")
 report.to_csv(csv_out, index=False)
 
 lines = []
-lines.append(f"# Daily Decision Engine")
+lines.append("# Daily Decision Engine")
 lines.append("")
 lines.append(f"Date: {today}")
 lines.append("")
@@ -144,6 +146,7 @@ lines.append("")
 for _, row in report.iterrows():
     lines.append(f"### {row['symbol']}")
     lines.append("")
+    lines.append(f"- Status: **{row['status']}**")
     lines.append(f"- Decision: **{row['decision']}**")
     lines.append(f"- Close: {row['close']}")
     lines.append(f"- RSI(2): {row['rsi2']}")
@@ -161,8 +164,10 @@ for _, row in report.iterrows():
 
 lines.append("## Process Note")
 lines.append("")
-lines.append("No trade should be considered without active signal and risk review.")
-lines.append("This report is analytical, not financial advice.")
+lines.append("- BTC D1 RSI2 is currently Research Only after failed equity curve validation.")
+lines.append("- ETH D1 RSI2 + MA200 is the only active candidate model.")
+lines.append("- No trade should be considered without active signal and risk review.")
+lines.append("- This report is analytical, not financial advice.")
 lines.append("")
 
 md_out.write_text("\n".join(lines))
