@@ -1,0 +1,6 @@
+asset,date,close,rsi2,ma20,dist_ma20_pct,signal,suggested_position_size_pct,decision
+BTC,2026-06-15,66825.5,100.0,66492.83,0.5,False,0,NO SIGNAL
+SPY,2026-06-14,743.68,100.0,745.98,-0.31,False,0,NO SIGNAL
+QQQ,2026-06-14,726.08,87.76,724.61,0.2,False,0,NO SIGNAL
+GLD,2026-06-14,386.22,47.26,401.08,-3.7,False,0,NO SIGNAL
+NVDA,2026-06-14,205.56,65.85,210.69,-2.44,False,0,NO SIGNAL
