@@ -1,107 +1,126 @@
-# Validated Setups
+Validated Setups
 
-## Promising Research
+Last Updated: 2026-06-16
 
-### Cross Asset RSI2 v1 — NO_ETH
+⸻
+
+PROMISING_RESEARCH
+
+Cross Asset RSI2 v1 (NO_ETH)
 
 Status: PROMISING_RESEARCH
 
-Condition:
-- RSI(2) < 10
-- Hold 3 days
-- Position size: 5%
-- Roundtrip cost assumption: 0.25%
-
 Assets:
-- BTC
-- SPY
-- QQQ
-- GLD
-- NVDA
 
-Backtest:
-- Trades: 484
-- Total return: +8.43%
-- Average trade: +0.34%
-- Median trade: +0.42%
-- Max drawdown: -2.15%
+* BTC
+* SPY
+* QQQ
+* GLD
+* NVDA
 
-Reason:
-Portfolio variant without ETH produced nearly the same return as ALL, but with much lower drawdown.
+Rules:
 
-Source:
-- BACKTESTS/cross_asset_portfolio_variants.csv
-- BACKTESTS/cross_asset_rsi2_costs.csv
-- BACKTESTS/cross_asset_rsi2_position_sizing.csv 
+* RSI(2) < 10
+* Hold 3 days
+* Position size 5%
+* Cost assumption 0.25%
 
-## Active Candidates
+Research Results:
 
-### ETH D1 RSI2 + MA200
+* Trades: 484
+* Total Return: +8.43%
+* Average Trade: +0.34%
+* Median Trade: +0.42%
+* Max Drawdown: -2.15%
 
-Status: Candidate+  
-Condition: RSI(2) < 10 and Close > MA200  
-Exit model: 3 days  
+Notes:
 
-Backtest:
-- Trades: 21
-- Win rate: 52.38%
-- Average trade: +1.07%
-- Median trade: +0.01%
-- Worst trade: -8.09%
-- Best trade: +18.54%
-- Total return: +19.78%
-- Max drawdown: -20.79%
+ETH removed due to weak portfolio contribution.
 
-Source:
-- BACKTESTS/rsi2_ma200_results.csv
-- BACKTESTS/equity_curve_summary.csv
+⸻
 
-## Research Only
+RESEARCH_ONLY
 
-### BTC D1 RSI2 Mean Reversion
+BTC D1 RSI2 Mean Reversion
 
-Status: Research Only  
-Condition: RSI(2) < 10  
-Exit model: 3 days  
+Status: RESEARCH_ONLY
 
 Reason:
-Simple return test looked promising, but equity curve failed.
 
-Backtest:
-- Trades: 82
-- Win rate: 56.10%
-- Average trade: -0.13%
-- Median trade: +0.48%
-- Worst trade: -10.52%
-- Best trade: +6.40%
-- Total return: -14.83%
-- Max drawdown: -31.32%
+Positive win rate but negative average return.
 
-Conclusion:
-Not tradable without additional filters.
+Results:
 
-Source:
-- BACKTESTS/rsi2_backtest_results.csv
-- BACKTESTS/equity_curve_summary.csv
+* Win Rate: 56.10%
+* Average Return: -0.13%
 
-## Rejected
+⸻
 
-### BTC 1H Mean Reversion
+ETH D1 RSI2 + MA200
 
-Reason: Negative expectancy  
-Source: BACKTESTS/btc_intraday_backtest.csv
+Status: RESEARCH_ONLY
 
-### BTC 1H Mean Reversion + Reclaim
+Reason:
 
-Reason: Negative expectancy  
-Source: BACKTESTS/btc_intraday_backtest_trigger.csv
+Interesting results but insufficient validation.
 
-### BTC 1H Momentum Breakout
+Results:
 
-Reason: Negative expectancy  
-Source: BACKTESTS/btc_intraday_momentum_backtest.csv
+* Win Rate: 52.38%
+* Average Return: +1.07%
 
-### BTC 1H TP/SL Grid Search
+⸻
 
-Reason: All tested combinations negative expectancy  
-Source: BACKTESTS/btc_intraday_grid_search.csv
+INCONCLUSIVE
+
+ETH D1 RSI2 + MA200 + HIGH_VOL
+
+Status: INCONCLUSIVE
+
+Reason:
+
+Sample size too small.
+
+Results:
+
+* Trades: 11
+* Total Return: +19.95%
+* Max Drawdown: -8.23%
+
+Needs:
+
+* More history
+* Additional validation
+
+⸻
+
+REJECTED
+
+BTC Intraday Oversold Reversion
+
+Status: REJECTED
+
+Reason:
+
+Negative expectancy after validation.
+
+Evidence:
+
+* Negative average return
+* Weak forward performance
+* No stable edge
+
+⸻
+
+Research Process
+
+A model may enter PROMISING_RESEARCH only if:
+
+* positive expectancy
+* acceptable drawdown
+* survives cost assumptions
+* survives portfolio analysis
+
+A model may be promoted only after additional validation.
+
+No model in this document is investment advice.
