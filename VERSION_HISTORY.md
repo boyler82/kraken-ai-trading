@@ -60,3 +60,8 @@ Notes
 This version focuses on research quality and decision support.
 
 Automated execution is intentionally out of scope.
+
+Latest NO_ETH portfolio snapshot:
+
+* Total return: +6.97%
+* Max drawdown: -1.92%

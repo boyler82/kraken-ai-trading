@@ -50,10 +50,10 @@ NO_ETH
 Results:
 
 * Trades: 484
-* Total Return: +8.43%
+* Total Return: +6.97%
 * Average Trade: +0.34%
 * Median Trade: +0.42%
-* Max Drawdown: -2.15%
+* Max Drawdown: -1.92%
 
 ⸻
 

@@ -43,6 +43,18 @@ Rules:
 
 ETH is excluded from v1 due to weaker portfolio contribution.
 
+Latest documented NO_ETH snapshot:
+
+- Total return: +6.97%
+- Max drawdown: -1.92%
+
+## Research Notes
+
+- Backtests are research artifacts, not executable trading instructions.
+- Portfolio and walk-forward reports are kept separate from descriptive regime analysis.
+- When comparing reports, use the same dataset snapshot and script version.
+- Treat any result without an explicit train/test split as in-sample only.
+
 ## Daily Workflow
 
 Run:

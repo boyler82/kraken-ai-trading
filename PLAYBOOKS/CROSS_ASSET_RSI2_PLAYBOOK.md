@@ -62,10 +62,10 @@ BTC + SPY + QQQ + GLD + NVDA
 Results:
 
 * Trades: 484
-* Total return: +8.43%
+* Total return: +6.97%
 * Average trade: +0.34%
 * Median trade: +0.42%
-* Maximum drawdown: -2.15%
+* Maximum drawdown: -1.92%
 
 Research source:
 

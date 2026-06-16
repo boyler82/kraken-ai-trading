@@ -2,6 +2,12 @@ Validated Setups
 
 Last Updated: 2026-06-16
 
+Methodology notes:
+
+* Descriptive regime tables are for analysis only.
+* Prefer walk-forward or train/test checks over full-sample thresholds.
+* Portfolio conclusions override single-asset conclusions when they conflict.
+
 ⸻
 
 PROMISING_RESEARCH
@@ -28,10 +34,10 @@ Rules:
 Research Results:
 
 * Trades: 484
-* Total Return: +8.43%
+* Total Return: +6.97%
 * Average Trade: +0.34%
 * Median Trade: +0.42%
-* Max Drawdown: -2.15%
+* Max Drawdown: -1.92%
 
 Notes:
 
@@ -47,7 +53,7 @@ Status: RESEARCH_ONLY
 
 Reason:
 
-Positive win rate but negative average return.
+Positive win rate but negative average return and weaker equity curve behavior.
 
 Results:
 
@@ -62,7 +68,7 @@ Status: RESEARCH_ONLY
 
 Reason:
 
-Interesting results but insufficient validation.
+Interesting results but insufficient validation for inclusion in the current portfolio.
 
 Results:
 
@@ -109,6 +115,20 @@ Evidence:
 * Negative average return
 * Weak forward performance
 * No stable edge
+
+⸻
+
+Promotion Rules
+
+A model may enter PROMISING_RESEARCH only if:
+
+* positive expectancy
+* acceptable drawdown
+* survives cost assumptions
+* survives portfolio analysis
+* has a documented out-of-sample check
+
+A model may be promoted only after additional validation.
 
 ⸻
 
