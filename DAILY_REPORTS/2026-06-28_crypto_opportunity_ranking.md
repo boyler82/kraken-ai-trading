@@ -14,22 +14,7 @@ None
 
 ## HISTORICAL_WATCHLIST
 
-### LINK — Opportunity 30/100 | Confidence 90/100
-
-- Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
-- Phase: NO_OVERSOLD
-- RSI2: 65.79
-- Close: 7.29
-- Trend: BEAR
-- Volatility: HIGH
-- Market bias: BEAR_HIGH_VOL
-- ATR %: 5.14
-- Episodes: 106
-- Avg duration: 2.09 days
-- Best historical entry: DAY3
-- Best entry avg return: 2.49%
-
-### XRP — Opportunity 30/100 | Confidence 80/100
+### XRP — Opportunity 40/100 | Confidence 65/100
 
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
@@ -39,12 +24,14 @@ None
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
 - ATR %: 5.01
-- Episodes: 98
-- Avg duration: 2.28 days
-- Best historical entry: DAY3
-- Best entry avg return: 2.22%
+- Best setup: Day 3 / Hold 10 days
+- Trades: 96
+- Win rate: 46.88%
+- Expected value: 2.12%
+- Profit factor: 1.55
+- Median return: -0.78%
 
-### LTC — Opportunity 20/100 | Confidence 80/100
+### LTC — Opportunity 35/100 | Confidence 95/100
 
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
@@ -54,12 +41,31 @@ None
 - Volatility: LOW
 - Market bias: BEAR
 - ATR %: 4.46
-- Episodes: 109
-- Avg duration: 1.88 days
-- Best historical entry: DAY2
-- Best entry avg return: 1.93%
+- Best setup: Day 2 / Hold 3 days
+- Trades: 109
+- Win rate: 60.55%
+- Expected value: 1.38%
+- Profit factor: 1.88
+- Median return: 1.13%
 
-### BTC — Opportunity 20/100 | Confidence 70/100
+### LINK — Opportunity 35/100 | Confidence 80/100
+
+- Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
+- Phase: NO_OVERSOLD
+- RSI2: 65.79
+- Close: 7.29
+- Trend: BEAR
+- Volatility: HIGH
+- Market bias: BEAR_HIGH_VOL
+- ATR %: 5.14
+- Best setup: Day 3 / Hold 4 days
+- Trades: 105
+- Win rate: 51.43%
+- Expected value: 1.39%
+- Profit factor: 1.53
+- Median return: 0.57%
+
+### BTC — Opportunity 30/100 | Confidence 85/100
 
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
@@ -69,59 +75,16 @@ None
 - Volatility: LOW
 - Market bias: BEAR
 - ATR %: 3.64
-- Episodes: 99
-- Avg duration: 2.13 days
-- Best historical entry: DAY3
-- Best entry avg return: 1.59%
+- Best setup: Day 2 / Hold 5 days
+- Trades: 98
+- Win rate: 60.2%
+- Expected value: 1.08%
+- Profit factor: 1.79
+- Median return: 0.69%
 
 ## NO_ACTION
 
-### AVAX — Opportunity 25/100 | Confidence 80/100
-
-- Recommendation: NO_ACTION
-- Phase: NO_OVERSOLD
-- RSI2: 62.32
-- Close: 6.38
-- Trend: BEAR
-- Volatility: HIGH
-- Market bias: BEAR_HIGH_VOL
-- ATR %: 7.82
-- Episodes: 104
-- Avg duration: 2.12 days
-- Best historical entry: DAY3
-- Best entry avg return: 1.17%
-
-### SOL — Opportunity 25/100 | Confidence 70/100
-
-- Recommendation: NO_ACTION
-- Phase: NO_OVERSOLD
-- RSI2: 81.64
-- Close: 70.85
-- Trend: BEAR
-- Volatility: HIGH
-- Market bias: BEAR_HIGH_VOL
-- ATR %: 6.05
-- Episodes: 97
-- Avg duration: 2.31 days
-- Best historical entry: DAY3
-- Best entry avg return: 1.42%
-
-### DOGE — Opportunity 20/100 | Confidence 80/100
-
-- Recommendation: NO_ACTION
-- Phase: NO_OVERSOLD
-- RSI2: 40.43
-- Close: 0.07
-- Trend: BEAR
-- Volatility: LOW
-- Market bias: BEAR
-- ATR %: 4.72
-- Episodes: 102
-- Avg duration: 2.26 days
-- Best historical entry: DAY3
-- Best entry avg return: 1.17%
-
-### ADA — Opportunity 18/100 | Confidence 60/100
+### ADA — Opportunity 30/100 | Confidence 50/100
 
 - Recommendation: NO_ACTION
 - Phase: NO_OVERSOLD
@@ -131,12 +94,14 @@ None
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
 - ATR %: 6.94
-- Episodes: 98
-- Avg duration: 2.42 days
-- Best historical entry: DAY2
-- Best entry avg return: 0.55%
+- Best setup: Day 2 / Hold 5 days
+- Trades: 97
+- Win rate: 47.42%
+- Expected value: 1.04%
+- Profit factor: 1.29
+- Median return: -0.31%
 
-### ETH — Opportunity 10/100 | Confidence 60/100
+### ETH — Opportunity 23/100 | Confidence 65/100
 
 - Recommendation: NO_ACTION
 - Phase: NO_OVERSOLD
@@ -146,7 +111,60 @@ None
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
 - ATR %: 5.25
-- Episodes: 105
-- Avg duration: 1.99 days
-- Best historical entry: DAY3
-- Best entry avg return: 0.3%
+- Best setup: Day 2 / Hold 4 days
+- Trades: 104
+- Win rate: 59.62%
+- Expected value: 0.67%
+- Profit factor: 1.29
+- Median return: 0.57%
+
+### SOL — Opportunity 23/100 | Confidence 60/100
+
+- Recommendation: NO_ACTION
+- Phase: NO_OVERSOLD
+- RSI2: 81.64
+- Close: 70.85
+- Trend: BEAR
+- Volatility: HIGH
+- Market bias: BEAR_HIGH_VOL
+- ATR %: 6.05
+- Best setup: Day 3 / Hold 2 days
+- Trades: 97
+- Win rate: 55.67%
+- Expected value: 0.66%
+- Profit factor: 1.37
+- Median return: 0.86%
+
+### DOGE — Opportunity 18/100 | Confidence 60/100
+
+- Recommendation: NO_ACTION
+- Phase: NO_OVERSOLD
+- RSI2: 40.43
+- Close: 0.07
+- Trend: BEAR
+- Volatility: LOW
+- Market bias: BEAR
+- ATR %: 4.72
+- Best setup: Day 3 / Hold 4 days
+- Trades: 101
+- Win rate: 53.47%
+- Expected value: 0.78%
+- Profit factor: 1.26
+- Median return: 0.23%
+
+### AVAX — Opportunity 10/100 | Confidence 0/100
+
+- Recommendation: NO_ACTION
+- Phase: NO_OVERSOLD
+- RSI2: 62.32
+- Close: 6.38
+- Trend: BEAR
+- Volatility: HIGH
+- Market bias: BEAR_HIGH_VOL
+- ATR %: 7.82
+- Best setup: N/A
+- Trades: N/A
+- Win rate: nan%
+- Expected value: nan%
+- Profit factor: nan
+- Median return: nan%

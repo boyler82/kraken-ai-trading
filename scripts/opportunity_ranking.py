@@ -1,5 +1,6 @@
 from pathlib import Path
 import sys
+import glob
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -7,25 +8,22 @@ sys.path.append(str(ROOT / "scripts"))
 
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 
-EPISODE_SUMMARY = "BACKTESTS/rsi2_oversold_episode_summary.csv"
 EPISODE_STATUS = f"DAILY_REPORTS/{TODAY}_rsi2_episode_status.csv"
+BEST_EDGE = "BACKTESTS/rsi2_best_edge.csv"
 MARKET_REGIME = "BACKTESTS/market_regime.csv"
 
 OUT_CSV = f"DAILY_REPORTS/{TODAY}_crypto_opportunity_ranking.csv"
 OUT_MD = f"DAILY_REPORTS/{TODAY}_crypto_opportunity_ranking.md"
 
 
-def best_entry_label(row):
-    values = {
-        "DAY1": row.get("avg_ret_day1_hold3_pct"),
-        "DAY2": row.get("avg_ret_day2_hold3_pct"),
-        "DAY3": row.get("avg_ret_day3_hold3_pct"),
-    }
-    values = {k: v for k, v in values.items() if pd.notna(v)}
-    if not values:
-        return None, None
-    best_day = max(values, key=values.get)
-    return best_day, values[best_day]
+def latest_episode_status():
+    if Path(EPISODE_STATUS).exists():
+        return EPISODE_STATUS
+
+    files = sorted(glob.glob("DAILY_REPORTS/*_rsi2_episode_status.csv"))
+    if not files:
+        raise FileNotFoundError("No RSI2 episode status files found.")
+    return files[-1]
 
 
 def classify_bucket(row):
@@ -36,93 +34,13 @@ def classify_bucket(row):
     if phase == "NEAR_OVERSOLD":
         return "WATCHLIST"
 
-    best_return = row.get("best_entry_return_pct", 0)
-    if pd.notna(best_return) and best_return >= 1.5:
+    ev = row.get("expected_value_pct", 0)
+    pf = row.get("profit_factor", 0)
+
+    if pd.notna(ev) and pd.notna(pf) and ev >= 1.0 and pf >= 1.5:
         return "HISTORICAL_WATCHLIST"
 
     return "NO_ACTION"
-
-
-def confidence_score(row):
-    score = 0
-
-    episodes = row.get("episodes", 0)
-    best_return = row.get("best_entry_return_pct", 0)
-
-    if episodes >= 100:
-        score += 35
-    elif episodes >= 75:
-        score += 25
-    elif episodes >= 50:
-        score += 15
-
-    if pd.notna(best_return):
-        if best_return >= 2.0:
-            score += 35
-        elif best_return >= 1.0:
-            score += 25
-        elif best_return >= 0.5:
-            score += 15
-        elif best_return > 0:
-            score += 5
-
-    avg_duration = row.get("avg_duration_days", 0)
-    if pd.notna(avg_duration):
-        if 1.5 <= avg_duration <= 3.0:
-            score += 20
-        elif avg_duration > 0:
-            score += 10
-
-    return min(score, 100)
-
-
-def opportunity_score(row):
-    score = 0
-
-    phase = str(row.get("current_phase", ""))
-    rsi2 = row.get("rsi2", 100)
-    duration = row.get("current_oversold_duration", 0)
-    best_return = row.get("best_entry_return_pct", 0)
-    trend = str(row.get("trend", "UNKNOWN"))
-    volatility = str(row.get("volatility", "UNKNOWN"))
-
-    if phase.startswith("OVERSOLD"):
-        score += 40
-        if duration == 2:
-            score += 20
-        elif duration == 3:
-            score += 25
-        elif duration >= 4:
-            score += 10
-        elif duration == 1:
-            score += 10
-    elif phase == "NEAR_OVERSOLD":
-        score += 20
-
-    if pd.notna(rsi2):
-        if rsi2 < 5:
-            score += 15
-        elif rsi2 < 10:
-            score += 12
-        elif rsi2 < 25:
-            score += 5
-
-    if pd.notna(best_return):
-        if best_return >= 2.0:
-            score += 20
-        elif best_return >= 1.0:
-            score += 15
-        elif best_return >= 0.5:
-            score += 8
-
-    if trend == "BEAR" and volatility == "HIGH":
-        score += 10
-    elif trend == "BEAR" and volatility == "LOW":
-        score += 5
-    elif trend == "BULL" and volatility == "HIGH":
-        score += 5
-
-    return min(score, 100)
 
 
 def market_bias(row):
@@ -138,6 +56,111 @@ def market_bias(row):
     if trend == "BULL":
         return "BULL"
     return "UNKNOWN"
+
+
+def confidence_score(row):
+    score = 0
+
+    trades = row.get("trades", 0)
+    ev = row.get("expected_value_pct", 0)
+    pf = row.get("profit_factor", 0)
+    wr = row.get("win_rate_pct", 0)
+    median = row.get("median_return_pct", 0)
+
+    if pd.notna(trades):
+        if trades >= 100:
+            score += 25
+        elif trades >= 75:
+            score += 20
+        elif trades >= 50:
+            score += 15
+
+    if pd.notna(ev):
+        if ev >= 1.5:
+            score += 25
+        elif ev >= 1.0:
+            score += 20
+        elif ev >= 0.5:
+            score += 10
+
+    if pd.notna(pf):
+        if pf >= 1.8:
+            score += 25
+        elif pf >= 1.5:
+            score += 20
+        elif pf >= 1.2:
+            score += 10
+
+    if pd.notna(wr):
+        if wr >= 60:
+            score += 15
+        elif wr >= 55:
+            score += 10
+        elif wr >= 50:
+            score += 5
+
+    if pd.notna(median) and median > 0:
+        score += 10
+
+    return min(score, 100)
+
+
+def opportunity_score(row):
+    score = 0
+
+    phase = str(row.get("current_phase", ""))
+    rsi2 = row.get("rsi2", 100)
+    duration = row.get("current_oversold_duration", 0)
+    ev = row.get("expected_value_pct", 0)
+    pf = row.get("profit_factor", 0)
+    trend = str(row.get("trend", "UNKNOWN"))
+    volatility = str(row.get("volatility", "UNKNOWN"))
+
+    if phase.startswith("OVERSOLD"):
+        score += 40
+        if duration == 3:
+            score += 25
+        elif duration == 2:
+            score += 20
+        elif duration == 1:
+            score += 10
+        elif duration >= 4:
+            score += 10
+    elif phase == "NEAR_OVERSOLD":
+        score += 20
+
+    if pd.notna(rsi2):
+        if rsi2 < 5:
+            score += 15
+        elif rsi2 < 10:
+            score += 12
+        elif rsi2 < 25:
+            score += 5
+
+    if pd.notna(ev):
+        if ev >= 1.5:
+            score += 20
+        elif ev >= 1.0:
+            score += 15
+        elif ev >= 0.5:
+            score += 8
+
+    if pd.notna(pf):
+        if pf >= 1.8:
+            score += 15
+        elif pf >= 1.5:
+            score += 10
+        elif pf >= 1.2:
+            score += 5
+
+    if trend == "BEAR" and volatility == "HIGH":
+        score += 10
+    elif trend == "BEAR" and volatility == "LOW":
+        score += 5
+    elif trend == "BULL" and volatility == "HIGH":
+        score += 5
+
+    return min(score, 100)
 
 
 def recommendation(row):
@@ -157,10 +180,10 @@ def recommendation(row):
 
 
 def build_ranking():
-    summary = pd.read_csv(EPISODE_SUMMARY)
-    status = pd.read_csv(EPISODE_STATUS)
+    status = pd.read_csv(latest_episode_status())
+    edge = pd.read_csv(BEST_EDGE)
 
-    df = status.merge(summary, on="asset", how="left")
+    df = status.merge(edge, on="asset", how="left")
 
     if Path(MARKET_REGIME).exists():
         regime = pd.read_csv(MARKET_REGIME)
@@ -173,10 +196,6 @@ def build_ranking():
         df["trend"] = "UNKNOWN"
         df["volatility"] = "UNKNOWN"
         df["atr_pct"] = None
-
-    best_days = df.apply(best_entry_label, axis=1)
-    df["best_entry_day"] = [x[0] for x in best_days]
-    df["best_entry_return_pct"] = [x[1] for x in best_days]
 
     df["market_bias"] = df.apply(market_bias, axis=1)
     df["bucket"] = df.apply(classify_bucket, axis=1)
@@ -213,14 +232,17 @@ def save_outputs(df):
         "volatility",
         "market_bias",
         "atr_pct",
+        "entry_day",
+        "hold_days",
+        "trades",
+        "win_rate_pct",
+        "expected_value_pct",
+        "profit_factor",
+        "avg_return_pct",
+        "median_return_pct",
+        "worst_return_pct",
+        "best_return_pct",
         "current_oversold_duration",
-        "episodes",
-        "avg_duration_days",
-        "best_entry_day",
-        "best_entry_return_pct",
-        "avg_ret_day1_hold3_pct",
-        "avg_ret_day2_hold3_pct",
-        "avg_ret_day3_hold3_pct",
     ]
 
     df[columns].to_csv(OUT_CSV, index=False)
@@ -257,10 +279,23 @@ def save_outputs(df):
             lines.append(f"- Volatility: {row['volatility']}")
             lines.append(f"- Market bias: {row['market_bias']}")
             lines.append(f"- ATR %: {row['atr_pct']}")
-            lines.append(f"- Episodes: {row['episodes']}")
-            lines.append(f"- Avg duration: {row['avg_duration_days']} days")
-            lines.append(f"- Best historical entry: {row['best_entry_day']}")
-            lines.append(f"- Best entry avg return: {row['best_entry_return_pct']}%")
+
+            if pd.notna(row.get("entry_day")) and pd.notna(row.get("hold_days")):
+                lines.append(
+                    f"- Best setup: Day {int(row['entry_day'])} / Hold {int(row['hold_days'])} days"
+                )
+            else:
+                lines.append("- Best setup: N/A")
+
+            lines.append(
+                f"- Trades: {int(row['trades'])}"
+                if pd.notna(row.get("trades"))
+                else "- Trades: N/A"
+            )
+            lines.append(f"- Win rate: {row.get('win_rate_pct', 'N/A')}%")
+            lines.append(f"- Expected value: {row.get('expected_value_pct', 'N/A')}%")
+            lines.append(f"- Profit factor: {row.get('profit_factor', 'N/A')}")
+            lines.append(f"- Median return: {row.get('median_return_pct', 'N/A')}%")
             lines.append("")
 
     Path(OUT_MD).write_text("\n".join(lines))
