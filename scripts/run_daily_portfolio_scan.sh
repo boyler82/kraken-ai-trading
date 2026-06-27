@@ -18,4 +18,8 @@ echo "Running RSI2 episode tracker..."
 
 python3 scripts/rsi2_episode_tracker.py
 
+echo "Running crypto opportunity ranking..."
+
+python3 scripts/opportunity_ranking.py
+
 echo "Done."
