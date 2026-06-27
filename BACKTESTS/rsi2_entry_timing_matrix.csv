@@ -1,0 +1,2 @@
+asset,entry_day,hold_days,trades,win_rate_pct,avg_return_pct,median_return_pct,avg_win_pct,avg_loss_pct,profit_factor,expected_value_pct,worst_return_pct,best_return_pct
+NVDA,3,10,46,54.35,1.24,0.72,5.31,-3.6,1.76,1.24,-10.59,15.61
