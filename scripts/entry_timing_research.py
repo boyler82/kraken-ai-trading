@@ -1,13 +1,14 @@
 from pathlib import Path
 import sys
+
 import pandas as pd
-from lib.edge_metrics import trade_metrics
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
 
 from lib.data_loader import load_ohlc
 from lib.indicators import rsi
+from lib.edge_metrics import trade_metrics
 
 RSI_THRESHOLD = 10
 ENTRY_DAYS = [1, 2, 3]
@@ -50,7 +51,7 @@ for asset, path in FILES.items():
         print(f"Missing: {path}")
         continue
 
-    df = load_ohlc(path)
+    df = load_ohlc(file_path)
     df["rsi2"] = rsi(df["close"], 2)
     df = df.dropna().reset_index(drop=True)
 
@@ -64,10 +65,7 @@ for asset, path in FILES.items():
                 entry_idx = start_idx + entry_day - 1
                 exit_idx = entry_idx + hold
 
-                if exit_idx >= len(df):
-                    continue
-
-                if entry_idx >= len(df):
+                if entry_idx >= len(df) or exit_idx >= len(df):
                     continue
 
                 entry_price = df.loc[entry_idx, "close"]
@@ -79,16 +77,16 @@ for asset, path in FILES.items():
             if not returns:
                 continue
 
-metrics = trade_metrics(returns)
+            metrics = trade_metrics(returns)
 
-rows.append(
-    {
-        "asset": asset,
-        "entry_day": entry_day,
-        "hold_days": hold,
-        **metrics,
-    }
-)
+            rows.append(
+                {
+                    "asset": asset,
+                    "entry_day": entry_day,
+                    "hold_days": hold,
+                    **metrics,
+                }
+            )
 
 result = pd.DataFrame(rows)
 
@@ -98,7 +96,7 @@ result.to_csv(OUT_FILE, index=False)
 print("\nRSI2 ENTRY TIMING MATRIX\n")
 
 for asset in result["asset"].unique():
-    print(f"\n=== {asset} ===")
+    print(f"\n=== {asset} AVG RETURN ===")
     sample = result[result["asset"] == asset]
     pivot = sample.pivot(
         index="entry_day",
@@ -106,5 +104,21 @@ for asset in result["asset"].unique():
         values="avg_return_pct",
     )
     print(pivot.to_string())
+
+    print(f"\n=== {asset} EXPECTED VALUE ===")
+    ev_pivot = sample.pivot(
+        index="entry_day",
+        columns="hold_days",
+        values="expected_value_pct",
+    )
+    print(ev_pivot.to_string())
+
+    print(f"\n=== {asset} PROFIT FACTOR ===")
+    pf_pivot = sample.pivot(
+        index="entry_day",
+        columns="hold_days",
+        values="profit_factor",
+    )
+    print(pf_pivot.to_string())
 
 print(f"\nSaved: {OUT_FILE}")
