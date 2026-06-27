@@ -1,0 +1,6 @@
+asset,date,close,rsi2,current_phase,current_oversold_duration,episode_start_date,episode_start_close,episode_drawdown_pct
+BTC,2026-06-27,60230.1,100.0,NO_OVERSOLD,0,,,
+SPY,2026-06-27,731.53,6.64,OVERSOLD_DAY_2,2,2026-06-26,731.36,0.02
+QQQ,2026-06-27,706.61,0.78,OVERSOLD_DAY_2,2,2026-06-26,706.52,0.01
+GLD,2026-06-27,374.68,100.0,NO_OVERSOLD,0,,,
+NVDA,2026-06-27,193.23,17.96,NEAR_OVERSOLD,0,,,
