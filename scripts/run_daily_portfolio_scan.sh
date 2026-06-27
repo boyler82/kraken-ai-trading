@@ -14,4 +14,8 @@ echo "Running portfolio decision engine..."
 
 python3 scripts/daily_decision_engine.py
 
+echo "Running RSI2 episode tracker..."
+
+python3 scripts/rsi2_episode_tracker.py
+
 echo "Done."
