@@ -1,6 +1,5 @@
 from pathlib import Path
 import sys
-
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -10,6 +9,7 @@ TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 
 EPISODE_SUMMARY = "BACKTESTS/rsi2_oversold_episode_summary.csv"
 EPISODE_STATUS = f"DAILY_REPORTS/{TODAY}_rsi2_episode_status.csv"
+MARKET_REGIME = "BACKTESTS/market_regime.csv"
 
 OUT_CSV = f"DAILY_REPORTS/{TODAY}_crypto_opportunity_ranking.csv"
 OUT_MD = f"DAILY_REPORTS/{TODAY}_crypto_opportunity_ranking.md"
@@ -21,12 +21,9 @@ def best_entry_label(row):
         "DAY2": row.get("avg_ret_day2_hold3_pct"),
         "DAY3": row.get("avg_ret_day3_hold3_pct"),
     }
-
     values = {k: v for k, v in values.items() if pd.notna(v)}
-
     if not values:
         return None, None
-
     best_day = max(values, key=values.get)
     return best_day, values[best_day]
 
@@ -36,12 +33,10 @@ def classify_bucket(row):
 
     if phase.startswith("OVERSOLD"):
         return "ACTIVE_OPPORTUNITY"
-
     if phase == "NEAR_OVERSOLD":
         return "WATCHLIST"
 
     best_return = row.get("best_entry_return_pct", 0)
-
     if pd.notna(best_return) and best_return >= 1.5:
         return "HISTORICAL_WATCHLIST"
 
@@ -72,7 +67,6 @@ def confidence_score(row):
             score += 5
 
     avg_duration = row.get("avg_duration_days", 0)
-
     if pd.notna(avg_duration):
         if 1.5 <= avg_duration <= 3.0:
             score += 20
@@ -89,10 +83,11 @@ def opportunity_score(row):
     rsi2 = row.get("rsi2", 100)
     duration = row.get("current_oversold_duration", 0)
     best_return = row.get("best_entry_return_pct", 0)
+    trend = str(row.get("trend", "UNKNOWN"))
+    volatility = str(row.get("volatility", "UNKNOWN"))
 
     if phase.startswith("OVERSOLD"):
         score += 40
-
         if duration == 2:
             score += 20
         elif duration == 3:
@@ -101,7 +96,6 @@ def opportunity_score(row):
             score += 10
         elif duration == 1:
             score += 10
-
     elif phase == "NEAR_OVERSOLD":
         score += 20
 
@@ -121,7 +115,29 @@ def opportunity_score(row):
         elif best_return >= 0.5:
             score += 8
 
+    if trend == "BEAR" and volatility == "HIGH":
+        score += 10
+    elif trend == "BEAR" and volatility == "LOW":
+        score += 5
+    elif trend == "BULL" and volatility == "HIGH":
+        score += 5
+
     return min(score, 100)
+
+
+def market_bias(row):
+    trend = str(row.get("trend", "UNKNOWN"))
+    volatility = str(row.get("volatility", "UNKNOWN"))
+
+    if trend == "BEAR" and volatility == "HIGH":
+        return "BEAR_HIGH_VOL"
+    if trend == "BEAR":
+        return "BEAR"
+    if trend == "BULL" and volatility == "HIGH":
+        return "BULL_HIGH_VOL"
+    if trend == "BULL":
+        return "BULL"
+    return "UNKNOWN"
 
 
 def recommendation(row):
@@ -131,41 +147,38 @@ def recommendation(row):
 
     if bucket == "ACTIVE_OPPORTUNITY" and opp >= 75 and conf >= 70:
         return "HIGH_PRIORITY_REVIEW"
-
     if bucket == "ACTIVE_OPPORTUNITY":
         return "MANUAL_REVIEW"
-
     if bucket == "WATCHLIST":
         return "WATCH_CLOSELY"
-
     if bucket == "HISTORICAL_WATCHLIST":
         return "HISTORICALLY_STRONG_NO_SIGNAL"
-
     return "NO_ACTION"
 
 
-def load_inputs():
-    if not Path(EPISODE_SUMMARY).exists():
-        raise FileNotFoundError(f"Missing {EPISODE_SUMMARY}")
-
-    if not Path(EPISODE_STATUS).exists():
-        raise FileNotFoundError(f"Missing {EPISODE_STATUS}")
-
+def build_ranking():
     summary = pd.read_csv(EPISODE_SUMMARY)
     status = pd.read_csv(EPISODE_STATUS)
 
-    return summary, status
-
-
-def build_ranking():
-    summary, status = load_inputs()
-
     df = status.merge(summary, on="asset", how="left")
+
+    if Path(MARKET_REGIME).exists():
+        regime = pd.read_csv(MARKET_REGIME)
+        df = df.merge(
+            regime[["asset", "trend", "volatility", "atr_pct"]],
+            on="asset",
+            how="left",
+        )
+    else:
+        df["trend"] = "UNKNOWN"
+        df["volatility"] = "UNKNOWN"
+        df["atr_pct"] = None
 
     best_days = df.apply(best_entry_label, axis=1)
     df["best_entry_day"] = [x[0] for x in best_days]
     df["best_entry_return_pct"] = [x[1] for x in best_days]
 
+    df["market_bias"] = df.apply(market_bias, axis=1)
     df["bucket"] = df.apply(classify_bucket, axis=1)
     df["confidence_score"] = df.apply(confidence_score, axis=1)
     df["opportunity_score"] = df.apply(opportunity_score, axis=1)
@@ -180,12 +193,10 @@ def build_ranking():
 
     df["bucket_order"] = df["bucket"].map(bucket_order).fillna(99)
 
-    df = df.sort_values(
+    return df.sort_values(
         ["bucket_order", "opportunity_score", "confidence_score"],
         ascending=[True, False, False],
     )
-
-    return df
 
 
 def save_outputs(df):
@@ -198,6 +209,10 @@ def save_outputs(df):
         "current_phase",
         "rsi2",
         "close",
+        "trend",
+        "volatility",
+        "market_bias",
+        "atr_pct",
         "current_oversold_duration",
         "episodes",
         "avg_duration_days",
@@ -210,17 +225,17 @@ def save_outputs(df):
 
     df[columns].to_csv(OUT_CSV, index=False)
 
-    lines = []
-    lines.append("# Crypto Opportunity Ranking")
-    lines.append("")
-    lines.append(f"Date: {TODAY}")
-    lines.append("")
-    lines.append("Ranking is research support only. It is not an automatic buy/sell instruction.")
-    lines.append("")
+    lines = [
+        "# Crypto Opportunity Ranking",
+        "",
+        f"Date: {TODAY}",
+        "",
+        "Research support only. Not an automatic buy/sell instruction.",
+        "",
+    ]
 
     for bucket in ["ACTIVE_OPPORTUNITY", "WATCHLIST", "HISTORICAL_WATCHLIST", "NO_ACTION"]:
         sample = df[df["bucket"] == bucket]
-
         lines.append(f"## {bucket}")
         lines.append("")
 
@@ -238,13 +253,14 @@ def save_outputs(df):
             lines.append(f"- Phase: {row['current_phase']}")
             lines.append(f"- RSI2: {row['rsi2']}")
             lines.append(f"- Close: {row['close']}")
+            lines.append(f"- Trend: {row['trend']}")
+            lines.append(f"- Volatility: {row['volatility']}")
+            lines.append(f"- Market bias: {row['market_bias']}")
+            lines.append(f"- ATR %: {row['atr_pct']}")
             lines.append(f"- Episodes: {row['episodes']}")
-            lines.append(f"- Avg episode duration: {row['avg_duration_days']} days")
+            lines.append(f"- Avg duration: {row['avg_duration_days']} days")
             lines.append(f"- Best historical entry: {row['best_entry_day']}")
             lines.append(f"- Best entry avg return: {row['best_entry_return_pct']}%")
-            lines.append(f"- Day1 avg return: {row['avg_ret_day1_hold3_pct']}%")
-            lines.append(f"- Day2 avg return: {row['avg_ret_day2_hold3_pct']}%")
-            lines.append(f"- Day3 avg return: {row['avg_ret_day3_hold3_pct']}%")
             lines.append("")
 
     Path(OUT_MD).write_text("\n".join(lines))
