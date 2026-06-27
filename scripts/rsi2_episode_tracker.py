@@ -1,26 +1,24 @@
 from pathlib import Path
 import sys
-
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.append(str(ROOT))
+sys.path.append(str(ROOT / "scripts"))
 
 from lib.data_loader import load_ohlc
 from lib.indicators import rsi
+from lib.config import get_assets, symbol_to_file
 
 RSI_THRESHOLD = 10
 NEAR_THRESHOLD = 25
 HOLD_DAYS = 3
 
-FILES = {
-    "BTC": "DATASETS/market_raw/BTCUSD_D1.json",
-    "SPY": "DATASETS/market_raw/SPYx_USD_D1.json",
-    "QQQ": "DATASETS/market_raw/QQQx_USD_D1.json",
-    "GLD": "DATASETS/market_raw/GLDx_USD_D1.json",
-    "NVDA": "DATASETS/market_raw/NVDAx_USD_D1.json",
-}
+ASSETS = get_assets("crypto")
 
+FILES = {
+    symbol.replace("USD", ""): symbol_to_file(symbol)
+    for symbol in ASSETS
+}
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 
 OUT_EPISODES = "BACKTESTS/rsi2_oversold_episodes.csv"

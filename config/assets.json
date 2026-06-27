@@ -1,0 +1,24 @@
+{
+  "crypto": [
+    "BTCUSD",
+    "ETHUSD",
+    "SOLUSD",
+    "XRPUSD",
+    "LINKUSD",
+    "ADAUSD",
+    "AVAXUSD",
+    "DOGEUSD",
+    "LTCUSD"
+  ],
+  "research": [
+    "BTCUSD",
+    "ETHUSD",
+    "SOLUSD",
+    "XRPUSD",
+    "LINKUSD",
+    "ADAUSD",
+    "AVAXUSD",
+    "DOGEUSD",
+    "LTCUSD"
+  ]
+}
