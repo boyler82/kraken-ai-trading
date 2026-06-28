@@ -6,9 +6,9 @@ Research support only. Not an automatic buy/sell instruction.
 
 ## ACTIVE_OPPORTUNITY
 
-### LINK — Opportunity 95/100 | Confidence 80/100
+### LINK — Opportunity 85/100 | Confidence 80/100
 
-- Recommendation: HIGH_PRIORITY_REVIEW
+- Recommendation: DAY1_OBSERVE_ONLY
 - Phase: OVERSOLD_DAY_1
 - RSI2: 0.0
 - Close: 7.27
@@ -23,9 +23,9 @@ Research support only. Not an automatic buy/sell instruction.
 - Profit factor: 1.53
 - Median return: 0.57%
 
-### ADA — Opportunity 95/100 | Confidence 50/100
+### ADA — Opportunity 85/100 | Confidence 50/100
 
-- Recommendation: MANUAL_REVIEW
+- Recommendation: DAY1_OBSERVE_ONLY
 - Phase: OVERSOLD_DAY_1
 - RSI2: 0.0
 - Close: 0.14
@@ -40,9 +40,9 @@ Research support only. Not an automatic buy/sell instruction.
 - Profit factor: 1.29
 - Median return: -0.31%
 
-### ETH — Opportunity 88/100 | Confidence 65/100
+### ETH — Opportunity 78/100 | Confidence 65/100
 
-- Recommendation: MANUAL_REVIEW
+- Recommendation: DAY1_OBSERVE_ONLY
 - Phase: OVERSOLD_DAY_1
 - RSI2: 0.0
 - Close: 1569.93
@@ -57,9 +57,9 @@ Research support only. Not an automatic buy/sell instruction.
 - Profit factor: 1.29
 - Median return: 0.57%
 
-### DOGE — Opportunity 83/100 | Confidence 60/100
+### DOGE — Opportunity 73/100 | Confidence 60/100
 
-- Recommendation: MANUAL_REVIEW
+- Recommendation: DAY1_OBSERVE_ONLY
 - Phase: OVERSOLD_DAY_1
 - RSI2: 0.0
 - Close: 0.07
@@ -74,9 +74,9 @@ Research support only. Not an automatic buy/sell instruction.
 - Profit factor: 1.26
 - Median return: 0.23%
 
-### AVAX — Opportunity 75/100 | Confidence 0/100
+### AVAX — Opportunity 65/100 | Confidence 0/100
 
-- Recommendation: MANUAL_REVIEW
+- Recommendation: DAY1_OBSERVE_ONLY
 - Phase: OVERSOLD_DAY_1
 - RSI2: 0.0
 - Close: 6.33

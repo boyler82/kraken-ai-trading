@@ -123,7 +123,7 @@ def opportunity_score(row):
         elif duration == 2:
             score += 20
         elif duration == 1:
-            score += 10
+            score += 0
         elif duration >= 4:
             score += 10
     elif phase == "NEAR_OVERSOLD":
@@ -167,15 +167,23 @@ def recommendation(row):
     bucket = row["bucket"]
     opp = row["opportunity_score"]
     conf = row["confidence_score"]
+    duration = row.get("current_oversold_duration", 0)
 
-    if bucket == "ACTIVE_OPPORTUNITY" and opp >= 75 and conf >= 70:
+    if bucket == "ACTIVE_OPPORTUNITY" and duration == 1:
+        return "DAY1_OBSERVE_ONLY"
+
+    if bucket == "ACTIVE_OPPORTUNITY" and duration in [2, 3] and opp >= 75 and conf >= 70:
         return "HIGH_PRIORITY_REVIEW"
+
     if bucket == "ACTIVE_OPPORTUNITY":
         return "MANUAL_REVIEW"
+
     if bucket == "WATCHLIST":
         return "WATCH_CLOSELY"
+
     if bucket == "HISTORICAL_WATCHLIST":
         return "HISTORICALLY_STRONG_NO_SIGNAL"
+
     return "NO_ACTION"
 
 
