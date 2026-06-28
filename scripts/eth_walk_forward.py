@@ -1,6 +1,13 @@
-import json
 from pathlib import Path
+import sys
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT / "scripts"))
+
+from lib.data_loader import load_ohlc
+from lib.indicators import atr, rsi
+from lib.statistics import max_drawdown
 
 DATA_FILE = "DATASETS/market_raw/ETHUSD_D1.json"
 OUT_FILE = "BACKTESTS/eth_walk_forward_trades.csv"
@@ -10,51 +17,6 @@ INITIAL_CAPITAL = 10_000
 HOLDING_DAYS = 3
 RSI_THRESHOLD = 10
 TRAIN_RATIO = 0.7
-
-
-def load_ohlc(path):
-    data = json.loads(Path(path).read_text())
-    key = [k for k in data.keys() if k != "last"][0]
-
-    df = pd.DataFrame(
-        data[key],
-        columns=["time", "open", "high", "low", "close", "vwap", "volume", "trades"],
-    )
-
-    for c in ["open", "high", "low", "close", "volume"]:
-        df[c] = pd.to_numeric(df[c])
-
-    df["date"] = pd.to_datetime(df["time"], unit="s")
-    return df
-
-
-def rsi(series, period=2):
-    delta = series.diff()
-    gain = delta.clip(lower=0).rolling(period).mean()
-    loss = (-delta.clip(upper=0)).rolling(period).mean()
-    rs = gain / loss
-    return 100 - (100 / (1 + rs))
-
-
-def atr(df, period=14):
-    tr = pd.concat(
-        [
-            df["high"] - df["low"],
-            (df["high"] - df["close"].shift()).abs(),
-            (df["low"] - df["close"].shift()).abs(),
-        ],
-        axis=1,
-    ).max(axis=1)
-
-    return tr.rolling(period).mean()
-
-
-def max_drawdown(equity_series):
-    peak = equity_series.cummax()
-    dd = equity_series / peak - 1
-    return dd.min() * 100
-
-
 def run_backtest(sample, atr_threshold, label):
     capital = INITIAL_CAPITAL
     trades = []

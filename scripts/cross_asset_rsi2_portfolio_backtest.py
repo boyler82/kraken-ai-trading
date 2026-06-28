@@ -1,6 +1,14 @@
-import json
 from pathlib import Path
+import sys
+
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT / "scripts"))
+
+from lib.data_loader import load_ohlc
+from lib.indicators import rsi
+from lib.statistics import max_drawdown
 
 OUT_FILE = "BACKTESTS/cross_asset_rsi2_portfolio_trades.csv"
 SUMMARY_FILE = "BACKTESTS/cross_asset_rsi2_portfolio_summary.csv"
@@ -8,6 +16,8 @@ SUMMARY_FILE = "BACKTESTS/cross_asset_rsi2_portfolio_summary.csv"
 INITIAL_CAPITAL = 10_000
 HOLD_DAYS = 3
 RSI_THRESHOLD = 10
+POSITION_SIZE = 0.05
+ROUNDTRIP_COST_PCT = 0.25
 
 FILES = {
     "BTC": "DATASETS/market_raw/BTCUSD_D1.json",
@@ -17,38 +27,6 @@ FILES = {
     "GLD": "DATASETS/market_raw/GLDx_USD_D1.json",
     "NVDA": "DATASETS/market_raw/NVDAx_USD_D1.json",
 }
-
-
-def load_ohlc(path):
-    data = json.loads(Path(path).read_text())
-    key = [k for k in data.keys() if k != "last"][0]
-
-    df = pd.DataFrame(
-        data[key],
-        columns=["time", "open", "high", "low", "close", "vwap", "volume", "trades"],
-    )
-
-    for col in ["open", "high", "low", "close", "volume"]:
-        df[col] = pd.to_numeric(df[col])
-
-    df["date"] = pd.to_datetime(df["time"], unit="s")
-    return df
-
-
-def rsi(series, period=2):
-    delta = series.diff()
-    gain = delta.clip(lower=0).rolling(period).mean()
-    loss = (-delta.clip(upper=0)).rolling(period).mean()
-    rs = gain / loss
-    return 100 - (100 / (1 + rs))
-
-
-def max_drawdown(equity_series):
-    peak = equity_series.cummax()
-    dd = equity_series / peak - 1
-    return dd.min() * 100
-
-
 trades = []
 
 for symbol, file_path in FILES.items():
@@ -95,23 +73,77 @@ if trades_df.empty:
 
 trades_df = trades_df.sort_values("entry_date").reset_index(drop=True)
 
-capital = INITIAL_CAPITAL
-equity_rows = []
+events = []
 
-for _, trade in trades_df.iterrows():
-    ret = trade["return_pct"] / 100
-
-    capital = capital * (1 + ret)
-
-    equity_rows.append(
+for trade_id, trade in trades_df.reset_index().iterrows():
+    events.append(
+        {
+            "date": trade["entry_date"],
+            "kind": "entry",
+            "trade_id": trade_id,
+        }
+    )
+    events.append(
         {
             "date": trade["exit_date"],
+            "kind": "exit",
+            "trade_id": trade_id,
+        }
+    )
+
+events_df = pd.DataFrame(events).sort_values(
+    ["date", "kind"],
+    ascending=[True, False],
+).reset_index(drop=True)
+
+cash = INITIAL_CAPITAL
+equity_rows = []
+open_positions = {}
+
+for _, event in events_df.iterrows():
+    trade = trades_df.loc[event["trade_id"]]
+
+    if event["kind"] == "entry":
+        allocation = cash * POSITION_SIZE
+        if allocation <= 0:
+            continue
+
+        cash -= allocation
+        open_positions[event["trade_id"]] = {
+            "allocation": allocation,
             "asset": trade["asset"],
-            "capital": capital,
+            "entry_date": trade["entry_date"],
+        }
+        equity_rows.append(
+            {
+                "date": event["date"],
+                "asset": trade["asset"],
+                "capital": cash + sum(
+                    pos["allocation"] for pos in open_positions.values()
+                ),
+                "return_pct": 0.0,
+            }
+        )
+        continue
+
+    position = open_positions.pop(event["trade_id"], None)
+    if position is None:
+        continue
+
+    ret = trade["return_pct"] / 100
+    cash += position["allocation"] * (1 + ret)
+    equity_rows.append(
+        {
+            "date": event["date"],
+            "asset": trade["asset"],
+            "capital": cash + sum(
+                pos["allocation"] for pos in open_positions.values()
+            ),
             "return_pct": trade["return_pct"],
         }
     )
 
+capital = cash + sum(pos["allocation"] for pos in open_positions.values())
 equity_df = pd.DataFrame(equity_rows)
 
 returns = trades_df["return_pct"] / 100

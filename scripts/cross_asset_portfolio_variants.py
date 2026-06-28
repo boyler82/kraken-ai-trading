@@ -1,6 +1,13 @@
-import json
 from pathlib import Path
+import sys
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT / "scripts"))
+
+from lib.data_loader import load_ohlc
+from lib.indicators import rsi
+from lib.statistics import max_drawdown
 
 INITIAL_CAPITAL = 10000
 POSITION_SIZE = 0.05
@@ -26,41 +33,6 @@ PORTFOLIOS = {
     "BTC_ONLY": ["BTC"],
     "ETH_ONLY": ["ETH"],
 }
-
-
-def load_ohlc(path):
-    data = json.loads(Path(path).read_text())
-    key = [k for k in data.keys() if k != "last"][0]
-
-    df = pd.DataFrame(
-        data[key],
-        columns=[
-            "time","open","high","low","close",
-            "vwap","volume","trades"
-        ]
-    )
-
-    for c in ["open","high","low","close","volume"]:
-        df[c] = pd.to_numeric(df[c])
-
-    df["date"] = pd.to_datetime(df["time"], unit="s")
-    return df
-
-
-def rsi(series, period=2):
-    delta = series.diff()
-    gain = delta.clip(lower=0).rolling(period).mean()
-    loss = (-delta.clip(upper=0)).rolling(period).mean()
-    rs = gain / loss
-    return 100 - (100 / (1 + rs))
-
-
-def max_drawdown(series):
-    peak = series.cummax()
-    dd = series / peak - 1
-    return dd.min() * 100
-
-
 all_signals = []
 
 for asset, path in FILES.items():
@@ -87,6 +59,7 @@ for asset, path in FILES.items():
             {
                 "asset": asset,
                 "entry_date": row["date"],
+                "exit_date": exit_row["date"],
                 "return_pct": ret,
             }
         )
@@ -99,25 +72,79 @@ for portfolio_name, assets in PORTFOLIOS.items():
 
     subset = signals[
         signals["asset"].isin(assets)
-    ].sort_values("entry_date")
+    ].sort_values("entry_date").reset_index(drop=True)
 
     if subset.empty:
         continue
 
-    capital = INITIAL_CAPITAL
-    equity = []
+    events = []
 
-    for _, trade in subset.iterrows():
-
-        capital *= (
-            1
-            + (trade["return_pct"] / 100)
-            * POSITION_SIZE
+    for trade_id, trade in subset.iterrows():
+        events.append(
+            {
+                "date": trade["entry_date"],
+                "kind": "entry",
+                "trade_id": trade_id,
+            }
+        )
+        events.append(
+            {
+                "date": trade["exit_date"],
+                "kind": "exit",
+                "trade_id": trade_id,
+            }
         )
 
-        equity.append(capital)
+    events_df = pd.DataFrame(events).sort_values(
+        ["date", "kind"],
+        ascending=[True, False],
+    ).reset_index(drop=True)
 
-    eq = pd.Series(equity)
+    cash = INITIAL_CAPITAL
+    equity_rows = []
+    open_positions = {}
+
+    for _, event in events_df.iterrows():
+        trade = subset.loc[event["trade_id"]]
+
+        if event["kind"] == "entry":
+            allocation = cash * POSITION_SIZE
+            if allocation <= 0:
+                continue
+
+            cash -= allocation
+            open_positions[event["trade_id"]] = {
+                "allocation": allocation,
+                "asset": trade["asset"],
+                "entry_date": trade["entry_date"],
+            }
+            equity_rows.append(
+                {
+                    "date": event["date"],
+                    "capital": cash + sum(
+                        pos["allocation"] for pos in open_positions.values()
+                    ),
+                }
+            )
+            continue
+
+        position = open_positions.pop(event["trade_id"], None)
+        if position is None:
+            continue
+
+        ret = trade["return_pct"] / 100
+        cash += position["allocation"] * (1 + ret)
+        equity_rows.append(
+            {
+                "date": event["date"],
+                "capital": cash + sum(
+                    pos["allocation"] for pos in open_positions.values()
+                ),
+            }
+        )
+
+    capital = cash + sum(pos["allocation"] for pos in open_positions.values())
+    eq = pd.Series([row["capital"] for row in equity_rows])
 
     results.append(
         {

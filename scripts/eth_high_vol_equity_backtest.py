@@ -1,6 +1,13 @@
-import json
 from pathlib import Path
+import sys
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT / "scripts"))
+
+from lib.data_loader import load_ohlc
+from lib.indicators import atr, rsi
+from lib.statistics import max_drawdown
 
 DATA_FILE = "DATASETS/market_raw/ETHUSD_D1.json"
 OUT_FILE = "BACKTESTS/eth_high_vol_equity_backtest.csv"
@@ -10,51 +17,6 @@ INITIAL_CAPITAL = 10_000
 RISK_FRACTION = 1.0
 HOLDING_DAYS = 3
 RSI_THRESHOLD = 10
-
-
-def load_ohlc(path):
-    data = json.loads(Path(path).read_text())
-    key = [k for k in data.keys() if k != "last"][0]
-
-    df = pd.DataFrame(
-        data[key],
-        columns=["time", "open", "high", "low", "close", "vwap", "volume", "trades"],
-    )
-
-    for col in ["open", "high", "low", "close", "volume"]:
-        df[col] = pd.to_numeric(df[col])
-
-    df["date"] = pd.to_datetime(df["time"], unit="s")
-    return df
-
-
-def rsi(series, period=2):
-    delta = series.diff()
-    gain = delta.clip(lower=0).rolling(period).mean()
-    loss = (-delta.clip(upper=0)).rolling(period).mean()
-    rs = gain / loss
-    return 100 - (100 / (1 + rs))
-
-
-def atr(df, period=14):
-    tr = pd.concat(
-        [
-            df["high"] - df["low"],
-            (df["high"] - df["close"].shift()).abs(),
-            (df["low"] - df["close"].shift()).abs(),
-        ],
-        axis=1,
-    ).max(axis=1)
-
-    return tr.rolling(period).mean()
-
-
-def max_drawdown(equity_series):
-    peak = equity_series.cummax()
-    dd = equity_series / peak - 1
-    return dd.min() * 100
-
-
 df = load_ohlc(DATA_FILE)
 
 df["rsi2"] = rsi(df["close"], 2)
@@ -64,7 +26,11 @@ df["atr_pct"] = df["atr14"] / df["close"] * 100
 
 df = df.dropna().reset_index(drop=True)
 
-atr_median = df["atr_pct"].median()
+split_idx = int(len(df) * 0.7)
+train = df.iloc[:split_idx].copy().reset_index(drop=True)
+test = df.iloc[split_idx:].copy().reset_index(drop=True)
+
+atr_median = train["atr_pct"].median()
 
 capital = INITIAL_CAPITAL
 equity = []
@@ -72,8 +38,8 @@ trades = []
 
 i = 0
 
-while i < len(df) - HOLDING_DAYS:
-    row = df.iloc[i]
+while i < len(test) - HOLDING_DAYS:
+    row = test.iloc[i]
 
     high_vol = row["atr_pct"] > atr_median
 
@@ -96,7 +62,7 @@ while i < len(df) - HOLDING_DAYS:
         continue
 
     entry_price = row["close"]
-    exit_row = df.iloc[i + HOLDING_DAYS]
+    exit_row = test.iloc[i + HOLDING_DAYS]
     exit_price = exit_row["close"]
 
     trade_return = exit_price / entry_price - 1

@@ -1,6 +1,13 @@
-import json
 from pathlib import Path
+import sys
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT / "scripts"))
+
+from lib.data_loader import load_ohlc
+from lib.indicators import rsi
+from lib.statistics import max_drawdown
 
 OUT_FILE = "BACKTESTS/equity_curve_backtest.csv"
 SUMMARY_FILE = "BACKTESTS/equity_curve_summary.csv"
@@ -27,47 +34,6 @@ MODELS = {
         "requires_above_ma200": True,
     },
 }
-
-
-def load_ohlc(path):
-    data = json.loads(Path(path).read_text())
-    key = [k for k in data.keys() if k != "last"][0]
-
-    df = pd.DataFrame(
-        data[key],
-        columns=[
-            "time",
-            "open",
-            "high",
-            "low",
-            "close",
-            "vwap",
-            "volume",
-            "trades",
-        ],
-    )
-
-    for col in ["open", "high", "low", "close", "volume"]:
-        df[col] = pd.to_numeric(df[col])
-
-    df["date"] = pd.to_datetime(df["time"], unit="s")
-    return df
-
-
-def rsi(series, period=2):
-    delta = series.diff()
-    gain = delta.clip(lower=0).rolling(period).mean()
-    loss = (-delta.clip(upper=0)).rolling(period).mean()
-    rs = gain / loss
-    return 100 - (100 / (1 + rs))
-
-
-def max_drawdown(equity_series):
-    peak = equity_series.cummax()
-    dd = equity_series / peak - 1
-    return dd.min() * 100
-
-
 all_trades = []
 summaries = []
 
