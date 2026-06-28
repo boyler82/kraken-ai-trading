@@ -9,3 +9,20 @@ tmp/
 node_modules/
 
 .DS_Store
+
+# Runtime market snapshots
+ohlc.json
+ticker.json
+orderbook.json
+trades.json
+
+# Raw market data
+DATASETS/market_raw/*.json
+
+# Daily generated reports
+DAILY_REPORTS/*.csv
+DAILY_REPORTS/*.md
+
+# Python cache
+__pycache__/
+*.pyc
