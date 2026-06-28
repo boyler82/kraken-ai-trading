@@ -11,8 +11,11 @@ from lib.risk_engine import (
     MAX_POSITIONS,
     MAX_SINGLE_POSITION,
     MAX_TOTAL_ALLOCATION,
-    calculate_position_score,
-    normalize_allocations,
+)
+
+from lib.portfolio_engine import (
+    build_portfolio_allocation,
+    get_allocation_columns,
 )
 
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
@@ -36,57 +39,14 @@ def latest_ranking() -> str:
 
 
 def build_allocation_frame(df: pd.DataFrame) -> pd.DataFrame:
-    """Compute risk-engine-driven allocation fields for the input ranking."""
+    """Compute portfolio allocation fields for the input ranking."""
 
-    df = df.copy()
-    df["raw_weight_score"] = df.apply(calculate_position_score, axis=1)
-
-    allocations = normalize_allocations(
-        df["raw_weight_score"].tolist(),
-        max_total_allocation=MAX_TOTAL_ALLOCATION,
-        max_single_position=MAX_SINGLE_POSITION,
-        max_positions=MAX_POSITIONS,
-    )
-    df["proposed_weight_pct"] = allocations
-
-    df["allocation_status"] = df["proposed_weight_pct"].apply(
-        lambda value: "ALLOCATE_REVIEW" if value > 0 else "NO_ALLOCATION"
-    )
-    df["allocation_reason"] = df["raw_weight_score"].apply(
-        lambda value: "eligible for allocation" if value and value > 0 else "not eligible under risk rules"
-    )
-
-    df["raw_weight_score"] = df["raw_weight_score"].apply(
-        lambda value: round(float(value), 2) if pd.notna(value) else None
-    )
-    df["proposed_weight_pct"] = df["proposed_weight_pct"].apply(
-        lambda value: round(float(value), 2) if pd.notna(value) else None
-    )
-
-    return df
-
+    return build_portfolio_allocation(df)
 
 def write_report(df: pd.DataFrame) -> None:
     """Write CSV and markdown allocation reports."""
 
-    columns = [
-        "asset",
-        "recommendation",
-        "bucket",
-        "opportunity_score",
-        "confidence_score",
-        "current_phase",
-        "rsi2",
-        "entry_day",
-        "hold_days",
-        "expected_value_pct",
-        "profit_factor",
-        "win_rate_pct",
-        "raw_weight_score",
-        "proposed_weight_pct",
-        "allocation_status",
-        "allocation_reason",
-    ]
+    columns = get_allocation_columns()
 
     df[columns].to_csv(OUT_CSV, index=False)
 
