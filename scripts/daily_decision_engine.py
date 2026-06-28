@@ -1,6 +1,16 @@
-import json
 from pathlib import Path
+
+import sys
+
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+
+sys.path.append(str(ROOT / "scripts"))
+
+from lib.data_loader import load_ohlc
+
+from lib.indicators import rsi, sma
 
 FILES = {
     "BTC": "DATASETS/market_raw/BTCUSD_D1.json",
@@ -25,37 +35,13 @@ MODEL = {
 }
 
 
-def load_ohlc(path):
-    data = json.loads(Path(path).read_text())
-    key = [k for k in data.keys() if k != "last"][0]
-
-    df = pd.DataFrame(
-        data[key],
-        columns=["time", "open", "high", "low", "close", "vwap", "volume", "trades"],
-    )
-
-    for col in ["open", "high", "low", "close", "volume"]:
-        df[col] = pd.to_numeric(df[col])
-
-    df["date"] = pd.to_datetime(df["time"], unit="s")
-    return df
-
-
-def rsi(series, period=2):
-    delta = series.diff()
-    gain = delta.clip(lower=0).rolling(period).mean()
-    loss = (-delta.clip(upper=0)).rolling(period).mean()
-    rs = gain / loss
-    return 100 - (100 / (1 + rs))
-
-
 rows = []
 
 for symbol, file_path in FILES.items():
     df = load_ohlc(file_path)
 
     df["rsi2"] = rsi(df["close"], 2)
-    df["ma20"] = df["close"].rolling(20).mean()
+    df["ma20"] = sma(df["close"], 20)
     df["dist_ma20_pct"] = (df["close"] / df["ma20"] - 1) * 100
 
     df = df.dropna().reset_index(drop=True)
