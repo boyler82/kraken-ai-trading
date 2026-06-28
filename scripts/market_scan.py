@@ -1,6 +1,12 @@
-import json
 from pathlib import Path
+import sys
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT / "scripts"))
+
+from lib.data_loader import load_ohlc
+from lib.indicators import atr, rsi
 
 FILES = {
     "BTC": "DATASETS/market_raw/BTCUSD_D1.json",
@@ -10,36 +16,6 @@ FILES = {
     "NVDA": "DATASETS/market_raw/NVDAx_USD_D1.json",
     "GLD": "DATASETS/market_raw/GLDx_USD_D1.json",
 }
-
-def load_ohlc(path):
-    data = json.loads(Path(path).read_text())
-    key = [k for k in data.keys() if k != "last"][0]
-    rows = data[key]
-
-    df = pd.DataFrame(rows, columns=[
-        "time", "open", "high", "low", "close", "vwap", "volume", "trades"
-    ])
-
-    for col in ["open", "high", "low", "close", "volume"]:
-        df[col] = pd.to_numeric(df[col])
-
-    df["date"] = pd.to_datetime(df["time"], unit="s")
-    return df
-
-def rsi(series, period=14):
-    delta = series.diff()
-    gain = delta.clip(lower=0).rolling(period).mean()
-    loss = (-delta.clip(upper=0)).rolling(period).mean()
-    rs = gain / loss
-    return 100 - (100 / (1 + rs))
-
-def atr(df, period=14):
-    tr = pd.concat([
-        df["high"] - df["low"],
-        (df["high"] - df["close"].shift()).abs(),
-        (df["low"] - df["close"].shift()).abs()
-    ], axis=1).max(axis=1)
-    return tr.rolling(period).mean()
 
 results = []
 

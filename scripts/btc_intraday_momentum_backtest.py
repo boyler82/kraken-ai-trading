@@ -1,6 +1,12 @@
-import json
 from pathlib import Path
+import sys
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT / "scripts"))
+
+from lib.data_loader import load_ohlc
+from lib.indicators import rsi
 
 DATA_FILE = "DATASETS/market_raw/BTCUSD_1H.json"
 OUT_FILE = "BACKTESTS/btc_intraday_momentum_backtest.csv"
@@ -8,24 +14,6 @@ OUT_FILE = "BACKTESTS/btc_intraday_momentum_backtest.csv"
 MA_PERIOD = 20
 RSI_PERIOD = 6
 HORIZONS = [1, 3, 6, 12, 24]
-
-def load_ohlc(path):
-    data = json.loads(Path(path).read_text())
-    key = [k for k in data.keys() if k != "last"][0]
-    df = pd.DataFrame(data[key], columns=[
-        "time", "open", "high", "low", "close", "vwap", "volume", "trades"
-    ])
-    for c in ["open", "high", "low", "close", "vwap", "volume"]:
-        df[c] = pd.to_numeric(df[c])
-    df["date"] = pd.to_datetime(df["time"], unit="s")
-    return df
-
-def rsi(series, period):
-    delta = series.diff()
-    gain = delta.clip(lower=0).rolling(period).mean()
-    loss = (-delta.clip(upper=0)).rolling(period).mean()
-    rs = gain / loss
-    return 100 - (100 / (1 + rs))
 
 df = load_ohlc(DATA_FILE)
 

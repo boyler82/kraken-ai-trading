@@ -1,49 +1,18 @@
-import json
 from pathlib import Path
+import sys
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT / "scripts"))
+
+from lib.data_loader import load_ohlc
+from lib.indicators import atr, rsi
 
 DATA_FILE = "DATASETS/market_raw/ETHUSD_D1.json"
 OUT_FILE = "BACKTESTS/eth_regime_analysis.csv"
 
 RSI_THRESHOLD = 10
 HOLDING_DAYS = 3
-
-
-def load_ohlc(path):
-    data = json.loads(Path(path).read_text())
-    key = [k for k in data.keys() if k != "last"][0]
-
-    df = pd.DataFrame(
-        data[key],
-        columns=["time", "open", "high", "low", "close", "vwap", "volume", "trades"],
-    )
-
-    for c in ["open", "high", "low", "close", "volume"]:
-        df[c] = pd.to_numeric(df[c])
-
-    df["date"] = pd.to_datetime(df["time"], unit="s")
-    return df
-
-
-def rsi(series, period=2):
-    delta = series.diff()
-    gain = delta.clip(lower=0).rolling(period).mean()
-    loss = (-delta.clip(upper=0)).rolling(period).mean()
-    rs = gain / loss
-    return 100 - (100 / (1 + rs))
-
-
-def atr(df, period=14):
-    tr = pd.concat(
-        [
-            df["high"] - df["low"],
-            (df["high"] - df["close"].shift()).abs(),
-            (df["low"] - df["close"].shift()).abs(),
-        ],
-        axis=1,
-    ).max(axis=1)
-
-    return tr.rolling(period).mean()
 
 
 df = load_ohlc(DATA_FILE)
@@ -57,7 +26,7 @@ df = df.dropna().reset_index(drop=True)
 
 atr_median = df["atr_pct"].median()
 
-df["regime_ma200"] = df["close"].apply(lambda x: "ABOVE_MA200")  # placeholder
+df["regime_ma200"] = "ABOVE_MA200"
 df.loc[df["close"] < df["ma200"], "regime_ma200"] = "BELOW_MA200"
 
 df["regime_volatility"] = df["atr_pct"].apply(

@@ -1,6 +1,12 @@
-import json
 from pathlib import Path
+import sys
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT / "scripts"))
+
+from lib.data_loader import load_ohlc
+from lib.indicators import rsi
 
 HOLD_DAYS = 3
 RSI_THRESHOLD = 10
@@ -13,43 +19,6 @@ FILES = {
     "GLD": "DATASETS/market_raw/GLDx_USD_D1.json",
     "NVDA": "DATASETS/market_raw/NVDAx_USD_D1.json",
 }
-
-
-def load_ohlc(path):
-    data = json.loads(Path(path).read_text())
-    key = [k for k in data.keys() if k != "last"][0]
-
-    df = pd.DataFrame(
-        data[key],
-        columns=[
-            "time",
-            "open",
-            "high",
-            "low",
-            "close",
-            "vwap",
-            "volume",
-            "trades",
-        ],
-    )
-
-    for col in ["open", "high", "low", "close", "volume"]:
-        df[col] = pd.to_numeric(df[col])
-
-    df["date"] = pd.to_datetime(df["time"], unit="s")
-
-    return df
-
-
-def rsi(series, period=2):
-    delta = series.diff()
-
-    gain = delta.clip(lower=0).rolling(period).mean()
-    loss = (-delta.clip(upper=0)).rolling(period).mean()
-
-    rs = gain / loss
-
-    return 100 - (100 / (1 + rs))
 
 
 rows = []
