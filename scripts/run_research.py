@@ -19,6 +19,7 @@ def main() -> None:
     started = time.perf_counter()
 
     subprocess.run([sys.executable, str(ROOT / "scripts/research_pipeline.py")], check=True)
+    subprocess.run([sys.executable, str(ROOT / "scripts/project_memory.py")], check=True)
 
     elapsed = time.perf_counter() - started
 
