@@ -230,6 +230,7 @@ def build_ranking():
         df["atr_pct"] = None
 
     df["market_bias"] = df.apply(market_bias, axis=1)
+    df["entry_alignment_score"] = df.apply(entry_alignment_score, axis=1)
     df["bucket"] = df.apply(classify_bucket, axis=1)
     df["confidence_score"] = df.apply(confidence_score, axis=1)
     df["opportunity_score"] = df.apply(opportunity_score, axis=1)
@@ -266,6 +267,7 @@ def save_outputs(df):
         "atr_pct",
         "entry_day",
         "hold_days",
+        "entry_alignment_score",
         "trades",
         "win_rate_pct",
         "expected_value_pct",
