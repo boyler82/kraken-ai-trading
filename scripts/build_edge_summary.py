@@ -1,13 +1,18 @@
 from pathlib import Path
+import sys
 
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT / "scripts"))
+
+from lib.edge_metrics import calculate_quality_score
 
 EDGE_DB = "BACKTESTS/rsi2_edge_database.csv"
 OUT = "BACKTESTS/rsi2_best_edge.csv"
 
 MIN_TRADES = 50
 MIN_PROFIT_FACTOR = 1.2
-
 
 df = pd.read_csv(EDGE_DB)
 
@@ -17,10 +22,14 @@ filtered = df[
     & (df["expected_value_pct"] > 0)
 ].copy()
 
-filtered["quality_score"] = (
-    filtered["expected_value_pct"] * 40
-    + filtered["profit_factor"] * 20
-    + filtered["win_rate_pct"] * 0.4
+filtered["quality_score"] = filtered.apply(
+    lambda row: calculate_quality_score(
+        expected_value_pct=row["expected_value_pct"],
+        profit_factor=row["profit_factor"],
+        win_rate_pct=row["win_rate_pct"],
+        median_return_pct=row["median_return_pct"],
+    ),
+    axis=1,
 )
 
 best = (
