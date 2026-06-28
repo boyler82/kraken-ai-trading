@@ -14,6 +14,9 @@ python3 scripts/rsi2_episode_tracker.py
 echo "Running RSI2 edge database..."
 python3 scripts/rsi2_edge_database.py
 
+echo "Running market regime engine..."
+python3 scripts/market_regime.py
+
 echo "Running crypto opportunity ranking..."
 python3 scripts/opportunity_ranking.py
 
