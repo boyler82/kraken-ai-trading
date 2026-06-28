@@ -35,21 +35,18 @@ def detect_episode_starts(df):
     return starts
 
 
-rows = []
-
-for symbol in get_assets("crypto"):
-    asset = symbol.replace("USD", "")
-    path = symbol_to_file(symbol)
-
+def calculate_asset_edge(asset, path):
     if not Path(path).exists():
         print(f"Missing: {path}")
-        continue
+        return []
 
     df = load_ohlc(path)
     df["rsi2"] = rsi(df["close"], 2)
     df = df.dropna().reset_index(drop=True)
 
     episode_starts = detect_episode_starts(df)
+
+    rows = []
 
     for entry_day in ENTRY_DAYS:
         for hold_days in HOLD_DAYS:
@@ -78,11 +75,30 @@ for symbol in get_assets("crypto"):
                 }
             )
 
-result = pd.DataFrame(rows)
+    return rows
 
-Path("BACKTESTS").mkdir(exist_ok=True)
-result.to_csv(OUT_FILE, index=False)
 
-print("\nRSI2 EDGE DATABASE\n")
-print(result.sort_values("expected_value_pct", ascending=False).head(20).to_string(index=False))
-print(f"\nSaved: {OUT_FILE}")
+def build_edge_database():
+    rows = []
+
+    for symbol in get_assets("crypto"):
+        asset = symbol.replace("USD", "")
+        path = symbol_to_file(symbol)
+        rows.extend(calculate_asset_edge(asset, path))
+
+    return pd.DataFrame(rows)
+
+
+def main():
+    result = build_edge_database()
+
+    Path("BACKTESTS").mkdir(exist_ok=True)
+    result.to_csv(OUT_FILE, index=False)
+
+    print("\nRSI2 EDGE DATABASE\n")
+    print(result.sort_values("expected_value_pct", ascending=False).head(20).to_string(index=False))
+    print(f"\nSaved: {OUT_FILE}")
+
+
+if __name__ == "__main__":
+    main()
