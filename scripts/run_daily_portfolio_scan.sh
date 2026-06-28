@@ -23,4 +23,9 @@ python3 scripts/market_regime.py
 echo "Running crypto opportunity ranking..."
 python3 scripts/opportunity_ranking.py
 
+echo "Running daily research summary..."
+python3 scripts/daily_research_summary.py
+
+echo "Done."
+
 echo "Done."

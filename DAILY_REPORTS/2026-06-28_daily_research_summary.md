@@ -19,19 +19,10 @@ No high-priority setup confirmed.
 - PF: 1.29
 - WR: 47.42%
 
-### ETH
-- Phase: OVERSOLD_DAY_1
-- Recommendation: DAY1_OBSERVE_ONLY
-- RSI2: 3.2
-- Best setup: Day 2.0 / Hold 4.0
-- EV: 0.67%
-- PF: 1.29
-- WR: 59.62%
-
 ### LINK
 - Phase: OVERSOLD_DAY_1
 - Recommendation: DAY1_OBSERVE_ONLY
-- RSI2: 0.0
+- RSI2: 8.54
 - Best setup: Day 3.0 / Hold 4.0
 - EV: 1.39%
 - PF: 1.53
@@ -58,7 +49,6 @@ No high-priority setup confirmed.
 ## Observe / Watch
 
 - ADA: DAY1_OBSERVE_ONLY | OVERSOLD_DAY_1
-- ETH: DAY1_OBSERVE_ONLY | OVERSOLD_DAY_1
 - LINK: DAY1_OBSERVE_ONLY | OVERSOLD_DAY_1
 - DOGE: DAY1_OBSERVE_ONLY | OVERSOLD_DAY_1
 - AVAX: DAY1_OBSERVE_ONLY | OVERSOLD_DAY_1

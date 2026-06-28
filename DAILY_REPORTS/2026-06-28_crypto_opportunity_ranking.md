@@ -11,11 +11,11 @@ Research support only. Not an automatic buy/sell instruction.
 - Recommendation: DAY1_OBSERVE_ONLY
 - Phase: OVERSOLD_DAY_1
 - RSI2: 0.0
-- Close: 0.14
+- Close: 0.15
 - Trend: BEAR
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
-- ATR %: 6.2
+- ATR %: 6.19
 - Best setup: Day 2 / Hold 5 days
 - Trades: 97
 - Win rate: 47.42%
@@ -23,33 +23,16 @@ Research support only. Not an automatic buy/sell instruction.
 - Profit factor: 1.29
 - Median return: -0.31%
 
-### ETH — Opportunity 86/100 | Confidence 65/100
+### LINK — Opportunity 82/100 | Confidence 80/100
 
 - Recommendation: DAY1_OBSERVE_ONLY
 - Phase: OVERSOLD_DAY_1
-- RSI2: 3.2
-- Close: 1571.77
-- Trend: BEAR
-- Volatility: HIGH
-- Market bias: BEAR_HIGH_VOL
-- ATR %: 5.03
-- Best setup: Day 2 / Hold 4 days
-- Trades: 104
-- Win rate: 59.62%
-- Expected value: 0.67%
-- Profit factor: 1.29
-- Median return: 0.57%
-
-### LINK — Opportunity 85/100 | Confidence 80/100
-
-- Recommendation: DAY1_OBSERVE_ONLY
-- Phase: OVERSOLD_DAY_1
-- RSI2: 0.0
+- RSI2: 8.54
 - Close: 7.29
 - Trend: BEAR
 - Volatility: LOW
 - Market bias: BEAR
-- ATR %: 4.9
+- ATR %: 4.89
 - Best setup: Day 3 / Hold 4 days
 - Trades: 105
 - Win rate: 51.43%
@@ -83,7 +66,7 @@ Research support only. Not an automatic buy/sell instruction.
 - Trend: BEAR
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
-- ATR %: 7.63
+- ATR %: 7.64
 - Best setup: N/A
 - Trades: N/A
 - Win rate: nan%
@@ -102,7 +85,7 @@ None
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
 - RSI2: 100.0
-- Close: 42.43
+- Close: 42.47
 - Trend: BEAR
 - Volatility: LOW
 - Market bias: BEAR
@@ -118,7 +101,7 @@ None
 
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
-- RSI2: 70.55
+- RSI2: 70.44
 - Close: 1.05
 - Trend: BEAR
 - Volatility: LOW
@@ -135,8 +118,8 @@ None
 
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
-- RSI2: 65.69
-- Close: 60071.1
+- RSI2: 71.84
+- Close: 60114.2
 - Trend: BEAR
 - Volatility: LOW
 - Market bias: BEAR
@@ -150,16 +133,33 @@ None
 
 ## NO_ACTION
 
+### ETH — Opportunity 23/100 | Confidence 65/100
+
+- Recommendation: NO_ACTION
+- Phase: NO_OVERSOLD
+- RSI2: 27.87
+- Close: 1573.48
+- Trend: BEAR
+- Volatility: HIGH
+- Market bias: BEAR_HIGH_VOL
+- ATR %: 5.02
+- Best setup: Day 2 / Hold 4 days
+- Trades: 104
+- Win rate: 59.62%
+- Expected value: 0.67%
+- Profit factor: 1.29
+- Median return: 0.57%
+
 ### SOL — Opportunity 23/100 | Confidence 60/100
 
 - Recommendation: NO_ACTION
 - Phase: NO_OVERSOLD
-- RSI2: 31.03
-- Close: 71.02
+- RSI2: 33.33
+- Close: 71.09
 - Trend: BEAR
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
-- ATR %: 5.78
+- ATR %: 5.77
 - Best setup: Day 3 / Hold 2 days
 - Trades: 97
 - Win rate: 55.67%
