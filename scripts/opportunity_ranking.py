@@ -196,7 +196,9 @@ def recommendation(row):
     if bucket == "ACTIVE_OPPORTUNITY" and duration == 1:
         return "DAY1_OBSERVE_ONLY"
 
-    if bucket == "ACTIVE_OPPORTUNITY" and duration in [2, 3] and opp >= 75 and conf >= 70:
+    alignment = row.get("entry_alignment_score", 0)
+
+    if bucket == "ACTIVE_OPPORTUNITY" and alignment >= 20 and opp >= 75 and conf >= 70:
         return "HIGH_PRIORITY_REVIEW"
 
     if bucket == "ACTIVE_OPPORTUNITY":
