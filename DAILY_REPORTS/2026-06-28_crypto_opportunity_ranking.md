@@ -11,34 +11,17 @@ Research support only. Not an automatic buy/sell instruction.
 - Recommendation: DAY1_OBSERVE_ONLY
 - Phase: OVERSOLD_DAY_1
 - RSI2: 0.0
-- Close: 0.15
+- Close: 0.14
 - Trend: BEAR
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
-- ATR %: 6.19
+- ATR %: 6.23
 - Best setup: Day 2 / Hold 5 days
 - Trades: 97
 - Win rate: 47.42%
 - Expected value: 1.04%
 - Profit factor: 1.29
 - Median return: -0.31%
-
-### LINK — Opportunity 82/100 | Confidence 80/100
-
-- Recommendation: DAY1_OBSERVE_ONLY
-- Phase: OVERSOLD_DAY_1
-- RSI2: 8.54
-- Close: 7.29
-- Trend: BEAR
-- Volatility: LOW
-- Market bias: BEAR
-- ATR %: 4.89
-- Best setup: Day 3 / Hold 4 days
-- Trades: 105
-- Win rate: 51.43%
-- Expected value: 1.39%
-- Profit factor: 1.53
-- Median return: 0.57%
 
 ### DOGE — Opportunity 73/100 | Confidence 60/100
 
@@ -49,7 +32,7 @@ Research support only. Not an automatic buy/sell instruction.
 - Trend: BEAR
 - Volatility: LOW
 - Market bias: BEAR
-- ATR %: 4.61
+- ATR %: 4.62
 - Best setup: Day 3 / Hold 4 days
 - Trades: 101
 - Win rate: 53.47%
@@ -62,11 +45,11 @@ Research support only. Not an automatic buy/sell instruction.
 - Recommendation: DAY1_OBSERVE_ONLY
 - Phase: OVERSOLD_DAY_1
 - RSI2: 0.0
-- Close: 6.32
+- Close: 6.33
 - Trend: BEAR
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
-- ATR %: 7.64
+- ATR %: 7.63
 - Best setup: N/A
 - Trades: N/A
 - Win rate: nan%
@@ -76,7 +59,22 @@ Research support only. Not an automatic buy/sell instruction.
 
 ## WATCHLIST
 
-None
+### LINK — Opportunity 55/100 | Confidence 80/100
+
+- Recommendation: WATCH_CLOSELY
+- Phase: NEAR_OVERSOLD
+- RSI2: 11.22
+- Close: 7.29
+- Trend: BEAR
+- Volatility: LOW
+- Market bias: BEAR
+- ATR %: 4.93
+- Best setup: Day 3 / Hold 4 days
+- Trades: 105
+- Win rate: 51.43%
+- Expected value: 1.39%
+- Profit factor: 1.53
+- Median return: 0.57%
 
 ## HISTORICAL_WATCHLIST
 
@@ -85,11 +83,11 @@ None
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
 - RSI2: 100.0
-- Close: 42.47
+- Close: 42.75
 - Trend: BEAR
 - Volatility: LOW
 - Market bias: BEAR
-- ATR %: 4.25
+- ATR %: 4.32
 - Best setup: Day 2 / Hold 3 days
 - Trades: 109
 - Win rate: 60.55%
@@ -101,12 +99,12 @@ None
 
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
-- RSI2: 70.44
+- RSI2: 57.34
 - Close: 1.05
 - Trend: BEAR
 - Volatility: LOW
 - Market bias: BEAR
-- ATR %: 4.68
+- ATR %: 4.72
 - Best setup: Day 3 / Hold 10 days
 - Trades: 96
 - Win rate: 46.88%
@@ -118,12 +116,12 @@ None
 
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
-- RSI2: 71.84
-- Close: 60114.2
+- RSI2: 78.77
+- Close: 60192.7
 - Trend: BEAR
 - Volatility: LOW
 - Market bias: BEAR
-- ATR %: 3.46
+- ATR %: 3.48
 - Best setup: Day 2 / Hold 5 days
 - Trades: 98
 - Win rate: 60.2%
@@ -137,12 +135,12 @@ None
 
 - Recommendation: NO_ACTION
 - Phase: NO_OVERSOLD
-- RSI2: 27.87
-- Close: 1573.48
+- RSI2: 54.12
+- Close: 1577.32
 - Trend: BEAR
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
-- ATR %: 5.02
+- ATR %: 5.03
 - Best setup: Day 2 / Hold 4 days
 - Trades: 104
 - Win rate: 59.62%
@@ -154,12 +152,12 @@ None
 
 - Recommendation: NO_ACTION
 - Phase: NO_OVERSOLD
-- RSI2: 33.33
-- Close: 71.09
+- RSI2: 42.86
+- Close: 71.44
 - Trend: BEAR
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
-- ATR %: 5.77
+- ATR %: 5.83
 - Best setup: Day 3 / Hold 2 days
 - Trades: 97
 - Win rate: 55.67%

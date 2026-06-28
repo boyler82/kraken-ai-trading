@@ -26,6 +26,7 @@ python3 scripts/opportunity_ranking.py
 echo "Running daily research summary..."
 python3 scripts/daily_research_summary.py
 
-echo "Done."
+echo "Running portfolio allocator..."
+python3 scripts/portfolio_allocator.py
 
 echo "Done."
