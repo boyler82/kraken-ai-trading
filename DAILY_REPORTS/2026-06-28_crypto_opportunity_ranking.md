@@ -6,16 +6,16 @@ Research support only. Not an automatic buy/sell instruction.
 
 ## ACTIVE_OPPORTUNITY
 
-### ADA — Opportunity 85/100 | Confidence 50/100
+### ADA — Opportunity 90/100 | Confidence 50/100
 
 - Recommendation: DAY1_OBSERVE_ONLY
 - Phase: OVERSOLD_DAY_1
-- RSI2: 0.0
-- Close: 0.14
+- RSI2: 5.81
+- Close: 0.15
 - Trend: BEAR
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
-- ATR %: 6.19
+- ATR %: 6.18
 - Best setup: Day 2 / Hold 5 days
 - Trades: 97
 - Win rate: 47.42%
@@ -32,7 +32,7 @@ Research support only. Not an automatic buy/sell instruction.
 - Trend: BEAR
 - Volatility: LOW
 - Market bias: BEAR
-- ATR %: 4.61
+- ATR %: 4.6
 - Best setup: Day 3 / Hold 4 days
 - Trades: 101
 - Win rate: 53.47%
@@ -45,7 +45,7 @@ Research support only. Not an automatic buy/sell instruction.
 - Recommendation: DAY1_OBSERVE_ONLY
 - Phase: OVERSOLD_DAY_1
 - RSI2: 0.0
-- Close: 6.33
+- Close: 6.34
 - Trend: BEAR
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
@@ -63,12 +63,12 @@ Research support only. Not an automatic buy/sell instruction.
 
 - Recommendation: WATCH_CLOSELY
 - Phase: NEAR_OVERSOLD
-- RSI2: 12.09
+- RSI2: 23.19
 - Close: 7.3
 - Trend: BEAR
 - Volatility: LOW
 - Market bias: BEAR
-- ATR %: 4.89
+- ATR %: 4.88
 - Best setup: Day 3 / Hold 4 days
 - Trades: 105
 - Win rate: 51.43%
@@ -83,7 +83,7 @@ Research support only. Not an automatic buy/sell instruction.
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
 - RSI2: 100.0
-- Close: 42.41
+- Close: 42.46
 - Trend: BEAR
 - Volatility: LOW
 - Market bias: BEAR
@@ -99,7 +99,7 @@ Research support only. Not an automatic buy/sell instruction.
 
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
-- RSI2: 62.44
+- RSI2: 72.93
 - Close: 1.05
 - Trend: BEAR
 - Volatility: LOW
@@ -116,8 +116,8 @@ Research support only. Not an automatic buy/sell instruction.
 
 - Recommendation: HISTORICALLY_STRONG_NO_SIGNAL
 - Phase: NO_OVERSOLD
-- RSI2: 75.78
-- Close: 60153.3
+- RSI2: 74.75
+- Close: 60141.9
 - Trend: BEAR
 - Volatility: LOW
 - Market bias: BEAR
@@ -135,8 +135,8 @@ Research support only. Not an automatic buy/sell instruction.
 
 - Recommendation: NO_ACTION
 - Phase: NO_OVERSOLD
-- RSI2: 36.32
-- Close: 1574.37
+- RSI2: 40.61
+- Close: 1574.92
 - Trend: BEAR
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
@@ -152,12 +152,12 @@ Research support only. Not an automatic buy/sell instruction.
 
 - Recommendation: NO_ACTION
 - Phase: NO_OVERSOLD
-- RSI2: 26.32
-- Close: 70.89
+- RSI2: 34.88
+- Close: 71.14
 - Trend: BEAR
 - Volatility: HIGH
 - Market bias: BEAR_HIGH_VOL
-- ATR %: 5.76
+- ATR %: 5.77
 - Best setup: Day 3 / Hold 2 days
 - Trades: 97
 - Win rate: 55.67%

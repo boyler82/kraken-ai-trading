@@ -58,6 +58,28 @@ def market_bias(row):
     return "UNKNOWN"
 
 
+def entry_alignment_score(row):
+    phase = str(row.get("current_phase", ""))
+    entry_day = row.get("entry_day")
+
+    if not phase.startswith("OVERSOLD") or pd.isna(entry_day):
+        return 0
+
+    try:
+        current_day = int(phase.replace("OVERSOLD_DAY_", ""))
+        best_day = int(entry_day)
+    except ValueError:
+        return 0
+
+    if current_day == best_day:
+        return 20
+
+    if abs(current_day - best_day) == 1:
+        return 8
+
+    return 0
+
+
 def confidence_score(row):
     score = 0
 
@@ -115,6 +137,8 @@ def opportunity_score(row):
     pf = row.get("profit_factor", 0)
     trend = str(row.get("trend", "UNKNOWN"))
     volatility = str(row.get("volatility", "UNKNOWN"))
+
+    score += entry_alignment_score(row)
 
     if phase.startswith("OVERSOLD"):
         score += 40
