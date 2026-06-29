@@ -103,6 +103,34 @@ def _planned_exit_date(date_text: str, hold_days: Any) -> str | None:
         return None
 
 
+def _episode_start_text(value: Any) -> str | None:
+    if pd.isna(value) or value is None:
+        return None
+    text = str(value).strip()
+    return text or None
+
+
+def open_signal_exists(
+    conn: sqlite3.Connection,
+    asset: str,
+    recommendation: str,
+    current_phase: str,
+) -> bool:
+    cur = conn.execute(
+        """
+        SELECT 1
+        FROM signals
+        WHERE asset = ?
+          AND recommendation = ?
+          AND current_phase = ?
+          AND status = 'OPEN'
+        LIMIT 1
+        """,
+        (asset, recommendation, current_phase),
+    )
+    return cur.fetchone() is not None
+
+
 def record_signals_from_ranking(conn: sqlite3.Connection, ranking_path: Path) -> int:
     df = pd.read_csv(ranking_path)
     run_date = _parse_date_from_filename(ranking_path)
@@ -116,12 +144,19 @@ def record_signals_from_ranking(conn: sqlite3.Connection, ranking_path: Path) ->
 
         asset = str(row.get("asset", "")).strip()
         current_phase = str(row.get("current_phase", "")).strip()
-        signal_id = f"{run_date}_{asset}_{recommendation}_{current_phase}"
+        episode_start_date = _episode_start_text(row.get("episode_start_date"))
+        if episode_start_date:
+            signal_id = f"{asset}_{episode_start_date}_{recommendation}_{current_phase}"
+        else:
+            signal_id = f"{asset}_{current_phase}_{recommendation}"
         planned_exit_date = _planned_exit_date(run_date, row.get("hold_days"))
         status = "OPEN"
 
-        cur = conn.execute("SELECT 1 FROM signals WHERE signal_id = ?", (signal_id,))
-        if cur.fetchone():
+        if episode_start_date:
+            cur = conn.execute("SELECT 1 FROM signals WHERE signal_id = ?", (signal_id,))
+            if cur.fetchone():
+                continue
+        elif open_signal_exists(conn, asset, recommendation, current_phase):
             continue
 
         conn.execute(
