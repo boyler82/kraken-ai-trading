@@ -141,6 +141,10 @@ def build_position_report() -> pd.DataFrame:
         lambda row: _first_present(row, ["notes", "comment", "comments", "memo"]),
         axis=1,
     )
+    positions["currency"] = positions.apply(
+        lambda row: _first_present(row, ["currency", "ccy", "quote_currency"]),
+        axis=1,
+    )
 
     aggregated_rows = []
     for asset, group in positions.groupby("asset", dropna=True):
@@ -151,18 +155,32 @@ def build_position_report() -> pd.DataFrame:
         cost_basis = group["cost_basis"].dropna().sum()
         average_entry_price = (cost_basis / quantity) if quantity else None
         current_price, _market_date = _load_latest_price(str(asset))
+        currency = (
+            str(group["currency"].dropna().iloc[0]).strip().upper()
+            if not group["currency"].dropna().empty
+            else None
+        )
+        price_file_name = PRICE_FILE_MAP.get(str(asset).strip().upper())
+        price_file_is_usd = bool(price_file_name and "USD" in Path(price_file_name).name.upper())
 
-        market_value = (quantity * current_price) if quantity is not None and current_price is not None else None
-        unrealized_pnl_value = (
-            market_value - cost_basis
-            if market_value is not None and cost_basis is not None
-            else None
-        )
-        unrealized_pnl_pct = (
-            (unrealized_pnl_value / cost_basis) * 100
-            if unrealized_pnl_value is not None and cost_basis not in (None, 0)
-            else None
-        )
+        fx_required = currency == "EUR" and price_file_is_usd
+
+        if fx_required:
+            market_value = None
+            unrealized_pnl_value = None
+            unrealized_pnl_pct = None
+        else:
+            market_value = (quantity * current_price) if quantity is not None and current_price is not None else None
+            unrealized_pnl_value = (
+                market_value - cost_basis
+                if market_value is not None and cost_basis is not None
+                else None
+            )
+            unrealized_pnl_pct = (
+                (unrealized_pnl_value / cost_basis) * 100
+                if unrealized_pnl_value is not None and cost_basis not in (None, 0)
+                else None
+            )
 
         notes_values = [
             str(note).strip()
@@ -183,13 +201,13 @@ def build_position_report() -> pd.DataFrame:
                 "cost_basis": round(float(cost_basis), 8) if cost_basis is not None else None,
                 "unrealized_pnl_value": round(float(unrealized_pnl_value), 8) if unrealized_pnl_value is not None else None,
                 "unrealized_pnl_pct": round(float(unrealized_pnl_pct), 4) if unrealized_pnl_pct is not None else None,
-                "status": "OK" if current_price is not None and quantity is not None else "INCOMPLETE",
+                "status": "FX_REQUIRED" if fx_required else ("OK" if current_price is not None and quantity is not None else "INCOMPLETE"),
                 "research_stop": "TBD",
                 "target_1": "TBD",
                 "target_2": "TBD",
                 "research_status": "TBD",
                 "probability_target_before_stop": "TBD",
-                "notes": notes_text,
+                "notes": f"{notes_text}; FX conversion required" if fx_required else notes_text,
             }
         )
 
