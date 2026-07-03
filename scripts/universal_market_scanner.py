@@ -110,6 +110,20 @@ def _build_row(asset: str, df: pd.DataFrame) -> dict:
         confidence_score += 10
     confidence_score = min(confidence_score, 100)
 
+    distance_to_signal = rsi2 - 10 if rsi2 is not None else None
+    if current_phase == "OVERSOLD":
+        reason = "RSI2 below 10"
+        next_action = "manual research review"
+    elif current_phase == "NEAR_OVERSOLD":
+        reason = "RSI2 below 25, waiting for RSI2 < 10"
+        next_action = "watch for RSI2 < 10"
+    elif current_phase == "NO_SIGNAL" and rsi2 is not None and rsi2 > 80:
+        reason = "Overbought / after rebound"
+        next_action = "wait"
+    else:
+        reason = "No statistical setup"
+        next_action = "wait"
+
     return {
         "asset": asset,
         "asset_class": _asset_class(asset),
@@ -123,6 +137,9 @@ def _build_row(asset: str, df: pd.DataFrame) -> dict:
         "market_bias": market_bias,
         "current_phase": current_phase,
         "recommendation": recommendation,
+        "distance_to_signal": round(distance_to_signal, 4) if distance_to_signal is not None else None,
+        "reason": reason,
+        "next_action": next_action,
         "opportunity_score": opportunity_score,
         "confidence_score": confidence_score,
     }
@@ -159,6 +176,9 @@ def build_market_scanner() -> pd.DataFrame:
             "market_bias",
             "current_phase",
             "recommendation",
+            "distance_to_signal",
+            "reason",
+            "next_action",
             "opportunity_score",
             "confidence_score",
         ]
@@ -195,6 +215,9 @@ def render_report(report: pd.DataFrame) -> str:
             lines.append(f"- Dist MA20 %: {row['dist_ma20_pct']}")
             lines.append(f"- ATR %: {row['atr_pct']}")
             lines.append(f"- Market bias: {row['market_bias']}")
+            lines.append(f"- Distance to signal: {row['distance_to_signal']}")
+            lines.append(f"- Reason: {row['reason']}")
+            lines.append(f"- Next action: {row['next_action']}")
             lines.append("")
 
     lines.append("## Full Ranking")
@@ -204,7 +227,7 @@ def render_report(report: pd.DataFrame) -> str:
     else:
         for _, row in report.iterrows():
             lines.append(
-                f"- #{int(row['rank'])} {row['asset']} | {row['asset_class']} | {row['recommendation']} | Opp {row['opportunity_score']} | Conf {row['confidence_score']} | Close {row['close']} | ATR {row['atr_pct']} | Bias {row['market_bias']}"
+                f"- #{int(row['rank'])} {row['asset']} | {row['asset_class']} | {row['recommendation']} | Opp {row['opportunity_score']} | Conf {row['confidence_score']} | Close {row['close']} | ATR {row['atr_pct']} | Bias {row['market_bias']} | Dist {row['distance_to_signal']} | Reason {row['reason']} | Next {row['next_action']}"
             )
 
     lines.append("")
