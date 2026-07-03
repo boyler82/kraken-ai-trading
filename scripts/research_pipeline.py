@@ -13,6 +13,7 @@ STEPS = [
     "scripts/build_edge_summary.py",
     "scripts/cross_asset_rsi2_research.py",
     "scripts/cross_asset_rsi2_regime_analysis.py",
+    "scripts/universal_market_scanner.py",
     "scripts/monte_carlo_rsi2.py",
     "scripts/opportunity_ranking.py",
     "scripts/opportunity_tracker.py",
