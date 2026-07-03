@@ -15,6 +15,7 @@ STEPS = [
     "scripts/cross_asset_rsi2_regime_analysis.py",
     "scripts/monte_carlo_rsi2.py",
     "scripts/opportunity_ranking.py",
+    "scripts/opportunity_tracker.py",
     "scripts/portfolio_allocator.py",
     "scripts/position_manager.py",
     "scripts/exit_planner.py",
