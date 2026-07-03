@@ -189,17 +189,21 @@ def opportunity_score(row):
 
 def recommendation(row):
     bucket = row["bucket"]
-    opp = row["opportunity_score"]
     conf = row["confidence_score"]
     duration = row.get("current_oversold_duration", 0)
+    ev = row.get("expected_value_pct", 0)
+    pf = row.get("profit_factor", 0)
 
     if bucket == "ACTIVE_OPPORTUNITY" and duration == 1:
         return "DAY1_OBSERVE_ONLY"
 
-    alignment = row.get("entry_alignment_score", 0)
+    if bucket == "ACTIVE_OPPORTUNITY" and duration == 2:
+        return "DAY2_MANUAL_REVIEW"
 
-    if bucket == "ACTIVE_OPPORTUNITY" and alignment >= 20 and opp >= 75 and conf >= 70:
-        return "HIGH_PRIORITY_REVIEW"
+    if bucket == "ACTIVE_OPPORTUNITY" and duration >= 3:
+        if conf >= 70 and pd.notna(ev) and ev > 0 and pd.notna(pf) and pf >= 1.2:
+            return "DAY3_HIGH_PRIORITY_REVIEW"
+        return "DAY3_MANUAL_REVIEW"
 
     if bucket == "ACTIVE_OPPORTUNITY":
         return "MANUAL_REVIEW"
