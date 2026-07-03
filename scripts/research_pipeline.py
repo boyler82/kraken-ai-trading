@@ -16,6 +16,8 @@ STEPS = [
     "scripts/monte_carlo_rsi2.py",
     "scripts/opportunity_ranking.py",
     "scripts/portfolio_allocator.py",
+    "scripts/position_manager.py",
+    "scripts/exit_planner.py",
     "scripts/daily_research_summary.py",
 ]
 
