@@ -15,7 +15,8 @@ from lib.data_loader import load_ohlc  # noqa: E402
 INPUT_CSV = ROOT / "journal" / "portfolio_positions.csv"
 REPORT_DIR = ROOT / "DAILY_REPORTS"
 PRICE_FILE_MAP = {
-    "BTC": "DATASETS/market_raw/BTCUSD_D1.json",
+    "BTCUSD": "DATASETS/market_raw/BTCUSD_D1.json",
+    "BTCEUR": "DATASETS/market_raw/BTCEUR_D1.json",
     "ETH": "DATASETS/market_raw/ETHUSD_D1.json",
     "SOL": "DATASETS/market_raw/SOLUSD_D1.json",
     "ADA": "DATASETS/market_raw/ADAUSD_D1.json",
@@ -34,6 +35,7 @@ OUTPUT_COLUMNS = [
     "quantity",
     "average_entry_price",
     "current_price",
+    "current_price_source",
     "market_value",
     "cost_basis",
     "unrealized_pnl_value",
@@ -71,11 +73,19 @@ def _load_latest_price(symbol: str) -> tuple[float | None, str | None]:
     normalized = str(symbol).strip().upper()
     candidates = []
 
-    mapped_path = PRICE_FILE_MAP.get(normalized)
-    if mapped_path is not None:
-        candidates.append(ROOT / mapped_path)
+    if normalized == "BTC":
+        candidates.extend(
+            [
+                ROOT / PRICE_FILE_MAP["BTCEUR"],
+                ROOT / PRICE_FILE_MAP["BTCUSD"],
+            ]
+        )
+    else:
+        mapped_path = PRICE_FILE_MAP.get(normalized)
+        if mapped_path is not None:
+            candidates.append(ROOT / mapped_path)
 
-    candidates.append(ROOT / symbol_to_file(normalized))
+        candidates.append(ROOT / symbol_to_file(normalized))
 
     path = next((candidate for candidate in candidates if candidate.exists()), None)
     if path is None:
@@ -87,6 +97,31 @@ def _load_latest_price(symbol: str) -> tuple[float | None, str | None]:
 
     last = df.iloc[-1]
     return _to_float(last["close"]), str(pd.Timestamp(last["date"]).date())
+
+
+def _load_price_with_source(asset: str, currency: str | None) -> tuple[float | None, str | None, str | None]:
+    normalized = str(asset).strip().upper()
+    currency = str(currency).strip().upper() if currency else None
+
+    candidates = []
+    if normalized == "BTC" and currency == "EUR":
+        candidates.append(("EUR", ROOT / PRICE_FILE_MAP["BTCEUR"], "BTCEUR"))
+        candidates.append(("USD", ROOT / PRICE_FILE_MAP["BTCUSD"], "BTCUSD"))
+    else:
+        mapped_path = PRICE_FILE_MAP.get(normalized)
+        if mapped_path is not None:
+            candidates.append(("USD", ROOT / mapped_path, normalized))
+        fallback_symbol = symbol_to_file(normalized)
+        candidates.append(("USD", ROOT / fallback_symbol, normalized))
+
+    for source, path, load_symbol in candidates:
+        if not path.exists():
+            continue
+        price, date = _load_latest_price(load_symbol)
+        if price is not None:
+            return price, date, source
+
+    return None, None, None
 
 
 def _resolve_symbol(row: pd.Series) -> str | None:
@@ -154,16 +189,14 @@ def build_position_report() -> pd.DataFrame:
         quantity = group["quantity"].dropna().sum()
         cost_basis = group["cost_basis"].dropna().sum()
         average_entry_price = (cost_basis / quantity) if quantity else None
-        current_price, _market_date = _load_latest_price(str(asset))
         currency = (
             str(group["currency"].dropna().iloc[0]).strip().upper()
             if not group["currency"].dropna().empty
             else None
         )
-        price_file_name = PRICE_FILE_MAP.get(str(asset).strip().upper())
-        price_file_is_usd = bool(price_file_name and "USD" in Path(price_file_name).name.upper())
-
-        fx_required = currency == "EUR" and price_file_is_usd
+        current_price, _market_date, price_source = _load_price_with_source(str(asset), currency)
+        normalized_asset = str(asset).strip().upper()
+        fx_required = currency == "EUR" and normalized_asset == "BTC" and price_source == "USD"
 
         if fx_required:
             market_value = None
@@ -197,6 +230,7 @@ def build_position_report() -> pd.DataFrame:
                 "quantity": round(float(quantity), 8) if quantity is not None else None,
                 "average_entry_price": round(float(average_entry_price), 8) if average_entry_price is not None else None,
                 "current_price": round(float(current_price), 8) if current_price is not None else None,
+                "current_price_source": price_source,
                 "market_value": round(float(market_value), 8) if market_value is not None else None,
                 "cost_basis": round(float(cost_basis), 8) if cost_basis is not None else None,
                 "unrealized_pnl_value": round(float(unrealized_pnl_value), 8) if unrealized_pnl_value is not None else None,

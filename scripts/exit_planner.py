@@ -23,6 +23,8 @@ else:
     OPPORTUNITY_RANKING = ranking_files[-1] if ranking_files else None
 
 PRICE_FILE_MAP = {
+    "BTCUSD": "DATASETS/market_raw/BTCUSD_D1.json",
+    "BTCEUR": "DATASETS/market_raw/BTCEUR_D1.json",
     "BTC": "DATASETS/market_raw/BTCUSD_D1.json",
     "ETH": "DATASETS/market_raw/ETHUSD_D1.json",
     "SOL": "DATASETS/market_raw/SOLUSD_D1.json",
@@ -59,20 +61,33 @@ def _normalize_asset(value) -> str | None:
 
 
 def _load_current_price(asset: str) -> tuple[float | None, str | None]:
-    path_text = PRICE_FILE_MAP.get(asset)
-    if path_text is None:
+    asset = _normalize_asset(asset)
+    if asset is None:
         return None, None
 
-    path = ROOT / path_text
-    if not path.exists():
-        return None, None
+    candidates = []
+    if asset == "BTC":
+        candidates.extend(
+            [
+                ("EUR", ROOT / PRICE_FILE_MAP["BTCEUR"], "BTCEUR"),
+                ("USD", ROOT / PRICE_FILE_MAP["BTCUSD"], "BTCUSD"),
+            ]
+        )
+    else:
+        path_text = PRICE_FILE_MAP.get(asset)
+        if path_text is not None:
+            candidates.append(("USD", ROOT / path_text, asset))
 
-    df = load_ohlc(path)
-    if df.empty:
-        return None, None
+    for source, path, load_symbol in candidates:
+        if not path.exists():
+            continue
+        df = load_ohlc(path)
+        if df.empty:
+            continue
+        last = df.iloc[-1]
+        return _to_float(last["close"]), str(pd.Timestamp(last["date"]).date())
 
-    last = df.iloc[-1]
-    return _to_float(last["close"]), str(pd.Timestamp(last["date"]).date())
+    return None, None
 
 
 def _load_atr_pct_map() -> dict[str, float]:
@@ -180,14 +195,14 @@ def build_exit_plan() -> pd.DataFrame:
         entry_price = _to_float(row["average_entry_price"])
         current_price, market_date = _load_current_price(asset)
         currency = _position_currency(row)
-        current_price_source = "USD" if asset in PRICE_FILE_MAP and "USD" in PRICE_FILE_MAP[asset].upper() else "UNKNOWN"
+        current_price_source = "EUR" if asset == "BTC" and (ROOT / PRICE_FILE_MAP["BTCEUR"]).exists() else "USD"
         research = research_map.get(asset, {})
         atr_pct = atr_map.get(asset)
         if atr_pct is None:
             atr_pct = _to_float(research.get("atr_pct"))
 
         position_currency = TARGET_CURRENCY.get(asset, currency)
-        fx_required = position_currency == "EUR" and current_price_source == "USD"
+        fx_required = position_currency == "EUR" and asset == "BTC" and current_price_source != "EUR"
 
         targets = None
         if entry_price is not None and current_price is not None:
