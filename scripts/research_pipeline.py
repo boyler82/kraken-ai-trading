@@ -22,6 +22,7 @@ STEPS = [
     "scripts/exit_planner.py",
     "scripts/daily_research_summary.py",
     "scripts/daily_decision_dashboard.py",
+    "scripts/signal_outcome_engine.py",
     "scripts/research_performance_dashboard.py",
 ]
 
