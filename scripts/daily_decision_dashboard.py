@@ -59,6 +59,34 @@ def _top_rows(df: pd.DataFrame, limit: int = 5) -> pd.DataFrame:
     return df.head(limit).copy()
 
 
+def _signal_exit_calendar() -> pd.DataFrame:
+    df = _load_csv("*_signal_exit_calendar.csv")
+    if df.empty:
+        return df
+    if "planned_exit_date" in df.columns:
+        df = df.sort_values(["planned_exit_date", "asset"], ascending=[True, True], na_position="last")
+    return df.head(5).copy()
+
+
+def _research_score_leaders() -> pd.DataFrame:
+    df = _load_csv("*_research_score.csv")
+    if df.empty:
+        return df
+    sort_col = "research_score" if "research_score" in df.columns else None
+    if sort_col is not None:
+        df = df.sort_values([sort_col, "asset"], ascending=[False, True], na_position="last")
+    return df.head(5).copy()
+
+
+def _research_validation_status() -> str:
+    md = _load_md("*_research_validation.md")
+    if not md:
+        return "No research validation available."
+    if "No completed paper trades yet." in md:
+        return "Research validation: waiting for completed paper trades"
+    return "Research validation available."
+
+
 def build_dashboard() -> tuple[pd.DataFrame, str]:
     daily_summary_md = _load_md("*_daily_research_summary.md")
     crypto = _load_csv("*_crypto_opportunity_ranking.csv")
@@ -66,6 +94,9 @@ def build_dashboard() -> tuple[pd.DataFrame, str]:
     portfolio = _load_csv("*_portfolio_allocation.csv")
     position_manager = _load_csv("*_position_manager.csv")
     exit_planner = _load_csv("*_exit_planner.csv")
+    signal_exit_calendar = _signal_exit_calendar()
+    research_score_leaders = _research_score_leaders()
+    research_validation_status = _research_validation_status()
 
     watchlist = False
     if not crypto.empty and "recommendation" in crypto.columns:
@@ -131,6 +162,44 @@ def build_dashboard() -> tuple[pd.DataFrame, str]:
     else:
         dashboard_rows.append({"section": "WATCHLIST", "key": "none", "value": "No watchlist assets."})
 
+    if not signal_exit_calendar.empty:
+        for _, row in signal_exit_calendar.iterrows():
+            dashboard_rows.append(
+                {
+                    "section": "SIGNAL EXIT CALENDAR",
+                    "key": str(row.get("asset")),
+                    "value": f"planned_exit_date={row.get('planned_exit_date')} | days_to_exit={row.get('days_to_exit')} | status={row.get('status')}",
+                }
+            )
+    else:
+        dashboard_rows.append(
+            {
+                "section": "SIGNAL EXIT CALENDAR",
+                "key": "none",
+                "value": "No open signal exits scheduled.",
+            }
+        )
+
+    if not research_score_leaders.empty:
+        for _, row in research_score_leaders.iterrows():
+            dashboard_rows.append(
+                {
+                    "section": "RESEARCH SCORE LEADERS",
+                    "key": str(row.get("asset")),
+                    "value": f"research_score={row.get('research_score')} | status={row.get('status')} | recommendation={row.get('recommendation')} | expected_value_pct={row.get('expected_value_pct')} | profit_factor={row.get('profit_factor')}",
+                }
+            )
+    else:
+        dashboard_rows.append(
+            {
+                "section": "RESEARCH SCORE LEADERS",
+                "key": "none",
+                "value": "No research score available.",
+            }
+        )
+
+    dashboard_rows.append({"section": "RESEARCH VALIDATION", "key": "status", "value": research_validation_status})
+
     dashboard_rows.append({"section": "PROCESS NOTE", "key": "note", "value": "Research only. No automatic trades."})
 
     dashboard = pd.DataFrame(dashboard_rows)
@@ -183,6 +252,36 @@ def render_markdown(dashboard: pd.DataFrame, final_decision: str) -> str:
     lines.append("")
     for _, row in dashboard[dashboard["section"] == "WATCHLIST"].iterrows():
         lines.append(f"- {row['key']}: {row['value']}")
+    lines.append("")
+
+    lines.append("## SIGNAL EXIT CALENDAR")
+    lines.append("")
+    signal_exit_rows = dashboard[dashboard["section"] == "SIGNAL EXIT CALENDAR"]
+    if signal_exit_rows.empty or (len(signal_exit_rows) == 1 and signal_exit_rows.iloc[0]["value"] == "No open signal exits scheduled."):
+        lines.append("No open signal exits scheduled.")
+    else:
+        for _, row in signal_exit_rows.iterrows():
+            lines.append(f"- {row['key']}: {row['value']}")
+    lines.append("")
+
+    lines.append("## RESEARCH SCORE LEADERS")
+    lines.append("")
+    research_score_rows = dashboard[dashboard["section"] == "RESEARCH SCORE LEADERS"]
+    if research_score_rows.empty or (len(research_score_rows) == 1 and research_score_rows.iloc[0]["value"] == "No research score available."):
+        lines.append("No research score available.")
+    else:
+        for _, row in research_score_rows.iterrows():
+            lines.append(f"- {row['key']}: {row['value']}")
+    lines.append("")
+
+    lines.append("## RESEARCH VALIDATION")
+    lines.append("")
+    validation_rows = dashboard[dashboard["section"] == "RESEARCH VALIDATION"]
+    if validation_rows.empty:
+        lines.append("No research validation available.")
+    else:
+        for _, row in validation_rows.iterrows():
+            lines.append(f"- {row['value']}")
     lines.append("")
 
     lines.append("## PROCESS NOTE")
