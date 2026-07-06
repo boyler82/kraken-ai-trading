@@ -69,6 +69,16 @@ def init_db() -> None:
             )
             """
         )
+        existing_columns = {
+            row[1] for row in conn.execute("PRAGMA table_info(signals)").fetchall()
+        }
+        for column, ddl in [
+            ("episode_start_date", "TEXT"),
+            ("last_seen_date", "TEXT"),
+            ("days_in_episode", "INTEGER"),
+        ]:
+            if column not in existing_columns:
+                conn.execute(f"ALTER TABLE signals ADD COLUMN {column} {ddl}")
         conn.commit()
 
 
@@ -93,11 +103,12 @@ def _to_float(value: Any) -> float | None:
 
 
 def _planned_exit_date(date_text: str, hold_days: Any) -> str | None:
-    if pd.isna(hold_days):
-        return None
     try:
         dt = datetime.strptime(date_text, "%Y-%m-%d").date()
-        exit_dt = dt + timedelta(days=int(float(hold_days)))
+        if pd.isna(hold_days):
+            exit_dt = dt + timedelta(days=3)
+        else:
+            exit_dt = dt + timedelta(days=int(float(hold_days)))
         return exit_dt.isoformat()
     except (TypeError, ValueError):
         return None
@@ -110,25 +121,144 @@ def _episode_start_text(value: Any) -> str | None:
     return text or None
 
 
-def open_signal_exists(
+def _phase_day(current_phase: str) -> int | None:
+    if current_phase.startswith("OVERSOLD_DAY_"):
+        try:
+            return int(current_phase.replace("OVERSOLD_DAY_", ""))
+        except ValueError:
+            return None
+    return None
+
+
+def _existing_planned_exit_date(conn: sqlite3.Connection, signal_id: str) -> str | None:
+    row = conn.execute(
+        """
+        SELECT planned_exit_date
+        FROM signals
+        WHERE signal_id = ?
+        """,
+        (signal_id,),
+    ).fetchone()
+    if row is None:
+        return None
+    value = row[0]
+    if value is None:
+        return None
+    text = str(value).strip()
+    return text or None
+
+
+def _open_signal_row(
     conn: sqlite3.Connection,
     asset: str,
     recommendation: str,
-    current_phase: str,
-) -> bool:
-    cur = conn.execute(
+):
+    return conn.execute(
         """
-        SELECT 1
+        SELECT signal_id, episode_start_date, current_phase, days_in_episode, status
         FROM signals
         WHERE asset = ?
           AND recommendation = ?
-          AND current_phase = ?
           AND status = 'OPEN'
         LIMIT 1
         """,
-        (asset, recommendation, current_phase),
+        (asset, recommendation),
     )
-    return cur.fetchone() is not None
+
+
+def _upsert_episode_signal(
+    conn: sqlite3.Connection,
+    *,
+    run_date: str,
+    now: str,
+    asset: str,
+    recommendation: str,
+    bucket: str,
+    current_phase: str,
+    episode_start_date: str,
+    planned_exit_date: str | None,
+    entry_day: float | None,
+    hold_days: float | None,
+    entry_price: float | None,
+    expected_value_pct: float | None,
+    profit_factor: float | None,
+    win_rate_pct: float | None,
+    quality_score: float | None,
+    confidence_score: float | None,
+    opportunity_score: float | None,
+) -> bool:
+    existing = _open_signal_row(conn, asset, recommendation)
+    row = existing.fetchone()
+
+    if row:
+        signal_id = row[0]
+        conn.execute(
+            """
+            UPDATE signals
+            SET updated_at = ?,
+                notes = CASE
+                    WHEN notes IS NULL OR TRIM(notes) = '' THEN notes
+                    ELSE notes
+                END
+            WHERE signal_id = ?
+            """,
+            (now, signal_id),
+        )
+        return False
+
+    signal_id = f"{asset}_{episode_start_date}_{recommendation}"
+    current_day = _phase_day(current_phase)
+    conn.execute(
+        """
+        INSERT INTO signals (
+            signal_id, date, asset, recommendation, bucket, current_phase,
+            episode_start_date, last_seen_date, days_in_episode,
+            entry_day, hold_days, entry_price, planned_exit_date,
+            expected_value_pct, profit_factor, win_rate_pct, quality_score,
+            confidence_score, opportunity_score, status, executed,
+            paper_trade, close_price, real_return_pct, notes,
+            created_at, updated_at
+        ) VALUES (
+            ?, ?, ?, ?, ?, ?,
+            ?, ?, ?,
+            ?, ?, ?, ?,
+            ?, ?, ?, ?,
+            ?, ?, ?, ?,
+            ?, ?, ?, ?,
+            ?, ?
+        )
+        """,
+        (
+            signal_id,
+            run_date,
+            asset,
+            recommendation,
+            bucket,
+            current_phase,
+            episode_start_date,
+            run_date,
+            current_day,
+            entry_day,
+            hold_days,
+            entry_price,
+            planned_exit_date,
+            expected_value_pct,
+            profit_factor,
+            win_rate_pct,
+            quality_score,
+            confidence_score,
+            opportunity_score,
+            "CLOSED" if current_phase == "NO_OVERSOLD" else "OPEN",
+            0,
+            1,
+            None,
+            None,
+            "",
+            now,
+            now,
+        ),
+    )
+    return True
 
 
 def record_signals_from_ranking(conn: sqlite3.Connection, ranking_path: Path) -> int:
@@ -145,69 +275,97 @@ def record_signals_from_ranking(conn: sqlite3.Connection, ranking_path: Path) ->
         asset = str(row.get("asset", "")).strip()
         current_phase = str(row.get("current_phase", "")).strip()
         episode_start_date = _episode_start_text(row.get("episode_start_date"))
-        if episode_start_date:
-            signal_id = f"{asset}_{episode_start_date}_{recommendation}_{current_phase}"
-        else:
-            signal_id = f"{asset}_{current_phase}_{recommendation}"
-        planned_exit_date = _planned_exit_date(run_date, row.get("hold_days"))
-        status = "OPEN"
-
-        if episode_start_date:
-            cur = conn.execute("SELECT 1 FROM signals WHERE signal_id = ?", (signal_id,))
-            if cur.fetchone():
-                continue
-        elif open_signal_exists(conn, asset, recommendation, current_phase):
-            continue
-
-        conn.execute(
-            """
-            INSERT INTO signals (
-                signal_id, date, asset, recommendation, bucket, current_phase,
-                entry_day, hold_days, entry_price, planned_exit_date,
-                expected_value_pct, profit_factor, win_rate_pct, quality_score,
-                confidence_score, opportunity_score, status, executed,
-                paper_trade, close_price, real_return_pct, notes,
-                created_at, updated_at
-            ) VALUES (
-                ?, ?, ?, ?, ?, ?,
-                ?, ?, ?, ?,
-                ?, ?, ?, ?,
-                ?, ?, ?, ?,
-                ?, ?, ?, ?,
-                ?, ?
-            )
-            """,
-            (
-                signal_id,
-                run_date,
-                asset,
-                recommendation,
-                str(row.get("bucket", "")).strip(),
-                current_phase,
-                _to_float(row.get("entry_day")),
-                _to_float(row.get("hold_days")),
-                _to_float(row.get("entry_price", row.get("close"))),
-                planned_exit_date,
-                _to_float(row.get("expected_value_pct")),
-                _to_float(row.get("profit_factor")),
-                _to_float(row.get("win_rate_pct")),
-                _to_float(row.get("quality_score")),
-                _to_float(row.get("confidence_score")),
-                _to_float(row.get("opportunity_score")),
-                status,
-                0,
-                1,
-                None,
-                None,
-                "",
-                now,
-                now,
-            ),
+        if not episode_start_date:
+            episode_start_date = run_date
+        bucket = str(row.get("bucket", "")).strip()
+        hold_days = _to_float(row.get("hold_days"))
+        planned_exit_date = _planned_exit_date(run_date, hold_days)
+        inserted = _upsert_episode_signal(
+            conn,
+            run_date=run_date,
+            now=now,
+            asset=asset,
+            recommendation=recommendation,
+            bucket=bucket,
+            current_phase=current_phase,
+            episode_start_date=episode_start_date,
+            planned_exit_date=planned_exit_date,
+            entry_day=_to_float(row.get("entry_day")),
+            hold_days=hold_days,
+            entry_price=_to_float(row.get("entry_price", row.get("close"))),
+            expected_value_pct=_to_float(row.get("expected_value_pct")),
+            profit_factor=_to_float(row.get("profit_factor")),
+            win_rate_pct=_to_float(row.get("win_rate_pct")),
+            quality_score=_to_float(row.get("quality_score")),
+            confidence_score=_to_float(row.get("confidence_score")),
+            opportunity_score=_to_float(row.get("opportunity_score")),
         )
-        added += 1
+        if inserted:
+            added += 1
 
     conn.commit()
     return added
+
+
+def migrate_open_signals_missing_exit_date(conn: sqlite3.Connection) -> int:
+    rows = conn.execute(
+        """
+        SELECT signal_id, date, notes
+        FROM signals
+        WHERE status = 'OPEN'
+          AND planned_exit_date IS NULL
+        """
+    ).fetchall()
+
+    changed = 0
+    for signal_id, date_text, notes in rows:
+        try:
+            existing_planned_exit = _existing_planned_exit_date(conn, signal_id)
+            if existing_planned_exit:
+                continue
+            planned_exit_date = (
+                datetime.strptime(date_text, "%Y-%m-%d").date() + timedelta(days=3)
+            ).isoformat()
+        except (TypeError, ValueError):
+            continue
+
+        new_notes = (notes or "").strip()
+        if new_notes:
+            new_notes += "; fallback planned_exit_date migration"
+        else:
+            new_notes = "fallback planned_exit_date migration"
+
+        conn.execute(
+            """
+            UPDATE signals
+            SET planned_exit_date = ?,
+                notes = ?,
+                updated_at = ?
+            WHERE signal_id = ?
+            """,
+            (planned_exit_date, new_notes, datetime.utcnow().isoformat(timespec="seconds"), signal_id),
+        )
+        changed += 1
+
+    conn.commit()
+    return changed
+
+
+def print_open_signals(conn: sqlite3.Connection, label: str) -> None:
+    print(f"{label}:")
+    rows = conn.execute(
+        """
+        SELECT asset, date, planned_exit_date, status
+        FROM signals
+        WHERE status = 'OPEN'
+        ORDER BY asset, date
+        """
+    ).fetchall()
+    if not rows:
+        print("(none)")
+        return
+    for asset, date_text, planned_exit_date, status in rows:
+        print(f"{asset} | {date_text} | {planned_exit_date} | {status}")
 
 
 def close_expired_signals(conn: sqlite3.Connection) -> int:
@@ -257,7 +415,9 @@ def main() -> None:
     run_date = _parse_date_from_filename(ranking_path)
 
     with sqlite3.connect(DB_PATH) as conn:
+        print_open_signals(conn, "OPEN signals before")
         added = record_signals_from_ranking(conn, ranking_path)
+        migrated = migrate_open_signals_missing_exit_date(conn)
         close_expired_signals(conn)
 
         stats = conn.execute(
@@ -282,8 +442,10 @@ def main() -> None:
             portfolio_allocation_pct=None,
             notes=f"Source ranking: {ranking_path.name}",
         )
+        print_open_signals(conn, "OPEN signals after")
 
     print(f"signals added: {added}")
+    print(f"migrated open signals: {migrated}")
     print(f"open signals: {open_signals}")
     print("daily run recorded")
 
