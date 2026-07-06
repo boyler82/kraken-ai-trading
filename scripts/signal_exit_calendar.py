@@ -9,8 +9,9 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 DB_PATH = ROOT / "journal" / "project_memory.sqlite"
 REPORT_DIR = ROOT / "DAILY_REPORTS"
-TODAY = pd.Timestamp.today().normalize()
-TODAY_TEXT = TODAY.strftime("%Y-%m-%d")
+REPORT_DATE = pd.Timestamp.today().date()
+REPORT_DATE_TS = pd.Timestamp(REPORT_DATE).normalize()
+TODAY_TEXT = REPORT_DATE_TS.strftime("%Y-%m-%d")
 OUT_CSV = REPORT_DIR / f"{TODAY_TEXT}_signal_exit_calendar.csv"
 OUT_MD = REPORT_DIR / f"{TODAY_TEXT}_signal_exit_calendar.md"
 
@@ -43,7 +44,7 @@ def _status_note(planned_exit_date: str | None) -> str:
         exit_date = pd.Timestamp(str(planned_exit_date)).normalize()
     except Exception:
         return "MISSING_EXIT_DATE"
-    if exit_date <= TODAY:
+    if exit_date <= REPORT_DATE_TS:
         return "READY_FOR_OUTCOME_CHECK"
     return "WAITING"
 
@@ -55,7 +56,7 @@ def _days_to_exit(planned_exit_date: str | None) -> int | None:
         exit_date = pd.Timestamp(str(planned_exit_date)).normalize()
     except Exception:
         return None
-    return int((exit_date - TODAY).days)
+    return int((exit_date - REPORT_DATE_TS).days)
 
 
 def build_calendar() -> pd.DataFrame:
