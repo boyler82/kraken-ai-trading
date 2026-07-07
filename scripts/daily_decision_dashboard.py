@@ -14,16 +14,23 @@ def _latest(pattern: str) -> Path | None:
     return files[-1] if files else None
 
 
+def _today_path(suffix: str) -> Path:
+    return REPORT_DIR / f"{TODAY}_{suffix}"
+
+
 def _load_csv(pattern: str) -> pd.DataFrame:
-    path = _latest(pattern)
-    if path is None:
+    path = _today_path(pattern.replace("*_", ""))
+    if not path.exists():
         return pd.DataFrame()
-    return pd.read_csv(path)
+    try:
+        return pd.read_csv(path)
+    except Exception:
+        return pd.DataFrame()
 
 
 def _load_md(pattern: str) -> str:
-    path = _latest(pattern)
-    if path is None:
+    path = _today_path(pattern.replace("*_", ""))
+    if not path.exists():
         return ""
     return path.read_text()
 
@@ -68,6 +75,22 @@ def _signal_exit_calendar() -> pd.DataFrame:
     return df.head(5).copy()
 
 
+def _realized_trades_summary() -> tuple[int, float, float, int] | None:
+    df = _load_csv("*_realized_trades.csv")
+    if df.empty:
+        return None
+
+    trades_count = len(df)
+    total_proceeds = pd.to_numeric(df.get("proceeds"), errors="coerce").fillna(0).sum() if "proceeds" in df.columns else 0.0
+    total_realized_pnl = pd.to_numeric(df.get("realized_pnl"), errors="coerce").fillna(0).sum() if "realized_pnl" in df.columns else 0.0
+    fx_required_count = 0
+    if "status" in df.columns:
+        fx_required_count = df["status"].astype(str).str.contains("FX_REQUIRED", na=False).sum()
+    elif "notes" in df.columns:
+        fx_required_count = df["notes"].astype(str).str.contains("FX_REQUIRED", na=False).sum()
+    return trades_count, float(total_proceeds), float(total_realized_pnl), int(fx_required_count)
+
+
 def _research_score_leaders() -> pd.DataFrame:
     df = _load_csv("*_research_score.csv")
     if df.empty:
@@ -95,6 +118,7 @@ def build_dashboard() -> tuple[pd.DataFrame, str]:
     position_manager = _load_csv("*_position_manager.csv")
     exit_planner = _load_csv("*_exit_planner.csv")
     signal_exit_calendar = _signal_exit_calendar()
+    realized_trades_summary = _realized_trades_summary()
     research_score_leaders = _research_score_leaders()
     research_validation_status = _research_validation_status()
 
@@ -123,7 +147,7 @@ def build_dashboard() -> tuple[pd.DataFrame, str]:
                 }
             )
     else:
-        dashboard_rows.append({"section": "CURRENT POSITION", "key": "none", "value": "No current positions."})
+        dashboard_rows.append({"section": "CURRENT POSITION", "key": "none", "value": "No open positions"})
 
     if not top_crypto.empty:
         for _, row in top_crypto.iterrows():
@@ -176,7 +200,25 @@ def build_dashboard() -> tuple[pd.DataFrame, str]:
             {
                 "section": "SIGNAL EXIT CALENDAR",
                 "key": "none",
-                "value": "No open signal exits scheduled.",
+                "value": "No open positions",
+            }
+        )
+
+    if realized_trades_summary is None:
+        dashboard_rows.append(
+            {
+                "section": "REALIZED TRADES",
+                "key": "none",
+                "value": "No realized trades recorded.",
+            }
+        )
+    else:
+        trades_count, total_proceeds, total_realized_pnl, fx_required_count = realized_trades_summary
+        dashboard_rows.append(
+            {
+                "section": "REALIZED TRADES",
+                "key": "summary",
+                "value": f"trades_count={trades_count} | total_proceeds={total_proceeds} | total_realized_pnl={total_realized_pnl} | FX_REQUIRED_trades_count={fx_required_count}",
             }
         )
 
@@ -262,6 +304,16 @@ def render_markdown(dashboard: pd.DataFrame, final_decision: str) -> str:
     else:
         for _, row in signal_exit_rows.iterrows():
             lines.append(f"- {row['key']}: {row['value']}")
+    lines.append("")
+
+    lines.append("## REALIZED TRADES")
+    lines.append("")
+    realized_rows = dashboard[dashboard["section"] == "REALIZED TRADES"]
+    if realized_rows.empty or (len(realized_rows) == 1 and realized_rows.iloc[0]["value"] == "No realized trades recorded."):
+        lines.append("No realized trades recorded.")
+    else:
+        for _, row in realized_rows.iterrows():
+            lines.append(f"- {row['value']}")
     lines.append("")
 
     lines.append("## RESEARCH SCORE LEADERS")
