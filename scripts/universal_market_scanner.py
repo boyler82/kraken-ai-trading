@@ -72,6 +72,14 @@ def _load_asset_frame(path_text: str) -> pd.DataFrame | None:
 
 def _build_row(asset: str, df: pd.DataFrame) -> dict:
     last = df.iloc[-1]
+    last_data_date = pd.Timestamp(last["date"]).normalize()
+    report_date = pd.Timestamp(TODAY).normalize()
+    data_age_days = int((report_date - last_data_date).days)
+    if data_age_days <= 2:
+        data_freshness_status = "FRESH"
+    else:
+        data_freshness_status = "STALE"
+
     close = _to_float(last["close"])
     rsi2 = _to_float(last["rsi2"])
     ma20 = _to_float(last["ma20"])
@@ -124,10 +132,21 @@ def _build_row(asset: str, df: pd.DataFrame) -> dict:
         reason = "No statistical setup"
         next_action = "wait"
 
+    asset_class = _asset_class(asset)
+    if asset_class in {"etf", "stock"} and data_freshness_status == "STALE":
+        recommendation = "STALE_DATA"
+        opportunity_score = 0
+        confidence_score = 0
+        next_action = "refresh external market data"
+        reason = "stale external market data"
+
     return {
         "asset": asset,
-        "asset_class": _asset_class(asset),
+        "asset_class": asset_class,
         "date": str(last["date"].date()),
+        "last_data_date": last_data_date.strftime("%Y-%m-%d"),
+        "data_age_days": data_age_days,
+        "data_freshness_status": data_freshness_status,
         "close": round(close, 8) if close is not None else None,
         "rsi2": round(rsi2, 4) if rsi2 is not None else None,
         "ma20": round(ma20, 8) if ma20 is not None else None,
@@ -167,6 +186,9 @@ def build_market_scanner() -> pd.DataFrame:
             "asset",
             "asset_class",
             "date",
+            "last_data_date",
+            "data_age_days",
+            "data_freshness_status",
             "close",
             "rsi2",
             "ma20",
@@ -208,6 +230,9 @@ def render_report(report: pd.DataFrame) -> str:
             lines.append(f"- Asset class: {row['asset_class']}")
             lines.append(f"- Recommendation: {row['recommendation']}")
             lines.append(f"- Phase: {row['current_phase']}")
+            lines.append(f"- Last data date: {row['last_data_date']}")
+            lines.append(f"- Data age days: {row['data_age_days']}")
+            lines.append(f"- Data freshness status: {row['data_freshness_status']}")
             lines.append(f"- Close: {row['close']}")
             lines.append(f"- RSI2: {row['rsi2']}")
             lines.append(f"- MA20: {row['ma20']}")
@@ -227,7 +252,7 @@ def render_report(report: pd.DataFrame) -> str:
     else:
         for _, row in report.iterrows():
             lines.append(
-                f"- #{int(row['rank'])} {row['asset']} | {row['asset_class']} | {row['recommendation']} | Opp {row['opportunity_score']} | Conf {row['confidence_score']} | Close {row['close']} | ATR {row['atr_pct']} | Bias {row['market_bias']} | Dist {row['distance_to_signal']} | Reason {row['reason']} | Next {row['next_action']}"
+                f"- #{int(row['rank'])} {row['asset']} | {row['asset_class']} | {row['recommendation']} | Opp {row['opportunity_score']} | Conf {row['confidence_score']} | Close {row['close']} | Data age {row['data_age_days']} | Freshness {row['data_freshness_status']} | ATR {row['atr_pct']} | Bias {row['market_bias']} | Dist {row['distance_to_signal']} | Reason {row['reason']} | Next {row['next_action']}"
             )
 
     lines.append("")
