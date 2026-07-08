@@ -4,6 +4,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from lib.trading_costs import default_fee_pct
+
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT_CSV = ROOT / "journal" / "realized_trades.csv"
@@ -27,6 +29,7 @@ OUTPUT_COLUMNS = [
     "realized_pnl",
     "realized_pnl_pct",
     "fees",
+    "estimated_fee",
     "notes",
 ]
 
@@ -80,6 +83,7 @@ def _load_trades() -> pd.DataFrame:
     df["realized_pnl"] = df["realized_pnl"].apply(_to_float)
     df["realized_pnl_pct"] = df["realized_pnl_pct"].apply(_to_float)
     df["fees"] = df["fees"].apply(_to_float)
+    df["estimated_fee"] = df["estimated_fee"].apply(_to_float)
     df["notes"] = df["notes"].apply(_normalize_text)
     return df
 
@@ -91,10 +95,38 @@ def _status_for_row(row: pd.Series) -> str:
     return "REALIZED"
 
 
+def _estimated_fee_for_row(row: pd.Series) -> float | None:
+    proceeds = row.get("proceeds")
+    if proceeds is None or pd.isna(proceeds):
+        return None
+    return float(proceeds) * default_fee_pct() / 100.0
+
+
+def _resolved_fee_for_row(row: pd.Series) -> float | None:
+    fees = row.get("fees")
+    if fees not in (None, 0) and not pd.isna(fees):
+        return float(fees)
+    if row.get("status") == "FX_REQUIRED":
+        return None
+    return _estimated_fee_for_row(row)
+
+
+def _round_4(value: float | None) -> float | None:
+    if value is None or pd.isna(value):
+        return None
+    return round(float(value), 4)
+
+
 def _display_value(value) -> str:
     if value is None or pd.isna(value):
         return ""
     return str(value)
+
+
+def _display_4dp(value) -> str:
+    if value is None or pd.isna(value):
+        return ""
+    return f"{float(value):.4f}".rstrip("0").rstrip(".")
 
 
 def build_report() -> pd.DataFrame:
@@ -104,6 +136,11 @@ def build_report() -> pd.DataFrame:
 
     report = trades.copy()
     report["status"] = report.apply(_status_for_row, axis=1)
+    report["estimated_fee"] = report.apply(_estimated_fee_for_row, axis=1).apply(_round_4)
+    report["fees"] = report.apply(_resolved_fee_for_row, axis=1)
+    fx_mask = report["status"] == "FX_REQUIRED"
+    report.loc[fx_mask, "realized_pnl"] = None
+    report.loc[fx_mask, "realized_pnl_pct"] = None
     report = report.sort_values(["date", "asset", "side"], ascending=[False, True, True], na_position="last").reset_index(drop=True)
     return report[OUTPUT_COLUMNS + ["status"]]
 
@@ -122,6 +159,7 @@ def render_markdown(report: pd.DataFrame) -> str:
         lines.append("- Total realized P/L: 0")
         lines.append("- Total proceeds: 0")
         lines.append("- Trades count: 0")
+        lines.append("- Total estimated fee: 0")
         lines.append("")
         lines.append("## Per Asset Realized P/L")
         lines.append("")
@@ -132,11 +170,14 @@ def render_markdown(report: pd.DataFrame) -> str:
     proceeds = pd.to_numeric(report["proceeds"], errors="coerce")
     total_realized_pnl = realized_pnl.fillna(0).sum()
     total_proceeds = proceeds.fillna(0).sum()
+    estimated_fee = pd.to_numeric(report["estimated_fee"], errors="coerce")
+    total_estimated_fee = round(estimated_fee.fillna(0).sum(), 4)
     trades_count = len(report)
 
     lines.append(f"- Total realized P/L: {total_realized_pnl}")
     lines.append(f"- Total proceeds: {total_proceeds}")
     lines.append(f"- Trades count: {trades_count}")
+    lines.append(f"- Total estimated fee: {_display_4dp(total_estimated_fee)}")
     lines.append("")
     lines.append("## Per Asset Realized P/L")
     lines.append("")
@@ -158,7 +199,7 @@ def render_markdown(report: pd.DataFrame) -> str:
     lines.append("")
     for _, row in report.iterrows():
         lines.append(
-            f"- {row['date']} | {row['asset']} | {row['side']} | qty {_display_value(row['quantity'])} | entry {_display_value(row['entry_price'])} | exit {_display_value(row['exit_price'])} | cost_basis {_display_value(row['cost_basis'])} | currency {_display_value(row['currency'])} | proceeds {_display_value(row['proceeds'])} | realized_pnl {_display_value(row['realized_pnl'])} | realized_pnl_pct {_display_value(row['realized_pnl_pct'])} | fees {_display_value(row['fees'])} | status {row['status']} | notes {_display_value(row['notes'])}"
+            f"- {row['date']} | {row['asset']} | {row['side']} | qty {_display_value(row['quantity'])} | entry {_display_value(row['entry_price'])} | exit {_display_value(row['exit_price'])} | cost_basis {_display_value(row['cost_basis'])} | currency {_display_value(row['currency'])} | proceeds {_display_value(row['proceeds'])} | realized_pnl {_display_value(row['realized_pnl'])} | realized_pnl_pct {_display_value(row['realized_pnl_pct'])} | fees {_display_value(row['fees'])} | estimated_fee {_display_4dp(row['estimated_fee'])} | status {row['status']} | notes {_display_value(row['notes'])}"
         )
 
     lines.append("")

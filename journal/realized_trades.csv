@@ -1,2 +1,3 @@
 date,asset,side,quantity,entry_price,exit_price,cost_basis,currency,proceeds,realized_pnl,realized_pnl_pct,fees,notes
 2026-07-06,BTC,SELL,0.05660725,53005.58,63000,3000.50,USD,3566.26,,,0,"partial BTC sale, FX not normalized"
+2026-07-07,BTC,SELL,0.05660725,53005.58,63800,3000.50,USD,3611.54,,,,"final BTC exit, FX not normalized"
