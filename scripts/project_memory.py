@@ -89,6 +89,24 @@ def latest_ranking_file() -> Path:
     return files[-1]
 
 
+def _load_latest_ranking_close_map(ranking_path: Path | None = None) -> dict[str, tuple[float | None, str | None]]:
+    path = ranking_path or latest_ranking_file()
+    close_map: dict[str, tuple[float | None, str | None]] = {}
+    with path.open(newline="") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            asset = str(row.get("asset", "")).strip().upper()
+            close_text = str(row.get("close", "")).strip()
+            if not asset:
+                continue
+            try:
+                close_value = float(close_text)
+            except (TypeError, ValueError):
+                continue
+            close_map[asset] = (close_value, close_text or None)
+    return close_map
+
+
 def _parse_date_from_filename(path: Path) -> str:
     return path.name.split("_crypto_opportunity_ranking.csv")[0]
 
@@ -146,6 +164,44 @@ def _existing_planned_exit_date(conn: sqlite3.Connection, signal_id: str) -> str
         return None
     text = str(value).strip()
     return text or None
+
+
+def _decimal_places(value_text: str | None) -> int | None:
+    if value_text is None:
+        return None
+    text = value_text.strip()
+    if not text:
+        return None
+    if "e" in text.lower():
+        try:
+            decimal_value = f"{float(text):f}"
+        except (TypeError, ValueError):
+            return None
+        text = decimal_value
+    if "." not in text:
+        return 0
+    return len(text.split(".", 1)[1].rstrip("0"))
+
+
+def _is_suspiciously_rounded(entry_price: Any, close_text: str | None, close_value: float | None) -> bool:
+    if entry_price is None or pd.isna(entry_price) or close_value is None:
+        return False
+    try:
+        entry_float = float(entry_price)
+    except (TypeError, ValueError):
+        return False
+
+    if abs(entry_float - close_value) > max(1e-12, abs(close_value) * 1e-8):
+        return True
+
+    entry_text = str(entry_price).strip()
+    if _decimal_places(entry_text) is not None and _decimal_places(entry_text) <= 2:
+        return True
+
+    if close_text is not None and (_decimal_places(close_text) or 0) > (_decimal_places(entry_text) or 0):
+        return True
+
+    return False
 
 
 def _open_signal_row(
@@ -351,6 +407,46 @@ def migrate_open_signals_missing_exit_date(conn: sqlite3.Connection) -> int:
     return changed
 
 
+def migrate_open_signals_entry_price(conn: sqlite3.Connection, ranking_path: Path | None = None) -> int:
+    close_map = _load_latest_ranking_close_map(ranking_path)
+    if not close_map:
+        return 0
+
+    rows = conn.execute(
+        """
+        SELECT signal_id, asset, entry_price, planned_exit_date
+        FROM signals
+        WHERE status = 'OPEN'
+        """
+    ).fetchall()
+
+    changed = 0
+    now = datetime.utcnow().isoformat(timespec="seconds")
+    for signal_id, asset, entry_price, planned_exit_date in rows:
+        asset_key = str(asset or "").strip().upper()
+        if not asset_key:
+            continue
+        close_value, close_text = close_map.get(asset_key, (None, None))
+        if close_value is None:
+            continue
+        if not _is_suspiciously_rounded(entry_price, close_text, close_value):
+            continue
+
+        conn.execute(
+            """
+            UPDATE signals
+            SET entry_price = ?,
+                updated_at = ?
+            WHERE signal_id = ?
+            """,
+            (float(close_value), now, signal_id),
+        )
+        changed += 1
+
+    conn.commit()
+    return changed
+
+
 def print_open_signals(conn: sqlite3.Connection, label: str) -> None:
     print(f"{label}:")
     rows = conn.execute(
@@ -418,6 +514,7 @@ def main() -> None:
         print_open_signals(conn, "OPEN signals before")
         added = record_signals_from_ranking(conn, ranking_path)
         migrated = migrate_open_signals_missing_exit_date(conn)
+        price_migrated = migrate_open_signals_entry_price(conn, ranking_path)
         close_expired_signals(conn)
 
         stats = conn.execute(
@@ -446,6 +543,7 @@ def main() -> None:
 
     print(f"signals added: {added}")
     print(f"migrated open signals: {migrated}")
+    print(f"migrated open signal entry prices: {price_migrated}")
     print(f"open signals: {open_signals}")
     print("daily run recorded")
 

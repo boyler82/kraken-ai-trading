@@ -6,6 +6,8 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT / "scripts"))
 
+from lib.data_loader import load_ohlc
+
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 
 EPISODE_STATUS = f"DAILY_REPORTS/{TODAY}_rsi2_episode_status.csv"
@@ -24,6 +26,40 @@ def latest_episode_status():
     if not files:
         raise FileNotFoundError("No RSI2 episode status files found.")
     return files[-1]
+
+
+def latest_close_map() -> dict[str, object]:
+    files = {
+        "BTC": "DATASETS/market_raw/BTCUSD_D1.json",
+        "ETH": "DATASETS/market_raw/ETHUSD_D1.json",
+        "SOL": "DATASETS/market_raw/SOLUSD_D1.json",
+        "XRP": "DATASETS/market_raw/XRPUSD_D1.json",
+        "ADA": "DATASETS/market_raw/ADAUSD_D1.json",
+        "LINK": "DATASETS/market_raw/LINKUSD_D1.json",
+        "DOGE": "DATASETS/market_raw/DOGEUSD_D1.json",
+        "AVAX": "DATASETS/market_raw/AVAXUSD_D1.json",
+        "LTC": "DATASETS/market_raw/LTCUSD_D1.json",
+        "SPY": "DATASETS/market_raw/SPYx_USD_D1.json",
+        "QQQ": "DATASETS/market_raw/QQQx_USD_D1.json",
+        "GLD": "DATASETS/market_raw/GLDx_USD_D1.json",
+        "NVDA": "DATASETS/market_raw/NVDAx_USD_D1.json",
+        "TSLA": "DATASETS/market_raw/TSLAx_USD_D1.json",
+    }
+    closes: dict[str, object] = {}
+    for asset, path_text in files.items():
+        path = ROOT / path_text
+        if asset == "TSLA" and not path.exists():
+            continue
+        if not path.exists():
+            continue
+        df = load_ohlc(path)
+        if df.empty:
+            continue
+        try:
+            closes[asset] = float(df.iloc[-1]["close"])
+        except (TypeError, ValueError):
+            closes[asset] = None
+    return closes
 
 
 def classify_bucket(row):
@@ -220,6 +256,7 @@ def recommendation(row):
 def build_ranking():
     status = pd.read_csv(latest_episode_status())
     edge = pd.read_csv(BEST_EDGE)
+    close_map = latest_close_map()
 
     df = status.merge(edge, on="asset", how="left")
 
@@ -241,6 +278,7 @@ def build_ranking():
     df["confidence_score"] = df.apply(confidence_score, axis=1)
     df["opportunity_score"] = df.apply(opportunity_score, axis=1)
     df["recommendation"] = df.apply(recommendation, axis=1)
+    df["close_exact"] = df["asset"].map(close_map)
 
     bucket_order = {
         "ACTIVE_OPPORTUNITY": 1,
@@ -285,7 +323,13 @@ def save_outputs(df):
         "current_oversold_duration",
     ]
 
-    df[columns].to_csv(OUT_CSV, index=False)
+    out_df = df[columns].copy()
+    if "close_exact" in df.columns:
+        out_df["close"] = df["close_exact"].values
+    out_df["close"] = out_df["close"].apply(
+        lambda value: f"{float(value):.8f}".rstrip("0").rstrip(".") if pd.notna(value) else value
+    )
+    out_df.to_csv(OUT_CSV, index=False)
 
     lines = [
         "# Crypto Opportunity Ranking",

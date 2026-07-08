@@ -77,6 +77,15 @@ def _now() -> str:
     return datetime.utcnow().isoformat(timespec="seconds")
 
 
+def _format_price(value: object) -> str:
+    if value is None or pd.isna(value):
+        return "None"
+    try:
+        return f"{float(value):.8f}".rstrip("0").rstrip(".")
+    except (TypeError, ValueError):
+        return str(value)
+
+
 def _outcome_exists(conn: sqlite3.Connection, signal_id: str) -> bool:
     cur = conn.execute("SELECT 1 FROM signal_outcomes WHERE signal_id = ? LIMIT 1", (signal_id,))
     return cur.fetchone() is not None
@@ -285,7 +294,7 @@ def run_engine() -> pd.DataFrame:
     else:
         for _, row in closed_rows.iterrows():
             md_lines.append(
-                f"- {row['asset']} | entry {row['entry_price']} | exit {row['exit_price']} | return {row['return_pct']}%"
+                f"- {row['asset']} | entry {_format_price(row['entry_price'])} | exit {_format_price(row['exit_price'])} | return {row['return_pct']}%"
             )
 
     if (report["note"].fillna("").astype(str).str.contains("planned_exit_date is NULL").any() if not report.empty else False):
