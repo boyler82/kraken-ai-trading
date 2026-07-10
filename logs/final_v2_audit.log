@@ -1,0 +1,536 @@
+Updating crypto market data...
+Downloading BTCUSD...
+Downloading BTCEUR...
+Downloading ETHUSD...
+Downloading SOLUSD...
+Downloading XRPUSD...
+Downloading LINKUSD...
+Downloading ADAUSD...
+Downloading AVAXUSD...
+Downloading DOGEUSD...
+Downloading LTCUSD...
+Crypto data update complete.
+
+RSI2 EDGE DATABASE
+
+asset  entry_day  hold_days  trades  win_rate_pct  avg_return_pct  median_return_pct  avg_win_pct  avg_loss_pct  profit_factor  expected_value_pct  worst_return_pct  best_return_pct  quality_score  payoff_ratio  loss_rate_pct  gross_profit_pct  gross_loss_pct  return_std_pct  downside_std_pct  sharpe_like  sortino_like  max_consecutive_losses  max_consecutive_wins
+  XRP          3         10      97         46.39            2.08              -0.83        12.84         -7.23           1.54                2.08            -22.14            73.73         132.67          1.78          53.61            577.97          375.84           15.93              5.74         0.13          0.36                     6.0                   4.0
+  XRP          2          8      97         46.39            1.62              -1.04        10.40         -5.98           1.50                1.62            -17.89            77.79         113.31          1.74          53.61            467.79          310.98           12.36              4.68         0.13          0.35                     7.0                   4.0
+  XRP          2          5      97         52.58            1.57               0.28         6.89         -4.33           1.76                1.57            -20.07            38.19         129.08          1.59          47.42            351.46          199.25            8.15              4.05         0.19          0.39                     4.0                   6.0
+  XRP          3          7      97         41.24            1.49              -0.90        11.28         -5.38           1.47                1.49            -19.87            79.67         105.58          2.10          58.76            451.40          306.73           12.47              4.56         0.12          0.33                     7.0                   4.0
+  XRP          3          4      97         52.58            1.46               0.61         6.85         -4.52           1.68                1.46            -20.62            39.65         122.97          1.52          47.42            349.47          208.00            8.49              3.82         0.17          0.38                     4.0                   6.0
+  LTC          2          3     108         61.11            1.41               1.26         4.85         -3.99           1.91                1.41            -13.60            33.82         129.28          1.22          38.89            320.27          167.47            6.32              3.23         0.22          0.44                     5.0                   8.0
+  ADA          2          5      98         48.98            1.39              -0.19         9.91         -6.80           1.40                1.39            -22.35            66.29         103.08          1.46          51.02            475.71          339.78           12.83              5.50         0.11          0.25                     6.0                   6.0
+ LINK          3         10     105         53.33            1.39               0.54        11.37        -10.02           1.30                1.39            -25.49            52.13         112.82          1.13          46.67            636.57          490.77           13.58              5.70         0.10          0.24                     5.0                  12.0
+ LINK          3          4     105         51.43            1.38               0.57         7.85         -5.47           1.52                1.38            -25.73            40.62         116.14          1.44          48.57            423.72          278.87            8.95              4.91         0.15          0.28                     5.0                   5.0
+  LTC          1          4     108         57.41            1.37               1.02         5.52         -4.23           1.76                1.37            -14.68            39.34         122.85          1.31          42.59            342.12          194.44            7.04              3.77         0.19          0.36                     5.0                  12.0
+  XRP          2          7      97         46.39            1.34              -0.25         9.12         -5.39           1.47                1.34            -15.26            92.92         101.62          1.69          53.61            410.47          280.12           12.36              4.35         0.11          0.31                     6.0                   5.0
+  XRP          2         10      97         49.48            1.32              -0.43        10.53         -7.70           1.34                1.32            -23.87            59.04          99.22          1.37          50.52            505.21          377.51           13.12              5.34         0.10          0.25                     6.0                   5.0
+  ADA          3          4      98         50.00            1.32              -0.00         9.21         -6.56           1.40                1.32            -24.82            75.65         100.91          1.40          50.00            451.13          321.63           12.72              5.23         0.10          0.25                     5.0                   6.0
+  XRP          2          9      97         48.45            1.31              -0.48        10.44         -7.27           1.35                1.31            -22.07            67.21          98.80          1.44          51.55            490.82          363.68           12.55              5.20         0.10          0.25                     6.0                   4.0
+ LINK          2          5     105         55.24            1.26               1.06         7.67         -6.65           1.42                1.26            -21.89            35.03         111.08          1.15          44.76            444.95          312.39            9.38              5.19         0.13          0.24                     4.0                   5.0
+  XRP          3          6      97         43.30            1.24              -0.97         9.73         -5.24           1.42                1.24            -15.40            94.96          95.29          1.86          56.70            408.73          288.39           12.69              4.19         0.10          0.30                     7.0                   4.0
+  XRP          3          9      97         48.45            1.20              -1.01        10.55         -7.60           1.31                1.20            -23.94            60.72          93.38          1.39          51.55            495.96          379.85           13.29              4.98         0.09          0.24                     6.0                   5.0
+  XRP          3          8      97         43.30            1.19              -0.95        11.28         -6.51           1.32                1.19            -22.14            68.98          91.57          1.73          56.70            473.88          358.03           12.76              5.22         0.09          0.23                     6.0                   3.0
+ LINK          3          9     105         46.67            1.18              -1.12        11.81         -8.11           1.27                1.18            -24.07            38.24          91.52          1.46          53.33            578.74          454.37           12.35              5.92         0.10          0.20                     6.0                   6.0
+  LTC          2         10     108         55.56            1.15               1.45         9.19         -8.91           1.29                1.15            -27.30            46.53         103.83          1.03          44.44            551.58          427.87           11.83              6.45         0.10          0.18                     7.0                   8.0
+
+Saved: BACKTESTS/rsi2_edge_database.csv
+
+RSI2 BEST EDGE SUMMARY
+
+asset  entry_day  hold_days  trades  win_rate_pct  avg_return_pct  median_return_pct  avg_win_pct  avg_loss_pct  profit_factor  expected_value_pct  worst_return_pct  best_return_pct  quality_score
+  XRP          3         10      97         46.39            2.08              -0.83        12.84         -7.23           1.54                2.08            -22.14            73.73        132.556
+  LTC          2          3     108         61.11            1.41               1.26         4.85         -3.99           1.91                1.41            -13.60            33.82        129.044
+ LINK          3          4     105         51.43            1.38               0.57         7.85         -5.47           1.52                1.38            -25.73            40.62        116.172
+  BTC          3          4      98         57.14            1.07               1.16         4.15         -3.10           1.83                1.07            -17.29            12.69        112.256
+  ADA          2          5      98         48.98            1.39              -0.19         9.91         -6.80           1.40                1.39            -22.35            66.29        103.192
+  ETH          2          9     105         53.33            0.90               0.79         8.83         -8.16           1.24                0.90            -26.78            43.43         92.132
+ DOGE          3          4     102         52.94            0.79               0.23         7.25         -6.47           1.26                0.79            -27.18            45.79         87.976
+  SOL          3          2      98         55.10            0.62               0.68         4.39         -4.00           1.34                0.62            -14.91            13.15         83.640
+
+Saved: BACKTESTS/rsi2_best_edge.csv
+
+CROSS ASSET RSI2 RESEARCH
+
+asset  signals  win_rate_pct  avg_return_pct  median_return_pct  worst_return_pct  best_return_pct  expectancy_pct
+  SPY       63         71.43            0.62               0.61             -2.56             4.19            0.62
+  BTC      210         60.48            0.55               0.78            -10.52            14.25            0.55
+ NVDA       88         55.68            0.49               0.56             -6.37             9.59            0.49
+  QQQ       67         59.70            0.48               0.48             -4.46             4.81            0.48
+  GLD       72         61.11            0.36               0.63             -9.95            12.92            0.36
+  ETH      209         55.50            0.32               0.52            -19.54            42.70            0.32
+
+Saved: BACKTESTS/cross_asset_rsi2_research.csv
+
+CROSS ASSET RSI2 REGIME ANALYSIS
+
+asset      regime  signals  win_rate_pct  avg_return_pct  median_return_pct  worst_return_pct  best_return_pct
+  BTC BELOW_MA200       96         61.46            0.52               0.65            -10.52            11.85
+  BTC ABOVE_MA200       61         59.02           -0.19               0.52             -9.46             6.31
+  ETH ABOVE_MA200       34         50.00            0.84              -0.17             -8.09            18.54
+  ETH BELOW_MA200      123         56.91            0.34               0.46            -19.54            42.70
+  GLD BELOW_MA200       17         52.94            0.16               0.22             -3.38             5.07
+  GLD ABOVE_MA200       16         50.00           -1.22              -0.16             -9.95             3.67
+ NVDA BELOW_MA200       14         85.71            2.50               2.42             -2.61             8.57
+ NVDA ABOVE_MA200       21         42.86           -0.59              -0.08             -6.37             9.59
+  QQQ ABOVE_MA200        9         66.67            0.95               1.64             -4.25             4.81
+  QQQ BELOW_MA200        7         57.14            0.19               0.62             -4.46             4.00
+  SPY ABOVE_MA200        8         87.50            0.90               0.78             -0.61             2.75
+  SPY BELOW_MA200       10         70.00            0.43               0.82             -2.56             4.19
+
+Saved: BACKTESTS/cross_asset_rsi2_regime_analysis.csv
+
+UNIVERSAL MARKET SCANNER
+
+ rank asset asset_class       date last_data_date  data_age_days data_freshness_status        close     rsi2         ma20        ma200  dist_ma20_pct  atr_pct market_bias current_phase recommendation  distance_to_signal                     reason                  next_action  opportunity_score  confidence_score
+    1   BTC      crypto 2026-07-10     2026-07-10              0                 FRESH 63794.500000 100.0000 61792.165000 74102.888000         3.2404   3.1390        BEAR     NO_SIGNAL      NO_ACTION             90.0000 Overbought / after rebound                         wait                  5                80
+    2   ETH      crypto 2026-07-10     2026-07-10              0                 FRESH  1789.730000 100.0000  1682.515000  2233.242650         6.3723   4.0179        BEAR     NO_SIGNAL      NO_ACTION             90.0000 Overbought / after rebound                         wait                  5                80
+    3   SOL      crypto 2026-07-10     2026-07-10              0                 FRESH    77.810000  55.0000    75.551000    92.202700         2.9900   4.7689        BEAR     NO_SIGNAL      NO_ACTION             45.0000       No statistical setup                         wait                  5                80
+    4   XRP      crypto 2026-07-10     2026-07-10              0                 FRESH     1.104610 100.0000     1.091922     1.458417         1.1619   3.9159        BEAR     NO_SIGNAL      NO_ACTION             90.0000 Overbought / after rebound                         wait                  5                80
+    5  LINK      crypto 2026-07-10     2026-07-10              0                 FRESH     7.906980 100.0000     7.630223     9.593269         3.6271   4.1471        BEAR     NO_SIGNAL      NO_ACTION             90.0000 Overbought / after rebound                         wait                  5                80
+    6  DOGE      crypto 2026-07-10     2026-07-10              0                 FRESH     0.074145 100.0000     0.075591     0.101559        -1.9129   4.2098        BEAR     NO_SIGNAL      NO_ACTION             90.0000 Overbought / after rebound                         wait                  5                80
+    7  AVAX      crypto 2026-07-10     2026-07-10              0                 FRESH     6.734000 100.0000     6.595750     9.497890         2.0960   4.5844        BEAR     NO_SIGNAL      NO_ACTION             90.0000 Overbought / after rebound                         wait                  5                80
+    8   LTC      crypto 2026-07-10     2026-07-10              0                 FRESH    44.610000 100.0000    43.342000    56.728100         2.9256   3.6251        BEAR     NO_SIGNAL      NO_ACTION             90.0000 Overbought / after rebound                         wait                  5                80
+    9   ADA      crypto 2026-07-10     2026-07-10              0                 FRESH     0.166875  46.6450     0.160937     0.263704         3.6894   6.5011        BEAR     NO_SIGNAL      NO_ACTION             36.6450       No statistical setup                         wait                  0                70
+   10   SPY         etf 2026-06-27     2026-06-27             13                 STALE   731.940000  19.5286   739.806000   697.872750        -1.0633   1.1289        BULL NEAR_OVERSOLD     STALE_DATA              9.5286 stale external market data refresh external market data                  0                 0
+   11   QQQ         etf 2026-06-27     2026-06-27             13                 STALE   707.940000  11.0506   723.027000   642.466000        -2.0866   2.1818        BULL NEAR_OVERSOLD     STALE_DATA              1.0506 stale external market data refresh external market data                  0                 0
+   12   GLD         etf 2026-06-27     2026-06-27             13                 STALE   373.980000  94.7674   384.131000   428.267300        -2.6426   2.0400        BEAR     NO_SIGNAL     STALE_DATA             84.7674 stale external market data refresh external market data                  0                 0
+   13  NVDA       stock 2026-06-27     2026-06-27             13                 STALE   193.200000  16.7488   204.429000   192.722050        -5.4929   2.3055        BULL NEAR_OVERSOLD     STALE_DATA              6.7488 stale external market data refresh external market data                  0                 0
+
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_universal_market_scanner.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_universal_market_scanner.md
+asset entry_day  trades  median_return_pct  p5_return_pct  p95_return_pct  probability_loss_pct  median_max_drawdown_pct  p95_max_drawdown_pct  worst_max_drawdown_pct
+  ADA      DAY1      99          -4.855229     -10.079410        0.897295                 91.78                -6.300907             -2.781063              -17.523978
+  ADA      DAY2      69           1.819092      -3.462621        7.131753                 28.96                -2.458883             -1.177084               -8.599349
+  ADA      DAY3      40           0.426438      -3.218416        4.132151                 42.32                -1.897997             -0.793045               -7.430338
+ AVAX      DAY1     105          -1.684508      -8.209734        5.437902                 65.56                -4.929035             -2.334810              -16.073210
+ AVAX      DAY2      58          -0.727976      -4.635125        3.212611                 61.98                -2.653204             -1.233155              -10.883480
+ AVAX      DAY3      31           1.808477      -0.970269        4.602388                 13.88                -1.025397             -0.523500               -4.784217
+  BTC      DAY1      99          -0.244362      -3.269143        2.830833                 55.38                -2.036305             -0.974306               -7.732527
+  BTC      DAY2      65           2.453663      -0.203206        5.030689                  6.26                -0.911616             -0.487090               -3.937200
+  BTC      DAY3      31           2.434695       0.794443        4.318449                  0.60                -0.368723             -0.190000               -1.627499
+ DOGE      DAY1     103          -4.951372     -10.068827        0.894505                 92.16                -6.373693             -2.791289              -17.715280
+ DOGE      DAY2      61           1.368161      -2.681181        5.883093                 29.80                -2.066572             -1.030303               -7.957621
+ DOGE      DAY3      36           2.054916      -0.456583        4.529169                  9.38                -0.868072             -0.409618               -4.296263
+  ETH      DAY1     105           0.764694      -5.005702        7.391154                 41.24                -3.239587             -1.601074              -11.303836
+  ETH      DAY2      58           0.630986      -3.287210        4.479254                 39.88                -2.040928             -0.944095               -8.448499
+  ETH      DAY3      26           0.472753      -2.602844        3.319127                 40.50                -1.422970             -0.508376               -7.953098
+ LINK      DAY1     107           0.346942      -6.026050        7.387746                 46.58                -3.827811             -1.933285              -14.303821
+ LINK      DAY2      68           5.441182       0.802210       10.277587                  2.72                -1.416641             -0.756895               -6.577057
+ LINK      DAY3      34           4.324617       1.039092        7.627792                  1.32                -0.851050             -0.359676               -4.685870
+  LTC      DAY1     109           5.827153       0.496801       11.885445                  3.74                -1.747271             -0.984133               -6.601231
+  LTC      DAY2      56           5.516208       2.012280        9.163038                  0.42                -0.891831             -0.496444               -4.467187
+  LTC      DAY3      28           1.979352      -1.005443        4.779211                 13.30                -1.164436             -0.604500               -6.079054
+  SOL      DAY1      97          -3.664683      -8.800023        1.645326                 87.52                -5.310462             -2.409818              -14.341635
+  SOL      DAY2      63           1.668407      -2.227293        5.386608                 23.70                -1.747087             -0.849500               -8.820230
+  SOL      DAY3      38           2.783655      -0.440106        5.755268                  7.60                -1.116844             -0.475649               -5.560407
+  XRP      DAY1      98          -1.544484      -6.080453        3.822988                 68.54                -3.773842             -1.774361              -11.485460
+  XRP      DAY2      62           2.591220      -1.236187        6.622445                 12.86                -1.500509             -0.763964               -6.129592
+  XRP      DAY3      36           4.002237       0.691243        7.896632                  2.32                -0.806467             -0.444500               -3.323862
+
+Saved: BACKTESTS/rsi2_monte_carlo_summary.csv
+
+CRYPTO OPPORTUNITY RANKING
+
+asset               bucket                recommendation  opportunity_score  confidence_score  current_phase   rsi2    close trend volatility   market_bias  atr_pct  entry_day  hold_days  entry_alignment_score  trades  win_rate_pct  expected_value_pct  profit_factor  avg_return_pct  median_return_pct  worst_return_pct  best_return_pct  current_oversold_duration
+  ADA   ACTIVE_OPPORTUNITY             DAY1_OBSERVE_ONLY                 93                50 OVERSOLD_DAY_1   0.00     0.14  BEAR       HIGH BEAR_HIGH_VOL     6.25        2.0        5.0                      8    98.0         48.98                1.39           1.40            1.39              -0.19            -22.35            66.29                          1
+ LINK   ACTIVE_OPPORTUNITY             DAY1_OBSERVE_ONLY                 85                80 OVERSOLD_DAY_1   0.00     7.26  BEAR        LOW          BEAR     4.95        3.0        4.0                      0   105.0         51.43                1.38           1.52            1.38               0.57            -25.73            40.62                          1
+ DOGE   ACTIVE_OPPORTUNITY             DAY1_OBSERVE_ONLY                 73                60 OVERSOLD_DAY_1   0.00     0.07  BEAR        LOW          BEAR     4.61        3.0        4.0                      0   102.0         52.94                0.79           1.26            0.79               0.23            -27.18            45.79                          1
+ AVAX   ACTIVE_OPPORTUNITY             DAY1_OBSERVE_ONLY                 65                 0 OVERSOLD_DAY_1   0.00     6.31  BEAR       HIGH BEAR_HIGH_VOL     7.66        NaN        NaN                      0     NaN           NaN                 NaN            NaN             NaN                NaN               NaN              NaN                          1
+  LTC HISTORICAL_WATCHLIST HISTORICALLY_STRONG_NO_SIGNAL                 35                95    NO_OVERSOLD 100.00    43.01  BEAR        LOW          BEAR     4.33        2.0        3.0                      0   108.0         61.11                1.41           1.91            1.41               1.26            -13.60            33.82                          0
+  BTC HISTORICAL_WATCHLIST HISTORICALLY_STRONG_NO_SIGNAL                 35                85    NO_OVERSOLD  44.78 59996.40  BEAR        LOW          BEAR     3.49        3.0        4.0                      0    98.0         57.14                1.07           1.83            1.07               1.16            -17.29            12.69                          0
+  XRP HISTORICAL_WATCHLIST HISTORICALLY_STRONG_NO_SIGNAL                 35                65    NO_OVERSOLD  67.71     1.05  BEAR        LOW          BEAR     4.72        3.0       10.0                      0    97.0         46.39                2.08           1.54            2.08              -0.83            -22.14            73.73                          0
+  ETH            NO_ACTION                     NO_ACTION                 23                60    NO_OVERSOLD  60.81  1579.12  BEAR       HIGH BEAR_HIGH_VOL     5.04        2.0        9.0                      0   105.0         53.33                0.90           1.24            0.90               0.79            -26.78            43.43                          0
+  SOL            NO_ACTION                     NO_ACTION                 23                60    NO_OVERSOLD  51.39    71.87  BEAR       HIGH BEAR_HIGH_VOL     5.82        3.0        2.0                      0    98.0         55.10                0.62           1.34            0.62               0.68            -14.91            13.15                          0
+
+Saved: DAILY_REPORTS/2026-07-10_crypto_opportunity_ranking.csv
+Saved: DAILY_REPORTS/2026-07-10_crypto_opportunity_ranking.md
+OPEN signals before:
+ADA | 2026-07-05 | 2026-07-11 | OPEN
+AVAX | 2026-07-10 | 2026-07-13 | OPEN
+DOGE | 2026-07-10 | 2026-07-14 | OPEN
+LINK | 2026-07-10 | 2026-07-14 | OPEN
+OPEN signals after:
+ADA | 2026-07-05 | 2026-07-11 | OPEN
+AVAX | 2026-07-10 | 2026-07-13 | OPEN
+DOGE | 2026-07-10 | 2026-07-14 | OPEN
+LINK | 2026-07-10 | 2026-07-14 | OPEN
+signals added: 0
+migrated open signals: 0
+migrated open signal entry prices: 4
+open signals: 4
+daily run recorded
+
+OPPORTUNITY TRACKER
+
+Source: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_crypto_opportunity_ranking.csv
+Run date: 2026-07-10
+Active signals: 9
+Inserted history rows: 0
+DB: /Users/tron/kraken-ai-trading/journal/project_memory.sqlite
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_score.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_score.md
+ rank asset  research_score status  expected_value_pct  expected_value_score  profit_factor  profit_factor_score  win_rate_pct  win_rate_score  opportunity_score  opportunity_score_component  confidence_score  confidence_score_component   market_bias  market_bias_score  atr_pct  atr_score  current_phase                recommendation               bucket
+    1   LTC           72.75  WATCH                1.41                  70.0           1.91                 90.0         61.11           100.0               35.0                         35.0              95.0                        95.0          BEAR               35.0   4.3300       80.0    NO_OVERSOLD HISTORICALLY_STRONG_NO_SIGNAL HISTORICAL_WATCHLIST
+    2  LINK           71.25  WATCH                1.38                  70.0           1.52                 75.0         51.43            70.0               85.0                         85.0              80.0                        80.0          BEAR               35.0   4.9500       80.0 OVERSOLD_DAY_1             DAY1_OBSERVE_ONLY   ACTIVE_OPPORTUNITY
+    3   BTC           69.50   WAIT                1.07                  70.0           1.83                 90.0         57.14            85.0               35.0                         35.0              85.0                        85.0          BEAR               35.0   3.4900       80.0    NO_OVERSOLD HISTORICALLY_STRONG_NO_SIGNAL HISTORICAL_WATCHLIST
+    4   XRP           66.00   WAIT                2.08                 100.0           1.54                 75.0         46.39            45.0               35.0                         35.0              65.0                        65.0          BEAR               35.0   4.7200       80.0    NO_OVERSOLD HISTORICALLY_STRONG_NO_SIGNAL HISTORICAL_WATCHLIST
+    5   ADA           59.45   WAIT                1.39                  70.0           1.40                 50.0         48.98            45.0               93.0                         93.0              50.0                        50.0 BEAR_HIGH_VOL               35.0   6.2500       55.0 OVERSOLD_DAY_1             DAY1_OBSERVE_ONLY   ACTIVE_OPPORTUNITY
+    6  DOGE           56.20   WAIT                0.79                  45.0           1.26                 50.0         52.94            70.0               73.0                         73.0              60.0                        60.0          BEAR               35.0   4.6100       80.0 OVERSOLD_DAY_1             DAY1_OBSERVE_ONLY   ACTIVE_OPPORTUNITY
+    7   SOL           49.70 IGNORE                0.62                  45.0           1.34                 50.0         55.10            85.0               23.0                         23.0              60.0                        60.0 BEAR_HIGH_VOL               35.0   5.8200       55.0    NO_OVERSOLD                     NO_ACTION            NO_ACTION
+    8   ETH           47.45 IGNORE                0.90                  45.0           1.24                 50.0         53.33            70.0               23.0                         23.0              60.0                        60.0 BEAR_HIGH_VOL               35.0   5.0400       55.0    NO_OVERSOLD                     NO_ACTION            NO_ACTION
+    9  AVAX           16.00 IGNORE                 NaN                   0.0            NaN                  0.0           NaN             0.0               65.0                         65.0               0.0                         0.0 BEAR_HIGH_VOL               35.0   7.6600       55.0 OVERSOLD_DAY_1             DAY1_OBSERVE_ONLY   ACTIVE_OPPORTUNITY
+   10  NVDA           15.00 IGNORE                 NaN                   0.0            NaN                  0.0           NaN             0.0                0.0                          0.0               0.0                         0.0          BULL              100.0   2.3055      100.0  NEAR_OVERSOLD                    STALE_DATA                  NaN
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_trade_candidate_dashboard.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_trade_candidate_dashboard.md
+asset asset_class  research_score  opportunity_score  confidence_score                recommendation  current_phase   market_bias  expected_value_pct  profit_factor       watch_status  readiness_pct                                                                          missing_conditions priority
+ LINK      crypto           71.25               85.0              80.0             DAY1_OBSERVE_ONLY OVERSOLD_DAY_1          BEAR                1.38           1.52 ACTIVE_OPPORTUNITY           65.0                                                                      Waiting for bull trend   MEDIUM
+  LTC      crypto           72.75               35.0              95.0 HISTORICALLY_STRONG_NO_SIGNAL    NO_OVERSOLD          BEAR                1.41           1.91            UNKNOWN           35.0                                                  Waiting for signal; Waiting for bull trend      LOW
+  ADA      crypto           59.45               93.0              50.0             DAY1_OBSERVE_ONLY OVERSOLD_DAY_1 BEAR_HIGH_VOL                1.39           1.40 ACTIVE_OPPORTUNITY           30.0                     Waiting for confidence > 70; No historical edge; Waiting for bull trend      LOW
+ DOGE      crypto           56.20               73.0              60.0             DAY1_OBSERVE_ONLY OVERSOLD_DAY_1          BEAR                0.79           1.26 ACTIVE_OPPORTUNITY           30.0                     Waiting for confidence > 70; No historical edge; Waiting for bull trend      LOW
+ AVAX      crypto           16.00               65.0               0.0             DAY1_OBSERVE_ONLY OVERSOLD_DAY_1 BEAR_HIGH_VOL                 NaN            NaN ACTIVE_OPPORTUNITY           30.0                     Waiting for confidence > 70; No historical edge; Waiting for bull trend      LOW
+  BTC      crypto           69.50               35.0              85.0 HISTORICALLY_STRONG_NO_SIGNAL    NO_OVERSOLD          BEAR                1.07           1.83            UNKNOWN           20.0                              Waiting for signal; No historical edge; Waiting for bull trend   IGNORE
+ NVDA       stock           15.00                0.0               0.0                    STALE_DATA  NEAR_OVERSOLD          BULL                 NaN            NaN            UNKNOWN           15.0                         Waiting for signal; Waiting for confidence > 70; No historical edge   IGNORE
+  QQQ         etf           15.00                0.0               0.0                    STALE_DATA  NEAR_OVERSOLD          BULL                 NaN            NaN            UNKNOWN           15.0                         Waiting for signal; Waiting for confidence > 70; No historical edge   IGNORE
+  SPY         etf           15.00                0.0               0.0                    STALE_DATA  NEAR_OVERSOLD          BULL                 NaN            NaN            UNKNOWN           15.0                         Waiting for signal; Waiting for confidence > 70; No historical edge   IGNORE
+  XRP      crypto           66.00               35.0              65.0 HISTORICALLY_STRONG_NO_SIGNAL    NO_OVERSOLD          BEAR                2.08           1.54            UNKNOWN            0.0 Waiting for signal; Waiting for confidence > 70; No historical edge; Waiting for bull trend   IGNORE
+  SOL      crypto           49.70               23.0              60.0                     NO_ACTION    NO_OVERSOLD BEAR_HIGH_VOL                0.62           1.34            UNKNOWN            0.0 Waiting for signal; Waiting for confidence > 70; No historical edge; Waiting for bull trend   IGNORE
+  ETH      crypto           47.45               23.0              60.0                     NO_ACTION    NO_OVERSOLD BEAR_HIGH_VOL                0.90           1.24            UNKNOWN            0.0 Waiting for signal; Waiting for confidence > 70; No historical edge; Waiting for bull trend   IGNORE
+  GLD         etf            8.50                0.0               0.0                    STALE_DATA      NO_SIGNAL          BEAR                 NaN            NaN            UNKNOWN            0.0 Waiting for signal; Waiting for confidence > 70; No historical edge; Waiting for bull trend   IGNORE
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_explainability.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_explainability.md
+asset  readiness_pct priority  research_score                recommendation  current_phase                                                                                         positive_factors                                                                  negative_factors                                                          blocking_conditions                                                                            explanation_summary
+ LINK           65.0   MEDIUM           71.25             DAY1_OBSERVE_ONLY OVERSOLD_DAY_1 ACTIVE_OPPORTUNITY; confidence >= 70; research_score >= 70; profit_factor >= 1.5; expected_value_pct > 1                                                       market_bias BEAR; DAY1 only                               Waiting for Day2/Day3; Waiting for BULL market       LINK has partial readiness with blockers: Waiting for Day2/Day3, Waiting for BULL market
+  LTC           35.0      LOW           72.75 HISTORICALLY_STRONG_NO_SIGNAL    NO_OVERSOLD                     confidence >= 70; research_score >= 70; profit_factor >= 1.5; expected_value_pct > 1                                                market_bias BEAR; no active signal                                    Waiting for BULL market; No active signal             LTC has partial readiness with blockers: Waiting for BULL market, No active signal
+  ADA           30.0      LOW           59.45             DAY1_OBSERVE_ONLY OVERSOLD_DAY_1                                                               ACTIVE_OPPORTUNITY; expected_value_pct > 1        market_bias BEAR_HIGH_VOL; confidence < 70; research_score < 70; DAY1 only Waiting for Day2/Day3; Waiting for confidence >= 70; Waiting for BULL market   ADA has partial readiness with blockers: Waiting for Day2/Day3, Waiting for confidence >= 70
+ DOGE           30.0      LOW           56.20             DAY1_OBSERVE_ONLY OVERSOLD_DAY_1                                                                                       ACTIVE_OPPORTUNITY                 market_bias BEAR; confidence < 70; research_score < 70; DAY1 only Waiting for Day2/Day3; Waiting for confidence >= 70; Waiting for BULL market  DOGE has partial readiness with blockers: Waiting for Day2/Day3, Waiting for confidence >= 70
+ AVAX           30.0      LOW           16.00             DAY1_OBSERVE_ONLY OVERSOLD_DAY_1                                                                                       ACTIVE_OPPORTUNITY        market_bias BEAR_HIGH_VOL; confidence < 70; research_score < 70; DAY1 only Waiting for Day2/Day3; Waiting for confidence >= 70; Waiting for BULL market  AVAX has partial readiness with blockers: Waiting for Day2/Day3, Waiting for confidence >= 70
+  BTC           20.0   IGNORE           69.50 HISTORICALLY_STRONG_NO_SIGNAL    NO_OVERSOLD                                           confidence >= 70; profit_factor >= 1.5; expected_value_pct > 1                           market_bias BEAR; research_score < 70; no active signal                                    Waiting for BULL market; No active signal             BTC has partial readiness with blockers: Waiting for BULL market, No active signal
+ NVDA           15.0   IGNORE           15.00                    STALE_DATA  NEAR_OVERSOLD                                                                                         market_bias BULL                            confidence < 70; research_score < 70; no active signal                               Waiting for confidence >= 70; No active signal       NVDA has partial readiness with blockers: Waiting for confidence >= 70, No active signal
+  QQQ           15.0   IGNORE           15.00                    STALE_DATA  NEAR_OVERSOLD                                                                                         market_bias BULL                            confidence < 70; research_score < 70; no active signal                               Waiting for confidence >= 70; No active signal        QQQ has partial readiness with blockers: Waiting for confidence >= 70, No active signal
+  SPY           15.0   IGNORE           15.00                    STALE_DATA  NEAR_OVERSOLD                                                                                         market_bias BULL                            confidence < 70; research_score < 70; no active signal                               Waiting for confidence >= 70; No active signal        SPY has partial readiness with blockers: Waiting for confidence >= 70, No active signal
+  XRP            0.0   IGNORE           66.00 HISTORICALLY_STRONG_NO_SIGNAL    NO_OVERSOLD                                                             profit_factor >= 1.5; expected_value_pct > 1          market_bias BEAR; confidence < 70; research_score < 70; no active signal      Waiting for confidence >= 70; Waiting for BULL market; No active signal XRP has partial readiness with blockers: Waiting for confidence >= 70, Waiting for BULL market
+  SOL            0.0   IGNORE           49.70                     NO_ACTION    NO_OVERSOLD                                                                                                     None market_bias BEAR_HIGH_VOL; confidence < 70; research_score < 70; no active signal      Waiting for confidence >= 70; Waiting for BULL market; No active signal      SOL is not ready: Waiting for confidence >= 70, Waiting for BULL market, No active signal
+  ETH            0.0   IGNORE           47.45                     NO_ACTION    NO_OVERSOLD                                                                                                     None market_bias BEAR_HIGH_VOL; confidence < 70; research_score < 70; no active signal      Waiting for confidence >= 70; Waiting for BULL market; No active signal      ETH is not ready: Waiting for confidence >= 70, Waiting for BULL market, No active signal
+  GLD            0.0   IGNORE            8.50                    STALE_DATA      NO_SIGNAL                                                                                                     None          market_bias BEAR; confidence < 70; research_score < 70; no active signal      Waiting for confidence >= 70; Waiting for BULL market; No active signal      GLD is not ready: Waiting for confidence >= 70, Waiting for BULL market, No active signal
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_evolution.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_evolution.md
+asset  readiness_today  readiness_previous  readiness_delta  research_score_delta  opportunity_score_delta  confidence_score_delta  priority_change evolution_status
+ LINK             65.0                65.0              0.0                   0.0                      0.0                     0.0 MEDIUM -> MEDIUM           STABLE
+  LTC             35.0                35.0              0.0                   0.0                      0.0                     0.0       LOW -> LOW           STABLE
+  ADA             30.0                30.0              0.0                   0.0                      0.0                     0.0       LOW -> LOW           STABLE
+ AVAX             30.0                30.0              0.0                   0.0                      0.0                     0.0       LOW -> LOW           STABLE
+ DOGE             30.0                30.0              0.0                   0.0                      0.0                     0.0       LOW -> LOW           STABLE
+  BTC             20.0                20.0              0.0                   0.0                      0.0                     0.0 IGNORE -> IGNORE           STABLE
+ NVDA             15.0                15.0              0.0                   0.0                      0.0                     0.0 IGNORE -> IGNORE           STABLE
+  QQQ             15.0                15.0              0.0                   0.0                      0.0                     0.0 IGNORE -> IGNORE           STABLE
+  SPY             15.0                15.0              0.0                   0.0                      0.0                     0.0 IGNORE -> IGNORE           STABLE
+  ETH              0.0                 0.0              0.0                   0.0                      0.0                     0.0 IGNORE -> IGNORE           STABLE
+  GLD              0.0                 0.0              0.0                   0.0                      0.0                     0.0 IGNORE -> IGNORE           STABLE
+  SOL              0.0                 0.0              0.0                   0.0                      0.0                     0.0 IGNORE -> IGNORE           STABLE
+  XRP              0.0                 0.0              0.0                   0.0                      0.0                     0.0 IGNORE -> IGNORE           STABLE
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_timeline.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_timeline.md
+asset first_seen_date last_seen_date  observations  latest_readiness_pct  previous_readiness_pct  readiness_change  max_readiness_pct  min_readiness_pct  latest_research_score  max_research_score latest_priority         latest_recommendation latest_current_phase trend_status
+ LINK      2026-07-05     2026-07-10             4                  65.0                    65.0               0.0               65.0               65.0                  71.25               71.25          MEDIUM             DAY1_OBSERVE_ONLY       OVERSOLD_DAY_1       STABLE
+  LTC      2026-07-05     2026-07-10             4                  35.0                    35.0               0.0               35.0               35.0                  72.75               72.75             LOW HISTORICALLY_STRONG_NO_SIGNAL          NO_OVERSOLD       STABLE
+  ADA      2026-07-05     2026-07-10             4                  30.0                    30.0               0.0               30.0               30.0                  59.45               59.45             LOW             DAY1_OBSERVE_ONLY       OVERSOLD_DAY_1       STABLE
+ DOGE      2026-07-05     2026-07-10             4                  30.0                    30.0               0.0               30.0               30.0                  56.20               56.20             LOW             DAY1_OBSERVE_ONLY       OVERSOLD_DAY_1       STABLE
+ AVAX      2026-07-05     2026-07-10             4                  30.0                    30.0               0.0               30.0               30.0                  16.00               16.00             LOW             DAY1_OBSERVE_ONLY       OVERSOLD_DAY_1       STABLE
+  BTC      2026-07-05     2026-07-10             4                  20.0                    20.0               0.0               20.0               20.0                  69.50               69.50          IGNORE HISTORICALLY_STRONG_NO_SIGNAL          NO_OVERSOLD       STABLE
+ NVDA      2026-07-05     2026-07-10             4                  15.0                    15.0               0.0               15.0               15.0                  15.00               30.25          IGNORE                    STALE_DATA        NEAR_OVERSOLD       STABLE
+  QQQ      2026-07-05     2026-07-10             4                  15.0                    15.0               0.0               15.0               15.0                  15.00               30.25          IGNORE                    STALE_DATA        NEAR_OVERSOLD       STABLE
+  SPY      2026-07-05     2026-07-10             4                  15.0                    15.0               0.0               15.0               15.0                  15.00               30.25          IGNORE                    STALE_DATA        NEAR_OVERSOLD       STABLE
+  XRP      2026-07-05     2026-07-10             4                   0.0                     0.0               0.0                0.0                0.0                  66.00               66.00          IGNORE HISTORICALLY_STRONG_NO_SIGNAL          NO_OVERSOLD       STABLE
+  SOL      2026-07-05     2026-07-10             4                   0.0                     0.0               0.0                0.0                0.0                  49.70               49.70          IGNORE                     NO_ACTION          NO_OVERSOLD       STABLE
+  ETH      2026-07-05     2026-07-10             4                   0.0                     0.0               0.0                0.0                0.0                  47.45               52.95          IGNORE                     NO_ACTION          NO_OVERSOLD       STABLE
+  GLD      2026-07-05     2026-07-10             4                   0.0                     0.0               0.0                0.0                0.0                   8.50               15.25          IGNORE                    STALE_DATA            NO_SIGNAL       STABLE
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_regime.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_regime.md
+                  metric    value
+           crypto_regime    MIXED
+           equity_regime     BULL
+       volatility_regime   NORMAL
+      opportunity_regime    EMPTY
+       environment_score       45
+      environment_status CAUTIOUS
+average_confidence_score     57.5
+            crypto_count        9
+            equity_count        4
+
+PORTFOLIO ALLOCATION
+
+asset                recommendation               bucket  opportunity_score  confidence_score  current_phase   rsi2  entry_day  hold_days  expected_value_pct  profit_factor  win_rate_pct raw_weight_score  proposed_weight_pct allocation_status             allocation_reason
+  ADA             DAY1_OBSERVE_ONLY   ACTIVE_OPPORTUNITY                 93                50 OVERSOLD_DAY_1   0.00        2.0        5.0                1.39           1.40         48.98             None                  0.0     NO_ALLOCATION not eligible under risk rules
+ LINK             DAY1_OBSERVE_ONLY   ACTIVE_OPPORTUNITY                 85                80 OVERSOLD_DAY_1   0.00        3.0        4.0                1.38           1.52         51.43             None                  0.0     NO_ALLOCATION not eligible under risk rules
+ DOGE             DAY1_OBSERVE_ONLY   ACTIVE_OPPORTUNITY                 73                60 OVERSOLD_DAY_1   0.00        3.0        4.0                0.79           1.26         52.94             None                  0.0     NO_ALLOCATION not eligible under risk rules
+ AVAX             DAY1_OBSERVE_ONLY   ACTIVE_OPPORTUNITY                 65                 0 OVERSOLD_DAY_1   0.00        NaN        NaN                 NaN            NaN           NaN             None                  0.0     NO_ALLOCATION not eligible under risk rules
+  LTC HISTORICALLY_STRONG_NO_SIGNAL HISTORICAL_WATCHLIST                 35                95    NO_OVERSOLD 100.00        2.0        3.0                1.41           1.91         61.11             None                  0.0     NO_ALLOCATION not eligible under risk rules
+  BTC HISTORICALLY_STRONG_NO_SIGNAL HISTORICAL_WATCHLIST                 35                85    NO_OVERSOLD  44.78        3.0        4.0                1.07           1.83         57.14             None                  0.0     NO_ALLOCATION not eligible under risk rules
+  XRP HISTORICALLY_STRONG_NO_SIGNAL HISTORICAL_WATCHLIST                 35                65    NO_OVERSOLD  67.71        3.0       10.0                2.08           1.54         46.39             None                  0.0     NO_ALLOCATION not eligible under risk rules
+  ETH                     NO_ACTION            NO_ACTION                 23                60    NO_OVERSOLD  60.81        2.0        9.0                0.90           1.24         53.33             None                  0.0     NO_ALLOCATION not eligible under risk rules
+  SOL                     NO_ACTION            NO_ACTION                 23                60    NO_OVERSOLD  51.39        3.0        2.0                0.62           1.34         55.10             None                  0.0     NO_ALLOCATION not eligible under risk rules
+
+Saved: DAILY_REPORTS/2026-07-10_portfolio_allocation.csv
+Saved: DAILY_REPORTS/2026-07-10_portfolio_allocation.md
+
+POSITION MANAGER
+
+No open positions
+
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_position_manager.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_position_manager.md
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_realized_trades.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_realized_trades.md
+      date asset side  quantity  entry_price  exit_price  cost_basis currency  proceeds realized_pnl realized_pnl_pct fees  estimated_fee                               notes      status
+2026-07-07   BTC SELL  0.056607     53005.58     63800.0      3000.5      USD   3611.54         None             None None         7.2231   final BTC exit, FX not normalized FX_REQUIRED
+2026-07-06   BTC SELL  0.056607     53005.58     63000.0      3000.5      USD   3566.26         None             None None         7.1325 partial BTC sale, FX not normalized FX_REQUIRED
+
+EXIT PLANNER
+
+No open positions
+
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_exit_planner.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_exit_planner.md
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_signal_exit_calendar.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_signal_exit_calendar.md
+asset       date    recommendation  current_phase  entry_price planned_exit_date  days_to_exit  status notes
+  ADA 2026-07-05 DAY1_OBSERVE_ONLY OVERSOLD_DAY_1     0.166875        2026-07-11             1 WAITING      
+ AVAX 2026-07-10 DAY1_OBSERVE_ONLY OVERSOLD_DAY_1     6.734000        2026-07-13             3 WAITING      
+ DOGE 2026-07-10 DAY1_OBSERVE_ONLY OVERSOLD_DAY_1     0.074145        2026-07-14             4 WAITING      
+ LINK 2026-07-10 DAY1_OBSERVE_ONLY OVERSOLD_DAY_1     7.906980        2026-07-14             4 WAITING      
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_signal_outcome_engine.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_signal_outcome_engine.md
+                        signal_id asset status planned_exit_date  entry_price exit_price return_pct action                          note
+ ADA_2026-07-05_DAY1_OBSERVE_ONLY   ADA   OPEN        2026-07-11     0.166875       None       None   SKIP planned exit date not reached
+AVAX_2026-07-10_DAY1_OBSERVE_ONLY  AVAX   OPEN        2026-07-13     6.734000       None       None   SKIP planned exit date not reached
+DOGE_2026-07-10_DAY1_OBSERVE_ONLY  DOGE   OPEN        2026-07-14     0.074145       None       None   SKIP planned exit date not reached
+LINK_2026-07-10_DAY1_OBSERVE_ONLY  LINK   OPEN        2026-07-14     7.906980       None       None   SKIP planned exit date not reached
+Saved: DAILY_REPORTS/2026-07-10_daily_research_summary.md
+
+DAILY SUMMARY
+
+# Daily Crypto Research Summary
+
+Date: 2026-07-10
+
+Research support only. Not financial advice.
+
+## Market Action Summary
+
+No high-priority setup confirmed.
+
+## Active RSI2 Oversold Signals
+
+### ADA
+- Phase: OVERSOLD_DAY_1
+- Recommendation: DAY1_OBSERVE_ONLY
+- RSI2: 0.0
+- Best setup: Day 2.0 / Hold 5.0
+- EV: 1.39%
+- PF: 1.4
+- WR: 48.98%
+
+### LINK
+- Phase: OVERSOLD_DAY_1
+- Recommendation: DAY1_OBSERVE_ONLY
+- RSI2: 0.0
+- Best setup: Day 3.0 / Hold 4.0
+- EV: 1.38%
+- PF: 1.52
+- WR: 51.43%
+
+### DOGE
+- Phase: OVERSOLD_DAY_1
+- Recommendation: DAY1_OBSERVE_ONLY
+- RSI2: 0.0
+- Best setup: Day 3.0 / Hold 4.0
+- EV: 0.79%
+- PF: 1.26
+- WR: 52.94%
+
+### AVAX
+
+DAILY DECISION DASHBOARD
+
+      date                     section      key                                                                                                                             value
+2026-07-10              FINAL DECISION decision                                                                                                                              WAIT
+2026-07-10              FINAL DECISION   reason                                                                                 No allocation and no active watchlist conditions.
+2026-07-10            CURRENT POSITION     none                                                                                                                 No open positions
+2026-07-10    TOP CRYPTO OPPORTUNITIES      ADA                                                                                          Opp=93 | Conf=50 | Rec=DAY1_OBSERVE_ONLY
+2026-07-10    TOP CRYPTO OPPORTUNITIES     LINK                                                                                          Opp=85 | Conf=80 | Rec=DAY1_OBSERVE_ONLY
+2026-07-10    TOP CRYPTO OPPORTUNITIES     DOGE                                                                                          Opp=73 | Conf=60 | Rec=DAY1_OBSERVE_ONLY
+2026-07-10    TOP CRYPTO OPPORTUNITIES     AVAX                                                                                           Opp=65 | Conf=0 | Rec=DAY1_OBSERVE_ONLY
+2026-07-10    TOP CRYPTO OPPORTUNITIES      LTC                                                                              Opp=35 | Conf=95 | Rec=HISTORICALLY_STRONG_NO_SIGNAL
+2026-07-10 TOP UNIVERSAL OPPORTUNITIES      BTC                                                                                                   Opp=5 | Conf=80 | Rec=NO_ACTION
+2026-07-10 TOP UNIVERSAL OPPORTUNITIES      ETH                                                                                                   Opp=5 | Conf=80 | Rec=NO_ACTION
+2026-07-10 TOP UNIVERSAL OPPORTUNITIES      SOL                                                                                                   Opp=5 | Conf=80 | Rec=NO_ACTION
+2026-07-10 TOP UNIVERSAL OPPORTUNITIES      XRP                                                                                                   Opp=5 | Conf=80 | Rec=NO_ACTION
+2026-07-10 TOP UNIVERSAL OPPORTUNITIES     LINK                                                                                                   Opp=5 | Conf=80 | Rec=NO_ACTION
+2026-07-10        PORTFOLIO ALLOCATION   status                                                                                                                100% NO ALLOCATION
+2026-07-10                   WATCHLIST     none                                                                                                              No watchlist assets.
+2026-07-10        SIGNAL EXIT CALENDAR      ADA                                                                    planned_exit_date=2026-07-11 | days_to_exit=1 | status=WAITING
+2026-07-10        SIGNAL EXIT CALENDAR     AVAX                                                                    planned_exit_date=2026-07-13 | days_to_exit=3 | status=WAITING
+2026-07-10        SIGNAL EXIT CALENDAR     DOGE                                                                    planned_exit_date=2026-07-14 | days_to_exit=4 | status=WAITING
+2026-07-10        SIGNAL EXIT CALENDAR     LINK                                                                    planned_exit_date=2026-07-14 | days_to_exit=4 | status=WAITING
+2026-07-10             REALIZED TRADES  summary                                      trades_count=2 | total_proceeds=7177.8 | total_realized_pnl=0.0 | FX_REQUIRED_trades_count=2
+2026-07-10      RESEARCH SCORE LEADERS      LTC research_score=72.75 | status=WATCH | recommendation=HISTORICALLY_STRONG_NO_SIGNAL | expected_value_pct=1.41 | profit_factor=1.91
+2026-07-10      RESEARCH SCORE LEADERS     LINK             research_score=71.25 | status=WATCH | recommendation=DAY1_OBSERVE_ONLY | expected_value_pct=1.38 | profit_factor=1.52
+2026-07-10      RESEARCH SCORE LEADERS      BTC   research_score=69.5 | status=WAIT | recommendation=HISTORICALLY_STRONG_NO_SIGNAL | expected_value_pct=1.07 | profit_factor=1.83
+2026-07-10      RESEARCH SCORE LEADERS      XRP   research_score=66.0 | status=WAIT | recommendation=HISTORICALLY_STRONG_NO_SIGNAL | expected_value_pct=2.08 | profit_factor=1.54
+2026-07-10      RESEARCH SCORE LEADERS      ADA               research_score=59.45 | status=WAIT | recommendation=DAY1_OBSERVE_ONLY | expected_value_pct=1.39 | profit_factor=1.4
+2026-07-10         RESEARCH VALIDATION   status                                                                                                    Research validation available.
+2026-07-10                PROCESS NOTE     note                                                                                               Research only. No automatic trades.
+
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_daily_decision_dashboard.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_daily_decision_dashboard.md
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_consensus.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_consensus.md
+asset  readiness_pct  research_score priority regime_status timeline_trend evolution_status                                                                                         positive_factors                                                          blocking_conditions  consensus_points  max_points  consensus_pct        consensus_status                                               final_note
+ LINK           65.0           71.25   MEDIUM      CAUTIOUS         STABLE           STABLE ACTIVE_OPPORTUNITY; confidence >= 70; research_score >= 70; profit_factor >= 1.5; expected_value_pct > 1                               Waiting for Day2/Day3; Waiting for BULL market                 7           7         100.00 MEDIUM_CONVICTION_WATCH High agreement, but still blocked by process conditions.
+  LTC           35.0           72.75      LOW      CAUTIOUS         STABLE           STABLE                     confidence >= 70; research_score >= 70; profit_factor >= 1.5; expected_value_pct > 1                                    Waiting for BULL market; No active signal                 4           7          57.14          LOW_CONVICTION                   Partial agreement with active blockers
+  ADA           30.0           59.45      LOW      CAUTIOUS         STABLE           STABLE                                                               ACTIVE_OPPORTUNITY; expected_value_pct > 1 Waiting for Day2/Day3; Waiting for confidence >= 70; Waiting for BULL market                 4           7          57.14          LOW_CONVICTION                   Partial agreement with active blockers
+ DOGE           30.0           56.20      LOW      CAUTIOUS         STABLE           STABLE                                                                                       ACTIVE_OPPORTUNITY Waiting for Day2/Day3; Waiting for confidence >= 70; Waiting for BULL market                 4           7          57.14          LOW_CONVICTION                   Partial agreement with active blockers
+ AVAX           30.0           16.00      LOW      CAUTIOUS         STABLE           STABLE                                                                                       ACTIVE_OPPORTUNITY Waiting for Day2/Day3; Waiting for confidence >= 70; Waiting for BULL market                 4           7          57.14          LOW_CONVICTION                   Partial agreement with active blockers
+  BTC           20.0           69.50   IGNORE      CAUTIOUS         STABLE           STABLE                                           confidence >= 70; profit_factor >= 1.5; expected_value_pct > 1                                    Waiting for BULL market; No active signal                 3           7          42.86                  IGNORE                                           Weak consensus
+ NVDA           15.0           15.00   IGNORE      CAUTIOUS         STABLE           STABLE                                                                                         market_bias BULL                               Waiting for confidence >= 70; No active signal                 3           7          42.86                  IGNORE                                           Weak consensus
+  QQQ           15.0           15.00   IGNORE      CAUTIOUS         STABLE           STABLE                                                                                         market_bias BULL                               Waiting for confidence >= 70; No active signal                 3           7          42.86                  IGNORE                                           Weak consensus
+  SPY           15.0           15.00   IGNORE      CAUTIOUS         STABLE           STABLE                                                                                         market_bias BULL                               Waiting for confidence >= 70; No active signal                 3           7          42.86                  IGNORE                                           Weak consensus
+  XRP            0.0           66.00   IGNORE      CAUTIOUS         STABLE           STABLE                                                             profit_factor >= 1.5; expected_value_pct > 1      Waiting for confidence >= 70; Waiting for BULL market; No active signal                 3           7          42.86                  IGNORE                                           Weak consensus
+  SOL            0.0           49.70   IGNORE      CAUTIOUS         STABLE           STABLE                                                                                                      NaN      Waiting for confidence >= 70; Waiting for BULL market; No active signal                 3           7          42.86                  IGNORE                                           Weak consensus
+  ETH            0.0           47.45   IGNORE      CAUTIOUS         STABLE           STABLE                                                                                                      NaN      Waiting for confidence >= 70; Waiting for BULL market; No active signal                 3           7          42.86                  IGNORE                                           Weak consensus
+  GLD            0.0            8.50   IGNORE      CAUTIOUS         STABLE           STABLE                                                                                                      NaN      Waiting for confidence >= 70; Waiting for BULL market; No active signal                 3           7          42.86                  IGNORE                                           Weak consensus
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_feedback.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_feedback.md
+# Research Feedback Engine
+
+Date: 2026-07-10
+
+## Summary
+
+- ADA: grade INSUFFICIENT_DATA | hist EV 1.39 | trades 0 | win rate nan | avg return nan | ev gap nan
+- AVAX: grade INSUFFICIENT_DATA | hist EV nan | trades 1 | win rate 0.0 | avg return -1.4032 | ev gap nan
+- BTC: grade INSUFFICIENT_DATA | hist EV 1.07 | trades 0 | win rate nan | avg return nan | ev gap nan
+- DOGE: grade INSUFFICIENT_DATA | hist EV 0.79 | trades 1 | win rate 0.0 | avg return 0.0 | ev gap -0.79
+- ETH: grade INSUFFICIENT_DATA | hist EV 0.9 | trades 0 | win rate nan | avg return nan | ev gap nan
+- LINK: grade INSUFFICIENT_DATA | hist EV 1.38 | trades 1 | win rate 0.0 | avg return 0.0 | ev gap -1.38
+- LTC: grade INSUFFICIENT_DATA | hist EV 1.41 | trades 0 | win rate nan | avg return nan | ev gap nan
+- SOL: grade INSUFFICIENT_DATA | hist EV 0.62 | trades 0 | win rate nan | avg return nan | ev gap nan
+- XRP: grade INSUFFICIENT_DATA | hist EV 2.08 | trades 0 | win rate nan | avg return nan | ev gap nan
+
+## Detail
+
+- ADA | hist EV 1.39 | trades 0 | win nan | avg nan | median nan | best nan | worst nan | gap nan | grade INSUFFICIENT_DATA
+- AVAX | hist EV nan | trades 1 | win 0.0 | avg -1.4032 | median -1.4032 | best -1.4032 | worst -1.4032 | gap nan | grade INSUFFICIENT_DATA
+- BTC | hist EV 1.07 | trades 0 | win nan | avg nan | median nan | best nan | worst nan | gap nan | grade INSUFFICIENT_DATA
+- DOGE | hist EV 0.79 | trades 1 | win 0.0 | avg 0.0 | median 0.0 | best 0.0 | worst 0.0 | gap -0.79 | grade INSUFFICIENT_DATA
+- ETH | hist EV 0.9 | trades 0 | win nan | avg nan | median nan | best nan | worst nan | gap nan | grade INSUFFICIENT_DATA
+- LINK | hist EV 1.38 | trades 1 | win 0.0 | avg 0.0 | median 0.0 | best 0.0 | worst 0.0 | gap -1.38 | grade INSUFFICIENT_DATA
+- LTC | hist EV 1.41 | trades 0 | win nan | avg nan | median nan | best nan | worst nan | gap nan | grade INSUFFICIENT_DATA
+- SOL | hist EV 0.62 | trades 0 | win nan | avg nan | median nan | best nan | worst nan | gap nan | grade INSUFFICIENT_DATA
+- XRP | hist EV 2.08 | trades 0 | win nan | avg nan | median nan | best nan | worst nan | gap nan | grade INSUFFICIENT_DATA
+
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_validation.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_validation.md
+# Research Validation Engine
+
+Date: 2026-07-10
+
+## Summary
+
+- 0-39: trades 0.0 | avg return nan | win rate nan | profit factor nan
+- 40-59: trades 0.0 | avg return nan | win rate nan | profit factor nan
+- 60-79: trades 0.0 | avg return nan | win rate nan | profit factor nan
+- 80-100: trades 0.0 | avg return nan | win rate nan | profit factor nan
+
+## Correlations
+
+- research_score ↔ return_pct: nan
+- opportunity_score ↔ return_pct: 0.8846
+- confidence_score ↔ return_pct: 0.9912
+
+## Best Categories
+
+- UNKNOWN: trades 3 | avg return -0.4677498769079265
+
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_performance_dashboard.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_research_performance_dashboard.md
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_project_health_check.csv
+Saved: /Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-07-10_project_health_check.md
+# Project Health Check
+
+Date: 2026-07-10
+
+Status: OK
+
+## Summary
+
+- SQLite database: present
+- OPEN signals: 4
+- signal_history rows: 63
+- signal_outcomes rows: 3
+
+## Key Reports
+
+- daily_decision_dashboard: 2026-07-10_daily_decision_dashboard.md
+- research_score: 2026-07-10_research_score.csv
+- strategy_performance: 2026-07-05_strategy_performance.csv
+
+## Details
+
+- SUMMARY | status | OK | OK
+- SUMMARY | date | 2026-07-10 | OK
+- DATABASE | project_memory.sqlite | present | OK
+- TABLES | signals | present | OK
+- TABLES | signal_history | present | OK
+- TABLES | signal_outcomes | present | OK
+- TABLES | daily_runs | present | OK
+- COUNTS | OPEN signals | 4 | OK
+- COUNTS | signal_history rows | 63 | OK
+- COUNTS | signal_outcomes rows | 3 | OK
+- REPORTS | daily_decision_dashboard | 2026-07-10_daily_decision_dashboard.md | OK
+- REPORTS | research_score | 2026-07-10_research_score.csv | OK
+- REPORTS | strategy_performance | 2026-07-05_strategy_performance.csv | OK
+
+[1/28] Running scripts/rsi2_edge_database.py
+[2/28] Running scripts/build_edge_summary.py
+[3/28] Running scripts/cross_asset_rsi2_research.py
+[4/28] Running scripts/cross_asset_rsi2_regime_analysis.py
+[5/28] Running scripts/universal_market_scanner.py
+[6/28] Running scripts/monte_carlo_rsi2.py
+[7/28] Running scripts/opportunity_ranking.py
+[8/28] Running scripts/project_memory.py
+[9/28] Running scripts/opportunity_tracker.py
+[10/28] Running scripts/research_score_engine.py
+[11/28] Running scripts/trade_candidate_dashboard.py
+[12/28] Running scripts/research_explainability_engine.py
+[13/28] Running scripts/research_evolution_engine.py
+[14/28] Running scripts/research_timeline_engine.py
+[15/28] Running scripts/research_regime_engine.py
+[16/28] Running scripts/portfolio_allocator.py
+[17/28] Running scripts/position_manager.py
+[18/28] Running scripts/realized_trade_manager.py
+[19/28] Running scripts/exit_planner.py
+[20/28] Running scripts/signal_exit_calendar.py
+[21/28] Running scripts/signal_outcome_engine.py
+[22/28] Running scripts/daily_research_summary.py
+[23/28] Running scripts/daily_decision_dashboard.py
+[24/28] Running scripts/research_consensus_engine.py
+[25/28] Running scripts/research_feedback_engine.py
+[26/28] Running scripts/research_validation_engine.py
+[27/28] Running scripts/research_performance_dashboard.py
+[28/28] Running scripts/project_health_check.py
+
+SUCCESS
+Completed 28 steps in 11.58s
+Pipeline: research modules combined successfully
+===================================
+Kraken AI Trading Research v2.0
+===================================
+Datasets updated: OK
+Research pipeline: OK
+Daily reports: OK
+Portfolio allocation: OK
+Total runtime: 19.33s
+FINAL STATUS: SUCCESS

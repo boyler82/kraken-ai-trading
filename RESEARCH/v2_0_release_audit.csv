@@ -1,0 +1,40 @@
+section,check,status,fatal,detail
+PIPELINE,module exists: scripts/opportunity_ranking.py,OK,False,scripts/opportunity_ranking.py
+PIPELINE,module exists: scripts/project_memory.py,OK,False,scripts/project_memory.py
+PIPELINE,module exists: scripts/signal_exit_calendar.py,OK,False,scripts/signal_exit_calendar.py
+PIPELINE,module exists: scripts/signal_outcome_engine.py,OK,False,scripts/signal_outcome_engine.py
+PIPELINE,module exists: scripts/morning_brief.py,OK,False,scripts/morning_brief.py
+PIPELINE,module exists: scripts/daily_decision_dashboard.py,OK,False,scripts/daily_decision_dashboard.py
+PIPELINE,module exists: scripts/project_health_check.py,OK,False,scripts/project_health_check.py
+PIPELINE,module exists: scripts/position_manager.py,OK,False,scripts/position_manager.py
+PIPELINE,module exists: scripts/realized_trade_manager.py,OK,False,scripts/realized_trade_manager.py
+PIPELINE,module exists: scripts/run_research.py,OK,False,scripts/run_research.py
+PIPELINE,research_pipeline STEPS loaded,OK,False,28 steps
+PIPELINE,project_memory.py runs exactly once,OK,False,count=1
+PIPELINE,opportunity_ranking before project_memory,OK,False,"ranking=6, memory=7"
+PIPELINE,project_memory before signal_exit_calendar,OK,False,"memory=7, exit_calendar=19"
+PIPELINE,project_memory before signal_outcome_engine,OK,False,"memory=7, outcome=20"
+PIPELINE,project_health_check last,OK,False,"health=27, last=27"
+PIPELINE,final_v2_audit.log pipeline completed,OK,False,SUCCESS found
+DATA,latest crypto data_age_days <= 1,OK,False,max_crypto_age=0
+DATA,ETF/stock stale rows have STALE_DATA,OK,False,rows=4
+DATA,no NaN in critical OPEN signal fields,OK,False,missing_rows=0
+DATA,entry_price not truncated versus ranking close,OK,False,rounded_assets=none
+SIGNALS,SQLite database exists,OK,False,/Users/tron/kraken-ai-trading/journal/project_memory.sqlite
+SIGNALS,signal_id is unique,OK,False,rows=15 unique=15
+SIGNALS,"OPEN signal has date, entry_price, planned_exit_date",OK,False,missing_rows=0
+SIGNALS,planned_exit_date >= signal date,OK,False,bad_rows=0
+SIGNALS,planned_exit_date not recalculated for existing signal_id,OK,False,existing OPEN update does not set planned_exit_date; migration only fills NULLs
+SIGNALS,signal_exit_calendar and SQLite have same OPEN dates,OK,False,db=4 calendar=4
+SIGNALS,CLOSED signals do not appear as OPEN,OK,False,overlap=none
+SIGNALS,dashboard OPEN signal assets match SQLite,OK,False,"db=['ADA', 'AVAX', 'DOGE', 'LINK'] dashboard=['ADA', 'AVAX', 'DOGE', 'LINK']"
+PORTFOLIO,portfolio_positions.csv empty means No open positions,OK,False,"portfolio_empty=True, position_manager_rows=0"
+PORTFOLIO,"position_manager, dashboard and morning_brief agree",OK,False,"portfolio_empty=True, dashboard_no_positions=True, brief_no_positions=True"
+COSTS,config/trading_costs.json exists,OK,False,/Users/tron/kraken-ai-trading/config/trading_costs.json
+COSTS,default_fee_pct = 0.20,OK,False,default_fee_pct=0.2
+COSTS,realized_trade_manager shows estimated_fee,OK,False,estimated_fee token present
+COSTS,FX_REQUIRED does not calculate false realized P/L,OK,False,FX_REQUIRED rows null realized_pnl fields
+REPORTS,today daily_decision_dashboard exists,OK,False,2026-07-10_daily_decision_dashboard.md
+REPORTS,morning_brief runs,OK,False,Date: 2026-07-10
+REPORTS,project_health_check = OK,OK,False,"summary_statuses=['OK', 'OK']"
+REPORTS,no old report references when today's reports exist,OK,False,old_refs=none

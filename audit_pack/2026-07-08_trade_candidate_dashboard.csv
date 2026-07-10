@@ -1,0 +1,14 @@
+asset,asset_class,research_score,opportunity_score,confidence_score,recommendation,current_phase,market_bias,expected_value_pct,profit_factor,watch_status,readiness_pct,missing_conditions,priority
+LINK,crypto,71.25,85.0,80.0,DAY1_OBSERVE_ONLY,OVERSOLD_DAY_1,BEAR,1.38,1.52,ACTIVE_OPPORTUNITY,65.0,Waiting for bull trend,MEDIUM
+LTC,crypto,72.75,35.0,95.0,HISTORICALLY_STRONG_NO_SIGNAL,NO_OVERSOLD,BEAR,1.41,1.91,UNKNOWN,35.0,Waiting for signal; Waiting for bull trend,LOW
+ADA,crypto,59.45,93.0,50.0,DAY1_OBSERVE_ONLY,OVERSOLD_DAY_1,BEAR_HIGH_VOL,1.39,1.4,ACTIVE_OPPORTUNITY,30.0,Waiting for confidence > 70; No historical edge; Waiting for bull trend,LOW
+DOGE,crypto,56.2,73.0,60.0,DAY1_OBSERVE_ONLY,OVERSOLD_DAY_1,BEAR,0.79,1.26,ACTIVE_OPPORTUNITY,30.0,Waiting for confidence > 70; No historical edge; Waiting for bull trend,LOW
+AVAX,crypto,16.0,65.0,0.0,DAY1_OBSERVE_ONLY,OVERSOLD_DAY_1,BEAR_HIGH_VOL,,,ACTIVE_OPPORTUNITY,30.0,Waiting for confidence > 70; No historical edge; Waiting for bull trend,LOW
+BTC,crypto,69.5,35.0,85.0,HISTORICALLY_STRONG_NO_SIGNAL,NO_OVERSOLD,BEAR,1.07,1.83,UNKNOWN,20.0,Waiting for signal; No historical edge; Waiting for bull trend,IGNORE
+NVDA,stock,30.25,55.0,70.0,WATCHLIST,NEAR_OVERSOLD,BULL,,,WATCHLIST,15.0,Waiting for signal; Waiting for confidence > 70; No historical edge,IGNORE
+QQQ,etf,30.25,55.0,70.0,WATCHLIST,NEAR_OVERSOLD,BULL,,,WATCHLIST,15.0,Waiting for signal; Waiting for confidence > 70; No historical edge,IGNORE
+SPY,etf,30.25,55.0,70.0,WATCHLIST,NEAR_OVERSOLD,BULL,,,WATCHLIST,15.0,Waiting for signal; Waiting for confidence > 70; No historical edge,IGNORE
+XRP,crypto,66.0,35.0,65.0,HISTORICALLY_STRONG_NO_SIGNAL,NO_OVERSOLD,BEAR,2.08,1.54,UNKNOWN,0.0,Waiting for signal; Waiting for confidence > 70; No historical edge; Waiting for bull trend,IGNORE
+SOL,crypto,49.7,23.0,60.0,NO_ACTION,NO_OVERSOLD,BEAR_HIGH_VOL,0.66,1.37,UNKNOWN,0.0,Waiting for signal; Waiting for confidence > 70; No historical edge; Waiting for bull trend,IGNORE
+ETH,crypto,47.45,23.0,60.0,NO_ACTION,NO_OVERSOLD,BEAR_HIGH_VOL,0.9,1.24,UNKNOWN,0.0,Waiting for signal; Waiting for confidence > 70; No historical edge; Waiting for bull trend,IGNORE
+GLD,etf,15.25,5.0,60.0,NO_ACTION,NO_SIGNAL,BEAR,,,UNKNOWN,0.0,Waiting for signal; Waiting for confidence > 70; No historical edge; Waiting for bull trend,IGNORE

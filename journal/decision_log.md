@@ -40,3 +40,18 @@ Od teraz analizy BTC 15m mają najpierw określać typ setupu:
 
 Default dla obecnego BTC:
 WAIT FOR PULLBACK.
+
+2026-06-21 — Research Observation
+
+Observation:
+RSI2 < 10 correctly identified oversold conditions.
+
+However, immediate entry on first signal appeared early.
+Price continued lower before reversal.
+
+Manual chart confirmation produced better entry timing.
+
+Status:
+Research observation only.
+No strategy changes.
+Need more live samples.

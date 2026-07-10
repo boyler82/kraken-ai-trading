@@ -27,11 +27,11 @@ No markets near signal today.
 No active portfolio signals today.
 ## Full Market Scan
 
-- BTC: NO SIGNAL | Close: 66149.1 | RSI2: 80.81 | Dist MA20: 0.14%
-- SPY: NO SIGNAL | Close: 754.84 | RSI2: 100.0 | Dist MA20: 1.15%
-- QQQ: NO SIGNAL | Close: 742.47 | RSI2: 100.0 | Dist MA20: 2.26%
-- GLD: NO SIGNAL | Close: 399.45 | RSI2: 96.73 | Dist MA20: -0.2%
-- NVDA: NO SIGNAL | Close: 211.14 | RSI2: 86.68 | Dist MA20: 0.22%
+- BTC: NO SIGNAL | Close: 65639.0 | RSI2: 46.87 | Dist MA20: -0.59%
+- SPY: NO SIGNAL | Close: 752.4 | RSI2: 87.35 | Dist MA20: 0.84%
+- QQQ: NO SIGNAL | Close: 733.29 | RSI2: 58.12 | Dist MA20: 1.06%
+- GLD: NO SIGNAL | Close: 398.46 | RSI2: 95.17 | Dist MA20: -0.44%
+- NVDA: NO SIGNAL | Close: 209.18 | RSI2: 58.78 | Dist MA20: -0.66%
 
 ## Process Note
 
