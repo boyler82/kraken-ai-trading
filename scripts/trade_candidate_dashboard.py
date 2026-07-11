@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from pathlib import Path
-import glob
 
 import pandas as pd
 
@@ -13,14 +12,10 @@ OUT_CSV = REPORT_DIR / f"{TODAY}_trade_candidate_dashboard.csv"
 OUT_MD = REPORT_DIR / f"{TODAY}_trade_candidate_dashboard.md"
 
 
-def _latest(pattern: str) -> Path | None:
-    files = sorted(glob.glob(str(REPORT_DIR / pattern)))
-    return Path(files[-1]) if files else None
-
-
-def _load(pattern: str) -> pd.DataFrame:
-    path = _latest(pattern)
-    if path is None:
+def _load_today(suffix: str) -> pd.DataFrame:
+    """Load only the report for TODAY; never carry an older signal forward."""
+    path = REPORT_DIR / f"{TODAY}_{suffix}.csv"
+    if not path.exists():
         return pd.DataFrame()
     try:
         return pd.read_csv(path)
@@ -49,7 +44,28 @@ def _priority(readiness_pct: float) -> str:
     return "IGNORE"
 
 
+def _current_setup_status(row: dict) -> str:
+    freshness = str(row.get("data_freshness_status", "FRESH")).upper()
+    if freshness and freshness not in {"FRESH", "NAN", "NONE"}:
+        return "STALE_DATA"
+
+    rec = str(row.get("recommendation", "")).upper()
+    phase = str(row.get("current_phase", "")).upper()
+    if rec in {"DAY2_ENTRY", "DAY3_ENTRY", "ENTRY_READY", "BUY", "BUY_NOW"}:
+        return "ACTIONABLE"
+    if rec == "HISTORICALLY_STRONG_NO_SIGNAL" or row.get("historically_strong_no_signal"):
+        return "HISTORICAL_ONLY"
+    if rec in {"NO_ACTION", "NO_SIGNAL", ""} or phase in {"NO_SIGNAL", "NO_OVERSOLD"}:
+        return "NO_SETUP"
+    if "OVERSOLD" in phase or "DAY1" in rec or "DAY2" in rec or "DAY3" in rec:
+        return "DEVELOPING"
+    return "NO_SETUP"
+
+
 def _watch_status(row: dict) -> str:
+    setup_status = str(row.get("current_setup_status", "")).upper()
+    if setup_status in {"NO_SETUP", "HISTORICAL_ONLY", "STALE_DATA"}:
+        return setup_status
     if row.get("watch_status"):
         return str(row["watch_status"])
     if str(row.get("bucket", "")).upper() == "ACTIVE_OPPORTUNITY":
@@ -63,6 +79,8 @@ def _watch_status(row: dict) -> str:
 
 
 def _missing_conditions(row: dict, readiness_pct: float) -> str:
+    if str(row.get("current_setup_status", "")).upper() == "HISTORICAL_ONLY":
+        return "Waiting for current signal"
     conditions = []
     if str(row.get("bucket", "")).upper() != "ACTIVE_OPPORTUNITY":
         conditions.append("Waiting for signal")
@@ -88,6 +106,9 @@ def _missing_conditions(row: dict, readiness_pct: float) -> str:
 
 
 def _readiness_pct(row: dict) -> float:
+    status = str(row.get("current_setup_status", "NO_SETUP"))
+    if status in {"HISTORICAL_ONLY", "NO_SETUP", "STALE_DATA"}:
+        return 0.0
     score = 0.0
     if str(row.get("bucket", "")).upper() == "ACTIVE_OPPORTUNITY":
         score += 30
@@ -106,9 +127,9 @@ def _readiness_pct(row: dict) -> float:
 
 
 def build_dashboard() -> pd.DataFrame:
-    crypto = _load("*_crypto_opportunity_ranking.csv")
-    universal = _load("*_universal_market_scanner.csv")
-    research = _load("*_research_score.csv")
+    crypto = _load_today("crypto_opportunity_ranking")
+    universal = _load_today("universal_market_scanner")
+    research = _load_today("research_score")
 
     sources = []
     if not crypto.empty:
@@ -126,16 +147,14 @@ def build_dashboard() -> pd.DataFrame:
 
     if not sources:
         return pd.DataFrame(columns=[
-            "asset", "asset_class", "research_score", "opportunity_score", "confidence_score", "recommendation", "current_phase", "market_bias", "expected_value_pct", "profit_factor", "watch_status", "readiness_pct", "missing_conditions", "priority"
+            "asset", "asset_class", "research_score", "opportunity_score", "confidence_score", "recommendation", "current_phase", "market_bias", "expected_value_pct", "profit_factor", "watch_status", "current_setup_status", "readiness_pct", "missing_conditions", "priority"
         ])
 
     assets = sorted(set().union(*[set(df["asset"].astype(str).str.upper()) for df in sources if "asset" in df.columns]))
     rows = []
     for asset in assets:
         row: dict[str, object] = {"asset": asset}
-        best_source = None
-
-        # preferred: research -> crypto -> universal
+        # Historical metrics may come from research, but current state is applied below.
         for df in [research, crypto, universal]:
             if df.empty or "asset" not in df.columns:
                 continue
@@ -163,7 +182,24 @@ def build_dashboard() -> pd.DataFrame:
                 row["profit_factor"] = _to_float(src.get("profit_factor"))
             if "bucket" in src and pd.notna(src.get("bucket")):
                 row["bucket"] = src.get("bucket")
-            best_source = best_source or src
+
+        # The universal scanner is authoritative when it explicitly reports no
+        # current setup. Otherwise the richer same-day crypto state may be used.
+        scanner_hit = universal[universal["asset"].astype(str).str.upper() == asset] if not universal.empty and "asset" in universal.columns else pd.DataFrame()
+        crypto_hit = crypto[crypto["asset"].astype(str).str.upper() == asset] if not crypto.empty and "asset" in crypto.columns else pd.DataFrame()
+        scanner = scanner_hit.iloc[0].to_dict() if not scanner_hit.empty else {}
+        crypto_now = crypto_hit.iloc[0].to_dict() if not crypto_hit.empty else {}
+        research_hit = research[research["asset"].astype(str).str.upper() == asset] if not research.empty and "asset" in research.columns else pd.DataFrame()
+        research_now = research_hit.iloc[0].to_dict() if not research_hit.empty else {}
+        row["historically_strong_no_signal"] = str(research_now.get("recommendation", "")).upper() == "HISTORICALLY_STRONG_NO_SIGNAL"
+        scanner_rec = str(scanner.get("recommendation", "")).upper()
+        scanner_phase = str(scanner.get("current_phase", "")).upper()
+        current = scanner if scanner_rec in {"NO_ACTION", "NO_SIGNAL"} or scanner_phase == "NO_SIGNAL" else (crypto_now or scanner)
+        for key in ["recommendation", "current_phase", "market_bias", "opportunity_score", "confidence_score", "bucket"]:
+            if key in current and pd.notna(current.get(key)):
+                row[key] = current.get(key)
+        if scanner and pd.notna(scanner.get("data_freshness_status")):
+            row["data_freshness_status"] = scanner.get("data_freshness_status")
 
         row.setdefault("asset_class", "unknown")
         row.setdefault("research_score", None)
@@ -175,6 +211,9 @@ def build_dashboard() -> pd.DataFrame:
         row.setdefault("expected_value_pct", None)
         row.setdefault("profit_factor", None)
         row.setdefault("bucket", None)
+        row.setdefault("data_freshness_status", None)
+
+        row["current_setup_status"] = _current_setup_status(row)
 
         readiness_pct = _readiness_pct(row)
         row["readiness_pct"] = round(readiness_pct, 2)
@@ -209,6 +248,7 @@ def build_dashboard() -> pd.DataFrame:
             "expected_value_pct",
             "profit_factor",
             "watch_status",
+            "current_setup_status",
             "readiness_pct",
             "missing_conditions",
             "priority",
@@ -232,7 +272,7 @@ def render_markdown(report: pd.DataFrame) -> str:
     else:
         for _, row in report.iterrows():
             lines.append(
-                f"- {row['asset']} | class {row['asset_class']} | readiness {row['readiness_pct']} | priority {row['priority']} | research {row['research_score']} | opp {row['opportunity_score']} | conf {row['confidence_score']} | rec {row['recommendation']} | phase {row['current_phase']} | bias {row['market_bias']} | ev {row['expected_value_pct']} | pf {row['profit_factor']} | watch {row['watch_status']} | missing {row['missing_conditions']}"
+                f"- {row['asset']} | setup {row['current_setup_status']} | class {row['asset_class']} | readiness {row['readiness_pct']} | priority {row['priority']} | research {row['research_score']} | opp {row['opportunity_score']} | conf {row['confidence_score']} | rec {row['recommendation']} | phase {row['current_phase']} | bias {row['market_bias']} | ev {row['expected_value_pct']} | pf {row['profit_factor']} | watch {row['watch_status']} | missing {row['missing_conditions']}"
             )
     lines.append("")
     return "\n".join(lines)

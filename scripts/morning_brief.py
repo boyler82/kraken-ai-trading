@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import sqlite3
 from pathlib import Path
 
 import pandas as pd
@@ -96,8 +97,18 @@ def _load_project_health(date_text: str) -> str:
 
 
 def _load_signal_exit_calendar(date_text: str) -> pd.DataFrame:
-    path = _path_for(date_text, "signal_exit_calendar.csv")
-    return _read_csv(path)
+    db_path = JOURNAL_DIR / "project_memory.sqlite"
+    if not db_path.exists():
+        return pd.DataFrame()
+    try:
+        with sqlite3.connect(db_path) as conn:
+            return pd.read_sql_query(
+                "SELECT signal_id, asset, date, planned_exit_date, status "
+                "FROM signals WHERE status = 'OPEN' ORDER BY asset",
+                conn,
+            )
+    except (sqlite3.Error, pd.errors.DatabaseError):
+        return pd.DataFrame()
 
 
 def _load_realized_trades(date_text: str) -> pd.DataFrame:
@@ -156,6 +167,44 @@ def _top_candidates(df: pd.DataFrame) -> list[str]:
             parts.append(f"{row.get('recommendation')}")
         out.append(" | ".join(parts))
     return out
+
+
+def _setup_rows(df: pd.DataFrame, status: str) -> list[str]:
+    if df.empty or "current_setup_status" not in df.columns:
+        return []
+    selected = df[df["current_setup_status"].astype(str).str.upper() == status]
+    rows = []
+    for _, row in selected.iterrows():
+        rows.append(
+            f"{row.get('asset')} | {row.get('recommendation')} | "
+            f"readiness {_fmt_num(row.get('readiness_pct'))} | "
+            f"research {_fmt_num(row.get('research_score'))}"
+        )
+    return rows
+
+
+def _paper_signals(df: pd.DataFrame) -> list[str]:
+    if df.empty:
+        return []
+    if "status" in df.columns:
+        statuses = df["status"].astype(str).str.upper()
+        df = df[statuses.isin({"OPEN", "WAITING"})]
+    rows = []
+    for _, row in df.iterrows():
+        rows.append(
+            f"{row.get('signal_id')} | {row.get('asset')} | date {row.get('date')} | "
+            f"planned exit {row.get('planned_exit_date')} | {row.get('status')}"
+        )
+    return rows
+
+
+def _print_section(title: str, rows: list[str], empty_text: str) -> None:
+    print(f"\n{title}")
+    if rows:
+        for row in rows:
+            print(f"- {row}")
+    else:
+        print(empty_text)
 
 
 def _watchlist_count(df: pd.DataFrame) -> int:
@@ -241,6 +290,7 @@ def main() -> None:
 
     daily_md = _load_daily_decision(date_text)
     candidates_df = _load_trade_candidates(date_text)
+    universal_df = _read_csv(_path_for(date_text, "universal_market_scanner.csv"))
     health_md = _load_project_health(date_text)
     signal_exit_df = _load_signal_exit_calendar(date_text)
     realized_df = _load_realized_trades(date_text)
@@ -250,27 +300,58 @@ def main() -> None:
     portfolio_summary = _portfolio_summary(daily_md)
     if position_df.empty:
         portfolio_summary = "No open positions"
-    top_candidates = _top_candidates(candidates_df)
     watchlist_count = _watchlist_count_from_md(daily_md)
-    open_signal_exits = _open_signal_exits(signal_exit_df)
     realized_summary = _realized_summary(realized_df)
     project_health = _project_health(health_md)
-    next_action = _next_action(final_decision, top_candidates, watchlist_count, realized_summary)
+    actionable = _setup_rows(candidates_df, "ACTIONABLE")
+    developing = _setup_rows(candidates_df, "DEVELOPING")
+    historical = _setup_rows(candidates_df, "HISTORICAL_ONLY")
+    paper = _paper_signals(signal_exit_df)
+    universal_watch = pd.DataFrame()
+    if not universal_df.empty and "recommendation" in universal_df.columns:
+        watch_mask = universal_df["recommendation"].astype(str).str.upper().eq("WATCHLIST")
+        if "data_freshness_status" in universal_df.columns:
+            watch_mask &= universal_df["data_freshness_status"].astype(str).str.upper().eq("FRESH")
+        universal_watch = universal_df[watch_mask].copy()
+    universal_watch_rows = []
+    for _, row in universal_watch.iterrows():
+        universal_watch_rows.append(
+            f"{row.get('asset')} | WATCHLIST | Opp {_fmt_num(row.get('opportunity_score'))} | Conf {_fmt_num(row.get('confidence_score'))}"
+        )
+    watch_assets = universal_watch["asset"].astype(str).tolist() if "asset" in universal_watch.columns else []
+    no_current = not actionable and not developing
+    if actionable:
+        final_decision = "BUY_REVIEW"
+        reason = "Actionable RSI2 setup available."
+    elif developing:
+        final_decision = "WAIT_AND_WATCH"
+        reason = "Current RSI2 setup is still developing."
+    elif watch_assets:
+        final_decision = "WAIT_AND_WATCH"
+        assets = ", ".join(watch_assets)
+        verb = "remains" if len(watch_assets) == 1 else "remain"
+        reason = f"No current RSI2 setup; {assets} {verb} on universal watchlist."
+    else:
+        final_decision = "WAIT"
+        reason = "No current setup or watchlist conditions."
 
     print(f"Date: {date_text}")
-    print(f"Final decision: {final_decision}")
-    print(f"Portfolio position summary: {portfolio_summary}")
-    print("Top 3 candidates:")
-    if top_candidates:
-        for item in top_candidates:
-            print(f"- {item}")
-    else:
-        print("- No candidates available.")
-    print(f"Watchlist count: {watchlist_count}")
-    print(f"Open signal exits: {open_signal_exits}")
-    print(f"Realized trades summary: {realized_summary}")
-    print(f"Project health: {project_health}")
-    print(f"Next action: {next_action}")
+    _print_section("TODAY'S DECISION", [final_decision, f"Reason: {reason}"], "WAIT")
+    _print_section("ACTIONABLE NOW", actionable, "No actionable entry-ready recommendations.")
+    _print_section(
+        "DEVELOPING SETUPS",
+        developing,
+        "No current RSI2 entry setup. Wait for a new oversold episode." if no_current else "No developing setups.",
+    )
+    _print_section("HISTORICAL EDGE — NO CURRENT SIGNAL", historical, "No historical-edge assets to note.")
+    _print_section("UNIVERSAL WATCHLIST", universal_watch_rows, "No current universal watchlist assets.")
+    _print_section("PAPER SIGNALS — NOT CURRENT BUY OPPORTUNITIES", paper, "No open paper signals.")
+    next_condition = (
+        "Wait for a new oversold episode."
+        if no_current
+        else "Monitor only today's developing setup conditions for an explicit entry-ready recommendation."
+    )
+    _print_section("NEXT CONDITION", [next_condition], "Wait for fresh market data.")
 
 
 if __name__ == "__main__":

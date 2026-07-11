@@ -35,13 +35,18 @@ def _load_md(pattern: str) -> str:
     return path.read_text()
 
 
-def _final_decision(portfolio: pd.DataFrame, watchlist: bool) -> tuple[str, str]:
-    if not portfolio.empty and "proposed_weight_pct" in portfolio.columns:
-        if (portfolio["proposed_weight_pct"].fillna(0) > 0).any():
-            return "ACTION_REVIEW", "Portfolio allocation has proposed weight > 0."
-    if watchlist:
-        return "WAIT_AND_WATCH", "No allocation, but watchlist conditions are active."
-    return "WAIT", "No allocation and no active watchlist conditions."
+def _final_decision(actionable: pd.DataFrame, developing: pd.DataFrame, watch_assets: list[str]) -> tuple[str, str]:
+    if not actionable.empty:
+        assets = ", ".join(actionable["asset"].astype(str).tolist())
+        return "BUY_REVIEW", f"Actionable RSI2 setup: {assets}."
+    if not developing.empty:
+        assets = ", ".join(developing["asset"].astype(str).tolist())
+        return "WAIT_AND_WATCH", f"Developing RSI2 setup: {assets}."
+    if watch_assets:
+        assets = ", ".join(watch_assets)
+        verb = "remains" if len(watch_assets) == 1 else "remain"
+        return "WAIT_AND_WATCH", f"No RSI2 setup; {assets} {verb} on universal watchlist."
+    return "WAIT", "No current setup or watchlist conditions."
 
 
 def _current_position(position_manager: pd.DataFrame, exit_planner: pd.DataFrame) -> pd.DataFrame:
@@ -112,7 +117,7 @@ def _research_validation_status() -> str:
 
 def build_dashboard() -> tuple[pd.DataFrame, str]:
     daily_summary_md = _load_md("*_daily_research_summary.md")
-    crypto = _load_csv("*_crypto_opportunity_ranking.csv")
+    candidates = _load_csv("*_trade_candidate_dashboard.csv")
     universal = _load_csv("*_universal_market_scanner.csv")
     portfolio = _load_csv("*_portfolio_allocation.csv")
     position_manager = _load_csv("*_position_manager.csv")
@@ -122,16 +127,30 @@ def build_dashboard() -> tuple[pd.DataFrame, str]:
     research_score_leaders = _research_score_leaders()
     research_validation_status = _research_validation_status()
 
-    watchlist = False
-    if not crypto.empty and "recommendation" in crypto.columns:
-        watchlist = crypto["recommendation"].astype(str).str.contains("WATCH", na=False).any()
-    if not universal.empty and "recommendation" in universal.columns:
-        watchlist = watchlist or universal["recommendation"].astype(str).str.contains("WATCH", na=False).any()
+    actionable = pd.DataFrame()
+    developing = pd.DataFrame()
+    historical = pd.DataFrame()
+    if not candidates.empty and "current_setup_status" in candidates.columns:
+        statuses = candidates["current_setup_status"].astype(str).str.upper()
+        actionable = candidates[statuses.eq("ACTIONABLE")].copy()
+        developing = candidates[statuses.eq("DEVELOPING")].copy()
+        historical = candidates[statuses.eq("HISTORICAL_ONLY")].copy()
+        if not research_score_leaders.empty and "asset" in research_score_leaders.columns:
+            current_status = candidates[["asset", "current_setup_status"]].copy()
+            current_status["asset"] = current_status["asset"].astype(str).str.upper()
+            research_score_leaders["asset"] = research_score_leaders["asset"].astype(str).str.upper()
+            research_score_leaders = research_score_leaders.merge(current_status, on="asset", how="left")
 
-    final_decision, final_reason = _final_decision(portfolio, watchlist)
+    universal_watch = pd.DataFrame()
+    if not universal.empty and "recommendation" in universal.columns:
+        watch_mask = universal["recommendation"].astype(str).str.upper().eq("WATCHLIST")
+        if "data_freshness_status" in universal.columns:
+            watch_mask &= universal["data_freshness_status"].astype(str).str.upper().eq("FRESH")
+        universal_watch = universal[watch_mask].copy()
+    watch_assets = sorted(universal_watch["asset"].astype(str).unique().tolist()) if "asset" in universal_watch.columns else []
+
+    final_decision, final_reason = _final_decision(actionable, developing, watch_assets)
     current_position = _current_position(position_manager, exit_planner)
-    top_crypto = _top_rows(crypto, 5)
-    top_universal = _top_rows(universal, 5)
 
     dashboard_rows = []
     dashboard_rows.append({"section": "FINAL DECISION", "key": "decision", "value": final_decision})
@@ -149,20 +168,33 @@ def build_dashboard() -> tuple[pd.DataFrame, str]:
     else:
         dashboard_rows.append({"section": "CURRENT POSITION", "key": "none", "value": "No open positions"})
 
-    if not top_crypto.empty:
-        for _, row in top_crypto.iterrows():
+    for section, rows in [
+        ("ACTIONABLE CRYPTO", actionable),
+        ("DEVELOPING CRYPTO SETUPS", developing),
+        ("HISTORICAL EDGE — NO CURRENT SIGNAL", historical),
+    ]:
+        if not rows.empty:
+            for _, row in rows.iterrows():
+                dashboard_rows.append(
+                    {
+                        "section": section,
+                        "key": str(row.get("asset")),
+                        "value": f"Status={row.get('current_setup_status')} | Readiness={row.get('readiness_pct')} | Rec={row.get('recommendation')}",
+                    }
+                )
+        else:
             dashboard_rows.append(
                 {
-                    "section": "TOP CRYPTO OPPORTUNITIES",
-                    "key": str(row.get("asset")),
-                    "value": f"Opp={row.get('opportunity_score')} | Conf={row.get('confidence_score')} | Rec={row.get('recommendation')}",
+                    "section": section,
+                    "key": "none",
+                    "value": "No assets.",
                 }
             )
-    if not top_universal.empty:
-        for _, row in top_universal.iterrows():
+    if not universal_watch.empty:
+        for _, row in universal_watch.iterrows():
             dashboard_rows.append(
                 {
-                    "section": "TOP UNIVERSAL OPPORTUNITIES",
+                    "section": "UNIVERSAL WATCHLIST",
                     "key": str(row.get("asset")),
                     "value": f"Opp={row.get('opportunity_score')} | Conf={row.get('confidence_score')} | Rec={row.get('recommendation')}",
                 }
@@ -174,12 +206,6 @@ def build_dashboard() -> tuple[pd.DataFrame, str]:
         allocation_status = "100% NO ALLOCATION"
     dashboard_rows.append({"section": "PORTFOLIO ALLOCATION", "key": "status", "value": allocation_status})
 
-    watch_assets = []
-    if not crypto.empty and "recommendation" in crypto.columns:
-        watch_assets.extend(crypto.loc[crypto["recommendation"].astype(str).str.contains("WATCH", na=False), "asset"].astype(str).tolist())
-    if not universal.empty and "recommendation" in universal.columns:
-        watch_assets.extend(universal.loc[universal["recommendation"].astype(str).str.contains("WATCH", na=False), "asset"].astype(str).tolist())
-    watch_assets = sorted(set(watch_assets))
     if watch_assets:
         for asset in watch_assets:
             dashboard_rows.append({"section": "WATCHLIST", "key": asset, "value": "WATCH"})
@@ -226,15 +252,15 @@ def build_dashboard() -> tuple[pd.DataFrame, str]:
         for _, row in research_score_leaders.iterrows():
             dashboard_rows.append(
                 {
-                    "section": "RESEARCH SCORE LEADERS",
+                    "section": "RESEARCH SCORE LEADERS — HISTORICAL / RESEARCH RANKING",
                     "key": str(row.get("asset")),
-                    "value": f"research_score={row.get('research_score')} | status={row.get('status')} | recommendation={row.get('recommendation')} | expected_value_pct={row.get('expected_value_pct')} | profit_factor={row.get('profit_factor')}",
+                    "value": f"research_score={row.get('research_score')} | status={row.get('status')} | historical_recommendation={row.get('recommendation')} | current_setup_status={row.get('current_setup_status')} | expected_value_pct={row.get('expected_value_pct')} | profit_factor={row.get('profit_factor')}",
                 }
             )
     else:
         dashboard_rows.append(
             {
-                "section": "RESEARCH SCORE LEADERS",
+                "section": "RESEARCH SCORE LEADERS — HISTORICAL / RESEARCH RANKING",
                 "key": "none",
                 "value": "No research score available.",
             }
@@ -272,17 +298,16 @@ def render_markdown(dashboard: pd.DataFrame, final_decision: str) -> str:
         lines.append(f"- {row['key']}: {row['value']}")
     lines.append("")
 
-    lines.append("## TOP CRYPTO OPPORTUNITIES")
-    lines.append("")
-    for _, row in dashboard[dashboard["section"] == "TOP CRYPTO OPPORTUNITIES"].iterrows():
-        lines.append(f"- {row['key']}: {row['value']}")
-    lines.append("")
-
-    lines.append("## TOP UNIVERSAL OPPORTUNITIES")
-    lines.append("")
-    for _, row in dashboard[dashboard["section"] == "TOP UNIVERSAL OPPORTUNITIES"].iterrows():
-        lines.append(f"- {row['key']}: {row['value']}")
-    lines.append("")
+    for section in ["ACTIONABLE CRYPTO", "DEVELOPING CRYPTO SETUPS", "HISTORICAL EDGE — NO CURRENT SIGNAL", "UNIVERSAL WATCHLIST"]:
+        lines.append(f"## {section}")
+        lines.append("")
+        rows = dashboard[dashboard["section"] == section]
+        if rows.empty:
+            lines.append("No assets.")
+        else:
+            for _, row in rows.iterrows():
+                lines.append(f"- {row['key']}: {row['value']}")
+        lines.append("")
 
     lines.append("## PORTFOLIO ALLOCATION")
     lines.append("")
@@ -316,9 +341,9 @@ def render_markdown(dashboard: pd.DataFrame, final_decision: str) -> str:
             lines.append(f"- {row['value']}")
     lines.append("")
 
-    lines.append("## RESEARCH SCORE LEADERS")
+    lines.append("## RESEARCH SCORE LEADERS — HISTORICAL / RESEARCH RANKING")
     lines.append("")
-    research_score_rows = dashboard[dashboard["section"] == "RESEARCH SCORE LEADERS"]
+    research_score_rows = dashboard[dashboard["section"] == "RESEARCH SCORE LEADERS — HISTORICAL / RESEARCH RANKING"]
     if research_score_rows.empty or (len(research_score_rows) == 1 and research_score_rows.iloc[0]["value"] == "No research score available."):
         lines.append("No research score available.")
     else:
