@@ -106,7 +106,11 @@ def render(packet:dict)->str:
 def canonical_decision_sections(packet:dict,chief:dict,memory30:dict,opportunity:dict)->dict:
  return {
   'CURRENT_MARKET':{'market_state':packet['market_state'],'source_cutoff':memory30['coverage']['latest_cutoff'],'observation_type':'OBSERVED'},
-  'MARKET_TRAJECTORY_7D_30D':memory30['trajectory'],
+  'MARKET_TRAJECTORY':memory30['trajectory'],'MARKET_TRAJECTORY_7D_30D':memory30['trajectory'],
+  'CONTINUATION_WATCHLIST':{'status':'BROAD_WATCHLIST' if opportunity['continuation_watchlist'] else 'NO_COMPELLING_OPPORTUNITY','candidates':opportunity['continuation_watchlist']},
+  'REVERSAL_WATCHLIST':{'status':opportunity['reversal_watchlist_status'],'candidates':opportunity['reversal_watchlist']},
+  'TOP_CONTINUATION_CANDIDATES':opportunity['continuation_watchlist'][:10],
+  'TOP_REVERSAL_CANDIDATES':opportunity['reversal_watchlist'][:10],
   'BROAD_OPPORTUNITY_WATCHLIST':{'status':opportunity['watchlist_status'],'candidates':opportunity['watchlist']},
   'TOP_RAW_OPPORTUNITY_COMPONENTS':[{'rank':x['rank'],'asset':x['asset'],'components':x['raw_opportunity_components']} for x in opportunity['watchlist'][:10]],
   'BTC_CASH_BENCHMARK_CONTEXT':opportunity['btc_cash_benchmark'],

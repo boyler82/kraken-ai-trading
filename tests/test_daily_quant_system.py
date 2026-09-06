@@ -43,6 +43,7 @@ def test_orchestration_dependency_order(monkeypatch,tmp_path):
  paths,*_=fixtures(tmp_path);monkeypatch.setattr(q,'PATHS',paths);monkeypatch.setattr(q,'transition_changes',lambda now:([],[]));monkeypatch.setattr(q,'read_v2_status',lambda db,now:{'collection_state':'COLLECTING'});monkeypatch.setattr(q,'clock_safety_preflight',lambda:{'status':'PASS'});monkeypatch.setattr(q,'write_memory',lambda memory:tmp_path/'memory.json');monkeypatch.setattr(q,'append_opportunity_observations',lambda chief:0)
  packet,_,_=q.orchestrate(as_of=NOW,runner=lambda **kwargs:{'success':True,'warnings':[]},out_dir=tmp_path/'out')
  assert packet['run_metadata']['dependency_order']==['complete_daily_research','market_transition_summary','research_memory_summary','capital_efficiency_summary','range_fixed_5_v2_status','strategy_evidence_audit','forward_validation_board','market_memory_30d','opportunity_discovery_v1','canonical_decision_handoff']
+ assert {'CONTINUATION_WATCHLIST','REVERSAL_WATCHLIST','TOP_CONTINUATION_CANDIDATES','TOP_REVERSAL_CANDIDATES'}<=set(packet)
 
 def test_no_private_api_order_or_v2_runner_invocation():
  source=Path(q.__file__).read_text().lower();assert '/private/' not in source;assert 'addorder' not in source and 'cancelorder' not in source

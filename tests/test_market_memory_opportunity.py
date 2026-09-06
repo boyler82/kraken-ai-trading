@@ -75,6 +75,67 @@ def test_scenario_is_deterministic_and_strict_json():
  first=m.scenario(c);assert first==m.scenario(c)
  json.dumps(first,allow_nan=False)
 
+def reversal_candidate(asset='DOWN',acceleration=1,relative_acceleration=1,return_4h=1):
+ c=candidate(asset);c['momentum'].update(return_24h_pct=-8,return_4h_pct=return_4h,acceleration=acceleration,invalidation_reference_level=80)
+ c['relative_strength'].update(relative_acceleration=relative_acceleration,relative_trend='RECOVERING')
+ c['consolidation'].update(range_low=85,midpoint=95,range_high=110)
+ return c
+
+def test_falling_price_alone_does_not_create_reversal():
+ c=reversal_candidate(acceleration=-1,relative_acceleration=-1,return_4h=-2)
+ assert m.rank_reversal_opportunities({'candidates':[c]})==[]
+
+def test_downside_deceleration_creates_watch_not_confirmation():
+ c=reversal_candidate(relative_acceleration=-1,return_4h=-1)
+ row=m.rank_reversal_opportunities({'candidates':[c]})[0]
+ assert row['opportunity_stage']=='DOWNSIDE_DECELERATING'
+ assert row['current_scenario']['scenario_type'] in {'REVERSAL_WATCH','REVERSAL_RECLAIM_SCENARIO'}
+ assert 'NO_REVERSAL_CONFIRMATION' in row['reason_codes']
+
+def test_improving_structure_and_relative_strength_are_exposed():
+ c=reversal_candidate();c['consolidation']['range_state']='RECOVERING_RANGE'
+ row=m.rank_reversal_opportunities({'candidates':[c]})[0]
+ assert row['opportunity_stage']=='EARLY_REVERSAL' and row['raw_opportunity_components']['relative_acceleration']==1
+ assert row['structural_context']['structural_zone_type']=='RECORDED_CONSOLIDATION_RANGE'
+ assert row['structural_context']['structure_state']=='RECOVERING_RANGE'
+ assert row['structural_context']['not_automatically_an_entry_zone'] is True
+
+def test_continuation_order_unchanged_and_families_not_collapsed():
+ a=candidate('A');b=candidate('B');b['momentum']['acceleration']=3
+ chief={'candidates':[a,b,reversal_candidate()]}
+ assert [x['asset'] for x in m.rank_opportunities(chief)][:2]==['B','A']
+ context=m.opportunity_context(chief,{'coverage':{}},{})
+ assert context['continuation_watchlist'] is not context['reversal_watchlist']
+ assert all(x['opportunity_family']=='CONTINUATION' for x in context['continuation_watchlist'])
+ assert all(x['opportunity_family']=='REVERSAL' for x in context['reversal_watchlist'])
+
+def test_current_scenario_never_promotes_structural_zone_to_entry():
+ c=reversal_candidate();c['current_data']['live_reference_price']=90
+ result=m.current_scenario(c,'REVERSAL','POTENTIAL_BASE')
+ assert result['actionable_reference']==95 and result['technical_invalidation']==85
+ assert result['scenario_type']=='REVERSAL_RECLAIM_SCENARIO'
+ c['consolidation']['range_low']=96
+ result=m.current_scenario(c,'REVERSAL','POTENTIAL_BASE')
+ assert result['scenario_status']=='NO_ACTIONABLE_SCENARIO' and result['technical_invalidation'] is None
+
+def test_missing_actionable_reference_is_no_actionable_scenario():
+ c=reversal_candidate();c['current_data']['live_reference_price']=120
+ result=m.current_scenario(c,'REVERSAL','DOWNSIDE_DECELERATING')
+ assert result['scenario_status']=='NO_ACTIONABLE_SCENARIO' and result['actionable_reference'] is None
+
+def test_invalidation_above_current_price_is_not_actionable():
+ c=reversal_candidate();c['current_data']['live_reference_price']=80
+ result=m.current_scenario(c,'REVERSAL','DECLINING')
+ assert result['scenario_status']=='NO_ACTIONABLE_SCENARIO' and result['technical_invalidation'] is None
+
+def test_family_is_persisted_idempotently_and_clusters_remain_correlated(tmp_path,monkeypatch):
+ path=tmp_path/'history.jsonl';chief={'generated_at_utc':'2026-01-31T00:00:00Z','candidates':[reversal_candidate()]}
+ assert m.append_opportunity_observations(chief,path)>0 and m.append_opportunity_observations(chief,path)==0
+ rows=[json.loads(x) for x in path.read_text().splitlines()]
+ assert {'CONTINUATION','REVERSAL'}.issuperset({x['opportunity_family'] for x in rows}) and any(x['opportunity_family']=='REVERSAL' for x in rows)
+ monkeypatch.setattr(m,'TACTICAL_SNAPSHOTS',path);ctx=m.opportunity_context(chief,{'coverage':{}},{})
+ assert ctx['history_summary']['independent_market_clusters']==1
+
 def test_observation_identity_append_only_and_idempotent(tmp_path):
  path=tmp_path/'history.jsonl';chief={'generated_at_utc':'2026-01-31T00:00:00Z','candidates':[candidate()]}
  assert m.append_opportunity_observations(chief,path)==1 and m.append_opportunity_observations(chief,path)==0

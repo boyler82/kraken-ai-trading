@@ -333,6 +333,7 @@ def build_summary(snapshots: list[dict], events: list[dict], generated_at: str) 
         else: status = "NOT_TRIGGERED"
         statuses.append({"snapshot_id": row["snapshot_id"], "asset": row["asset"], "status": status})
     dimensions = {
+        "by_opportunity_family": "opportunity_family",
         "by_recommendation": "recommendation", "by_technical_action": "technical_action",
         "by_setup_quality_bucket": "setup_quality_score", "by_actionability_bucket": "actionability_score",
         "by_daily_score_bucket": "daily_score", "by_weekly_score_bucket": "weekly_score",

@@ -143,6 +143,45 @@ def scenario(candidate: dict) -> dict:
             "expected_horizon":"UNKNOWN","scenario_level_status":status,"level_status":status,"reason_codes":reasons or ["LEVEL_ORDER_CONSISTENT"],"trading_capability":"DISABLED"}
 
 
+def structural_context(candidate: dict) -> dict:
+    data=candidate.get("current_data") or {};con=candidate.get("consolidation") or {}
+    price=data.get("live_reference_price") or data.get("analysis_price");low=con.get("range_low");high=con.get("range_high")
+    if price is None or low is None or high is None:relationship="UNAVAILABLE"
+    elif float(price)<float(low):relationship="BELOW_STRUCTURAL_ZONE"
+    elif float(price)<=float(high):relationship="IN_STRUCTURAL_ZONE"
+    else:relationship="ABOVE_STRUCTURAL_ZONE"
+    return {"structural_zone_low":low,"structural_zone_high":high,"structural_zone_type":"RECORDED_CONSOLIDATION_RANGE" if low is not None and high is not None else "UNAVAILABLE","relationship_of_current_price_to_zone":relationship,"structure_state":con.get("range_state") or "UNAVAILABLE","not_automatically_an_entry_zone":True}
+
+
+def current_scenario(candidate: dict, family: str, stage: str) -> dict:
+    base=scenario(candidate);price=base["reference_price"];m=candidate.get("momentum") or {};con=candidate.get("consolidation") or {}
+    reasons=[];actionable=None;activation=None;invalidation=None
+    if family=="CONTINUATION":
+        activation=m.get("breakout_level")
+        if price is not None and activation is not None and float(price)<float(activation):
+            kind="BREAKOUT_SCENARIO";actionable=activation;reasons.append("RECORDED_BREAKOUT_LEVEL_AHEAD")
+        elif m.get("stage")=="BREAKOUT_CONFIRMED" and _number(m.get("confirmation_closes"),0)>0:
+            kind="MOMENTUM_CONTINUATION_SCENARIO";actionable=price;reasons.append("CANONICAL_BREAKOUT_CONFIRMATION_PRESENT")
+        else:kind="NO_ACTIONABLE_SCENARIO";reasons.append("NO_CURRENT_CONTINUATION_TRIGGER")
+        invalidation=m.get("invalidation_reference_level")
+    else:
+        levels=[x for x in (con.get("midpoint"),con.get("range_high"),m.get("breakout_level")) if x is not None and price is not None and float(x)>float(price)]
+        activation=min(levels) if levels else None;invalidation=con.get("range_low")
+        if activation is not None:kind="REVERSAL_RECLAIM_SCENARIO";actionable=activation;reasons.append("RECORDED_STRUCTURAL_RECLAIM_AHEAD")
+        else:kind="REVERSAL_WATCH";reasons.append("NO_DEFENSIBLE_RECLAIM_REFERENCE")
+    if actionable is None or invalidation is None or price is None or float(invalidation)>=min(float(actionable),float(price)):
+        status="NO_ACTIONABLE_SCENARIO";reasons.append("SCENARIO_INVALIDATION_NOT_ESTABLISHED");invalidation=None
+    else:status="VALID"
+    distance=None if price in (None,0) or invalidation is None else (float(invalidation)/float(price)-1)*100
+    constraint="INVALIDATION_CONSTRAINT_UNAVAILABLE" if distance is None else "INVALIDATION_TOO_WIDE_FOR_USER_CONSTRAINT" if distance < -10 else "WITHIN_USER_INVALIDATION_CONSTRAINT"
+    return {"opportunity_family":family,"scenario_type":kind,"actionable_reference":actionable,"activation_level":activation,"technical_invalidation":invalidation,"invalidation_distance_pct":distance,"user_constraint_status":constraint,"plausible_structural_upside_references":base["upside_references"],"scenario_status":status,"reason_codes":reasons,"no_execution_assumed":True}
+
+
+def display_context(candidate: dict) -> dict:
+    data=candidate.get("current_data") or {};m=candidate.get("momentum") or {};rs=candidate.get("relative_strength") or {}
+    return {"current_reference_price":data.get("live_reference_price") or data.get("analysis_price"),"price_timestamp":data.get("live_reference_timestamp") or data.get("analysis_price_timestamp"),"recent_return_context":{"return_4h_pct":m.get("return_4h_pct"),"return_24h_pct":m.get("return_24h_pct")},"momentum_state":m.get("stage"),"acceleration_deceleration":m.get("acceleration"),"relative_strength_state":rs.get("relative_trend"),"relative_strength_trajectory":{"relative_acceleration":rs.get("relative_acceleration"),"percentile_rank":rs.get("percentile_rank"),"rank_change":rs.get("rank_change")},"volume_context":{"volume_z_score":m.get("volume_z_score")},"volatility_context":{"expansion_ratio":m.get("volatility_expansion")},"asset_sell_pressure_context":"UNAVAILABLE","persistence_across_independent_snapshots":"UNAVAILABLE"}
+
+
 def rank_opportunities(chief: dict, limit: int = 20) -> list[dict]:
     eligible=[]
     for c in chief.get("candidates",[]):
@@ -163,13 +202,38 @@ def rank_opportunities(chief: dict, limit: int = 20) -> list[dict]:
     eligible.sort(key=lambda x:(tuple(-v for v in x[0]),x[1]))
     out=[]
     for rank,(_,asset,c,raw) in enumerate(eligible[:limit],1):
-        evidence=c.get("validation") or {};out.append({"rank":rank,"asset":asset,"methodology_version":VERSION,"ranking_method":"LEXICOGRAPHIC_EXISTING_MOVEMENT_COMPONENTS_NOT_OPTIMIZED","raw_opportunity_components":raw,"technical_scenario":scenario(c),"statistical_evidence":{"status":c.get("rotation",{}).get("edge_validation_status") or "UNKNOWN","historical_sample_size":evidence.get("historical_sample_size"),"claim":"NO_PREDICTIVE_EDGE_CLAIM"},"risk_reward_context_not_used_for_ranking":c.get("consolidation",{}).get("rr_to_high")})
+        evidence=c.get("validation") or {};out.append({"rank":rank,"asset":asset,"opportunity_family":"CONTINUATION","opportunity_stage":raw["momentum_stage"],**display_context(c),"methodology_version":VERSION,"ranking_method":"LEXICOGRAPHIC_EXISTING_MOVEMENT_COMPONENTS_NOT_OPTIMIZED","raw_opportunity_components":raw,"structural_context":structural_context(c),"current_scenario":current_scenario(c,"CONTINUATION",str(raw["momentum_stage"])),"technical_scenario":scenario(c),"statistical_evidence":{"status":c.get("rotation",{}).get("edge_validation_status") or "UNKNOWN","historical_sample_size":evidence.get("historical_sample_size"),"claim":"NO_PREDICTIVE_EDGE_CLAIM"},"risk_reward_context_not_used_for_ranking":c.get("consolidation",{}).get("rr_to_high")})
+    return out
+
+
+def rank_reversal_opportunities(chief: dict, limit: int = 10) -> list[dict]:
+    eligible=[]
+    for c in chief.get("candidates",[]):
+        data=c.get("current_data") or {};m=c.get("momentum") or {};rs=c.get("relative_strength") or {}
+        r24=m.get("return_24h_pct");acc=m.get("acceleration");r4=m.get("return_4h_pct");rsa=rs.get("relative_acceleration")
+        if data.get("freshness")!="FRESH" or r24 is None or float(r24)>=0:continue
+        reasons=[]
+        if acc is not None and float(acc)>0:reasons.append("NEGATIVE_MOMENTUM_DECELERATING")
+        if rsa is not None and float(rsa)>0:reasons.append("RELATIVE_STRENGTH_IMPROVING")
+        if r4 is not None and float(r4)>0:reasons.append("SHORT_TERM_PRICE_STABILIZING")
+        if not reasons:continue # falling price alone is never a reversal candidate
+        stage="DOWNSIDE_DECELERATING" if "NEGATIVE_MOMENTUM_DECELERATING" in reasons else "DECLINING"
+        if "NEGATIVE_MOMENTUM_DECELERATING" in reasons and len(reasons)>=2:stage="POTENTIAL_BASE"
+        if "NEGATIVE_MOMENTUM_DECELERATING" in reasons and len(reasons)>=3:stage="EARLY_REVERSAL"
+        reasons.append("NO_REVERSAL_CONFIRMATION")
+        ordinal={"DECLINING":0,"DOWNSIDE_DECELERATING":1,"POTENTIAL_BASE":2,"EARLY_REVERSAL":3}[stage]
+        raw={"return_24h_pct":r24,"return_4h_pct":r4,"momentum_acceleration":acc,"relative_strength_percentile":rs.get("percentile_rank"),"relative_acceleration":rsa,"relative_trend":rs.get("relative_trend"),"volume_z_score":m.get("volume_z_score"),"volatility_expansion":m.get("volatility_expansion"),"momentum_state":m.get("stage"),"price_decline_is_not_value_evidence":True}
+        key=(ordinal,_number(acc),_number(rsa),_number(r4));eligible.append((key,str(c.get("asset")),c,raw,reasons,stage))
+    eligible.sort(key=lambda x:(tuple(-v for v in x[0]),x[1]));out=[]
+    for rank,(_,asset,c,raw,reasons,stage) in enumerate(eligible[:limit],1):
+        sc=current_scenario(c,"REVERSAL",stage);evidence=c.get("validation") or {}
+        out.append({"rank":rank,"asset":asset,"opportunity_family":"REVERSAL","opportunity_stage":stage,**display_context(c),"methodology_version":VERSION,"ranking_method":"LEXICOGRAPHIC_REVERSAL_EVIDENCE_NOT_OPTIMIZED","raw_opportunity_components":raw,"structural_context":structural_context(c),"current_scenario":sc,"statistical_evidence":{"status":c.get("rotation",{}).get("edge_validation_status") or "UNKNOWN","historical_sample_size":evidence.get("historical_sample_size"),"claim":"NO_PREDICTIVE_EDGE_CLAIM"},"reason_codes":reasons+sc["reason_codes"],"warnings":["PRICE_DECLINE_IS_NOT_CHEAPNESS_OR_REBOUND_EVIDENCE"]})
     return out
 
 
 def opportunity_context(chief: dict, memory: dict, tactical_summary: dict) -> dict:
-    watch=rank_opportunities(chief);rotation=chief.get("btc_rotation") or {}
-    return {"watchlist_status":"BROAD_WATCHLIST" if watch else "NO_COMPELLING_OPPORTUNITY","watchlist":watch,
+    watch=rank_opportunities(chief);reversals=rank_reversal_opportunities(chief);rotation=chief.get("btc_rotation") or {}
+    return {"watchlist_status":"BROAD_WATCHLIST" if watch else "NO_COMPELLING_OPPORTUNITY","watchlist":watch,"continuation_watchlist":watch,"reversal_watchlist":reversals,"reversal_watchlist_status":"REVERSAL_WATCHLIST" if reversals else "NO_COMPELLING_REVERSAL_OPPORTUNITY",
             "btc_cash_benchmark":{"btc":rotation,"no_position_cash":{"artificial_feature_rank":None,"role":"VALID_BENCHMARK_WHEN_ALTCOIN_EVIDENCE_IS_NOT_COMPELLING"},"interpretation":"DECISION_CONTEXT_NOT_RECOMMENDATION"},
             "history_summary":{**(tactical_summary or {}),"independent_market_clusters":len({x.get("market_data_cutoff") or x.get("timestamp") for x in _read_jsonl(TACTICAL_SNAPSHOTS)}),"warnings":["DESCRIPTIVE_ONLY","DATA_SNOOPING_RISK","MULTIPLE_TESTING_RISK","RECENCY_BIAS_RISK","SELECTION_BIAS_RISK","SIMULTANEOUS_CANDIDATES_CORRELATED"]},
             "market_memory_coverage":memory["coverage"],"trading_capability":"DISABLED"}
@@ -178,13 +242,13 @@ def opportunity_context(chief: dict, memory: dict, tactical_summary: dict) -> di
 def append_opportunity_observations(chief: dict, path: Path = TACTICAL_SNAPSHOTS) -> int:
     generated=utc(chief.get("generated_at_utc") or pd.Timestamp.now(tz="UTC")).isoformat();rows=[]
     by_asset={str(x.get("asset")):x for x in chief.get("candidates",[])}
-    for item in rank_opportunities(chief):
+    for item in rank_opportunities(chief)+rank_reversal_opportunities(chief):
         source=by_asset[item["asset"]];cutoff=(source.get("current_data") or {}).get("analysis_price_timestamp")
-        identity="odo_"+hashlib.sha256(f'{item["asset"]}|{cutoff}|{generated}|{VERSION}'.encode()).hexdigest()[:24]
+        identity="odo_"+hashlib.sha256(f'{item["asset"]}|{item["opportunity_family"]}|{cutoff}|{generated}|{VERSION}'.encode()).hexdigest()[:24]
         rows.append({"snapshot_id":identity,"observation_id":identity,"timestamp":generated,"market_data_cutoff":cutoff,
                      "asset":item["asset"],"kraken_pair":source.get("identity",{}).get("kraken_pair"),"methodology_version":VERSION,
-                     "opportunity_rank":item["rank"],"current_price":item["technical_scenario"]["reference_price"],
-                     "technical_scenario":item["technical_scenario"],"raw_opportunity_components":item["raw_opportunity_components"],
+                     "opportunity_rank":item["rank"],"opportunity_family":item["opportunity_family"],"opportunity_stage":item["opportunity_stage"],"current_price":(source.get("current_data") or {}).get("live_reference_price") or (source.get("current_data") or {}).get("analysis_price"),
+                     "structural_context":item["structural_context"],"scenario_state":item["current_scenario"],"technical_scenario":scenario(source),"raw_opportunity_components":item["raw_opportunity_components"],
                      "statistical_evidence":item["statistical_evidence"],"observation_only":True,"trading_capability":"DISABLED"})
     existing={x.get("snapshot_id") for x in _read_jsonl(path)};new=[x for x in rows if x["snapshot_id"] not in existing]
     if new:
