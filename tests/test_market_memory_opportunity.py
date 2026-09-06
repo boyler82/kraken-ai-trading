@@ -33,10 +33,47 @@ def test_ranking_deterministic_transparent_and_rr_excluded():
  assert m.rank_opportunities({'candidates':[]})==[]
 
 def test_scenario_survives_low_evidence_and_flags_wide_invalidation():
- row=m.rank_opportunities({'candidates':[candidate()]})[0];scenario=row['technical_scenario']
- assert scenario['reference_timestamp'] and scenario['activation_level']==105 and scenario['reference_levels']
- assert scenario['technical_invalidation_level']==80 and scenario['constraint_flag']=='INVALIDATION_TOO_WIDE_FOR_USER_CONSTRAINT'
+ c=candidate();c['consolidation']['range_low']=90;c['momentum']['invalidation_reference_level']=80
+ row=m.rank_opportunities({'candidates':[c]})[0];scenario=row['technical_scenario']
+ assert scenario['reference_timestamp'] and scenario['activation_level']==105 and scenario['upside_references']
+ assert scenario['technical_invalidation_level']==80 and scenario['user_constraint_status']=='INVALIDATION_TOO_WIDE_FOR_USER_CONSTRAINT'
  assert row['statistical_evidence']['status']=='UNVALIDATED'
+
+def test_invalidation_at_or_above_entry_zone_is_inconsistent():
+ c=candidate(invalidation=90);c['momentum']['invalidation_reference_level']=95
+ result=m.scenario(c)
+ assert result['scenario_level_status']=='LEVELS_INCONSISTENT'
+ assert 'INVALIDATION_NOT_BELOW_ENTRY_ZONE' in result['reason_codes']
+ assert result['technical_invalidation']==95
+
+def test_entry_zone_states_are_explicit():
+ c=candidate();c['consolidation'].update(range_low=90,midpoint=110);c['momentum']['invalidation_reference_level']=80
+ c['current_data']['live_reference_price']=85;assert m.scenario(c)['entry_zone_state']=='BELOW_ENTRY_ZONE'
+ c['current_data']['live_reference_price']=100;assert m.scenario(c)['entry_zone_state']=='IN_ENTRY_ZONE'
+ c['current_data']['live_reference_price']=115;assert m.scenario(c)['entry_zone_state']=='ABOVE_ENTRY_ZONE'
+ c['momentum']['extension_risk']='HIGH';assert m.scenario(c)['entry_zone_state']=='EXTENDED_FROM_ENTRY_ZONE'
+
+def test_activation_semantics_do_not_treat_crossed_level_as_future():
+ c=candidate();c['consolidation']['range_low']=90;c['momentum']['invalidation_reference_level']=80
+ c['current_data']['live_reference_price']=106
+ assert m.scenario(c)['activation_state']=='ACTIVATION_ALREADY_CROSSED'
+ c['momentum'].update(stage='BREAKOUT_CONFIRMED',confirmation_closes=1)
+ assert m.scenario(c)['activation_state']=='BREAKOUT_CONFIRMED'
+ c['current_data']['live_reference_price']=104
+ assert m.scenario(c)['activation_state']=='APPROACHING_ACTIVATION'
+ c['current_data']['live_reference_price']=90
+ assert m.scenario(c)['activation_state']=='WAITING_FOR_ACTIVATION'
+
+def test_references_below_current_are_not_upside_targets():
+ c=candidate();c['consolidation'].update(range_low=80,midpoint=90,range_high=110);c['momentum'].update(invalidation_reference_level=70,breakout_level=95)
+ result=m.scenario(c)
+ assert next(x for x in result['structural_references'] if x['price']==95)['semantic_type']=='PAST_REFERENCE'
+ assert all(x['price']>100 and x['semantic_type']=='UPSIDE_REFERENCE' for x in result['upside_references'])
+
+def test_scenario_is_deterministic_and_strict_json():
+ c=candidate();c['consolidation']['range_low']=90;c['momentum']['invalidation_reference_level']=80
+ first=m.scenario(c);assert first==m.scenario(c)
+ json.dumps(first,allow_nan=False)
 
 def test_observation_identity_append_only_and_idempotent(tmp_path):
  path=tmp_path/'history.jsonl';chief={'generated_at_utc':'2026-01-31T00:00:00Z','candidates':[candidate()]}

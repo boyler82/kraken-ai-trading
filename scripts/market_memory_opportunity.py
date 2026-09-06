@@ -111,15 +111,36 @@ def scenario(candidate: dict) -> dict:
     price=data.get("live_reference_price") or data.get("analysis_price"); low=con.get("range_low");mid=con.get("midpoint");high=con.get("range_high");activation=momentum.get("breakout_level")
     invalidation=momentum.get("invalidation_reference_level") or low
     distance=None if price in (None,0) or invalidation is None else (_number(invalidation)/_number(price)-1)*100
+    reasons=[]
+    if price is None or low is None or mid is None or invalidation is None:reasons.append("REQUIRED_LEVEL_DATA_MISSING")
+    if low is not None and mid is not None and float(low)>float(mid):reasons.append("ENTRY_ZONE_ORDER_INVALID")
+    if invalidation is not None and low is not None and float(invalidation)>=float(low):reasons.append("INVALIDATION_NOT_BELOW_ENTRY_ZONE")
+    if price is None or low is None or mid is None:entry_state="UNAVAILABLE"
+    elif float(price)<float(low):entry_state="BELOW_ENTRY_ZONE"
+    elif float(price)<=float(mid):entry_state="IN_ENTRY_ZONE"
+    elif momentum.get("extension_risk")=="HIGH":entry_state="EXTENDED_FROM_ENTRY_ZONE"
+    else:entry_state="ABOVE_ENTRY_ZONE"
+    if price is None or activation is None:activation_state="UNAVAILABLE"
+    elif float(price)>=float(activation):
+        activation_state="BREAKOUT_CONFIRMED" if momentum.get("stage")=="BREAKOUT_CONFIRMED" and _number(momentum.get("confirmation_closes"),0)>0 else "ACTIVATION_ALREADY_CROSSED"
+    else:activation_state="APPROACHING_ACTIVATION" if (float(activation)/float(price)-1)*100<=2 else "WAITING_FOR_ACTIVATION"
     refs=[]
-    for value,reason in ((mid,"RECORDED_CONSOLIDATION_MIDPOINT"),(high,"RECORDED_CONSOLIDATION_HIGH"),(activation,"RECORDED_BREAKOUT_LEVEL")):
-        if value is not None and price not in (None,0) and float(value)>float(price) and all(x["price"]!=float(value) for x in refs):refs.append({"price":float(value),"upside_pct":(float(value)/float(price)-1)*100,"reason":reason})
-    return {"reference_price":price,"reference_timestamp":data.get("live_reference_timestamp") or data.get("analysis_price_timestamp"),
+    for value,source in ((low,"RECORDED_CONSOLIDATION_LOW"),(mid,"RECORDED_CONSOLIDATION_MIDPOINT"),(high,"RECORDED_CONSOLIDATION_HIGH"),(activation,"RECORDED_BREAKOUT_LEVEL")):
+        if value is None or price in (None,0) or any(x["price"]==float(value) for x in refs):continue
+        delta=(float(value)/float(price)-1)*100
+        semantic="CURRENT_AREA_REFERENCE" if abs(delta)<=.5 else "UPSIDE_REFERENCE" if delta>0 else "PAST_REFERENCE" if source=="RECORDED_BREAKOUT_LEVEL" else "SUPPORT_REFERENCE"
+        refs.append({"price":float(value),"distance_pct":delta,"semantic_type":semantic,"reason":source})
+    upside=[x for x in refs if x["semantic_type"]=="UPSIDE_REFERENCE"]
+    status="LEVELS_INCONSISTENT" if any(x in reasons for x in ("ENTRY_ZONE_ORDER_INVALID","INVALIDATION_NOT_BELOW_ENTRY_ZONE")) else "INSUFFICIENT_LEVEL_DATA" if reasons else "VALID"
+    constraint="INVALIDATION_CONSTRAINT_UNAVAILABLE" if distance is None else "INVALIDATION_TOO_WIDE_FOR_USER_CONSTRAINT" if distance < -10 else "WITHIN_USER_INVALIDATION_CONSTRAINT"
+    return {"asset":candidate.get("asset"),"reference_price":price,"current_price":price,"reference_timestamp":data.get("live_reference_timestamp") or data.get("analysis_price_timestamp"),"price_timestamp":data.get("live_reference_timestamp") or data.get("analysis_price_timestamp"),
             "reference_semantics":data.get("live_reference_semantics") or "COMPLETED_CANDLE_ANALYSIS_PRICE",
-            "observation_entry_zone_low":low,"observation_entry_zone_high":mid,"activation_level":activation,
-            "technical_invalidation_level":invalidation,"invalidation_distance_pct":distance,
-            "constraint_flag":"INVALIDATION_TOO_WIDE_FOR_USER_CONSTRAINT" if distance is not None and distance < -10 else None,
-            "reference_levels":refs,"expected_horizon":"UNKNOWN","level_status":"TECHNICAL_SCENARIO_NOT_ORDER"}
+            "observation_entry_zone_low":low,"observation_entry_zone_high":mid,"entry_zone_low":low,"entry_zone_high":mid,"entry_zone_state":entry_state,
+            "activation_level":activation,"activation_state":activation_state,
+            "technical_invalidation_level":invalidation,"technical_invalidation":invalidation,"invalidation_distance_pct":distance,
+            "constraint_flag":"INVALIDATION_TOO_WIDE_FOR_USER_CONSTRAINT" if distance is not None and distance < -10 else None,"user_constraint_status":constraint,
+            "structural_references":refs,"reference_levels":refs,"upside_references":upside,
+            "expected_horizon":"UNKNOWN","scenario_level_status":status,"level_status":status,"reason_codes":reasons or ["LEVEL_ORDER_CONSISTENT"],"trading_capability":"DISABLED"}
 
 
 def rank_opportunities(chief: dict, limit: int = 20) -> list[dict]:
