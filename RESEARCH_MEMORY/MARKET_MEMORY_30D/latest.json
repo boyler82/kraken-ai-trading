@@ -1,9 +1,9 @@
 {
   "coverage": {
-    "calendar_days": 14.0417,
+    "calendar_days": 14.375,
     "first_cutoff": "2026-08-23T15:00:00+00:00",
-    "independent_snapshots": 49,
-    "latest_cutoff": "2026-09-06T16:00:00+00:00",
+    "independent_snapshots": 51,
+    "latest_cutoff": "2026-09-07T00:00:00+00:00",
     "status": "INSUFFICIENT_30D_HISTORY"
   },
   "purpose": "MARKET_RESEARCH_DECISION_SUPPORT",
@@ -1527,6 +1527,68 @@
       "universe_size": 64,
       "volatility_state": "UNAVAILABLE",
       "volume_state": "UNAVAILABLE"
+    },
+    {
+      "breadth_above_ema20_pct": 89.0625,
+      "breadth_above_ema50_pct": 90.625,
+      "btc_structure_1h": "MIXED",
+      "btc_structure_4h": "LH_LL",
+      "capital_flow_confidence": "UNAVAILABLE",
+      "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
+      "capital_flow_state": "UNAVAILABLE",
+      "cross_sectional_components": "UNAVAILABLE",
+      "lagging_assets": "UNAVAILABLE",
+      "leading_assets": [
+        "RAY",
+        "ZEC",
+        "JUP",
+        "NEAR",
+        "TAO"
+      ],
+      "market_data_cutoff": "2026-09-06T21:00:00+00:00",
+      "market_regime": "UNAVAILABLE",
+      "market_transition_state": "HEALTHY_PULLBACK",
+      "observation_type": "OBSERVED",
+      "opportunity_candidates": "UNAVAILABLE",
+      "previous_transition_state": "CONSOLIDATION",
+      "sell_pressure_ratio": 0.184,
+      "sell_pressure_state": "DECLINING",
+      "snapshot_timestamp": "2026-09-06T22:16:02.971861+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260906T221602971861Z_872fef68.json",
+      "universe_size": 64,
+      "volatility_state": "UNAVAILABLE",
+      "volume_state": "UNAVAILABLE"
+    },
+    {
+      "breadth_above_ema20_pct": 87.5,
+      "breadth_above_ema50_pct": 87.5,
+      "btc_structure_1h": "MIXED",
+      "btc_structure_4h": "MIXED",
+      "capital_flow_confidence": "UNAVAILABLE",
+      "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
+      "capital_flow_state": "UNAVAILABLE",
+      "cross_sectional_components": "UNAVAILABLE",
+      "lagging_assets": "UNAVAILABLE",
+      "leading_assets": [
+        "RAY",
+        "JUP",
+        "ZEC",
+        "TAO",
+        "DOT"
+      ],
+      "market_data_cutoff": "2026-09-07T00:00:00+00:00",
+      "market_regime": "UNAVAILABLE",
+      "market_transition_state": "CONSOLIDATION",
+      "observation_type": "OBSERVED",
+      "opportunity_candidates": "UNAVAILABLE",
+      "previous_transition_state": "HEALTHY_PULLBACK",
+      "sell_pressure_ratio": 0.1552,
+      "sell_pressure_state": "DECLINING",
+      "snapshot_timestamp": "2026-09-07T01:16:39.144425+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260907T011639144425Z_ae761f48.json",
+      "universe_size": 64,
+      "volatility_state": "UNAVAILABLE",
+      "volume_state": "UNAVAILABLE"
     }
   ],
   "source_directory": "RESEARCH_MEMORY/market_transition/predictions",
@@ -1536,23 +1598,23 @@
       "status": "INSUFFICIENT_HISTORY"
     },
     "change_7d": {
-      "breadth_ema20_change_pct_points": -15.4879,
-      "breadth_ema50_change_pct_points": 34.4572,
+      "breadth_ema20_change_pct_points": 17.3246,
+      "breadth_ema50_change_pct_points": 45.3947,
       "btc_structure_1h_change": [
         "MIXED",
-        "LH_LL"
+        "MIXED"
       ],
       "btc_structure_4h_change": [
         "HH_HL",
-        "LH_LL"
+        "MIXED"
       ],
       "from_cutoff": "2026-08-30T06:00:00+00:00",
       "sell_pressure_change": [
         "DECLINING",
-        "INCREASING"
+        "DECLINING"
       ],
       "status": "DERIVED",
-      "to_cutoff": "2026-09-06T16:00:00+00:00",
+      "to_cutoff": "2026-09-07T00:00:00+00:00",
       "transition_change": [
         "CONSOLIDATION",
         "CONSOLIDATION"
@@ -1561,38 +1623,38 @@
     "change_vs_previous": {
       "changes": {
         "breadth_above_ema20_pct": [
-          76.5625,
-          54.6875
+          89.0625,
+          87.5
         ],
         "breadth_above_ema50_pct": [
           90.625,
-          76.5625
+          87.5
         ],
         "btc_structure_1h": [
           "MIXED",
-          "LH_LL"
+          "MIXED"
         ],
         "btc_structure_4h": [
-          "MIXED",
-          "LH_LL"
+          "LH_LL",
+          "MIXED"
         ],
         "market_transition_state": [
-          "CONSOLIDATION",
+          "HEALTHY_PULLBACK",
           "CONSOLIDATION"
         ],
         "sell_pressure_state": [
-          "INCREASING",
-          "INCREASING"
+          "DECLINING",
+          "DECLINING"
         ]
       },
-      "from_cutoff": "2026-09-06T06:00:00+00:00",
+      "from_cutoff": "2026-09-06T21:00:00+00:00",
       "status": "DERIVED"
     },
     "current_state": {
-      "breadth_above_ema20_pct": 54.6875,
-      "breadth_above_ema50_pct": 76.5625,
-      "btc_structure_1h": "LH_LL",
-      "btc_structure_4h": "LH_LL",
+      "breadth_above_ema20_pct": 87.5,
+      "breadth_above_ema50_pct": 87.5,
+      "btc_structure_1h": "MIXED",
+      "btc_structure_4h": "MIXED",
       "capital_flow_confidence": "UNAVAILABLE",
       "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
       "capital_flow_state": "UNAVAILABLE",
@@ -1600,28 +1662,28 @@
       "lagging_assets": "UNAVAILABLE",
       "leading_assets": [
         "RAY",
-        "ARB",
         "JUP",
         "ZEC",
-        "LDO"
+        "TAO",
+        "DOT"
       ],
-      "market_data_cutoff": "2026-09-06T16:00:00+00:00",
+      "market_data_cutoff": "2026-09-07T00:00:00+00:00",
       "market_regime": "UNAVAILABLE",
       "market_transition_state": "CONSOLIDATION",
       "observation_type": "OBSERVED",
       "opportunity_candidates": "UNAVAILABLE",
-      "previous_transition_state": "CONSOLIDATION",
-      "sell_pressure_ratio": 6.9116,
-      "sell_pressure_state": "INCREASING",
-      "snapshot_timestamp": "2026-09-06T17:03:39.200952+00:00",
-      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260906T170339200952Z_a6a8ffa7.json",
+      "previous_transition_state": "HEALTHY_PULLBACK",
+      "sell_pressure_ratio": 0.1552,
+      "sell_pressure_state": "DECLINING",
+      "snapshot_timestamp": "2026-09-07T01:16:39.144425+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260907T011639144425Z_ae761f48.json",
       "universe_size": 64,
       "volatility_state": "UNAVAILABLE",
       "volume_state": "UNAVAILABLE"
     },
     "leadership_rotation": "DERIVED_FROM_RECORDED_RS_LEADERS",
     "persistence": {
-      "current_state_consecutive_snapshots": 3,
+      "current_state_consecutive_snapshots": 1,
       "status": "DERIVED"
     }
   },
