@@ -1,9 +1,9 @@
 {
   "coverage": {
-    "calendar_days": 23.0,
+    "calendar_days": 23.5,
     "first_cutoff": "2026-08-23T15:00:00+00:00",
-    "independent_snapshots": 75,
-    "latest_cutoff": "2026-09-15T15:00:00+00:00",
+    "independent_snapshots": 77,
+    "latest_cutoff": "2026-09-16T03:00:00+00:00",
     "status": "INSUFFICIENT_30D_HISTORY"
   },
   "purpose": "MARKET_RESEARCH_DECISION_SUPPORT",
@@ -2333,71 +2333,11 @@
       "universe_size": 64,
       "volatility_state": "UNAVAILABLE",
       "volume_state": "UNAVAILABLE"
-    }
-  ],
-  "source_directory": "RESEARCH_MEMORY/market_transition/predictions",
-  "trading_capability": "DISABLED",
-  "trajectory": {
-    "change_30d": {
-      "status": "INSUFFICIENT_HISTORY"
     },
-    "change_7d": {
-      "breadth_ema20_change_pct_points": -55.9966,
-      "breadth_ema50_change_pct_points": -51.9426,
-      "btc_structure_1h_change": [
-        "LH_LL",
-        "LH_LL"
-      ],
-      "btc_structure_4h_change": [
-        "LH_LL",
-        "HH_HL"
-      ],
-      "from_cutoff": "2026-09-08T15:00:00+00:00",
-      "sell_pressure_change": [
-        "DECLINING",
-        "INCREASING"
-      ],
-      "status": "DERIVED",
-      "to_cutoff": "2026-09-15T15:00:00+00:00",
-      "transition_change": [
-        "HEALTHY_PULLBACK",
-        "DEEPER_CORRECTION_RISK"
-      ]
-    },
-    "change_vs_previous": {
-      "changes": {
-        "breadth_above_ema20_pct": [
-          12.5,
-          15.625
-        ],
-        "breadth_above_ema50_pct": [
-          29.6875,
-          15.625
-        ],
-        "btc_structure_1h": [
-          "HH_HL",
-          "LH_LL"
-        ],
-        "btc_structure_4h": [
-          "HH_HL",
-          "HH_HL"
-        ],
-        "market_transition_state": [
-          "DEEPER_CORRECTION_RISK",
-          "DEEPER_CORRECTION_RISK"
-        ],
-        "sell_pressure_state": [
-          "NORMAL",
-          "INCREASING"
-        ]
-      },
-      "from_cutoff": "2026-09-15T03:00:00+00:00",
-      "status": "DERIVED"
-    },
-    "current_state": {
-      "breadth_above_ema20_pct": 15.625,
-      "breadth_above_ema50_pct": 15.625,
-      "btc_structure_1h": "LH_LL",
+    {
+      "breadth_above_ema20_pct": 4.6154,
+      "breadth_above_ema50_pct": 3.0769,
+      "btc_structure_1h": "MIXED",
       "btc_structure_4h": "HH_HL",
       "capital_flow_confidence": "UNAVAILABLE",
       "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
@@ -2407,21 +2347,143 @@
       "leading_assets": [
         "AKE",
         "ARB",
-        "XDC",
-        "HBAR",
-        "PENDLE"
+        "PAXG",
+        "EURC",
+        "BNB"
       ],
-      "market_data_cutoff": "2026-09-15T15:00:00+00:00",
+      "market_data_cutoff": "2026-09-15T18:00:00+00:00",
       "market_regime": "UNAVAILABLE",
-      "market_transition_state": "DEEPER_CORRECTION_RISK",
+      "market_transition_state": "CONSOLIDATION",
       "observation_type": "OBSERVED",
       "opportunity_candidates": "UNAVAILABLE",
       "previous_transition_state": "DEEPER_CORRECTION_RISK",
-      "sell_pressure_ratio": 2.4861,
-      "sell_pressure_state": "INCREASING",
-      "snapshot_timestamp": "2026-09-15T16:28:22.508114+00:00",
-      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260915T162822508114Z_e5707c98.json",
-      "universe_size": 64,
+      "sell_pressure_ratio": 1.8558,
+      "sell_pressure_state": "DECLINING",
+      "snapshot_timestamp": "2026-09-15T19:42:19.383455+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260915T194219383455Z_89054842.json",
+      "universe_size": 65,
+      "volatility_state": "UNAVAILABLE",
+      "volume_state": "UNAVAILABLE"
+    },
+    {
+      "breadth_above_ema20_pct": 9.2308,
+      "breadth_above_ema50_pct": 4.6154,
+      "btc_structure_1h": "HH_HL",
+      "btc_structure_4h": "LH_LL",
+      "capital_flow_confidence": "UNAVAILABLE",
+      "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
+      "capital_flow_state": "UNAVAILABLE",
+      "cross_sectional_components": "UNAVAILABLE",
+      "lagging_assets": "UNAVAILABLE",
+      "leading_assets": [
+        "AKE",
+        "ARB",
+        "PAXG",
+        "EURC",
+        "ZEC"
+      ],
+      "market_data_cutoff": "2026-09-16T03:00:00+00:00",
+      "market_regime": "UNAVAILABLE",
+      "market_transition_state": "CONSOLIDATION",
+      "observation_type": "OBSERVED",
+      "opportunity_candidates": "UNAVAILABLE",
+      "previous_transition_state": "CONSOLIDATION",
+      "sell_pressure_ratio": 0.7204,
+      "sell_pressure_state": "DECLINING",
+      "snapshot_timestamp": "2026-09-16T04:15:45.010238+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260916T041545010238Z_7255240a.json",
+      "universe_size": 65,
+      "volatility_state": "UNAVAILABLE",
+      "volume_state": "UNAVAILABLE"
+    }
+  ],
+  "source_directory": "RESEARCH_MEMORY/market_transition/predictions",
+  "trading_capability": "DISABLED",
+  "trajectory": {
+    "change_30d": {
+      "status": "INSUFFICIENT_HISTORY"
+    },
+    "change_7d": {
+      "breadth_ema20_change_pct_points": -61.0395,
+      "breadth_ema50_change_pct_points": -61.6008,
+      "btc_structure_1h_change": [
+        "LH_LL",
+        "HH_HL"
+      ],
+      "btc_structure_4h_change": [
+        "LH_LL",
+        "LH_LL"
+      ],
+      "from_cutoff": "2026-09-08T16:00:00+00:00",
+      "sell_pressure_change": [
+        "NORMAL",
+        "DECLINING"
+      ],
+      "status": "DERIVED",
+      "to_cutoff": "2026-09-16T03:00:00+00:00",
+      "transition_change": [
+        "CONSOLIDATION",
+        "CONSOLIDATION"
+      ]
+    },
+    "change_vs_previous": {
+      "changes": {
+        "breadth_above_ema20_pct": [
+          4.6154,
+          9.2308
+        ],
+        "breadth_above_ema50_pct": [
+          3.0769,
+          4.6154
+        ],
+        "btc_structure_1h": [
+          "MIXED",
+          "HH_HL"
+        ],
+        "btc_structure_4h": [
+          "HH_HL",
+          "LH_LL"
+        ],
+        "market_transition_state": [
+          "CONSOLIDATION",
+          "CONSOLIDATION"
+        ],
+        "sell_pressure_state": [
+          "DECLINING",
+          "DECLINING"
+        ]
+      },
+      "from_cutoff": "2026-09-15T18:00:00+00:00",
+      "status": "DERIVED"
+    },
+    "current_state": {
+      "breadth_above_ema20_pct": 9.2308,
+      "breadth_above_ema50_pct": 4.6154,
+      "btc_structure_1h": "HH_HL",
+      "btc_structure_4h": "LH_LL",
+      "capital_flow_confidence": "UNAVAILABLE",
+      "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
+      "capital_flow_state": "UNAVAILABLE",
+      "cross_sectional_components": "UNAVAILABLE",
+      "lagging_assets": "UNAVAILABLE",
+      "leading_assets": [
+        "AKE",
+        "ARB",
+        "PAXG",
+        "EURC",
+        "ZEC"
+      ],
+      "market_data_cutoff": "2026-09-16T03:00:00+00:00",
+      "market_regime": "UNAVAILABLE",
+      "market_transition_state": "CONSOLIDATION",
+      "observation_type": "OBSERVED",
+      "opportunity_candidates": "UNAVAILABLE",
+      "previous_transition_state": "CONSOLIDATION",
+      "sell_pressure_ratio": 0.7204,
+      "sell_pressure_state": "DECLINING",
+      "snapshot_timestamp": "2026-09-16T04:15:45.010238+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260916T041545010238Z_7255240a.json",
+      "universe_size": 65,
       "volatility_state": "UNAVAILABLE",
       "volume_state": "UNAVAILABLE"
     },
