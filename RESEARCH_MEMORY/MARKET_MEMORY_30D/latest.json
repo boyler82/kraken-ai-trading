@@ -1,10 +1,10 @@
 {
   "coverage": {
-    "calendar_days": 26.0417,
+    "calendar_days": 27.0833,
     "first_cutoff": "2026-08-23T15:00:00+00:00",
-    "independent_snapshots": 80,
-    "latest_cutoff": "2026-09-18T16:00:00+00:00",
-    "status": "INSUFFICIENT_30D_HISTORY"
+    "independent_snapshots": 83,
+    "latest_cutoff": "2026-09-19T17:00:00+00:00",
+    "status": "SUFFICIENT_30D_HISTORY"
   },
   "purpose": "MARKET_RESEARCH_DECISION_SUPPORT",
   "schema_version": "1.0.0",
@@ -2488,6 +2488,99 @@
       "universe_size": 67,
       "volatility_state": "UNAVAILABLE",
       "volume_state": "UNAVAILABLE"
+    },
+    {
+      "breadth_above_ema20_pct": 94.5205,
+      "breadth_above_ema50_pct": 98.6301,
+      "btc_structure_1h": "HH_HL",
+      "btc_structure_4h": "HH_HL",
+      "capital_flow_confidence": "UNAVAILABLE",
+      "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
+      "capital_flow_state": "UNAVAILABLE",
+      "cross_sectional_components": "UNAVAILABLE",
+      "lagging_assets": "UNAVAILABLE",
+      "leading_assets": [
+        "PIEVERSE",
+        "STRK",
+        "NEAR",
+        "ARB",
+        "APT"
+      ],
+      "market_data_cutoff": "2026-09-18T17:00:00+00:00",
+      "market_regime": "UNAVAILABLE",
+      "market_transition_state": "CONTINUATION_READY",
+      "observation_type": "OBSERVED",
+      "opportunity_candidates": "UNAVAILABLE",
+      "previous_transition_state": "CONSOLIDATION",
+      "sell_pressure_ratio": 0.3089,
+      "sell_pressure_state": "NORMAL",
+      "snapshot_timestamp": "2026-09-18T18:41:56.692325+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260918T184156692325Z_cf899b0c.json",
+      "universe_size": 73,
+      "volatility_state": "UNAVAILABLE",
+      "volume_state": "UNAVAILABLE"
+    },
+    {
+      "breadth_above_ema20_pct": 100.0,
+      "breadth_above_ema50_pct": 100.0,
+      "btc_structure_1h": "HH_HL",
+      "btc_structure_4h": "HH_HL",
+      "capital_flow_confidence": "UNAVAILABLE",
+      "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
+      "capital_flow_state": "UNAVAILABLE",
+      "cross_sectional_components": "UNAVAILABLE",
+      "lagging_assets": "UNAVAILABLE",
+      "leading_assets": [
+        "STRK",
+        "PIEVERSE",
+        "ARB",
+        "APT",
+        "NEAR"
+      ],
+      "market_data_cutoff": "2026-09-18T19:00:00+00:00",
+      "market_regime": "UNAVAILABLE",
+      "market_transition_state": "CONTINUATION_READY",
+      "observation_type": "OBSERVED",
+      "opportunity_candidates": "UNAVAILABLE",
+      "previous_transition_state": "CONTINUATION_READY",
+      "sell_pressure_ratio": 0.2637,
+      "sell_pressure_state": "DECLINING",
+      "snapshot_timestamp": "2026-09-18T20:14:11.549023+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260918T201411549023Z_d13a4156.json",
+      "universe_size": 73,
+      "volatility_state": "UNAVAILABLE",
+      "volume_state": "UNAVAILABLE"
+    },
+    {
+      "breadth_above_ema20_pct": 72.6027,
+      "breadth_above_ema50_pct": 95.8904,
+      "btc_structure_1h": "MIXED",
+      "btc_structure_4h": "HH_HL",
+      "capital_flow_confidence": "UNAVAILABLE",
+      "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
+      "capital_flow_state": "UNAVAILABLE",
+      "cross_sectional_components": "UNAVAILABLE",
+      "lagging_assets": "UNAVAILABLE",
+      "leading_assets": [
+        "XTZ",
+        "FIL",
+        "ENA",
+        "AVAX",
+        "INJ"
+      ],
+      "market_data_cutoff": "2026-09-19T17:00:00+00:00",
+      "market_regime": "UNAVAILABLE",
+      "market_transition_state": "HEALTHY_PULLBACK",
+      "observation_type": "OBSERVED",
+      "opportunity_candidates": "UNAVAILABLE",
+      "previous_transition_state": "CONTINUATION_READY",
+      "sell_pressure_ratio": 0.234,
+      "sell_pressure_state": "DECLINING",
+      "snapshot_timestamp": "2026-09-19T19:40:19.417417+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260919T194019417417Z_899e4ec3.json",
+      "universe_size": 73,
+      "volatility_state": "UNAVAILABLE",
+      "volume_state": "UNAVAILABLE"
     }
   ],
   "source_directory": "RESEARCH_MEMORY/market_transition/predictions",
@@ -2497,40 +2590,40 @@
       "status": "INSUFFICIENT_HISTORY"
     },
     "change_7d": {
-      "breadth_ema20_change_pct_points": 50.767,
-      "breadth_ema50_change_pct_points": 81.6335,
+      "breadth_ema20_change_pct_points": 55.936,
+      "breadth_ema50_change_pct_points": 84.7793,
       "btc_structure_1h_change": [
-        "HH_HL",
+        "LH_LL",
         "MIXED"
       ],
       "btc_structure_4h_change": [
-        "LH_LL",
+        "MIXED",
         "HH_HL"
       ],
-      "from_cutoff": "2026-09-11T08:00:00+00:00",
+      "from_cutoff": "2026-09-11T21:00:00+00:00",
       "sell_pressure_change": [
-        "INCREASING",
+        "NORMAL",
         "DECLINING"
       ],
       "status": "DERIVED",
-      "to_cutoff": "2026-09-18T16:00:00+00:00",
+      "to_cutoff": "2026-09-19T17:00:00+00:00",
       "transition_change": [
         "DEEPER_CORRECTION_RISK",
-        "CONSOLIDATION"
+        "HEALTHY_PULLBACK"
       ]
     },
     "change_vs_previous": {
       "changes": {
         "breadth_above_ema20_pct": [
-          91.0448,
-          91.0448
+          100.0,
+          72.6027
         ],
         "breadth_above_ema50_pct": [
-          91.0448,
-          95.5224
+          100.0,
+          95.8904
         ],
         "btc_structure_1h": [
-          "LH_LL",
+          "HH_HL",
           "MIXED"
         ],
         "btc_structure_4h": [
@@ -2538,20 +2631,20 @@
           "HH_HL"
         ],
         "market_transition_state": [
-          "CONSOLIDATION",
-          "CONSOLIDATION"
+          "CONTINUATION_READY",
+          "HEALTHY_PULLBACK"
         ],
         "sell_pressure_state": [
           "DECLINING",
           "DECLINING"
         ]
       },
-      "from_cutoff": "2026-09-18T00:00:00+00:00",
+      "from_cutoff": "2026-09-18T19:00:00+00:00",
       "status": "DERIVED"
     },
     "current_state": {
-      "breadth_above_ema20_pct": 91.0448,
-      "breadth_above_ema50_pct": 95.5224,
+      "breadth_above_ema20_pct": 72.6027,
+      "breadth_above_ema50_pct": 95.8904,
       "btc_structure_1h": "MIXED",
       "btc_structure_4h": "HH_HL",
       "capital_flow_confidence": "UNAVAILABLE",
@@ -2560,29 +2653,29 @@
       "cross_sectional_components": "UNAVAILABLE",
       "lagging_assets": "UNAVAILABLE",
       "leading_assets": [
-        "ARB",
-        "NEAR",
-        "INJ",
-        "ETHFI",
-        "SKY"
+        "XTZ",
+        "FIL",
+        "ENA",
+        "AVAX",
+        "INJ"
       ],
-      "market_data_cutoff": "2026-09-18T16:00:00+00:00",
+      "market_data_cutoff": "2026-09-19T17:00:00+00:00",
       "market_regime": "UNAVAILABLE",
-      "market_transition_state": "CONSOLIDATION",
+      "market_transition_state": "HEALTHY_PULLBACK",
       "observation_type": "OBSERVED",
       "opportunity_candidates": "UNAVAILABLE",
-      "previous_transition_state": "CONSOLIDATION",
-      "sell_pressure_ratio": 0.2507,
+      "previous_transition_state": "CONTINUATION_READY",
+      "sell_pressure_ratio": 0.234,
       "sell_pressure_state": "DECLINING",
-      "snapshot_timestamp": "2026-09-18T17:09:40.686953+00:00",
-      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260918T170940686953Z_e0b256f2.json",
-      "universe_size": 67,
+      "snapshot_timestamp": "2026-09-19T19:40:19.417417+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260919T194019417417Z_899e4ec3.json",
+      "universe_size": 73,
       "volatility_state": "UNAVAILABLE",
       "volume_state": "UNAVAILABLE"
     },
     "leadership_rotation": "DERIVED_FROM_RECORDED_RS_LEADERS",
     "persistence": {
-      "current_state_consecutive_snapshots": 5,
+      "current_state_consecutive_snapshots": 1,
       "status": "DERIVED"
     }
   },
