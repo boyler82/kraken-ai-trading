@@ -1,9 +1,9 @@
 {
   "coverage": {
-    "calendar_days": 27.0833,
+    "calendar_days": 28.375,
     "first_cutoff": "2026-08-23T15:00:00+00:00",
-    "independent_snapshots": 83,
-    "latest_cutoff": "2026-09-19T17:00:00+00:00",
+    "independent_snapshots": 85,
+    "latest_cutoff": "2026-09-21T00:00:00+00:00",
     "status": "SUFFICIENT_30D_HISTORY"
   },
   "purpose": "MARKET_RESEARCH_DECISION_SUPPORT",
@@ -2581,6 +2581,68 @@
       "universe_size": 73,
       "volatility_state": "UNAVAILABLE",
       "volume_state": "UNAVAILABLE"
+    },
+    {
+      "breadth_above_ema20_pct": 58.1081,
+      "breadth_above_ema50_pct": 66.2162,
+      "btc_structure_1h": "MIXED",
+      "btc_structure_4h": "HH_HL",
+      "capital_flow_confidence": "UNAVAILABLE",
+      "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
+      "capital_flow_state": "UNAVAILABLE",
+      "cross_sectional_components": "UNAVAILABLE",
+      "lagging_assets": "UNAVAILABLE",
+      "leading_assets": [
+        "AVAX",
+        "ALGO",
+        "NEAR",
+        "INJ",
+        "HBAR"
+      ],
+      "market_data_cutoff": "2026-09-20T15:00:00+00:00",
+      "market_regime": "UNAVAILABLE",
+      "market_transition_state": "HEALTHY_PULLBACK",
+      "observation_type": "OBSERVED",
+      "opportunity_candidates": "UNAVAILABLE",
+      "previous_transition_state": "HEALTHY_PULLBACK",
+      "sell_pressure_ratio": 0.0,
+      "sell_pressure_state": "DECLINING",
+      "snapshot_timestamp": "2026-09-20T16:10:50.521647+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260920T161050521647Z_6fad9227.json",
+      "universe_size": 74,
+      "volatility_state": "UNAVAILABLE",
+      "volume_state": "UNAVAILABLE"
+    },
+    {
+      "breadth_above_ema20_pct": 95.9459,
+      "breadth_above_ema50_pct": 97.2973,
+      "btc_structure_1h": "MIXED",
+      "btc_structure_4h": "MIXED",
+      "capital_flow_confidence": "UNAVAILABLE",
+      "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
+      "capital_flow_state": "UNAVAILABLE",
+      "cross_sectional_components": "UNAVAILABLE",
+      "lagging_assets": "UNAVAILABLE",
+      "leading_assets": [
+        "NEAR",
+        "VVV",
+        "AVAX",
+        "JUP",
+        "SEI"
+      ],
+      "market_data_cutoff": "2026-09-21T00:00:00+00:00",
+      "market_regime": "UNAVAILABLE",
+      "market_transition_state": "CONTINUATION_READY",
+      "observation_type": "OBSERVED",
+      "opportunity_candidates": "UNAVAILABLE",
+      "previous_transition_state": "HEALTHY_PULLBACK",
+      "sell_pressure_ratio": 0.7242,
+      "sell_pressure_state": "DECLINING",
+      "snapshot_timestamp": "2026-09-21T02:54:15.062590+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260921T025415062590Z_61dd4952.json",
+      "universe_size": 74,
+      "volatility_state": "UNAVAILABLE",
+      "volume_state": "UNAVAILABLE"
     }
   ],
   "source_directory": "RESEARCH_MEMORY/market_transition/predictions",
@@ -2590,86 +2652,86 @@
       "status": "INSUFFICIENT_HISTORY"
     },
     "change_7d": {
-      "breadth_ema20_change_pct_points": 55.936,
-      "breadth_ema50_change_pct_points": 84.7793,
+      "breadth_ema20_change_pct_points": 21.8718,
+      "breadth_ema50_change_pct_points": 43.5936,
       "btc_structure_1h_change": [
-        "LH_LL",
+        "HH_HL",
         "MIXED"
       ],
       "btc_structure_4h_change": [
-        "MIXED",
-        "HH_HL"
+        "LH_LL",
+        "MIXED"
       ],
-      "from_cutoff": "2026-09-11T21:00:00+00:00",
+      "from_cutoff": "2026-09-13T18:00:00+00:00",
       "sell_pressure_change": [
-        "NORMAL",
+        "INCREASING",
         "DECLINING"
       ],
       "status": "DERIVED",
-      "to_cutoff": "2026-09-19T17:00:00+00:00",
+      "to_cutoff": "2026-09-21T00:00:00+00:00",
       "transition_change": [
-        "DEEPER_CORRECTION_RISK",
-        "HEALTHY_PULLBACK"
+        "CONSOLIDATION",
+        "CONTINUATION_READY"
       ]
     },
     "change_vs_previous": {
       "changes": {
         "breadth_above_ema20_pct": [
-          100.0,
-          72.6027
+          58.1081,
+          95.9459
         ],
         "breadth_above_ema50_pct": [
-          100.0,
-          95.8904
+          66.2162,
+          97.2973
         ],
         "btc_structure_1h": [
-          "HH_HL",
+          "MIXED",
           "MIXED"
         ],
         "btc_structure_4h": [
           "HH_HL",
-          "HH_HL"
+          "MIXED"
         ],
         "market_transition_state": [
-          "CONTINUATION_READY",
-          "HEALTHY_PULLBACK"
+          "HEALTHY_PULLBACK",
+          "CONTINUATION_READY"
         ],
         "sell_pressure_state": [
           "DECLINING",
           "DECLINING"
         ]
       },
-      "from_cutoff": "2026-09-18T19:00:00+00:00",
+      "from_cutoff": "2026-09-20T15:00:00+00:00",
       "status": "DERIVED"
     },
     "current_state": {
-      "breadth_above_ema20_pct": 72.6027,
-      "breadth_above_ema50_pct": 95.8904,
+      "breadth_above_ema20_pct": 95.9459,
+      "breadth_above_ema50_pct": 97.2973,
       "btc_structure_1h": "MIXED",
-      "btc_structure_4h": "HH_HL",
+      "btc_structure_4h": "MIXED",
       "capital_flow_confidence": "UNAVAILABLE",
       "capital_flow_evidence_limitation": "HISTORICAL_CAPITAL_FLOW_NOT_STORED_WITH_TRANSITION_SNAPSHOT",
       "capital_flow_state": "UNAVAILABLE",
       "cross_sectional_components": "UNAVAILABLE",
       "lagging_assets": "UNAVAILABLE",
       "leading_assets": [
-        "XTZ",
-        "FIL",
-        "ENA",
+        "NEAR",
+        "VVV",
         "AVAX",
-        "INJ"
+        "JUP",
+        "SEI"
       ],
-      "market_data_cutoff": "2026-09-19T17:00:00+00:00",
+      "market_data_cutoff": "2026-09-21T00:00:00+00:00",
       "market_regime": "UNAVAILABLE",
-      "market_transition_state": "HEALTHY_PULLBACK",
+      "market_transition_state": "CONTINUATION_READY",
       "observation_type": "OBSERVED",
       "opportunity_candidates": "UNAVAILABLE",
-      "previous_transition_state": "CONTINUATION_READY",
-      "sell_pressure_ratio": 0.234,
+      "previous_transition_state": "HEALTHY_PULLBACK",
+      "sell_pressure_ratio": 0.7242,
       "sell_pressure_state": "DECLINING",
-      "snapshot_timestamp": "2026-09-19T19:40:19.417417+00:00",
-      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260919T194019417417Z_899e4ec3.json",
-      "universe_size": 73,
+      "snapshot_timestamp": "2026-09-21T02:54:15.062590+00:00",
+      "source_path": "RESEARCH_MEMORY/market_transition/predictions/20260921T025415062590Z_61dd4952.json",
+      "universe_size": 74,
       "volatility_state": "UNAVAILABLE",
       "volume_state": "UNAVAILABLE"
     },
