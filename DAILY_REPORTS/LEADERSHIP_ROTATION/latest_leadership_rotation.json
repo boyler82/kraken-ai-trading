@@ -1,0 +1,354 @@
+{
+  "candidates": [
+    {
+      "asset_count": 1,
+      "average_momentum_score": 7.4173,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 100.0,
+      "btc_relative_return_24h": 0.0,
+      "classification": "INSUFFICIENT_DATA",
+      "eligible_asset_count": 0,
+      "equal_weight_return_24h": 0.8684926307799268,
+      "equal_weight_return_48h": 1.8278996554927929,
+      "equal_weight_return_4h": 0.8321371888179829,
+      "equal_weight_return_7d": -1.798822544093015,
+      "leadership_rank": 1,
+      "leadership_rank_change": null,
+      "median_return_24h": 0.8684926307799268,
+      "persistence_duration_days": null,
+      "sector": "BTC",
+      "sector_leadership_score": 36.4835,
+      "top_contributors": [
+        "BTC"
+      ],
+      "volatility_expansion": 1.6627649718982775,
+      "volume_expansion": 2.3461188070523,
+      "weak_contributors": [
+        "BTC"
+      ]
+    },
+    {
+      "asset_count": 1,
+      "average_momentum_score": 28.4457,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -1.6117547308531543,
+      "classification": "INSUFFICIENT_DATA",
+      "eligible_asset_count": 1,
+      "equal_weight_return_24h": -0.7432621000732276,
+      "equal_weight_return_48h": -0.5095063216082218,
+      "equal_weight_return_4h": 0.0543411615062661,
+      "equal_weight_return_7d": 0.5149945046317939,
+      "leadership_rank": 2,
+      "leadership_rank_change": null,
+      "median_return_24h": -0.7432621000732276,
+      "persistence_duration_days": null,
+      "sector": "RWA",
+      "sector_leadership_score": 34.2421,
+      "top_contributors": [
+        "PAXG"
+      ],
+      "volatility_expansion": 1.8301786329033043,
+      "volume_expansion": 0.3902892085406347,
+      "weak_contributors": [
+        "PAXG"
+      ]
+    },
+    {
+      "asset_count": 1,
+      "average_momentum_score": 20.4269,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -2.3533691788343636,
+      "classification": "INSUFFICIENT_DATA",
+      "eligible_asset_count": 1,
+      "equal_weight_return_24h": -1.4848765480544368,
+      "equal_weight_return_48h": 0.3036453422402552,
+      "equal_weight_return_4h": -0.7452448633454178,
+      "equal_weight_return_7d": -6.883966589024226,
+      "leadership_rank": 3,
+      "leadership_rank_change": null,
+      "median_return_24h": -1.4848765480544368,
+      "persistence_duration_days": null,
+      "sector": "Smart-contract platforms",
+      "sector_leadership_score": 29.6719,
+      "top_contributors": [
+        "ETH"
+      ],
+      "volatility_expansion": 0.94764735193256,
+      "volume_expansion": 1.3070781402953435,
+      "weak_contributors": [
+        "ETH"
+      ]
+    },
+    {
+      "asset_count": 1,
+      "average_momentum_score": 21.1176,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -3.685747532740713,
+      "classification": "INSUFFICIENT_DATA",
+      "eligible_asset_count": 1,
+      "equal_weight_return_24h": -2.817254901960786,
+      "equal_weight_return_48h": 0.9014584571786832,
+      "equal_weight_return_4h": -3.425484984762639,
+      "equal_weight_return_7d": -4.539291217257324,
+      "leadership_rank": 4,
+      "leadership_rank_change": null,
+      "median_return_24h": -2.817254901960786,
+      "persistence_duration_days": null,
+      "sector": "Privacy",
+      "sector_leadership_score": 24.4805,
+      "top_contributors": [
+        "ZEC"
+      ],
+      "volatility_expansion": 1.098289432192916,
+      "volume_expansion": 1.1856305497566928,
+      "weak_contributors": [
+        "ZEC"
+      ]
+    },
+    {
+      "asset_count": 3,
+      "average_momentum_score": 28.543433333333336,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -4.14048902998112,
+      "classification": "STABLE_LEADERSHIP",
+      "eligible_asset_count": 3,
+      "equal_weight_return_24h": -3.271996399201194,
+      "equal_weight_return_48h": -1.2401695159400188,
+      "equal_weight_return_4h": -1.9861239613179684,
+      "equal_weight_return_7d": -9.307309768222948,
+      "leadership_rank": 5,
+      "leadership_rank_change": null,
+      "median_return_24h": -3.4714943405649956,
+      "persistence_duration_days": null,
+      "sector": "Meme",
+      "sector_leadership_score": 24.1467,
+      "top_contributors": [
+        "PEPE",
+        "DOGE",
+        "SHIB"
+      ],
+      "volatility_expansion": 1.2549895495450933,
+      "volume_expansion": 1.8466260308414346,
+      "weak_contributors": [
+        "SHIB",
+        "DOGE",
+        "PEPE"
+      ]
+    },
+    {
+      "asset_count": 1,
+      "average_momentum_score": 26.9131,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -4.627610633831669,
+      "classification": "INSUFFICIENT_DATA",
+      "eligible_asset_count": 1,
+      "equal_weight_return_24h": -3.7591180030517424,
+      "equal_weight_return_48h": -1.8506517270614584,
+      "equal_weight_return_4h": -2.3278452200303557,
+      "equal_weight_return_7d": -6.930613614115866,
+      "leadership_rank": 6,
+      "leadership_rank_change": null,
+      "median_return_24h": -3.7591180030517424,
+      "persistence_duration_days": null,
+      "sector": "Infrastructure / Oracles",
+      "sector_leadership_score": 21.8722,
+      "top_contributors": [
+        "LINK"
+      ],
+      "volatility_expansion": 1.0489458489099766,
+      "volume_expansion": 1.8356704721440888,
+      "weak_contributors": [
+        "LINK"
+      ]
+    },
+    {
+      "asset_count": 56,
+      "average_momentum_score": 29.096535714285714,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 7.142857142857142,
+      "breadth_percent_positive": 10.714285714285714,
+      "btc_relative_return_24h": -5.851625032437528,
+      "classification": "STABLE_LEADERSHIP",
+      "eligible_asset_count": 56,
+      "equal_weight_return_24h": -4.983132401657602,
+      "equal_weight_return_48h": -1.4718194055145346,
+      "equal_weight_return_4h": -3.0945667078675165,
+      "equal_weight_return_7d": -2.979213973988341,
+      "leadership_rank": 7,
+      "leadership_rank_change": null,
+      "median_return_24h": -4.775853075386843,
+      "persistence_duration_days": null,
+      "sector": "Other / Unclassified",
+      "sector_leadership_score": 19.5557,
+      "top_contributors": [
+        "PYTH",
+        "ZRO",
+        "ICP"
+      ],
+      "volatility_expansion": 1.3352471530972845,
+      "volume_expansion": 1.61146390256413,
+      "weak_contributors": [
+        "STRK",
+        "CFX",
+        "JUP"
+      ]
+    },
+    {
+      "asset_count": 2,
+      "average_momentum_score": 28.331699999999998,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -5.6310682560440695,
+      "classification": "LAGGING",
+      "eligible_asset_count": 2,
+      "equal_weight_return_24h": -4.762575625264143,
+      "equal_weight_return_48h": -2.364489299534578,
+      "equal_weight_return_4h": -2.2141188923750943,
+      "equal_weight_return_7d": -8.384756407774235,
+      "leadership_rank": 8,
+      "leadership_rank_change": null,
+      "median_return_24h": -4.762575625264143,
+      "persistence_duration_days": null,
+      "sector": "Payments",
+      "sector_leadership_score": 18.1421,
+      "top_contributors": [
+        "XRP",
+        "XLM"
+      ],
+      "volatility_expansion": 1.3596850441025055,
+      "volume_expansion": 1.9952871775708996,
+      "weak_contributors": [
+        "XLM",
+        "XRP"
+      ]
+    },
+    {
+      "asset_count": 3,
+      "average_momentum_score": 24.496033333333333,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -5.656344552465512,
+      "classification": "LAGGING",
+      "eligible_asset_count": 3,
+      "equal_weight_return_24h": -4.7878519216855855,
+      "equal_weight_return_48h": -2.653847115624693,
+      "equal_weight_return_4h": -3.089520506008199,
+      "equal_weight_return_7d": -7.7625517270682565,
+      "leadership_rank": 9,
+      "leadership_rank_change": null,
+      "median_return_24h": -4.551270334490942,
+      "persistence_duration_days": null,
+      "sector": "Layer 1",
+      "sector_leadership_score": 17.2738,
+      "top_contributors": [
+        "SOL",
+        "AVAX",
+        "ADA"
+      ],
+      "volatility_expansion": 1.2494046511258772,
+      "volume_expansion": 1.3075967478619905,
+      "weak_contributors": [
+        "ADA",
+        "AVAX",
+        "SOL"
+      ]
+    },
+    {
+      "asset_count": 2,
+      "average_momentum_score": 29.437150000000003,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -6.96850722436439,
+      "classification": "LAGGING",
+      "eligible_asset_count": 2,
+      "equal_weight_return_24h": -6.100014593584463,
+      "equal_weight_return_48h": -4.347289074162175,
+      "equal_weight_return_4h": -2.2662601876546287,
+      "equal_weight_return_7d": -14.829558582796741,
+      "leadership_rank": 10,
+      "leadership_rank_change": null,
+      "median_return_24h": -6.100014593584463,
+      "persistence_duration_days": null,
+      "sector": "DeFi",
+      "sector_leadership_score": 13.0134,
+      "top_contributors": [
+        "AAVE",
+        "UNI"
+      ],
+      "volatility_expansion": 1.5721229118680022,
+      "volume_expansion": 1.5431174175751625,
+      "weak_contributors": [
+        "UNI",
+        "AAVE"
+      ]
+    },
+    {
+      "asset_count": 2,
+      "average_momentum_score": 21.601,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -7.512737076732389,
+      "classification": "LAGGING",
+      "eligible_asset_count": 2,
+      "equal_weight_return_24h": -6.644244445952463,
+      "equal_weight_return_48h": -1.3806204246548381,
+      "equal_weight_return_4h": -2.865636111204739,
+      "equal_weight_return_7d": -8.30483177314485,
+      "leadership_rank": 11,
+      "leadership_rank_change": null,
+      "median_return_24h": -6.644244445952463,
+      "persistence_duration_days": null,
+      "sector": "AI",
+      "sector_leadership_score": 9.2693,
+      "top_contributors": [
+        "TAO",
+        "FET"
+      ],
+      "volatility_expansion": 1.173317835619879,
+      "volume_expansion": 0.9647162152123943,
+      "weak_contributors": [
+        "FET",
+        "TAO"
+      ]
+    }
+  ],
+  "confirmations": [],
+  "conflicts": [],
+  "errors": [],
+  "freshness": "FRESH",
+  "generated_at_utc": "2026-10-12T17:03:49.419811+00:00",
+  "module_name": "leadership_rotation",
+  "module_version": "1.0.0",
+  "report_date": "2026-10-12",
+  "risks": [],
+  "source_files": [
+    "/Users/tron/kraken-ai-trading/DATASETS/METADATA/crypto_sector_mapping.csv",
+    "/Users/tron/kraken-ai-trading/DATASETS/FEATURE_STORE/latest_market_features.csv"
+  ],
+  "source_timestamps": {},
+  "status": "OK",
+  "summary": {
+    "mapped_assets": 17,
+    "sector_count": 11,
+    "unmapped_assets": 56
+  },
+  "unknowns": [
+    "Unmapped assets remain Other / Unclassified",
+    "Rank persistence unavailable on first run"
+  ]
+}

@@ -1,0 +1,18 @@
+metric,value,asset,open_signals,history_rows,closed_outcomes
+open_signals,4,,,,
+closed_signals,53,,,,
+signal_history_rows,571,,,,
+signal_outcomes_rows,53,,,,
+asset_summary,,AVAX,1.0,75.0,18.0
+asset_summary,,DOGE,1.0,71.0,14.0
+asset_summary,,ADA,1.0,70.0,13.0
+asset_summary,,LINK,1.0,65.0,8.0
+asset_summary,,BTC,0.0,58.0,0.0
+asset_summary,,ETH,0.0,58.0,0.0
+asset_summary,,LTC,0.0,58.0,0.0
+asset_summary,,SOL,0.0,58.0,0.0
+asset_summary,,XRP,0.0,58.0,0.0
+win_rate_pct,11.32,,,,
+avg_return_pct,-0.5977,,,,
+best_signal,ADA | DAY1_OBSERVE_ONLY | 6.656221621244018%,,,,
+worst_signal,ADA | DAY1_OBSERVE_ONLY | -10.330360380623627%,,,,

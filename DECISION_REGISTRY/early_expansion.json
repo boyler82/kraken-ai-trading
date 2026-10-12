@@ -1,0 +1,827 @@
+{
+  "generated_at_utc": "2026-10-12T17:03:50.918258+00:00",
+  "labels": [
+    "RESEARCH_ONLY",
+    "NOT_A_BUY_SIGNAL",
+    "NOT_A_SELL_SIGNAL",
+    "USER_DECISION_REQUIRED",
+    "LIVE_NOT_AUTHORIZED"
+  ],
+  "market_state": "PRE_MOVE_CONDITIONS_PRESENT",
+  "module_name": "early_expansion",
+  "retrospectives": {
+    "PUMP": {
+      "asset": "PUMP",
+      "earliest_eligible_timestamp": "2026-08-15",
+      "energy_delta": 51.86,
+      "later_observed_moves": [
+        {
+          "date": "2026-08-16",
+          "return_24h_pct": -1.5417712441735287,
+          "return_48h_pct": -2.5204117855874952
+        },
+        {
+          "date": "2026-08-17",
+          "return_24h_pct": 5.959780621572208,
+          "return_48h_pct": 2.5840707964601917
+        }
+      ],
+      "look_ahead_used_for_detection": false,
+      "price": 0.002775,
+      "result": "PRE_MOVE_BUILDING",
+      "score": 62.85,
+      "state": "PRE_MOVE_BUILDING"
+    },
+    "TAO": {
+      "asset": "TAO",
+      "earliest_eligible_timestamp": "2026-08-13",
+      "energy_delta": 64.44,
+      "later_observed_moves": [
+        {
+          "date": "2026-08-14",
+          "return_24h_pct": -0.16260734370330265,
+          "return_48h_pct": -2.1977659662941407
+        },
+        {
+          "date": "2026-08-15",
+          "return_24h_pct": 0.5361227529213641,
+          "return_48h_pct": -1.6682389897969108
+        }
+      ],
+      "look_ahead_used_for_detection": false,
+      "price": 202.1458,
+      "result": "PRE_MOVE_BUILDING",
+      "score": 74.22,
+      "state": "PRE_MOVE_BUILDING"
+    }
+  },
+  "risks": [
+    {
+      "asset": "VVV",
+      "risk": "EXTREME_VOLUME_SPIKE"
+    },
+    {
+      "asset": "TRUMP",
+      "risk": "UPPER_RANGE_POSITION"
+    },
+    {
+      "asset": "STX",
+      "risk": "UPPER_RANGE_POSITION"
+    },
+    {
+      "asset": "XRP",
+      "risk": "EXTREME_VOLUME_SPIKE"
+    },
+    {
+      "asset": "INJ",
+      "risk": "UPPER_RANGE_POSITION"
+    }
+  ],
+  "status": "OK",
+  "too_late_candidates": [
+    {
+      "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+      "asset": "VVV",
+      "breakout_level": 29.26,
+      "change_metrics": {
+        "confidence_delta": 0,
+        "momentum_delta": 5.28,
+        "relative_strength_delta": 0.0,
+        "rotation_delta": 0.0,
+        "rqi_delta": 0.0,
+        "volume_zscore_delta": 1.6
+      },
+      "classification": "TOO_LATE",
+      "combined_pre_move_score": 66.88,
+      "components": {
+        "capital_flow_alignment": 50,
+        "cross_module_improvement": 72.5,
+        "data_quality": 100,
+        "momentum_precursor": 59.06,
+        "range_position": 82,
+        "relative_strength_delta": 76.31,
+        "volatility_compression": 73.29,
+        "volume_buildup": 20
+      },
+      "confidence_band": "MEDIUM",
+      "confidence_score": 69,
+      "current_price": 23.235,
+      "distance_to_breakout_pct": 20.5913,
+      "early_expansion_score": 67.64,
+      "energy_delta_score": 65.47,
+      "freshness": "FRESH",
+      "historical_sample_quality": "INSUFFICIENT",
+      "independent_modules_improving": 3,
+      "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+      "main_strength": "data_quality",
+      "opposing_modules": [
+        "volume_buildup"
+      ],
+      "overextension_reasons": [
+        "EXTREME_VOLUME_SPIKE"
+      ],
+      "overextension_status": "FAIL",
+      "pair": "VVVUSD",
+      "pre_move_status": "TOO_LATE",
+      "previous_snapshot_available": true,
+      "primary_risk": "EXTREME_VOLUME_SPIKE",
+      "range_position_pct": 47.19429209831404,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "return_24h_pct": -3.4289276807979996,
+      "return_48h_pct": 3.533553159254965,
+      "return_4h_pct": -2.94080788671206,
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+      ],
+      "source_timestamp": "2026-10-12T16:00:00+00:00",
+      "supporting_modules": [
+        "volatility_compression",
+        "range_position",
+        "relative_strength_delta",
+        "cross_module_improvement",
+        "data_quality"
+      ]
+    },
+    {
+      "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+      "asset": "TRUMP",
+      "breakout_level": 2.073,
+      "change_metrics": {
+        "confidence_delta": 0,
+        "momentum_delta": 1.54,
+        "relative_strength_delta": 0.0,
+        "rotation_delta": 0.0,
+        "rqi_delta": -15.87,
+        "volume_zscore_delta": 1.32
+      },
+      "classification": "TOO_LATE",
+      "combined_pre_move_score": 60.54,
+      "components": {
+        "capital_flow_alignment": 50,
+        "cross_module_improvement": 62.5,
+        "data_quality": 100,
+        "momentum_precursor": 49.18,
+        "range_position": 15,
+        "relative_strength_delta": 62.62,
+        "volatility_compression": 81.07,
+        "volume_buildup": 100
+      },
+      "confidence_band": "MEDIUM",
+      "confidence_score": 69,
+      "current_price": 1.889,
+      "distance_to_breakout_pct": 8.876,
+      "early_expansion_score": 62.11,
+      "energy_delta_score": 57.62,
+      "freshness": "FRESH",
+      "historical_sample_quality": "MEDIUM",
+      "independent_modules_improving": 3,
+      "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+      "main_strength": "volume_buildup",
+      "opposing_modules": [
+        "range_position"
+      ],
+      "overextension_reasons": [
+        "UPPER_RANGE_POSITION"
+      ],
+      "overextension_status": "FAIL",
+      "pair": "TRUMPUSD",
+      "pre_move_status": "TOO_LATE",
+      "previous_snapshot_available": true,
+      "primary_risk": "UPPER_RANGE_POSITION",
+      "range_position_pct": 72.71448663853717,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "return_24h_pct": -2.2762545266425294,
+      "return_48h_pct": 0.05296610169491789,
+      "return_4h_pct": -1.665799062988027,
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+      ],
+      "source_timestamp": "2026-10-12T16:00:00+00:00",
+      "supporting_modules": [
+        "volatility_compression",
+        "volume_buildup",
+        "data_quality"
+      ]
+    },
+    {
+      "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+      "asset": "STX",
+      "breakout_level": 0.4137,
+      "change_metrics": {
+        "confidence_delta": 0,
+        "momentum_delta": 39.14,
+        "relative_strength_delta": 0.0,
+        "rotation_delta": 0.0,
+        "rqi_delta": -2.02,
+        "volume_zscore_delta": 6.46
+      },
+      "classification": "TOO_LATE",
+      "combined_pre_move_score": 57.2,
+      "components": {
+        "capital_flow_alignment": 50,
+        "cross_module_improvement": 50.0,
+        "data_quality": 100,
+        "momentum_precursor": 100,
+        "range_position": 15,
+        "relative_strength_delta": 42.0,
+        "volatility_compression": 64.99,
+        "volume_buildup": 20
+      },
+      "confidence_band": "MEDIUM",
+      "confidence_score": 66,
+      "current_price": 0.3996,
+      "distance_to_breakout_pct": 3.4083,
+      "early_expansion_score": 53.55,
+      "energy_delta_score": 63.99,
+      "freshness": "FRESH",
+      "historical_sample_quality": "LOW",
+      "independent_modules_improving": 2,
+      "invalidation_condition": "CLOSE_BELOW_LOCAL_SWING_LOW",
+      "main_strength": "momentum_precursor",
+      "opposing_modules": [
+        "range_position",
+        "volume_buildup"
+      ],
+      "overextension_reasons": [
+        "UPPER_RANGE_POSITION",
+        "EXTREME_VOLUME_SPIKE"
+      ],
+      "overextension_status": "FAIL",
+      "pair": "STXUSD",
+      "pre_move_status": "TOO_LATE",
+      "previous_snapshot_available": true,
+      "primary_risk": "UPPER_RANGE_POSITION",
+      "range_position_pct": 74.83296213808455,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "return_24h_pct": 0.7564296520423675,
+      "return_48h_pct": -2.7737226277372184,
+      "return_4h_pct": 3.9812646370023463,
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+      ],
+      "source_timestamp": "2026-10-12T16:00:00+00:00",
+      "supporting_modules": [
+        "momentum_precursor",
+        "data_quality"
+      ]
+    }
+  ],
+  "top_energy_delta_candidates": [
+    {
+      "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+      "asset": "ALGO",
+      "breakout_level": 0.1443,
+      "change_metrics": {
+        "confidence_delta": 0,
+        "momentum_delta": 13.25,
+        "relative_strength_delta": 0.0,
+        "rotation_delta": 0.0,
+        "rqi_delta": 9.09,
+        "volume_zscore_delta": -0.87
+      },
+      "classification": "PRE_MOVE_BUILDING",
+      "combined_pre_move_score": 66.45,
+      "components": {
+        "capital_flow_alignment": 50,
+        "cross_module_improvement": 72.5,
+        "data_quality": 100,
+        "momentum_precursor": 62.35,
+        "range_position": 48,
+        "relative_strength_delta": 81.57,
+        "volatility_compression": 83.2,
+        "volume_buildup": 33.64
+      },
+      "confidence_band": "MEDIUM",
+      "confidence_score": 69,
+      "current_price": 0.12435,
+      "distance_to_breakout_pct": 13.8254,
+      "early_expansion_score": 67.17,
+      "energy_delta_score": 65.12,
+      "freshness": "FRESH",
+      "historical_sample_quality": "LOW",
+      "independent_modules_improving": 3,
+      "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+      "main_strength": "data_quality",
+      "opposing_modules": [
+        "volume_buildup"
+      ],
+      "overextension_reasons": [],
+      "overextension_status": "PASS",
+      "pair": "ALGOUSD",
+      "pre_move_status": "PASS",
+      "previous_snapshot_available": true,
+      "primary_risk": "volume_buildup",
+      "range_position_pct": 65.32748538011703,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "return_24h_pct": -3.9026275115919495,
+      "return_48h_pct": 4.680528664028949,
+      "return_4h_pct": -2.20981440704624,
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+      ],
+      "source_timestamp": "2026-10-12T16:00:00+00:00",
+      "supporting_modules": [
+        "volatility_compression",
+        "relative_strength_delta",
+        "cross_module_improvement",
+        "data_quality"
+      ]
+    },
+    {
+      "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+      "asset": "XLM",
+      "breakout_level": 0.21692,
+      "change_metrics": {
+        "confidence_delta": 0,
+        "momentum_delta": 3.66,
+        "relative_strength_delta": 0.0,
+        "rotation_delta": 0.0,
+        "rqi_delta": -0.11,
+        "volume_zscore_delta": 1.49
+      },
+      "classification": "PRE_MOVE_BUILDING",
+      "combined_pre_move_score": 65.11,
+      "components": {
+        "capital_flow_alignment": 50,
+        "cross_module_improvement": 72.5,
+        "data_quality": 100,
+        "momentum_precursor": 50.63,
+        "range_position": 82,
+        "relative_strength_delta": 38.12,
+        "volatility_compression": 67.4,
+        "volume_buildup": 81.75
+      },
+      "confidence_band": "MEDIUM",
+      "confidence_score": 69,
+      "current_price": 0.194995,
+      "distance_to_breakout_pct": 10.1074,
+      "early_expansion_score": 65.64,
+      "energy_delta_score": 64.13,
+      "freshness": "FRESH",
+      "historical_sample_quality": "LOW",
+      "independent_modules_improving": 3,
+      "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+      "main_strength": "data_quality",
+      "opposing_modules": [
+        "relative_strength_delta"
+      ],
+      "overextension_reasons": [],
+      "overextension_status": "PASS",
+      "pair": "XLMUSD",
+      "pre_move_status": "PASS",
+      "previous_snapshot_available": true,
+      "primary_risk": "relative_strength_delta",
+      "range_position_pct": 37.81022485016696,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "return_24h_pct": -5.062952179713132,
+      "return_48h_pct": -1.4873269037430692,
+      "return_4h_pct": -2.1522048935187943,
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+      ],
+      "source_timestamp": "2026-10-12T16:00:00+00:00",
+      "supporting_modules": [
+        "volatility_compression",
+        "range_position",
+        "volume_buildup",
+        "cross_module_improvement",
+        "data_quality"
+      ]
+    },
+    {
+      "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+      "asset": "POL",
+      "breakout_level": 0.11108,
+      "change_metrics": {
+        "confidence_delta": 0,
+        "momentum_delta": -2.64,
+        "relative_strength_delta": 0.0,
+        "rotation_delta": 0.0,
+        "rqi_delta": 14.56,
+        "volume_zscore_delta": 2.1
+      },
+      "classification": "TOO_EARLY",
+      "combined_pre_move_score": 57.55,
+      "components": {
+        "capital_flow_alignment": 50,
+        "cross_module_improvement": 72.5,
+        "data_quality": 100,
+        "momentum_precursor": 42,
+        "range_position": 48,
+        "relative_strength_delta": 11.46,
+        "volatility_compression": 52.38,
+        "volume_buildup": 100
+      },
+      "confidence_band": "MEDIUM",
+      "confidence_score": 69,
+      "current_price": 0.10238,
+      "distance_to_breakout_pct": 7.8322,
+      "early_expansion_score": 54.07,
+      "energy_delta_score": 64.0,
+      "freshness": "FRESH",
+      "historical_sample_quality": "LOW",
+      "independent_modules_improving": 3,
+      "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+      "main_strength": "volume_buildup",
+      "opposing_modules": [
+        "relative_strength_delta"
+      ],
+      "overextension_reasons": [],
+      "overextension_status": "PASS",
+      "pair": "POLUSD",
+      "pre_move_status": "PASS",
+      "previous_snapshot_available": true,
+      "primary_risk": "relative_strength_delta",
+      "range_position_pct": 59.80073200488003,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "return_24h_pct": -1.6994719155064897,
+      "return_48h_pct": 0.8074044899566868,
+      "return_4h_pct": -4.183434721572299,
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+      ],
+      "source_timestamp": "2026-10-12T16:00:00+00:00",
+      "supporting_modules": [
+        "volume_buildup",
+        "cross_module_improvement",
+        "data_quality"
+      ]
+    }
+  ],
+  "top_pre_move_candidates": [
+    {
+      "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+      "asset": "ALGO",
+      "breakout_level": 0.1443,
+      "change_metrics": {
+        "confidence_delta": 0,
+        "momentum_delta": 13.25,
+        "relative_strength_delta": 0.0,
+        "rotation_delta": 0.0,
+        "rqi_delta": 9.09,
+        "volume_zscore_delta": -0.87
+      },
+      "classification": "PRE_MOVE_BUILDING",
+      "combined_pre_move_score": 66.45,
+      "components": {
+        "capital_flow_alignment": 50,
+        "cross_module_improvement": 72.5,
+        "data_quality": 100,
+        "momentum_precursor": 62.35,
+        "range_position": 48,
+        "relative_strength_delta": 81.57,
+        "volatility_compression": 83.2,
+        "volume_buildup": 33.64
+      },
+      "confidence_band": "MEDIUM",
+      "confidence_score": 69,
+      "current_price": 0.12435,
+      "distance_to_breakout_pct": 13.8254,
+      "early_expansion_score": 67.17,
+      "energy_delta_score": 65.12,
+      "freshness": "FRESH",
+      "historical_sample_quality": "LOW",
+      "independent_modules_improving": 3,
+      "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+      "main_strength": "data_quality",
+      "opposing_modules": [
+        "volume_buildup"
+      ],
+      "overextension_reasons": [],
+      "overextension_status": "PASS",
+      "pair": "ALGOUSD",
+      "pre_move_status": "PASS",
+      "previous_snapshot_available": true,
+      "primary_risk": "volume_buildup",
+      "range_position_pct": 65.32748538011703,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "return_24h_pct": -3.9026275115919495,
+      "return_48h_pct": 4.680528664028949,
+      "return_4h_pct": -2.20981440704624,
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+      ],
+      "source_timestamp": "2026-10-12T16:00:00+00:00",
+      "supporting_modules": [
+        "volatility_compression",
+        "relative_strength_delta",
+        "cross_module_improvement",
+        "data_quality"
+      ]
+    },
+    {
+      "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+      "asset": "HBAR",
+      "breakout_level": 0.10281,
+      "change_metrics": {
+        "confidence_delta": 0.0,
+        "momentum_delta": 0.61,
+        "relative_strength_delta": 0.0,
+        "rotation_delta": 0.0,
+        "rqi_delta": 10.01,
+        "volume_zscore_delta": 2.64
+      },
+      "classification": "PRE_MOVE_BUILDING",
+      "combined_pre_move_score": 65.58,
+      "components": {
+        "capital_flow_alignment": 50,
+        "cross_module_improvement": 85.0,
+        "data_quality": 100,
+        "momentum_precursor": 49.08,
+        "range_position": 100,
+        "relative_strength_delta": 57.68,
+        "volatility_compression": 30.73,
+        "volume_buildup": 100
+      },
+      "confidence_band": "MEDIUM",
+      "confidence_score": 69,
+      "current_price": 0.08934,
+      "distance_to_breakout_pct": 13.1018,
+      "early_expansion_score": 67.41,
+      "energy_delta_score": 62.18,
+      "freshness": "FRESH",
+      "historical_sample_quality": "INSUFFICIENT",
+      "independent_modules_improving": 4,
+      "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+      "main_strength": "range_position",
+      "opposing_modules": [
+        "volatility_compression"
+      ],
+      "overextension_reasons": [],
+      "overextension_status": "PASS",
+      "pair": "HBARUSD",
+      "pre_move_status": "PASS",
+      "previous_snapshot_available": true,
+      "primary_risk": "volatility_compression",
+      "range_position_pct": 17.352092352092455,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "return_24h_pct": -4.835960801022587,
+      "return_48h_pct": -3.5205183585313216,
+      "return_4h_pct": -2.933507170795302,
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+      ],
+      "source_timestamp": "2026-10-12T16:00:00+00:00",
+      "supporting_modules": [
+        "range_position",
+        "volume_buildup",
+        "cross_module_improvement",
+        "data_quality"
+      ]
+    },
+    {
+      "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+      "asset": "XLM",
+      "breakout_level": 0.21692,
+      "change_metrics": {
+        "confidence_delta": 0,
+        "momentum_delta": 3.66,
+        "relative_strength_delta": 0.0,
+        "rotation_delta": 0.0,
+        "rqi_delta": -0.11,
+        "volume_zscore_delta": 1.49
+      },
+      "classification": "PRE_MOVE_BUILDING",
+      "combined_pre_move_score": 65.11,
+      "components": {
+        "capital_flow_alignment": 50,
+        "cross_module_improvement": 72.5,
+        "data_quality": 100,
+        "momentum_precursor": 50.63,
+        "range_position": 82,
+        "relative_strength_delta": 38.12,
+        "volatility_compression": 67.4,
+        "volume_buildup": 81.75
+      },
+      "confidence_band": "MEDIUM",
+      "confidence_score": 69,
+      "current_price": 0.194995,
+      "distance_to_breakout_pct": 10.1074,
+      "early_expansion_score": 65.64,
+      "energy_delta_score": 64.13,
+      "freshness": "FRESH",
+      "historical_sample_quality": "LOW",
+      "independent_modules_improving": 3,
+      "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+      "main_strength": "data_quality",
+      "opposing_modules": [
+        "relative_strength_delta"
+      ],
+      "overextension_reasons": [],
+      "overextension_status": "PASS",
+      "pair": "XLMUSD",
+      "pre_move_status": "PASS",
+      "previous_snapshot_available": true,
+      "primary_risk": "relative_strength_delta",
+      "range_position_pct": 37.81022485016696,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "return_24h_pct": -5.062952179713132,
+      "return_48h_pct": -1.4873269037430692,
+      "return_4h_pct": -2.1522048935187943,
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+      ],
+      "source_timestamp": "2026-10-12T16:00:00+00:00",
+      "supporting_modules": [
+        "volatility_compression",
+        "range_position",
+        "volume_buildup",
+        "cross_module_improvement",
+        "data_quality"
+      ]
+    },
+    {
+      "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+      "asset": "ICP",
+      "breakout_level": 3.604,
+      "change_metrics": {
+        "confidence_delta": 0,
+        "momentum_delta": 29.52,
+        "relative_strength_delta": 0.0,
+        "rotation_delta": 0.0,
+        "rqi_delta": 2.4,
+        "volume_zscore_delta": -0.79
+      },
+      "classification": "PRE_MOVE_BUILDING",
+      "combined_pre_move_score": 64.12,
+      "components": {
+        "capital_flow_alignment": 50,
+        "cross_module_improvement": 72.5,
+        "data_quality": 100,
+        "momentum_precursor": 49.78,
+        "range_position": 48,
+        "relative_strength_delta": 54.46,
+        "volatility_compression": 85,
+        "volume_buildup": 63.25
+      },
+      "confidence_band": "MEDIUM",
+      "confidence_score": 69,
+      "current_price": 3.274,
+      "distance_to_breakout_pct": 9.1565,
+      "early_expansion_score": 64.54,
+      "energy_delta_score": 63.35,
+      "freshness": "FRESH",
+      "historical_sample_quality": "LOW",
+      "independent_modules_improving": 3,
+      "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+      "main_strength": "data_quality",
+      "opposing_modules": [],
+      "overextension_reasons": [],
+      "overextension_status": "PASS",
+      "pair": "ICPUSD",
+      "pre_move_status": "PASS",
+      "previous_snapshot_available": true,
+      "primary_risk": "range_position",
+      "range_position_pct": 64.62483708806546,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "return_24h_pct": 2.152886115444619,
+      "return_48h_pct": 2.82663316582914,
+      "return_4h_pct": -3.5072207486000484,
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+      ],
+      "source_timestamp": "2026-10-12T16:00:00+00:00",
+      "supporting_modules": [
+        "volatility_compression",
+        "cross_module_improvement",
+        "data_quality"
+      ]
+    },
+    {
+      "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+      "asset": "AVAX",
+      "breakout_level": 11.726,
+      "change_metrics": {
+        "confidence_delta": 0,
+        "momentum_delta": 1.13,
+        "relative_strength_delta": 0.0,
+        "rotation_delta": 0.0,
+        "rqi_delta": 0.64,
+        "volume_zscore_delta": 0.02
+      },
+      "classification": "PRE_MOVE_BUILDING",
+      "combined_pre_move_score": 63.87,
+      "components": {
+        "capital_flow_alignment": 50,
+        "cross_module_improvement": 75.0,
+        "data_quality": 100,
+        "momentum_precursor": 42,
+        "range_position": 82,
+        "relative_strength_delta": 62.05,
+        "volatility_compression": 74.91,
+        "volume_buildup": 51.58
+      },
+      "confidence_band": "MEDIUM",
+      "confidence_score": 69,
+      "current_price": 10.444,
+      "distance_to_breakout_pct": 10.933,
+      "early_expansion_score": 66.8,
+      "energy_delta_score": 58.43,
+      "freshness": "FRESH",
+      "historical_sample_quality": "MEDIUM",
+      "independent_modules_improving": 4,
+      "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+      "main_strength": "data_quality",
+      "opposing_modules": [],
+      "overextension_reasons": [],
+      "overextension_status": "PASS",
+      "pair": "AVAXUSD",
+      "pre_move_status": "PASS",
+      "previous_snapshot_available": true,
+      "primary_risk": "momentum_precursor",
+      "range_position_pct": 38.38422883649017,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "return_24h_pct": -4.551270334490942,
+      "return_48h_pct": -0.4005340453938522,
+      "return_4h_pct": -4.157107460769016,
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+      ],
+      "source_timestamp": "2026-10-12T16:00:00+00:00",
+      "supporting_modules": [
+        "volatility_compression",
+        "range_position",
+        "cross_module_improvement",
+        "data_quality"
+      ]
+    }
+  ],
+  "unknowns": []
+}

@@ -1,0 +1,7 @@
+metric,value
+outcome_keys_migrated,0
+outcomes_inserted,0
+outcomes_updated,0
+outcomes_already_complete,0
+signals_closed,0
+duplicate_history_events_skipped,0

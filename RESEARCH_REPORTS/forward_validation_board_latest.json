@@ -1,0 +1,839 @@
+{
+  "entries": [
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "422eaf08bf984e86c22ca93ba0fb607b08e17254ac4ab26a63f3f415e3d0fdb6",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        -0.515527264005334,
+        0.4214237326747046
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": -0.04675138857008995,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "LIMITED_REGIME_COVERAGE"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "EE_TP3_SL2",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    },
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "71fb28e84ea729f2421664fafc1a38022686d828f28aac4c182d87afdc6d3363",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        -0.6385553330049926,
+        0.6968114379930141
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": -0.0009402949426981794,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "LIMITED_REGIME_COVERAGE",
+        "ONE_TIMESTAMP_CONCENTRATION"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "MOMENTUM_TP3_SL2",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    },
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "7b50c9d06d567d8bbb6c07e3d6e9d817293c4e13dd28c25c67382f1f11bce9bc",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        -0.6030456266221454,
+        0.5349768393680137
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": -0.025547688993725712,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "LIMITED_REGIME_COVERAGE"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "RANGE_FIXED_3",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    },
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "9ce597d35a2a470fa64c27aa86634a639941fa4853461b6e4aa35206abb4b9fe",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        -0.301303640921366,
+        0.7792763418873111
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": 0.2356023460495561,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "LIMITED_REGIME_COVERAGE"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "EE_TP4_SL2",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    },
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "a5e1f74d016e4b7764eeda5f06d061b64680e5e538c9dc44a6fac23a527a7a83",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        -0.022356023104155746,
+        0.9875832547395746
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": 0.44894772832852586,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "LIMITED_REGIME_COVERAGE"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "MULTI_TP4_SL2",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    },
+    {
+      "activated_at": "2026-08-29T00:00:00+00:00",
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 8,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": true,
+          "single_timestamp_concentration": true,
+          "unique_assets": true,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "a67e1c4c6b2fc462fbc6750f6af73f1499ed7c5871f2cb1a8204f3c03f9ad9de",
+      "experiment_age_days": 44.709454383692126,
+      "forward_clustered_ci_95": [
+        -2.4000000000000075,
+        -2.399999999999996
+      ],
+      "forward_data_end": "2026-09-01T19:00:00+00:00",
+      "forward_data_start": "2026-08-29T00:00:00+00:00",
+      "forward_ev_pct": -2.4000000000000017,
+      "forward_experiment_name": "RANGE_FIXED_5_FORWARD_V2",
+      "forward_max_drawdown_pct": -17.662336027264246,
+      "forward_profit_factor": 0.0,
+      "forward_profit_factor_status": "FINITE",
+      "frozen_at": "2026-08-27T20:22:22.509074+00:00",
+      "frozen_strategy_spec_hash": "a3b6da1c58d0b03e6eed7f860be917f24fef0c14c8ad9c15945bf3ab139db4d9",
+      "governance_state": "COLLECTING",
+      "historical_clustered_ci_95": [
+        -0.2532797346130222,
+        1.0187997749245274
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": 0.36002126782678084,
+      "independent_entry_timestamps": 8,
+      "independent_signal_clusters": 1,
+      "last_monitor_timestamp": "2026-09-01T19:00:00+00:00",
+      "major_warnings": [
+        "LIMITED_REGIME_COVERAGE"
+      ],
+      "monitor_status": "ACTIVE",
+      "next_monitor_requirement": "Run official monitor after new completed market data.",
+      "next_required_evidence": "completed outcomes 8/50; independent clusters 1/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 8,
+      "regime_coverage": [],
+      "single_asset_ev_delta_pct": 1.7763568394002505e-15,
+      "single_timestamp_ev_delta_pct": 1.7763568394002505e-15,
+      "strategy_name": "RANGE_FIXED_5",
+      "trading_capability": "DISABLED",
+      "unique_assets": 8,
+      "unique_market_data_timestamps": 1,
+      "validation_notes": [
+        "Existing immutable RANGE_FIXED_5_FORWARD_V2 integrated without semantic changes."
+      ]
+    },
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "acc076b635e7f1ed9afe0b2204105ba47d79ea9e0d981720e1ff4424f80ed9c1",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        null,
+        null
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": null,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "NO_REALIZED_OUTCOME_EVIDENCE",
+        "LIMITED_REGIME_COVERAGE"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "ROTATION_10D",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    },
+    {
+      "activated_at": null,
+      "alias_group": "ALIAS_008",
+      "aliases": [
+        "MOMENTUM_TP5_SL2"
+      ],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "c71f362e36ddad4bfe73799d36757817e4fdc9c822cd6b24dc8e7a1869ebed7a",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        -0.11050483089382324,
+        1.8148673132662339
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": 0.7480904956933796,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "ALIAS_NOT_INDEPENDENT_EVIDENCE",
+        "LIMITED_REGIME_COVERAGE",
+        "ONE_TIMESTAMP_CONCENTRATION"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "MOMENTUM_STRUCTURE_EXIT",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    },
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "d0f1e752c2a1bac536cf58ebb2ea53543a12a67d762c1456e65f49d20e40fcb8",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "CANDIDATE_FOR_FREEZE",
+      "historical_clustered_ci_95": [
+        0.7606816968514422,
+        2.6714757277604817
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": 1.7100303310716882,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "LIMITED_REGIME_COVERAGE"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "EE_DYNAMIC_BREAKOUT",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": [
+        "Historical audit supports freeze review only; activation requires explicit user action."
+      ]
+    },
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "d4c1126e41a528d308674e834ff64e3ce3901e85cb0c161c592669df278a068f",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        -0.6255639016697317,
+        0.49547105806084285
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": -0.06750764778407864,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "LIMITED_REGIME_COVERAGE"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "RANGE_MIDPOINT",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    },
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "d55bce5c8e3baa80a60353624d36a37c3c867e273325846ad84935d6465a8522",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        -0.11042370238491876,
+        1.0667469365263416
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": 0.47068438386246475,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "LIMITED_REGIME_COVERAGE"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "EE_TP5_SL2",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    },
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "e866f21be395b3bb5c31a01ff1f142e798d102ddba497f6573b27245afb61021",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        null,
+        null
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": null,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "NO_REALIZED_OUTCOME_EVIDENCE",
+        "LIMITED_REGIME_COVERAGE"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "ROTATION_3D",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    },
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "e9ed863fd44d918d6ab0e2d9e684ac9fdab3323789443088205b34f8fa442bad",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        -0.028697395861773552,
+        1.9944128901912914
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": 0.9054039834416504,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "LIMITED_REGIME_COVERAGE",
+        "ONE_TIMESTAMP_CONCENTRATION"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "RANGE_HIGH",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    },
+    {
+      "activated_at": null,
+      "alias_group": null,
+      "aliases": [],
+      "completed_outcomes": 0,
+      "diagnostic_effective_n": null,
+      "ev_decay_pct": null,
+      "ev_decay_status": "INSUFFICIENT_EVIDENCE",
+      "evaluation_gates": {
+        "checks": {
+          "completed_forward_outcomes": false,
+          "independent_signal_clusters": false,
+          "regime_diversity": false,
+          "single_asset_concentration": false,
+          "single_timestamp_concentration": false,
+          "unique_assets": false,
+          "unique_market_timestamps": false
+        },
+        "passed": false,
+        "policy_version": "1.0.0"
+      },
+      "evidence_result": "NOT_EVALUATED",
+      "execution_definition_hash": "f50c2081eebdf9efa8a78b4cfdc0dceddb814eb31fdb0c591806c67e116836da",
+      "forward_clustered_ci_95": [
+        null,
+        null
+      ],
+      "forward_data_end": null,
+      "forward_data_start": null,
+      "forward_ev_pct": null,
+      "forward_experiment_name": null,
+      "forward_max_drawdown_pct": null,
+      "forward_profit_factor": null,
+      "forward_profit_factor_status": "UNDEFINED_NO_OUTCOMES",
+      "frozen_at": null,
+      "frozen_strategy_spec_hash": null,
+      "governance_state": "RESEARCH",
+      "historical_clustered_ci_95": [
+        null,
+        null
+      ],
+      "historical_evidence_snapshot_hash": "66d78c790b0dbd9f9c9933daa4adea5c0f81ba459c9939a84e015aab190be084",
+      "historical_oos_ev_pct": null,
+      "independent_entry_timestamps": 0,
+      "independent_signal_clusters": 0,
+      "major_warnings": [
+        "NO_REALIZED_OUTCOME_EVIDENCE",
+        "LIMITED_REGIME_COVERAGE"
+      ],
+      "next_required_evidence": "completed outcomes 0/50; independent clusters 0/20",
+      "open_outcomes": 0,
+      "raw_forward_n": 0,
+      "regime_coverage": [],
+      "strategy_name": "ROTATION_5D",
+      "trading_capability": "DISABLED",
+      "unique_assets": 0,
+      "unique_market_data_timestamps": 0,
+      "validation_notes": []
+    }
+  ],
+  "generated_at_utc": "2026-10-12T17:01:36.858751+00:00",
+  "registry_path": "/Users/tron/kraken-ai-trading/RESEARCH_REPORTS/forward_validation_registry.json",
+  "schema_version": "1.0.0",
+  "trading_capability": "DISABLED"
+}

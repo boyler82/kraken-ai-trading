@@ -1,0 +1,2251 @@
+{
+  "bundle_version": "1.0.0",
+  "generated_at_utc": "2026-10-12T17:04:11.133841+00:00",
+  "hashes": {
+    "/Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-10-12_research_regime.csv": "95db4a9fde506d143a36dd4aa7716c7ed5605190f796a288db98f15a4899f097",
+    "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-12_ai_confidence.json": "7aa38be9cd5a0d52767e52e64e9d3b3dd4815e9294022e51011013d702460874",
+    "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json": "a5f780698d56e4af80fb4a01f0acfc684427ac476da688cce11ef8a250341380",
+    "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/2026-10-12_capital_flow.json": "17027c20f581ac38a15b492f7d188897cf89fdfecd255b414ed9fa4651e1c2ae",
+    "/Users/tron/kraken-ai-trading/DAILY_REPORTS/LEADERSHIP_ROTATION/2026-10-12_leadership_rotation.json": "ab981b5cac1a4f3ffc8efcae5e79400967166b288fa8236684c8291b6d0c64e6",
+    "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv": "2198c66c815da2cf5168bbe0d1ea3d2b437c001a27a425665510d0d03300d220",
+    "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-12_opportunity_aging.json": "a1ec411c788df7099db9b97249187fad9a3c11b7b497a12ed24c74a76bd73436",
+    "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-12_relative_strength.json": "22b07793a632932d6697d66c6da80269db3ed7c2360ca7806d5321caa193bffb",
+    "/Users/tron/kraken-ai-trading/WATCHLISTS/consolidation_daily_watchlist.csv": "bc1bb802f35826b78be79cadaf71dc3667c166a11065efd42f03715b1bdfaf5b",
+    "/Users/tron/kraken-ai-trading/journal/portfolio_positions.csv": "6569c170578fcd3e77fcafc25d6f5587362aaf4f9312df918845e4d9d3b1bdee"
+  },
+  "raw_features_included": false,
+  "registry": {
+    "ai_confidence": {
+      "candidates": [
+        {
+          "agreement_level": "MIXED",
+          "asset": "ATOM",
+          "confidence_band": "LOW",
+          "conflict_count": 1,
+          "evidence_confidence_score": 40.0,
+          "evidence_strength": "WEAK",
+          "freshness_quality": "FRESH",
+          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+          "liquidity_quality": "UNKNOWN",
+          "opposing_modules": [
+            "market_regime"
+          ],
+          "primary_risk": "LOW_SAMPLE_QUALITY",
+          "regime_alignment": "UNKNOWN_OR_CONFLICT",
+          "sample_quality": "LOW",
+          "strongest_conflict": "market_regime",
+          "strongest_support": "relative_strength",
+          "support_count": 3,
+          "supporting_modules": [
+            "relative_strength",
+            "btc_rotation",
+            "capital_flow"
+          ],
+          "unavailable_modules": [
+            "momentum",
+            "consolidation",
+            "leadership_rotation",
+            "validation"
+          ],
+          "unknowns": [
+            "Evidence score is not a probability"
+          ],
+          "weighted_conflict": 15.0,
+          "weighted_support": 40.0
+        },
+        {
+          "agreement_level": "MIXED",
+          "asset": "ADA",
+          "confidence_band": "LOW",
+          "conflict_count": 1,
+          "evidence_confidence_score": 25.0,
+          "evidence_strength": "WEAK",
+          "freshness_quality": "FRESH",
+          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+          "liquidity_quality": "UNKNOWN",
+          "opposing_modules": [
+            "market_regime"
+          ],
+          "primary_risk": "LOW_SAMPLE_QUALITY",
+          "regime_alignment": "UNKNOWN_OR_CONFLICT",
+          "sample_quality": "LOW",
+          "strongest_conflict": "market_regime",
+          "strongest_support": "relative_strength",
+          "support_count": 2,
+          "supporting_modules": [
+            "relative_strength",
+            "capital_flow"
+          ],
+          "unavailable_modules": [
+            "momentum",
+            "consolidation",
+            "btc_rotation",
+            "leadership_rotation",
+            "validation"
+          ],
+          "unknowns": [
+            "Evidence score is not a probability"
+          ],
+          "weighted_conflict": 15.0,
+          "weighted_support": 25.0
+        },
+        {
+          "agreement_level": "MIXED",
+          "asset": "DOT",
+          "confidence_band": "LOW",
+          "conflict_count": 1,
+          "evidence_confidence_score": 25.0,
+          "evidence_strength": "WEAK",
+          "freshness_quality": "FRESH",
+          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+          "liquidity_quality": "UNKNOWN",
+          "opposing_modules": [
+            "market_regime"
+          ],
+          "primary_risk": "LOW_SAMPLE_QUALITY",
+          "regime_alignment": "UNKNOWN_OR_CONFLICT",
+          "sample_quality": "LOW",
+          "strongest_conflict": "market_regime",
+          "strongest_support": "relative_strength",
+          "support_count": 2,
+          "supporting_modules": [
+            "relative_strength",
+            "capital_flow"
+          ],
+          "unavailable_modules": [
+            "momentum",
+            "consolidation",
+            "btc_rotation",
+            "leadership_rotation",
+            "validation"
+          ],
+          "unknowns": [
+            "Evidence score is not a probability"
+          ],
+          "weighted_conflict": 15.0,
+          "weighted_support": 25.0
+        },
+        {
+          "agreement_level": "MIXED",
+          "asset": "HBAR",
+          "confidence_band": "LOW",
+          "conflict_count": 1,
+          "evidence_confidence_score": 25.0,
+          "evidence_strength": "WEAK",
+          "freshness_quality": "FRESH",
+          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+          "liquidity_quality": "UNKNOWN",
+          "opposing_modules": [
+            "market_regime"
+          ],
+          "primary_risk": "LOW_SAMPLE_QUALITY",
+          "regime_alignment": "UNKNOWN_OR_CONFLICT",
+          "sample_quality": "LOW",
+          "strongest_conflict": "market_regime",
+          "strongest_support": "btc_rotation",
+          "support_count": 2,
+          "supporting_modules": [
+            "btc_rotation",
+            "capital_flow"
+          ],
+          "unavailable_modules": [
+            "relative_strength",
+            "momentum",
+            "consolidation",
+            "leadership_rotation",
+            "validation"
+          ],
+          "unknowns": [
+            "Evidence score is not a probability"
+          ],
+          "weighted_conflict": 15.0,
+          "weighted_support": 25.0
+        },
+        {
+          "agreement_level": "MIXED",
+          "asset": "HYPE",
+          "confidence_band": "LOW",
+          "conflict_count": 1,
+          "evidence_confidence_score": 25.0,
+          "evidence_strength": "WEAK",
+          "freshness_quality": "FRESH",
+          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+          "liquidity_quality": "UNKNOWN",
+          "opposing_modules": [
+            "market_regime"
+          ],
+          "primary_risk": "LOW_SAMPLE_QUALITY",
+          "regime_alignment": "UNKNOWN_OR_CONFLICT",
+          "sample_quality": "LOW",
+          "strongest_conflict": "market_regime",
+          "strongest_support": "btc_rotation",
+          "support_count": 2,
+          "supporting_modules": [
+            "btc_rotation",
+            "capital_flow"
+          ],
+          "unavailable_modules": [
+            "relative_strength",
+            "momentum",
+            "consolidation",
+            "leadership_rotation",
+            "validation"
+          ],
+          "unknowns": [
+            "Evidence score is not a probability"
+          ],
+          "weighted_conflict": 15.0,
+          "weighted_support": 25.0
+        },
+        {
+          "agreement_level": "MIXED",
+          "asset": "PUMP",
+          "confidence_band": "LOW",
+          "conflict_count": 1,
+          "evidence_confidence_score": 25.0,
+          "evidence_strength": "WEAK",
+          "freshness_quality": "FRESH",
+          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+          "liquidity_quality": "UNKNOWN",
+          "opposing_modules": [
+            "market_regime"
+          ],
+          "primary_risk": "LOW_SAMPLE_QUALITY",
+          "regime_alignment": "UNKNOWN_OR_CONFLICT",
+          "sample_quality": "LOW",
+          "strongest_conflict": "market_regime",
+          "strongest_support": "relative_strength",
+          "support_count": 2,
+          "supporting_modules": [
+            "relative_strength",
+            "capital_flow"
+          ],
+          "unavailable_modules": [
+            "momentum",
+            "consolidation",
+            "btc_rotation",
+            "leadership_rotation",
+            "validation"
+          ],
+          "unknowns": [
+            "Evidence score is not a probability"
+          ],
+          "weighted_conflict": 15.0,
+          "weighted_support": 25.0
+        },
+        {
+          "agreement_level": "MIXED",
+          "asset": "TIA",
+          "confidence_band": "LOW",
+          "conflict_count": 1,
+          "evidence_confidence_score": 25.0,
+          "evidence_strength": "WEAK",
+          "freshness_quality": "FRESH",
+          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+          "liquidity_quality": "UNKNOWN",
+          "opposing_modules": [
+            "market_regime"
+          ],
+          "primary_risk": "LOW_SAMPLE_QUALITY",
+          "regime_alignment": "UNKNOWN_OR_CONFLICT",
+          "sample_quality": "LOW",
+          "strongest_conflict": "market_regime",
+          "strongest_support": "relative_strength",
+          "support_count": 2,
+          "supporting_modules": [
+            "relative_strength",
+            "capital_flow"
+          ],
+          "unavailable_modules": [
+            "momentum",
+            "consolidation",
+            "btc_rotation",
+            "leadership_rotation",
+            "validation"
+          ],
+          "unknowns": [
+            "Evidence score is not a probability"
+          ],
+          "weighted_conflict": 15.0,
+          "weighted_support": 25.0
+        },
+        {
+          "agreement_level": "MIXED",
+          "asset": "AAVE",
+          "confidence_band": "LOW",
+          "conflict_count": 1,
+          "evidence_confidence_score": 22.0779,
+          "evidence_strength": "WEAK",
+          "freshness_quality": "FRESH",
+          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+          "liquidity_quality": "UNKNOWN",
+          "opposing_modules": [
+            "market_regime"
+          ],
+          "primary_risk": "LOW_SAMPLE_QUALITY",
+          "regime_alignment": "UNKNOWN_OR_CONFLICT",
+          "sample_quality": "LOW",
+          "strongest_conflict": "market_regime",
+          "strongest_support": "consolidation",
+          "support_count": 2,
+          "supporting_modules": [
+            "consolidation",
+            "capital_flow"
+          ],
+          "unavailable_modules": [
+            "relative_strength",
+            "momentum",
+            "btc_rotation",
+            "leadership_rotation",
+            "validation"
+          ],
+          "unknowns": [
+            "Evidence score is not a probability"
+          ],
+          "weighted_conflict": 15.0,
+          "weighted_support": 21.25
+        }
+      ],
+      "confirmations": [
+        {
+          "asset": "AAVE",
+          "modules": [
+            "consolidation",
+            "capital_flow"
+          ]
+        },
+        {
+          "asset": "ADA",
+          "modules": [
+            "relative_strength",
+            "capital_flow"
+          ]
+        },
+        {
+          "asset": "ATOM",
+          "modules": [
+            "relative_strength",
+            "btc_rotation",
+            "capital_flow"
+          ]
+        },
+        {
+          "asset": "DOT",
+          "modules": [
+            "relative_strength",
+            "capital_flow"
+          ]
+        },
+        {
+          "asset": "FET",
+          "modules": [
+            "consolidation",
+            "capital_flow"
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "asset": "AAVE",
+          "oppose": [
+            "market_regime"
+          ],
+          "support": [
+            "consolidation",
+            "capital_flow"
+          ]
+        },
+        {
+          "asset": "ADA",
+          "oppose": [
+            "market_regime"
+          ],
+          "support": [
+            "relative_strength",
+            "capital_flow"
+          ]
+        },
+        {
+          "asset": "ATOM",
+          "oppose": [
+            "market_regime"
+          ],
+          "support": [
+            "relative_strength",
+            "btc_rotation",
+            "capital_flow"
+          ]
+        },
+        {
+          "asset": "DOT",
+          "oppose": [
+            "market_regime"
+          ],
+          "support": [
+            "relative_strength",
+            "capital_flow"
+          ]
+        },
+        {
+          "asset": "FET",
+          "oppose": [
+            "market_regime"
+          ],
+          "support": [
+            "consolidation",
+            "capital_flow"
+          ]
+        }
+      ],
+      "freshness": "FRESH",
+      "generated_at_utc": "2026-10-12T17:03:49.457350+00:00",
+      "module_name": "ai_confidence",
+      "risks": [
+        "LOW_SAMPLE_QUALITY_CAP_APPLIED"
+      ],
+      "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-12_ai_confidence.json",
+      "status": "OK",
+      "summary": {
+        "candidate_count": 8,
+        "module_weights": {
+          "btc_rotation": 15,
+          "capital_flow": 10,
+          "consolidation": 15,
+          "leadership_rotation": 10,
+          "market_regime": 15,
+          "momentum": 15,
+          "relative_strength": 15,
+          "validation": 5
+        },
+        "probability_claim": false,
+        "weights_version": "1.0"
+      }
+    },
+    "btc_rotation": {
+      "freshness": "FRESH",
+      "generated_at_utc": "2026-10-12T17:03:48.024743+00:00",
+      "module_name": "btc_rotation",
+      "risks": [],
+      "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json",
+      "status": "OK",
+      "summary": {
+        "best_score_advantage": 7.926300000000005,
+        "btc_hold_score": 62.2734,
+        "confidence": "LOW",
+        "current_holding": null,
+        "market_regime": "BEAR",
+        "objective": "BTC_ACCUMULATION",
+        "preferred_state": "HOLD_BTC_BENCHMARK"
+      },
+      "top_candidates": [
+        {
+          "allocation_review_band": "NONE",
+          "alt_rotation_score": 70.1997,
+          "alt_score_components": {
+            "breakout_momentum_quality": 5.0593,
+            "consolidation_location_quality": 10,
+            "data_freshness": 5,
+            "liquidity": 10,
+            "relative_momentum_vs_btc": 13.4473,
+            "relative_strength_vs_btc": 21.6931,
+            "trend_quality": 5,
+            "volume_confirmation": 10
+          },
+          "alt_score_penalties": {
+            "excessive_volatility": 0,
+            "failed_breakout": 0,
+            "finished_move": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "negative_downside_asymmetry": 10,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "relative_momentum_deterioration": 0,
+            "stale_data": 0,
+            "wide_spread": 0
+          },
+          "asset": "HYPE",
+          "average_relative_gain": null,
+          "average_relative_loss": null,
+          "break_even_outperformance_vs_btc": 0.6000000000000001,
+          "breakout_status": "NONE",
+          "btc_hold_score": 62.2734,
+          "candidate_disposition": "MONITOR_ONLY",
+          "confidence": "LOW",
+          "consolidation_zone": "LOWER_RANGE",
+          "controls": {
+            "minimum_holding_period_status": "PASS",
+            "overtrading_risk": "LOW",
+            "rotation_cooldown_status": "PASS",
+            "rotation_cost_guard": "PASS",
+            "rotation_hysteresis_status": "NOISE_BAND"
+          },
+          "critical_risk": true,
+          "current_holding": "BTC",
+          "current_holding_context": {
+            "absolute_return_12h_pct": 3.526734926052333,
+            "absolute_return_14d_pct": -11.835943807524618,
+            "absolute_return_24h_pct": 4.577667113579764,
+            "absolute_return_30d_pct": -22.564175294284507,
+            "absolute_return_48h_pct": 4.697986577181212,
+            "absolute_return_4h_pct": 1.7897091722595126,
+            "absolute_return_7d_pct": -4.428496411692628,
+            "alt_btc_current": 0.0008559979430965177,
+            "alt_btc_distance_ema20_pct": 1.6610105365730377,
+            "alt_btc_ema20": 0.0008420120344845169,
+            "alt_btc_ema20_slope_pct": 0.6785352133893863,
+            "alt_btc_ema50": 0.0008364532338910744,
+            "alt_btc_roc_24h_pct": 3.6772379422551182,
+            "atr14_pct": 0.9955520669806383,
+            "btc_return_12h_pct": 1.6605757108727026,
+            "btc_return_14d_pct": -2.6771518985410525,
+            "btc_return_24h_pct": 0.8684926307799268,
+            "btc_return_30d_pct": 0.880297839901556,
+            "btc_return_48h_pct": 1.8278996554927929,
+            "btc_return_4h_pct": 0.8321371888179829,
+            "btc_return_7d_pct": -1.798822544093015,
+            "downside_volatility_pct": 50.44193644813154,
+            "ema20_slope_pct": 1.1423917366821579,
+            "ema50_slope_pct": 0.5218636457208659,
+            "maximum_adverse_move_7d_pct": -29.275362318840582,
+            "price_vs_ema20_pct": 2.657449359958375,
+            "price_vs_ema50_pct": 3.382104686447107,
+            "realized_volatility_pct": 67.0577836632453,
+            "relative_acceleration_pct": 0.027310638810273957,
+            "relative_return_12h_pct": 1.8356764184447094,
+            "relative_return_14d_pct": -9.410731485617385,
+            "relative_return_24h_pct": 3.6772379422551182,
+            "relative_return_30d_pct": -23.239892859349776,
+            "relative_return_48h_pct": 2.8185663569597175,
+            "relative_return_4h_pct": 0.9496694309358622,
+            "relative_return_7d_pct": -2.6778435205426776,
+            "relative_strength_persistence_pct": 66.66666666666666,
+            "relative_trend_state": "POSITIVE",
+            "source_timestamp": "2026-08-03T17:00:00+00:00",
+            "sufficient_history": true,
+            "synchronized_rows": 765
+          },
+          "edge_validation_status": "UNVALIDATED",
+          "estimated_round_trip_cost_pct": 0.6000000000000001,
+          "estimated_slippage_pct": 0.2,
+          "expected_holding_window": "3–10 days",
+          "expected_value": null,
+          "freshness_status": "FRESH",
+          "historical_maximum_drawdown": null,
+          "historical_sample_size": 0,
+          "historical_win_rate": null,
+          "invalidation_condition": "ALT/BTC closes below relative EMA20",
+          "kraken_pair": "HYPEUSD",
+          "liquidity_pass": true,
+          "momentum_stage": "NO_MOMENTUM",
+          "net_relative_upside_after_costs": 3.077237942255118,
+          "objective": "BTC_ACCUMULATION",
+          "objective_score": 70.1997,
+          "overextension_risk": "LOW",
+          "probability_band": "UNKNOWN",
+          "profit_factor": null,
+          "rank": 1,
+          "rejection_reasons": [
+            "SCORE_ADVANTAGE_TOO_LOW",
+            "UNVALIDATED_EDGE",
+            "INSUFFICIENT_SAMPLE",
+            "LOW_CONFIDENCE",
+            "BREAKOUT_NOT_CONFIRMED"
+          ],
+          "relative_return_12h_pct": 1.8356764184447094,
+          "relative_return_14d_pct": -9.410731485617385,
+          "relative_return_24h_pct": 3.6772379422551182,
+          "relative_return_30d_pct": -23.239892859349776,
+          "relative_return_48h_pct": 2.8185663569597175,
+          "relative_return_4h_pct": 0.9496694309358622,
+          "relative_return_7d_pct": -2.6778435205426776,
+          "relative_risk_reward": 1.8834023745362476,
+          "relative_trend_state": "POSITIVE",
+          "risk_flags": [
+            "LOW_CONFIDENCE"
+          ],
+          "scenario_base": {
+            "expected_relative_path": "Continuation only while ALT/BTC remains above EMA20",
+            "holding_horizon": "3–10 days",
+            "probability_band": "UNKNOWN",
+            "target_relative_move_pct": 3.6772379422551182
+          },
+          "scenario_optimistic": {
+            "continuation_conditions": "Positive relative EMA20 slope with volume confirmation",
+            "upper_relative_target_pct": 5.515856913382677
+          },
+          "scenario_pessimistic": {
+            "expected_relative_loss_pct": -1.6338717545754555,
+            "invalidation_condition": "ALT/BTC closes below relative EMA20"
+          },
+          "score_advantage": 7.926300000000005,
+          "source_timestamp": "2026-08-03T17:00:00+00:00",
+          "spread_pct": 0.0116965904438915,
+          "theoretical_relative_downside_to_invalidation_pct": -1.6338717545754555,
+          "theoretical_relative_upside_to_target_pct": 3.6772379422551182,
+          "theoretical_target_edge": 3.077237942255118,
+          "theoretical_target_edge_pct": 3.077237942255118,
+          "unknowns": [
+            "No validated historical event sample",
+            "Regime transition uncertainty",
+            "Model probability unavailable"
+          ],
+          "user_facing_rotation_state": "HOLD_BTC_BENCHMARK",
+          "validated_expected_edge": null,
+          "validated_expected_edge_pct": null,
+          "volume_confirmation": 2.983286805286329
+        },
+        {
+          "allocation_review_band": "NONE",
+          "alt_rotation_score": 70.1656,
+          "alt_score_components": {
+            "breakout_momentum_quality": 3.0083,
+            "consolidation_location_quality": 6,
+            "data_freshness": 5,
+            "liquidity": 10,
+            "relative_momentum_vs_btc": 20,
+            "relative_strength_vs_btc": 25,
+            "trend_quality": 5,
+            "volume_confirmation": 6.1573
+          },
+          "alt_score_penalties": {
+            "excessive_volatility": 0,
+            "failed_breakout": 0,
+            "finished_move": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "negative_downside_asymmetry": 10,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "relative_momentum_deterioration": 0,
+            "stale_data": 0,
+            "wide_spread": 0
+          },
+          "asset": "ATOM",
+          "average_relative_gain": null,
+          "average_relative_loss": null,
+          "break_even_outperformance_vs_btc": 0.6000000000000001,
+          "breakout_status": "NONE",
+          "btc_hold_score": 62.2734,
+          "candidate_disposition": "MONITOR_ONLY",
+          "confidence": "LOW",
+          "consolidation_zone": "OBSERVE",
+          "controls": {
+            "minimum_holding_period_status": "PASS",
+            "overtrading_risk": "LOW",
+            "rotation_cooldown_status": "PASS",
+            "rotation_cost_guard": "PASS",
+            "rotation_hysteresis_status": "NOISE_BAND"
+          },
+          "critical_risk": true,
+          "current_holding": "BTC",
+          "current_holding_context": {
+            "absolute_return_12h_pct": 7.034460954789745,
+            "absolute_return_14d_pct": -8.906228978877973,
+            "absolute_return_24h_pct": 6.958376115630682,
+            "absolute_return_30d_pct": -15.64193608671276,
+            "absolute_return_48h_pct": 10.637254901960791,
+            "absolute_return_4h_pct": 4.854819976771196,
+            "absolute_return_7d_pct": -0.007383888355605439,
+            "alt_btc_current": 2.123063030295429e-05,
+            "alt_btc_distance_ema20_pct": 3.7559742832957044,
+            "alt_btc_ema20": 2.0462079846107077e-05,
+            "alt_btc_ema20_slope_pct": 1.3797388179918046,
+            "alt_btc_ema50": 2.012606904313492e-05,
+            "alt_btc_roc_24h_pct": 6.037448687909142,
+            "atr14_pct": 1.0390953013903839,
+            "btc_return_12h_pct": 1.6605757108727026,
+            "btc_return_14d_pct": -2.6771518985410525,
+            "btc_return_24h_pct": 0.8684926307799268,
+            "btc_return_30d_pct": 0.880297839901556,
+            "btc_return_48h_pct": 1.8278996554927929,
+            "btc_return_4h_pct": 0.8321371888179829,
+            "btc_return_7d_pct": -1.798822544093015,
+            "downside_volatility_pct": 33.01955100405554,
+            "ema20_slope_pct": 1.8535778900048872,
+            "ema50_slope_pct": 0.9491078553818255,
+            "maximum_adverse_move_7d_pct": -25.010793807438468,
+            "price_vs_ema20_pct": 4.767598100707149,
+            "price_vs_ema50_pct": 6.565111323797179,
+            "realized_volatility_pct": 56.373079280449836,
+            "relative_acceleration_pct": 4.5724849652382105,
+            "relative_return_12h_pct": 5.286105460587409,
+            "relative_return_14d_pct": -6.400426212191324,
+            "relative_return_24h_pct": 6.037448687909142,
+            "relative_return_30d_pct": -16.37805823376467,
+            "relative_return_48h_pct": 8.651219632607642,
+            "relative_return_4h_pct": 3.989484801279519,
+            "relative_return_7d_pct": 1.8242537433339479,
+            "relative_strength_persistence_pct": 54.166666666666664,
+            "relative_trend_state": "POSITIVE",
+            "source_timestamp": "2026-08-03T17:00:00+00:00",
+            "sufficient_history": true,
+            "synchronized_rows": 721
+          },
+          "edge_validation_status": "UNVALIDATED",
+          "estimated_round_trip_cost_pct": 0.6000000000000001,
+          "estimated_slippage_pct": 0.2,
+          "expected_holding_window": "3–10 days",
+          "expected_value": null,
+          "freshness_status": "FRESH",
+          "historical_maximum_drawdown": null,
+          "historical_sample_size": 0,
+          "historical_win_rate": null,
+          "invalidation_condition": "ALT/BTC closes below relative EMA20",
+          "kraken_pair": "ATOMUSD",
+          "liquidity_pass": true,
+          "momentum_stage": "NO_MOMENTUM",
+          "net_relative_upside_after_costs": 6.349575559576115,
+          "objective": "BTC_ACCUMULATION",
+          "objective_score": 70.1656,
+          "overextension_risk": "LOW",
+          "probability_band": "UNKNOWN",
+          "profit_factor": null,
+          "rank": 2,
+          "rejection_reasons": [
+            "SCORE_ADVANTAGE_TOO_LOW",
+            "UNVALIDATED_EDGE",
+            "INSUFFICIENT_SAMPLE",
+            "LOW_CONFIDENCE",
+            "BREAKOUT_NOT_CONFIRMED"
+          ],
+          "relative_return_12h_pct": 5.286105460587409,
+          "relative_return_14d_pct": -6.400426212191324,
+          "relative_return_24h_pct": 6.037448687909142,
+          "relative_return_30d_pct": -16.37805823376467,
+          "relative_return_48h_pct": 8.651219632607642,
+          "relative_return_4h_pct": 3.989484801279519,
+          "relative_return_7d_pct": 1.8242537433339479,
+          "relative_risk_reward": 1.754022655051698,
+          "relative_trend_state": "POSITIVE",
+          "risk_flags": [
+            "LOW_CONFIDENCE"
+          ],
+          "scenario_base": {
+            "expected_relative_path": "Continuation only while ALT/BTC remains above EMA20",
+            "holding_horizon": "3–10 days",
+            "probability_band": "UNKNOWN",
+            "target_relative_move_pct": 6.9495755595761155
+          },
+          "scenario_optimistic": {
+            "continuation_conditions": "Positive relative EMA20 slope with volume confirmation",
+            "upper_relative_target_pct": 10.424363339364174
+          },
+          "scenario_pessimistic": {
+            "expected_relative_loss_pct": -3.6200077241242745,
+            "invalidation_condition": "ALT/BTC closes below relative EMA20"
+          },
+          "score_advantage": 7.892199999999995,
+          "source_timestamp": "2026-08-03T17:00:00+00:00",
+          "spread_pct": 0.0892880590351655,
+          "theoretical_relative_downside_to_invalidation_pct": -3.6200077241242745,
+          "theoretical_relative_upside_to_target_pct": 6.9495755595761155,
+          "theoretical_target_edge": 6.349575559576115,
+          "theoretical_target_edge_pct": 6.349575559576115,
+          "unknowns": [
+            "No validated historical event sample",
+            "Regime transition uncertainty",
+            "Model probability unavailable"
+          ],
+          "user_facing_rotation_state": "HOLD_BTC_BENCHMARK",
+          "validated_expected_edge": null,
+          "validated_expected_edge_pct": null,
+          "volume_confirmation": 0.5786618571380581
+        },
+        {
+          "allocation_review_band": "NONE",
+          "alt_rotation_score": 69.5956,
+          "alt_score_components": {
+            "breakout_momentum_quality": 5.0674,
+            "consolidation_location_quality": 10,
+            "data_freshness": 5,
+            "liquidity": 10,
+            "relative_momentum_vs_btc": 12.1322,
+            "relative_strength_vs_btc": 12.7544,
+            "trend_quality": 5,
+            "volume_confirmation": 9.6416
+          },
+          "alt_score_penalties": {
+            "excessive_volatility": 0,
+            "failed_breakout": 0,
+            "finished_move": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "negative_downside_asymmetry": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "relative_momentum_deterioration": 0,
+            "stale_data": 0,
+            "wide_spread": 0
+          },
+          "asset": "HBAR",
+          "average_relative_gain": null,
+          "average_relative_loss": null,
+          "break_even_outperformance_vs_btc": 0.6000000000000001,
+          "breakout_status": "NONE",
+          "btc_hold_score": 62.2734,
+          "candidate_disposition": "MONITOR_ONLY",
+          "confidence": "LOW",
+          "consolidation_zone": "LOWER_RANGE",
+          "controls": {
+            "minimum_holding_period_status": "PASS",
+            "overtrading_risk": "LOW",
+            "rotation_cooldown_status": "PASS",
+            "rotation_cost_guard": "PASS",
+            "rotation_hysteresis_status": "NOISE_BAND"
+          },
+          "critical_risk": true,
+          "current_holding": "BTC",
+          "current_holding_context": {
+            "absolute_return_12h_pct": 2.2415039768618916,
+            "absolute_return_14d_pct": 5.9017375674056405,
+            "absolute_return_24h_pct": 0.9711510996857964,
+            "absolute_return_30d_pct": -5.846317752030905,
+            "absolute_return_48h_pct": 1.9025655808590392,
+            "absolute_return_4h_pct": 2.300680075242356,
+            "absolute_return_7d_pct": 2.836363636363637,
+            "alt_btc_current": 1.1084075929839525e-06,
+            "alt_btc_distance_ema20_pct": 0.7200622039174487,
+            "alt_btc_ema20": 1.1004834277602756e-06,
+            "alt_btc_ema20_slope_pct": 0.011068321914087242,
+            "alt_btc_ema50": 1.100153317621406e-06,
+            "alt_btc_roc_24h_pct": 0.10177456431479381,
+            "atr14_pct": 0.6385128308749235,
+            "btc_return_12h_pct": 1.6605757108727026,
+            "btc_return_14d_pct": -2.6771518985410525,
+            "btc_return_24h_pct": 0.8684926307799268,
+            "btc_return_30d_pct": 0.880297839901556,
+            "btc_return_48h_pct": 1.8278996554927929,
+            "btc_return_4h_pct": 0.8321371888179829,
+            "btc_return_7d_pct": -1.798822544093015,
+            "downside_volatility_pct": 29.750914205675716,
+            "ema20_slope_pct": 0.4649994783623601,
+            "ema50_slope_pct": 0.17007565783888623,
+            "maximum_adverse_move_7d_pct": -13.254729204457117,
+            "price_vs_ema20_pct": 1.7121085848952777,
+            "price_vs_ema50_pct": 1.7862655583499754,
+            "realized_volatility_pct": 39.438624904155404,
+            "relative_acceleration_pct": 1.0384350130354436,
+            "relative_return_12h_pct": 0.571439087302994,
+            "relative_return_14d_pct": 8.814877116012054,
+            "relative_return_24h_pct": 0.10177456431479381,
+            "relative_return_30d_pct": -6.667918053342481,
+            "relative_return_48h_pct": 0.07332560685122669,
+            "relative_return_4h_pct": 1.4564234453092961,
+            "relative_return_7d_pct": 4.7200922642071985,
+            "relative_strength_persistence_pct": 37.5,
+            "relative_trend_state": "POSITIVE",
+            "source_timestamp": "2026-08-03T17:00:00+00:00",
+            "sufficient_history": true,
+            "synchronized_rows": 765
+          },
+          "edge_validation_status": "UNVALIDATED",
+          "estimated_round_trip_cost_pct": 0.6000000000000001,
+          "estimated_slippage_pct": 0.2,
+          "expected_holding_window": "3–10 days",
+          "expected_value": null,
+          "freshness_status": "FRESH",
+          "historical_maximum_drawdown": null,
+          "historical_sample_size": 0,
+          "historical_win_rate": null,
+          "invalidation_condition": "ALT/BTC closes below relative EMA20",
+          "kraken_pair": "HBARUSD",
+          "liquidity_pass": true,
+          "momentum_stage": "NO_MOMENTUM",
+          "net_relative_upside_after_costs": 1.861820696418393,
+          "objective": "BTC_ACCUMULATION",
+          "objective_score": 69.5956,
+          "overextension_risk": "LOW",
+          "probability_band": "UNKNOWN",
+          "profit_factor": null,
+          "rank": 3,
+          "rejection_reasons": [
+            "SCORE_ADVANTAGE_TOO_LOW",
+            "UNVALIDATED_EDGE",
+            "INSUFFICIENT_SAMPLE",
+            "LOW_CONFIDENCE",
+            "BREAKOUT_NOT_CONFIRMED"
+          ],
+          "relative_return_12h_pct": 0.571439087302994,
+          "relative_return_14d_pct": 8.814877116012054,
+          "relative_return_24h_pct": 0.10177456431479381,
+          "relative_return_30d_pct": -6.667918053342481,
+          "relative_return_48h_pct": 0.07332560685122669,
+          "relative_return_4h_pct": 1.4564234453092961,
+          "relative_return_7d_pct": 4.7200922642071985,
+          "relative_risk_reward": 2.604256900801058,
+          "relative_trend_state": "POSITIVE",
+          "risk_flags": [
+            "LOW_CONFIDENCE"
+          ],
+          "scenario_base": {
+            "expected_relative_path": "Continuation only while ALT/BTC remains above EMA20",
+            "holding_horizon": "3–10 days",
+            "probability_band": "UNKNOWN",
+            "target_relative_move_pct": 2.461820696418393
+          },
+          "scenario_optimistic": {
+            "continuation_conditions": "Positive relative EMA20 slope with volume confirmation",
+            "upper_relative_target_pct": 3.69273104462759
+          },
+          "scenario_pessimistic": {
+            "expected_relative_loss_pct": -0.7149143757075982,
+            "invalidation_condition": "ALT/BTC closes below relative EMA20"
+          },
+          "score_advantage": 7.322200000000002,
+          "source_timestamp": "2026-08-03T17:00:00+00:00",
+          "spread_pct": 0.0537489922063902,
+          "theoretical_relative_downside_to_invalidation_pct": -0.7149143757075982,
+          "theoretical_relative_upside_to_target_pct": 2.461820696418393,
+          "theoretical_target_edge": 1.861820696418393,
+          "theoretical_target_edge_pct": 1.861820696418393,
+          "unknowns": [
+            "No validated historical event sample",
+            "Regime transition uncertainty",
+            "Model probability unavailable"
+          ],
+          "user_facing_rotation_state": "HOLD_BTC_BENCHMARK",
+          "validated_expected_edge": null,
+          "validated_expected_edge_pct": null,
+          "volume_confirmation": 2.3207892562776102
+        }
+      ],
+      "unknowns": []
+    },
+    "capital_flow": {
+      "alternative_interpretations": [],
+      "freshness": "FRESH",
+      "generated_at_utc": "2026-10-12T17:03:49.425904+00:00",
+      "module_name": "capital_flow",
+      "primary_flows": [
+        {
+          "confidence": 30,
+          "contradicting_metrics": [
+            "group returns are fragmented"
+          ],
+          "evidence": [
+            "proxy signals lack alignment"
+          ],
+          "from_group": "mixed",
+          "inception_timestamp": null,
+          "invalidation_condition": "Multiple group proxies align",
+          "observation_type": "INFERENCE_FROM_DERIVED_PROXIES",
+          "persistence": "NEW_OR_UNVERIFIED",
+          "risk_flags": [
+            "INFERENCE_NOT_DIRECT_FLOW_MEASUREMENT"
+          ],
+          "state": "NO_CLEAR_FLOW",
+          "supporting_metrics": {
+            "breadth_positive_pct": 8.333333333333332,
+            "btc_return_24h": null,
+            "large_return_24h": -3.2737850248701617,
+            "mid_return_24h": -4.900607217391558,
+            "momentum_participation": 1.3888888888888888,
+            "small_return_24h": -5.329709936025713
+          },
+          "to_group": "mixed"
+        }
+      ],
+      "risks": [
+        "CAPITAL_FLOW_IS_INFERRED_NOT_OBSERVED"
+      ],
+      "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/2026-10-12_capital_flow.json",
+      "status": "OK",
+      "summary": {
+        "capital_flow_confidence": 30,
+        "derived_proxy": "group breadth and relative performance",
+        "inference_disclaimer": "Inferred proxy; not direct measurement of capital transfers",
+        "observed_data": "completed-candle returns and volumes",
+        "primary_state": "NO_CLEAR_FLOW"
+      },
+      "unknowns": [
+        "Stablecoin flow data unavailable",
+        "BTC dominance proxy unavailable"
+      ]
+    },
+    "consolidation": {
+      "candidates": [
+        {
+          "asset": "AAVE",
+          "freshness_status": "FRESH",
+          "latest_completed_candle_timestamp": "2026-10-12T16:00:00+00:00",
+          "opportunity_score": 74.6523,
+          "position_pct": 15.780114427091366,
+          "range_quality": 67.23,
+          "range_still_valid": true,
+          "rank": 1,
+          "risk_flags": "RANGE_TOO_WIDE_HIGH_BREAKOUT_RISK|EXCESSIVE_FALSE_BREAKS",
+          "simple_zone": "LOWER_RANGE"
+        },
+        {
+          "asset": "RAY",
+          "freshness_status": "FRESH",
+          "latest_completed_candle_timestamp": "2026-10-12T16:00:00+00:00",
+          "opportunity_score": 89.0475,
+          "position_pct": 6.5152420800955815,
+          "range_quality": 74.19,
+          "range_still_valid": true,
+          "rank": 3,
+          "risk_flags": "RANGE_TOO_WIDE_HIGH_BREAKOUT_RISK",
+          "simple_zone": "LOWER_RANGE"
+        },
+        {
+          "asset": "FET",
+          "freshness_status": "FRESH",
+          "latest_completed_candle_timestamp": "2026-10-12T16:00:00+00:00",
+          "opportunity_score": 82.0123,
+          "position_pct": 24.45652173913046,
+          "range_quality": 62.63,
+          "range_still_valid": true,
+          "rank": 5,
+          "risk_flags": null,
+          "simple_zone": "LOWER_RANGE"
+        },
+        {
+          "asset": "LDO",
+          "freshness_status": "FRESH",
+          "latest_completed_candle_timestamp": "2026-10-12T16:00:00+00:00",
+          "opportunity_score": 82.9473,
+          "position_pct": 24.765478424014983,
+          "range_quality": 60.37,
+          "range_still_valid": true,
+          "rank": 6,
+          "risk_flags": null,
+          "simple_zone": "LOWER_RANGE"
+        }
+      ],
+      "freshness": "FRESH",
+      "generated_at_utc": "2026-10-12T17:03:48.749884+00:00",
+      "module_name": "consolidation",
+      "risks": [],
+      "source_file": "/Users/tron/kraken-ai-trading/WATCHLISTS/consolidation_daily_watchlist.csv",
+      "status": "OK",
+      "summary": {
+        "candidate_count": 4
+      },
+      "unknowns": []
+    },
+    "data_quality": {
+      "candidates": [],
+      "freshness": "UNAVAILABLE",
+      "generated_at_utc": "2026-10-12T17:03:48.749884+00:00",
+      "module_name": "data_quality",
+      "risks": [],
+      "source_file": null,
+      "status": "UNAVAILABLE",
+      "summary": {},
+      "unknowns": [
+        "Adapter not yet migrated"
+      ]
+    },
+    "leadership_rotation": {
+      "bottom_sectors": [
+        {
+          "asset_count": 3,
+          "average_momentum_score": 24.496033333333333,
+          "average_relative_strength_score": null,
+          "breadth_percent_outperforming_btc": 0.0,
+          "breadth_percent_positive": 0.0,
+          "btc_relative_return_24h": -5.656344552465512,
+          "classification": "LAGGING",
+          "eligible_asset_count": 3,
+          "equal_weight_return_24h": -4.7878519216855855,
+          "equal_weight_return_48h": -2.653847115624693,
+          "equal_weight_return_4h": -3.089520506008199,
+          "equal_weight_return_7d": -7.7625517270682565,
+          "leadership_rank": 9,
+          "leadership_rank_change": null,
+          "median_return_24h": -4.551270334490942,
+          "persistence_duration_days": null,
+          "sector": "Layer 1",
+          "sector_leadership_score": 17.2738,
+          "top_contributors": [
+            "SOL",
+            "AVAX",
+            "ADA"
+          ],
+          "volatility_expansion": 1.2494046511258772,
+          "volume_expansion": 1.3075967478619905,
+          "weak_contributors": [
+            "ADA",
+            "AVAX",
+            "SOL"
+          ]
+        },
+        {
+          "asset_count": 2,
+          "average_momentum_score": 29.437150000000003,
+          "average_relative_strength_score": null,
+          "breadth_percent_outperforming_btc": 0.0,
+          "breadth_percent_positive": 0.0,
+          "btc_relative_return_24h": -6.96850722436439,
+          "classification": "LAGGING",
+          "eligible_asset_count": 2,
+          "equal_weight_return_24h": -6.100014593584463,
+          "equal_weight_return_48h": -4.347289074162175,
+          "equal_weight_return_4h": -2.2662601876546287,
+          "equal_weight_return_7d": -14.829558582796741,
+          "leadership_rank": 10,
+          "leadership_rank_change": null,
+          "median_return_24h": -6.100014593584463,
+          "persistence_duration_days": null,
+          "sector": "DeFi",
+          "sector_leadership_score": 13.0134,
+          "top_contributors": [
+            "AAVE",
+            "UNI"
+          ],
+          "volatility_expansion": 1.5721229118680022,
+          "volume_expansion": 1.5431174175751625,
+          "weak_contributors": [
+            "UNI",
+            "AAVE"
+          ]
+        },
+        {
+          "asset_count": 2,
+          "average_momentum_score": 21.601,
+          "average_relative_strength_score": null,
+          "breadth_percent_outperforming_btc": 0.0,
+          "breadth_percent_positive": 0.0,
+          "btc_relative_return_24h": -7.512737076732389,
+          "classification": "LAGGING",
+          "eligible_asset_count": 2,
+          "equal_weight_return_24h": -6.644244445952463,
+          "equal_weight_return_48h": -1.3806204246548381,
+          "equal_weight_return_4h": -2.865636111204739,
+          "equal_weight_return_7d": -8.30483177314485,
+          "leadership_rank": 11,
+          "leadership_rank_change": null,
+          "median_return_24h": -6.644244445952463,
+          "persistence_duration_days": null,
+          "sector": "AI",
+          "sector_leadership_score": 9.2693,
+          "top_contributors": [
+            "TAO",
+            "FET"
+          ],
+          "volatility_expansion": 1.173317835619879,
+          "volume_expansion": 0.9647162152123943,
+          "weak_contributors": [
+            "FET",
+            "TAO"
+          ]
+        }
+      ],
+      "freshness": "FRESH",
+      "generated_at_utc": "2026-10-12T17:03:49.419811+00:00",
+      "module_name": "leadership_rotation",
+      "risks": [],
+      "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/LEADERSHIP_ROTATION/2026-10-12_leadership_rotation.json",
+      "status": "OK",
+      "summary": {
+        "mapped_assets": 17,
+        "sector_count": 11,
+        "unmapped_assets": 56
+      },
+      "top_sectors": [
+        {
+          "asset_count": 1,
+          "average_momentum_score": 7.4173,
+          "average_relative_strength_score": null,
+          "breadth_percent_outperforming_btc": 0.0,
+          "breadth_percent_positive": 100.0,
+          "btc_relative_return_24h": 0.0,
+          "classification": "INSUFFICIENT_DATA",
+          "eligible_asset_count": 0,
+          "equal_weight_return_24h": 0.8684926307799268,
+          "equal_weight_return_48h": 1.8278996554927929,
+          "equal_weight_return_4h": 0.8321371888179829,
+          "equal_weight_return_7d": -1.798822544093015,
+          "leadership_rank": 1,
+          "leadership_rank_change": null,
+          "median_return_24h": 0.8684926307799268,
+          "persistence_duration_days": null,
+          "sector": "BTC",
+          "sector_leadership_score": 36.4835,
+          "top_contributors": [
+            "BTC"
+          ],
+          "volatility_expansion": 1.6627649718982775,
+          "volume_expansion": 2.3461188070523,
+          "weak_contributors": [
+            "BTC"
+          ]
+        },
+        {
+          "asset_count": 1,
+          "average_momentum_score": 28.4457,
+          "average_relative_strength_score": null,
+          "breadth_percent_outperforming_btc": 0.0,
+          "breadth_percent_positive": 0.0,
+          "btc_relative_return_24h": -1.6117547308531543,
+          "classification": "INSUFFICIENT_DATA",
+          "eligible_asset_count": 1,
+          "equal_weight_return_24h": -0.7432621000732276,
+          "equal_weight_return_48h": -0.5095063216082218,
+          "equal_weight_return_4h": 0.0543411615062661,
+          "equal_weight_return_7d": 0.5149945046317939,
+          "leadership_rank": 2,
+          "leadership_rank_change": null,
+          "median_return_24h": -0.7432621000732276,
+          "persistence_duration_days": null,
+          "sector": "RWA",
+          "sector_leadership_score": 34.2421,
+          "top_contributors": [
+            "PAXG"
+          ],
+          "volatility_expansion": 1.8301786329033043,
+          "volume_expansion": 0.3902892085406347,
+          "weak_contributors": [
+            "PAXG"
+          ]
+        },
+        {
+          "asset_count": 1,
+          "average_momentum_score": 20.4269,
+          "average_relative_strength_score": null,
+          "breadth_percent_outperforming_btc": 0.0,
+          "breadth_percent_positive": 0.0,
+          "btc_relative_return_24h": -2.3533691788343636,
+          "classification": "INSUFFICIENT_DATA",
+          "eligible_asset_count": 1,
+          "equal_weight_return_24h": -1.4848765480544368,
+          "equal_weight_return_48h": 0.3036453422402552,
+          "equal_weight_return_4h": -0.7452448633454178,
+          "equal_weight_return_7d": -6.883966589024226,
+          "leadership_rank": 3,
+          "leadership_rank_change": null,
+          "median_return_24h": -1.4848765480544368,
+          "persistence_duration_days": null,
+          "sector": "Smart-contract platforms",
+          "sector_leadership_score": 29.6719,
+          "top_contributors": [
+            "ETH"
+          ],
+          "volatility_expansion": 0.94764735193256,
+          "volume_expansion": 1.3070781402953435,
+          "weak_contributors": [
+            "ETH"
+          ]
+        }
+      ],
+      "transitions": []
+    },
+    "market_regime": {
+      "candidates": [],
+      "freshness": "FRESH",
+      "generated_at_utc": "2026-10-12T17:03:48.749884+00:00",
+      "module_name": "market_regime",
+      "risks": [],
+      "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-10-12_research_regime.csv",
+      "status": "OK",
+      "summary": {
+        "average_confidence_score": "70.56",
+        "crypto_bear_count": "9",
+        "crypto_bull_count": "0",
+        "crypto_count": "9",
+        "crypto_mixed_count": "0",
+        "crypto_regime": "BEAR",
+        "current_opportunity_count": "1",
+        "environment_score": "30",
+        "environment_status": "DEFENSIVE",
+        "equity_bear_count": "0",
+        "equity_bull_count": "0",
+        "equity_count": "0",
+        "equity_mixed_count": "0",
+        "equity_regime": "MIXED",
+        "median_atr_pct": "4.82",
+        "opportunity_regime": "QUIET",
+        "volatility_regime": "NORMAL"
+      },
+      "unknowns": []
+    },
+    "momentum": {
+      "candidates": [
+        {
+          "asset": "STX",
+          "change_24h_pct": 0.7564296520423675,
+          "freshness_status": "FRESH",
+          "latest_completed_candle_timestamp": "2026-10-12T16:00:00+00:00",
+          "momentum_breakout_score": 49.7371,
+          "momentum_stage": "EARLY_MOMENTUM",
+          "overextension_risk": "LOW",
+          "relative_strength_vs_btc_24h_pct": -0.1120629787375593
+        }
+      ],
+      "freshness": "FRESH",
+      "generated_at_utc": "2026-10-12T17:03:48.749884+00:00",
+      "module_name": "momentum",
+      "risks": [],
+      "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
+      "status": "OK",
+      "summary": {
+        "active_count": 1
+      },
+      "unknowns": []
+    },
+    "opportunity_aging": {
+      "decaying_opportunities": [
+        {
+          "age_days": 69.03428733084492,
+          "age_hours": 1656.822895940278,
+          "asset": "RWA",
+          "btc_relative_change_since_first_seen": null,
+          "btc_relative_value": -1.6117547308531543,
+          "classification": "DECAYING",
+          "confidence": "LOW",
+          "current_price": null,
+          "current_score": 34.2421,
+          "first_seen_timestamp": "2026-08-04T16:14:27.004611+00:00",
+          "initial_score": 74.8841,
+          "invalidation_status": false,
+          "latest_seen_timestamp": "2026-10-12T17:03:49.429996+00:00",
+          "maximum_adverse_movement": null,
+          "maximum_favorable_movement": null,
+          "opportunity_id": "sector_leadership:RWA",
+          "opportunity_type": "sector_leadership",
+          "peak_score": 86.1155,
+          "persistence": "PERSISTENT",
+          "price_change_since_first_seen": null,
+          "readiness_change": -0.7004999999999981,
+          "score_change": -40.642,
+          "stale_count": 0,
+          "status_history": [
+            "NEW",
+            "EARLY",
+            "EARLY",
+            "EARLY",
+            "EARLY",
+            "MATURING",
+            "MATURING",
+            "MATURING",
+            "MATURING",
+            "MATURING",
+            "MATURING",
+            "DECAYING",
+            "DECAYING",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "DECAYING",
+            "ESTABLISHED",
+            "DECAYING",
+            "DECAYING",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "DECAYING",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "DECAYING",
+            "DECAYING"
+          ],
+          "strengthening_count": 11,
+          "useful_life_estimate": null,
+          "weakening_count": 13
+        },
+        {
+          "age_days": 67.53094123681713,
+          "age_hours": 1620.7425896836112,
+          "asset": "Smart-contract platforms",
+          "btc_relative_change_since_first_seen": null,
+          "btc_relative_value": -2.3533691788343636,
+          "classification": "DECAYING",
+          "confidence": "LOW",
+          "current_price": null,
+          "current_score": 29.6719,
+          "first_seen_timestamp": "2026-08-06T04:19:16.107135+00:00",
+          "initial_score": 74.9638,
+          "invalidation_status": false,
+          "latest_seen_timestamp": "2026-10-12T17:03:49.429996+00:00",
+          "maximum_adverse_movement": null,
+          "maximum_favorable_movement": null,
+          "opportunity_id": "sector_leadership:Smart-contract platforms",
+          "opportunity_type": "sector_leadership",
+          "peak_score": 100.0,
+          "persistence": "PERSISTENT",
+          "price_change_since_first_seen": null,
+          "readiness_change": -70.3281,
+          "score_change": -45.291900000000005,
+          "stale_count": 0,
+          "status_history": [
+            "NEW",
+            "NEW",
+            "NEW",
+            "MATURING",
+            "MATURING",
+            "DECAYING",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "DECAYING",
+            "DECAYING",
+            "ESTABLISHED",
+            "DECAYING",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "DECAYING"
+          ],
+          "strengthening_count": 7,
+          "useful_life_estimate": null,
+          "weakening_count": 7
+        }
+      ],
+      "freshness": "FRESH",
+      "generated_at_utc": "2026-10-12T17:03:49.440569+00:00",
+      "module_name": "opportunity_aging",
+      "new_opportunities": [
+        {
+          "age_days": 0.024632843368055556,
+          "age_hours": 0.5911882408333333,
+          "asset": "LDO",
+          "btc_relative_change_since_first_seen": null,
+          "btc_relative_value": null,
+          "classification": "NEW",
+          "confidence": "LOW",
+          "current_price": null,
+          "current_score": 82.9473,
+          "first_seen_timestamp": "2026-10-12T16:28:21.152329+00:00",
+          "initial_score": 82.9473,
+          "invalidation_status": false,
+          "latest_seen_timestamp": "2026-10-12T17:03:49.429996+00:00",
+          "maximum_adverse_movement": null,
+          "maximum_favorable_movement": null,
+          "opportunity_id": "consolidation:LDO",
+          "opportunity_type": "consolidation",
+          "peak_score": 82.9473,
+          "persistence": "DEVELOPING",
+          "price_change_since_first_seen": null,
+          "readiness_change": 0.0,
+          "score_change": 0.0,
+          "stale_count": 0,
+          "status_history": [
+            "NEW",
+            "NEW"
+          ],
+          "strengthening_count": 0,
+          "useful_life_estimate": null,
+          "weakening_count": 0
+        }
+      ],
+      "risks": [
+        "HISTORICAL_USEFUL_LIFE_UNAVAILABLE"
+      ],
+      "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-12_opportunity_aging.json",
+      "status": "OK",
+      "strengthening_opportunities": [
+        {
+          "age_days": 2.4212331123148148,
+          "age_hours": 58.10959469555555,
+          "asset": "TRX",
+          "btc_relative_change_since_first_seen": null,
+          "btc_relative_value": null,
+          "classification": "EXPIRED",
+          "confidence": "LOW",
+          "current_price": null,
+          "current_score": 60.8008,
+          "first_seen_timestamp": "2026-08-09T05:39:21.940363+00:00",
+          "initial_score": 13.3595,
+          "invalidation_status": true,
+          "latest_seen_timestamp": "2026-10-12T17:03:49.429996+00:00",
+          "maximum_adverse_movement": null,
+          "maximum_favorable_movement": null,
+          "opportunity_id": "momentum:TRX",
+          "opportunity_type": "momentum",
+          "peak_score": 60.8008,
+          "persistence": "DEVELOPING",
+          "price_change_since_first_seen": null,
+          "readiness_change": 47.4413,
+          "score_change": 47.4413,
+          "stale_count": 0,
+          "status_history": [
+            "NEW",
+            "NEW",
+            "EARLY"
+          ],
+          "strengthening_count": 1,
+          "useful_life_estimate": null,
+          "weakening_count": 0
+        },
+        {
+          "age_days": 13.058872076111113,
+          "age_hours": 313.4129298266667,
+          "asset": "XRP",
+          "btc_relative_change_since_first_seen": null,
+          "btc_relative_value": null,
+          "classification": "EXPIRED",
+          "confidence": "LOW",
+          "current_price": null,
+          "current_score": 78.0,
+          "first_seen_timestamp": "2026-09-08T15:37:00.411936+00:00",
+          "initial_score": 31.054,
+          "invalidation_status": true,
+          "latest_seen_timestamp": "2026-10-12T17:03:49.429996+00:00",
+          "maximum_adverse_movement": null,
+          "maximum_favorable_movement": null,
+          "opportunity_id": "momentum:XRP",
+          "opportunity_type": "momentum",
+          "peak_score": 78.0,
+          "persistence": "PERSISTENT",
+          "price_change_since_first_seen": null,
+          "readiness_change": 11.122900000000001,
+          "score_change": 46.946,
+          "stale_count": 0,
+          "status_history": [
+            "NEW",
+            "ESTABLISHED",
+            "ESTABLISHED"
+          ],
+          "strengthening_count": 2,
+          "useful_life_estimate": null,
+          "weakening_count": 0
+        },
+        {
+          "age_days": 41.857338118622685,
+          "age_hours": 1004.5761148469445,
+          "asset": "TRUMP",
+          "btc_relative_change_since_first_seen": null,
+          "btc_relative_value": null,
+          "classification": "EXPIRED",
+          "confidence": "LOW",
+          "current_price": null,
+          "current_score": 91.8821,
+          "first_seen_timestamp": "2026-08-07T20:36:20.853507+00:00",
+          "initial_score": 45.678,
+          "invalidation_status": true,
+          "latest_seen_timestamp": "2026-10-12T17:03:49.429996+00:00",
+          "maximum_adverse_movement": null,
+          "maximum_favorable_movement": null,
+          "opportunity_id": "momentum:TRUMP",
+          "opportunity_type": "momentum",
+          "peak_score": 91.8821,
+          "persistence": "PERSISTENT",
+          "price_change_since_first_seen": null,
+          "readiness_change": 46.896699999999996,
+          "score_change": 46.2041,
+          "stale_count": 0,
+          "status_history": [
+            "NEW",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "DECAYING",
+            "ESTABLISHED",
+            "DECAYING",
+            "ESTABLISHED"
+          ],
+          "strengthening_count": 3,
+          "useful_life_estimate": null,
+          "weakening_count": 3
+        },
+        {
+          "age_days": 64.45520775229167,
+          "age_hours": 1546.924986055,
+          "asset": "FIL",
+          "btc_relative_change_since_first_seen": null,
+          "btc_relative_value": null,
+          "classification": "EXPIRED",
+          "confidence": "LOW",
+          "current_price": null,
+          "current_score": 80.0,
+          "first_seen_timestamp": "2026-08-08T10:25:37.654699+00:00",
+          "initial_score": 34.7372,
+          "invalidation_status": true,
+          "latest_seen_timestamp": "2026-10-12T17:03:49.429996+00:00",
+          "maximum_adverse_movement": null,
+          "maximum_favorable_movement": null,
+          "opportunity_id": "momentum:FIL",
+          "opportunity_type": "momentum",
+          "peak_score": 80.0,
+          "persistence": "PERSISTENT",
+          "price_change_since_first_seen": null,
+          "readiness_change": 31.7138,
+          "score_change": 45.2628,
+          "stale_count": 0,
+          "status_history": [
+            "NEW",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED"
+          ],
+          "strengthening_count": 2,
+          "useful_life_estimate": null,
+          "weakening_count": 1
+        },
+        {
+          "age_days": 21.40250501934028,
+          "age_hours": 513.6601204641667,
+          "asset": "SHIB",
+          "btc_relative_change_since_first_seen": null,
+          "btc_relative_value": null,
+          "classification": "EXPIRED",
+          "confidence": "LOW",
+          "current_price": null,
+          "current_score": 74.294,
+          "first_seen_timestamp": "2026-08-03T20:24:11.323062+00:00",
+          "initial_score": 30.1516,
+          "invalidation_status": true,
+          "latest_seen_timestamp": "2026-10-12T17:03:49.429996+00:00",
+          "maximum_adverse_movement": null,
+          "maximum_favorable_movement": null,
+          "opportunity_id": "momentum:SHIB",
+          "opportunity_type": "momentum",
+          "peak_score": 83.0,
+          "persistence": "PERSISTENT",
+          "price_change_since_first_seen": null,
+          "readiness_change": -6.153800000000004,
+          "score_change": 44.142399999999995,
+          "stale_count": 0,
+          "status_history": [
+            "NEW",
+            "NEW",
+            "NEW",
+            "NEW",
+            "NEW",
+            "NEW",
+            "NEW",
+            "NEW",
+            "NEW",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "ESTABLISHED",
+            "DECAYING"
+          ],
+          "strengthening_count": 3,
+          "useful_life_estimate": null,
+          "weakening_count": 2
+        }
+      ],
+      "summary": {
+        "decaying": 2,
+        "new": 1,
+        "tracked": 175
+      }
+    },
+    "portfolio": {
+      "candidates": [],
+      "freshness": "FRESH",
+      "generated_at_utc": "2026-10-12T17:03:48.749884+00:00",
+      "module_name": "portfolio",
+      "risks": [],
+      "source_file": "/Users/tron/kraken-ai-trading/journal/portfolio_positions.csv",
+      "status": "OK",
+      "summary": {
+        "open_positions": []
+      },
+      "unknowns": []
+    },
+    "relative_strength": {
+      "deteriorating_leaders": [
+        {
+          "asset": "ARB",
+          "btc_relative_return_12h": -0.04492289981167241,
+          "btc_relative_return_14d": null,
+          "btc_relative_return_24h": 0.24189111156731613,
+          "btc_relative_return_30d": null,
+          "btc_relative_return_48h": 2.857386197174594,
+          "btc_relative_return_4h": -0.09245160844482125,
+          "btc_relative_return_7d": 4.383947646846131,
+          "classification": "DETERIORATING",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "ARBUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 69.01,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 3,
+          "rank": 23,
+          "relative_acceleration": -0.33186581426863926,
+          "relative_distance_ema20": -0.03140000603260029,
+          "relative_drawdown": -17.13973799126638,
+          "relative_ema20": 1.2828319621577393e-06,
+          "relative_ema20_slope": -0.17353850808666804,
+          "relative_ema50": 1.274564498406769e-06,
+          "relative_persistence": 45.83333333333333,
+          "relative_strength_score": 60.7441,
+          "relative_volatility": 51.21624228714371,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 14.383947646846131,
+            "persistence": 6.874999999999999,
+            "relative_acceleration": 6.8362683714627215,
+            "relative_trend_quality": 8,
+            "short_relative_returns": 14.648915963112865
+          },
+          "source_timestamp": "2026-10-12T16:00:00+00:00",
+          "sufficient_history": true
+        },
+        {
+          "asset": "BNB",
+          "btc_relative_return_12h": -0.07242583737469,
+          "btc_relative_return_14d": 5.973962770569674,
+          "btc_relative_return_24h": -0.1401206238374919,
+          "btc_relative_return_30d": 1.4128549763168907,
+          "btc_relative_return_48h": 0.7426834243106972,
+          "btc_relative_return_4h": -0.024096874282153458,
+          "btc_relative_return_7d": 4.903557039514306,
+          "classification": "DETERIORATING",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "BNBUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 64.79,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 4,
+          "rank": 26,
+          "relative_acceleration": -0.004681986860877174,
+          "relative_distance_ema20": -0.19750080573850415,
+          "relative_drawdown": -4.551833753233792,
+          "relative_ema20": 0.009291505071413497,
+          "relative_ema20_slope": -0.10663237416483895,
+          "relative_ema50": 0.009267231169862895,
+          "relative_persistence": 41.66666666666667,
+          "relative_strength_score": 57.548,
+          "relative_volatility": 30.044908255008934,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 14.903557039514306,
+            "persistence": 6.250000000000001,
+            "relative_acceleration": 7.490636026278246,
+            "relative_trend_quality": 8,
+            "short_relative_returns": 10.903844200709807
+          },
+          "source_timestamp": "2026-10-12T16:00:00+00:00",
+          "sufficient_history": true
+        },
+        {
+          "asset": "SUI",
+          "btc_relative_return_12h": -0.9193044468769673,
+          "btc_relative_return_14d": -7.008184747455903,
+          "btc_relative_return_24h": -0.4015727059831664,
+          "btc_relative_return_30d": -12.043148977427787,
+          "btc_relative_return_48h": 0.2866891897731927,
+          "btc_relative_return_4h": -1.1387982015371834,
+          "btc_relative_return_7d": 0.427496235762459,
+          "classification": "DETERIORATING",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "SUIUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 56.34,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 2,
+          "rank": 32,
+          "relative_acceleration": -1.4418398792369724,
+          "relative_distance_ema20": -0.3708857903593321,
+          "relative_drawdown": -14.46661550268612,
+          "relative_ema20": 1.0916049687526897e-05,
+          "relative_ema20_slope": -0.15065573600843152,
+          "relative_ema50": 1.0893157502815802e-05,
+          "relative_persistence": 54.166666666666664,
+          "relative_strength_score": 50.9965,
+          "relative_volatility": 45.57757263058983,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 10.427496235762458,
+            "persistence": 8.125,
+            "relative_acceleration": 4.616320241526055,
+            "relative_trend_quality": 8,
+            "short_relative_returns": 9.82767472568504
+          },
+          "source_timestamp": "2026-10-12T16:00:00+00:00",
+          "sufficient_history": true
+        }
+      ],
+      "emerging_leaders": [
+        {
+          "asset": "HYPE",
+          "btc_relative_return_12h": 1.8356764184447094,
+          "btc_relative_return_14d": -9.410731485617385,
+          "btc_relative_return_24h": 3.6772379422551182,
+          "btc_relative_return_30d": -23.239892859349776,
+          "btc_relative_return_48h": 2.8185663569597175,
+          "btc_relative_return_4h": 0.9496694309358622,
+          "btc_relative_return_7d": -2.6778435205426776,
+          "classification": "EMERGING_RELATIVE_LEADER",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "HYPEUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 88.73,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 3,
+          "rank": 9,
+          "relative_acceleration": 0.027310638810273957,
+          "relative_distance_ema20": 1.6610105365730377,
+          "relative_drawdown": -29.275362318840582,
+          "relative_ema20": 0.0008420120344845169,
+          "relative_ema20_slope": 0.6785352133893863,
+          "relative_ema50": 0.0008364532338910744,
+          "relative_persistence": 66.66666666666666,
+          "relative_strength_score": 74.6205,
+          "relative_volatility": 67.0577836632453,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 7.322156479457322,
+            "persistence": 9.999999999999998,
+            "relative_acceleration": 7.554621277620548,
+            "relative_trend_quality": 20,
+            "short_relative_returns": 19.743706448822252
+          },
+          "source_timestamp": "2026-10-12T16:00:00+00:00",
+          "sufficient_history": true
+        },
+        {
+          "asset": "TRUMP",
+          "btc_relative_return_12h": 1.9360259841737948,
+          "btc_relative_return_14d": -4.395407042593458,
+          "btc_relative_return_24h": 2.0245274084722764,
+          "btc_relative_return_30d": null,
+          "btc_relative_return_48h": 2.6279348462291408,
+          "btc_relative_return_4h": 0.9420660243099954,
+          "btc_relative_return_7d": -2.438591781731947,
+          "classification": "EMERGING_RELATIVE_LEADER",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "TRUMPUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 87.32,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 3,
+          "rank": 10,
+          "relative_acceleration": 1.8492054283948178,
+          "relative_distance_ema20": 0.9712179764454376,
+          "relative_drawdown": -17.938264414676762,
+          "relative_ema20": 2.3057325844574524e-05,
+          "relative_ema20_slope": 0.49494710675281883,
+          "relative_ema50": 2.292738323429319e-05,
+          "relative_persistence": 54.166666666666664,
+          "relative_strength_score": 73.8635,
+          "relative_volatility": 54.52201720694103,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 7.561408218268053,
+            "persistence": 8.125,
+            "relative_acceleration": 11.198410856789636,
+            "relative_trend_quality": 20,
+            "short_relative_returns": 16.978693382052125
+          },
+          "source_timestamp": "2026-10-12T16:00:00+00:00",
+          "sufficient_history": true
+        },
+        {
+          "asset": "PEPE",
+          "btc_relative_return_12h": 0.4000550731539043,
+          "btc_relative_return_14d": 3.2470042819225053,
+          "btc_relative_return_24h": -0.7588096414570922,
+          "btc_relative_return_30d": 3.9445892571760455,
+          "btc_relative_return_48h": 3.8369912184739174,
+          "btc_relative_return_4h": -0.4493490564405511,
+          "btc_relative_return_7d": 1.1373864377868914,
+          "classification": "EMERGING_RELATIVE_LEADER",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "PEPEUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 85.92,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 4,
+          "rank": 11,
+          "relative_acceleration": 1.5543021637223542,
+          "relative_distance_ema20": 0.16344863192157,
+          "relative_drawdown": -12.821347217702572,
+          "relative_ema20": 4.559437786296953e-11,
+          "relative_ema20_slope": 0.049915270593348104,
+          "relative_ema50": 4.529314163000047e-11,
+          "relative_persistence": 50.0,
+          "relative_strength_score": 73.8633,
+          "relative_volatility": 62.43467849316372,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 11.13738643778689,
+            "persistence": 7.5,
+            "relative_acceleration": 10.60860432744471,
+            "relative_trend_quality": 20,
+            "short_relative_returns": 14.617272365525238
+          },
+          "source_timestamp": "2026-10-12T16:00:00+00:00",
+          "sufficient_history": true
+        }
+      ],
+      "freshness": "FRESH",
+      "generated_at_utc": "2026-10-12T17:03:49.400153+00:00",
+      "module_name": "relative_strength",
+      "risks": [],
+      "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-12_relative_strength.json",
+      "status": "OK",
+      "summary": {
+        "eligible_assets": 72,
+        "relative_strength_breadth_pct": 27.77777777777778
+      },
+      "top_leaders": [
+        {
+          "asset": "ADA",
+          "btc_relative_return_12h": 1.7959479337109174,
+          "btc_relative_return_14d": 17.45710827792102,
+          "btc_relative_return_24h": 0.5118292029973492,
+          "btc_relative_return_30d": -5.075304892327182,
+          "btc_relative_return_48h": 8.532299188737413,
+          "btc_relative_return_4h": -2.3393722425776198,
+          "btc_relative_return_7d": 22.43017709294397,
+          "classification": "ESTABLISHED_RELATIVE_LEADER",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "ADAUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 100.0,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 4,
+          "rank": 1,
+          "relative_acceleration": 3.057411436707891,
+          "relative_distance_ema20": 0.46287113176550765,
+          "relative_drawdown": -22.830227401278414,
+          "relative_ema20": 2.9854506338636822e-06,
+          "relative_ema20_slope": 0.5039605253513546,
+          "relative_ema50": 2.922551167356066e-06,
+          "relative_persistence": 45.83333333333333,
+          "relative_strength_score": 90.4898,
+          "relative_volatility": 82.02924611663482,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 20,
+            "persistence": 6.874999999999999,
+            "relative_acceleration": 13.614822873415783,
+            "relative_trend_quality": 20,
+            "short_relative_returns": 20
+          },
+          "source_timestamp": "2026-10-12T16:00:00+00:00",
+          "sufficient_history": true
+        },
+        {
+          "asset": "DOT",
+          "btc_relative_return_12h": 2.4254530013306574,
+          "btc_relative_return_14d": 3.2873851125531317,
+          "btc_relative_return_24h": 3.009462799251361,
+          "btc_relative_return_30d": -8.459516282259806,
+          "btc_relative_return_48h": 4.977665341024973,
+          "btc_relative_return_4h": -0.6331870514849292,
+          "btc_relative_return_7d": 6.073695468404772,
+          "classification": "ESTABLISHED_RELATIVE_LEADER",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "DOTUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 98.59,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 4,
+          "rank": 2,
+          "relative_acceleration": 1.8552726596209324,
+          "relative_distance_ema20": 1.3991781185916707,
+          "relative_drawdown": -16.001338090990192,
+          "relative_ema20": 1.2797307299590213e-05,
+          "relative_ema20_slope": 0.5605473827677177,
+          "relative_ema50": 1.2612868535985324e-05,
+          "relative_persistence": 54.166666666666664,
+          "relative_strength_score": 85.4092,
+          "relative_volatility": 58.04539028451733,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 16.07369546840477,
+            "persistence": 8.125,
+            "relative_acceleration": 11.210545319241865,
+            "relative_trend_quality": 20,
+            "short_relative_returns": 20
+          },
+          "source_timestamp": "2026-10-12T16:00:00+00:00",
+          "sufficient_history": true
+        },
+        {
+          "asset": "ATOM",
+          "btc_relative_return_12h": 5.286105460587409,
+          "btc_relative_return_14d": -6.400426212191324,
+          "btc_relative_return_24h": 6.037448687909142,
+          "btc_relative_return_30d": -16.37805823376467,
+          "btc_relative_return_48h": 8.651219632607642,
+          "btc_relative_return_4h": 3.989484801279519,
+          "btc_relative_return_7d": 1.8242537433339479,
+          "classification": "ESTABLISHED_RELATIVE_LEADER",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "ATOMUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 97.18,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 4,
+          "rank": 3,
+          "relative_acceleration": 4.5724849652382105,
+          "relative_distance_ema20": 3.7559742832957044,
+          "relative_drawdown": -25.010793807438468,
+          "relative_ema20": 2.0462079846107077e-05,
+          "relative_ema20_slope": 1.3797388179918046,
+          "relative_ema50": 2.012606904313492e-05,
+          "relative_persistence": 54.166666666666664,
+          "relative_strength_score": 84.9493,
+          "relative_volatility": 56.373079280449836,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 11.824253743333948,
+            "persistence": 8.125,
+            "relative_acceleration": 15,
+            "relative_trend_quality": 20,
+            "short_relative_returns": 20
+          },
+          "source_timestamp": "2026-10-12T16:00:00+00:00",
+          "sufficient_history": true
+        },
+        {
+          "asset": "TIA",
+          "btc_relative_return_12h": 2.3385234264387433,
+          "btc_relative_return_14d": null,
+          "btc_relative_return_24h": 2.235199736295068,
+          "btc_relative_return_30d": null,
+          "btc_relative_return_48h": 2.4210083481214895,
+          "btc_relative_return_4h": 1.0767927390015641,
+          "btc_relative_return_7d": 2.132073014229774,
+          "classification": "ESTABLISHED_RELATIVE_LEADER",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "TIAUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 95.77,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 4,
+          "rank": 4,
+          "relative_acceleration": 2.439486081247755,
+          "relative_distance_ema20": 1.377351961077533,
+          "relative_drawdown": -15.252854812398054,
+          "relative_ema20": 5.259515839094046e-06,
+          "relative_ema20_slope": 0.4585626288520661,
+          "relative_ema50": 5.215217772041349e-06,
+          "relative_persistence": 45.83333333333333,
+          "relative_strength_score": 78.3704,
+          "relative_volatility": 65.80415897505458,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 12.132073014229775,
+            "persistence": 6.874999999999999,
+            "relative_acceleration": 12.37897216249551,
+            "relative_trend_quality": 20,
+            "short_relative_returns": 16.984312126624836
+          },
+          "source_timestamp": "2026-10-12T16:00:00+00:00",
+          "sufficient_history": true
+        },
+        {
+          "asset": "PUMP",
+          "btc_relative_return_12h": 5.504905219492717,
+          "btc_relative_return_14d": 13.899256097025647,
+          "btc_relative_return_24h": 2.1334248284559765,
+          "btc_relative_return_30d": 36.585090021311295,
+          "btc_relative_return_48h": 4.622917607392796,
+          "btc_relative_return_4h": 4.056023108010609,
+          "btc_relative_return_7d": 6.090714516988616,
+          "classification": "ESTABLISHED_RELATIVE_LEADER",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "PUMPUSD",
+          "penalties": {
+            "excessive_relative_volatility": 10,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 94.37,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 6,
+          "rank": 5,
+          "relative_acceleration": 8.700472652137382,
+          "relative_distance_ema20": 3.5656644964593864,
+          "relative_drawdown": -16.390423572744016,
+          "relative_ema20": 3.3560620005704856e-08,
+          "relative_ema20_slope": 0.2862546945143096,
+          "relative_ema50": 3.354730485373986e-08,
+          "relative_persistence": 45.83333333333333,
+          "relative_strength_score": 77.9657,
+          "relative_volatility": 132.02626932267407,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 16.090714516988616,
+            "persistence": 6.874999999999999,
+            "relative_acceleration": 15,
+            "relative_trend_quality": 20,
+            "short_relative_returns": 20
+          },
+          "source_timestamp": "2026-10-12T16:00:00+00:00",
+          "sufficient_history": true
+        }
+      ]
+    },
+    "rsi2": {
+      "candidates": [],
+      "freshness": "UNAVAILABLE",
+      "generated_at_utc": "2026-10-12T17:03:48.749884+00:00",
+      "module_name": "rsi2",
+      "risks": [],
+      "source_file": null,
+      "status": "UNAVAILABLE",
+      "summary": {},
+      "unknowns": [
+        "Adapter not yet migrated"
+      ]
+    }
+  },
+  "source_manifest": [
+    {
+      "config_version": "1.0",
+      "freshness": "FRESH",
+      "module": "relative_strength",
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-12_relative_strength.json",
+      "timestamp": "2026-10-12T17:03:49.400153+00:00"
+    },
+    {
+      "config_version": "1.0",
+      "freshness": "FRESH",
+      "module": "leadership_rotation",
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/LEADERSHIP_ROTATION/2026-10-12_leadership_rotation.json",
+      "timestamp": "2026-10-12T17:03:49.419811+00:00"
+    },
+    {
+      "config_version": "1.0",
+      "freshness": "FRESH",
+      "module": "capital_flow",
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/2026-10-12_capital_flow.json",
+      "timestamp": "2026-10-12T17:03:49.425904+00:00"
+    },
+    {
+      "config_version": "1.0",
+      "freshness": "FRESH",
+      "module": "ai_confidence",
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-12_ai_confidence.json",
+      "timestamp": "2026-10-12T17:03:49.457350+00:00"
+    },
+    {
+      "config_version": "1.0",
+      "freshness": "FRESH",
+      "module": "opportunity_aging",
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-12_opportunity_aging.json",
+      "timestamp": "2026-10-12T17:03:49.440569+00:00"
+    },
+    {
+      "config_version": "1.0",
+      "freshness": "FRESH",
+      "module": "consolidation",
+      "path": "/Users/tron/kraken-ai-trading/WATCHLISTS/consolidation_daily_watchlist.csv",
+      "timestamp": "2026-10-12T17:03:48.749884+00:00"
+    },
+    {
+      "config_version": "1.0",
+      "freshness": "FRESH",
+      "module": "momentum",
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
+      "timestamp": "2026-10-12T17:03:48.749884+00:00"
+    },
+    {
+      "config_version": "1.0",
+      "freshness": "FRESH",
+      "module": "btc_rotation",
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json",
+      "timestamp": "2026-10-12T17:03:48.024743+00:00"
+    },
+    {
+      "config_version": "1.0",
+      "freshness": "FRESH",
+      "module": "market_regime",
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-10-12_research_regime.csv",
+      "timestamp": "2026-10-12T17:03:48.749884+00:00"
+    },
+    {
+      "config_version": "1.0",
+      "freshness": "FRESH",
+      "module": "portfolio",
+      "path": "/Users/tron/kraken-ai-trading/journal/portfolio_positions.csv",
+      "timestamp": "2026-10-12T17:03:48.749884+00:00"
+    }
+  ]
+}

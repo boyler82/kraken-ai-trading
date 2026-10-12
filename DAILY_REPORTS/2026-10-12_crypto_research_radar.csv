@@ -1,0 +1,10 @@
+asset,research_score_today,research_score_previous,research_score_delta,readiness_today,readiness_previous,readiness_delta,current_setup_status,previous_setup_status,newly_emerging,disappearing
+ADA,64.45,64.45,0.0,30.0,0.0,30.0,DEVELOPING,NO_SETUP,True,False
+AVAX,16.0,16.0,0.0,0.0,0.0,0.0,NO_SETUP,NO_SETUP,False,False
+DOGE,16.5,16.5,0.0,0.0,0.0,0.0,NO_SETUP,NO_SETUP,False,False
+ETH,63.5,63.5,0.0,0.0,0.0,0.0,NO_SETUP,NO_SETUP,False,False
+LINK,69.5,69.5,0.0,0.0,0.0,0.0,NO_SETUP,NO_SETUP,False,False
+LTC,74.5,74.5,0.0,0.0,0.0,0.0,HISTORICAL_ONLY,HISTORICAL_ONLY,False,False
+SOL,47.45,47.45,0.0,0.0,0.0,0.0,NO_SETUP,NO_SETUP,False,False
+XRP,63.5,63.5,0.0,0.0,0.0,0.0,HISTORICAL_ONLY,HISTORICAL_ONLY,False,False
+BTC,58.45,66.75,-8.3,0.0,0.0,0.0,NO_SETUP,HISTORICAL_ONLY,False,False

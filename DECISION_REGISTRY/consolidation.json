@@ -1,0 +1,62 @@
+{
+  "candidates": [
+    {
+      "asset": "AAVE",
+      "freshness_status": "FRESH",
+      "latest_completed_candle_timestamp": "2026-10-12T16:00:00+00:00",
+      "opportunity_score": 74.6523,
+      "position_pct": 15.780114427091366,
+      "range_quality": 67.23,
+      "range_still_valid": true,
+      "rank": 1,
+      "risk_flags": "RANGE_TOO_WIDE_HIGH_BREAKOUT_RISK|EXCESSIVE_FALSE_BREAKS",
+      "simple_zone": "LOWER_RANGE"
+    },
+    {
+      "asset": "RAY",
+      "freshness_status": "FRESH",
+      "latest_completed_candle_timestamp": "2026-10-12T16:00:00+00:00",
+      "opportunity_score": 89.0475,
+      "position_pct": 6.5152420800955815,
+      "range_quality": 74.19,
+      "range_still_valid": true,
+      "rank": 3,
+      "risk_flags": "RANGE_TOO_WIDE_HIGH_BREAKOUT_RISK",
+      "simple_zone": "LOWER_RANGE"
+    },
+    {
+      "asset": "FET",
+      "freshness_status": "FRESH",
+      "latest_completed_candle_timestamp": "2026-10-12T16:00:00+00:00",
+      "opportunity_score": 82.0123,
+      "position_pct": 24.45652173913046,
+      "range_quality": 62.63,
+      "range_still_valid": true,
+      "rank": 5,
+      "risk_flags": null,
+      "simple_zone": "LOWER_RANGE"
+    },
+    {
+      "asset": "LDO",
+      "freshness_status": "FRESH",
+      "latest_completed_candle_timestamp": "2026-10-12T16:00:00+00:00",
+      "opportunity_score": 82.9473,
+      "position_pct": 24.765478424014983,
+      "range_quality": 60.37,
+      "range_still_valid": true,
+      "rank": 6,
+      "risk_flags": null,
+      "simple_zone": "LOWER_RANGE"
+    }
+  ],
+  "freshness": "FRESH",
+  "generated_at_utc": "2026-10-12T17:03:48.749884+00:00",
+  "module_name": "consolidation",
+  "risks": [],
+  "source_file": "/Users/tron/kraken-ai-trading/WATCHLISTS/consolidation_daily_watchlist.csv",
+  "status": "OK",
+  "summary": {
+    "candidate_count": 4
+  },
+  "unknowns": []
+}

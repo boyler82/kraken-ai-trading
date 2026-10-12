@@ -1,0 +1,10 @@
+asset,readiness_today,readiness_previous,readiness_delta,research_score_delta,opportunity_score_delta,confidence_score_delta,priority_change,evolution_status
+ADA,30.0,0.0,30.0,0.0,88.0,-25.0,IGNORE -> LOW,IMPROVING
+AVAX,0.0,0.0,0.0,0.0,0.0,0.0,IGNORE -> IGNORE,STABLE
+BTC,0.0,0.0,0.0,-8.3,0.0,0.0,IGNORE -> IGNORE,STABLE
+DOGE,0.0,0.0,0.0,0.0,0.0,0.0,IGNORE -> IGNORE,STABLE
+ETH,0.0,0.0,0.0,0.0,0.0,0.0,IGNORE -> IGNORE,STABLE
+LINK,0.0,0.0,0.0,0.0,0.0,0.0,IGNORE -> IGNORE,STABLE
+LTC,0.0,0.0,0.0,0.0,20.0,0.0,IGNORE -> IGNORE,STABLE
+SOL,0.0,0.0,0.0,0.0,0.0,0.0,IGNORE -> IGNORE,STABLE
+XRP,0.0,0.0,0.0,0.0,20.0,-20.0,IGNORE -> IGNORE,STABLE

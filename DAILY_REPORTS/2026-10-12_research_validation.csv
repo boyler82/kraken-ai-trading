@@ -1,0 +1,9 @@
+section,bucket,trades,avg_return_pct,win_rate_pct,profit_factor,metric,value
+RESEARCH_SCORE_BUCKET,0-39,0.0,,,,,
+RESEARCH_SCORE_BUCKET,40-59,0.0,,,,,
+RESEARCH_SCORE_BUCKET,60-79,0.0,,,,,
+RESEARCH_SCORE_BUCKET,80-100,0.0,,,,,
+CORRELATION,,,,,,research_score ↔ return_pct,
+CORRELATION,,,,,,opportunity_score ↔ return_pct,0.0482
+CORRELATION,,,,,,confidence_score ↔ return_pct,0.0769
+RANKING,UNKNOWN,53.0,-0.5977,,,,

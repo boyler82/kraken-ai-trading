@@ -1,0 +1,10 @@
+asset,historical_expected_value_pct,paper_trades,paper_win_rate_pct,paper_avg_return_pct,paper_median_return_pct,paper_best_return_pct,paper_worst_return_pct,ev_gap,feedback_grade
+ADA,1.69,13,23.08,0.1882,0.0,6.6562,-10.3304,-1.5018,B
+LINK,1.77,8,0.0,-1.4487,0.0,0.0,-10.1663,-3.2187,C
+AVAX,,18,5.56,-0.9116,0.0,0.3847,-9.6082,,INSUFFICIENT_DATA
+BTC,0.96,0,,,,,,,INSUFFICIENT_DATA
+DOGE,,14,14.29,-0.4375,0.0,3.4628,-5.1966,,INSUFFICIENT_DATA
+ETH,1.67,0,,,,,,,INSUFFICIENT_DATA
+LTC,2.39,0,,,,,,,INSUFFICIENT_DATA
+SOL,0.57,0,,,,,,,INSUFFICIENT_DATA
+XRP,2.31,0,,,,,,,INSUFFICIENT_DATA

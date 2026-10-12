@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    {
+      "asset": "STX",
+      "change_24h_pct": 0.7564296520423675,
+      "freshness_status": "FRESH",
+      "latest_completed_candle_timestamp": "2026-10-12T16:00:00+00:00",
+      "momentum_breakout_score": 49.7371,
+      "momentum_stage": "EARLY_MOMENTUM",
+      "overextension_risk": "LOW",
+      "relative_strength_vs_btc_24h_pct": -0.1120629787375593
+    }
+  ],
+  "freshness": "FRESH",
+  "generated_at_utc": "2026-10-12T17:03:48.749884+00:00",
+  "module_name": "momentum",
+  "risks": [],
+  "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
+  "status": "OK",
+  "summary": {
+    "active_count": 1
+  },
+  "unknowns": []
+}

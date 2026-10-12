@@ -1,0 +1,32 @@
+{
+  "ada_like_movements": [
+    "PYTH",
+    "ZRO",
+    "TIA"
+  ],
+  "checkpoint_resume": false,
+  "consolidation_to_breakout_transitions": [
+    "PYTH"
+  ],
+  "daily_consolidation_candidates": [
+    "AAVE",
+    "RAY",
+    "FET",
+    "LDO"
+  ],
+  "execution_duration_seconds": 108.7545805829941,
+  "fresh_data_assets": 72,
+  "generated_at_utc": "2026-10-12T17:01:49.674901+00:00",
+  "kraken_mapped_assets": 73,
+  "labels": [
+    "RESEARCH_ONLY",
+    "NOT_A_BUY_SIGNAL",
+    "NOT_A_SELL_SIGNAL",
+    "PAPER_NOT_AUTHORIZED",
+    "LIVE_NOT_AUTHORIZED"
+  ],
+  "momentum_candidates": [
+    "STX"
+  ],
+  "universe_size": 150
+}

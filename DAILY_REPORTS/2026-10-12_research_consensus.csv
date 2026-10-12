@@ -1,0 +1,10 @@
+asset,readiness_pct,research_score,priority,regime_status,timeline_trend,evolution_status,positive_factors,blocking_conditions,consensus_points,max_points,consensus_pct,consensus_status,final_note
+ADA,30.0,64.45,LOW,DEFENSIVE,RISING,IMPROVING,ACTIVE_OPPORTUNITY; expected_value_pct > 1,Waiting for Day2/Day3; Waiting for confidence >= 70; Waiting for BULL market,3,7,42.86,IGNORE,Weak consensus; trend improving
+LTC,0.0,74.5,IGNORE,DEFENSIVE,STABLE,STABLE,confidence >= 70; research_score >= 70; profit_factor >= 1.5; expected_value_pct > 1,Waiting for BULL market; No active signal,3,7,42.86,IGNORE,Weak consensus
+LINK,0.0,69.5,IGNORE,DEFENSIVE,STABLE,STABLE,confidence >= 70; expected_value_pct > 1; market_bias BULL,No active signal,2,7,28.57,IGNORE,Weak consensus
+ETH,0.0,63.5,IGNORE,DEFENSIVE,STABLE,STABLE,confidence >= 70; expected_value_pct > 1; market_bias BULL,No active signal,2,7,28.57,IGNORE,Weak consensus
+XRP,0.0,63.5,IGNORE,DEFENSIVE,STABLE,STABLE,confidence >= 70; profit_factor >= 1.5; expected_value_pct > 1,Waiting for BULL market; No active signal,2,7,28.57,IGNORE,Weak consensus
+BTC,0.0,58.45,IGNORE,DEFENSIVE,STABLE,STABLE,confidence >= 70; profit_factor >= 1.5; market_bias BULL,No active signal,2,7,28.57,IGNORE,Weak consensus
+SOL,0.0,47.45,IGNORE,DEFENSIVE,STABLE,STABLE,confidence >= 70; market_bias BULL,No active signal,2,7,28.57,IGNORE,Weak consensus
+DOGE,0.0,16.5,IGNORE,DEFENSIVE,STABLE,STABLE,confidence >= 70,Waiting for BULL market; No active signal,2,7,28.57,IGNORE,Weak consensus
+AVAX,0.0,16.0,IGNORE,DEFENSIVE,STABLE,STABLE,confidence >= 70; market_bias BULL,No active signal,2,7,28.57,IGNORE,Weak consensus

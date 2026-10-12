@@ -1,0 +1,415 @@
+{
+  "candidates": [
+    {
+      "agreement_level": "MIXED",
+      "asset": "ATOM",
+      "confidence_band": "LOW",
+      "conflict_count": 1,
+      "evidence_confidence_score": 40.0,
+      "evidence_strength": "WEAK",
+      "freshness_quality": "FRESH",
+      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+      "liquidity_quality": "UNKNOWN",
+      "opposing_modules": [
+        "market_regime"
+      ],
+      "primary_risk": "LOW_SAMPLE_QUALITY",
+      "regime_alignment": "UNKNOWN_OR_CONFLICT",
+      "sample_quality": "LOW",
+      "strongest_conflict": "market_regime",
+      "strongest_support": "relative_strength",
+      "support_count": 3,
+      "supporting_modules": [
+        "relative_strength",
+        "btc_rotation",
+        "capital_flow"
+      ],
+      "unavailable_modules": [
+        "momentum",
+        "consolidation",
+        "leadership_rotation",
+        "validation"
+      ],
+      "unknowns": [
+        "Evidence score is not a probability"
+      ],
+      "weighted_conflict": 15.0,
+      "weighted_support": 40.0
+    },
+    {
+      "agreement_level": "MIXED",
+      "asset": "ADA",
+      "confidence_band": "LOW",
+      "conflict_count": 1,
+      "evidence_confidence_score": 25.0,
+      "evidence_strength": "WEAK",
+      "freshness_quality": "FRESH",
+      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+      "liquidity_quality": "UNKNOWN",
+      "opposing_modules": [
+        "market_regime"
+      ],
+      "primary_risk": "LOW_SAMPLE_QUALITY",
+      "regime_alignment": "UNKNOWN_OR_CONFLICT",
+      "sample_quality": "LOW",
+      "strongest_conflict": "market_regime",
+      "strongest_support": "relative_strength",
+      "support_count": 2,
+      "supporting_modules": [
+        "relative_strength",
+        "capital_flow"
+      ],
+      "unavailable_modules": [
+        "momentum",
+        "consolidation",
+        "btc_rotation",
+        "leadership_rotation",
+        "validation"
+      ],
+      "unknowns": [
+        "Evidence score is not a probability"
+      ],
+      "weighted_conflict": 15.0,
+      "weighted_support": 25.0
+    },
+    {
+      "agreement_level": "MIXED",
+      "asset": "DOT",
+      "confidence_band": "LOW",
+      "conflict_count": 1,
+      "evidence_confidence_score": 25.0,
+      "evidence_strength": "WEAK",
+      "freshness_quality": "FRESH",
+      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+      "liquidity_quality": "UNKNOWN",
+      "opposing_modules": [
+        "market_regime"
+      ],
+      "primary_risk": "LOW_SAMPLE_QUALITY",
+      "regime_alignment": "UNKNOWN_OR_CONFLICT",
+      "sample_quality": "LOW",
+      "strongest_conflict": "market_regime",
+      "strongest_support": "relative_strength",
+      "support_count": 2,
+      "supporting_modules": [
+        "relative_strength",
+        "capital_flow"
+      ],
+      "unavailable_modules": [
+        "momentum",
+        "consolidation",
+        "btc_rotation",
+        "leadership_rotation",
+        "validation"
+      ],
+      "unknowns": [
+        "Evidence score is not a probability"
+      ],
+      "weighted_conflict": 15.0,
+      "weighted_support": 25.0
+    },
+    {
+      "agreement_level": "MIXED",
+      "asset": "HBAR",
+      "confidence_band": "LOW",
+      "conflict_count": 1,
+      "evidence_confidence_score": 25.0,
+      "evidence_strength": "WEAK",
+      "freshness_quality": "FRESH",
+      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+      "liquidity_quality": "UNKNOWN",
+      "opposing_modules": [
+        "market_regime"
+      ],
+      "primary_risk": "LOW_SAMPLE_QUALITY",
+      "regime_alignment": "UNKNOWN_OR_CONFLICT",
+      "sample_quality": "LOW",
+      "strongest_conflict": "market_regime",
+      "strongest_support": "btc_rotation",
+      "support_count": 2,
+      "supporting_modules": [
+        "btc_rotation",
+        "capital_flow"
+      ],
+      "unavailable_modules": [
+        "relative_strength",
+        "momentum",
+        "consolidation",
+        "leadership_rotation",
+        "validation"
+      ],
+      "unknowns": [
+        "Evidence score is not a probability"
+      ],
+      "weighted_conflict": 15.0,
+      "weighted_support": 25.0
+    },
+    {
+      "agreement_level": "MIXED",
+      "asset": "HYPE",
+      "confidence_band": "LOW",
+      "conflict_count": 1,
+      "evidence_confidence_score": 25.0,
+      "evidence_strength": "WEAK",
+      "freshness_quality": "FRESH",
+      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+      "liquidity_quality": "UNKNOWN",
+      "opposing_modules": [
+        "market_regime"
+      ],
+      "primary_risk": "LOW_SAMPLE_QUALITY",
+      "regime_alignment": "UNKNOWN_OR_CONFLICT",
+      "sample_quality": "LOW",
+      "strongest_conflict": "market_regime",
+      "strongest_support": "btc_rotation",
+      "support_count": 2,
+      "supporting_modules": [
+        "btc_rotation",
+        "capital_flow"
+      ],
+      "unavailable_modules": [
+        "relative_strength",
+        "momentum",
+        "consolidation",
+        "leadership_rotation",
+        "validation"
+      ],
+      "unknowns": [
+        "Evidence score is not a probability"
+      ],
+      "weighted_conflict": 15.0,
+      "weighted_support": 25.0
+    },
+    {
+      "agreement_level": "MIXED",
+      "asset": "PUMP",
+      "confidence_band": "LOW",
+      "conflict_count": 1,
+      "evidence_confidence_score": 25.0,
+      "evidence_strength": "WEAK",
+      "freshness_quality": "FRESH",
+      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+      "liquidity_quality": "UNKNOWN",
+      "opposing_modules": [
+        "market_regime"
+      ],
+      "primary_risk": "LOW_SAMPLE_QUALITY",
+      "regime_alignment": "UNKNOWN_OR_CONFLICT",
+      "sample_quality": "LOW",
+      "strongest_conflict": "market_regime",
+      "strongest_support": "relative_strength",
+      "support_count": 2,
+      "supporting_modules": [
+        "relative_strength",
+        "capital_flow"
+      ],
+      "unavailable_modules": [
+        "momentum",
+        "consolidation",
+        "btc_rotation",
+        "leadership_rotation",
+        "validation"
+      ],
+      "unknowns": [
+        "Evidence score is not a probability"
+      ],
+      "weighted_conflict": 15.0,
+      "weighted_support": 25.0
+    },
+    {
+      "agreement_level": "MIXED",
+      "asset": "TIA",
+      "confidence_band": "LOW",
+      "conflict_count": 1,
+      "evidence_confidence_score": 25.0,
+      "evidence_strength": "WEAK",
+      "freshness_quality": "FRESH",
+      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+      "liquidity_quality": "UNKNOWN",
+      "opposing_modules": [
+        "market_regime"
+      ],
+      "primary_risk": "LOW_SAMPLE_QUALITY",
+      "regime_alignment": "UNKNOWN_OR_CONFLICT",
+      "sample_quality": "LOW",
+      "strongest_conflict": "market_regime",
+      "strongest_support": "relative_strength",
+      "support_count": 2,
+      "supporting_modules": [
+        "relative_strength",
+        "capital_flow"
+      ],
+      "unavailable_modules": [
+        "momentum",
+        "consolidation",
+        "btc_rotation",
+        "leadership_rotation",
+        "validation"
+      ],
+      "unknowns": [
+        "Evidence score is not a probability"
+      ],
+      "weighted_conflict": 15.0,
+      "weighted_support": 25.0
+    },
+    {
+      "agreement_level": "MIXED",
+      "asset": "AAVE",
+      "confidence_band": "LOW",
+      "conflict_count": 1,
+      "evidence_confidence_score": 22.0779,
+      "evidence_strength": "WEAK",
+      "freshness_quality": "FRESH",
+      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+      "liquidity_quality": "UNKNOWN",
+      "opposing_modules": [
+        "market_regime"
+      ],
+      "primary_risk": "LOW_SAMPLE_QUALITY",
+      "regime_alignment": "UNKNOWN_OR_CONFLICT",
+      "sample_quality": "LOW",
+      "strongest_conflict": "market_regime",
+      "strongest_support": "consolidation",
+      "support_count": 2,
+      "supporting_modules": [
+        "consolidation",
+        "capital_flow"
+      ],
+      "unavailable_modules": [
+        "relative_strength",
+        "momentum",
+        "btc_rotation",
+        "leadership_rotation",
+        "validation"
+      ],
+      "unknowns": [
+        "Evidence score is not a probability"
+      ],
+      "weighted_conflict": 15.0,
+      "weighted_support": 21.25
+    }
+  ],
+  "confirmations": [
+    {
+      "asset": "AAVE",
+      "modules": [
+        "consolidation",
+        "capital_flow"
+      ]
+    },
+    {
+      "asset": "ADA",
+      "modules": [
+        "relative_strength",
+        "capital_flow"
+      ]
+    },
+    {
+      "asset": "ATOM",
+      "modules": [
+        "relative_strength",
+        "btc_rotation",
+        "capital_flow"
+      ]
+    },
+    {
+      "asset": "DOT",
+      "modules": [
+        "relative_strength",
+        "capital_flow"
+      ]
+    },
+    {
+      "asset": "FET",
+      "modules": [
+        "consolidation",
+        "capital_flow"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "asset": "AAVE",
+      "oppose": [
+        "market_regime"
+      ],
+      "support": [
+        "consolidation",
+        "capital_flow"
+      ]
+    },
+    {
+      "asset": "ADA",
+      "oppose": [
+        "market_regime"
+      ],
+      "support": [
+        "relative_strength",
+        "capital_flow"
+      ]
+    },
+    {
+      "asset": "ATOM",
+      "oppose": [
+        "market_regime"
+      ],
+      "support": [
+        "relative_strength",
+        "btc_rotation",
+        "capital_flow"
+      ]
+    },
+    {
+      "asset": "DOT",
+      "oppose": [
+        "market_regime"
+      ],
+      "support": [
+        "relative_strength",
+        "capital_flow"
+      ]
+    },
+    {
+      "asset": "FET",
+      "oppose": [
+        "market_regime"
+      ],
+      "support": [
+        "consolidation",
+        "capital_flow"
+      ]
+    }
+  ],
+  "errors": [],
+  "freshness": "FRESH",
+  "generated_at_utc": "2026-10-12T17:03:49.457350+00:00",
+  "module_name": "ai_confidence",
+  "module_version": "1.0.0",
+  "report_date": "2026-10-12",
+  "risks": [
+    "LOW_SAMPLE_QUALITY_CAP_APPLIED"
+  ],
+  "source_files": [
+    "/Users/tron/kraken-ai-trading/DECISION_REGISTRY"
+  ],
+  "source_timestamps": {},
+  "status": "OK",
+  "summary": {
+    "candidate_count": 8,
+    "module_weights": {
+      "btc_rotation": 15,
+      "capital_flow": 10,
+      "consolidation": 15,
+      "leadership_rotation": 10,
+      "market_regime": 15,
+      "momentum": 15,
+      "relative_strength": 15,
+      "validation": 5
+    },
+    "probability_claim": false,
+    "weights_version": "1.0"
+  },
+  "unknowns": [
+    "Evidence confidence is not historically calibrated probability"
+  ]
+}

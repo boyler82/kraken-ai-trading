@@ -1,0 +1,7009 @@
+{
+  "controls": [
+    "OUTCOMES_DO_NOT_CHANGE_SCORING",
+    "SNAPSHOTS_AND_EVENTS_ARE_APPEND_ONLY",
+    "AVOID_IS_COUNTERFACTUAL_ONLY"
+  ],
+  "current_snapshot_status": [
+    {
+      "asset": "SHIB",
+      "snapshot_id": "tos_473243a26dc86c3d1ed091ef",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TAO",
+      "snapshot_id": "tos_a64aa8b756250522141f6200",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_0bde871d9461d2dd3ace3817",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "CRV",
+      "snapshot_id": "tos_699380278d7bb47d7b325537",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_3f2c359da7592ef87095ace9",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_f00dc25e71b2d06ccd0dec6a",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "CC",
+      "snapshot_id": "tos_7b1f58061697a23f60cb1c19",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_dffe1b3d8d9298839ab561f5",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_fd05b8b39797a1020219ec62",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_bb60ecf8852261207a243d44",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_2b45e5f1ce815c36f234b8f3",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_0edbc1dcf840ac4d4c90ae8e",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_ccdd20469a4128588af478f5",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "FET",
+      "snapshot_id": "tos_265654048353ce36880c6e3e",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "tos_dcff919828044c73fffb48ea",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TAO",
+      "snapshot_id": "tos_d21372765f321cbc9228145f",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_e686f88c3777f6e40e2c210b",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_2efea68eda284d3998b08987",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "tos_1585f9c37f71b47dc508905f",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_16678894fe3f46756677d19f",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_fc812921a079775cd6e5813e",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_eb9a588ecf435aacf0406c5c",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_906b64eff90e78a6b6068042",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_1df77fbc9cf7afad158f5bac",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_201bea96b332cb3015fdd41f",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TAO",
+      "snapshot_id": "tos_9bb116eca2550f98001dc7fc",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_9cab92d4ca16ba7cc99b2b40",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_19efa0cff4d977e486efb233",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_01ea11b7cbf9d29ce22f0d90",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "tos_869f84495e908e27b24b37c0",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_6dd1111147c743ab70033ccc",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "PENGU",
+      "snapshot_id": "tos_389953b53d1e91ba92ecf73a",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "NIGHT",
+      "snapshot_id": "tos_8f005e14930e53ce00a220ee",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_b849b0ab8d0b5d829a3c2afc",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_ee8b676960769b1d30c0e61e",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_203bd0753d9259b797e40294",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_0c61b64104562323e8b1a42b",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TAO",
+      "snapshot_id": "tos_b85277f659a639e5c339306e",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_e905f788deeac4d920da1301",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_8d40d50cced34e1a3d4aee95",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_077515d61780476707b92958",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "tos_91c82f39a173f2f7bfdb49c2",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_4ac269f1f5f0a3d76ccd2612",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "PENGU",
+      "snapshot_id": "tos_23119c67cedcd6e15d18c978",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "NIGHT",
+      "snapshot_id": "tos_1596cf336e90fd63467b683a",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_cdfba3a3b251e7799ed01cb8",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_c275f0229c858c7f1696d6f8",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_0e91b01773e4ed9743c9d7c8",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_5593d26e9d566e8d3c1d2f06",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TAO",
+      "snapshot_id": "tos_12a16d680bcad4bd6aeb640d",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_9f425dcd11c9395cb468be1f",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_ca4ed4d13d1c89effae11292",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_7cb2b242ff10e5f881869759",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "tos_8dee67266ea03454650e6c1f",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_579d72bb9c67abf72ee72c7f",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "PENGU",
+      "snapshot_id": "tos_f327c00c9909bd71002fd1e5",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "NIGHT",
+      "snapshot_id": "tos_30f4f618275e1fc7a20b6cb1",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_6dc940a4ae4471354f1f29ba",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_ee54c137d276770a94c48ae3",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_b08eb76d93e8aa971269935f",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_49510062f005372beabdbf0e",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TAO",
+      "snapshot_id": "tos_87f9ce4631451c93d201eec6",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_e04ed270528623c708e2ed4f",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_38fb892f9d9eb96e06e0b423",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_1c4ae63fee0ce0ef5bfcd386",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "tos_7ff7d4aaf9c9387992b1295c",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_9d454887cc8e0914147b05b6",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "PENGU",
+      "snapshot_id": "tos_3dba312dea7f11cc3b64d595",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "NIGHT",
+      "snapshot_id": "tos_b481e0234b3b0bb9e25ab509",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_71486ab4829014b89327e388",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_5712417b64b6a2b748ea1df7",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_274860c67411a11e0a0ad15a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_2010e8ab5c4f7cc4ac6fbae4",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_bdb0a67cb0a5cb4f898ea51c",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_49ef0908c95311899c9a6bbc",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_142c8a056dd67e7469bcc0d9",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_7a86c94d071110bf9af6baa5",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_73f7e4084a7b1245f682d4c3",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_e03d06db48c981feb1159ac9",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_09a00170bf23d012b3adbde6",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_b284b2a3ba5eeabaef2e9ea3",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_18486cd6d519df86540aab32",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_a1e480c9f32e5ffc983365ca",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "FIL",
+      "snapshot_id": "tos_76dbb7068fc89292dbb6d1bc",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_173439f8c89635150c81e6e9",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_505c41f20383b5fcb996c11e",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_99b8dc40127b2b884895d0fa",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_ad3c6babb7fc712214a6a5c3",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_345b73a873443be1f2aabfdb",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_85ff0da659e96463c1928bae",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_f231802d6a3dfc43bec80c16",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_bb70dab71e25d9e7cc21d7fb",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_877365f515e318cbfa132dbe",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_3cfdce4bd6da1336ad764715",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_575652505fd937add7bea2d8",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "FIL",
+      "snapshot_id": "tos_4b11c97f242f0dce414e79c2",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "JUP",
+      "snapshot_id": "tos_afa94e02509717d794ae3c32",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_4c320602f8c9860d3ccd1668",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_b2973751a2d1d1503dd7cff7",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_11a71f71e83ff7ebe4c98b2b",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_d61398747a5e1d46a71e23cf",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_f8ca308a2933d4728f7a7ae8",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_e72d1be2e7a2ae8f7f290169",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_bb7e48d3d543a8e7de983164",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_9c1ded7a1a5281d5093e36c2",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_dca501c046fc73ac12af6825",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_b616edccf085e31715509a49",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_c268c029af016815e1d59e0a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "BCH",
+      "snapshot_id": "tos_aa0d351e1e4d6b0301f39680",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "JUP",
+      "snapshot_id": "tos_79b2fd2bd40ce8f46d1711fe",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_8780eec4884681af772efeed",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_097b9f9505e414ac6382059f",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_01cf1f5fabc3dddebdddf840",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_b66f5104ce8c401b3e9cce78",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_a9cc8c170add0ef7df54fd93",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_c5dd8e60b4ecbb231950e3d7",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_d2f380b4734ea718f2c740b0",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_ea9739535f17132d74f943ed",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_c86dce0fdee5c24bb3e0863a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_620cfad4bc3d636708bb2de9",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "BCH",
+      "snapshot_id": "tos_344a5d2672b51f6ce598610a",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "JUP",
+      "snapshot_id": "tos_f58a39f9217c2f1ec01b82a1",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_4e415b2343da7c3aede6cba5",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_7bb53ffe324effb619377ad4",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_650b40bafaf0a620d21ceed5",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_ee1b899425742b436beaec7e",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_b4f6d0360d418cb68039a8dd",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_11fcba0ce0d5dff51539d991",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_5aa0f117138b151dcbeaca54",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_101f4566ed0ca3b75e0ff732",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_83ea03488b226e4e061cda0c",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_71f15e67cefe38a9d0f8f051",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "BCH",
+      "snapshot_id": "tos_06f4a6370c5158e1d7ac2266",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "tos_95cf50498c33b7d17bf5d3f8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_e2734e4e7c083cb7864176cb",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_1c146d26fc45fcca24c37fc5",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_1052e4952fb1737f0b14d8cb",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_8879af34d7416092ca8168bf",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_a2f0228a92add0c54b357569",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_60216fbd3c1226721e5da972",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_9248c4de771eb6101df5f0fe",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_7c629dee7f56a1d97dbe0950",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_981b648517986f120e28c579",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_31d6c706ea3fc85598421d3a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "BCH",
+      "snapshot_id": "tos_d86212b7e183659aa4c06d19",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "tos_d6aedbf9c555d8ab358025f5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_04bc4964a76f427bf2d3bb33",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_743c1445be938df256fb9632",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_c77d0aa3c06594507c601b76",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_c735d9f804e74229f8285880",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_c6b969c1477b2714c18f1e95",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_45299bb6c1835f6814c64121",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_c91c5631654dcac16328b3e9",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_efc8ff3e913ccb17968e4ff8",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_1d8e58ee4bae3784f72b4887",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_dba0665395caefc5697d9663",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "BCH",
+      "snapshot_id": "odo_b4699a01e2b416131b5c0e43",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "odo_7ec6bc01f5e6ec0396301468",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_4c15c0e18c676571f3b9b14f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_4a0029bc4053d1967610c6aa",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_c433d8ae25dd47d72e0114d9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "odo_daeb88adf2e482b9308fb2bf",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "odo_44e67089679e5a5d65b35aed",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_7ab8575a41583a6a8fb0f719",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_2da7b8f9d83fa4a2c42b7839",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_ec5c8edeb4f9446e02239f86",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_4c91de321f4ecab0dd538704",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_f070a4a2d86ecd75f2729973",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "BCH",
+      "snapshot_id": "tos_b39e24138d59eafbcda6e6da",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "tos_7857522661fcce44b37f95cb",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_7e5e3d12c69c3c02b35edb54",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_23a9176b97a5f89fcd218557",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_8f5bc0ac478d7f934e8fc73c",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_9c1c7813c2784318a7d3eea0",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_c8fd5b83f4a719c6b29734e1",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_2bccb03fd4bee36bc14cf4bd",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_e7f91af0830d9c94713a7642",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_c09764fe0ed49d33121e0433",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_9a22eb1eaa0f2fa9bdc9f119",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_f3990a983170e529066e143d",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "BCH",
+      "snapshot_id": "odo_d26fd00aa2a5519257a5369c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "odo_7de955f52945cc335ff0e97c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_953baf482bf205d713dba093",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_15fdefd0c7d0420a906a9a2b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_54fba3b1e3f04d05805da235",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_058844987431310bbb252d90",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_723a25cc565043ab4e02b529",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_27cc7c27a4cd6760e7dabed4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "BCH",
+      "snapshot_id": "tos_8edf4b23b6a69ea9cc74bdc9",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "tos_93c7687dd24f9a5f84e8550c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_e24ed096865907cecf20ebad",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_0a182824f1c44b2a7eb37ec5",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_4035cbc2270dcc8c38195706",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_f0af9d3b0bc8c8f5404f7a48",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_e1de46a848f45fb13d941c00",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_401425c3738cd3102a889034",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_1c27b0abffe659fa3cd6493e",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_c42369adc48f272c52798720",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_64368fe715de2290ceab1f3a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_2d162d4c7cf8b8a4b5e4cf7d",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "BCH",
+      "snapshot_id": "odo_dbc1b14e4b0698960d1299cb",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "odo_80acdb811fc5f664d5116fc5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_0201519853a39bb470e79abd",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_19ecd4fc201dc4e621319ef9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_c2e3b2db9ae4fc6bb6b5b506",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_3c471e55541d7c2afbcc83bf",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_e4bb889a3879af2946d2474a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_1e56fc483d5921de6a06b480",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "BCH",
+      "snapshot_id": "tos_b067d4a342af20cf90691c02",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "tos_aebc0c36f89bc87c59055668",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_fc2fb1f878821584b02f6a54",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_633740c5c7e1a15968844da4",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_f64af17d84516a15e9895d03",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_12a3dc95d0af60adb3f7e955",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_4ae2e8a6af33dcceb93119a3",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_6e464934b3799f9ea8ecd233",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_3fd093746b38bb2d1a598068",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_46a64a29b5037e44213fd70d",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_05a01170fc24f74b605fefc2",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_caf4ae263dece58e350b1d55",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "BCH",
+      "snapshot_id": "odo_0e4f2146f94c00c6524b1827",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "odo_44436afd2b18307d66bdc70b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_0f5822298ba7558be8f6f886",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_ca19de471d6daba192ea7468",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_501ab9aba368c909a4c3210b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_21f1366e63975d01acf948ca",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_bb7ad8a9658f8f0abc594ed7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_f30aac60428e0f9a55a48073",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_ed20fc3aa02ad3859c620fa7",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_15cfd42726fc3220322360f1",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_6772b365df704c71f02a6511",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_091fc025d793f22fb32ab0de",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_5ba372b83e0e1a4ba72e688b",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_fe901fffd7946d18dc9e3ea9",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_79366f75023331262b09b176",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_c1c981cebfdcc9172182a5c4",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_75d8e6ae93c45e9854bbf274",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "tos_258bd64a34b22330520a3ee0",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "tos_3b7025c557c3a383468b10bb",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "odo_dbec9126c536ad1fcb4568bc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "odo_a358ccd6eb3603f5acc4aabe",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_244252e4858b00e1cdbf1a65",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_3702e78406cc8482d9bc6a88",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_e1333e48f492b981626597af",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_dddba47470be735d7316e7f9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_af26aa77534a168b770bcde4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "odo_6338d421bfaaef3386bfb098",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_cad376a53f06749e8bdc33a7",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "NEAR",
+      "snapshot_id": "tos_64e676e00c67cfa726b5bf86",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "tos_91d87324692f0d33f9b89528",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "CRV",
+      "snapshot_id": "tos_607091cc3845d945dceb7d91",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_61093174a30c3b4ded0263be",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_4e2fbb2a38427ee76707b73b",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_980437668517513331a94ed4",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_1ec806a6c263fcaf5af8175a",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_ea6add1e007d5cab666700cb",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_5235f9bdeab5683b848caebe",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_72327f192081211a0c1fe0c5",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_0eacc38cfd6eb8cd47a9b07c",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_dfab54d5555c5d41f86ea2fd",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "NEAR",
+      "snapshot_id": "odo_2190f528b7ab4fb97754f20d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_6e3697fc279bc0e8542e6fd5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_612bfe6581f49ea80994cf8a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_e00d56397bab80a127e13df4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_f71f8e787ac322861b432a30",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_13e037676d8b3de782494533",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_2d730bdd05479b45439aecfc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_a26cc78c69aca80ea3a21c30",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_58348d7e2ec10bf92fea3158",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_8d4c7f65c1ea9b4a6ba6113b",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "NEAR",
+      "snapshot_id": "tos_54692096160efe248713a57a",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "tos_be02c21e3a64ad36f242d28a",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "CRV",
+      "snapshot_id": "tos_0f08860ef90761f636e1f744",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_1308d3210c0c462e4f41c54a",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_83d77f3d090d75ab01ae4e90",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_6cb546864e854b8feccf549c",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_3bd21ba6cab444195a2d69f7",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_4141cf803be6ff790b254756",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_4cde215e43416a5c7b2aaf08",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_68a802b883ea800c8231671b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_d50a6e9a89ef0ce9e78e8d0a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_af7bfb60e12df3883264d1ef",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "NEAR",
+      "snapshot_id": "odo_8769ec6e1194e0b903dfe644",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_9d788236b886d47d424a51ed",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_40ee2e0a47dbdcf85f6d1d6c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_3de3200e01a708d523101cd6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_4186cde7af357671ebce94a1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_00942ab402c55ca20ed27f37",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_7ed6475fe74a439ceafcb813",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_363c4ef89c5fead61d5ebf9a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_4ef21e43e27067ab53b92520",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_b0fcb909285aebd73e18afbc",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "NEAR",
+      "snapshot_id": "tos_96249c02b489c1af280b2637",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "tos_7b36da92dcbcaad7e9157a74",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "CRV",
+      "snapshot_id": "tos_9d407991279023206ddfb79e",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_c43c39776cc3da00912ea9f6",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_db3bb8916fed31256afd6c12",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_c3ba1478e52b7448ef05e874",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_fd29628ed4bcfaf9aecd114c",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_2ec865def79c0aa46ff37f38",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_9e03fe830226d52ce33d0faf",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_1db5e2466a3215cce151e94c",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_13008252d9b02ecbbe24f954",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_a258fe329261c056ddd0a1ed",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "NEAR",
+      "snapshot_id": "odo_351fcc68cdf570b33d2697a0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_e0c0ef2969cf6865f6886ab1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_4a72d995c76454eea6bbaa9e",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_f3850cc2894cdbc155906553",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_22415e44efe68c1b44b10d41",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_cad86d4e4c893614340faefd",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_3e718804d27acf97194ed39b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_57f1f39f6048b8d5f0d4dbba",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_0cda185ec4a6b9acd2201178",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_c2d84e0797d14be436173ba4",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_be36bcb1a3cfc551701b481e",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "tos_ce59300a90eeadbe104bbec3",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_cdf4caec92846a717bba7cb4",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "tos_2fce9c7f2d10b268c34c2659",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_a27390f1d6d84b3b59cf3c81",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_f442963b98dbc902068a5e52",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_2b76c393c10c2db347b0235b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_6660d1746806153e37c06e5e",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_8f8acfc721265514255e33d1",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_1c92ea568a89ec4908638776",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_5b7545c5f73f096a9ac27701",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_8a95012be58da448e26f90db",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_126254803c0f769242b3f494",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "odo_6ff7297e06054b1b31d89810",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_fd89bf879662673db9904915",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_6abe8be7c67c5b9f8e405cbf",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_089bce0150616e0b6e770dd8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_ccb38cf809ae8543b9ac6b98",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_695a5f175fc6981310872131",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_250a50c8c95398b19218c196",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_fbb9cb532814c97c6234b8ab",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_40d113acf21ffad57ab10b0b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_b5bffc602f5a4499540f767d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_7fb89662cb3f65e7f16c6a0b",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_4775587970bd9de0c6553ca6",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "tos_a0178e84d05c76f654d942ce",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_b087fa870941470ac3200386",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "tos_a792e33abee98d697c2eb606",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_8b204dc6a03bc11c06615cae",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_268479347695c13e669bbf7e",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_8f72cb7cf6a069464908f2e9",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_62435384e9470d2e4ba56b3a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_dc25c921b4f171d524467d28",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_0203ea1447c785505d1bbae4",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_90aa17738faa1047c50627a2",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_8150ab3bc27ca89400e50a93",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_033cf27913490c8dd2ebc705",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "odo_3a36d6c6572847e67033ca8f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_73350670976e051bd624f87c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_3edc7ec766f5dd63f0d5c79d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_25326089ce0c39fa728d0903",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_032d3ccf24c9b06efe9c5cc2",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_00c3e84feb030e919b67103d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_8c1af018dc5fd7723063c01a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_f00e86da1a472a65d0982375",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_850400c518daaba1f79751c3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_013592215e22685a7bbbca66",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "tos_7377bf80f14c43fd1d1037f5",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_cc5dc978511dd7156cbbe40f",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_eff747bb2dbdaa46e745f496",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_8d93118f7b2b8953b368c7ab",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "LTC",
+      "snapshot_id": "tos_95e68bbb3424241093709ce4",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_77cda3680fd95f02e8927dd1",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "tos_0681fb23dcded6981b9049ad",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_20298d8e8019ce79bdb4ed60",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_291054f0ac762e2a45042048",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_606b8c418b84f2d1a081c5d7",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_fd6885340d695365b105ce2b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_ee3985a0587dd5847198d004",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_7007b16939be95e3487b4e59",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "odo_8893681d43ede76e22fb9dae",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_943fc94d7bd5e572ee71605a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_4c5826130f52dbc169f2c0e2",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_f524426704fb41d81a32b069",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "LTC",
+      "snapshot_id": "odo_dc4f3a4132c7b317c85cffc7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "odo_05178f879f051cb0e201ed7b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_7d6aa999d8ab4352ccd8cc59",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_7ab9759057fc9c43e1d70d9d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_d0f32a4795154a1cfdd93856",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_1be5e792c9430bd79cf1c438",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TRUMP",
+      "snapshot_id": "odo_6b3d43f8079589fd5627beae",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_f0810cb55002032a5de6ebcc",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "SPX",
+      "snapshot_id": "tos_eabecf3a82f82480af8387be",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_f367a14eb089f8bbc70f0271",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_d269503fe438439f65ef7897",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_7b44d990bb5c3f40d562a793",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_5dd99030ee6c2ba5e4a24cfe",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_1c94e3894f712fdcc6d9daa9",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_55841ccd9269034cbfcf9847",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_29ca302b4e7960784b76aabf",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_0ae7b717eb0b04a6598802f1",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "tos_d4cb04dcb2700c7d8faa408d",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_30ed69dac707b9ca2801f7e1",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_3ae060dda44586cc25f39d5b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_8f623ad0ca15b61b5cc01e32",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DCR",
+      "snapshot_id": "odo_599301483fd98f1d9fab1b13",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SPX",
+      "snapshot_id": "odo_5d0d483bba787f132ed8d067",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_9b3e8bd6d531e3a30ac4fb43",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_3f3f89b8df5e8e91a4cc3631",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_5a59d162fa50eb3102387b44",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_934cd2611eb72acfc95171f9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_5f998ddc765d97c3c5715dc3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_420ac6a42ba7883981c468ad",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_7fd894531b8995edb22c177f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SPX",
+      "snapshot_id": "odo_5aded372ca4d73b7801ac158",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_eaba8a8fbe96679bc94c9a72",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_9cb999e71ba26527db182e4e",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_61a2f463d25b52789834a9df",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SYRUP",
+      "snapshot_id": "tos_f7d8a0e8d26bbc70c1619505",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_ed547b644df0c5890e55d441",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_8e399730db078cddcfa20a57",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_1167998c8f041fec4d9b68d7",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_117355e526e5e8c01d662255",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "CRV",
+      "snapshot_id": "tos_0bb79ee81d12cc29097111ca",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_d8d41240e897b63054b3f07f",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "DASH",
+      "snapshot_id": "tos_cd0603c47414554ef17e6595",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_23911aa27e7e7ad2de829337",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_78fd943dd9b24c1fd33a567a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_5c428d310fdd8181ca45efbd",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_3d30f4916a6def904c7e96bf",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "SYRUP",
+      "snapshot_id": "odo_1912a80fa595bcd12bc10c34",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_f98be24dba478f9172c3cd0f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_d968c8366122c12bb292fb33",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_6eb04a8daac177e63e8b4481",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_1c8f97d6c27e8feb66257f82",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_a48b4c3f3315b21cc22f216b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_444abe7c0940718971b615b5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_69606487bc6a28cc0e9d16ff",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_74b36f848b1bfd03b7c4d942",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_83e877aa7559b279dba30ec7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SYRUP",
+      "snapshot_id": "odo_9d48f3ba7071ba2a5a8e66d4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_85a5eafdeee4b1278de9879d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_ddf799d834c4aff9bd4be5fe",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_50b01a083ae5fa032bc0be05",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_71057044cbea42744ac4019c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_038fe2dfba9be33675ae7036",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "NEAR",
+      "snapshot_id": "tos_ad5f22b88d35b311f1cbfe34",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "SYRUP",
+      "snapshot_id": "tos_ca2db40b13dd525dcc842d66",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_054a18c653cba489961a74f9",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_6f550ca18acd2774e0057300",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_857c97223aba497b3c5b51c0",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_899fc535558b77e045ce2729",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_3ec3b85b5bf19e804a22e4af",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "DASH",
+      "snapshot_id": "tos_e32fd3ba9de44bcd127f407c",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_2538041e9ddd7e66e708a472",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_4661d882ccb1adb9ee28e416",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_97b4c16ab51bfa550398718b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_df6883c205d9a48f4e5d5f5b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "SYRUP",
+      "snapshot_id": "odo_a60c08f02d26904083c37fdc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_1c9d790bb636978d8c6a48ed",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "NEAR",
+      "snapshot_id": "odo_4c0e55af00b10eefb1ca0ae2",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_d9567d53b238c5b5d7050764",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_44e440b5aa3c939a105f4268",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_024767116607b949964d1e67",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_002a2c1fc0cbf4b6855664c8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_342622760025f5c408df46be",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_abba8f47493b03282de0b76d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_5e3d0baf5f510eab30069655",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_e114b32fa93870c2d9a84f96",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_b6f32c470dca757f194d86f3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_e5c8506dbeaef2ef977c4ca8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SYRUP",
+      "snapshot_id": "odo_396af7c731242e958b97bfd3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_8c1b2d472085f060c4bc9d83",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "NEAR",
+      "snapshot_id": "odo_5e39be34d9676dd5cbbf4a0a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_fcf1a2ef56d637a19ecc9f14",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_97c6736e6d2b70da284c3796",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_b2a6281c28ccd1205d8432d8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SYRUP",
+      "snapshot_id": "tos_43bd030dfe58f62f618d2e1f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_8e53030dcaa03f8393f78999",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_3597ced2a449a6712d77532d",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_736749e761868271f8879aa7",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_022275707379b3e2dd7021c8",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "CRV",
+      "snapshot_id": "tos_5b6d7e932ad13e976f544ffd",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_7513e3ad704f74dc07643f6e",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "DASH",
+      "snapshot_id": "tos_b15040f2dbe1f55c9a5b13d2",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_954f91a459219d0f3c98b14d",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_b732afdb9eddfc2c2cc44dea",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_396613b1673177598ed5be2c",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_3a2144897af0cad34ad61d6d",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "SYRUP",
+      "snapshot_id": "odo_8fff4738f44b79adfd82e0c1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_d9e85d4999a2aacae5d49801",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_7175d778baabef6c1900a6d6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_d1d0c8f81fa4d0b43b6de665",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_e82a1476f4172f34db3911a1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_2117681c567129cdde98acb5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_f69e3c0892772af62525ccc4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_28f47a43a0908bcf5129731f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_16b1c82b7b57bfcaa06e5d97",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_96465231bc7333aac608908c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SYRUP",
+      "snapshot_id": "odo_47a6384d5c2af25ccf6b8738",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_a2d76252bb366a30de2533b6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_17d73dbcb1a121dac84c009d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_44d3cd54cf85e3151dee2fe3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_d6602f3137d0017ce9ce9092",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_575faf06240d40846442ca1d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "MNT",
+      "snapshot_id": "tos_a1f5400fcc895546c3b060c8",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_dcbece6a057ee8538733f167",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_ec2864d797b9f5b8a4747490",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_a0e4747ab649ed6cdc56a1e3",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_1acf5d4a4874b564411b98bb",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_c62ab8f41cf1352bf5a56107",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "CRV",
+      "snapshot_id": "tos_38c85fddc7ea51ab342f0ff2",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_6a45ea1dce39b22b47c2d337",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_5b554e0027c373c3298738e8",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_c711110da81be29e7e43a38c",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_80cb27e589f56862a2999ad7",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "RAY",
+      "snapshot_id": "tos_9f1f1776c1a1c2ea7a573f76",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "MNT",
+      "snapshot_id": "odo_e1525aa35a85eac905b858e0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_5483d7f12e74f09807158f9a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_f72951b843658a2a3f7f08f0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_7e5c060628bf12682424112f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_7672167b0ea3acb553bdadc2",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_a55bfe8a1a30916976516760",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_7a920f322e5e699d6bbb3973",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "RAY",
+      "snapshot_id": "odo_62cc4f706debac8d1418910b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_7984f74ca901a22b651f15f4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "MNT",
+      "snapshot_id": "odo_a5fcb9cb73bf4f48c2a72d4a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_5f236e01628c0589aae80705",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_08f15168c05a957f1a559c38",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_4aba1a0ee26ca5e987bc34bb",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_c05d8cda41c0cf4f23891aac",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_2552323b6ea9753a2db3bed4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "tos_01efa14120b8dde827584d4d",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_dd8d09dbb98b57c0635ee977",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_23c1a8e3d8cc6df789e2916f",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_1e38325d6dd0a8731138d08f",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "UNI",
+      "snapshot_id": "tos_7d8135c94d22e045b2185828",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_ef73613d888d2cb5cb74eb15",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "tos_a196b95831b720ea5ee80c53",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_6eacd8004301f68a9317fd54",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_84c31b950ab82bbe56608c75",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_13b3dcc803a4e2162383487a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_6599d2c321a0678bd3fed64b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_b5c5fa81254328e81b5af6ef",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_35d7999c8d83601fb3267808",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "UNI",
+      "snapshot_id": "odo_c02017d87fd5f66db614dd0f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_7c873b3cddafe22c8b1d1073",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "odo_e56dad312a5ad87bf36307fb",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_ff96424deb2bb52278068602",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_d0d93ac7c75e504f959d7ded",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_c17eb3c752effa53ae70804d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "odo_26e3b3af7da3d4ca8d475816",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_d3ae0937f38239fa3131c149",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_39cccb29c790eda898866bfc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_daa5fee280fb6145787b60c2",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_0ea64d3ba95f901126cc2ecd",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_bb11c14e899f6093bb8e090b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_b4654b256782d84752df77c4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_3b0784d91c69d45b17b1f247",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_13e817d22e5b011f4c7cffe7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_ea2ff8e6ef80e32850d8a8ec",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_348ce543a8b7068d53c926aa",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "tos_ea28510b165f5402f30d8237",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_cf48c66de850f1b288cefc6e",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_5136a508d89ffb5968b7a86e",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "UNI",
+      "snapshot_id": "tos_b9c4ec47f14770cc5da3c980",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_9120382513510eb3b45a3c32",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_530255dfa3ef23ad7769b0ac",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "tos_d760ac200196da92f48b93c9",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_9e525823eefed37d9062e63b",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_1d1c5bf06f0db82f5c9de86c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_5000ca8c3350fb78c5d34165",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_a6fa205b828113432a6c35ba",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_1170c95d9633d60647a277a0",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_e561dab4b78caa00ea3d40b5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "UNI",
+      "snapshot_id": "odo_73e855e6422775a66cfcd5c5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_413597a3728b570c49f148e4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "odo_8b2d03e0aadf9fa5c9955323",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_303fe4e857552be3134f2bca",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_89f0eec5a884b0c450c4ae46",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_34d93321359cc7d3f7be1a01",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "odo_9af19944ba5901771a53163f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_07d161d005dec95075f7fa1c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_a648acf809d84bce47eeb2c7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_3a8cf6415ca72027880f503a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_d2dcf6c5037a939e4abbd5b0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_3e226a1042c91320a8f18e87",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_89b127892db7f2978a1d8d6d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_7edfcda7edef1e863a771809",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_a0d2998bd289cf79ca9d36fa",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_a72ad100ed52905fdf77be62",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_23e49ea58b6f1cef831ca6cd",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_b37e40a0abcb68aa92acbd2a",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_d2e387dd1daea364184dc717",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_a37faabe28ab6dc609aa45de",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "tos_a354e95bc6bf5fc3fadf8a75",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_f0784bff1c8832d3f1666945",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ASTER",
+      "snapshot_id": "tos_d20db32f444c47f7b60140e5",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_d0c24389c905da887b35b460",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_e4008548939c68460529d4e1",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "WLD",
+      "snapshot_id": "tos_ceb773a43d1156905a331e3b",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_258338f5c698f44ec611c048",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_75de651c5d3ab7244a8f7c2f",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_2801e303c090af3e3de91c35",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_38c68ea6297b0c18690e5a3c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_ea3a288406273a4d278306b2",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_0770090b1de9e12fe78f604f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_cb2d9a9679df1a2b42e9e58b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_941061ff683e8d4983b0f305",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_68766f642c988b5555b27a38",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_ef50d4af53869edd364ce544",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_30f6ded3c77b0b82a122c194",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "odo_0fd3b1861d45d62728f86173",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "odo_993057e158240c7779633ec7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_6f38dd7227125363546d0a93",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AVAX",
+      "snapshot_id": "tos_0b1ccf14fda3b9155e540a8d",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "SKY",
+      "snapshot_id": "tos_41a71d70aad747f891fe661b",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_f9dadd6651bc99693552e465",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_87f6b5b59bb9ca4e4156c923",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_a1b31e95349fe511d3b6be5c",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_6939c80d5210e0ba5ce59b14",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_5f5bef9ac40c6f64cd5826c3",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ASTER",
+      "snapshot_id": "tos_0b5d6b8b901c34e03bc0bc1f",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_22d2aaac1ae94993957b6222",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "RAY",
+      "snapshot_id": "tos_3b13e16f968aacad1974f8b6",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_a3322e9446fad0c31d6e43e5",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_d9adceed47a7e8ae4ea298e8",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "SKY",
+      "snapshot_id": "odo_2cfd0bdeea93aa9da27172f6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AVAX",
+      "snapshot_id": "odo_0258dfcad57aed3b206d332e",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_a9d08225bcd87ff9bccc57fa",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_6b69496a59107a14d822a711",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_eeac28cf1ee10d4a189b3deb",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_fd632b7478b5acf81404372e",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_75b6c073a6ab51f469061aca",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_d8fb73410cdcd9c581d69d36",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_d87e91206a0b73a83471797c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_f986b9ca8d3b682c88cfba6a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_44c1bae6579f8d0bb6b8a14c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_1463fae987ea4314f1e18019",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_54b7aefdf07098464a1b7a30",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "tos_f28e916f18838f6ae663d338",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_def6223dcace9dfa830a95a4",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_87f94c09ed22fcb6bcf89a07",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_908a75dedfbfef88c023b9e9",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_9c67f84d4ff9867304c892c1",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "RAY",
+      "snapshot_id": "tos_7ec2fa4d5396aed872ba2d64",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_e3884d84a4e629386813a26d",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_a6886fd0fa5e5c95f4ddfeff",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_c240ad294c6c192650adb133",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_06e363da35e723ec17589e63",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_6df6a4b5de0292faf7f2f069",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "odo_53a3ade0707529d0afa8bee5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_a2fb51f48de1de8d4a266baf",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_6f4240e8198e5a5dcf396cf9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_50ba9c97f1fc6f965e36d128",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_0c96b2c2008f7636798342fc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_6aa6f823939fdb248efdcbf4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_127c5572f579ea277e7145ae",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_7c9551dd7ef8ac2ddbbffaee",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_ce98821074659d18d671f86d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_ebb1416cc57b0bc5cd9328e3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_f7b9652b259bc915a94ea9c0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_2b925ba109f1576bc98c78a0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_5c67c79b5822eb2ab60b1334",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_e34929b626be5e9fc9d82bd7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "RAY",
+      "snapshot_id": "odo_6e3e1d1c8c5e15c1fd383570",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_31346029986d7c5b540f5cf3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_9bd8fba33b0b02f0fb446463",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ZEC",
+      "snapshot_id": "tos_1320cd56474b2b2290e6808d",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_22f8791b749fcde5aeeb497f",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_1ec723616971893844eb12e5",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "tos_691a50a051f95dab2d6efc13",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ETH",
+      "snapshot_id": "tos_05c68f4b99ac0bf31685591e",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "FIL",
+      "snapshot_id": "tos_78f65f7e1ed5f2bbd23a7bbb",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_16104d0e72d40b62d20b6b36",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_f5d57c37aea87065842b56ac",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_0ef811ccc31a346b5fbd61a0",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_8a218d854a7da87a57180e1a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_08f9efdd607e48eef4cc4b29",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_55ad80ff6eaaf164fbdb6240",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ZEC",
+      "snapshot_id": "odo_d893b2f0dfb0d91592007bf8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "odo_8bee93f229005140e2f03990",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_f4b5c35fc74c24c1d90023aa",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_6cfe2146b6e9e96bfeb9c28c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_f4215af8931ed5629267b054",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_cb8f912c73453809d04aed31",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_8d628ecbb9980053af564b3d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "FIL",
+      "snapshot_id": "odo_521fb5b5439da56fb20b906d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PEPE",
+      "snapshot_id": "odo_c171d18ea667dce15b0df9c6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_16ea8cab741a2a85fcce85c6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_f0b6b6ef5fb9057b46487adb",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_ed45d55139c2bc5de8ea4749",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_9af7ae5a9fbc81055e41ec47",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_1090caa6b2cd15e6f1468686",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ETHFI",
+      "snapshot_id": "tos_fd40088905575ac005e55c37",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_ce1e3fc9c696d2b6c2b5ef7b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "FET",
+      "snapshot_id": "tos_c2899c686841b6fcb8aeeaa6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_41a71aad2bf85e9d74ed0a32",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "FIL",
+      "snapshot_id": "tos_f5b8106eb1d0947c66557662",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_0fb4a4af281771f461577b1a",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_73debd3b222943e58e60d682",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_07253c41f1609d679c0506bb",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_89f990010d911180c21ee402",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_008cffb5e123aa68c0f2729a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_e7efe06ddb3f13a09798b51e",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ETHFI",
+      "snapshot_id": "odo_4a5c2c2ac60f82c16b237565",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_42f007e397bbcccc1cade988",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_f0a2eb45054ca72e6cf56f8d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_8cdc665521b515b1f5144c7a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_ee69f1bd8a56554d04e378b6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_fd30371e6a05b9b081330cf3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_61e858be21ee61ad6a6c2d4f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_134a37f5184c6c134ab4bf47",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_f82b94eb0cf7ad406ac3fbac",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_d3b279b796b9db16960679e3",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_90674c00ce33a6fd966a52d3",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_67fb97a45312a0e2f027c6c2",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "tos_596769de16de86fef58d5e01",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_c517b57bfa495a05cdd3d340",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_b4895628fc12c3023069679f",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "DASH",
+      "snapshot_id": "tos_bd60fc3fd1e91c3221993815",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_f9682f1d85e5da9fc70e95c1",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_2c1b70be84eae47080bc5519",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_c008b7320b453c510a5bb8a2",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_10f3e104ad10534f6fc44af5",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_3a54ef3ec180dcaaf94b2f9c",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_41152f2872512704ae256598",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_ee78855168e0beb3cdf6105b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_28b409a6b11b1da9b4608e88",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "odo_9473e78ea55a1b943fd7112d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_0c88fc58d4cbff49c3b351f9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_6b395a860d1df678a822fa9d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_861983853046d2fb06ff4bdd",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_fff885ef161552ba185d2128",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_6c33868febf686d06ffc2ae1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DASH",
+      "snapshot_id": "odo_8912506c4a732e9be2e2043e",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_f8948bf1503766660ff709d5",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "CAKE",
+      "snapshot_id": "tos_8a8d11e8696ea25c3ce8951e",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "tos_79b3fba74031c76d035b5f5f",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_dded63d4330315a30a8bfe01",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_c45c35f237798401e5e062a3",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_adffff41b8a5e6c413e3ff3b",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_43d3cf0ac2c694d3b8177b91",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_528368a6b0b57f30de3e040e",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_397bc2ef13541fcfea32b400",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_9f1a6c3aed7ba7c7b60967df",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_204c169e28d7fd645bdd95d5",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_8cc443aae34294f422c44b83",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_eaf0ff43ee7ee303a92a2bc2",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "CAKE",
+      "snapshot_id": "odo_4881e4bc31e7c7f06941aa88",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_7ae195c144af25d58a0fd7e0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_dbb2add8cf94aa0ff2b3834f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_ebc78be2e83b6ca085bd31cc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_1ae9da9b75330fda5a305f54",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_677e754d6932327dc262a60b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_21a305144158e2dd9cb1e737",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "odo_ab59773b13460bef4001de95",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_61480ef7339294dd82838b0d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_7b84a99173edd148b1fc8eb5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_9779268bde72ff4823173b0a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_966eca151b1960149fa6bbd3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_c279fbc04ea339346d5f5764",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_ea464dc0f724a258372c7708",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_193425b9983d58292518a832",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_768e48e7419d745b68b0f68a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "odo_da30ec1e38ad05b19fcd55e8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SPX",
+      "snapshot_id": "tos_10dc83cb0631f4ec6eb94fac",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_f5616ba4c311fafcce546ab8",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "XRP",
+      "snapshot_id": "tos_855c4379f1827c59c05eb3ad",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_5de9fb5aed0980a647af45a3",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "EURC",
+      "snapshot_id": "tos_3d297e911fc5787ff0cd5a24",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_d509bd768e550f7e725d141d",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_b2b605c646190d9a16f60ea2",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_3dff68b8c17fbca400d6b529",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_55751a986126c8a59e31fd29",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_e6f1d959b8b38bda464351a6",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_52109b87a1f24aa3d8295504",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_ffa50106796b6ca2fc3eaa2b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_e56f060a2cfc74f325fb4538",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_483d58a8202953a7c8eac402",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_9732fc50228cd27be6bcafef",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XRP",
+      "snapshot_id": "odo_ba9a80a8c172a312d971f214",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SPX",
+      "snapshot_id": "odo_b9eeea3b45e41974500c5d8f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_291d5bcde3f6aa4c5e151970",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_b2ecf5e251651184c3655249",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_935a045aa12ac0238b1ac49a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_db98e31d61e6ab849bcc095b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_3ade1a0865406b9dcafcc3ca",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_517e44757a8121836fe79205",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_342dc7e9afb76cd999243b28",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_9b75f5a353c1019f9e01ff4c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SPX",
+      "snapshot_id": "tos_7ba37895d245c9ed20d144a1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "tos_9178fb2a385f85235548694b",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_5ba05fd4842061d29ef99ef0",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PENDLE",
+      "snapshot_id": "tos_f8ea39e3dd538e7e0788b718",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_1529b27983e0f918df58cbfe",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_eaae21ad02514ee1c433efde",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_db338ec643ef1d327ea85fa4",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_adf7c75aa676280f519c46b2",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_494bc1dfebfdd4d3660fcfe5",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_650f028dd0511ed6b61cebb8",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "QNT",
+      "snapshot_id": "tos_969b500cb509b6a737ff8cb8",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_ed7e912d010636d9422edd4b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "odo_602a67b7ecc2c3771f26381c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SPX",
+      "snapshot_id": "odo_9b7a3c09d9968d917857ac72",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PENDLE",
+      "snapshot_id": "odo_7a7d21f378a25946afa206c8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_9321f37783a7ddea5bb24b1c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_6761b5cd72e7e5ae088b21e0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "QNT",
+      "snapshot_id": "odo_b18d304fc6434a8534428f17",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_ca01998c6164b95f5e3b5693",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_972fc55e7c3294f59ab560bc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_1861032b487285ef189bae83",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_2ec4948ad07afb51b6ebb500",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_f677f8cb65fe22ab1e37fd9a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PENDLE",
+      "snapshot_id": "odo_0644131ffea402439ff04c38",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_0e583024d841e512076b3417",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_3da36a49a6846ab90160d289",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_1c4fc888606f3067462fa0a3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_1bb4e25e8ddd058d9750f4c8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_230948ac9e174f4cd389c411",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_4dae0367a6a5ff554f5d2daf",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_65933f17b1046c824f0f59af",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PENDLE",
+      "snapshot_id": "tos_4e28e5838dd6766d1ed4716b",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ASTER",
+      "snapshot_id": "tos_66f977f5a40c47ebfab861b1",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_006cb3070d55b85856bb1bb5",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_bc322228ea662d145616a7cc",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_fc2ea5d328acfe9ee067f0ae",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_3c5c45fa658d750399583b6b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_e2030167cf710d71018a26e0",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_c16e195f8d12d7d7e287dd38",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_84af687951056f024a7a48dc",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "RAY",
+      "snapshot_id": "tos_20e1477143b9cff3ead75454",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "RAY",
+      "snapshot_id": "odo_a2f2763a66518ac7d65cfd5c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_ac1b8c326795521583104ead",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_3a29272e7530a771485370cc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ASTER",
+      "snapshot_id": "odo_a14f3a825f29a62fa5597978",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_5470f956498da9d6016fb819",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_79942133215e83b82f1f0f31",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_d87dd1b15a14020b5e2c52b9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_b375647e77b3846c6a1d109d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_bcb69605812657d9292f33db",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_1290dcafc6ddeed859c63cfd",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_25458660b605cae7b296c7b3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_8072d6222900f70a11105216",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_27618174f6e2141ee29eff47",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_7eb5f39e0979cdff80f8f1ef",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_b3c6e9e8ed3c6ec63bd5ce1b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_0c36cdf3228620a41489c12a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_8f6cdd1968b871c74919a4fa",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_ad8161f29e053af1e38f8a9c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "CAKE",
+      "snapshot_id": "tos_6d95e4adfed789b515436ddc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_57b9b85fa348cde89ae4ae49",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_173a0899bded65e9221e6fdb",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_5fda2be7d8e6b2b52fee6cac",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_c060f02e1defb19e4789e433",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_46b8d5e0655ffa658b0940ef",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_e98ca8bac2bf85694d3aea89",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "SPX",
+      "snapshot_id": "tos_31969cfc0b1199eb0208df3f",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_3f6fd1c7c2613a873aed72be",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_b49f60c43d7f81a859040c11",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_55d5dc9e4f02f83474b9c071",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DRV",
+      "snapshot_id": "tos_60261e4006583a973d9d8b48",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DRV",
+      "snapshot_id": "odo_55cb8021cbd7ce5f00a7e728",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "CAKE",
+      "snapshot_id": "odo_c432f050be135304edbf4e67",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_cfe84e9373c27a9d10d6ea61",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_2ba1d194b57de29abeb12197",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_d5a689f369c6c790ca56b2ba",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_cbe6f3dabc5c73a8659b79d0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_10114fc58f7be28791528286",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_28991db56e746d0df8c7e805",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_12654952222464f52a7c07b0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DRV",
+      "snapshot_id": "odo_177f9a6cd906ed721fb33929",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_f4e2809666ff26c62da0f7a8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_85a897d735ae7666197ad99b",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "tos_8c1a0fa068999b033f347914",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ZRO",
+      "snapshot_id": "tos_56f08c8e393aaa9439155311",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_aab6ad45757ea2188c59e9e4",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_4685f66bbdb624a266b4577a",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "SPX",
+      "snapshot_id": "tos_3b1c012c47be1bddbd9b9186",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_544adaabbdfcb3455834e56f",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_4ed945fb16fec59e46cd82d8",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_578fe1a1ec22bb8f5fe7761a",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_368a8a3c02d30de7852cd776",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_b8010d1ebe9c188f4a499461",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_82cb2773d5b189901ef570e2",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ZRO",
+      "snapshot_id": "odo_212800b1fa59af27ebad04b0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "odo_b4ed8df7d97f4d5f5f423a10",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_800342b60d2657458ec5a323",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_701ea14ef08ad67681612f8c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_06bd2ae9bc27efe13d45dcf6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_cfb4821530fe01d464607c38",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_bb9a1a5964b38e5a979dcbd4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_d28fe4666ab49f96bdb0498b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_4a84366a3a5fc7f22f5b3989",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_911b6b29ffec5f4cdc8c3a8d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_b1c2aa7d884e712980075878",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_a84d9a58a31e03e6c6114138",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_2acc11f5fbccd94e530c0b8f",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_60a970b588407ea4ec1e8df7",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_0926ff7f2565ac8c67d598c2",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_65cae8e885d932ecb97c5e57",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_3b4cc2d780341b4b54d3c545",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_6e2f9252d328b7997f64d320",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DRV",
+      "snapshot_id": "tos_d422f386c9e5d6cca24fea50",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_512c7e9f3c1543628dd36bf3",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_a780918a10a24b82e0fc21c1",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_ec0cd36928e85c0229887a4b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_ae7c6bff1da509ef008b4b0a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_faf57b289b4c4da38c95a738",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_691d91cb917be8129e85e848",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_ff6e8732b4e35e761994b2ef",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_f6fe9864655a8353ccb7a986",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_169ac4fbe2dea4b332524c76",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_16a7f39eb4d45a7c913789de",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_745566aa85211052ebe6beef",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_cbd71402cb7d8d9ec9bcaa85",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_9d3f3114413d845be5c19a71",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_3a6b25f5c12db6853ad18e99",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_266289e8acffd21330b29a82",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_d1339a1045792ec374b05c7f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_a57c52b7e1c30c9ce228f554",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_8b694eb9855471d30ac22a90",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_cf560424f0f54b66698f8fcc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_f207ffc44f0a18d2f683a07c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_ad6b50bbdb12df41d1d5f7ec",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_c0ef01451f495b70637a6c2d",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_c4f6a58795f380d206a989af",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_1dca94154109a27bbb72682d",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_5cc7fd8a81b5400ff9a5d613",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_52f16abb8d602e499bc054db",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_312fc5e2fe427726dfadb4c0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DRV",
+      "snapshot_id": "tos_a43b13d64f89b2c9ec4b3537",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_f0e3fc7d3b5109c2dcade53b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_bdc1205edd77d6374fcb1d5d",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_dcb7d78605cba9f47f0f030b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_c759eaa8a98bcddfb4b5a7b9",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_1e457b822902b00f2c5fd1b1",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_7902a3f667f437222cca6fc4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_ce67088587fad38c43244eec",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_4cecd17852e129ace348488c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_5ca1ad73bc8391fbf588a67c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_884415af4c0eb8127145787c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_054c1bc3248d92f557bc4e57",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_664b7ad46d0a659387178e02",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_965720c00b0a701c72f106e1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_645108870b83217e9e24b944",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_fc634e146189cc21d58524a6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_62989c12f2523e7f53b6958f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_e8e6424fa78ae3b1c067476c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_efcc8bae2af1c409994ae275",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_f96ac6e69916bc8d010c97b0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_2e7adf515a1ad3d08336404a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_c10e7016fe1a99773777e899",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_8631215e9a0ecfc14ed79307",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_5ea91655d934fa9026116a30",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_2c6e83b73d933b9ca738d639",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_29353c12ba7fba9790b7eda6",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_bb59909217b9a4a31eb26458",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_5e75699c4f713c11f0758c56",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DRV",
+      "snapshot_id": "tos_32a0635706dc132ad54b085d",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_7dc1bb4b75f15146fdfa1112",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_1213127bdaa0c9c0cbd36ec3",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_01b30ca9c68b88f3bc86d25a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_130dc6b510d84a74e4862684",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_64b85a068ad8c0501f03dc2c",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_df12f816920a8b14c1158db0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_b25a39ded3fd8d39fc1504f8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_32e4116229ff70aa47dbcf80",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_9909a6c2e57bc8643739120c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_5c3f7b67daa8200463993d9c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_de8c488aa3988a7e883bef1a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_26c30dda36e332522a755ff0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_bfa82a4c0be2d81acb9f9f0b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_1f9ac8196d7aef144858fb6e",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_8f10fc2e2449d16104f2b219",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_4f15c53016f1fbb9d00349e8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_be4774888bc354d58da683a6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_bd8089c3986907e398a8192f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_2e93ce2eb6f8db2cef0ab01b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ONDO",
+      "snapshot_id": "tos_a38d36d4a01e6ee1953400cb",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_3c5a7b7d2c8b999f187e0bca",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_5d4f1047d546f90f44f6e367",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_f91e7bbac12466b87b3b75e4",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_bc831f0e48d628d10da538a0",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_44cce5947751347c0405c6c8",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_c72b4199bee9f583ce8769ee",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_2c01763d1623fab76c5976e1",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_d64ab09b6fed85cf34da215b",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_d2433b77539b4914aacbdb49",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "SKY",
+      "snapshot_id": "tos_f3b4db9a2d8608afbc6b4b0e",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "GRASS",
+      "snapshot_id": "tos_6da7b85f6582f57c35c80908",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ONDO",
+      "snapshot_id": "odo_5c1a644764c503c1fde5717c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "GRASS",
+      "snapshot_id": "odo_5964cf2941fcb636a2b7c324",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_d65bb199de836f63e49601e3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SKY",
+      "snapshot_id": "odo_e28f7575bacb689acbf8ced3",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_4725c939522fddf04fac4227",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_cc01b49655c28ec1eab7cfa4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_04cd4e6e682e94022c18486c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_a8b324532af66d017468848e",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_30d7d3670507a83277c9bcf9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_c3a7db48ccd3586ab0d65eb9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_f3e2adb712d69a38a37da2e5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_345fc3bc3c5f525df2ae4746",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_429959f81f925c2335197763",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_495a0f8f0babc18bb9f0c7a4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_5d92b4bcf86ce60db615e505",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_6e10dd01d604e0292f942564",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_4a5c7b1de1ce6f1ce04ac328",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "ICP",
+      "snapshot_id": "tos_02e479b5052cca2fcc7b8225",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_c929fd37c366f2697aa0076d",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_5a104d5ec8b8e9adb48d8194",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_eeb13b8f43be29f8ffffca05",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_a643b6970b3900d9e737ec97",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_9ee57cb1e0a3ba7660b8cb89",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "tos_3c60257c0d65d11905da8978",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ZRO",
+      "snapshot_id": "tos_f126f1f65d7ab11e629371af",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_b971a7fee733598276d000af",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_0f1cf18d90a1ec975142e15f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_aa1ed34c7a0ae3b8f551a783",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_41f3d299f281aba0f9a678a5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_659aead939ad6a3f5a1141a5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "odo_9ae58d776b5558073a6a3428",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_249bf9116364331f380b2302",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ZRO",
+      "snapshot_id": "odo_2c0fad5fdc496b993d250b7c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_1099c68a1c25bf89610534d1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_0a838051022de1715afacd7b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "odo_b5401632b076657e2ea7ebd0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_248931932ff0968a0ba7cf7d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_e734edacc278ebd0da5755e5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_efaa9763bf4cb7e03627a5a0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "STX",
+      "snapshot_id": "tos_23507229ec90289f92e5c80f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_e457a25fb6edd7e7a343b897",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "tos_db08a6308b5fa690bbbebc2a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_7b638858d9302edc9637469e",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_dbf114b6b6f2d26bf0081d46",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_80408800c81d5b83682ae476",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_8ffa6936c91de1e085d9f035",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_dacfdfd3881c1a05bd9eff1c",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_515a63918734b33474a8b100",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_a71af63d7e39349727c1c62a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_16760ba1be107b0390fc68d5",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_cc86b0130c268d6ba9550751",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "STX",
+      "snapshot_id": "odo_3fcf47d8f57de8ffec122bd6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_1b1011c6e65a74aaaa605980",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_e09b12cff52a6aac15337ca5",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_fadb9247a35aa07783c81bb7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "odo_8bd41ba396cf64d44b8c057d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_4c5ebc64d0c31335891dae9d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_31722e9e68c87fabb373ad53",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_b14d47dfa747c6eb0ca9771b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_a588352c58a8b4a48d48d468",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_b5f27a2ef6d3b5e2c207014a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_de6725031d752a9d7d1c6e26",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_3c64a8fece51582c1e661a62",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_ede7a882ecd892a659718bc9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_885804a0c71798313ad19838",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "odo_25c70915b0a7428a9362c0e1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "odo_7577fd42eca8268793527d9b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_0f375b1c9676cbce800a659b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_41d6252bf79511e417925251",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_0060b2d005a66e511d1150a1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "STX",
+      "snapshot_id": "tos_a7f9e46bcb488765bd6ce483",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "tos_95595166a40f9b089f0e659a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "tos_f0716ae31937d048f3c9abac",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_0f1428854ca2cae58e225cda",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_04ce5b2e713908a27cfb0894",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_a1c904d69c924a15834e0747",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_9bd9951ce845ec047a4174e9",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_08860972c136d67e81a38dc7",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_c8a8dcce062c72ed92321223",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_5f3ea99ab6747e37f44fbcc5",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_6180330643a3165e97f7f6a7",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_7aa4f6eee7a0c01d3739d5e7",
+      "status": "AVOID_COUNTERFACTUAL"
+    }
+  ],
+  "generated_at_utc": "2026-10-12T17:04:11.815569+00:00",
+  "look_ahead_policy": "ONLY_CANDLES_STARTING_AFTER_SNAPSHOT_AND_COMPLETED_BY_AS_OF",
+  "minimum_sample_for_published_edge": 20,
+  "purpose": "FORWARD_VALIDATION_ONLY",
+  "results": {
+    "by_actionability_bucket": [
+      {
+        "counterfactual_only": false,
+        "group": "0-20",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "snapshot_count": 45,
+        "triggered_count": 0
+      },
+      {
+        "counterfactual_only": false,
+        "group": "20-40",
+        "return_12h": {
+          "mean_return_pct": -0.900234679477599,
+          "positive_rate_pct": 40.27777777777778,
+          "sample_size": 72,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": -0.6785131445214261,
+          "positive_rate_pct": 41.666666666666664,
+          "sample_size": 72,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 0.5098013561246849,
+          "positive_rate_pct": 38.888888888888886,
+          "sample_size": 72,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": -0.309066784692728,
+          "positive_rate_pct": 36.111111111111114,
+          "sample_size": 72,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.4829960759466867,
+          "positive_rate_pct": 56.94444444444444,
+          "sample_size": 72,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 4.410815917430124,
+          "positive_rate_pct": 63.888888888888886,
+          "sample_size": 72,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 384,
+        "triggered_count": 73
+      },
+      {
+        "counterfactual_only": false,
+        "group": "40-60",
+        "return_12h": {
+          "mean_return_pct": 2.548329313053258,
+          "positive_rate_pct": 83.33333333333333,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 2.9884555167557227,
+          "positive_rate_pct": 76.66666666666667,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 3.5845415417068294,
+          "positive_rate_pct": 80.0,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.4392971175069312,
+          "positive_rate_pct": 80.0,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 5.851714388292365,
+          "positive_rate_pct": 93.33333333333333,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.8127814875356747,
+          "positive_rate_pct": 83.33333333333333,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 64,
+        "triggered_count": 30
+      },
+      {
+        "counterfactual_only": false,
+        "group": "60-80",
+        "return_12h": {
+          "mean_return_pct": 0.4522984274288655,
+          "positive_rate_pct": 46.15384615384615,
+          "sample_size": 65,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.5485499686519996,
+          "positive_rate_pct": 48.4375,
+          "sample_size": 64,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 2.6677998984327944,
+          "positive_rate_pct": 51.5625,
+          "sample_size": 64,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.5272951899492886,
+          "positive_rate_pct": 53.84615384615385,
+          "sample_size": 65,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.7214890963811285,
+          "positive_rate_pct": 60.317460317460316,
+          "sample_size": 63,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.214083736889808,
+          "positive_rate_pct": 63.492063492063494,
+          "sample_size": 63,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 91,
+        "triggered_count": 65
+      },
+      {
+        "counterfactual_only": false,
+        "group": "80-100",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 3,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 3,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 3,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 3,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 3,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 3,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "snapshot_count": 4,
+        "triggered_count": 3
+      },
+      {
+        "counterfactual_only": false,
+        "group": "MISSING",
+        "return_12h": {
+          "mean_return_pct": 0.12852096618556122,
+          "positive_rate_pct": 46.63677130044843,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.4593370766048316,
+          "positive_rate_pct": 48.03695150115473,
+          "sample_size": 433,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 1.5111747457412164,
+          "positive_rate_pct": 48.711943793911004,
+          "sample_size": 427,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.02751671431950617,
+          "positive_rate_pct": 49.327354260089685,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.067478145246657,
+          "positive_rate_pct": 53.521126760563384,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.381107620829102,
+          "positive_rate_pct": 51.40845070422535,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 479,
+        "triggered_count": 0
+      }
+    ],
+    "by_daily_score_bucket": [
+      {
+        "counterfactual_only": false,
+        "group": "0-20",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 4,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 4,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 4,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 4,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 4,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 4,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "snapshot_count": 82,
+        "triggered_count": 4
+      },
+      {
+        "counterfactual_only": false,
+        "group": "20-40",
+        "return_12h": {
+          "mean_return_pct": -0.7149469695872228,
+          "positive_rate_pct": 48.78048780487805,
+          "sample_size": 82,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": -0.696821772888163,
+          "positive_rate_pct": 46.34146341463415,
+          "sample_size": 82,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 0.4991373068961354,
+          "positive_rate_pct": 47.5609756097561,
+          "sample_size": 82,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": -0.34441097887984523,
+          "positive_rate_pct": 45.1219512195122,
+          "sample_size": 82,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 2.7452284643310856,
+          "positive_rate_pct": 60.97560975609756,
+          "sample_size": 82,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.5456126126872736,
+          "positive_rate_pct": 67.07317073170732,
+          "sample_size": 82,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 381,
+        "triggered_count": 83
+      },
+      {
+        "counterfactual_only": false,
+        "group": "40-60",
+        "return_12h": {
+          "mean_return_pct": 1.2891677193939302,
+          "positive_rate_pct": 50.0,
+          "sample_size": 54,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 2.1502948255185217,
+          "positive_rate_pct": 50.943396226415096,
+          "sample_size": 53,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 3.003247379037586,
+          "positive_rate_pct": 52.83018867924528,
+          "sample_size": 53,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.44289493251829143,
+          "positive_rate_pct": 46.2962962962963,
+          "sample_size": 54,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 4.157943181011961,
+          "positive_rate_pct": 69.23076923076923,
+          "sample_size": 52,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 2.7767530818094532,
+          "positive_rate_pct": 63.46153846153846,
+          "sample_size": 52,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 92,
+        "triggered_count": 54
+      },
+      {
+        "counterfactual_only": false,
+        "group": "60-80",
+        "return_12h": {
+          "mean_return_pct": 0.9627795682064533,
+          "positive_rate_pct": 53.333333333333336,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.6615701580203999,
+          "positive_rate_pct": 56.666666666666664,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 4.216075975826325,
+          "positive_rate_pct": 60.0,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.4880915441804934,
+          "positive_rate_pct": 73.33333333333333,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 5.929191238105663,
+          "positive_rate_pct": 63.333333333333336,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 5.617233046643203,
+          "positive_rate_pct": 73.33333333333333,
+          "sample_size": 30,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 33,
+        "triggered_count": 30
+      },
+      {
+        "counterfactual_only": false,
+        "group": "MISSING",
+        "return_12h": {
+          "mean_return_pct": 0.12852096618556122,
+          "positive_rate_pct": 46.63677130044843,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.4593370766048316,
+          "positive_rate_pct": 48.03695150115473,
+          "sample_size": 433,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 1.5111747457412164,
+          "positive_rate_pct": 48.711943793911004,
+          "sample_size": 427,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.02751671431950617,
+          "positive_rate_pct": 49.327354260089685,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.067478145246657,
+          "positive_rate_pct": 53.521126760563384,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.381107620829102,
+          "positive_rate_pct": 51.40845070422535,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 479,
+        "triggered_count": 0
+      }
+    ],
+    "by_opportunity_family": [
+      {
+        "counterfactual_only": false,
+        "group": "CONTINUATION",
+        "return_12h": {
+          "mean_return_pct": 0.1974361169962825,
+          "positive_rate_pct": 46.93877551020408,
+          "sample_size": 245,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.5492010309082525,
+          "positive_rate_pct": 48.93617021276596,
+          "sample_size": 235,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 1.1730641144285303,
+          "positive_rate_pct": 49.13793103448276,
+          "sample_size": 232,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.01069734816763318,
+          "positive_rate_pct": 48.57142857142857,
+          "sample_size": 245,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 1.7743351260732048,
+          "positive_rate_pct": 49.35064935064935,
+          "sample_size": 231,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 2.8998750132814113,
+          "positive_rate_pct": 50.64935064935065,
+          "sample_size": 231,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 262,
+        "triggered_count": 0
+      },
+      {
+        "counterfactual_only": false,
+        "group": "MISSING",
+        "return_12h": {
+          "mean_return_pct": 0.1363479808805187,
+          "positive_rate_pct": 50.23474178403756,
+          "sample_size": 213,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.19565842792444504,
+          "positive_rate_pct": 48.113207547169814,
+          "sample_size": 212,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 1.7861274087817576,
+          "positive_rate_pct": 50.943396226415096,
+          "sample_size": 212,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.2877303684068016,
+          "positive_rate_pct": 58.21596244131455,
+          "sample_size": 213,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 4.547827074045903,
+          "positive_rate_pct": 67.29857819905213,
+          "sample_size": 211,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.2348412591275073,
+          "positive_rate_pct": 62.08530805687204,
+          "sample_size": 211,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 631,
+        "triggered_count": 171
+      },
+      {
+        "counterfactual_only": false,
+        "group": "REVERSAL",
+        "return_12h": {
+          "mean_return_pct": 0.11697135362100224,
+          "positive_rate_pct": 44.30379746835443,
+          "sample_size": 158,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.6976992257942277,
+          "positive_rate_pct": 49.03225806451613,
+          "sample_size": 155,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 2.096141986637759,
+          "positive_rate_pct": 47.36842105263158,
+          "sample_size": 152,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": -0.17066892881826337,
+          "positive_rate_pct": 40.50632911392405,
+          "sample_size": 158,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.902824819409305,
+          "positive_rate_pct": 52.63157894736842,
+          "sample_size": 152,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 4.805354822482654,
+          "positive_rate_pct": 55.26315789473684,
+          "sample_size": 152,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 174,
+        "triggered_count": 0
+      }
+    ],
+    "by_planned_trade_family": [
+      {
+        "counterfactual_only": false,
+        "group": "CONSOLIDATION_RANGE",
+        "return_12h": {
+          "mean_return_pct": -0.6967831668426522,
+          "positive_rate_pct": 47.674418604651166,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": -0.6281450660634743,
+          "positive_rate_pct": 47.674418604651166,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 0.44764488817220677,
+          "positive_rate_pct": 46.51162790697674,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": -0.16150929359847715,
+          "positive_rate_pct": 46.51162790697674,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.0448584519295614,
+          "positive_rate_pct": 61.627906976744185,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.8322856817987043,
+          "positive_rate_pct": 67.44186046511628,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 105,
+        "triggered_count": 87
+      },
+      {
+        "counterfactual_only": false,
+        "group": "MISSING",
+        "return_12h": {
+          "mean_return_pct": 0.12852096618556122,
+          "positive_rate_pct": 46.63677130044843,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.4593370766048316,
+          "positive_rate_pct": 48.03695150115473,
+          "sample_size": 433,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 1.5111747457412164,
+          "positive_rate_pct": 48.711943793911004,
+          "sample_size": 427,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.02751671431950617,
+          "positive_rate_pct": 49.327354260089685,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.067478145246657,
+          "positive_rate_pct": 53.521126760563384,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.381107620829102,
+          "positive_rate_pct": 51.40845070422535,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 829,
+        "triggered_count": 0
+      },
+      {
+        "counterfactual_only": false,
+        "group": "MOMENTUM_BREAKOUT",
+        "return_12h": {
+          "mean_return_pct": 1.17260052254126,
+          "positive_rate_pct": 51.19047619047619,
+          "sample_size": 84,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 1.6122015722059477,
+          "positive_rate_pct": 53.01204819277108,
+          "sample_size": 83,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 3.44161916100942,
+          "positive_rate_pct": 55.42168674698795,
+          "sample_size": 83,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.4590365795405064,
+          "positive_rate_pct": 55.95238095238095,
+          "sample_size": 84,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 4.805960762875511,
+          "positive_rate_pct": 67.07317073170732,
+          "sample_size": 82,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.8159530689437515,
+          "positive_rate_pct": 67.07317073170732,
+          "sample_size": 82,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 133,
+        "triggered_count": 84
+      }
+    ],
+    "by_recommendation": [
+      {
+        "counterfactual_only": false,
+        "group": "ACTIONABLE",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 19,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 19,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 19,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 19,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 19,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 19,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "snapshot_count": 19,
+        "triggered_count": 19
+      },
+      {
+        "counterfactual_only": true,
+        "group": "AVOID",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "snapshot_count": 204,
+        "triggered_count": 0
+      },
+      {
+        "counterfactual_only": false,
+        "group": "HIGH_PRIORITY_WATCH",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "snapshot_count": 34,
+        "triggered_count": 0
+      },
+      {
+        "counterfactual_only": false,
+        "group": "MISSING",
+        "return_12h": {
+          "mean_return_pct": 0.12852096618556122,
+          "positive_rate_pct": 46.63677130044843,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.4593370766048316,
+          "positive_rate_pct": 48.03695150115473,
+          "sample_size": 433,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 1.5111747457412164,
+          "positive_rate_pct": 48.711943793911004,
+          "sample_size": 427,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.02751671431950617,
+          "positive_rate_pct": 49.327354260089685,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.067478145246657,
+          "positive_rate_pct": 53.521126760563384,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.381107620829102,
+          "positive_rate_pct": 51.40845070422535,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 479,
+        "triggered_count": 0
+      },
+      {
+        "counterfactual_only": false,
+        "group": "SPECULATIVE_REVIEW",
+        "return_12h": {
+          "mean_return_pct": 0.14479324611706848,
+          "positive_rate_pct": 49.66887417218543,
+          "sample_size": 151,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.24597303530501563,
+          "positive_rate_pct": 46.666666666666664,
+          "sample_size": 150,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 1.3177993302405064,
+          "positive_rate_pct": 47.333333333333336,
+          "sample_size": 150,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.08230169403208905,
+          "positive_rate_pct": 47.682119205298015,
+          "sample_size": 151,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.345851971862439,
+          "positive_rate_pct": 62.41610738255034,
+          "sample_size": 149,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.5683093888661324,
+          "positive_rate_pct": 67.78523489932886,
+          "sample_size": 149,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 185,
+        "triggered_count": 152
+      },
+      {
+        "counterfactual_only": false,
+        "group": "WATCH",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "snapshot_count": 146,
+        "triggered_count": 0
+      }
+    ],
+    "by_setup_quality_bucket": [
+      {
+        "counterfactual_only": true,
+        "group": "0-20",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "snapshot_count": 25,
+        "triggered_count": 0
+      },
+      {
+        "counterfactual_only": false,
+        "group": "20-40",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 9,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 9,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 9,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 9,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 9,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 9,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "snapshot_count": 173,
+        "triggered_count": 9
+      },
+      {
+        "counterfactual_only": false,
+        "group": "40-60",
+        "return_12h": {
+          "mean_return_pct": 0.6193386672438782,
+          "positive_rate_pct": 51.886792452830186,
+          "sample_size": 106,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.5178672884704353,
+          "positive_rate_pct": 50.476190476190474,
+          "sample_size": 105,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 0.5628617541414478,
+          "positive_rate_pct": 47.61904761904762,
+          "sample_size": 105,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.38988478239230817,
+          "positive_rate_pct": 52.83018867924528,
+          "sample_size": 106,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 2.334935026242157,
+          "positive_rate_pct": 65.38461538461539,
+          "sample_size": 104,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 1.78552183279852,
+          "positive_rate_pct": 62.5,
+          "sample_size": 104,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 291,
+        "triggered_count": 106
+      },
+      {
+        "counterfactual_only": false,
+        "group": "60-80",
+        "return_12h": {
+          "mean_return_pct": -0.2946925330972827,
+          "positive_rate_pct": 43.63636363636363,
+          "sample_size": 55,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.26306498315328813,
+          "positive_rate_pct": 49.09090909090909,
+          "sample_size": 55,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 4.859387595273833,
+          "positive_rate_pct": 58.18181818181818,
+          "sample_size": 55,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.06686910558722069,
+          "positive_rate_pct": 50.90909090909091,
+          "sample_size": 55,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 6.978740571013976,
+          "positive_rate_pct": 63.63636363636363,
+          "sample_size": 55,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 7.6690145147554505,
+          "positive_rate_pct": 74.54545454545455,
+          "sample_size": 55,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 99,
+        "triggered_count": 56
+      },
+      {
+        "counterfactual_only": false,
+        "group": "MISSING",
+        "return_12h": {
+          "mean_return_pct": 0.12852096618556122,
+          "positive_rate_pct": 46.63677130044843,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.4593370766048316,
+          "positive_rate_pct": 48.03695150115473,
+          "sample_size": 433,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 1.5111747457412164,
+          "positive_rate_pct": 48.711943793911004,
+          "sample_size": 427,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.02751671431950617,
+          "positive_rate_pct": 49.327354260089685,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.067478145246657,
+          "positive_rate_pct": 53.521126760563384,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.381107620829102,
+          "positive_rate_pct": 51.40845070422535,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 479,
+        "triggered_count": 0
+      }
+    ],
+    "by_technical_action": [
+      {
+        "counterfactual_only": true,
+        "group": "AVOID",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "COUNTERFACTUAL_EXCLUDED"
+        },
+        "snapshot_count": 204,
+        "triggered_count": 0
+      },
+      {
+        "counterfactual_only": false,
+        "group": "BUY_NOW",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 2,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 2,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 2,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 2,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 2,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 2,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "snapshot_count": 2,
+        "triggered_count": 2
+      },
+      {
+        "counterfactual_only": false,
+        "group": "BUY_ON_BREAKOUT",
+        "return_12h": {
+          "mean_return_pct": 1.2164506839790545,
+          "positive_rate_pct": 52.4390243902439,
+          "sample_size": 82,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 1.67424897202212,
+          "positive_rate_pct": 54.32098765432099,
+          "sample_size": 81,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 3.5688099390941384,
+          "positive_rate_pct": 56.79012345679013,
+          "sample_size": 81,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.48307627485772847,
+          "positive_rate_pct": 56.09756097560975,
+          "sample_size": 82,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 5.100544761275272,
+          "positive_rate_pct": 68.75,
+          "sample_size": 80,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.9035951357623295,
+          "positive_rate_pct": 67.5,
+          "sample_size": 80,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 97,
+        "triggered_count": 82
+      },
+      {
+        "counterfactual_only": false,
+        "group": "BUY_ON_PULLBACK",
+        "return_12h": {
+          "mean_return_pct": -0.6967831668426522,
+          "positive_rate_pct": 47.674418604651166,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": -0.6281450660634743,
+          "positive_rate_pct": 47.674418604651166,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 0.44764488817220677,
+          "positive_rate_pct": 46.51162790697674,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": -0.16150929359847715,
+          "positive_rate_pct": 46.51162790697674,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.0448584519295614,
+          "positive_rate_pct": 61.627906976744185,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.8322856817987043,
+          "positive_rate_pct": 67.44186046511628,
+          "sample_size": 86,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 105,
+        "triggered_count": 87
+      },
+      {
+        "counterfactual_only": false,
+        "group": "MISSING",
+        "return_12h": {
+          "mean_return_pct": 0.12852096618556122,
+          "positive_rate_pct": 46.63677130044843,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.4593370766048316,
+          "positive_rate_pct": 48.03695150115473,
+          "sample_size": 433,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 1.5111747457412164,
+          "positive_rate_pct": 48.711943793911004,
+          "sample_size": 427,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.02751671431950617,
+          "positive_rate_pct": 49.327354260089685,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.067478145246657,
+          "positive_rate_pct": 53.521126760563384,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.381107620829102,
+          "positive_rate_pct": 51.40845070422535,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 479,
+        "triggered_count": 0
+      },
+      {
+        "counterfactual_only": false,
+        "group": "WATCH",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 0,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "snapshot_count": 180,
+        "triggered_count": 0
+      }
+    ],
+    "by_weekly_score_bucket": [
+      {
+        "counterfactual_only": false,
+        "group": "0-20",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 8,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 8,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 8,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 8,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 8,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 8,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "snapshot_count": 124,
+        "triggered_count": 8
+      },
+      {
+        "counterfactual_only": false,
+        "group": "20-40",
+        "return_12h": {
+          "mean_return_pct": 1.387455777954581,
+          "positive_rate_pct": 45.65217391304348,
+          "sample_size": 46,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 1.7199370153096825,
+          "positive_rate_pct": 57.77777777777778,
+          "sample_size": 45,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 0.3813630677604539,
+          "positive_rate_pct": 42.22222222222222,
+          "sample_size": 45,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.7734073902754912,
+          "positive_rate_pct": 60.869565217391305,
+          "sample_size": 46,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 4.14931043536858,
+          "positive_rate_pct": 64.44444444444444,
+          "sample_size": 45,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 2.6601150886407066,
+          "positive_rate_pct": 64.44444444444444,
+          "sample_size": 45,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 237,
+        "triggered_count": 46
+      },
+      {
+        "counterfactual_only": false,
+        "group": "40-60",
+        "return_12h": {
+          "mean_return_pct": -0.19275250496000895,
+          "positive_rate_pct": 50.48543689320388,
+          "sample_size": 103,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": -0.26462064958927367,
+          "positive_rate_pct": 45.63106796116505,
+          "sample_size": 103,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 2.2595808401060817,
+          "positive_rate_pct": 51.45631067961165,
+          "sample_size": 103,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.03984373569069148,
+          "positive_rate_pct": 49.51456310679612,
+          "sample_size": 103,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.097340002760404,
+          "positive_rate_pct": 63.72549019607843,
+          "sample_size": 102,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.64879281681866,
+          "positive_rate_pct": 69.6078431372549,
+          "sample_size": 102,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 211,
+        "triggered_count": 103
+      },
+      {
+        "counterfactual_only": false,
+        "group": "60-80",
+        "return_12h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 13,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_24h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 13,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_48h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 13,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_4h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 13,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_72h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 13,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "return_96h": {
+          "mean_return_pct": null,
+          "positive_rate_pct": null,
+          "sample_size": 13,
+          "status": "INSUFFICIENT_SAMPLE"
+        },
+        "snapshot_count": 16,
+        "triggered_count": 14
+      },
+      {
+        "counterfactual_only": false,
+        "group": "MISSING",
+        "return_12h": {
+          "mean_return_pct": 0.12852096618556122,
+          "positive_rate_pct": 46.63677130044843,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_24h": {
+          "mean_return_pct": 0.4593370766048316,
+          "positive_rate_pct": 48.03695150115473,
+          "sample_size": 433,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_48h": {
+          "mean_return_pct": 1.5111747457412164,
+          "positive_rate_pct": 48.711943793911004,
+          "sample_size": 427,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_4h": {
+          "mean_return_pct": 0.02751671431950617,
+          "positive_rate_pct": 49.327354260089685,
+          "sample_size": 446,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_72h": {
+          "mean_return_pct": 3.067478145246657,
+          "positive_rate_pct": 53.521126760563384,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "return_96h": {
+          "mean_return_pct": 3.381107620829102,
+          "positive_rate_pct": 51.40845070422535,
+          "sample_size": 426,
+          "status": "FORWARD_SAMPLE_AVAILABLE"
+        },
+        "snapshot_count": 479,
+        "triggered_count": 0
+      }
+    ]
+  },
+  "totals": {
+    "events": 3948,
+    "snapshots": 1067
+  },
+  "unresolved_observations": 533
+}

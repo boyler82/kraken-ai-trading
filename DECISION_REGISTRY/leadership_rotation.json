@@ -1,0 +1,194 @@
+{
+  "bottom_sectors": [
+    {
+      "asset_count": 3,
+      "average_momentum_score": 24.496033333333333,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -5.656344552465512,
+      "classification": "LAGGING",
+      "eligible_asset_count": 3,
+      "equal_weight_return_24h": -4.7878519216855855,
+      "equal_weight_return_48h": -2.653847115624693,
+      "equal_weight_return_4h": -3.089520506008199,
+      "equal_weight_return_7d": -7.7625517270682565,
+      "leadership_rank": 9,
+      "leadership_rank_change": null,
+      "median_return_24h": -4.551270334490942,
+      "persistence_duration_days": null,
+      "sector": "Layer 1",
+      "sector_leadership_score": 17.2738,
+      "top_contributors": [
+        "SOL",
+        "AVAX",
+        "ADA"
+      ],
+      "volatility_expansion": 1.2494046511258772,
+      "volume_expansion": 1.3075967478619905,
+      "weak_contributors": [
+        "ADA",
+        "AVAX",
+        "SOL"
+      ]
+    },
+    {
+      "asset_count": 2,
+      "average_momentum_score": 29.437150000000003,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -6.96850722436439,
+      "classification": "LAGGING",
+      "eligible_asset_count": 2,
+      "equal_weight_return_24h": -6.100014593584463,
+      "equal_weight_return_48h": -4.347289074162175,
+      "equal_weight_return_4h": -2.2662601876546287,
+      "equal_weight_return_7d": -14.829558582796741,
+      "leadership_rank": 10,
+      "leadership_rank_change": null,
+      "median_return_24h": -6.100014593584463,
+      "persistence_duration_days": null,
+      "sector": "DeFi",
+      "sector_leadership_score": 13.0134,
+      "top_contributors": [
+        "AAVE",
+        "UNI"
+      ],
+      "volatility_expansion": 1.5721229118680022,
+      "volume_expansion": 1.5431174175751625,
+      "weak_contributors": [
+        "UNI",
+        "AAVE"
+      ]
+    },
+    {
+      "asset_count": 2,
+      "average_momentum_score": 21.601,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -7.512737076732389,
+      "classification": "LAGGING",
+      "eligible_asset_count": 2,
+      "equal_weight_return_24h": -6.644244445952463,
+      "equal_weight_return_48h": -1.3806204246548381,
+      "equal_weight_return_4h": -2.865636111204739,
+      "equal_weight_return_7d": -8.30483177314485,
+      "leadership_rank": 11,
+      "leadership_rank_change": null,
+      "median_return_24h": -6.644244445952463,
+      "persistence_duration_days": null,
+      "sector": "AI",
+      "sector_leadership_score": 9.2693,
+      "top_contributors": [
+        "TAO",
+        "FET"
+      ],
+      "volatility_expansion": 1.173317835619879,
+      "volume_expansion": 0.9647162152123943,
+      "weak_contributors": [
+        "FET",
+        "TAO"
+      ]
+    }
+  ],
+  "freshness": "FRESH",
+  "generated_at_utc": "2026-10-12T17:03:49.419811+00:00",
+  "module_name": "leadership_rotation",
+  "risks": [],
+  "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/LEADERSHIP_ROTATION/2026-10-12_leadership_rotation.json",
+  "status": "OK",
+  "summary": {
+    "mapped_assets": 17,
+    "sector_count": 11,
+    "unmapped_assets": 56
+  },
+  "top_sectors": [
+    {
+      "asset_count": 1,
+      "average_momentum_score": 7.4173,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 100.0,
+      "btc_relative_return_24h": 0.0,
+      "classification": "INSUFFICIENT_DATA",
+      "eligible_asset_count": 0,
+      "equal_weight_return_24h": 0.8684926307799268,
+      "equal_weight_return_48h": 1.8278996554927929,
+      "equal_weight_return_4h": 0.8321371888179829,
+      "equal_weight_return_7d": -1.798822544093015,
+      "leadership_rank": 1,
+      "leadership_rank_change": null,
+      "median_return_24h": 0.8684926307799268,
+      "persistence_duration_days": null,
+      "sector": "BTC",
+      "sector_leadership_score": 36.4835,
+      "top_contributors": [
+        "BTC"
+      ],
+      "volatility_expansion": 1.6627649718982775,
+      "volume_expansion": 2.3461188070523,
+      "weak_contributors": [
+        "BTC"
+      ]
+    },
+    {
+      "asset_count": 1,
+      "average_momentum_score": 28.4457,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -1.6117547308531543,
+      "classification": "INSUFFICIENT_DATA",
+      "eligible_asset_count": 1,
+      "equal_weight_return_24h": -0.7432621000732276,
+      "equal_weight_return_48h": -0.5095063216082218,
+      "equal_weight_return_4h": 0.0543411615062661,
+      "equal_weight_return_7d": 0.5149945046317939,
+      "leadership_rank": 2,
+      "leadership_rank_change": null,
+      "median_return_24h": -0.7432621000732276,
+      "persistence_duration_days": null,
+      "sector": "RWA",
+      "sector_leadership_score": 34.2421,
+      "top_contributors": [
+        "PAXG"
+      ],
+      "volatility_expansion": 1.8301786329033043,
+      "volume_expansion": 0.3902892085406347,
+      "weak_contributors": [
+        "PAXG"
+      ]
+    },
+    {
+      "asset_count": 1,
+      "average_momentum_score": 20.4269,
+      "average_relative_strength_score": null,
+      "breadth_percent_outperforming_btc": 0.0,
+      "breadth_percent_positive": 0.0,
+      "btc_relative_return_24h": -2.3533691788343636,
+      "classification": "INSUFFICIENT_DATA",
+      "eligible_asset_count": 1,
+      "equal_weight_return_24h": -1.4848765480544368,
+      "equal_weight_return_48h": 0.3036453422402552,
+      "equal_weight_return_4h": -0.7452448633454178,
+      "equal_weight_return_7d": -6.883966589024226,
+      "leadership_rank": 3,
+      "leadership_rank_change": null,
+      "median_return_24h": -1.4848765480544368,
+      "persistence_duration_days": null,
+      "sector": "Smart-contract platforms",
+      "sector_leadership_score": 29.6719,
+      "top_contributors": [
+        "ETH"
+      ],
+      "volatility_expansion": 0.94764735193256,
+      "volume_expansion": 1.3070781402953435,
+      "weak_contributors": [
+        "ETH"
+      ]
+    }
+  ],
+  "transitions": []
+}

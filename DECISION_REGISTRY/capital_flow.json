@@ -1,0 +1,51 @@
+{
+  "alternative_interpretations": [],
+  "freshness": "FRESH",
+  "generated_at_utc": "2026-10-12T17:03:49.425904+00:00",
+  "module_name": "capital_flow",
+  "primary_flows": [
+    {
+      "confidence": 30,
+      "contradicting_metrics": [
+        "group returns are fragmented"
+      ],
+      "evidence": [
+        "proxy signals lack alignment"
+      ],
+      "from_group": "mixed",
+      "inception_timestamp": null,
+      "invalidation_condition": "Multiple group proxies align",
+      "observation_type": "INFERENCE_FROM_DERIVED_PROXIES",
+      "persistence": "NEW_OR_UNVERIFIED",
+      "risk_flags": [
+        "INFERENCE_NOT_DIRECT_FLOW_MEASUREMENT"
+      ],
+      "state": "NO_CLEAR_FLOW",
+      "supporting_metrics": {
+        "breadth_positive_pct": 8.333333333333332,
+        "btc_return_24h": null,
+        "large_return_24h": -3.2737850248701617,
+        "mid_return_24h": -4.900607217391558,
+        "momentum_participation": 1.3888888888888888,
+        "small_return_24h": -5.329709936025713
+      },
+      "to_group": "mixed"
+    }
+  ],
+  "risks": [
+    "CAPITAL_FLOW_IS_INFERRED_NOT_OBSERVED"
+  ],
+  "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/2026-10-12_capital_flow.json",
+  "status": "OK",
+  "summary": {
+    "capital_flow_confidence": 30,
+    "derived_proxy": "group breadth and relative performance",
+    "inference_disclaimer": "Inferred proxy; not direct measurement of capital transfers",
+    "observed_data": "completed-candle returns and volumes",
+    "primary_state": "NO_CLEAR_FLOW"
+  },
+  "unknowns": [
+    "Stablecoin flow data unavailable",
+    "BTC dominance proxy unavailable"
+  ]
+}

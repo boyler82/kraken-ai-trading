@@ -1,0 +1,10 @@
+asset,asset_class,research_score,opportunity_score,confidence_score,recommendation,current_phase,market_bias,expected_value_pct,profit_factor,watch_status,current_setup_status,readiness_pct,missing_conditions,priority
+ADA,crypto,64.45,98,55,DAY1_OBSERVE_ONLY,OVERSOLD_DAY_1,BEAR_HIGH_VOL,1.69,1.49,ACTIVE_OPPORTUNITY,DEVELOPING,30.0,Waiting for confidence > 70; No historical edge; Waiting for bull trend,LOW
+LTC,crypto,74.5,35,90,HISTORICALLY_STRONG_NO_SIGNAL,NO_OVERSOLD,BEAR,2.39,1.69,HISTORICAL_ONLY,HISTORICAL_ONLY,0.0,Waiting for current signal,IGNORE
+LINK,crypto,69.5,10,80,NO_ACTION,NO_SIGNAL,BULL,1.77,1.41,NO_SETUP,NO_SETUP,0.0,Wait for a new oversold episode,IGNORE
+XRP,crypto,63.5,35,70,HISTORICALLY_STRONG_NO_SIGNAL,NO_OVERSOLD,BEAR,2.31,1.6,HISTORICAL_ONLY,HISTORICAL_ONLY,0.0,Waiting for current signal,IGNORE
+ETH,crypto,63.5,15,90,NO_ACTION,NO_SIGNAL,BULL,1.67,1.45,NO_SETUP,NO_SETUP,0.0,Wait for a new oversold episode,IGNORE
+BTC,crypto,58.45,15,90,NO_ACTION,NO_SIGNAL,BULL,0.96,1.9,NO_SETUP,NO_SETUP,0.0,Wait for a new oversold episode,IGNORE
+SOL,crypto,47.45,15,90,NO_ACTION,NO_SIGNAL,BULL,0.57,1.35,NO_SETUP,NO_SETUP,0.0,Wait for a new oversold episode,IGNORE
+DOGE,crypto,16.5,5,80,NO_ACTION,NO_SIGNAL,BEAR,,,NO_SETUP,NO_SETUP,0.0,Wait for a new oversold episode,IGNORE
+AVAX,crypto,16.0,10,80,NO_ACTION,NO_SIGNAL,BULL,,,NO_SETUP,NO_SETUP,0.0,Wait for a new oversold episode,IGNORE
