@@ -1,0 +1,1600 @@
+{
+  "bars": {
+    "AAVEUSD": [
+      {
+        "close": "171.59",
+        "high": "171.6",
+        "low": "169.99",
+        "open": "170.37",
+        "timestamp": "2026-10-11T20:00:00Z",
+        "trades": "198",
+        "volume": "511.48706929",
+        "vwap": "171.04"
+      }
+    ],
+    "QNTUSD": [
+      {
+        "close": "241.53",
+        "high": "242.33",
+        "low": "240.84",
+        "open": "241.28",
+        "timestamp": "2026-10-11T20:00:00Z",
+        "trades": "598",
+        "volume": "1914.76668321",
+        "vwap": "241.67"
+      }
+    ]
+  },
+  "config": {
+    "estimated_round_trip_cost_pct": 0.6,
+    "labels": [
+      "RESEARCH_ONLY",
+      "PAPER_ONLY",
+      "NOT_A_BUY_SIGNAL",
+      "NOT_A_SELL_SIGNAL",
+      "NO_REAL_ORDERS",
+      "USER_DECISION_REQUIRED",
+      "LIVE_NOT_AUTHORIZED"
+    ],
+    "standard_notional_usd": 10000,
+    "variants": {
+      "BTC_ROTATION": {
+        "ROTATION_10D": {
+          "max_hold_hours": 240,
+          "stop_pct": 100,
+          "target_pct": 100
+        },
+        "ROTATION_3D": {
+          "max_hold_hours": 72,
+          "stop_pct": 100,
+          "target_pct": 100
+        },
+        "ROTATION_5D": {
+          "max_hold_hours": 120,
+          "stop_pct": 100,
+          "target_pct": 100
+        }
+      },
+      "CONSOLIDATION_RANGE": {
+        "RANGE_FIXED_3": {
+          "max_hold_hours": 72,
+          "stop_pct": 2,
+          "target_pct": 3
+        },
+        "RANGE_FIXED_5": {
+          "max_hold_hours": 120,
+          "stop_pct": 2,
+          "target_pct": 5
+        },
+        "RANGE_HIGH": {
+          "max_hold_hours": 120,
+          "stop_pct": 2,
+          "target": "RANGE_HIGH"
+        },
+        "RANGE_MIDPOINT": {
+          "max_hold_hours": 72,
+          "stop_pct": 2,
+          "target": "MIDPOINT"
+        }
+      },
+      "EARLY_EXPANSION": {
+        "EE_DYNAMIC_BREAKOUT": {
+          "max_hold_hours": 48,
+          "stop_pct": 2,
+          "target": "BREAKOUT_PLUS_3"
+        },
+        "EE_TP3_SL2": {
+          "max_hold_hours": 48,
+          "stop_pct": 2,
+          "target_pct": 3
+        },
+        "EE_TP4_SL2": {
+          "max_hold_hours": 48,
+          "stop_pct": 2,
+          "target_pct": 4
+        },
+        "EE_TP5_SL2": {
+          "max_hold_hours": 48,
+          "stop_pct": 2,
+          "target_pct": 5
+        }
+      },
+      "MOMENTUM_BREAKOUT": {
+        "MOMENTUM_STRUCTURE_EXIT": {
+          "max_hold_hours": 72,
+          "stop_pct": 2,
+          "target_pct": 5
+        },
+        "MOMENTUM_TP3_SL2": {
+          "max_hold_hours": 48,
+          "stop_pct": 2,
+          "target_pct": 3
+        },
+        "MOMENTUM_TP5_SL2": {
+          "max_hold_hours": 72,
+          "stop_pct": 2,
+          "target_pct": 5
+        }
+      }
+    },
+    "version": "1.0.0"
+  },
+  "reports": {
+    "capital_flow": {
+      "candidates": [],
+      "generated_at_utc": "2026-10-11T21:21:07.601857+00:00",
+      "summary": {
+        "capital_flow_confidence": 70,
+        "derived_proxy": "group breadth and relative performance",
+        "inference_disclaimer": "Inferred proxy; not direct measurement of capital transfers",
+        "observed_data": "completed-candle returns and volumes",
+        "primary_state": "BROAD_RISK_ON"
+      }
+    },
+    "consolidation": {
+      "candidates": [
+        {
+          "api_failure_reason": null,
+          "asset": "AAVE",
+          "atr14_latest": 3.1285714285714232,
+          "average_bars_between_lower_tests": 28.5,
+          "average_bars_between_upper_tests": 13.0,
+          "average_full_cycle_hours": 228.0,
+          "average_hours_between_lower_tests": 114.0,
+          "average_hours_between_upper_tests": 52.0,
+          "bid_ask_spread_pct": 0.0530363298859739,
+          "boundary_tolerance_latest": 0.7821428571428558,
+          "break_events": [
+            {
+              "classification": "FALSE_BREAKDOWN_BELOW",
+              "confirmation_index": null,
+              "confirmation_start_index": null,
+              "confirmation_timestamp": null,
+              "direction": "BELOW",
+              "end_index": 0,
+              "end_timestamp": "2026-09-29T04:00:00+00:00",
+              "event_id": "BELOW-001",
+              "event_index": 0,
+              "event_timestamp": "2026-09-29T04:00:00+00:00",
+              "first_confirmed_close_timestamp": null,
+              "return_inside_index": 0,
+              "return_inside_timestamp": "2026-09-29T04:00:00+00:00",
+              "start_timestamp": "2026-09-29T04:00:00+00:00"
+            },
+            {
+              "classification": "FALSE_BREAKDOWN_BELOW",
+              "confirmation_index": null,
+              "confirmation_start_index": null,
+              "confirmation_timestamp": null,
+              "direction": "BELOW",
+              "end_index": 11,
+              "end_timestamp": "2026-10-01T00:00:00+00:00",
+              "event_id": "BELOW-002",
+              "event_index": 5,
+              "event_timestamp": "2026-09-30T00:00:00+00:00",
+              "first_confirmed_close_timestamp": null,
+              "return_inside_index": 5,
+              "return_inside_timestamp": "2026-09-30T00:00:00+00:00",
+              "start_timestamp": "2026-09-30T00:00:00+00:00"
+            },
+            {
+              "classification": "FALSE_BREAKOUT_ABOVE",
+              "confirmation_index": null,
+              "confirmation_start_index": null,
+              "confirmation_timestamp": null,
+              "direction": "ABOVE",
+              "end_index": 20,
+              "end_timestamp": "2026-10-02T12:00:00+00:00",
+              "event_id": "ABOVE-001",
+              "event_index": 18,
+              "event_timestamp": "2026-10-02T04:00:00+00:00",
+              "first_confirmed_close_timestamp": null,
+              "return_inside_index": 18,
+              "return_inside_timestamp": "2026-10-02T04:00:00+00:00",
+              "start_timestamp": "2026-10-02T04:00:00+00:00"
+            },
+            {
+              "classification": "FALSE_BREAKOUT_ABOVE",
+              "confirmation_index": null,
+              "confirmation_start_index": null,
+              "confirmation_timestamp": null,
+              "direction": "ABOVE",
+              "end_index": 41,
+              "end_timestamp": "2026-10-06T00:00:00+00:00",
+              "event_id": "ABOVE-002",
+              "event_index": 38,
+              "event_timestamp": "2026-10-05T12:00:00+00:00",
+              "first_confirmed_close_timestamp": null,
+              "return_inside_index": 38,
+              "return_inside_timestamp": "2026-10-05T12:00:00+00:00",
+              "start_timestamp": "2026-10-05T12:00:00+00:00"
+            },
+            {
+              "classification": "FALSE_BREAKOUT_ABOVE",
+              "confirmation_index": null,
+              "confirmation_start_index": null,
+              "confirmation_timestamp": null,
+              "direction": "ABOVE",
+              "end_index": 44,
+              "end_timestamp": "2026-10-06T12:00:00+00:00",
+              "event_id": "ABOVE-003",
+              "event_index": 44,
+              "event_timestamp": "2026-10-06T12:00:00+00:00",
+              "first_confirmed_close_timestamp": null,
+              "return_inside_index": 44,
+              "return_inside_timestamp": "2026-10-06T12:00:00+00:00",
+              "start_timestamp": "2026-10-06T12:00:00+00:00"
+            }
+          ],
+          "breakout_confirmation_timestamp": null,
+          "breakout_direction": null,
+          "breakout_event_timestamp": null,
+          "breakout_risk": "LOW",
+          "closes_inside_pct": 96.05263157894737,
+          "completed_traversals_per_30d": 4.8,
+          "confirmed_breakdowns": 0,
+          "confirmed_breakouts": 0,
+          "continuity_status": "CONTINUOUS",
+          "current_location": "MID_RANGE",
+          "cycle_history_status": "SUFFICIENT",
+          "daily_range_opportunity_score": 70.3163,
+          "daily_rank": 11,
+          "daily_score_components": {
+            "current_location_usefulness": 1.25,
+            "data_quality_freshness": 5.0,
+            "estimated_net_range_width": 20.0,
+            "liquidity": 10.0,
+            "range_quality": 16.04,
+            "range_stability": 7.5,
+            "traversal_frequency": 10.5263
+          },
+          "daily_status": "ACTIVE_RANGE_MID",
+          "data_quality_status": "OK",
+          "duration_bars": 76,
+          "duration_calendar_days": 12.5,
+          "duration_calendar_hours": 300.0,
+          "duration_hours": 304,
+          "duration_reconciled": true,
+          "duration_trading_hours": 304,
+          "estimated_cycles_per_30d": 3.1578947368421053,
+          "estimated_fees_pct": 0.4,
+          "estimated_net_range_return_pct": 15.529234629861998,
+          "estimated_slippage_pct": 0.2,
+          "estimated_total_friction_pct": 0.6000000000000001,
+          "failed_quality_conditions": [],
+          "false_breakdowns_below": 2,
+          "false_breakouts_above": 3,
+          "freshness_age_hours": 1.3178292911111111,
+          "freshness_status": "FRESH",
+          "full_traversal": {
+            "average_bars": 28.5,
+            "average_hours": 114.0,
+            "count": 2,
+            "events": [
+              {
+                "bars": 18,
+                "direction": "LOW_TO_HIGH",
+                "end_timestamp": "2026-10-02T04:00:00+00:00",
+                "hours": 72,
+                "start_timestamp": "2026-09-29T04:00:00+00:00"
+              },
+              {
+                "bars": 39,
+                "direction": "HIGH_TO_LOW",
+                "end_timestamp": "2026-10-08T16:00:00+00:00",
+                "hours": 156,
+                "start_timestamp": "2026-10-02T04:00:00+00:00"
+              }
+            ],
+            "median_bars": 28.5,
+            "median_hours": 114.0
+          },
+          "gross_range_return_pct": 16.129234629861998,
+          "high_to_low": {
+            "average_bars": 39.0,
+            "average_hours": 156.0,
+            "count": 1,
+            "events": [
+              {
+                "bars": 39,
+                "direction": "HIGH_TO_LOW",
+                "end_timestamp": "2026-10-08T16:00:00+00:00",
+                "hours": 156,
+                "start_timestamp": "2026-10-02T04:00:00+00:00"
+              }
+            ],
+            "median_bars": 39.0,
+            "median_hours": 156.0
+          },
+          "invalidation_reason": null,
+          "invalidation_timestamp": null,
+          "is_valid_horizontal_consolidation": true,
+          "kraken_24h_quote_volume": 1002837.9697690571,
+          "kraken_pair": "AAVEUSD",
+          "latest_available_market_price": 170.49,
+          "latest_available_market_timestamp": "2026-10-11T16:00:00+00:00",
+          "latest_completed_candle_timestamp": "2026-10-11T20:00:00+00:00",
+          "liquidity_pass": true,
+          "low_to_high": {
+            "average_bars": 18.0,
+            "average_hours": 72.0,
+            "count": 1,
+            "events": [
+              {
+                "bars": 18,
+                "direction": "LOW_TO_HIGH",
+                "end_timestamp": "2026-10-02T04:00:00+00:00",
+                "hours": 72,
+                "start_timestamp": "2026-09-29T04:00:00+00:00"
+              }
+            ],
+            "median_bars": 18.0,
+            "median_hours": 72.0
+          },
+          "lower_boundary_events": [
+            {
+              "index": 0,
+              "timestamp": "2026-09-29T04:00:00+00:00"
+            },
+            {
+              "index": 5,
+              "timestamp": "2026-09-30T00:00:00+00:00"
+            },
+            {
+              "index": 57,
+              "timestamp": "2026-10-08T16:00:00+00:00"
+            }
+          ],
+          "lower_boundary_tests": 3,
+          "lower_events_per_30d": 7.2,
+          "lower_test_intervals": {
+            "average_bars": 28.5,
+            "average_hours": 114.0,
+            "count": 2,
+            "median_bars": 28.5,
+            "median_hours": 114.0
+          },
+          "lower_to_midpoint_return_pct": 8.064617314930999,
+          "mapping_uncertain": false,
+          "market_cap_rank": 43,
+          "midpoint": 172.255,
+          "missing_expected_4h_bars": 0,
+          "native_intraday_rows": 2424,
+          "passed_quality_conditions": [
+            "lower_boundary_reactions_passed",
+            "upper_boundary_reactions_passed",
+            "close_containment_passed",
+            "trend_flatness_passed",
+            "width_stability_passed",
+            "no_confirmed_directional_break_passed"
+          ],
+          "position_clipped_pct": 43.134966938934326,
+          "position_pct": 43.134966938934326,
+          "position_zone": "MID_RANGE",
+          "post_breakout_reference_price": null,
+          "post_breakout_reference_timestamp": null,
+          "quality_band": "MODERATE",
+          "quality_components": {
+            "boundary_symmetry": 10.0,
+            "closes_inside": 18,
+            "duration": 10.1333,
+            "false_breakout_penalty": -10,
+            "lower_tests": 9.0,
+            "traversals": 5.0,
+            "trend_flatness": 12.8313,
+            "upper_tests": 9.0,
+            "width_stability": 0.1995
+          },
+          "range_active": true,
+          "range_efficiency_net_pct_per_day": 1.6346562768275787,
+          "range_end": "2026-10-11T16:00:00+00:00",
+          "range_end_timestamp": "2026-10-11T16:00:00+00:00",
+          "range_high": 185.11,
+          "range_low": 159.39999999999998,
+          "range_quality": 64.16,
+          "range_start": "2026-09-29T04:00:00+00:00",
+          "range_start_timestamp": "2026-09-29T04:00:00+00:00",
+          "range_state": "VALID_RANGE",
+          "range_still_valid": true,
+          "range_valid": true,
+          "recovery_condition": null,
+          "refresh_status": "REFRESH_SUCCEEDED",
+          "retrieval_timestamp": "2026-10-11T21:19:04.185448+00:00",
+          "risk_flags": [
+            "RANGE_TOO_WIDE_HIGH_BREAKOUT_RISK",
+            "EXCESSIVE_FALSE_BREAKS"
+          ],
+          "simple_color": "YELLOW",
+          "simple_display": "OBSERWUJ \u2014 CZEKAJ NA POWR\u00d3T DO DOLNEJ STREFY",
+          "simple_zone": "OBSERVE",
+          "spread_pass": true,
+          "status": "MID_RANGE",
+          "structural_state": "VALID_RANGE",
+          "sufficient_native_intraday_history": true,
+          "trend_flatness_comparison": "0.0417410078713 <= 0.5",
+          "trend_flatness_indicator": "absolute OLS close slope over included range, normalized by range width",
+          "trend_flatness_pass": true,
+          "trend_flatness_threshold": 0.5,
+          "trend_flatness_threshold_units": "range_widths_over_included_candidate_duration",
+          "trend_normalization_denominator": 25.710000000000036,
+          "trend_normalization_denominator_units": "quote_currency_range_width",
+          "trend_normalized_slope": 0.041741007871327854,
+          "trend_normalized_slope_units": "range_widths_over_included_candidate_duration",
+          "trend_ratio": 0.041741007871327854,
+          "trend_slope_units": "quote_currency_per_4h_bar",
+          "trend_slope_value": 0.014308817498291208,
+          "upper_boundary_events": [
+            {
+              "index": 18,
+              "timestamp": "2026-10-02T04:00:00+00:00"
+            },
+            {
+              "index": 38,
+              "timestamp": "2026-10-05T12:00:00+00:00"
+            },
+            {
+              "index": 44,
+              "timestamp": "2026-10-06T12:00:00+00:00"
+            }
+          ],
+          "upper_boundary_tests": 3,
+          "upper_events_per_30d": 7.2,
+          "upper_test_intervals": {
+            "average_bars": 13.0,
+            "average_hours": 52.0,
+            "count": 2,
+            "median_bars": 13.0,
+            "median_hours": 52.0
+          },
+          "weekly_range_opportunity_score": 70.3163,
+          "weekly_score_components": {
+            "current_location_usefulness": 1.25,
+            "data_quality_freshness": 5.0,
+            "estimated_net_range_width": 20.0,
+            "liquidity": 10.0,
+            "range_quality": 16.04,
+            "range_stability": 7.5,
+            "traversal_frequency": 10.5263
+          },
+          "width_pct": 14.92554642826045,
+          "width_price": 25.710000000000036,
+          "width_stability_cv": 0.49168570005073153
+        },
+        {
+          "api_failure_reason": null,
+          "asset": "QNT",
+          "atr14_latest": 6.417857142857149,
+          "average_bars_between_lower_tests": 7.3333,
+          "average_bars_between_upper_tests": 7.3333,
+          "average_full_cycle_hours": 40.0,
+          "average_hours_between_lower_tests": 29.3332,
+          "average_hours_between_upper_tests": 29.3332,
+          "bid_ask_spread_pct": 0.03794506397959543,
+          "boundary_tolerance_latest": 1.6044642857142872,
+          "break_events": [
+            {
+              "classification": "FALSE_BREAKOUT_ABOVE",
+              "confirmation_index": null,
+              "confirmation_start_index": null,
+              "confirmation_timestamp": null,
+              "direction": "ABOVE",
+              "end_index": 2,
+              "end_timestamp": "2026-10-07T04:00:00+00:00",
+              "event_id": "ABOVE-001",
+              "event_index": 0,
+              "event_timestamp": "2026-10-06T20:00:00+00:00",
+              "first_confirmed_close_timestamp": null,
+              "return_inside_index": 1,
+              "return_inside_timestamp": "2026-10-07T00:00:00+00:00",
+              "start_timestamp": "2026-10-06T20:00:00+00:00"
+            },
+            {
+              "classification": "FALSE_BREAKDOWN_BELOW",
+              "confirmation_index": null,
+              "confirmation_start_index": null,
+              "confirmation_timestamp": null,
+              "direction": "BELOW",
+              "end_index": 11,
+              "end_timestamp": "2026-10-08T16:00:00+00:00",
+              "event_id": "BELOW-001",
+              "event_index": 9,
+              "event_timestamp": "2026-10-08T08:00:00+00:00",
+              "first_confirmed_close_timestamp": null,
+              "return_inside_index": 9,
+              "return_inside_timestamp": "2026-10-08T08:00:00+00:00",
+              "start_timestamp": "2026-10-08T08:00:00+00:00"
+            }
+          ],
+          "breakout_confirmation_timestamp": null,
+          "breakout_direction": null,
+          "breakout_event_timestamp": null,
+          "breakout_risk": "LOW",
+          "closes_inside_pct": 93.33333333333333,
+          "completed_traversals_per_30d": 31.03448275862069,
+          "confirmed_breakdowns": 0,
+          "confirmed_breakouts": 0,
+          "continuity_status": "CONTINUOUS",
+          "current_location": "LOWER_HALF",
+          "cycle_history_status": "SUFFICIENT",
+          "daily_range_opportunity_score": 87.2175,
+          "daily_rank": 24,
+          "daily_score_components": {
+            "current_location_usefulness": 3.0,
+            "data_quality_freshness": 5.0,
+            "estimated_net_range_width": 20.0,
+            "liquidity": 10.0,
+            "range_quality": 17.2175,
+            "range_stability": 12.0,
+            "traversal_frequency": 20.0
+          },
+          "daily_status": "ACTIVE_RANGE_LOWER_HALF",
+          "data_quality_status": "OK",
+          "duration_bars": 30,
+          "duration_calendar_days": 4.833333333333333,
+          "duration_calendar_hours": 116.0,
+          "duration_hours": 120,
+          "duration_reconciled": true,
+          "duration_trading_hours": 120,
+          "estimated_cycles_per_30d": 18.0,
+          "estimated_fees_pct": 0.4,
+          "estimated_net_range_return_pct": 9.153170037466053,
+          "estimated_slippage_pct": 0.2,
+          "estimated_total_friction_pct": 0.6000000000000001,
+          "failed_quality_conditions": [],
+          "false_breakdowns_below": 1,
+          "false_breakouts_above": 1,
+          "freshness_age_hours": 1.3178292911111111,
+          "freshness_status": "FRESH",
+          "full_traversal": {
+            "average_bars": 5.2,
+            "average_hours": 20.8,
+            "count": 5,
+            "events": [
+              {
+                "bars": 1,
+                "direction": "LOW_TO_HIGH",
+                "end_timestamp": "2026-10-07T16:00:00+00:00",
+                "hours": 4,
+                "start_timestamp": "2026-10-07T12:00:00+00:00"
+              },
+              {
+                "bars": 7,
+                "direction": "LOW_TO_HIGH",
+                "end_timestamp": "2026-10-09T12:00:00+00:00",
+                "hours": 28,
+                "start_timestamp": "2026-10-08T08:00:00+00:00"
+              },
+              {
+                "bars": 4,
+                "direction": "HIGH_TO_LOW",
+                "end_timestamp": "2026-10-07T12:00:00+00:00",
+                "hours": 16,
+                "start_timestamp": "2026-10-06T20:00:00+00:00"
+              },
+              {
+                "bars": 4,
+                "direction": "HIGH_TO_LOW",
+                "end_timestamp": "2026-10-08T08:00:00+00:00",
+                "hours": 16,
+                "start_timestamp": "2026-10-07T16:00:00+00:00"
+              },
+              {
+                "bars": 10,
+                "direction": "HIGH_TO_LOW",
+                "end_timestamp": "2026-10-11T04:00:00+00:00",
+                "hours": 40,
+                "start_timestamp": "2026-10-09T12:00:00+00:00"
+              }
+            ],
+            "median_bars": 4.0,
+            "median_hours": 16.0
+          },
+          "gross_range_return_pct": 9.753170037466052,
+          "high_to_low": {
+            "average_bars": 6.0,
+            "average_hours": 24.0,
+            "count": 3,
+            "events": [
+              {
+                "bars": 4,
+                "direction": "HIGH_TO_LOW",
+                "end_timestamp": "2026-10-07T12:00:00+00:00",
+                "hours": 16,
+                "start_timestamp": "2026-10-06T20:00:00+00:00"
+              },
+              {
+                "bars": 4,
+                "direction": "HIGH_TO_LOW",
+                "end_timestamp": "2026-10-08T08:00:00+00:00",
+                "hours": 16,
+                "start_timestamp": "2026-10-07T16:00:00+00:00"
+              },
+              {
+                "bars": 10,
+                "direction": "HIGH_TO_LOW",
+                "end_timestamp": "2026-10-11T04:00:00+00:00",
+                "hours": 40,
+                "start_timestamp": "2026-10-09T12:00:00+00:00"
+              }
+            ],
+            "median_bars": 4.0,
+            "median_hours": 16.0
+          },
+          "invalidation_reason": null,
+          "invalidation_timestamp": null,
+          "is_valid_horizontal_consolidation": true,
+          "kraken_24h_quote_volume": 7340597.536896514,
+          "kraken_pair": "QNTUSD",
+          "latest_available_market_price": 241.17,
+          "latest_available_market_timestamp": "2026-10-11T16:00:00+00:00",
+          "latest_completed_candle_timestamp": "2026-10-11T20:00:00+00:00",
+          "liquidity_pass": true,
+          "low_to_high": {
+            "average_bars": 4.0,
+            "average_hours": 16.0,
+            "count": 2,
+            "events": [
+              {
+                "bars": 1,
+                "direction": "LOW_TO_HIGH",
+                "end_timestamp": "2026-10-07T16:00:00+00:00",
+                "hours": 4,
+                "start_timestamp": "2026-10-07T12:00:00+00:00"
+              },
+              {
+                "bars": 7,
+                "direction": "LOW_TO_HIGH",
+                "end_timestamp": "2026-10-09T12:00:00+00:00",
+                "hours": 28,
+                "start_timestamp": "2026-10-08T08:00:00+00:00"
+              }
+            ],
+            "median_bars": 4.0,
+            "median_hours": 16.0
+          },
+          "lower_boundary_events": [
+            {
+              "index": 4,
+              "timestamp": "2026-10-07T12:00:00+00:00"
+            },
+            {
+              "index": 9,
+              "timestamp": "2026-10-08T08:00:00+00:00"
+            },
+            {
+              "index": 14,
+              "timestamp": "2026-10-09T04:00:00+00:00"
+            },
+            {
+              "index": 26,
+              "timestamp": "2026-10-11T04:00:00+00:00"
+            }
+          ],
+          "lower_boundary_tests": 4,
+          "lower_events_per_30d": 24.82758620689655,
+          "lower_test_intervals": {
+            "average_bars": 7.3333,
+            "average_hours": 29.3332,
+            "count": 3,
+            "median_bars": 5.0,
+            "median_hours": 20.0
+          },
+          "lower_to_midpoint_return_pct": 4.876585018733026,
+          "mapping_uncertain": false,
+          "market_cap_rank": 34,
+          "midpoint": 244.654,
+          "missing_expected_4h_bars": 0,
+          "native_intraday_rows": 2346,
+          "passed_quality_conditions": [
+            "lower_boundary_reactions_passed",
+            "upper_boundary_reactions_passed",
+            "close_containment_passed",
+            "trend_flatness_passed",
+            "width_stability_passed",
+            "no_confirmed_directional_break_passed"
+          ],
+          "position_clipped_pct": 34.68706047819964,
+          "position_pct": 34.68706047819964,
+          "position_zone": "LOWER_HALF",
+          "post_breakout_reference_price": null,
+          "post_breakout_reference_timestamp": null,
+          "quality_band": "MODERATE",
+          "quality_components": {
+            "boundary_symmetry": 10.0,
+            "closes_inside": 18,
+            "duration": 4.0,
+            "false_breakout_penalty": -4,
+            "lower_tests": 12.0,
+            "traversals": 10,
+            "trend_flatness": 1.2982,
+            "upper_tests": 12.0,
+            "width_stability": 5.5735
+          },
+          "range_active": true,
+          "range_efficiency_net_pct_per_day": 5.491902022479631,
+          "range_end": "2026-10-11T16:00:00+00:00",
+          "range_end_timestamp": "2026-10-11T16:00:00+00:00",
+          "range_high": 256.03000000000003,
+          "range_low": 233.278,
+          "range_quality": 68.87,
+          "range_start": "2026-10-06T20:00:00+00:00",
+          "range_start_timestamp": "2026-10-06T20:00:00+00:00",
+          "range_state": "VALID_RANGE",
+          "range_still_valid": true,
+          "range_valid": true,
+          "recovery_condition": null,
+          "refresh_status": "REFRESH_SUCCEEDED",
+          "retrieval_timestamp": "2026-10-11T21:19:04.185448+00:00",
+          "risk_flags": [],
+          "simple_color": "YELLOW",
+          "simple_display": "OBSERWUJ \u2014 CZEKAJ NA POWR\u00d3T DO DOLNEJ STREFY",
+          "simple_zone": "OBSERVE",
+          "spread_pass": true,
+          "status": "LOWER_HALF",
+          "structural_state": "VALID_RANGE",
+          "sufficient_native_intraday_history": true,
+          "trend_flatness_comparison": "0.453634703507 <= 0.5",
+          "trend_flatness_indicator": "absolute OLS close slope over included range, normalized by range width",
+          "trend_flatness_pass": true,
+          "trend_flatness_threshold": 0.5,
+          "trend_flatness_threshold_units": "range_widths_over_included_candidate_duration",
+          "trend_normalization_denominator": 22.752000000000038,
+          "trend_normalization_denominator_units": "quote_currency_range_width",
+          "trend_normalized_slope": 0.45363470350710006,
+          "trend_normalized_slope_units": "range_widths_over_included_candidate_duration",
+          "trend_ratio": 0.45363470350710006,
+          "trend_slope_units": "quote_currency_per_4h_bar",
+          "trend_slope_value": -0.3558998887652951,
+          "upper_boundary_events": [
+            {
+              "index": 0,
+              "timestamp": "2026-10-06T20:00:00+00:00"
+            },
+            {
+              "index": 5,
+              "timestamp": "2026-10-07T16:00:00+00:00"
+            },
+            {
+              "index": 16,
+              "timestamp": "2026-10-09T12:00:00+00:00"
+            },
+            {
+              "index": 22,
+              "timestamp": "2026-10-10T12:00:00+00:00"
+            }
+          ],
+          "upper_boundary_tests": 4,
+          "upper_events_per_30d": 24.82758620689655,
+          "upper_test_intervals": {
+            "average_bars": 7.3333,
+            "average_hours": 29.3332,
+            "count": 3,
+            "median_bars": 6.0,
+            "median_hours": 24.0
+          },
+          "weekly_range_opportunity_score": 87.2175,
+          "weekly_score_components": {
+            "current_location_usefulness": 3.0,
+            "data_quality_freshness": 5.0,
+            "estimated_net_range_width": 20.0,
+            "liquidity": 10.0,
+            "range_quality": 17.2175,
+            "range_stability": 12.0,
+            "traversal_frequency": 20.0
+          },
+          "width_pct": 9.29966401530326,
+          "width_price": 22.752000000000038,
+          "width_stability_cv": 0.2677703506804508
+        }
+      ],
+      "generated_at_utc": "2026-10-11T21:19:04.185448+00:00"
+    },
+    "early_expansion": {
+      "assets": [
+        {
+          "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+          "asset": "AAVE",
+          "breakout_level": 187.61,
+          "change_metrics": {
+            "confidence_delta": 0,
+            "momentum_delta": 0.16,
+            "relative_strength_delta": 0.15,
+            "rotation_delta": 0.0,
+            "rqi_delta": 0.0,
+            "volume_zscore_delta": 1.53
+          },
+          "classification": "PRE_MOVE_BUILDING",
+          "combined_pre_move_score": 65.72,
+          "components": {
+            "capital_flow_alignment": 85,
+            "cross_module_improvement": 85.0,
+            "data_quality": 100,
+            "momentum_precursor": 49.04,
+            "range_position": 82,
+            "relative_strength_delta": 38.83,
+            "volatility_compression": 67.83,
+            "volume_buildup": 95.29
+          },
+          "confidence_band": "MEDIUM",
+          "confidence_score": 69,
+          "current_price": 171.59,
+          "distance_to_breakout_pct": 8.539,
+          "early_expansion_score": 70.58,
+          "energy_delta_score": 56.69,
+          "freshness": "FRESH",
+          "historical_sample_quality": "LOW",
+          "independent_modules_improving": 4,
+          "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+          "main_strength": "data_quality",
+          "opposing_modules": [
+            "relative_strength_delta"
+          ],
+          "overextension_reasons": [],
+          "overextension_status": "PASS",
+          "pair": "AAVEUSD",
+          "pre_move_status": "PASS",
+          "previous_snapshot_available": true,
+          "primary_risk": "relative_strength_delta",
+          "range_position_pct": 43.134966938934326,
+          "range_state": "VALID_RANGE",
+          "range_valid": true,
+          "return_24h_pct": 0.9234207740265843,
+          "return_48h_pct": 2.613323765099862,
+          "return_4h_pct": 0.7101772508510518,
+          "source_refs": [
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+          ],
+          "source_timestamp": "2026-10-11T20:00:00+00:00",
+          "supporting_modules": [
+            "volatility_compression",
+            "range_position",
+            "volume_buildup",
+            "cross_module_improvement",
+            "capital_flow_alignment",
+            "data_quality"
+          ]
+        },
+        {
+          "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+          "asset": "QNT",
+          "breakout_level": 271.46,
+          "change_metrics": {
+            "confidence_delta": 0,
+            "momentum_delta": 33.93,
+            "relative_strength_delta": 2.21,
+            "rotation_delta": 0.0,
+            "rqi_delta": 0.0,
+            "volume_zscore_delta": 1.05
+          },
+          "classification": "PRE_MOVE_BUILDING",
+          "combined_pre_move_score": 63.01,
+          "components": {
+            "capital_flow_alignment": 85,
+            "cross_module_improvement": 72.5,
+            "data_quality": 100,
+            "momentum_precursor": 44.36,
+            "range_position": 82,
+            "relative_strength_delta": 30.87,
+            "volatility_compression": 73.35,
+            "volume_buildup": 56.98
+          },
+          "confidence_band": "MEDIUM",
+          "confidence_score": 69,
+          "current_price": 241.53,
+          "distance_to_breakout_pct": 11.0256,
+          "early_expansion_score": 64.08,
+          "energy_delta_score": 61.02,
+          "freshness": "FRESH",
+          "historical_sample_quality": "MEDIUM",
+          "independent_modules_improving": 3,
+          "invalidation_condition": "Current range invalidates or pre-move conditions deteriorate",
+          "main_strength": "data_quality",
+          "opposing_modules": [
+            "relative_strength_delta"
+          ],
+          "overextension_reasons": [],
+          "overextension_status": "PASS",
+          "pair": "QNTUSD",
+          "pre_move_status": "PASS",
+          "previous_snapshot_available": true,
+          "primary_risk": "relative_strength_delta",
+          "range_position_pct": 34.68706047819964,
+          "range_state": "VALID_RANGE",
+          "range_valid": true,
+          "return_24h_pct": 0.47840918545636324,
+          "return_48h_pct": -1.0690587367903626,
+          "return_4h_pct": -1.2026015462019868,
+          "source_refs": [
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_QUALITY_INDEX/latest_range_quality_index.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/latest_capital_flow.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json"
+          ],
+          "source_timestamp": "2026-10-11T20:00:00+00:00",
+          "supporting_modules": [
+            "volatility_compression",
+            "range_position",
+            "cross_module_improvement",
+            "capital_flow_alignment",
+            "data_quality"
+          ]
+        }
+      ],
+      "generated_at_utc": "2026-10-11T21:21:09.075536+00:00",
+      "summary": {
+        "assets_evaluated": 73,
+        "pre_move_building": 2,
+        "pre_move_candidates": 2,
+        "pre_move_strong": 0,
+        "too_late": 26
+      }
+    },
+    "momentum": {
+      "candidates": [
+        {
+          "acceleration_12h_pct": 4.176080201371435,
+          "acceleration_24h_pct": -0.7510200823303226,
+          "acceleration_4h_pct": -1.325994745795267,
+          "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+          "asset": "AAVE",
+          "atr14_pct": 0.7047530242355107,
+          "bid_ask_spread_pct": 0.0530363298859739,
+          "bollinger_band_width_pct": 3.394346551852592,
+          "breakout_from_consolidation": false,
+          "breakout_level": 187.61,
+          "change_12h_pct": 2.5703867535417535,
+          "change_1h_pct": 0.6451991319138983,
+          "change_24h_pct": 0.9234207740265843,
+          "change_48h_pct": 2.613323765099862,
+          "change_4h_pct": 0.7101772508510518,
+          "change_7d_pct": -4.150374259859236,
+          "close_above_previous_14d_high": false,
+          "close_above_previous_20d_high": false,
+          "close_above_previous_7d_high": false,
+          "consolidation_transition": null,
+          "current_1h_volume": 511.48706929,
+          "current_4h_volume": 1695.7855367399998,
+          "current_price": 171.59,
+          "data_age_hours": 1.3178292911111111,
+          "distance_above_breakout_pct": -8.538990458930762,
+          "distance_above_ema20_atr": 1.996434054259364,
+          "distance_to_14d_high_pct": -8.538990458930762,
+          "distance_to_20d_high_pct": -8.538990458930762,
+          "distance_to_7d_high_pct": -8.538990458930762,
+          "ema20": 169.17574081867065,
+          "ema20_slope_pct": 0.34032457280441797,
+          "ema50": 169.4084500932574,
+          "failed_breakout": false,
+          "freshness_status": "FRESH",
+          "invalidation_condition": null,
+          "invalidation_reference_level": null,
+          "kraken_24h_quote_volume": 1002837.9697690571,
+          "kraken_pair": "AAVEUSD",
+          "latest_completed_candle_timestamp": "2026-10-11T20:00:00+00:00",
+          "liquidity_pass": true,
+          "local_swing_low": 166.51,
+          "market_cap_rank": 43,
+          "momentum_breakout_score": 32.8541,
+          "momentum_penalties": {
+            "failed_breakout": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0,
+            "wide_spread": 0
+          },
+          "momentum_rank": 45,
+          "momentum_score_components": {
+            "breakout_quality": 0,
+            "liquidity_freshness": 5,
+            "price_acceleration": 0,
+            "relative_strength": 0.1648,
+            "trend_quality": 6.7016,
+            "volatility_expansion": 2.3175,
+            "volume_confirmation": 18.6702
+          },
+          "momentum_stage": "NO_MOMENTUM",
+          "movement_alert": false,
+          "number_completed_closes_above_breakout": 0,
+          "overextension_risk": "LOW",
+          "previous_14d_high": 187.61,
+          "previous_20d_high": 187.61,
+          "previous_7d_high": 187.61,
+          "price_vs_ema20_pct": 1.4270717359630591,
+          "price_vs_ema50_pct": 1.2877456263496345,
+          "realized_volatility_pct": 73.6707953239782,
+          "recent_range_position_pct": 42.41552839683681,
+          "refresh_status": "REUSED_CACHE",
+          "relative_strength_vs_btc_24h_pct": 0.05492814324665751,
+          "relative_strength_vs_btc_48h_pct": 0.7854241096070691,
+          "relative_strength_vs_btc_4h_pct": -0.12195993796693116,
+          "retrieval_timestamp": "2026-10-11T21:20:56.130144+00:00",
+          "roc_12h_pct": 2.5703867535417535,
+          "roc_24h_pct": 0.9234207740265843,
+          "roc_4h_pct": 0.7101772508510518,
+          "spread_pass": true,
+          "sufficient_history": true,
+          "volatility_expansion_ratio": 0.962228236920335,
+          "volume_20bar_average": 908.2857745015008,
+          "volume_ratio": 1.8670176109173422,
+          "volume_z_score": 1.5527016174654082
+        },
+        {
+          "acceleration_12h_pct": 0.49509000497920397,
+          "acceleration_24h_pct": 2.0185091281122114,
+          "acceleration_4h_pct": -2.1065143743347226,
+          "activation_condition": "CLOSE_ABOVE_BREAKOUT_LEVEL",
+          "asset": "QNT",
+          "atr14_pct": 1.2488836051126455,
+          "bid_ask_spread_pct": 0.03794506397959543,
+          "bollinger_band_width_pct": 5.25864875884894,
+          "breakout_from_consolidation": false,
+          "breakout_level": 271.46,
+          "change_12h_pct": 0.48676984523214895,
+          "change_1h_pct": 0.14927229754946314,
+          "change_24h_pct": 0.47840918545636324,
+          "change_48h_pct": -1.0690587367903626,
+          "change_4h_pct": -1.2026015462019868,
+          "change_7d_pct": -3.81123058542413,
+          "close_above_previous_14d_high": false,
+          "close_above_previous_20d_high": false,
+          "close_above_previous_7d_high": false,
+          "consolidation_transition": null,
+          "current_1h_volume": 1914.76668321,
+          "current_4h_volume": 5491.41281708,
+          "current_price": 241.53,
+          "data_age_hours": 1.3178292911111111,
+          "distance_above_breakout_pct": -11.025565460841369,
+          "distance_above_ema20_atr": -0.1262491672870549,
+          "distance_to_14d_high_pct": -35.59028240753087,
+          "distance_to_20d_high_pct": -35.59028240753087,
+          "distance_to_7d_high_pct": -11.025565460841369,
+          "ema20": 241.91082159532374,
+          "ema20_slope_pct": 0.10665865732484292,
+          "ema50": 242.58465092733414,
+          "failed_breakout": false,
+          "freshness_status": "FRESH",
+          "invalidation_condition": null,
+          "invalidation_reference_level": null,
+          "kraken_24h_quote_volume": 7340597.536896514,
+          "kraken_pair": "QNTUSD",
+          "latest_completed_candle_timestamp": "2026-10-11T20:00:00+00:00",
+          "liquidity_pass": true,
+          "local_swing_low": 235.0,
+          "market_cap_rank": 34,
+          "momentum_breakout_score": 16.7901,
+          "momentum_penalties": {
+            "failed_breakout": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0,
+            "wide_spread": 0
+          },
+          "momentum_rank": 70,
+          "momentum_score_components": {
+            "breakout_quality": 0,
+            "liquidity_freshness": 5,
+            "price_acceleration": 0,
+            "relative_strength": 0,
+            "trend_quality": 0,
+            "volatility_expansion": 0.8826,
+            "volume_confirmation": 10.9075
+          },
+          "momentum_stage": "NO_MOMENTUM",
+          "movement_alert": false,
+          "number_completed_closes_above_breakout": 0,
+          "overextension_risk": "LOW",
+          "previous_14d_high": 374.99,
+          "previous_20d_high": 374.99,
+          "previous_7d_high": 271.46,
+          "price_vs_ema20_pct": -0.15742230662205703,
+          "price_vs_ema50_pct": -0.43475583607721635,
+          "realized_volatility_pct": 118.22855114247241,
+          "recent_range_position_pct": 40.90819348469893,
+          "refresh_status": "REUSED_CACHE",
+          "relative_strength_vs_btc_24h_pct": -0.39008344532356354,
+          "relative_strength_vs_btc_48h_pct": -2.8969583922831554,
+          "relative_strength_vs_btc_4h_pct": -2.0347387350199697,
+          "retrieval_timestamp": "2026-10-11T21:20:56.104846+00:00",
+          "roc_12h_pct": 0.48676984523214895,
+          "roc_24h_pct": 0.47840918545636324,
+          "roc_4h_pct": -1.2026015462019868,
+          "spread_pass": true,
+          "sufficient_history": true,
+          "volatility_expansion_ratio": 0.8617813592438668,
+          "volume_20bar_average": 5034.532310096496,
+          "volume_ratio": 1.0907493444956653,
+          "volume_z_score": 0.28676124662500263
+        }
+      ],
+      "generated_at_utc": "2026-10-11T21:19:04.185448+00:00"
+    },
+    "personality": {
+      "assets": [
+        {
+          "asset": "QNT",
+          "available_historical_coverage_days": 97.5,
+          "average_cycle_hours": 48.57142857142857,
+          "average_cycle_move_pct": 3.014230561514484,
+          "classification": "RANGE_FRIENDLY",
+          "complete_cycles": 7,
+          "completed_bar_count": 586,
+          "confirmed_failure_evidence": {
+            "confidence": "MEDIUM",
+            "confidence_band_pct": [
+              0,
+              0.0
+            ],
+            "denominator": 5,
+            "numerator": 0,
+            "rate_pct": 0.0,
+            "sample_size": 5
+          },
+          "confirmed_failure_rate": 0.0,
+          "continuity_status": "CONTINUOUS",
+          "current_range_status": "LOWER_HALF",
+          "current_setup_source": "existing_consolidation_engine",
+          "cycle_duration_cv": 0.3094810926580213,
+          "cycle_duration_iqr": 18.0,
+          "cycle_duration_std": 15.031938786246748,
+          "cycles_in_1_to_5_pct_band": 77.78,
+          "cycles_in_2_to_4_pct_band": 33.33,
+          "cycles_per_30d": 2.15,
+          "cycles_within_25pct_median_rate": 57.14,
+          "derived_analysis_timeframe": "4H",
+          "directional_efficiency_ratio": 0.1487,
+          "false_break_evidence": {
+            "confidence": "MEDIUM",
+            "confidence_band_pct": [
+              30.28,
+              63.84
+            ],
+            "denominator": 34,
+            "numerator": 16,
+            "rate_pct": 47.06,
+            "sample_size": 34
+          },
+          "false_break_rate": 47.06,
+          "first_timestamp": "2026-07-06T04:00:00+00:00",
+          "freshness": "FRESH",
+          "freshness_age_hours": 1.3491203511111112,
+          "half_cycles": 18,
+          "historical_coverage_days": 97.5,
+          "historical_full_traversal_evidence": {
+            "confidence": "MEDIUM",
+            "confidence_band_pct": [
+              100.0,
+              100
+            ],
+            "denominator": 18,
+            "numerator": 18,
+            "rate_pct": 100.0,
+            "sample_size": 18
+          },
+          "historical_full_traversal_rate": 100.0,
+          "historical_midpoint_recovery_evidence": {
+            "confidence": "MEDIUM",
+            "confidence_band_pct": [
+              100.0,
+              100
+            ],
+            "denominator": 18,
+            "numerator": 18,
+            "rate_pct": 100.0,
+            "sample_size": 18
+          },
+          "historical_midpoint_recovery_rate": 100.0,
+          "historical_range_occupancy_pct": 21.5,
+          "insufficient_history_flag": false,
+          "intersection_state": "HISTORICALLY_STRONG_AND_CURRENTLY_ACTIVE",
+          "last_timestamp": "2026-10-11T16:00:00+00:00",
+          "liquidity_status": "PASS",
+          "long_score": 61.84,
+          "low_liquidity_flag": false,
+          "median_cycle_hours": 48.0,
+          "median_cycle_move_pct": 3.0979907220987535,
+          "median_high_to_low_hours": 20.0,
+          "median_low_to_high_hours": 28.0,
+          "median_maximum_adverse_movement": 0.5239682940639923,
+          "median_quote_volume": 7340597.536896514,
+          "median_spread": 0.0379450639795954,
+          "medium_score": 60.21,
+          "missing_expected_bars": 0,
+          "move_size_cv": 0.5533468364404164,
+          "move_size_std": 1.6679149455160596,
+          "native_source_timeframe": "1H",
+          "one_candle_spike_frequency": 0.0684,
+          "personality_agreement_across_windows": false,
+          "personality_change": "INSUFFICIENT_HISTORY_FOR_CHANGE",
+          "primary_risk": "false_breaks",
+          "probability_of_profit_claim": false,
+          "range_personality_score": 61.84,
+          "range_research_priority_score": 74.05,
+          "rank": 9,
+          "recent_score": 0.0,
+          "research_interpretation": "HISTORICALLY_RANGE_FRIENDLY",
+          "sample_quality": "MEDIUM",
+          "score_components": {
+            "cycle_duration_regularity": 69.05189073419787,
+            "episode_consistency": 60.78771294265619,
+            "episode_persistence": 41.66666666666667,
+            "full_traversal_completion": 100.0,
+            "historical_range_occupancy": 29.027303754266214,
+            "liquidity_data_quality": 100,
+            "midpoint_recovery": 100.0,
+            "move_size_regularity": 44.66531635595836
+          },
+          "score_penalties": {
+            "false_breaks": 8
+          },
+          "score_stability": 13.67,
+          "source_file": "/Users/tron/kraken-ai-trading/DATASETS/market_intraday_weekly/QNTUSD_1H.csv",
+          "stale_data_flag": false,
+          "trend_persistence": 0.1487,
+          "valid_range_episodes": 5
+        },
+        {
+          "asset": "AAVE",
+          "available_historical_coverage_days": 100.67,
+          "average_cycle_hours": 51.2,
+          "average_cycle_move_pct": 4.49314996426564,
+          "classification": "TREND_DOMINANT",
+          "complete_cycles": 5,
+          "completed_bar_count": 605,
+          "confirmed_failure_evidence": {
+            "confidence": "LOW",
+            "confidence_band_pct": [
+              0,
+              0.0
+            ],
+            "denominator": 3,
+            "numerator": 0,
+            "rate_pct": 0.0,
+            "sample_size": 3
+          },
+          "confirmed_failure_rate": 0.0,
+          "continuity_status": "CONTINUOUS",
+          "current_range_status": "MID_RANGE",
+          "current_setup_source": "existing_consolidation_engine",
+          "cycle_duration_cv": 0.2768757054167086,
+          "cycle_duration_iqr": 16.0,
+          "cycle_duration_std": 14.17603611733548,
+          "cycles_in_1_to_5_pct_band": 63.64,
+          "cycles_in_2_to_4_pct_band": 36.36,
+          "cycles_per_30d": 1.49,
+          "cycles_within_25pct_median_rate": 80.0,
+          "derived_analysis_timeframe": "4H",
+          "directional_efficiency_ratio": 0.1372,
+          "false_break_evidence": {
+            "confidence": "LOW",
+            "confidence_band_pct": [
+              31.76,
+              72.59
+            ],
+            "denominator": 23,
+            "numerator": 12,
+            "rate_pct": 52.17,
+            "sample_size": 23
+          },
+          "false_break_rate": 52.17,
+          "first_timestamp": "2026-07-03T00:00:00+00:00",
+          "freshness": "FRESH",
+          "freshness_age_hours": 1.3491203511111112,
+          "half_cycles": 11,
+          "historical_coverage_days": 100.67,
+          "historical_full_traversal_evidence": {
+            "confidence": "LOW",
+            "confidence_band_pct": [
+              100.0,
+              100
+            ],
+            "denominator": 11,
+            "numerator": 11,
+            "rate_pct": 100.0,
+            "sample_size": 11
+          },
+          "historical_full_traversal_rate": 100.0,
+          "historical_midpoint_recovery_evidence": {
+            "confidence": "LOW",
+            "confidence_band_pct": [
+              100.0,
+              100
+            ],
+            "denominator": 11,
+            "numerator": 11,
+            "rate_pct": 100.0,
+            "sample_size": 11
+          },
+          "historical_midpoint_recovery_rate": 100.0,
+          "historical_range_occupancy_pct": 14.05,
+          "insufficient_history_flag": false,
+          "intersection_state": "CURRENT_RANGE_BUT_WEAK_HISTORY",
+          "last_timestamp": "2026-10-11T16:00:00+00:00",
+          "liquidity_status": "PASS",
+          "long_score": 54.55,
+          "low_liquidity_flag": false,
+          "median_cycle_hours": 48.0,
+          "median_cycle_move_pct": 4.7518923465096785,
+          "median_high_to_low_hours": 32.0,
+          "median_low_to_high_hours": 28.0,
+          "median_maximum_adverse_movement": 0.0,
+          "median_quote_volume": 1002837.9697690572,
+          "median_spread": 0.0530363298859739,
+          "medium_score": 59.1,
+          "missing_expected_bars": 0,
+          "move_size_cv": 0.1925046609940253,
+          "move_size_std": 0.8649523106662739,
+          "native_source_timeframe": "1H",
+          "one_candle_spike_frequency": 0.0149,
+          "personality_agreement_across_windows": false,
+          "personality_change": "INSUFFICIENT_HISTORY_FOR_CHANGE",
+          "primary_risk": "low_sample",
+          "probability_of_profit_claim": false,
+          "range_personality_score": 54.55,
+          "range_research_priority_score": 67.42,
+          "rank": 27,
+          "recent_score": 0.0,
+          "research_interpretation": "HISTORICALLY_TREND_DOMINANT",
+          "sample_quality": "LOW",
+          "score_components": {
+            "cycle_duration_regularity": 72.31242945832915,
+            "episode_consistency": 89.99454169003099,
+            "episode_persistence": 46.666666666666664,
+            "full_traversal_completion": 100.0,
+            "historical_range_occupancy": 18.96694214876033,
+            "liquidity_data_quality": 100,
+            "midpoint_recovery": 100.0,
+            "move_size_regularity": 80.74953390059747
+          },
+          "score_penalties": {
+            "false_breaks": 8,
+            "low_sample": 12
+          },
+          "score_stability": 19.44,
+          "source_file": "/Users/tron/kraken-ai-trading/DATASETS/market_intraday_weekly/AAVEUSD_1H.csv",
+          "stale_data_flag": false,
+          "trend_persistence": 0.1372,
+          "valid_range_episodes": 3
+        }
+      ],
+      "generated_at_utc": "2026-10-11T21:20:56.833264+00:00"
+    },
+    "relative_strength": {
+      "candidates": [
+        {
+          "asset": "AAVE",
+          "btc_relative_return_12h": -0.16912229997473327,
+          "btc_relative_return_14d": 7.745865493193604,
+          "btc_relative_return_24h": 0.33136005491212206,
+          "btc_relative_return_30d": 2.632719712025011,
+          "btc_relative_return_48h": 0.5077673653793635,
+          "btc_relative_return_4h": -0.2700279976600717,
+          "btc_relative_return_7d": -4.343884263137143,
+          "classification": "NEUTRAL",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "AAVEUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 70.42,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 4,
+          "rank": 22,
+          "relative_acceleration": -0.6704525160534769,
+          "relative_distance_ema20": 0.022878951331595232,
+          "relative_drawdown": -12.405386808217834,
+          "relative_ema20": 0.0014639545842503826,
+          "relative_ema20_slope": 0.015100269310441838,
+          "relative_ema50": 0.0014644990402638656,
+          "relative_persistence": 54.166666666666664,
+          "relative_strength_score": 61.1989,
+          "relative_volatility": 70.31433401087199,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 5.656115736862857,
+            "persistence": 8.125,
+            "relative_acceleration": 6.159094967893046,
+            "relative_trend_quality": 20,
+            "short_relative_returns": 11.258691130437228
+          },
+          "source_timestamp": "2026-10-11T20:00:00+00:00",
+          "sufficient_history": true
+        },
+        {
+          "asset": "QNT",
+          "btc_relative_return_12h": -1.4033153773186924,
+          "btc_relative_return_14d": -4.092862193948532,
+          "btc_relative_return_24h": -1.3871254818553558,
+          "btc_relative_return_30d": null,
+          "btc_relative_return_48h": -4.035016845097383,
+          "btc_relative_return_4h": -0.9243784695555646,
+          "btc_relative_return_7d": -1.3108783679509406,
+          "classification": "DETERIORATING",
+          "freshness": "FRESH",
+          "liquidity_pass": true,
+          "pair": "QNTUSD",
+          "penalties": {
+            "excessive_relative_volatility": 0,
+            "insufficient_history": 0,
+            "low_liquidity": 0,
+            "one_candle_spike": 0,
+            "overextension": 0,
+            "stale_data": 0
+          },
+          "percentile_rank": 21.13,
+          "percentile_rank_change": null,
+          "positive_relative_periods": 0,
+          "rank": 57,
+          "relative_acceleration": -1.419735701719349,
+          "relative_distance_ema20": -1.0839689137125408,
+          "relative_drawdown": -13.484452194129604,
+          "relative_ema20": 0.0009506482595783132,
+          "relative_ema20_slope": -0.47874161709290375,
+          "relative_ema50": 0.0009563435745784303,
+          "relative_persistence": 50.0,
+          "relative_strength_score": 40.7164,
+          "relative_volatility": 43.015629673557065,
+          "score_components": {
+            "liquidity_freshness": 10,
+            "long_relative_returns": 8.689121632049059,
+            "persistence": 7.5,
+            "relative_acceleration": 4.660528596561302,
+            "relative_trend_quality": 8,
+            "short_relative_returns": 1.8667865095708915
+          },
+          "source_timestamp": "2026-10-11T20:00:00+00:00",
+          "sufficient_history": true
+        }
+      ],
+      "generated_at_utc": "2026-10-11T21:21:07.576508+00:00",
+      "summary": {
+        "eligible_assets": 72,
+        "relative_strength_breadth_pct": 34.72222222222222
+      }
+    },
+    "rotation": {
+      "data_freshness": "FRESH",
+      "report_timestamp": "2026-10-11T21:21:06.152379+00:00",
+      "top_candidates": []
+    },
+    "rqi": {
+      "assets": [
+        {
+          "adjusted_rqi_priority": 40.05,
+          "asset": "AAVE",
+          "components": {
+            "boundary_quality": 86.25,
+            "cycle_regularity": 71.16,
+            "false_break_reliability": 36.31,
+            "historical_personality": 77.28,
+            "liquidity_data_quality": 100.0,
+            "range_containment": 86.05,
+            "traversal_quality": 50.0,
+            "trend_flatness": 100.0,
+            "width_quality": 68.04
+          },
+          "freshness": "FRESH",
+          "historical_sample_quality": "LOW",
+          "invalidation_condition": "Confirmed directional break or loss of current range validity",
+          "liquidity_pass": true,
+          "main_strengths": [
+            "liquidity_data_quality",
+            "trend_flatness",
+            "boundary_quality"
+          ],
+          "main_weaknesses": [
+            "false_break_reliability",
+            "traversal_quality"
+          ],
+          "median_cycle_hours": 48.0,
+          "midpoint": 172.255,
+          "pair": "AAVEUSD",
+          "penalties": [
+            {
+              "code": "EXCESSIVE_FALSE_BREAKS",
+              "points": -12
+            },
+            {
+              "code": "LOW_SAMPLE",
+              "points": 0
+            }
+          ],
+          "position_pct": 43.134966938934326,
+          "position_zone": "LOWER_MIDDLE",
+          "primary_risk": "false_break_reliability",
+          "range_high": 185.11,
+          "range_low": 159.39999999999998,
+          "range_state": "VALID_RANGE",
+          "range_valid": true,
+          "range_width_pct": 14.92554642826045,
+          "research_priority": "LOW_RESEARCH_PRIORITY",
+          "rqi_classification": "ACCEPTABLE_RANGE",
+          "rqi_confidence_band": "LOW",
+          "rqi_confidence_score": 39,
+          "rqi_score": 61.62,
+          "rqi_status": "APPLICABLE",
+          "source_refs": [
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
+          ],
+          "source_timestamp": "2026-10-11T20:00:00+00:00"
+        },
+        {
+          "adjusted_rqi_priority": 80.37,
+          "asset": "QNT",
+          "components": {
+            "boundary_quality": 100.0,
+            "cycle_regularity": 62.67,
+            "false_break_reliability": 60.12,
+            "historical_personality": 80.92,
+            "liquidity_data_quality": 100.0,
+            "range_containment": 89.33,
+            "traversal_quality": 79.17,
+            "trend_flatness": 64.64,
+            "width_quality": 82.59
+          },
+          "freshness": "FRESH",
+          "historical_sample_quality": "MEDIUM",
+          "invalidation_condition": "Confirmed directional break or loss of current range validity",
+          "liquidity_pass": true,
+          "main_strengths": [
+            "boundary_quality",
+            "liquidity_data_quality",
+            "range_containment"
+          ],
+          "main_weaknesses": [],
+          "median_cycle_hours": 48.0,
+          "midpoint": 244.654,
+          "pair": "QNTUSD",
+          "penalties": [],
+          "position_pct": 34.68706047819964,
+          "position_zone": "LOWER_MIDDLE",
+          "primary_risk": "No dominant structural weakness identified",
+          "range_high": 256.03000000000003,
+          "range_low": 233.278,
+          "range_state": "VALID_RANGE",
+          "range_valid": true,
+          "range_width_pct": 9.29966401530326,
+          "research_priority": "HIGH_RESEARCH_PRIORITY",
+          "rqi_classification": "GOOD_RANGE",
+          "rqi_confidence_band": "HIGH",
+          "rqi_confidence_score": 81.3,
+          "rqi_score": 80.37,
+          "rqi_status": "APPLICABLE",
+          "source_refs": [
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+            "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
+          ],
+          "source_timestamp": "2026-10-11T20:00:00+00:00"
+        }
+      ],
+      "generated_at_utc": "2026-10-11T21:21:05.872319+00:00",
+      "summary": {
+        "assets_evaluated": 73,
+        "excellent_ranges": 0,
+        "good_ranges": 7,
+        "invalid_excluded_ranges": 38,
+        "low_confidence_ranges": 27,
+        "valid_ranges": 35
+      }
+    }
+  }
+}
