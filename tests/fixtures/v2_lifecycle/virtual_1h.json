@@ -1,0 +1,210 @@
+{
+  "asset_bars": [
+    {
+      "close": 0.7195,
+      "end": "2026-10-12T16:00:00+00:00",
+      "high": 0.7217,
+      "low": 0.7172,
+      "open": 0.7199,
+      "start": "2026-10-12T15:00:00Z",
+      "volume": 15926.47142
+    },
+    {
+      "close": 0.7075,
+      "end": "2026-10-12T17:00:00+00:00",
+      "high": 0.7213,
+      "low": 0.7072,
+      "open": 0.7197,
+      "start": "2026-10-12T16:00:00Z",
+      "volume": 23523.80558
+    }
+  ],
+  "benchmark_bars": [
+    {
+      "close": 82641.1,
+      "end": "2026-10-12T16:00:00+00:00",
+      "high": 82699.4,
+      "low": 82499.0,
+      "open": 82499.0,
+      "start": "2026-10-12T15:00:00Z",
+      "volume": 37.3082052
+    },
+    {
+      "close": 82401.6,
+      "end": "2026-10-12T17:00:00+00:00",
+      "high": 82860.5,
+      "low": 82397.2,
+      "open": 82641.2,
+      "start": "2026-10-12T16:00:00Z",
+      "volume": 47.37672087
+    }
+  ],
+  "enriched_as_of": "2026-10-13T15:28:01.071977+00:00",
+  "legacy_outcome": {
+    "btc_relative_return_pct": null,
+    "btc_return_pct": null,
+    "candle_count": 1,
+    "cohort": "FORWARD_PROSPECTIVE_CLOSED_CANDLE",
+    "data_completeness": true,
+    "data_digest": "c556bfd22e0d037b9472b342dc302bc7cda84e7d461d75f9a829fbc8a4c7e482",
+    "endpoint_utc": "2026-10-12T17:00:00+00:00",
+    "execution_assumed": false,
+    "first_touch": "NEITHER",
+    "horizon_hours": 1,
+    "invalidation_hit": false,
+    "mae_pct": -1.7095205003474612,
+    "metric_name": "return_cc_1h",
+    "mfe_pct": 0.25017373175817426,
+    "observation_timestamp_utc": "2026-10-12T16:28:54.632023+00:00",
+    "pre_creation_path_included": true,
+    "reason_codes": [
+      "BTC_MATCHED_WINDOW_UNAVAILABLE"
+    ],
+    "reference_candle_close_utc": "2026-10-12T16:00:00+00:00",
+    "return_pct": -1.6678248783877692,
+    "schema_version": "1.0.0",
+    "signal_id": "v2p_0071d4a403e988581326bfcecdfc1166",
+    "status": "COMPLETE",
+    "target_hit": false,
+    "time_to_invalidation_hours_bounds": null,
+    "time_to_target_hours_bounds": null,
+    "timing_basis": "CLOSED_CANDLE_REFERENCE"
+  },
+  "original_as_of": "2026-10-12T17:04:22.776916+00:00",
+  "original_benchmark_bars": [
+    {
+      "close": 82641.1,
+      "end": "2026-10-12T16:00:00+00:00",
+      "high": 82699.4,
+      "low": 82499.0,
+      "open": 82499.0,
+      "start": "2026-10-12T15:00:00Z",
+      "volume": 37.3082052
+    }
+  ],
+  "signal": {
+    "activation_level": null,
+    "asset": "VIRTUAL",
+    "classification": "MEASURABLE",
+    "cluster_id": "GLOBAL_24H_UTC_V1:2026-10-12",
+    "cluster_method_version": "GLOBAL_24H_UTC_V1",
+    "cohort": "FORWARD_PROSPECTIVE_CLOSED_CANDLE",
+    "configuration_version": "dcfbdf4a6d6eb6f893b9d2e348cc3324739da7e968199257d042f22e3718d719",
+    "decision_status": "RESEARCH_ONLY",
+    "direction": "LONG",
+    "event_study_levels": {
+      "invalidation": 0.70511,
+      "semantics": "REFERENCE_LEVEL_TOUCH_NOT_EXECUTED_ORDER",
+      "target": 0.7881
+    },
+    "event_type": "CLOSED_CANDLE_REFERENCE_EVENT",
+    "feature_cutoff_utc": "2026-10-12T16:00:00+00:00",
+    "features": {
+      "available_at_utc": "2026-10-12T16:28:54.632023+00:00",
+      "cutoff_utc": "2026-10-12T16:00:00+00:00",
+      "last_closed_candle_start_utc": "2026-10-12T15:00:00+00:00",
+      "missing": [
+        "volume_acceleration",
+        "range_position",
+        "ema20_distance",
+        "quote_notional"
+      ],
+      "normalization": "RAW_UNITS_NO_IMPUTATION",
+      "values": {
+        "breakout_distance": -17.355846542614294,
+        "ema20_distance": null,
+        "momentum_acceleration": 0.49371104679292177,
+        "quote_notional": null,
+        "range_position": null,
+        "realized_volatility": 85.2329118153155,
+        "return_1h": 0.18100807574492617,
+        "return_24h": -3.874415497661998,
+        "return_4h": -1.4923329682365871,
+        "return_7d": -14.120315111005011,
+        "rs_acceleration": -1.2524476242827043,
+        "rs_btc": -4.742908128441925,
+        "rs_percentile": 45.07,
+        "volatility_expansion": 1.394126771474098,
+        "volume_acceleration": null,
+        "volume_z": 0.3295761920609088
+      },
+      "version": "1.0.0"
+    },
+    "identity_version": "PARENT_SETUP_V2",
+    "invalidation_level": 0.70511,
+    "market_data_cutoff_utc": "2026-10-12T16:00:00+00:00",
+    "observation_timestamp_utc": "2026-10-12T16:28:54.632023+00:00",
+    "pair": "VIRTUALUSD",
+    "parent_setup": {
+      "pair": "VIRTUALUSD",
+      "setup_episode_id": null,
+      "source_modules": [
+        "CONSOLIDATION",
+        "RANGE_PERSONALITY",
+        "RANGE_QUALITY"
+      ],
+      "source_timestamp": "2026-10-12T15:00:00+00:00",
+      "strategy_name": "CONSOLIDATION_RANGE"
+    },
+    "provenance": {
+      "configuration_digest": "dcfbdf4a6d6eb6f893b9d2e348cc3324739da7e968199257d042f22e3718d719",
+      "reference_candle_interval_seconds": 3600,
+      "retrieved_at_utc": "2026-10-12T16:28:54.632023+00:00",
+      "source_digests": [
+        "ccd8e98ad7fdfad7031af2643f24b51799dba020aa3e1fb828519a5de4ab08c5",
+        "2b4d9787e323ab55034558825eeb1e9a919f963e4a291e3a4fbd9d1fa6051f7c",
+        "9fccb8751f3c77b38a4fd308d0c6f5b3bda31e76c08753827c9c1754e63874d5",
+        "c59bcccdd145cd2d5e26f3bbcc2acfc1e5aaa0c62b95242b4a14a5bc67cf4bf5",
+        "6b5e5a301aeb91ddc3c020c9bc42863b20e9a30b0bb2ff659f7e2cf2d40bf02a",
+        "ac27c9fb0c98646466c72cc8351c329f6454aeaeea6a3d62beb1aa5cbb93fb7e",
+        "a1e66eaecb7d92a51315d8728063877a4d341c84281ce6a120f6115281009eed",
+        "3fcebd4c6a582a33039e5efd6590015b6766b487ca7452b6a1a2bf2d340a3b65"
+      ],
+      "source_pipeline": "EXISTING_PAPER_SETUP_EXTRACTOR",
+      "source_timestamp_semantics": "CANDLE_START",
+      "transformation_version": "1.0.0"
+    },
+    "quality_flags": [],
+    "reason_codes": [],
+    "reference_candle_close_utc": "2026-10-12T16:00:00+00:00",
+    "reference_price": 0.7195,
+    "reference_price_timestamp_utc": "2026-10-12T16:00:00+00:00",
+    "regime": {
+      "available_at_utc": "2026-10-12T16:28:54.632023+00:00",
+      "cutoff_utc": "2026-10-12T16:00:00+00:00",
+      "missing": [
+        "sell_pressure",
+        "macro_state",
+        "liquidity_condition"
+      ],
+      "values": {
+        "breadth_above_ema20_pct": 4.166666666666667,
+        "btc_structure": null,
+        "liquidity_condition": null,
+        "macro_state": null,
+        "market_state": "UNAVAILABLE",
+        "realized_volatility": null,
+        "sell_pressure": null
+      },
+      "version": "RECORDED_MARKET_VECTOR_V1"
+    },
+    "regime_version": "RECORDED_MARKET_VECTOR_V1",
+    "research_uses": {
+      "cc_outcomes": true,
+      "inventory": true,
+      "recorded_component_description": true,
+      "versioned_strategy_evidence": true
+    },
+    "rr_status": "NOT_AN_EXECUTED_OR_ASSUMED_ACTIVATED_TRADE",
+    "schema_version": "1.0.0",
+    "signal_id": "v2p_0071d4a403e988581326bfcecdfc1166",
+    "signal_type": "QUALIFYING_RESEARCH_SETUP",
+    "source_event_id": "5bc03c4e98f9bd215745cd54e5d33253c83d2e97e48398ad62aa2ae4da2f2dfb",
+    "strategy_id": "RANGE_HIGH",
+    "strategy_reference_price": 0.7195,
+    "strategy_version": "1.0.0:dcfbdf4a6d6e",
+    "target_level": 0.7881,
+    "theoretical_rr": null,
+    "timing_basis": "CLOSED_CANDLE_REFERENCE"
+  }
+}

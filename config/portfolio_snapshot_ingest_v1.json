@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "allowed_extractors": ["CODEX_VISION", "MANUAL_STRUCTURED", "OCR_PLUGIN", "API_VISION_PLUGIN"],
+  "weight_tolerance_percentage_points": 0.6,
+  "total_tolerance_pct": 0.5,
+  "total_tolerance_usd": 2.0,
+  "large_quantity_change_pct": 25.0,
+  "large_value_change_pct": 35.0,
+  "large_change_minimum_usd": 500.0,
+  "maximum_total_weight_pct": 101.5,
+  "minimum_total_weight_pct": 98.0,
+  "documentation": "Vision/OCR providers are pluggable producers of normalized JSON. Every provider passes this same validator before CURRENT promotion."
+}

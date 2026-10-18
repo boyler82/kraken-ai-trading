@@ -141,6 +141,10 @@ def orchestrate(objective='btc',as_of=None,no_network=False,reuse=False,runner:C
  opportunity=opportunity_context(loaded['chief'],memory30,result.get('tactical_outcomes') or {})
  packet.update(canonical_decision_sections(packet,loaded['chief'],memory30,opportunity))
  packet['run_metadata']['dependency_order']+=['market_memory_30d','opportunity_discovery_v1','canonical_decision_handoff']
+ # Additive V2 measurement hook: genuine current scans only, never replay/backdate.
+ if runner is run_complete_research and out_dir == OUT and as_of is None and not no_network and not reuse:
+  from quant_research_v2.integration import extend_handoff
+  extend_handoff(packet, ROOT)
  out_dir.mkdir(parents=True,exist_ok=True);jp=out_dir/'latest_quant_handoff.json';mp=out_dir/'latest_quant_handoff.md';atomic_write(jp,json.dumps(packet,indent=2,sort_keys=True,allow_nan=False)+'\n',backup=False);atomic_write(mp,render(packet),backup=False);return packet,jp,mp
 
 def main():

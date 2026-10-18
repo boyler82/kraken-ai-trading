@@ -4,16 +4,27 @@ from pathlib import Path
 import glob
 
 import pandas as pd
+from lib.universe import report_dir
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REPORT_DIR = ROOT / "DAILY_REPORTS"
+REPORT_DIR = report_dir()
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 
 CURRENT_OPPORTUNITY = REPORT_DIR / f"{TODAY}_crypto_opportunity_ranking.csv"
 CURRENT_UNIVERSAL = REPORT_DIR / f"{TODAY}_universal_market_scanner.csv"
 OUT_CSV = REPORT_DIR / f"{TODAY}_research_score.csv"
 OUT_MD = REPORT_DIR / f"{TODAY}_research_score.md"
+
+SCORE_WEIGHTS = {
+    "expected_value": 0.25,
+    "profit_factor": 0.20,
+    "win_rate": 0.15,
+    "opportunity": 0.15,
+    "confidence": 0.10,
+    "market_bias": 0.10,
+    "atr": 0.05,
+}
 
 
 def _latest_file(pattern: str, current: Path) -> Path:
@@ -215,15 +226,16 @@ def build_research_score() -> pd.DataFrame:
         bias_score = _market_bias_score(market_bias)
         atr_score = _atr_score(atr_pct)
 
-        research_score = (
-            ev_score * 0.25
-            + pf_score * 0.20
-            + wr_score * 0.15
-            + opp_score * 0.15
-            + conf_score * 0.10
-            + bias_score * 0.10
-            + atr_score * 0.05
-        )
+        contributions = {
+            "expected_value_contribution": ev_score * SCORE_WEIGHTS["expected_value"],
+            "profit_factor_contribution": pf_score * SCORE_WEIGHTS["profit_factor"],
+            "win_rate_contribution": wr_score * SCORE_WEIGHTS["win_rate"],
+            "opportunity_contribution": opp_score * SCORE_WEIGHTS["opportunity"],
+            "confidence_contribution": conf_score * SCORE_WEIGHTS["confidence"],
+            "market_bias_contribution": bias_score * SCORE_WEIGHTS["market_bias"],
+            "atr_contribution": atr_score * SCORE_WEIGHTS["atr"],
+        }
+        research_score = sum(contributions.values())
 
         rows.append(
             {
@@ -244,6 +256,7 @@ def build_research_score() -> pd.DataFrame:
                 "market_bias_score": round(bias_score, 2),
                 "atr_pct": atr_pct,
                 "atr_score": round(atr_score, 2),
+                **{name: round(value, 2) for name, value in contributions.items()},
                 "current_phase": row.get("current_phase_opp") if pd.notna(row.get("current_phase_opp")) else row.get("current_phase_uni"),
                 "recommendation": row.get("recommendation_opp") if pd.notna(row.get("recommendation_opp")) else row.get("recommendation_uni"),
                 "bucket": row.get("bucket"),
@@ -276,6 +289,13 @@ def build_research_score() -> pd.DataFrame:
             "market_bias_score",
             "atr_pct",
             "atr_score",
+            "expected_value_contribution",
+            "profit_factor_contribution",
+            "win_rate_contribution",
+            "opportunity_contribution",
+            "confidence_contribution",
+            "market_bias_contribution",
+            "atr_contribution",
             "current_phase",
             "recommendation",
             "bucket",
@@ -302,6 +322,33 @@ def render_markdown(report: pd.DataFrame) -> str:
     for _, row in report.iterrows():
         lines.append(
             f"- #{int(row['rank'])} {row['asset']} | score {row['research_score']} | {row['status']} | EV {row['expected_value_pct']} | PF {row['profit_factor']} | WR {row['win_rate_pct']} | Opp {row['opportunity_score']} | Conf {row['confidence_score']} | Bias {row['market_bias']} | ATR {row['atr_pct']}"
+        )
+
+    lines += [
+        "",
+        "## Research Score Breakdown",
+        "",
+        "The existing research score is the sum of these weighted component contributions:",
+        "",
+        "- Expected value: 25%",
+        "- Profit factor: 20%",
+        "- Win rate: 15%",
+        "- Opportunity score: 15%",
+        "- Confidence score: 10%",
+        "- Market bias: 10%",
+        "- ATR profile: 5%",
+        "",
+    ]
+    for _, row in report.iterrows():
+        lines.append(
+            f"- #{int(row['rank'])} {row['asset']} | total {row['research_score']} = "
+            f"EV {row['expected_value_contribution']} + "
+            f"PF {row['profit_factor_contribution']} + "
+            f"WR {row['win_rate_contribution']} + "
+            f"Opportunity {row['opportunity_contribution']} + "
+            f"Confidence {row['confidence_contribution']} + "
+            f"Bias {row['market_bias_contribution']} + "
+            f"ATR {row['atr_contribution']}"
         )
 
     lines += [

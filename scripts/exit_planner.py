@@ -4,6 +4,7 @@ from pathlib import Path
 import sys
 
 import pandas as pd
+from lib.universe import report_dir
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT / "scripts"))
@@ -13,7 +14,7 @@ from lib.data_loader import load_ohlc  # noqa: E402
 
 
 INPUT_CSV = ROOT / "journal" / "portfolio_positions.csv"
-REPORT_DIR = ROOT / "DAILY_REPORTS"
+REPORT_DIR = report_dir()
 MARKET_REGIME = ROOT / "BACKTESTS" / "market_regime.csv"
 OPPORTUNITY_RANKING = None
 if (REPORT_DIR / f"{pd.Timestamp.today().strftime('%Y-%m-%d')}_crypto_opportunity_ranking.csv").exists():

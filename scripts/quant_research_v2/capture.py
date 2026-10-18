@@ -120,6 +120,7 @@ def capture(registry, root, observed_at, activation_at, maximum_age_hours=8):
                          'invalidation':decisions_by_variant[variant]['stop_price'],
                          'semantics':'REFERENCE_LEVEL_TOUCH_NOT_EXECUTED_ORDER'})
             event['identity_version']=IDENTITY_VERSION
+            event['configuration_identity_contract']='RESEARCH_SEMANTICS_V1'
             event['parent_setup']=deepcopy(parent)
             event['strategy_reference_price']=decisions_by_variant[variant]['entry_price']
             event['activation_level']=s.get('metadata',{}).get('breakout_level')

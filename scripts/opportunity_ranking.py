@@ -7,22 +7,24 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT / "scripts"))
 
 from lib.data_loader import load_ohlc
+from lib.universe import active_assets, backtest_dir, report_dir
 
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 
-EPISODE_STATUS = f"DAILY_REPORTS/{TODAY}_rsi2_episode_status.csv"
-BEST_EDGE = "BACKTESTS/rsi2_best_edge.csv"
-MARKET_REGIME = "BACKTESTS/market_regime.csv"
+REPORT_DIR = report_dir()
+EPISODE_STATUS = REPORT_DIR / f"{TODAY}_rsi2_episode_status.csv"
+BEST_EDGE = backtest_dir() / "rsi2_best_edge.csv"
+MARKET_REGIME = backtest_dir() / "market_regime.csv"
 
-OUT_CSV = f"DAILY_REPORTS/{TODAY}_crypto_opportunity_ranking.csv"
-OUT_MD = f"DAILY_REPORTS/{TODAY}_crypto_opportunity_ranking.md"
+OUT_CSV = REPORT_DIR / f"{TODAY}_crypto_opportunity_ranking.csv"
+OUT_MD = REPORT_DIR / f"{TODAY}_crypto_opportunity_ranking.md"
 
 
 def latest_episode_status():
     if Path(EPISODE_STATUS).exists():
         return EPISODE_STATUS
 
-    files = sorted(glob.glob("DAILY_REPORTS/*_rsi2_episode_status.csv"))
+    files = sorted(glob.glob(str(REPORT_DIR / "*_rsi2_episode_status.csv")))
     if not files:
         raise FileNotFoundError("No RSI2 episode status files found.")
     return files[-1]
@@ -46,7 +48,10 @@ def latest_close_map() -> dict[str, object]:
         "TSLA": "DATASETS/market_raw/TSLAx_USD_D1.json",
     }
     closes: dict[str, object] = {}
+    enabled = set(active_assets())
     for asset, path_text in files.items():
+        if asset not in enabled:
+            continue
         path = ROOT / path_text
         if asset == "TSLA" and not path.exists():
             continue
@@ -255,6 +260,7 @@ def recommendation(row):
 
 def build_ranking():
     status = pd.read_csv(latest_episode_status())
+    status = status[status["asset"].astype(str).str.upper().isin(active_assets())]
     edge = pd.read_csv(BEST_EDGE)
     close_map = latest_close_map()
 

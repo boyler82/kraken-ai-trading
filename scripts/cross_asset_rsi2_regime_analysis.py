@@ -7,11 +7,12 @@ sys.path.append(str(ROOT / "scripts"))
 
 from lib.data_loader import load_ohlc
 from lib.indicators import rsi
+from lib.universe import active_assets, backtest_dir
 
 HOLD_DAYS = 3
 RSI_THRESHOLD = 10
 
-OUT_FILE = "BACKTESTS/cross_asset_rsi2_regime_analysis.csv"
+OUT_FILE = backtest_dir() / "cross_asset_rsi2_regime_analysis.csv"
 
 FILES = {
     "BTC": "DATASETS/market_raw/BTCUSD_D1.json",
@@ -26,6 +27,8 @@ FILES = {
 rows = []
 
 for symbol, file_path in FILES.items():
+    if symbol not in set(active_assets()):
+        continue
     path = Path(file_path)
 
     if not path.exists():
@@ -86,7 +89,7 @@ report = pd.DataFrame(rows)
 if not report.empty:
     report = report.sort_values(["asset", "avg_return_pct"], ascending=[True, False])
 
-Path("BACKTESTS").mkdir(exist_ok=True)
+backtest_dir().mkdir(parents=True, exist_ok=True)
 
 report.to_csv(OUT_FILE, index=False)
 

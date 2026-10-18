@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.krakenai.market-transition</string>
+  <key>ProgramArguments</key>
+  <array><string>__REPOSITORY_ROOT__/scripts/run_market_transition_monitor.sh</string></array>
+  <key>WorkingDirectory</key><string>__REPOSITORY_ROOT__</string>
+  <key>StartInterval</key><integer>5400</integer>
+  <key>RunAtLoad</key><true/>
+  <key>ProcessType</key><string>Background</string>
+  <!-- StartInterval is not replayed for intervals missed while macOS sleeps.
+       The wrapper records those wall-clock gaps; it never backfills predictions. -->
+  <key>EnvironmentVariables</key>
+  <dict><key>MARKET_TRANSITION_TRIGGER</key><string>launchd</string></dict>
+  <key>StandardOutPath</key><string>__REPOSITORY_ROOT__/LOGS/market_transition_launchd.stdout.log</string>
+  <key>StandardErrorPath</key><string>__REPOSITORY_ROOT__/LOGS/market_transition_launchd.stderr.log</string>
+</dict>
+</plist>

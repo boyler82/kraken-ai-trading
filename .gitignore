@@ -26,3 +26,30 @@ DAILY_REPORTS/*.md
 # Python cache
 __pycache__/
 *.pyc
+
+# V2 permanent local research ledger: back up separately, never commit raw state
+DATASETS/QUANT_RESEARCH_V2/
+
+# Reproducibility boundary: source/definitions/fixtures in Git; evidence outside.
+.venv*/
+**/.venv/
+.pytest_cache/
+DATASETS/
+FORWARD_RESEARCH/
+PAPER_RESEARCH/
+RESEARCH_MEMORY/
+PAPER_TRADING/
+PORTFOLIO_MEMORY/
+journal/
+logs/
+*.sqlite
+*.sqlite-*
+*.db
+*.bak
+*.tmp
+*.lock.tmp
+data/
+LOGS/
+audit_pack/
+audit_pack_*.zip
+DECISION_REGISTRY/portfolio.json

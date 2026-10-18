@@ -1,0 +1,8 @@
+from scripts.paper_setup_extractor import extract_setups
+def base():
+ return {'consolidation':{'candidates':[{'asset':'A','kraken_pair':'AUSD','range_valid':True,'latest_available_market_price':100,'freshness_status':'FRESH','latest_completed_candle_timestamp':'2026-08-10T07:00:00Z','midpoint':105,'range_high':110}]},'rqi':{'assets':[{'asset':'A','position_zone':'LOWER_ZONE','rqi_classification':'GOOD_RANGE','rqi_score':75}]},'personality':{'assets':[{'asset':'A','classification':'RANGE_FRIENDLY'}]},'early_expansion':{'assets':[{'asset':'B','pair':'BUSD','classification':'PRE_MOVE_BUILDING','current_price':50,'freshness':'FRESH','source_timestamp':'2026-08-10T07:00:00Z'}]},'relative_strength':{'candidates':[{'asset':'B','relative_acceleration':1}]},'momentum':{'candidates':[{'asset':'C','kraken_pair':'CUSD','momentum_stage':'EARLY_MOMENTUM','overextension_risk':'LOW','current_price':20,'freshness_status':'FRESH','latest_completed_candle_timestamp':'2026-08-10T07:00:00Z'}]},'capital_flow':{'summary':{'primary_state':'BROAD_RISK_ON'}},'rotation':{}}
+def test_valid_consolidation_and_early_and_momentum():
+ s=extract_setups(base());families={x['strategy_name'] for x in s};assert {'CONSOLIDATION_RANGE','EARLY_EXPANSION','MOMENTUM_BREAKOUT'}.issubset(families)
+def test_stale_rejected():
+ r=base();r['consolidation']['candidates'][0]['freshness_status']='STALE';assert not any(x['asset']=='A' and x['strategy_name']=='CONSOLIDATION_RANGE' for x in extract_setups(r))
+def test_combinations_tracked():assert any(x['strategy_name']=='MULTI_MODULE_CONFIRMATION' for x in extract_setups(base()))

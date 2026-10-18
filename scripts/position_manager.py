@@ -4,16 +4,18 @@ from pathlib import Path
 import sys
 
 import pandas as pd
+from lib.universe import report_dir
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT / "scripts"))
 
 from lib.config import symbol_to_file  # noqa: E402
 from lib.data_loader import load_ohlc  # noqa: E402
+from lib.portfolio_positions import load_active_positions, open_position_count, open_position_summary  # noqa: E402
 
 
 INPUT_CSV = ROOT / "journal" / "portfolio_positions.csv"
-REPORT_DIR = ROOT / "DAILY_REPORTS"
+REPORT_DIR = report_dir()
 PRICE_FILE_MAP = {
     "BTCUSD": "DATASETS/market_raw/BTCUSD_D1.json",
     "BTCEUR": "DATASETS/market_raw/BTCEUR_D1.json",
@@ -160,7 +162,7 @@ def build_position_report() -> pd.DataFrame:
     if not INPUT_CSV.exists():
         return pd.DataFrame(columns=OUTPUT_COLUMNS)
 
-    positions = pd.read_csv(INPUT_CSV)
+    positions = load_active_positions(INPUT_CSV)
     if positions.empty:
         return pd.DataFrame(columns=OUTPUT_COLUMNS)
 
@@ -263,7 +265,9 @@ def render_report(report: pd.DataFrame) -> str:
     lines.append("")
     lines.append("## Summary")
     lines.append("")
-    lines.append(f"- Positions: {len(report)}")
+    source_positions = load_active_positions(INPUT_CSV)
+    lines.append(f"- Positions: {open_position_count(source_positions)}")
+    lines.append(f"- Portfolio position summary: {open_position_summary(source_positions)}")
     lines.append(f"- Total value: {round(float(total_value), 2)} {quote_currency_note}")
     lines.append(f"- Total P/L: {round(float(total_pnl), 2)} {quote_currency_note}")
     lines.append(

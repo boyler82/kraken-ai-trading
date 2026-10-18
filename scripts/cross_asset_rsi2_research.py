@@ -7,6 +7,7 @@ sys.path.append(str(ROOT / "scripts"))
 
 from lib.data_loader import load_ohlc
 from lib.indicators import rsi
+from lib.universe import active_assets, backtest_dir
 
 HOLD_DAYS = 3
 RSI_THRESHOLD = 10
@@ -24,6 +25,8 @@ FILES = {
 rows = []
 
 for symbol, file_path in FILES.items():
+    if symbol not in set(active_assets()):
+        continue
 
     path = Path(file_path)
 
@@ -80,9 +83,9 @@ if not report.empty:
         ascending=False,
     )
 
-Path("BACKTESTS").mkdir(exist_ok=True)
+backtest_dir().mkdir(parents=True, exist_ok=True)
 
-out_file = "BACKTESTS/cross_asset_rsi2_research.csv"
+out_file = backtest_dir() / "cross_asset_rsi2_research.csv"
 
 report.to_csv(out_file, index=False)
 

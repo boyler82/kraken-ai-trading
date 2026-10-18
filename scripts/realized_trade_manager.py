@@ -3,13 +3,14 @@ from __future__ import annotations
 from pathlib import Path
 
 import pandas as pd
+from lib.universe import project_memory_db, report_dir
 
 from lib.trading_costs import default_fee_pct
 
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT_CSV = ROOT / "journal" / "realized_trades.csv"
-REPORT_DIR = ROOT / "DAILY_REPORTS"
+REPORT_DIR = report_dir()
 REPORT_DATE = pd.Timestamp.today().date()
 REPORT_DATE_TS = pd.Timestamp(REPORT_DATE).normalize()
 REPORT_DATE_TEXT = REPORT_DATE_TS.strftime("%Y-%m-%d")

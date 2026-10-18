@@ -7,9 +7,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT / "scripts"))
 
 from lib.edge_metrics import calculate_quality_score
+from lib.universe import backtest_dir
 
-EDGE_DB = "BACKTESTS/rsi2_edge_database.csv"
-OUT = "BACKTESTS/rsi2_best_edge.csv"
+EDGE_DB = backtest_dir() / "rsi2_edge_database.csv"
+OUT = backtest_dir() / "rsi2_best_edge.csv"
 
 MIN_TRADES = 50
 MIN_PROFIT_FACTOR = 1.2

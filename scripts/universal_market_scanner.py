@@ -10,10 +10,11 @@ sys.path.append(str(ROOT / "scripts"))
 
 from lib.data_loader import load_ohlc  # noqa: E402
 from lib.indicators import atr, rsi, sma  # noqa: E402
+from lib.universe import active_assets, report_dir  # noqa: E402
 
 
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
-REPORT_DIR = ROOT / "DAILY_REPORTS"
+REPORT_DIR = report_dir()
 
 FILES = {
     "BTC": "DATASETS/market_raw/BTCUSD_D1.json",
@@ -166,7 +167,10 @@ def _build_row(asset: str, df: pd.DataFrame) -> dict:
 
 def build_market_scanner() -> pd.DataFrame:
     rows = []
+    enabled = set(active_assets())
     for asset, path_text in FILES.items():
+        if asset not in enabled:
+            continue
         if asset == "TSLA" and not (ROOT / path_text).exists():
             continue
         df = _load_asset_frame(path_text)

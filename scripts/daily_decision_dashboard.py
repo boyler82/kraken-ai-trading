@@ -3,10 +3,13 @@ from __future__ import annotations
 from pathlib import Path
 
 import pandas as pd
+from lib.universe import report_dir
+from lib.portfolio_positions import load_active_positions, open_position_assets
 
 ROOT = Path(__file__).resolve().parents[1]
-REPORT_DIR = ROOT / "DAILY_REPORTS"
+REPORT_DIR = report_dir()
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
+PORTFOLIO_POSITIONS = ROOT / "journal" / "portfolio_positions.csv"
 
 
 def _latest(pattern: str) -> Path | None:
@@ -49,11 +52,13 @@ def _final_decision(actionable: pd.DataFrame, developing: pd.DataFrame, watch_as
     return "WAIT", "No current setup or watchlist conditions."
 
 
-def _current_position(position_manager: pd.DataFrame, exit_planner: pd.DataFrame) -> pd.DataFrame:
-    if position_manager.empty:
+def _current_position(position_manager: pd.DataFrame, exit_planner: pd.DataFrame, active_portfolio: pd.DataFrame) -> pd.DataFrame:
+    assets = open_position_assets(active_portfolio)
+    if position_manager.empty or not assets:
         return pd.DataFrame(columns=["asset", "current_pnl", "status", "base_target", "optimistic_target"])
 
     df = position_manager.copy()
+    df = df[df["asset"].astype(str).str.strip().str.upper().isin(assets)].copy()
     df = df.rename(columns={"unrealized_pnl_value": "current_pnl"})
     if not exit_planner.empty and "asset" in exit_planner.columns:
         targets = exit_planner[["asset", "base_target", "optimistic_target"]].copy()
@@ -121,6 +126,7 @@ def build_dashboard() -> tuple[pd.DataFrame, str]:
     universal = _load_csv("*_universal_market_scanner.csv")
     portfolio = _load_csv("*_portfolio_allocation.csv")
     position_manager = _load_csv("*_position_manager.csv")
+    active_portfolio = load_active_positions(PORTFOLIO_POSITIONS)
     exit_planner = _load_csv("*_exit_planner.csv")
     signal_exit_calendar = _signal_exit_calendar()
     realized_trades_summary = _realized_trades_summary()
@@ -150,7 +156,7 @@ def build_dashboard() -> tuple[pd.DataFrame, str]:
     watch_assets = sorted(universal_watch["asset"].astype(str).unique().tolist()) if "asset" in universal_watch.columns else []
 
     final_decision, final_reason = _final_decision(actionable, developing, watch_assets)
-    current_position = _current_position(position_manager, exit_planner)
+    current_position = _current_position(position_manager, exit_planner, active_portfolio)
 
     dashboard_rows = []
     dashboard_rows.append({"section": "FINAL DECISION", "key": "decision", "value": final_decision})

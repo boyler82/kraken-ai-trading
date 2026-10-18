@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT / "scripts"))
 
 from lib.config import get_assets, symbol_to_file
+from lib.universe import active_assets, backtest_dir
 from lib.data_loader import load_ohlc
 from lib.indicators import rsi
 from lib.edge_metrics import trade_metrics
@@ -15,7 +16,7 @@ RSI_THRESHOLD = 10
 ENTRY_DAYS = [1, 2, 3]
 HOLD_DAYS = list(range(1, 11))
 
-OUT_FILE = "BACKTESTS/rsi2_edge_database.csv"
+OUT_FILE = backtest_dir() / "rsi2_edge_database.csv"
 
 
 def detect_episode_starts(df):
@@ -81,8 +82,11 @@ def calculate_asset_edge(asset, path):
 def build_edge_database():
     rows = []
 
+    enabled = set(active_assets())
     for symbol in get_assets("crypto"):
         asset = symbol.replace("USD", "")
+        if asset not in enabled:
+            continue
         path = symbol_to_file(symbol)
         rows.extend(calculate_asset_edge(asset, path))
 
@@ -92,7 +96,7 @@ def build_edge_database():
 def main():
     result = build_edge_database()
 
-    Path("BACKTESTS").mkdir(exist_ok=True)
+    backtest_dir().mkdir(parents=True, exist_ok=True)
     result.to_csv(OUT_FILE, index=False)
 
     print("\nRSI2 EDGE DATABASE\n")

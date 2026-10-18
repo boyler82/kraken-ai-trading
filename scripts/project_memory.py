@@ -8,10 +8,11 @@ from pathlib import Path
 from typing import Any, Iterable
 
 import pandas as pd
+from lib.universe import project_memory_db, report_dir
 
 ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = ROOT / "journal" / "project_memory.sqlite"
-REPORT_DIR = ROOT / "DAILY_REPORTS"
+DB_PATH = project_memory_db()
+REPORT_DIR = report_dir()
 
 ALLOWED_RECOMMENDATIONS = {
     "ACTIVE_OPPORTUNITY",

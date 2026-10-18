@@ -8,12 +8,13 @@ sys.path.append(str(ROOT / "scripts"))
 from lib.data_loader import load_ohlc
 from lib.indicators import rsi
 from lib.config import get_assets, symbol_to_file
+from lib.universe import active_assets, backtest_dir, report_dir
 
 RSI_THRESHOLD = 10
 NEAR_THRESHOLD = 25
 HOLD_DAYS = 3
 
-ASSETS = get_assets("crypto")
+ASSETS = [symbol for symbol in get_assets("crypto") if symbol.replace("USD", "") in set(active_assets())]
 
 FILES = {
     symbol.replace("USD", ""): symbol_to_file(symbol)
@@ -21,9 +22,9 @@ FILES = {
 }
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 
-OUT_EPISODES = "BACKTESTS/rsi2_oversold_episodes.csv"
-OUT_SUMMARY = "BACKTESTS/rsi2_oversold_episode_summary.csv"
-OUT_DAILY = f"DAILY_REPORTS/{TODAY}_rsi2_episode_status.csv"
+OUT_EPISODES = backtest_dir() / "rsi2_oversold_episodes.csv"
+OUT_SUMMARY = backtest_dir() / "rsi2_oversold_episode_summary.csv"
+OUT_DAILY = report_dir() / f"{TODAY}_rsi2_episode_status.csv"
 
 
 def detect_episodes(asset, df):
@@ -199,8 +200,8 @@ for asset, sample in episodes_df.groupby("asset"):
 
 summary_df = pd.DataFrame(summary_rows)
 
-Path("BACKTESTS").mkdir(exist_ok=True)
-Path("DAILY_REPORTS").mkdir(exist_ok=True)
+backtest_dir().mkdir(parents=True, exist_ok=True)
+report_dir().mkdir(parents=True, exist_ok=True)
 
 episodes_df.to_csv(OUT_EPISODES, index=False)
 summary_df.to_csv(OUT_SUMMARY, index=False)

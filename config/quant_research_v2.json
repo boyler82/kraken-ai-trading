@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "RESEARCH_MEASUREMENT_ONLY",
+  "timing_basis": "CLOSED_CANDLE_REFERENCE",
+  "horizons_hours": [1, 4, 12, 24, 72],
+  "maximum_source_age_hours": 8,
+  "cluster_method_version": "GLOBAL_24H_UTC_V1",
+  "trading_capability": "DISABLED",
+  "automatic_promotion": false,
+  "destructive_retention_enabled": false
+}

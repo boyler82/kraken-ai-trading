@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+ROOT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+PYTHON=${RESEARCH_BOOTSTRAP_PYTHON:-python3.12}
+ENV_DIR=${RESEARCH_VENV:-"$ROOT_DIR/.venv-research"}
+"$PYTHON" -c 'import sys; assert sys.version_info[:2] == (3, 12), "CPython 3.12 required"'
+"$PYTHON" -m venv "$ENV_DIR"
+"$ENV_DIR/bin/python" -m pip install --requirement "$ROOT_DIR/requirements-research.lock"
+"$ENV_DIR/bin/python" -m pip check
+printf 'Research environment ready: %s\n' "$ENV_DIR"

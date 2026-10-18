@@ -1,0 +1,32 @@
+{
+  "accepted_rqi_classifications": [
+    "ACCEPTABLE_RANGE",
+    "GOOD_RANGE",
+    "EXCELLENT_RANGE"
+  ],
+  "cost_model": {
+    "combined_v1_cost_allowed": false,
+    "entry_fee_pct": 0.2,
+    "entry_slippage_stored_separately": true,
+    "exit_fee_pct": 0.2,
+    "exit_slippage_stored_separately": true,
+    "reference_notional_usd": 10000.0
+  },
+  "entry_convention": "FIRST_VALID_KRAKEN_BEST_ASK_AFTER_SIGNAL_CREATION",
+  "historical_backfill_official_cohort": "PROHIBITED",
+  "hypothesis_version": "2.0.0",
+  "market_regime_is_entry_filter": false,
+  "max_holding_hours": 120,
+  "official_cohort_start_timestamp": null,
+  "order_placement": "PROHIBITED",
+  "range_construction": "PRESERVE_RANGE_FIXED_5_V1_LOGIC",
+  "range_position": {
+    "lower_inclusive_pct": 0.0,
+    "upper_exclusive_pct": 50.0
+  },
+  "same_bar_ambiguous_tp_sl": "CONSERVATIVE_STOP_FIRST",
+  "schema_version": "1.0.0",
+  "stop_pct": 2.0,
+  "strategy_id": "RANGE_FIXED_5_FORWARD_V2",
+  "target_pct": 5.0
+}

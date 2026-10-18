@@ -4,12 +4,13 @@ import sqlite3
 from pathlib import Path
 
 import pandas as pd
+from lib.universe import project_memory_db, report_dir
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = ROOT / "journal" / "project_memory.sqlite"
+DB_PATH = project_memory_db()
 EDGE_PATH = ROOT / "BACKTESTS" / "rsi2_best_edge.csv"
-REPORT_DIR = ROOT / "DAILY_REPORTS"
+REPORT_DIR = report_dir()
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 OUT_CSV = REPORT_DIR / f"{TODAY}_research_feedback.csv"
 OUT_MD = REPORT_DIR / f"{TODAY}_research_feedback.md"

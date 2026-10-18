@@ -6,7 +6,13 @@ mkdir -p DATASETS/market_raw
 
 echo "Updating crypto market data..."
 
-for symbol in BTCUSD BTCEUR ETHUSD SOLUSD XRPUSD LINKUSD ADAUSD AVAXUSD DOGEUSD LTCUSD
+if [ "${KRAKEN_UNIVERSE:-full_crypto}" = "btc_only" ]; then
+  symbols="BTCUSD"
+else
+  symbols="BTCUSD BTCEUR ETHUSD SOLUSD XRPUSD LINKUSD ADAUSD AVAXUSD DOGEUSD LTCUSD"
+fi
+
+for symbol in $symbols
 do
   echo "Downloading $symbol..."
   kraken ohlc $symbol --interval 1440 -o json > DATASETS/market_raw/${symbol}_D1.json

@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "weights": {
+    "boundary_quality": 15,
+    "range_containment": 15,
+    "trend_flatness": 10,
+    "width_quality": 10,
+    "traversal_quality": 15,
+    "cycle_regularity": 10,
+    "historical_personality": 10,
+    "false_break_reliability": 10,
+    "liquidity_data_quality": 5
+  },
+  "confidence_multipliers": {"HIGH": 1.0, "MEDIUM": 0.85, "LOW": 0.65},
+  "freshness": {"stale_hours": 24},
+  "thresholds": {
+    "minimum_net_width_pct": 1.0,
+    "maximum_width_pct": 20.0,
+    "excessive_false_breaks": 4,
+    "one_sided_symmetry": 0.4,
+    "directional_efficiency_high": 0.55
+  },
+  "penalties": {
+    "excessive_false_breaks": 12,
+    "one_sided_range": 10,
+    "low_liquidity": 12,
+    "unstable_width": 10,
+    "directional_trend": 12,
+    "range_too_narrow": 10,
+    "recovery_state": 7
+  },
+  "labels": ["RESEARCH_ONLY", "NOT_A_BUY_SIGNAL", "NOT_A_SELL_SIGNAL", "USER_DECISION_REQUIRED", "LIVE_NOT_AUTHORIZED"]
+}

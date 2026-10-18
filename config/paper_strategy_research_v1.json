@@ -1,0 +1,10 @@
+{
+  "version":"1.0.0","standard_notional_usd":10000,"estimated_round_trip_cost_pct":0.60,
+  "labels":["RESEARCH_ONLY","PAPER_ONLY","NOT_A_BUY_SIGNAL","NOT_A_SELL_SIGNAL","NO_REAL_ORDERS","USER_DECISION_REQUIRED","LIVE_NOT_AUTHORIZED"],
+  "variants":{
+    "CONSOLIDATION_RANGE":{"RANGE_MIDPOINT":{"target":"MIDPOINT","stop_pct":2,"max_hold_hours":72},"RANGE_HIGH":{"target":"RANGE_HIGH","stop_pct":2,"max_hold_hours":120},"RANGE_FIXED_3":{"target_pct":3,"stop_pct":2,"max_hold_hours":72},"RANGE_FIXED_5":{"target_pct":5,"stop_pct":2,"max_hold_hours":120}},
+    "EARLY_EXPANSION":{"EE_TP3_SL2":{"target_pct":3,"stop_pct":2,"max_hold_hours":48},"EE_TP4_SL2":{"target_pct":4,"stop_pct":2,"max_hold_hours":48},"EE_TP5_SL2":{"target_pct":5,"stop_pct":2,"max_hold_hours":48},"EE_DYNAMIC_BREAKOUT":{"target":"BREAKOUT_PLUS_3","stop_pct":2,"max_hold_hours":48}},
+    "MOMENTUM_BREAKOUT":{"MOMENTUM_TP3_SL2":{"target_pct":3,"stop_pct":2,"max_hold_hours":48},"MOMENTUM_TP5_SL2":{"target_pct":5,"stop_pct":2,"max_hold_hours":72},"MOMENTUM_STRUCTURE_EXIT":{"target_pct":5,"stop_pct":2,"max_hold_hours":72}},
+    "BTC_ROTATION":{"ROTATION_3D":{"target_pct":100,"stop_pct":100,"max_hold_hours":72},"ROTATION_5D":{"target_pct":100,"stop_pct":100,"max_hold_hours":120},"ROTATION_10D":{"target_pct":100,"stop_pct":100,"max_hold_hours":240}}
+  }
+}

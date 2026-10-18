@@ -81,10 +81,11 @@ def test_duplicate_preflight(tmp_path,monkeypatch):
     r.close()
 
 
+@pytest.mark.archive
 def test_existing_history_and_forward_outcomes_untouched(tmp_path):
     at=prepare(tmp_path,'12')
     paths=[ROOT/'DATASETS/QUANT_RESEARCH_V2/research.sqlite',ROOT/'FORWARD_RESEARCH/RANGE_FIXED_5_FORWARD_V2/range_fixed_5_forward_v2.sqlite']
-    if not all(p.exists() for p in paths):pytest.skip('local protected stores unavailable')
+    if not all(p.exists() for p in paths):pytest.fail('Required archives unavailable: protected stores')
     hashes=[hashlib.sha256(p.read_bytes()).hexdigest() for p in paths]
     ro=sqlite3.connect(paths[0].as_uri()+'?mode=ro',uri=True);r=Registry(':memory:');ro.backup(r.db)
     previous=r.db.execute('select id,payload from signals').fetchall();oldout=r.db.execute('select * from outcomes').fetchall()

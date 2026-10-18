@@ -1,0 +1,17 @@
+{
+  "base_strategy_id": "RANGE_FIXED_5_FORWARD_V2",
+  "entry_observation": {
+    "entry_side": "BEST_ASK",
+    "maximum_spread_pct": 0.75,
+    "public_endpoint": "https://api.kraken.com/0/public/Ticker",
+    "require_pair_active_when_status_available": true
+  },
+  "extension_id": "RANGE_FIXED_5_FORWARD_V2_PHASE4_ENTRY_V1",
+  "extension_version": "1.0.0",
+  "quote_attempt_policy": {
+    "delay_between_attempts_seconds": 1.0,
+    "maximum_attempts": 3,
+    "same_scanner_execution": true,
+    "unbounded_retries": false
+  }
+}

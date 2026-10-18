@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "weights": {
+    "volatility_compression": 20,
+    "range_position": 15,
+    "relative_strength_delta": 15,
+    "volume_buildup": 10,
+    "momentum_precursor": 15,
+    "cross_module_improvement": 15,
+    "capital_flow_alignment": 5,
+    "data_quality": 5
+  },
+  "combined_coefficients": {"current_state": 0.65, "energy_delta": 0.35},
+  "energy_weights": {"volatility_compression": 15, "relative_strength": 20, "relative_acceleration": 15, "volume_zscore": 15, "momentum": 15, "range_quality": 10, "rotation": 5, "evidence_confidence": 5},
+  "overextension": {"max_pre_move_24h_return_pct": 5.0, "max_pre_move_48h_return_pct": 8.0, "max_range_position_pct": 70.0, "max_volume_zscore": 3.0, "max_distance_above_ema_atr": 2.5, "allow_breakout_confirmed": false, "allow_extended_move": false},
+  "classification": {"strong": 75.0, "building": 60.0, "too_early": 45.0, "minimum_improving_modules_strong": 3},
+  "target_move_pct": [3, 5],
+  "target_horizon_hours": [12, 48],
+  "labels": ["RESEARCH_ONLY", "NOT_A_BUY_SIGNAL", "NOT_A_SELL_SIGNAL", "USER_DECISION_REQUIRED", "LIVE_NOT_AUTHORIZED"]
+}

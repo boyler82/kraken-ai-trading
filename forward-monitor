@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+ROOT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+PYTHON=${RESEARCH_PYTHON:-"$ROOT_DIR/.venv-research/bin/python"}
+if [ ! -x "$PYTHON" ]; then echo "Required repository Python is unavailable: $PYTHON" >&2; exit 1; fi
+exec "$PYTHON" "$ROOT_DIR/scripts/forward_monitor.py" "$@"

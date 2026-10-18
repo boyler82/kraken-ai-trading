@@ -1,0 +1,5 @@
+{
+  "mode": "full_crypto",
+  "full_crypto": ["BTC", "ETH", "SOL", "XRP", "LINK", "ADA", "AVAX", "DOGE", "LTC"],
+  "btc_only": ["BTC"]
+}

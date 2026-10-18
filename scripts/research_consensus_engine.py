@@ -4,10 +4,11 @@ from pathlib import Path
 import glob
 
 import pandas as pd
+from lib.universe import report_dir
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REPORT_DIR = ROOT / "DAILY_REPORTS"
+REPORT_DIR = report_dir()
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 OUT_CSV = REPORT_DIR / f"{TODAY}_research_consensus.csv"
 OUT_MD = REPORT_DIR / f"{TODAY}_research_consensus.md"

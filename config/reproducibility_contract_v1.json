@@ -1,0 +1,382 @@
+{
+  "contract_version": "RESEARCH_SEMANTICS_V1",
+  "effective_rules": {
+    "CONSOLIDATION_FRESH_HOURS": 8.0,
+    "CONSOLIDATION_STALE_HOURS": 24.0,
+    "KRAKEN_UNIVERSE": "full_crypto"
+  },
+  "logic": {
+    "btc_rotation_engine": {
+      "ast_sha256": "ae635633a12c012295078c5310e59864dfd1db5a6622d1099ff3b4e4f4e18761",
+      "symbols": [
+        "synchronized_relative_series",
+        "_return",
+        "rotation_features",
+        "btc_hold_score",
+        "alt_rotation_score",
+        "theoretical_edge",
+        "rotation_disposition",
+        "risk_flags",
+        "rotation_controls",
+        "choose_state",
+        "features_deteriorating",
+        "allocation_review_band"
+      ],
+      "version": "EXISTING_LOGIC_V1"
+    },
+    "capital_flow_engine": {
+      "ast_sha256": "c43d2da51b3ac44516afa4cab0fa75209877d179a79ea979160aefa5f3c93805",
+      "symbols": [
+        "infer"
+      ],
+      "version": "EXISTING_LOGIC_V1"
+    },
+    "consolidation_range_engine": {
+      "ast_sha256": "a920613815f51ce89249f1579c80938e0128a23b68b292e4109117696c633868",
+      "symbols": [
+        "BoundaryEvent",
+        "completed_4h_bars",
+        "atr14",
+        "boundary_events",
+        "breakout_events",
+        "traversal_durations",
+        "_timing",
+        "position_pct",
+        "_location",
+        "_intervals",
+        "_traversal_event_details",
+        "timeline_metrics",
+        "analyze_candidate",
+        "detect_range",
+        "apply_freshness_safety"
+      ],
+      "version": "EXISTING_LOGIC_V1"
+    },
+    "daily_momentum_breakout_radar": {
+      "ast_sha256": "12c87c98cdf5a48212ecd9069650e09b17b2a42597c9000c4ab4d50f21b0b6d2",
+      "symbols": [
+        "_ret",
+        "calculate_features",
+        "movement_alert",
+        "classify_stage",
+        "decision_conditions",
+        "score_momentum",
+        "rank_rows"
+      ],
+      "version": "EXISTING_LOGIC_V1"
+    },
+    "early_expansion_engine": {
+      "ast_sha256": "a99a61b5fc66eee197297887d384e2f198b2aab24d0d222f32223145c845e003",
+      "symbols": [
+        "_num",
+        "_clip",
+        "_maps",
+        "_stage_score",
+        "_position_score",
+        "_capital_state",
+        "calculate_asset",
+        "rank"
+      ],
+      "version": "EXISTING_LOGIC_V1"
+    },
+    "paper_setup_extractor": {
+      "ast_sha256": "38673dc00787e7304a4b4d800a913afe2b97030f61597296abb62c0a1d61f87d",
+      "symbols": [
+        "extract_setups",
+        "_map"
+      ],
+      "version": "EXISTING_LOGIC_V1"
+    },
+    "paper_strategy_decision_engine": {
+      "ast_sha256": "c0d575b09532a85001598f80864ff6c9b339c4a8a3ee459e3950ae1cac465a65",
+      "symbols": [
+        "episode_key",
+        "create_decisions"
+      ],
+      "version": "EXISTING_LOGIC_V1"
+    },
+    "range_personality_engine": {
+      "ast_sha256": "10de7908c3a57e2c8abc4574d3fd6dca34e246ec59158bdc8919b90393d38429",
+      "symbols": [
+        "_clean_4h",
+        "data_quality",
+        "_atr",
+        "_debounced_events",
+        "extract_traversals",
+        "_episode_candidate",
+        "detect_range_episodes",
+        "_rate",
+        "_sample_quality",
+        "_clip",
+        "_mean",
+        "_med",
+        "_cv",
+        "summarize_personality",
+        "analyze_asset",
+        "current_intersection"
+      ],
+      "version": "EXISTING_LOGIC_V1"
+    },
+    "range_quality_index": {
+      "ast_sha256": "ad2b63105de91c0bc7dd7f88ca3ae7208da0ee861c8dbdcc3325b33d94710add",
+      "symbols": [
+        "_num",
+        "_clip",
+        "_score",
+        "position_zone",
+        "classification",
+        "_quality_label",
+        "calculate_rqi",
+        "rank_assets"
+      ],
+      "version": "EXISTING_LOGIC_V1"
+    },
+    "relative_strength_radar": {
+      "ast_sha256": "8359a1a10c5de944caec35eb04a7a5f88c2494309da2b20c29f957826277ac2d",
+      "symbols": [
+        "score_row",
+        "classify",
+        "analyze",
+        "enriched_features"
+      ],
+      "version": "EXISTING_LOGIC_V1"
+    }
+  },
+  "measurement": {
+    "benchmark_calculation_version": "LONG_BTC_CC_V1",
+    "cluster_method_version": "GLOBAL_24H_UTC_V1",
+    "contract_version": "ASSET_BENCHMARK_V1",
+    "horizons_hours": [
+      1,
+      4,
+      12,
+      24,
+      72
+    ],
+    "timing_basis": "CLOSED_CANDLE_REFERENCE"
+  },
+  "observation_identity": "PARENT_SETUP_V2",
+  "research_definitions": {
+    "assets.json": {
+      "crypto": [
+        "BTCUSD",
+        "ETHUSD",
+        "SOLUSD",
+        "XRPUSD",
+        "LINKUSD",
+        "ADAUSD",
+        "AVAXUSD",
+        "DOGEUSD",
+        "LTCUSD"
+      ],
+      "research": [
+        "BTCUSD",
+        "ETHUSD",
+        "SOLUSD",
+        "XRPUSD",
+        "LINKUSD",
+        "ADAUSD",
+        "AVAXUSD",
+        "DOGEUSD",
+        "LTCUSD"
+      ]
+    },
+    "early_expansion_engine_v1.json": {
+      "classification": {
+        "building": 60.0,
+        "minimum_improving_modules_strong": 3,
+        "strong": 75.0,
+        "too_early": 45.0
+      },
+      "combined_coefficients": {
+        "current_state": 0.65,
+        "energy_delta": 0.35
+      },
+      "energy_weights": {
+        "evidence_confidence": 5,
+        "momentum": 15,
+        "range_quality": 10,
+        "relative_acceleration": 15,
+        "relative_strength": 20,
+        "rotation": 5,
+        "volatility_compression": 15,
+        "volume_zscore": 15
+      },
+      "labels": [
+        "RESEARCH_ONLY",
+        "NOT_A_BUY_SIGNAL",
+        "NOT_A_SELL_SIGNAL",
+        "USER_DECISION_REQUIRED",
+        "LIVE_NOT_AUTHORIZED"
+      ],
+      "overextension": {
+        "allow_breakout_confirmed": false,
+        "allow_extended_move": false,
+        "max_distance_above_ema_atr": 2.5,
+        "max_pre_move_24h_return_pct": 5.0,
+        "max_pre_move_48h_return_pct": 8.0,
+        "max_range_position_pct": 70.0,
+        "max_volume_zscore": 3.0
+      },
+      "target_horizon_hours": [
+        12,
+        48
+      ],
+      "target_move_pct": [
+        3,
+        5
+      ],
+      "version": "1.0.0",
+      "weights": {
+        "capital_flow_alignment": 5,
+        "cross_module_improvement": 15,
+        "data_quality": 5,
+        "momentum_precursor": 15,
+        "range_position": 15,
+        "relative_strength_delta": 15,
+        "volatility_compression": 20,
+        "volume_buildup": 10
+      }
+    },
+    "range_personality_v1.json": {
+      "analysis_timeframe_hours": 4,
+      "classification": {
+        "breakout_failure_rate": 0.45,
+        "chaos_cycle_cv": 0.85,
+        "chaos_spike_rate": 0.1,
+        "friendly_score": 55,
+        "specialist_score": 72,
+        "trend_efficiency": 0.55
+      },
+      "data": {
+        "fresh_hours": 8.0,
+        "min_4h_bars": 180,
+        "stale_hours": 24.0
+      },
+      "episode": {
+        "boundary_tolerance_pct_of_width": 18.0,
+        "break_confirmation_bars": 2,
+        "break_tolerance_atr": 0.35,
+        "event_cooldown_bars": 2,
+        "max_missing_bar_pct": 5.0,
+        "max_normalized_slope": 0.2,
+        "max_width_pct": 18.0,
+        "min_bars": 24,
+        "min_boundary_reactions": 2,
+        "min_containment_pct": 82.0,
+        "min_width_pct": 1.0,
+        "seed_bars": 24
+      },
+      "liquidity": {
+        "max_spread_pct": 0.75,
+        "min_quote_volume": 250000.0
+      },
+      "penalties": {
+        "confirmed_failures": 12,
+        "false_breaks": 8,
+        "low_sample": 12,
+        "poor_liquidity": 20,
+        "spikes": 8,
+        "stale_data": 10,
+        "trend_persistence": 15,
+        "unstable_cycle": 10,
+        "unstable_width": 8
+      },
+      "sample_quality": {
+        "high_min_episodes": 8,
+        "high_min_traversals": 20,
+        "insufficient_min_episodes": 2,
+        "insufficient_min_traversals": 4,
+        "medium_min_episodes": 4,
+        "medium_min_traversals": 8
+      },
+      "score_weights": {
+        "cycle_duration_regularity": 20,
+        "episode_consistency": 5,
+        "episode_persistence": 10,
+        "full_traversal_completion": 15,
+        "historical_range_occupancy": 15,
+        "liquidity_data_quality": 10,
+        "midpoint_recovery": 15,
+        "move_size_regularity": 10
+      },
+      "version": "1.0.0",
+      "windows_days": {
+        "long_cap": 365,
+        "medium": 90,
+        "recent": 30
+      }
+    },
+    "range_quality_index_v1.json": {
+      "confidence_multipliers": {
+        "HIGH": 1.0,
+        "LOW": 0.65,
+        "MEDIUM": 0.85
+      },
+      "freshness": {
+        "stale_hours": 24
+      },
+      "labels": [
+        "RESEARCH_ONLY",
+        "NOT_A_BUY_SIGNAL",
+        "NOT_A_SELL_SIGNAL",
+        "USER_DECISION_REQUIRED",
+        "LIVE_NOT_AUTHORIZED"
+      ],
+      "penalties": {
+        "directional_trend": 12,
+        "excessive_false_breaks": 12,
+        "low_liquidity": 12,
+        "one_sided_range": 10,
+        "range_too_narrow": 10,
+        "recovery_state": 7,
+        "unstable_width": 10
+      },
+      "thresholds": {
+        "directional_efficiency_high": 0.55,
+        "excessive_false_breaks": 4,
+        "maximum_width_pct": 20.0,
+        "minimum_net_width_pct": 1.0,
+        "one_sided_symmetry": 0.4
+      },
+      "version": "1.0.0",
+      "weights": {
+        "boundary_quality": 15,
+        "cycle_regularity": 10,
+        "false_break_reliability": 10,
+        "historical_personality": 10,
+        "liquidity_data_quality": 5,
+        "range_containment": 15,
+        "traversal_quality": 15,
+        "trend_flatness": 10,
+        "width_quality": 10
+      }
+    },
+    "trading_costs.json": {
+      "default_fee_pct": 0.2,
+      "exchange": "Kraken",
+      "maker_fee_pct": 0.2,
+      "notes": "Estimated from Kraken transaction preview. Fee is percent per transaction side.",
+      "slippage_pct": 0.0,
+      "taker_fee_pct": 0.2
+    },
+    "universe.json": {
+      "btc_only": [
+        "BTC"
+      ],
+      "full_crypto": [
+        "BTC",
+        "ETH",
+        "SOL",
+        "XRP",
+        "LINK",
+        "ADA",
+        "AVAX",
+        "DOGE",
+        "LTC"
+      ],
+      "mode": "full_crypto"
+    }
+  },
+  "signal_schema_version": "1.0.0"
+}

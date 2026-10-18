@@ -1,0 +1,12 @@
+{
+  "base_strategy_id": "RANGE_FIXED_5_FORWARD_V2",
+  "clock_policy": {
+    "external_sync_claim": "HOST_CLOCK_EXTERNAL_SYNC_UNVERIFIED",
+    "fail_closed": true,
+    "monotonic_required": true,
+    "tolerance_seconds": 2.0,
+    "utc_wall_clock_authoritative": true
+  },
+  "extension_id": "RANGE_FIXED_5_FORWARD_V2_CLOCK_SAFETY_V1",
+  "extension_version": "1.0.0"
+}

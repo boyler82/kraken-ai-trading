@@ -1,18 +1,20 @@
 from pathlib import Path
 import glob
 import pandas as pd
+from lib.universe import report_dir
 
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 
-RANKING = f"DAILY_REPORTS/{TODAY}_crypto_opportunity_ranking.csv"
-OUT = f"DAILY_REPORTS/{TODAY}_daily_research_summary.md"
+REPORT_DIR = report_dir()
+RANKING = REPORT_DIR / f"{TODAY}_crypto_opportunity_ranking.csv"
+OUT = REPORT_DIR / f"{TODAY}_daily_research_summary.md"
 
 
 def latest_ranking():
     if Path(RANKING).exists():
         return RANKING
 
-    files = sorted(glob.glob("DAILY_REPORTS/*_crypto_opportunity_ranking.csv"))
+    files = sorted(glob.glob(str(REPORT_DIR / "*_crypto_opportunity_ranking.csv")))
     if not files:
         raise FileNotFoundError("No opportunity ranking files found.")
 

@@ -7,9 +7,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT / "scripts"))
 
 from lib.monte_carlo import run_monte_carlo, summarize_monte_carlo
+from lib.universe import backtest_dir
 
-INPUT_FILE = Path("BACKTESTS/rsi2_oversold_episodes.csv")
-OUTPUT_FILE = Path("BACKTESTS/rsi2_monte_carlo_summary.csv")
+INPUT_FILE = backtest_dir() / "rsi2_oversold_episodes.csv"
+OUTPUT_FILE = backtest_dir() / "rsi2_monte_carlo_summary.csv"
 
 ENTRY_COLUMNS = {
     "DAY1": "ret_day1_hold3_pct",

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import subprocess
+import os
 import sys
 import time
 from pathlib import Path
@@ -24,6 +25,8 @@ STEPS = [
     "scripts/research_evolution_engine.py",
     "scripts/research_timeline_engine.py",
     "scripts/research_regime_engine.py",
+    "scripts/crypto_research_radar.py",
+    "scripts/consolidation_range_engine.py",
     "scripts/portfolio_allocator.py",
     "scripts/position_manager.py",
     "scripts/realized_trade_manager.py",
@@ -32,6 +35,7 @@ STEPS = [
     "scripts/signal_outcome_engine.py",
     "scripts/daily_research_summary.py",
     "scripts/daily_decision_dashboard.py",
+    "scripts/morning_brief.py",
     "scripts/research_consensus_engine.py",
     "scripts/research_feedback_engine.py",
     "scripts/research_validation_engine.py",
@@ -44,6 +48,9 @@ def main() -> None:
     """Run the full research pipeline sequentially."""
 
     started = time.perf_counter()
+
+    if os.environ.get("KRAKEN_UNIVERSE") == "btc_only":
+        subprocess.run([sys.executable, str(ROOT / "scripts/rsi2_episode_tracker.py")], check=True)
 
     for idx, step in enumerate(STEPS, start=1):
         print(f"[{idx}/{len(STEPS)}] Running {step}")

@@ -3,10 +3,11 @@ from __future__ import annotations
 from pathlib import Path
 
 import pandas as pd
+from lib.universe import active_assets, report_dir
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REPORT_DIR = ROOT / "DAILY_REPORTS"
+REPORT_DIR = report_dir()
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 OUT_CSV = REPORT_DIR / f"{TODAY}_trade_candidate_dashboard.csv"
 OUT_MD = REPORT_DIR / f"{TODAY}_trade_candidate_dashboard.md"
@@ -79,8 +80,13 @@ def _watch_status(row: dict) -> str:
 
 
 def _missing_conditions(row: dict, readiness_pct: float) -> str:
-    if str(row.get("current_setup_status", "")).upper() == "HISTORICAL_ONLY":
+    setup_status = str(row.get("current_setup_status", "")).upper()
+    if setup_status == "STALE_DATA":
+        return "Waiting for fresh external market data"
+    if setup_status == "HISTORICAL_ONLY":
         return "Waiting for current signal"
+    if setup_status == "NO_SETUP":
+        return "Wait for a new oversold episode"
     conditions = []
     if str(row.get("bucket", "")).upper() != "ACTIVE_OPPORTUNITY":
         conditions.append("Waiting for signal")
@@ -151,6 +157,7 @@ def build_dashboard() -> pd.DataFrame:
         ])
 
     assets = sorted(set().union(*[set(df["asset"].astype(str).str.upper()) for df in sources if "asset" in df.columns]))
+    assets = [asset for asset in assets if asset in set(active_assets())]
     rows = []
     for asset in assets:
         row: dict[str, object] = {"asset": asset}
@@ -270,6 +277,16 @@ def render_markdown(report: pd.DataFrame) -> str:
     if report.empty:
         lines.append("No candidates available.")
     else:
+        current = report[
+            report["current_setup_status"].isin(["ACTIONABLE", "DEVELOPING"])
+        ]
+        if current.empty:
+            lines.extend(
+                [
+                    "No current RSI2 entry setup. Wait for a new oversold episode.",
+                    "",
+                ]
+            )
         for _, row in report.iterrows():
             lines.append(
                 f"- {row['asset']} | setup {row['current_setup_status']} | class {row['asset_class']} | readiness {row['readiness_pct']} | priority {row['priority']} | research {row['research_score']} | opp {row['opportunity_score']} | conf {row['confidence_score']} | rec {row['recommendation']} | phase {row['current_phase']} | bias {row['market_bias']} | ev {row['expected_value_pct']} | pf {row['profit_factor']} | watch {row['watch_status']} | missing {row['missing_conditions']}"

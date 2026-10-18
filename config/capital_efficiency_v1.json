@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "purpose": "RESEARCH_ONLY",
+  "minimum_hourly_bars": 168,
+  "minimum_event_episodes": 10,
+  "event_max_horizon_hours": 168,
+  "event_stop_pct": 2.0,
+  "score_weights": {
+    "movement": 25,
+    "speed": 15,
+    "probability": 25,
+    "liquidity": 20,
+    "setup": 15
+  },
+  "score_scales": {
+    "movement_range_pct_full_score": 5.0,
+    "speed_hours_zero_score": 168.0,
+    "speed_hours_full_score": 12.0,
+    "setup_quality_full_score": 100.0
+  },
+  "liquidity": {
+    "notionals_usd": [5000, 10000],
+    "impact_coefficient_pct": 0.5,
+    "execution_fee_pct_per_side": 0.20,
+    "entry_impact_multiplier": 1.0,
+    "exit_impact_multiplier": 1.25,
+    "good_max_slippage_10k_pct": 0.25,
+    "acceptable_max_slippage_10k_pct": 0.6,
+    "poor_max_slippage_10k_pct": 1.25,
+    "minimum_volume_24h_usd": 250000.0,
+    "maximum_participation_10k_pct": 5.0
+  },
+  "fast_range": {
+    "minimum_median_move_pct": 3.0,
+    "maximum_median_move_pct": 5.5,
+    "minimum_cycle_hours": 12.0,
+    "maximum_cycle_hours": 48.0,
+    "minimum_score": 40.0
+  },
+  "portfolio_status": {
+    "productive_min_score": 65.0,
+    "neutral_min_score": 45.0,
+    "high_opportunity_cost_difference": 25.0
+  },
+  "documentation": {
+    "weights": "Conservative initial research weights; not optimized against OOS outcomes.",
+    "slippage": "Estimated as half quoted spread plus a square-root volume-participation impact proxy; not an order-book execution quote.",
+    "episodes": "Non-overlapping entry episodes advance beyond the first target/stop resolution to reduce correlated samples."
+  }
+}

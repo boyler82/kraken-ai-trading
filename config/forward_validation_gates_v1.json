@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "minimum_completed_forward_outcomes": 50,
+  "minimum_independent_signal_clusters": 20,
+  "minimum_unique_market_timestamps": 20,
+  "minimum_unique_assets": 5,
+  "maximum_single_timestamp_ev_delta_pct": 0.25,
+  "maximum_single_asset_ev_delta_pct": 0.25,
+  "minimum_regime_diversity": 2,
+  "automatic_validation": false,
+  "purpose": "RESEARCH_GOVERNANCE_ONLY"
+}

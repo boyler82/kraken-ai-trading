@@ -17,12 +17,14 @@ from lib.portfolio_engine import (
     build_portfolio_allocation,
     get_allocation_columns,
 )
+from lib.universe import active_assets, report_dir
 
 TODAY = pd.Timestamp.today().strftime("%Y-%m-%d")
 
-RANKING = f"DAILY_REPORTS/{TODAY}_crypto_opportunity_ranking.csv"
-OUT_CSV = f"DAILY_REPORTS/{TODAY}_portfolio_allocation.csv"
-OUT_MD = f"DAILY_REPORTS/{TODAY}_portfolio_allocation.md"
+REPORT_DIR = report_dir()
+RANKING = REPORT_DIR / f"{TODAY}_crypto_opportunity_ranking.csv"
+OUT_CSV = REPORT_DIR / f"{TODAY}_portfolio_allocation.csv"
+OUT_MD = REPORT_DIR / f"{TODAY}_portfolio_allocation.md"
 
 
 def latest_ranking() -> str:
@@ -31,7 +33,7 @@ def latest_ranking() -> str:
     if Path(RANKING).exists():
         return RANKING
 
-    files = sorted(glob.glob("DAILY_REPORTS/*_crypto_opportunity_ranking.csv"))
+    files = sorted(glob.glob(str(REPORT_DIR / "*_crypto_opportunity_ranking.csv")))
     if not files:
         raise FileNotFoundError("No crypto opportunity ranking files found.")
 
@@ -96,6 +98,8 @@ def main() -> None:
     """Entry point for the portfolio allocator."""
 
     ranking = pd.read_csv(latest_ranking())
+    ranking = ranking[ranking["asset"].astype(str).str.upper().isin(active_assets())]
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
     report = build_allocation_frame(ranking)
     write_report(report)
 
