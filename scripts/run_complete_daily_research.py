@@ -15,6 +15,12 @@ def call(args:list[str])->tuple[bool,str]:
     r=subprocess.run([sys.executable,*args],cwd=ROOT,capture_output=True,text=True);return r.returncode==0,(r.stderr or r.stdout).strip()
 def run(objective='btc',current_holding='BTC',as_of=None,no_network=False,reuse=False,verbose=False,skip_existing_research=False,include_full=False,include_raw=False,use_portfolio=False):
     warnings=[];started=time.perf_counter()
+    # Public BTC operational refresh must precede every market consumer.
+    if not reuse:
+        from btc_operational_refresh import ensure_operational
+        live_refresh=not no_network and as_of is None
+        btc_input=ensure_operational(as_of=as_of, refresh=live_refresh)
+        if live_refresh:as_of=btc_input['validated_as_of_utc']
     if use_portfolio:
         ok,msg=call(['scripts/import_portfolio_json.py'])
         if not ok:warnings.append(f'PORTFOLIO_CONTEXT_UNAVAILABLE: {msg}')
