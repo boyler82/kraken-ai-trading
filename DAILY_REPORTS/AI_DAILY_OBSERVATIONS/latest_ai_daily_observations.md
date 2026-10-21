@@ -1,20 +1,19 @@
 # AI Daily Observations
 
-## 2026-10-12
-- Market: opportunity_regime changed from EMPTY to QUIET.
-- Market: breadth_state changed from IMPROVING to DETERIORATING.
-- Rotation: HOLD_BTC_BENCHMARK unchanged.
-- New: APT — ENTERED_CANDIDATE_SET.
-- New: HBAR — ENTERED_CANDIDATE_SET.
-- Stronger: AAVE — DECISION_IMPACT_UP, SUPPORTING_MODULES_INCREASED.
-- Stronger: ATOM — EVIDENCE_CONFIDENCE_UP, SUPPORTING_MODULES_INCREASED.
-- Weaker: ALGO — DECISION_IMPACT_DOWN, SUPPORTING_MODULES_DECREASED.
-- Weaker: PUMP — EVIDENCE_CONFIDENCE_DOWN, RANGE_INVALIDATED, SUPPORTING_MODULES_DECREASED.
-- Invalidated: PUMP — RANGE_INVALIDATED.
-- Tomorrow: Check whether PUMP remains above range low 0.0053485999999999.
-- Tomorrow: Check whether AAVE remains above range low 159.088.
-- Tomorrow: Check whether ATOM remains above range low 1.67949.
+## 2026-10-21
+- Market: key regime and breadth states had no material change.
+- Rotation: best_score_advantage changed from 7.988700000000009 to -0.2721000000000089.
+- New: AKE — ENTERED_CANDIDATE_SET.
+- New: BAT — ENTERED_CANDIDATE_SET.
+- Stronger: AAVE — DECISION_IMPACT_UP, RANGE_VALIDATED, SUPPORTING_MODULES_INCREASED.
+- Stronger: ADA — RANGE_VALIDATED.
+- Weaker: AAVE — PRIMARY_HYPOTHESIS_CHANGED, RELATIVE_STRENGTH_DETERIORATED.
+- Weaker: ADA — PRIMARY_HYPOTHESIS_CHANGED, RELATIVE_STRENGTH_DETERIORATED.
+- Confirmed: KAS — BREAKOUT_CONFIRMED.
+- Tomorrow: Check whether KAS remains above range low 0.03441.
+- Tomorrow: Check whether AAVE remains above range low 146.83.
+- Tomorrow: Check whether ADA remains above range low 0.214413.
 
 ### Conclusion
 
-MARKET_DETERIORATING.
+ROTATION_WEAKENING.

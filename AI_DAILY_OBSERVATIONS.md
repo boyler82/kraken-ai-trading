@@ -848,3 +848,77 @@ MARKET_IMPROVING.
 ### Conclusion
 
 MARKET_DETERIORATING.
+
+## 2026-10-13
+- Market: universe_outperforming_btc_24h_pct changed from 5.47945205479452 to 21.62162162162162.
+- Market: universe_above_ema20_pct changed from 4.10958904109589 to 37.83783783783784.
+- Rotation: HOLD_BTC_BENCHMARK unchanged.
+- New: AKE — ENTERED_CANDIDATE_SET.
+- New: INJ — ENTERED_CANDIDATE_SET.
+- Stronger: ADA — RANGE_VALIDATED.
+- Stronger: ALGO — DECISION_IMPACT_UP, SUPPORTING_MODULES_INCREASED.
+- Weaker: AAVE — DECISION_IMPACT_DOWN, SUPPORTING_MODULES_DECREASED.
+- Tomorrow: Check whether ADA remains above range low 0.2311952.
+- Tomorrow: Check whether ALGO remains above range low 0.114378.
+- Tomorrow: Check whether ATOM remains above range low 1.72237.
+
+### Conclusion
+
+MARKET_UNCHANGED.
+
+## 2026-10-18
+- Market: environment_status changed from DEFENSIVE to CAUTIOUS.
+- Market: opportunity_regime changed from QUIET to ACTIVE.
+- Rotation: HOLD_BTC_BENCHMARK unchanged.
+- New: ARB — ENTERED_CANDIDATE_SET.
+- New: VVV — ENTERED_CANDIDATE_SET.
+- Stronger: AERO — RANGE_VALIDATED.
+- Stronger: ALGO — EVIDENCE_CONFIDENCE_UP, SUPPORTING_MODULES_INCREASED.
+- Weaker: ADA — RANGE_INVALIDATED.
+- Weaker: AKE — DECISION_IMPACT_DOWN, PRIMARY_HYPOTHESIS_CHANGED, SUPPORTING_MODULES_DECREASED.
+- Invalidated: ADA — RANGE_INVALIDATED.
+- Invalidated: PUMP — RANGE_INVALIDATED.
+- Tomorrow: Check whether ADA remains above range low 0.2185835.
+- Tomorrow: Check whether PUMP remains above range low 0.0042804.
+- Tomorrow: Check whether AERO remains above range low 0.83138.
+
+### Conclusion
+
+RANGE_OPPORTUNITIES_WEAKENING.
+
+## 2026-10-20
+- Market: environment_status changed from CAUTIOUS to DEFENSIVE.
+- Market: opportunity_regime changed from ACTIVE to EMPTY.
+- Rotation: HOLD_BTC_BENCHMARK unchanged.
+- New: APT — ENTERED_CANDIDATE_SET.
+- New: KAS — ENTERED_CANDIDATE_SET.
+- Stronger: TIA — RANGE_VALIDATED.
+- Weaker: AAVE — RANGE_INVALIDATED.
+- Weaker: ADA — DECISION_IMPACT_DOWN, PRIMARY_HYPOTHESIS_CHANGED, RELATIVE_STRENGTH_DETERIORATED, SUPPORTING_MODULES_DECREASED.
+- Invalidated: AAVE — RANGE_INVALIDATED.
+- Invalidated: AERO — RANGE_INVALIDATED.
+- Tomorrow: Check whether AAVE remains above range low 147.161.
+- Tomorrow: Check whether AERO remains above range low 0.779.
+- Tomorrow: Check whether TIA remains above range low 0.5808.
+
+### Conclusion
+
+MARKET_DETERIORATING.
+
+## 2026-10-21
+- Market: key regime and breadth states had no material change.
+- Rotation: best_score_advantage changed from 7.988700000000009 to -0.2721000000000089.
+- New: AKE — ENTERED_CANDIDATE_SET.
+- New: BAT — ENTERED_CANDIDATE_SET.
+- Stronger: AAVE — DECISION_IMPACT_UP, RANGE_VALIDATED, SUPPORTING_MODULES_INCREASED.
+- Stronger: ADA — RANGE_VALIDATED.
+- Weaker: AAVE — PRIMARY_HYPOTHESIS_CHANGED, RELATIVE_STRENGTH_DETERIORATED.
+- Weaker: ADA — PRIMARY_HYPOTHESIS_CHANGED, RELATIVE_STRENGTH_DETERIORATED.
+- Confirmed: KAS — BREAKOUT_CONFIRMED.
+- Tomorrow: Check whether KAS remains above range low 0.03441.
+- Tomorrow: Check whether AAVE remains above range low 146.83.
+- Tomorrow: Check whether ADA remains above range low 0.214413.
+
+### Conclusion
+
+ROTATION_WEAKENING.

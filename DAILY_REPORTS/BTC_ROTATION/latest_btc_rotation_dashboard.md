@@ -10,14 +10,14 @@ USER_DECISION_REQUIRED
 Objective: BTC_ACCUMULATION
 Benchmark: BTC
 Preferred state: HOLD_BTC_BENCHMARK
-BTC hold score: 62.27
+BTC hold score: 67.20
 Market regime: BEAR
 
 ## Top candidates
 
-- #1 HYPE | score 70.20 | advantage +7.93 | net edge +3.08% | confidence LOW
-- #2 ATOM | score 70.17 | advantage +7.89 | net edge +6.35% | confidence LOW
-- #3 HBAR | score 69.60 | advantage +7.32 | net edge +1.86% | confidence LOW
+- #1 NEAR | score 66.93 | advantage -0.27 | net edge +11.68% | confidence LOW
+- #2 XDC | score 65.12 | advantage -2.09 | net edge +7.01% | confidence LOW
+- #3 JUP | score 60.80 | advantage -6.40 | net edge +3.22% | confidence LOW
 
 MANUAL_REVIEW_REQUIRED
 RESEARCH_ONLY

@@ -1,65 +1,49 @@
 {
-  "capital_flow_changes": [
-    {
-      "current": "NO_CLEAR_FLOW",
-      "field": "primary_state",
-      "previous": "BROAD_RISK_ON",
-      "reason_code": "CAPITAL_FLOW_STATE_CHANGED"
-    },
-    {
-      "change": -40.0,
-      "current": 30.0,
-      "field": "confidence",
-      "previous": 70.0,
-      "reason_code": "CAPITAL_FLOW_CONFIDENCE_CHANGE_AT_LEAST_15"
-    }
-  ],
+  "capital_flow_changes": [],
   "current_packet": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/latest_ai_chief_strategist_packet.json",
   "early_expansion_changes": [
     {
-      "asset": "AAVE",
+      "asset": "ARB",
+      "metric_changes": {
+        "classification": {
+          "current": "TOO_LATE",
+          "previous": null
+        }
+      },
+      "reason_codes": [
+        "EARLY_EXPANSION_CLASSIFICATION_MATERIAL_CHANGE"
+      ]
+    },
+    {
+      "asset": "DRV",
       "metric_changes": {},
       "reason_codes": [
         "EXITED_TOP_5_EARLY_EXPANSION"
       ]
     },
     {
-      "asset": "ALGO",
-      "metric_changes": {},
-      "reason_codes": [
-        "ENTERED_TOP_5_EARLY_EXPANSION"
-      ]
-    },
-    {
-      "asset": "AVAX",
-      "metric_changes": {},
-      "reason_codes": [
-        "ENTERED_TOP_5_EARLY_EXPANSION"
-      ]
-    },
-    {
-      "asset": "HBAR",
-      "metric_changes": {},
-      "reason_codes": [
-        "ENTERED_TOP_5_EARLY_EXPANSION"
-      ]
-    },
-    {
-      "asset": "ICP",
-      "metric_changes": {},
-      "reason_codes": [
-        "ENTERED_TOP_5_EARLY_EXPANSION"
-      ]
-    },
-    {
-      "asset": "QNT",
+      "asset": "ONDO",
       "metric_changes": {},
       "reason_codes": [
         "EXITED_TOP_5_EARLY_EXPANSION"
       ]
     },
     {
-      "asset": "STX",
+      "asset": "PAXG",
+      "metric_changes": {
+        "combined_pre_move_score": {
+          "change": -11.26,
+          "current": 55.78,
+          "previous": 67.04
+        }
+      },
+      "reason_codes": [
+        "EXITED_TOP_5_EARLY_EXPANSION",
+        "COMBINED_SCORE_CHANGE_AT_LEAST_10"
+      ]
+    },
+    {
+      "asset": "RENDER",
       "metric_changes": {
         "classification": {
           "current": "TOO_LATE",
@@ -71,38 +55,33 @@
       ]
     },
     {
-      "asset": "TRUMP",
-      "metric_changes": {
-        "classification": {
-          "current": "TOO_LATE",
-          "previous": null
-        }
-      },
+      "asset": "SUI",
+      "metric_changes": {},
       "reason_codes": [
-        "EARLY_EXPANSION_CLASSIFICATION_MATERIAL_CHANGE"
+        "EXITED_TOP_5_EARLY_EXPANSION"
       ]
     },
     {
-      "asset": "VVV",
-      "metric_changes": {
-        "classification": {
-          "current": "TOO_LATE",
-          "previous": null
-        }
-      },
+      "asset": "TAO",
+      "metric_changes": {},
       "reason_codes": [
-        "EARLY_EXPANSION_CLASSIFICATION_MATERIAL_CHANGE"
+        "EXITED_TOP_5_EARLY_EXPANSION"
       ]
     },
     {
       "asset": "XLM",
-      "metric_changes": {},
+      "metric_changes": {
+        "classification": {
+          "current": "TOO_LATE",
+          "previous": null
+        }
+      },
       "reason_codes": [
-        "ENTERED_TOP_5_EARLY_EXPANSION"
+        "EARLY_EXPANSION_CLASSIFICATION_MATERIAL_CHANGE"
       ]
     }
   ],
-  "generated_at_utc": "2026-10-12T17:04:11.519704+00:00",
+  "generated_at_utc": "2026-10-21T16:19:55+00:00",
   "journal_version": "1.0.0",
   "labels": [
     "RESEARCH_ONLY",
@@ -110,37 +89,10 @@
     "NOT_A_SELL_SIGNAL",
     "USER_DECISION_REQUIRED"
   ],
-  "market_changes": [
-    {
-      "current": "QUIET",
-      "field": "opportunity_regime",
-      "previous": "EMPTY",
-      "reason_code": "OPPORTUNITY_REGIME_CHANGED"
-    },
-    {
-      "current": "DETERIORATING",
-      "field": "breadth_state",
-      "previous": "IMPROVING",
-      "reason_code": "BREADTH_STATE_CHANGED"
-    },
-    {
-      "change": -58.9041,
-      "current": 5.47945205479452,
-      "field": "universe_outperforming_btc_24h_pct",
-      "previous": 64.38356164383562,
-      "reason_code": "BREADTH_CHANGE_AT_LEAST_5PP"
-    },
-    {
-      "change": -84.9315,
-      "current": 4.10958904109589,
-      "field": "universe_above_ema20_pct",
-      "previous": 89.04109589041096,
-      "reason_code": "BREADTH_CHANGE_AT_LEAST_5PP"
-    }
-  ],
+  "market_changes": [],
   "new_candidates": [
     {
-      "asset": "APT",
+      "asset": "AKE",
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence strengthened under deterministic material-change rules.",
       "metric_changes": {},
@@ -150,7 +102,7 @@
       ]
     },
     {
-      "asset": "HBAR",
+      "asset": "BAT",
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence strengthened under deterministic material-change rules.",
       "metric_changes": {},
@@ -160,8 +112,8 @@
       ]
     },
     {
-      "asset": "HYPE",
-      "current_state": "NO_MOMENTUM",
+      "asset": "DASH",
+      "current_state": "EXTENDED_MOVE",
       "interpretation": "Evidence strengthened under deterministic material-change rules.",
       "metric_changes": {},
       "previous_state": "UNKNOWN",
@@ -170,7 +122,27 @@
       ]
     },
     {
-      "asset": "STX",
+      "asset": "JUP",
+      "current_state": "BREAKOUT_CONFIRMED",
+      "interpretation": "Evidence strengthened under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "UNKNOWN",
+      "reason_codes": [
+        "ENTERED_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "NEAR",
+      "current_state": "BREAKOUT_DEVELOPING",
+      "interpretation": "Evidence strengthened under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "UNKNOWN",
+      "reason_codes": [
+        "ENTERED_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "STRK",
       "current_state": "EARLY_MOMENTUM",
       "interpretation": "Evidence strengthened under deterministic material-change rules.",
       "metric_changes": {},
@@ -178,62 +150,76 @@
       "reason_codes": [
         "ENTERED_CANDIDATE_SET"
       ]
-    }
-  ],
-  "new_confirmations": [],
-  "new_invalidations": [
+    },
     {
-      "asset": "PUMP",
-      "current_state": "NO_MOMENTUM",
-      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
-      "metric_changes": {
-        "evidence_confidence_score": {
-          "change": -28.2468,
-          "current": 25.0,
-          "previous": 53.2468
-        },
-        "range_validity": {
-          "current": false,
-          "previous": true
-        },
-        "supporting_module_count": {
-          "change": -2,
-          "current": 2,
-          "previous": 4
-        }
-      },
-      "previous_state": "NO_MOMENTUM",
+      "asset": "XDC",
+      "current_state": "EXTENDED_MOVE",
+      "interpretation": "Evidence strengthened under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "UNKNOWN",
       "reason_codes": [
-        "RANGE_INVALIDATED"
+        "ENTERED_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "XPL",
+      "current_state": "EXTENDED_MOVE",
+      "interpretation": "Evidence strengthened under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "UNKNOWN",
+      "reason_codes": [
+        "ENTERED_CANDIDATE_SET"
       ]
     }
   ],
+  "new_confirmations": [
+    {
+      "asset": "KAS",
+      "current_state": "BREAKOUT_CONFIRMED",
+      "interpretation": "Evidence strengthened under deterministic material-change rules.",
+      "metric_changes": {
+        "evidence_confidence_score": {
+          "change": -12.6623,
+          "current": 25.0,
+          "previous": 37.6623
+        },
+        "momentum_stage": {
+          "current": "BREAKOUT_CONFIRMED",
+          "previous": "EARLY_MOMENTUM"
+        },
+        "primary_hypothesis": {
+          "current": "BREAKOUT_CONFIRMED",
+          "previous": "EARLY_MOMENTUM"
+        },
+        "supporting_module_count": {
+          "change": -1,
+          "current": 2,
+          "previous": 3
+        }
+      },
+      "previous_state": "EARLY_MOMENTUM",
+      "reason_codes": [
+        "BREAKOUT_CONFIRMED"
+      ]
+    }
+  ],
+  "new_invalidations": [],
   "portfolio_relevant_changes": [],
-  "previous_packet": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/2026-10-11_ai_chief_strategist_packet.json",
+  "previous_packet": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/2026-10-20_ai_chief_strategist_packet.json",
   "range_personality_changes": [],
   "removed_candidates": [
     {
-      "asset": "ENA",
+      "asset": "APT",
       "current_state": "UNKNOWN",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {},
-      "previous_state": "NO_MOMENTUM",
+      "previous_state": "EARLY_MOMENTUM",
       "reason_codes": [
         "LEFT_CANDIDATE_SET"
       ]
     },
     {
-      "asset": "GRASS",
-      "current_state": "UNKNOWN",
-      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
-      "metric_changes": {},
-      "previous_state": "EXTENDED_MOVE",
-      "reason_codes": [
-        "LEFT_CANDIDATE_SET"
-      ]
-    },
-    {
-      "asset": "ONDO",
+      "asset": "PENGU",
       "current_state": "UNKNOWN",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {},
@@ -251,25 +237,83 @@
       "reason_codes": [
         "LEFT_CANDIDATE_SET"
       ]
+    },
+    {
+      "asset": "SPX",
+      "current_state": "UNKNOWN",
+      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "EXTENDED_MOVE",
+      "reason_codes": [
+        "LEFT_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "TIA",
+      "current_state": "UNKNOWN",
+      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "NO_MOMENTUM",
+      "reason_codes": [
+        "LEFT_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "VVV",
+      "current_state": "UNKNOWN",
+      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "NO_MOMENTUM",
+      "reason_codes": [
+        "LEFT_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "XMR",
+      "current_state": "UNKNOWN",
+      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "BREAKOUT_DEVELOPING",
+      "reason_codes": [
+        "LEFT_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "ZRO",
+      "current_state": "UNKNOWN",
+      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "EARLY_MOMENTUM",
+      "reason_codes": [
+        "LEFT_CANDIDATE_SET"
+      ]
     }
   ],
-  "report_date": "2026-10-12",
-  "rotation_changes": [],
+  "report_date": "2026-10-21",
+  "rotation_changes": [
+    {
+      "change": -8.2608,
+      "current": -0.2721000000000089,
+      "field": "best_score_advantage",
+      "previous": 7.988700000000009,
+      "reason_code": "ROTATION_ADVANTAGE_CHANGE_AT_LEAST_3"
+    }
+  ],
   "rqi_changes": [
     {
-      "asset": "CRV",
+      "asset": "AAVE",
       "metric_changes": {
         "rqi_classification": {
           "current": null,
-          "previous": "GOOD_RANGE"
+          "previous": "NOT_APPLICABLE"
         },
         "rqi_confidence_band": {
           "current": null,
-          "previous": "HIGH"
+          "previous": "LOW"
         },
         "rqi_status": {
           "current": null,
-          "previous": "APPLICABLE"
+          "previous": "INVALID_RANGE"
         }
       },
       "reason_codes": [
@@ -280,7 +324,98 @@
       ]
     },
     {
-      "asset": "INJ",
+      "asset": "ADA",
+      "metric_changes": {
+        "rqi_classification": {
+          "current": null,
+          "previous": "NOT_APPLICABLE"
+        },
+        "rqi_confidence_band": {
+          "current": null,
+          "previous": "LOW"
+        },
+        "rqi_status": {
+          "current": null,
+          "previous": "INVALID_RANGE"
+        }
+      },
+      "reason_codes": [
+        "RQI_CLASSIFICATION_CHANGED",
+        "RQI_CONFIDENCE_BAND_CHANGED",
+        "RQI_STATUS_CHANGED",
+        "EXITED_TOP_5_RQI"
+      ]
+    },
+    {
+      "asset": "AERO",
+      "metric_changes": {
+        "rqi_classification": {
+          "current": null,
+          "previous": "NOT_APPLICABLE"
+        },
+        "rqi_confidence_band": {
+          "current": null,
+          "previous": "LOW"
+        },
+        "rqi_status": {
+          "current": null,
+          "previous": "INVALID_RANGE"
+        }
+      },
+      "reason_codes": [
+        "RQI_CLASSIFICATION_CHANGED",
+        "RQI_CONFIDENCE_BAND_CHANGED",
+        "RQI_STATUS_CHANGED"
+      ]
+    },
+    {
+      "asset": "CC",
+      "metric_changes": {
+        "rqi_classification": {
+          "current": "NOT_APPLICABLE",
+          "previous": null
+        },
+        "rqi_confidence_band": {
+          "current": "LOW",
+          "previous": null
+        },
+        "rqi_status": {
+          "current": "INVALID_RANGE",
+          "previous": null
+        }
+      },
+      "reason_codes": [
+        "RQI_CLASSIFICATION_CHANGED",
+        "RQI_CONFIDENCE_BAND_CHANGED",
+        "RQI_STATUS_CHANGED",
+        "ENTERED_TOP_5_RQI"
+      ]
+    },
+    {
+      "asset": "CRV",
+      "metric_changes": {
+        "rqi_classification": {
+          "current": "NOT_APPLICABLE",
+          "previous": null
+        },
+        "rqi_confidence_band": {
+          "current": "LOW",
+          "previous": null
+        },
+        "rqi_status": {
+          "current": "INVALID_RANGE",
+          "previous": null
+        }
+      },
+      "reason_codes": [
+        "RQI_CLASSIFICATION_CHANGED",
+        "RQI_CONFIDENCE_BAND_CHANGED",
+        "RQI_STATUS_CHANGED",
+        "ENTERED_TOP_5_RQI"
+      ]
+    },
+    {
+      "asset": "ENA",
       "metric_changes": {
         "rqi_classification": {
           "current": "GOOD_RANGE",
@@ -303,11 +438,79 @@
       ]
     },
     {
-      "asset": "QNT",
+      "asset": "FIL",
+      "metric_changes": {
+        "rqi_classification": {
+          "current": "NOT_APPLICABLE",
+          "previous": null
+        },
+        "rqi_confidence_band": {
+          "current": "LOW",
+          "previous": null
+        },
+        "rqi_status": {
+          "current": "INVALID_RANGE",
+          "previous": null
+        }
+      },
+      "reason_codes": [
+        "RQI_CLASSIFICATION_CHANGED",
+        "RQI_CONFIDENCE_BAND_CHANGED",
+        "RQI_STATUS_CHANGED"
+      ]
+    },
+    {
+      "asset": "INJ",
       "metric_changes": {
         "rqi_classification": {
           "current": null,
           "previous": "GOOD_RANGE"
+        },
+        "rqi_confidence_band": {
+          "current": null,
+          "previous": "HIGH"
+        },
+        "rqi_status": {
+          "current": null,
+          "previous": "APPLICABLE"
+        }
+      },
+      "reason_codes": [
+        "RQI_CLASSIFICATION_CHANGED",
+        "RQI_CONFIDENCE_BAND_CHANGED",
+        "RQI_STATUS_CHANGED",
+        "EXITED_TOP_5_RQI"
+      ]
+    },
+    {
+      "asset": "ONDO",
+      "metric_changes": {
+        "rqi_classification": {
+          "current": "GOOD_RANGE",
+          "previous": null
+        },
+        "rqi_confidence_band": {
+          "current": "HIGH",
+          "previous": null
+        },
+        "rqi_status": {
+          "current": "APPLICABLE",
+          "previous": null
+        }
+      },
+      "reason_codes": [
+        "RQI_CLASSIFICATION_CHANGED",
+        "RQI_CONFIDENCE_BAND_CHANGED",
+        "RQI_STATUS_CHANGED",
+        "ENTERED_TOP_5_RQI"
+      ]
+    },
+    {
+      "asset": "PEPE",
+      "metric_changes": {
+        "rqi_classification": {
+          "current": null,
+          "previous": "ACCEPTABLE_RANGE"
         },
         "rqi_confidence_band": {
           "current": null,
@@ -349,30 +552,7 @@
       ]
     },
     {
-      "asset": "SHIB",
-      "metric_changes": {
-        "rqi_classification": {
-          "current": "GOOD_RANGE",
-          "previous": null
-        },
-        "rqi_confidence_band": {
-          "current": "HIGH",
-          "previous": null
-        },
-        "rqi_status": {
-          "current": "APPLICABLE",
-          "previous": null
-        }
-      },
-      "reason_codes": [
-        "RQI_CLASSIFICATION_CHANGED",
-        "RQI_CONFIDENCE_BAND_CHANGED",
-        "RQI_STATUS_CHANGED",
-        "ENTERED_TOP_5_RQI"
-      ]
-    },
-    {
-      "asset": "TRUMP",
+      "asset": "SKY",
       "metric_changes": {
         "rqi_classification": {
           "current": null,
@@ -401,7 +581,7 @@
       "source": "current_chief_strategist_packet"
     },
     {
-      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/2026-10-11_ai_chief_strategist_packet.json",
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/2026-10-20_ai_chief_strategist_packet.json",
       "source": "previous_chief_strategist_packet"
     }
   ],
@@ -409,13 +589,29 @@
   "strengthening_candidates": [
     {
       "asset": "AAVE",
-      "current_state": "NO_MOMENTUM",
+      "current_state": "EARLY_MOMENTUM",
       "interpretation": "Evidence strengthened under deterministic material-change rules.",
       "metric_changes": {
         "decision_impact_score": {
           "change": 18.0,
           "current": 65.5,
           "previous": 47.5
+        },
+        "momentum_stage": {
+          "current": "EARLY_MOMENTUM",
+          "previous": "NO_MOMENTUM"
+        },
+        "primary_hypothesis": {
+          "current": "EARLY_MOMENTUM",
+          "previous": "NO_MOMENTUM"
+        },
+        "range_validity": {
+          "current": true,
+          "previous": false
+        },
+        "relative_strength": {
+          "current": "DETERIORATING",
+          "previous": "NEUTRAL"
         },
         "supporting_module_count": {
           "change": 2,
@@ -426,104 +622,244 @@
       "previous_state": "NO_MOMENTUM",
       "reason_codes": [
         "DECISION_IMPACT_UP",
+        "RANGE_VALIDATED",
         "SUPPORTING_MODULES_INCREASED"
       ]
     },
     {
-      "asset": "ATOM",
+      "asset": "ADA",
+      "current_state": "BREAKOUT_DEVELOPING",
+      "interpretation": "Evidence strengthened under deterministic material-change rules.",
+      "metric_changes": {
+        "momentum_stage": {
+          "current": "BREAKOUT_DEVELOPING",
+          "previous": "EARLY_MOMENTUM"
+        },
+        "primary_hypothesis": {
+          "current": "BREAKOUT_DEVELOPING",
+          "previous": "EARLY_MOMENTUM"
+        },
+        "range_validity": {
+          "current": true,
+          "previous": false
+        },
+        "relative_strength": {
+          "current": "NEUTRAL",
+          "previous": "EMERGING_RELATIVE_LEADER"
+        }
+      },
+      "previous_state": "EARLY_MOMENTUM",
+      "reason_codes": [
+        "RANGE_VALIDATED"
+      ]
+    },
+    {
+      "asset": "AERO",
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence strengthened under deterministic material-change rules.",
       "metric_changes": {
-        "evidence_confidence_score": {
-          "change": 15.0,
-          "current": 40.0,
-          "previous": 25.0
+        "momentum_stage": {
+          "current": "NO_MOMENTUM",
+          "previous": "EXTENDED_MOVE"
         },
-        "supporting_module_count": {
-          "change": 1,
-          "current": 3,
-          "previous": 2
+        "primary_hypothesis": {
+          "current": "NO_MOMENTUM",
+          "previous": "EXTENDED_MOVE"
+        },
+        "range_validity": {
+          "current": true,
+          "previous": false
+        },
+        "relative_strength": {
+          "current": "DETERIORATING",
+          "previous": "IMPROVING"
         }
       },
-      "previous_state": "NO_MOMENTUM",
+      "previous_state": "EXTENDED_MOVE",
       "reason_codes": [
-        "EVIDENCE_CONFIDENCE_UP",
-        "SUPPORTING_MODULES_INCREASED"
+        "RANGE_VALIDATED"
+      ]
+    },
+    {
+      "asset": "KAS",
+      "current_state": "BREAKOUT_CONFIRMED",
+      "interpretation": "Evidence strengthened under deterministic material-change rules.",
+      "metric_changes": {
+        "evidence_confidence_score": {
+          "change": -12.6623,
+          "current": 25.0,
+          "previous": 37.6623
+        },
+        "momentum_stage": {
+          "current": "BREAKOUT_CONFIRMED",
+          "previous": "EARLY_MOMENTUM"
+        },
+        "primary_hypothesis": {
+          "current": "BREAKOUT_CONFIRMED",
+          "previous": "EARLY_MOMENTUM"
+        },
+        "supporting_module_count": {
+          "change": -1,
+          "current": 2,
+          "previous": 3
+        }
+      },
+      "previous_state": "EARLY_MOMENTUM",
+      "reason_codes": [
+        "BREAKOUT_CONFIRMED"
       ]
     }
   ],
   "summary": {
     "best_strengthening_candidate": "AAVE",
     "capital_flow_state": "NO_CLEAR_FLOW",
-    "dominant_market_change": "OPPORTUNITY_REGIME_CHANGED",
-    "invalidated_opportunity_count": 1,
-    "journal_conclusion": "MARKET_DETERIORATING",
-    "largest_weakening_candidate": "ALGO",
-    "material_change_count": 35,
-    "new_opportunity_count": 4,
+    "dominant_market_change": "NO_MATERIAL_MARKET_CHANGE",
+    "invalidated_opportunity_count": 0,
+    "journal_conclusion": "ROTATION_WEAKENING",
+    "largest_weakening_candidate": "AAVE",
+    "material_change_count": 46,
+    "new_opportunity_count": 8,
     "portfolio_warning_count": 0,
     "rotation_state": "HOLD_BTC_BENCHMARK"
   },
   "tomorrow_watch": [
-    "Check whether PUMP remains above range low 0.0053485999999999.",
-    "Check whether AAVE remains above range low 159.088.",
-    "Check whether ATOM remains above range low 1.67949.",
-    "Check whether ALGO remains above range low 0.114309.",
+    "Check whether KAS remains above range low 0.03441.",
+    "Check whether AAVE remains above range low 146.83.",
+    "Check whether ADA remains above range low 0.214413.",
+    "Check whether AERO remains above range low 0.77306.",
     "Check whether BTC rotation remains HOLD_BTC_BENCHMARK."
   ],
   "unchanged_key_states": [
     "crypto_regime:BEAR",
     "environment_status:DEFENSIVE",
-    "btc_trend_state:ABOVE_EMA20"
+    "opportunity_regime:EMPTY",
+    "btc_trend_state:ABOVE_EMA20",
+    "breadth_state:IMPROVING"
   ],
   "warnings": [],
   "weakening_candidates": [
     {
-      "asset": "ALGO",
-      "current_state": "NO_MOMENTUM",
+      "asset": "AAVE",
+      "current_state": "EARLY_MOMENTUM",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {
         "decision_impact_score": {
-          "change": -18.0,
-          "current": 47.5,
-          "previous": 65.5
+          "change": 18.0,
+          "current": 65.5,
+          "previous": 47.5
+        },
+        "momentum_stage": {
+          "current": "EARLY_MOMENTUM",
+          "previous": "NO_MOMENTUM"
+        },
+        "primary_hypothesis": {
+          "current": "EARLY_MOMENTUM",
+          "previous": "NO_MOMENTUM"
+        },
+        "range_validity": {
+          "current": true,
+          "previous": false
+        },
+        "relative_strength": {
+          "current": "DETERIORATING",
+          "previous": "NEUTRAL"
         },
         "supporting_module_count": {
-          "change": -2,
-          "current": 0,
-          "previous": 2
+          "change": 2,
+          "current": 2,
+          "previous": 0
         }
       },
       "previous_state": "NO_MOMENTUM",
       "reason_codes": [
-        "DECISION_IMPACT_DOWN",
-        "SUPPORTING_MODULES_DECREASED"
+        "PRIMARY_HYPOTHESIS_CHANGED",
+        "RELATIVE_STRENGTH_DETERIORATED"
       ]
     },
     {
-      "asset": "PUMP",
+      "asset": "ADA",
+      "current_state": "BREAKOUT_DEVELOPING",
+      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
+      "metric_changes": {
+        "momentum_stage": {
+          "current": "BREAKOUT_DEVELOPING",
+          "previous": "EARLY_MOMENTUM"
+        },
+        "primary_hypothesis": {
+          "current": "BREAKOUT_DEVELOPING",
+          "previous": "EARLY_MOMENTUM"
+        },
+        "range_validity": {
+          "current": true,
+          "previous": false
+        },
+        "relative_strength": {
+          "current": "NEUTRAL",
+          "previous": "EMERGING_RELATIVE_LEADER"
+        }
+      },
+      "previous_state": "EARLY_MOMENTUM",
+      "reason_codes": [
+        "PRIMARY_HYPOTHESIS_CHANGED",
+        "RELATIVE_STRENGTH_DETERIORATED"
+      ]
+    },
+    {
+      "asset": "AERO",
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {
-        "evidence_confidence_score": {
-          "change": -28.2468,
-          "current": 25.0,
-          "previous": 53.2468
+        "momentum_stage": {
+          "current": "NO_MOMENTUM",
+          "previous": "EXTENDED_MOVE"
+        },
+        "primary_hypothesis": {
+          "current": "NO_MOMENTUM",
+          "previous": "EXTENDED_MOVE"
         },
         "range_validity": {
-          "current": false,
-          "previous": true
+          "current": true,
+          "previous": false
         },
-        "supporting_module_count": {
-          "change": -2,
-          "current": 2,
-          "previous": 4
+        "relative_strength": {
+          "current": "DETERIORATING",
+          "previous": "IMPROVING"
         }
       },
-      "previous_state": "NO_MOMENTUM",
+      "previous_state": "EXTENDED_MOVE",
+      "reason_codes": [
+        "PRIMARY_HYPOTHESIS_CHANGED",
+        "RELATIVE_STRENGTH_DETERIORATED"
+      ]
+    },
+    {
+      "asset": "KAS",
+      "current_state": "BREAKOUT_CONFIRMED",
+      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
+      "metric_changes": {
+        "evidence_confidence_score": {
+          "change": -12.6623,
+          "current": 25.0,
+          "previous": 37.6623
+        },
+        "momentum_stage": {
+          "current": "BREAKOUT_CONFIRMED",
+          "previous": "EARLY_MOMENTUM"
+        },
+        "primary_hypothesis": {
+          "current": "BREAKOUT_CONFIRMED",
+          "previous": "EARLY_MOMENTUM"
+        },
+        "supporting_module_count": {
+          "change": -1,
+          "current": 2,
+          "previous": 3
+        }
+      },
+      "previous_state": "EARLY_MOMENTUM",
       "reason_codes": [
         "EVIDENCE_CONFIDENCE_DOWN",
-        "RANGE_INVALIDATED",
+        "PRIMARY_HYPOTHESIS_CHANGED",
         "SUPPORTING_MODULES_DECREASED"
       ]
     }

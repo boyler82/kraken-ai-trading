@@ -1,24 +1,64 @@
 {
   "candidates": [
     {
-      "asset": "STX",
-      "change_24h_pct": 0.7564296520423675,
+      "asset": "STRK",
+      "change_24h_pct": 12.163869337664668,
       "freshness_status": "FRESH",
-      "latest_completed_candle_timestamp": "2026-10-12T16:00:00+00:00",
-      "momentum_breakout_score": 49.7371,
+      "latest_completed_candle_timestamp": "2026-10-21T15:00:00+00:00",
+      "momentum_breakout_score": 67.0,
+      "momentum_stage": "EARLY_MOMENTUM",
+      "overextension_risk": "MEDIUM",
+      "relative_strength_vs_btc_24h_pct": 9.794938004799937
+    },
+    {
+      "asset": "TAO",
+      "change_24h_pct": 3.0114767617554605,
+      "freshness_status": "FRESH",
+      "latest_completed_candle_timestamp": "2026-10-21T15:00:00+00:00",
+      "momentum_breakout_score": 55.6407,
       "momentum_stage": "EARLY_MOMENTUM",
       "overextension_risk": "LOW",
-      "relative_strength_vs_btc_24h_pct": -0.1120629787375593
+      "relative_strength_vs_btc_24h_pct": 0.6425454288907284
+    },
+    {
+      "asset": "ONDO",
+      "change_24h_pct": 4.973345030028997,
+      "freshness_status": "FRESH",
+      "latest_completed_candle_timestamp": "2026-10-21T15:00:00+00:00",
+      "momentum_breakout_score": 54.1001,
+      "momentum_stage": "EARLY_MOMENTUM",
+      "overextension_risk": "MEDIUM",
+      "relative_strength_vs_btc_24h_pct": 2.604413697164265
+    },
+    {
+      "asset": "AAVE",
+      "change_24h_pct": 4.570263694351295,
+      "freshness_status": "FRESH",
+      "latest_completed_candle_timestamp": "2026-10-21T15:00:00+00:00",
+      "momentum_breakout_score": 52.3938,
+      "momentum_stage": "EARLY_MOMENTUM",
+      "overextension_risk": "MEDIUM",
+      "relative_strength_vs_btc_24h_pct": 2.201332361486563
+    },
+    {
+      "asset": "PEPE",
+      "change_24h_pct": 3.2656663724624835,
+      "freshness_status": "FRESH",
+      "latest_completed_candle_timestamp": "2026-10-21T15:00:00+00:00",
+      "momentum_breakout_score": 49.8554,
+      "momentum_stage": "EARLY_MOMENTUM",
+      "overextension_risk": "MEDIUM",
+      "relative_strength_vs_btc_24h_pct": 0.8967350395977514
     }
   ],
   "freshness": "FRESH",
-  "generated_at_utc": "2026-10-12T17:03:48.749884+00:00",
+  "generated_at_utc": "2026-10-21T16:19:55+00:00",
   "module_name": "momentum",
   "risks": [],
   "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
   "status": "OK",
   "summary": {
-    "active_count": 1
+    "active_count": 41
   },
   "unknowns": []
 }

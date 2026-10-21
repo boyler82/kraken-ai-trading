@@ -1,22 +1,22 @@
 # Opportunity Aging
 
-- sector_leadership:RWA | DECAYING | 1656.8h
-- sector_leadership:Smart-contract platforms | DECAYING | 1620.7h
-- btc_relative_leader:ADA | ESTABLISHED | 1676.6h
-- btc_relative_leader:ATOM | ESTABLISHED | 1676.7h
-- btc_relative_leader:DOT | ESTABLISHED | 1676.7h
-- btc_relative_leader:PUMP | ESTABLISHED | 1676.7h
-- btc_relative_leader:TIA | ESTABLISHED | 1270.0h
-- consolidation:AAVE | ESTABLISHED | 1676.7h
-- consolidation:FET | ESTABLISHED | 1477.3h
-- consolidation:RAY | ESTABLISHED | 575.9h
-- momentum:STX | ESTABLISHED | 1224.6h
-- rotation_candidate:ATOM | ESTABLISHED | 1656.8h
-- rotation_candidate:HBAR | ESTABLISHED | 1632.6h
-- rotation_candidate:HYPE | ESTABLISHED | 1676.7h
-- sector_leadership:BTC | ESTABLISHED | 1509.4h
-- btc_relative_leader:ALGO | EXPIRED | 1075.1h
+- momentum:ONDO | DECAYING | 1656.4h
+- momentum:TAO | DECAYING | 1891.7h
+- consolidation:RAY | ESTABLISHED | 791.2h
+- consolidation:WLD | ESTABLISHED | 1795.7h
+- consolidation:ZRO | ESTABLISHED | 1509.5h
+- momentum:AAVE | ESTABLISHED | 1692.6h
+- momentum:PEPE | ESTABLISHED | 1536.1h
+- sector_leadership:DeFi | ESTABLISHED | 1836.0h
+- sector_leadership:Payments | ESTABLISHED | 1509.5h
+- sector_leadership:Privacy | ESTABLISHED | 1891.9h
+- btc_relative_leader:ADA | EXPIRED | 1823.2h
+- btc_relative_leader:ALGO | EXPIRED | 1823.2h
+- btc_relative_leader:ATOM | EXPIRED | 1701.4h
+- btc_relative_leader:DOT | EXPIRED | 1823.2h
 - btc_relative_leader:HYPE | EXPIRED | 539.1h
 - btc_relative_leader:MON | EXPIRED | 290.9h
 - btc_relative_leader:NEAR | EXPIRED | 22.4h
+- btc_relative_leader:PENGU | EXPIRED | 0.0h
 - btc_relative_leader:PEPE | EXPIRED | 333.1h
+- btc_relative_leader:PUMP | EXPIRED | 1823.2h

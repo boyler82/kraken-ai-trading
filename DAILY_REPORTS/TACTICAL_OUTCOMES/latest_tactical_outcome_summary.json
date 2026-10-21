@@ -168,7 +168,7 @@
     {
       "asset": "NIGHT",
       "snapshot_id": "tos_8f005e14930e53ce00a220ee",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "APT",
@@ -228,7 +228,7 @@
     {
       "asset": "NIGHT",
       "snapshot_id": "tos_1596cf336e90fd63467b683a",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "APT",
@@ -288,7 +288,7 @@
     {
       "asset": "NIGHT",
       "snapshot_id": "tos_30f4f618275e1fc7a20b6cb1",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "APT",
@@ -348,7 +348,7 @@
     {
       "asset": "NIGHT",
       "snapshot_id": "tos_b481e0234b3b0bb9e25ab509",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "APT",
@@ -2068,7 +2068,7 @@
     {
       "asset": "SYRUP",
       "snapshot_id": "tos_f7d8a0e8d26bbc70c1619505",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "HYPE",
@@ -2213,7 +2213,7 @@
     {
       "asset": "SYRUP",
       "snapshot_id": "tos_ca2db40b13dd525dcc842d66",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "HYPE",
@@ -2363,7 +2363,7 @@
     {
       "asset": "SYRUP",
       "snapshot_id": "tos_43bd030dfe58f62f618d2e1f",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "HYPE",
@@ -3578,7 +3578,7 @@
     {
       "asset": "DASH",
       "snapshot_id": "tos_bd60fc3fd1e91c3221993815",
-      "status": "WATCHING"
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
     },
     {
       "asset": "DOT",
@@ -3668,7 +3668,7 @@
     {
       "asset": "VVV",
       "snapshot_id": "tos_79b3fba74031c76d035b5f5f",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "AERO",
@@ -4883,7 +4883,7 @@
     {
       "asset": "ALGO",
       "snapshot_id": "tos_5d4f1047d546f90f44f6e367",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "AAVE",
@@ -4893,7 +4893,7 @@
     {
       "asset": "AERO",
       "snapshot_id": "tos_bc831f0e48d628d10da538a0",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "TIA",
@@ -5003,17 +5003,17 @@
     {
       "asset": "ALGO",
       "snapshot_id": "tos_5d92b4bcf86ce60db615e505",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "AAVE",
       "snapshot_id": "tos_6e10dd01d604e0292f942564",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "AERO",
       "snapshot_id": "tos_4a5c7b1de1ce6f1ce04ac328",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "ICP",
@@ -5023,7 +5023,7 @@
     {
       "asset": "APT",
       "snapshot_id": "tos_c929fd37c366f2697aa0076d",
-      "status": "WATCHING"
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
     },
     {
       "asset": "ATOM",
@@ -5128,42 +5128,42 @@
     {
       "asset": "STX",
       "snapshot_id": "tos_23507229ec90289f92e5c80f",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "HYPE",
       "snapshot_id": "tos_e457a25fb6edd7e7a343b897",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "HBAR",
       "snapshot_id": "tos_db08a6308b5fa690bbbebc2a",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "ALGO",
       "snapshot_id": "tos_7b638858d9302edc9637469e",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "AAVE",
       "snapshot_id": "tos_dbf114b6b6f2d26bf0081d46",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "PUMP",
       "snapshot_id": "tos_80408800c81d5b83682ae476",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "AERO",
       "snapshot_id": "tos_8ffa6936c91de1e085d9f035",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "APT",
       "snapshot_id": "tos_dacfdfd3881c1a05bd9eff1c",
-      "status": "WATCHING"
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
     },
     {
       "asset": "ATOM",
@@ -5283,42 +5283,42 @@
     {
       "asset": "STX",
       "snapshot_id": "tos_a7f9e46bcb488765bd6ce483",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "HYPE",
       "snapshot_id": "tos_95595166a40f9b089f0e659a",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "HBAR",
       "snapshot_id": "tos_f0716ae31937d048f3c9abac",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "AAVE",
       "snapshot_id": "tos_0f1428854ca2cae58e225cda",
-      "status": "NOT_TRIGGERED"
+      "status": "TRIGGERED"
     },
     {
       "asset": "ALGO",
       "snapshot_id": "tos_04ce5b2e713908a27cfb0894",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "PUMP",
       "snapshot_id": "tos_a1c904d69c924a15834e0747",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "AERO",
       "snapshot_id": "tos_9bd9951ce845ec047a4174e9",
-      "status": "WATCHING"
+      "status": "ACTIVATED"
     },
     {
       "asset": "APT",
       "snapshot_id": "tos_08860972c136d67e81a38dc7",
-      "status": "WATCHING"
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
     },
     {
       "asset": "ATOM",
@@ -5339,9 +5339,919 @@
       "asset": "TIA",
       "snapshot_id": "tos_7aa4f6eee7a0c01d3739d5e7",
       "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "STX",
+      "snapshot_id": "odo_71fc0276f77cbb9c39c851db",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_22cdd30708c2efe900e55cbc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_0c88c9f669d6288658daec0c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_46524adc558dd8c97a749f8d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_db20c42c33902d270b39df04",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_75d60bb06dfe7ecef2cef4b4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_361b064a00377690e42ccd78",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_020d7952ba5e1651e9058a54",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_0e2e0ecf422f4f227df640d6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_50afed13e0d785ba76a8dfba",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HYPE",
+      "snapshot_id": "odo_08d2514e8e3702ad3640038f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "HBAR",
+      "snapshot_id": "odo_6e69fe481113faeab29baf02",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_be8d0f9113841a0e8c2cebde",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "odo_09f43380217a5f0d3d658e97",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_6ec03795ee7b9eb4a7907482",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_e45fb51e2df611db18ea04ab",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_1569610d151d12f492120edd",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_afaa33870b9523bad5315c6c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_a63b7c5138b751e5354c9271",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "OP",
+      "snapshot_id": "tos_706cf092f3336f9c9aef4180",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_d7cd5db51049c4cc564f7cdd",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_2867fc395e1b7dde901bf037",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_4ec37f26b0c79e2ff66ce976",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_e735b6cfb86586322287bdf8",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "tos_54576c5c26a3346a62a4791c",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "NIGHT",
+      "snapshot_id": "tos_bf4f0981eed093c8648d36d1",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_80c24d4ddef4c250705a02cf",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_de81a3979d9416d0bf70e1fa",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_4b90a985d6d8522201d34f08",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_7d2a272ad40a639dfc9073a9",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_e3a550e1d737343f89e11daa",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "OP",
+      "snapshot_id": "odo_d6594ead00615d5b6298bcd6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_c2bc4c426def9231fb5c788e",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_fac41e0a2d87003204d6cd16",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_cf0cb53cc563258a4aed5d0d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_e8071bdf4a4d18d19176a2fe",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_a8d23fb9ba350be78d84d13f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_f70a4a8920527eaa5f12b956",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_c4ecab8e406bea229cce8149",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_64a4af995a0d17791588fa72",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_03a431a900c883ede2d66b9d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_a42fee2ee2e3a14fef9812b6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_09f7c3af56651025a7d0ef25",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ENA",
+      "snapshot_id": "odo_d1100b1f52306ff7c6d267c0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_dab13725e3f11ece029fef17",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_85cba37b1bda4d80534c86d6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "NIGHT",
+      "snapshot_id": "odo_97f0bb9194cd81b674773f2a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_77e8dee4657e6a34e1841347",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_ea99178d875945be2a75870d",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_0dee2cfa337cc04241f4a25c",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_bfa94f720d4d431974bab336",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_1e9716d7c4db08980444f21e",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_b8ff24b92df3f4d4c5cfea52",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_dd13d4a0ceb0ba05d7fc0da8",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_b3a76f029d4494ad8d4cd9da",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_2b60c000238047b127400db8",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_a5001c6a38657f81994e9879",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_fc81540889033d15e8fdfd1c",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "INJ",
+      "snapshot_id": "tos_9095214ec20ca4ebb32f52e9",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "INJ",
+      "snapshot_id": "odo_96bf1f60e3e83bd8d0d5de0e",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_7ad5bc7079ecffb9ab02aba1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_ad9b4fa0f6671487bce5b1e4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_e93f98e371bc72dbcff44081",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_14d6550943ea7f104bb40029",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_d53081240e1323499256eb25",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_ccfd88353867094fabbfeaf7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_8a352435cf3330381f176da2",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_18df0f4e6af032b3d1caadf1",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_b2a65064b57abe6a20912b3e",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_9b0fdc36699b8b2fbf729856",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_69f3f98e59870c7e248dcc4c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_d497dfe5c7ef83e77968926d",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_996d9334686db3355734cfe2",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "tos_61d30567c9ebe506a83c270e",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "tos_fa36cdca00cf6863a5468a5d",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_2cafca8fe72f8ccb5e62d7ad",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_6954a9afab26ff187c12fddd",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_6219eeb476423032ea678984",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_69e35aaf27642b082f2648aa",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_947408a1b6848c6faee93cb3",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_03bd812cab1c4933a3cac379",
+      "status": "ACTIVATED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_b26a7996ae93c7d6241c17d2",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_1f5986e9c9ff9929d4bdfe15",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_0bd3a68e0f131e62544c5791",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "INJ",
+      "snapshot_id": "tos_5fa1c740de7d31fc3ad3916a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "INJ",
+      "snapshot_id": "odo_8045f58c16f54d617a639f09",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "odo_57737b784756e5669c6fffc4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ATOM",
+      "snapshot_id": "odo_cab864cf7f52f551c0807906",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_0de31081daf6f220f1446158",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_c8f17ab19317cae0c73cc37a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_1daff158c9adfb9e6a1a7119",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "XTZ",
+      "snapshot_id": "odo_3d86483cffea94de2e4d80d2",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_333d515d6114309fc9692299",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_8bfb6a41000a2df9d17b83aa",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_ceb772da5d2faefd80d2a940",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_2840afbea72c4ebec6ab4a9c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "odo_31d97317ae519801b87570fc",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_bbcda5ac3b525869093781e4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_62f17d8d12ee40fe5ff58eff",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "tos_993b2f0ddb3137dac4efce1a",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_10c6cd71d67bc78cc3da9b48",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ZEC",
+      "snapshot_id": "tos_dd83f0f8a78cbd8e855379bf",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "WLD",
+      "snapshot_id": "tos_bbdddc9cd5eab4e773192c12",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_90aa7ff4a6436ec1bcbb063b",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "tos_c71ca31b46248fcaa9dec7e7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_9f44a3bbfeeed5224f061b8d",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_4249025639f6aca193af2047",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_3e41e46431260c6709206a64",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_a9f5aea925a0e70c8c2ac93f",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_669efa245de7aa40477fdcc7",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_e1f43dc864b0b4d40903b1ae",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_af3d10ae6740b2272aae7029",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ZEC",
+      "snapshot_id": "odo_395e7ab4215c2d844f81c56c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_03304c05a75f578dc213ec9f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_45fc7838c450ffe617e9f823",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_650f4b732e9530fdd4e179ce",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_0cbe72b10b2d49a1a0df7c3a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_2e4a015e939fde0bd68d0da7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "odo_a5a114df34d35589979cacb9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "WLD",
+      "snapshot_id": "odo_490dfa7f9b6298842814e015",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ZEC",
+      "snapshot_id": "odo_06723d9321ee8fa778a25f61",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "odo_3f1d68109bd7f2ffbad68f27",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_c24c633df4be361ae8691824",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "tos_83609bfec7de4504fa5a651f",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "tos_1e499ee6b064a878715cb6ce",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ZEC",
+      "snapshot_id": "tos_3bec55487a01b49558d97a69",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "WLD",
+      "snapshot_id": "tos_83d2b2a48f00306b3d519db3",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_58c9996474f05baa1ef02753",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "tos_3c00cd73996708c5d5af8e65",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_34960949042a3a4962e5e92c",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "tos_9702abc386cab040134bffd7",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_14e89ce08a16ac4023259e2d",
+      "status": "INVALIDATED_BEFORE_ACTIVATION"
+    },
+    {
+      "asset": "PUMP",
+      "snapshot_id": "tos_7ff155862f89e1d53f48a3cd",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_15312b041e3c2ccbab3bce95",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_33bf90a0d3350e0860c57d3f",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_66f1c780c217b7da9c498367",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_c9d3a40c3c0d49ce40e34aad",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_e1b38c191172c6606cf3a938",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "DOT",
+      "snapshot_id": "odo_c3b65bda84dba38f239d0812",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_4d584468a88e3c909cdc6dd0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ALGO",
+      "snapshot_id": "odo_74fcea39afc86e2ded65dd59",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "odo_cc6d53a1dfec97451f43891a",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "WLD",
+      "snapshot_id": "odo_910d9119b31285d516adc4e6",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ZEC",
+      "snapshot_id": "odo_6bc23ae8eb7d831f000b2564",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ARB",
+      "snapshot_id": "odo_17945404f7d8540dfa095565",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_5d8a3cd1cdc7e0e506b98cf9",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PENGU",
+      "snapshot_id": "tos_47ac8e7272ac901de26f23e1",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "KAS",
+      "snapshot_id": "tos_a8124e65f6d0b306f3351e4f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ZRO",
+      "snapshot_id": "tos_714449f396026a2e9b34e86b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "tos_26b8fd0cd61358d824e83cbe",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "tos_b61987863d340d829a94128b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "tos_b3d6829922275b2c598a2b89",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_f571e386c33755a70f0370dc",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "XMR",
+      "snapshot_id": "tos_7ce5f78144ef71ae500d9b55",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_157b36109d4312535e52b1a6",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "SPX",
+      "snapshot_id": "tos_ab212e93a23ecb2888b41218",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "SKY",
+      "snapshot_id": "tos_f911d7f3641dc7b0a46ec317",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_02774b002ded7f1e3ea9e5a3",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "XMR",
+      "snapshot_id": "odo_53e9f7466c4649346c1b9c9f",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "PENGU",
+      "snapshot_id": "odo_9ef4933972bcdd7e4357120b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ZRO",
+      "snapshot_id": "odo_a478ec84b24210754bf4515e",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "KAS",
+      "snapshot_id": "odo_680241a2c091710ff576c2d7",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "odo_5141ab555b0f9d064391d397",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "APT",
+      "snapshot_id": "odo_334d987257e9a865b5f42a8b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "odo_3d28c5ee0239704486893ba8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SPX",
+      "snapshot_id": "odo_de8fa02e50dccf5441ac7804",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "VVV",
+      "snapshot_id": "odo_c13a1f9cfcc1777a5ab0b558",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "SKY",
+      "snapshot_id": "odo_1a25d6af7367f4b3efe1dbc4",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "odo_9c5bfb8c56df145b6058fd0b",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "TIA",
+      "snapshot_id": "odo_c5d4644772fa8036aea58bed",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "NEAR",
+      "snapshot_id": "tos_0f73398a81697933ba5d73e0",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "KAS",
+      "snapshot_id": "tos_cfd39258b757c845c524669b",
+      "status": "TRIGGERED"
+    },
+    {
+      "asset": "ADA",
+      "snapshot_id": "tos_fe14e97771c76cf17e1e007c",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AAVE",
+      "snapshot_id": "tos_e493f13326a0f74a24eb83e8",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AKE",
+      "snapshot_id": "tos_95305e9f24adeec0eee35e49",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "BAT",
+      "snapshot_id": "tos_df1a818d049fa7655b20a131",
+      "status": "NOT_TRIGGERED"
+    },
+    {
+      "asset": "AERO",
+      "snapshot_id": "tos_41086f6235625bc1d4f0c123",
+      "status": "WATCHING"
+    },
+    {
+      "asset": "JUP",
+      "snapshot_id": "tos_f5de66237660af38323d9500",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "XPL",
+      "snapshot_id": "tos_3946585c28009603c1e9576a",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "STRK",
+      "snapshot_id": "tos_63f8c5845a464895c1f6fd78",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "DASH",
+      "snapshot_id": "tos_d4d551c984be1aec6d8079cd",
+      "status": "AVOID_COUNTERFACTUAL"
+    },
+    {
+      "asset": "XDC",
+      "snapshot_id": "tos_cbea4e28838e283e515af452",
+      "status": "AVOID_COUNTERFACTUAL"
     }
   ],
-  "generated_at_utc": "2026-10-12T17:04:11.815569+00:00",
+  "generated_at_utc": "2026-10-21T16:19:55+00:00",
   "look_ahead_policy": "ONLY_CANDLES_STARTING_AFTER_SNAPSHOT_AND_COMPLETED_BY_AS_OF",
   "minimum_sample_for_published_edge": 20,
   "purpose": "FORWARD_VALIDATION_ONLY",
@@ -5386,50 +6296,50 @@
           "sample_size": 0,
           "status": "INSUFFICIENT_SAMPLE"
         },
-        "snapshot_count": 45,
+        "snapshot_count": 51,
         "triggered_count": 0
       },
       {
         "counterfactual_only": false,
         "group": "20-40",
         "return_12h": {
-          "mean_return_pct": -0.900234679477599,
-          "positive_rate_pct": 40.27777777777778,
-          "sample_size": 72,
+          "mean_return_pct": -0.5333101275617562,
+          "positive_rate_pct": 38.679245283018865,
+          "sample_size": 106,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": -0.6785131445214261,
-          "positive_rate_pct": 41.666666666666664,
-          "sample_size": 72,
+          "mean_return_pct": -0.45155892615280463,
+          "positive_rate_pct": 47.16981132075472,
+          "sample_size": 106,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 0.5098013561246849,
-          "positive_rate_pct": 38.888888888888886,
-          "sample_size": 72,
+          "mean_return_pct": 1.0714227710868882,
+          "positive_rate_pct": 41.34615384615385,
+          "sample_size": 104,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": -0.309066784692728,
-          "positive_rate_pct": 36.111111111111114,
-          "sample_size": 72,
+          "mean_return_pct": -0.1054405503759081,
+          "positive_rate_pct": 36.79245283018868,
+          "sample_size": 106,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.4829960759466867,
-          "positive_rate_pct": 56.94444444444444,
-          "sample_size": 72,
+          "mean_return_pct": 1.7371617842849814,
+          "positive_rate_pct": 43.61702127659574,
+          "sample_size": 94,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 4.410815917430124,
-          "positive_rate_pct": 63.888888888888886,
-          "sample_size": 72,
+          "mean_return_pct": 2.086526453309264,
+          "positive_rate_pct": 48.93617021276596,
+          "sample_size": 94,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 384,
-        "triggered_count": 73
+        "snapshot_count": 441,
+        "triggered_count": 106
       },
       {
         "counterfactual_only": false,
@@ -5470,50 +6380,50 @@
           "sample_size": 30,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 64,
+        "snapshot_count": 68,
         "triggered_count": 30
       },
       {
         "counterfactual_only": false,
         "group": "60-80",
         "return_12h": {
-          "mean_return_pct": 0.4522984274288655,
-          "positive_rate_pct": 46.15384615384615,
-          "sample_size": 65,
+          "mean_return_pct": 0.33335862525590376,
+          "positive_rate_pct": 45.833333333333336,
+          "sample_size": 72,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.5485499686519996,
-          "positive_rate_pct": 48.4375,
-          "sample_size": 64,
+          "mean_return_pct": 0.0652454630587712,
+          "positive_rate_pct": 46.478873239436616,
+          "sample_size": 71,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 2.6677998984327944,
-          "positive_rate_pct": 51.5625,
-          "sample_size": 64,
+          "mean_return_pct": 1.836581127965837,
+          "positive_rate_pct": 49.29577464788732,
+          "sample_size": 71,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.5272951899492886,
-          "positive_rate_pct": 53.84615384615385,
-          "sample_size": 65,
+          "mean_return_pct": 0.5982293402827197,
+          "positive_rate_pct": 54.166666666666664,
+          "sample_size": 72,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.7214890963811285,
-          "positive_rate_pct": 60.317460317460316,
-          "sample_size": 63,
+          "mean_return_pct": 2.8042296995523928,
+          "positive_rate_pct": 54.285714285714285,
+          "sample_size": 70,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.214083736889808,
-          "positive_rate_pct": 63.492063492063494,
-          "sample_size": 63,
+          "mean_return_pct": 2.2826763233200036,
+          "positive_rate_pct": 57.142857142857146,
+          "sample_size": 70,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 91,
-        "triggered_count": 65
+        "snapshot_count": 106,
+        "triggered_count": 72
       },
       {
         "counterfactual_only": false,
@@ -5554,49 +6464,49 @@
           "sample_size": 3,
           "status": "INSUFFICIENT_SAMPLE"
         },
-        "snapshot_count": 4,
-        "triggered_count": 3
+        "snapshot_count": 6,
+        "triggered_count": 4
       },
       {
         "counterfactual_only": false,
         "group": "MISSING",
         "return_12h": {
-          "mean_return_pct": 0.12852096618556122,
-          "positive_rate_pct": 46.63677130044843,
-          "sample_size": 446,
+          "mean_return_pct": 0.2437912318246916,
+          "positive_rate_pct": 46.96707105719238,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.4593370766048316,
-          "positive_rate_pct": 48.03695150115473,
-          "sample_size": 433,
+          "mean_return_pct": -0.1007000018543771,
+          "positive_rate_pct": 43.008849557522126,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 1.5111747457412164,
-          "positive_rate_pct": 48.711943793911004,
-          "sample_size": 427,
+          "mean_return_pct": 0.8794084767976983,
+          "positive_rate_pct": 43.1858407079646,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.02751671431950617,
-          "positive_rate_pct": 49.327354260089685,
-          "sample_size": 446,
+          "mean_return_pct": 0.1768386327968597,
+          "positive_rate_pct": 52.16637781629116,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.067478145246657,
-          "positive_rate_pct": 53.521126760563384,
-          "sample_size": 426,
+          "mean_return_pct": 1.684735273176448,
+          "positive_rate_pct": 46.39556377079482,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.381107620829102,
-          "positive_rate_pct": 51.40845070422535,
-          "sample_size": 426,
+          "mean_return_pct": 1.8950759666661547,
+          "positive_rate_pct": 44.177449168207026,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 479,
+        "snapshot_count": 577,
         "triggered_count": 0
       }
     ],
@@ -5640,175 +6550,175 @@
           "sample_size": 4,
           "status": "INSUFFICIENT_SAMPLE"
         },
-        "snapshot_count": 82,
+        "snapshot_count": 88,
         "triggered_count": 4
       },
       {
         "counterfactual_only": false,
         "group": "20-40",
         "return_12h": {
-          "mean_return_pct": -0.7149469695872228,
-          "positive_rate_pct": 48.78048780487805,
-          "sample_size": 82,
+          "mean_return_pct": -0.43396231125268353,
+          "positive_rate_pct": 44.827586206896555,
+          "sample_size": 116,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": -0.696821772888163,
-          "positive_rate_pct": 46.34146341463415,
-          "sample_size": 82,
+          "mean_return_pct": -0.48406625123693087,
+          "positive_rate_pct": 50.0,
+          "sample_size": 116,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 0.4991373068961354,
-          "positive_rate_pct": 47.5609756097561,
-          "sample_size": 82,
+          "mean_return_pct": 1.0144871027854576,
+          "positive_rate_pct": 47.36842105263158,
+          "sample_size": 114,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": -0.34441097887984523,
-          "positive_rate_pct": 45.1219512195122,
-          "sample_size": 82,
+          "mean_return_pct": -0.14797922508721678,
+          "positive_rate_pct": 43.10344827586207,
+          "sample_size": 116,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 2.7452284643310856,
-          "positive_rate_pct": 60.97560975609756,
-          "sample_size": 82,
+          "mean_return_pct": 1.3233290800939985,
+          "positive_rate_pct": 48.07692307692308,
+          "sample_size": 104,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.5456126126872736,
-          "positive_rate_pct": 67.07317073170732,
-          "sample_size": 82,
+          "mean_return_pct": 1.627836296119791,
+          "positive_rate_pct": 52.88461538461539,
+          "sample_size": 104,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 381,
-        "triggered_count": 83
+        "snapshot_count": 437,
+        "triggered_count": 116
       },
       {
         "counterfactual_only": false,
         "group": "40-60",
         "return_12h": {
-          "mean_return_pct": 1.2891677193939302,
-          "positive_rate_pct": 50.0,
-          "sample_size": 54,
+          "mean_return_pct": 1.0815660980782318,
+          "positive_rate_pct": 49.152542372881356,
+          "sample_size": 59,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 2.1502948255185217,
-          "positive_rate_pct": 50.943396226415096,
-          "sample_size": 53,
+          "mean_return_pct": 1.5257599375503965,
+          "positive_rate_pct": 49.152542372881356,
+          "sample_size": 59,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 3.003247379037586,
-          "positive_rate_pct": 52.83018867924528,
-          "sample_size": 53,
+          "mean_return_pct": 2.1292482603685268,
+          "positive_rate_pct": 50.847457627118644,
+          "sample_size": 59,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.44289493251829143,
-          "positive_rate_pct": 46.2962962962963,
-          "sample_size": 54,
+          "mean_return_pct": 0.4886335279718727,
+          "positive_rate_pct": 47.45762711864407,
+          "sample_size": 59,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 4.157943181011961,
-          "positive_rate_pct": 69.23076923076923,
-          "sample_size": 52,
+          "mean_return_pct": 3.2433667471711605,
+          "positive_rate_pct": 62.06896551724138,
+          "sample_size": 58,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 2.7767530818094532,
-          "positive_rate_pct": 63.46153846153846,
-          "sample_size": 52,
+          "mean_return_pct": 1.9692450139115691,
+          "positive_rate_pct": 56.89655172413793,
+          "sample_size": 58,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 92,
-        "triggered_count": 54
+        "snapshot_count": 106,
+        "triggered_count": 59
       },
       {
         "counterfactual_only": false,
         "group": "60-80",
         "return_12h": {
-          "mean_return_pct": 0.9627795682064533,
-          "positive_rate_pct": 53.333333333333336,
-          "sample_size": 30,
+          "mean_return_pct": 0.9152646044499675,
+          "positive_rate_pct": 53.125,
+          "sample_size": 32,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.6615701580203999,
-          "positive_rate_pct": 56.666666666666664,
-          "sample_size": 30,
+          "mean_return_pct": 0.42961690519564605,
+          "positive_rate_pct": 54.83870967741935,
+          "sample_size": 31,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 4.216075975826325,
-          "positive_rate_pct": 60.0,
-          "sample_size": 30,
+          "mean_return_pct": 3.860864825416591,
+          "positive_rate_pct": 58.064516129032256,
+          "sample_size": 31,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.4880915441804934,
-          "positive_rate_pct": 73.33333333333333,
-          "sample_size": 30,
+          "mean_return_pct": 0.579000615147316,
+          "positive_rate_pct": 71.875,
+          "sample_size": 32,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 5.929191238105663,
-          "positive_rate_pct": 63.333333333333336,
-          "sample_size": 30,
+          "mean_return_pct": 5.413412165049064,
+          "positive_rate_pct": 61.29032258064516,
+          "sample_size": 31,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 5.617233046643203,
-          "positive_rate_pct": 73.33333333333333,
-          "sample_size": 30,
+          "mean_return_pct": 5.032000259834161,
+          "positive_rate_pct": 70.96774193548387,
+          "sample_size": 31,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 33,
-        "triggered_count": 30
+        "snapshot_count": 41,
+        "triggered_count": 33
       },
       {
         "counterfactual_only": false,
         "group": "MISSING",
         "return_12h": {
-          "mean_return_pct": 0.12852096618556122,
-          "positive_rate_pct": 46.63677130044843,
-          "sample_size": 446,
+          "mean_return_pct": 0.2437912318246916,
+          "positive_rate_pct": 46.96707105719238,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.4593370766048316,
-          "positive_rate_pct": 48.03695150115473,
-          "sample_size": 433,
+          "mean_return_pct": -0.1007000018543771,
+          "positive_rate_pct": 43.008849557522126,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 1.5111747457412164,
-          "positive_rate_pct": 48.711943793911004,
-          "sample_size": 427,
+          "mean_return_pct": 0.8794084767976983,
+          "positive_rate_pct": 43.1858407079646,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.02751671431950617,
-          "positive_rate_pct": 49.327354260089685,
-          "sample_size": 446,
+          "mean_return_pct": 0.1768386327968597,
+          "positive_rate_pct": 52.16637781629116,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.067478145246657,
-          "positive_rate_pct": 53.521126760563384,
-          "sample_size": 426,
+          "mean_return_pct": 1.684735273176448,
+          "positive_rate_pct": 46.39556377079482,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.381107620829102,
-          "positive_rate_pct": 51.40845070422535,
-          "sample_size": 426,
+          "mean_return_pct": 1.8950759666661547,
+          "positive_rate_pct": 44.177449168207026,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 479,
+        "snapshot_count": 577,
         "triggered_count": 0
       }
     ],
@@ -5817,126 +6727,126 @@
         "counterfactual_only": false,
         "group": "CONTINUATION",
         "return_12h": {
-          "mean_return_pct": 0.1974361169962825,
-          "positive_rate_pct": 46.93877551020408,
-          "sample_size": 245,
+          "mean_return_pct": 0.08719555191450187,
+          "positive_rate_pct": 44.72843450479233,
+          "sample_size": 313,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.5492010309082525,
-          "positive_rate_pct": 48.93617021276596,
-          "sample_size": 235,
+          "mean_return_pct": -0.26186833845829716,
+          "positive_rate_pct": 42.19269102990033,
+          "sample_size": 301,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 1.1730641144285303,
-          "positive_rate_pct": 49.13793103448276,
-          "sample_size": 232,
+          "mean_return_pct": 0.5318580782479309,
+          "positive_rate_pct": 42.857142857142854,
+          "sample_size": 301,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.01069734816763318,
-          "positive_rate_pct": 48.57142857142857,
-          "sample_size": 245,
+          "mean_return_pct": 0.0880894239674534,
+          "positive_rate_pct": 50.159744408945684,
+          "sample_size": 313,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 1.7743351260732048,
-          "positive_rate_pct": 49.35064935064935,
-          "sample_size": 231,
+          "mean_return_pct": 0.7859483857385764,
+          "positive_rate_pct": 44.10774410774411,
+          "sample_size": 297,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 2.8998750132814113,
-          "positive_rate_pct": 50.64935064935065,
-          "sample_size": 231,
+          "mean_return_pct": 1.595702811193353,
+          "positive_rate_pct": 43.77104377104377,
+          "sample_size": 297,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 262,
+        "snapshot_count": 313,
         "triggered_count": 0
       },
       {
         "counterfactual_only": false,
         "group": "MISSING",
         "return_12h": {
-          "mean_return_pct": 0.1363479808805187,
-          "positive_rate_pct": 50.23474178403756,
-          "sample_size": 213,
+          "mean_return_pct": 0.1257108919840168,
+          "positive_rate_pct": 48.031496062992126,
+          "sample_size": 254,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.19565842792444504,
-          "positive_rate_pct": 48.113207547169814,
-          "sample_size": 212,
+          "mean_return_pct": 0.04740125231925898,
+          "positive_rate_pct": 49.01185770750988,
+          "sample_size": 253,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 1.7861274087817576,
-          "positive_rate_pct": 50.943396226415096,
-          "sample_size": 212,
+          "mean_return_pct": 1.6455750908353277,
+          "positive_rate_pct": 49.800796812749006,
+          "sample_size": 251,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.2877303684068016,
-          "positive_rate_pct": 58.21596244131455,
-          "sample_size": 213,
+          "mean_return_pct": 0.3195315109540589,
+          "positive_rate_pct": 55.511811023622045,
+          "sample_size": 254,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 4.547827074045903,
-          "positive_rate_pct": 67.29857819905213,
-          "sample_size": 211,
+          "mean_return_pct": 3.474796953229036,
+          "positive_rate_pct": 59.166666666666664,
+          "sample_size": 240,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.2348412591275073,
-          "positive_rate_pct": 62.08530805687204,
-          "sample_size": 211,
+          "mean_return_pct": 2.160026306001451,
+          "positive_rate_pct": 54.583333333333336,
+          "sample_size": 240,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 631,
-        "triggered_count": 171
+        "snapshot_count": 715,
+        "triggered_count": 212
       },
       {
         "counterfactual_only": false,
         "group": "REVERSAL",
         "return_12h": {
-          "mean_return_pct": 0.11697135362100224,
-          "positive_rate_pct": 44.30379746835443,
-          "sample_size": 158,
+          "mean_return_pct": 0.5561461748011549,
+          "positive_rate_pct": 48.86877828054298,
+          "sample_size": 221,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.6976992257942277,
-          "positive_rate_pct": 49.03225806451613,
-          "sample_size": 155,
+          "mean_return_pct": 0.27257709013518955,
+          "positive_rate_pct": 44.796380090497735,
+          "sample_size": 221,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 2.096141986637759,
-          "positive_rate_pct": 47.36842105263158,
-          "sample_size": 152,
+          "mean_return_pct": 1.2772368684295536,
+          "positive_rate_pct": 42.081447963800905,
+          "sample_size": 221,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": -0.17066892881826337,
-          "positive_rate_pct": 40.50632911392405,
-          "sample_size": 158,
+          "mean_return_pct": 0.1712516125939362,
+          "positive_rate_pct": 48.41628959276018,
+          "sample_size": 221,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.902824819409305,
-          "positive_rate_pct": 52.63157894736842,
-          "sample_size": 152,
+          "mean_return_pct": 1.8625383533440298,
+          "positive_rate_pct": 42.78606965174129,
+          "sample_size": 201,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 4.805354822482654,
-          "positive_rate_pct": 55.26315789473684,
-          "sample_size": 152,
+          "mean_return_pct": 2.5435103365877407,
+          "positive_rate_pct": 45.27363184079602,
+          "sample_size": 201,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 174,
+        "snapshot_count": 221,
         "triggered_count": 0
       }
     ],
@@ -5945,127 +6855,127 @@
         "counterfactual_only": false,
         "group": "CONSOLIDATION_RANGE",
         "return_12h": {
-          "mean_return_pct": -0.6967831668426522,
-          "positive_rate_pct": 47.674418604651166,
-          "sample_size": 86,
+          "mean_return_pct": -0.43031107456355927,
+          "positive_rate_pct": 44.166666666666664,
+          "sample_size": 120,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": -0.6281450660634743,
-          "positive_rate_pct": 47.674418604651166,
-          "sample_size": 86,
+          "mean_return_pct": -0.441939795400945,
+          "positive_rate_pct": 50.833333333333336,
+          "sample_size": 120,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 0.44764488817220677,
-          "positive_rate_pct": 46.51162790697674,
-          "sample_size": 86,
+          "mean_return_pct": 0.9594892452107529,
+          "positive_rate_pct": 46.610169491525426,
+          "sample_size": 118,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": -0.16150929359847715,
-          "positive_rate_pct": 46.51162790697674,
-          "sample_size": 86,
+          "mean_return_pct": -0.023447409095323977,
+          "positive_rate_pct": 44.166666666666664,
+          "sample_size": 120,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.0448584519295614,
-          "positive_rate_pct": 61.627906976744185,
-          "sample_size": 86,
+          "mean_return_pct": 1.6145862696348994,
+          "positive_rate_pct": 49.074074074074076,
+          "sample_size": 108,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.8322856817987043,
-          "positive_rate_pct": 67.44186046511628,
-          "sample_size": 86,
+          "mean_return_pct": 1.9271417517665779,
+          "positive_rate_pct": 53.7037037037037,
+          "sample_size": 108,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 105,
-        "triggered_count": 87
+        "snapshot_count": 136,
+        "triggered_count": 120
       },
       {
         "counterfactual_only": false,
         "group": "MISSING",
         "return_12h": {
-          "mean_return_pct": 0.12852096618556122,
-          "positive_rate_pct": 46.63677130044843,
-          "sample_size": 446,
+          "mean_return_pct": 0.2437912318246916,
+          "positive_rate_pct": 46.96707105719238,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.4593370766048316,
-          "positive_rate_pct": 48.03695150115473,
-          "sample_size": 433,
+          "mean_return_pct": -0.1007000018543771,
+          "positive_rate_pct": 43.008849557522126,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 1.5111747457412164,
-          "positive_rate_pct": 48.711943793911004,
-          "sample_size": 427,
+          "mean_return_pct": 0.8794084767976983,
+          "positive_rate_pct": 43.1858407079646,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.02751671431950617,
-          "positive_rate_pct": 49.327354260089685,
-          "sample_size": 446,
+          "mean_return_pct": 0.1768386327968597,
+          "positive_rate_pct": 52.16637781629116,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.067478145246657,
-          "positive_rate_pct": 53.521126760563384,
-          "sample_size": 426,
+          "mean_return_pct": 1.684735273176448,
+          "positive_rate_pct": 46.39556377079482,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.381107620829102,
-          "positive_rate_pct": 51.40845070422535,
-          "sample_size": 426,
+          "mean_return_pct": 1.8950759666661547,
+          "positive_rate_pct": 44.177449168207026,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 829,
+        "snapshot_count": 968,
         "triggered_count": 0
       },
       {
         "counterfactual_only": false,
         "group": "MOMENTUM_BREAKOUT",
         "return_12h": {
-          "mean_return_pct": 1.17260052254126,
-          "positive_rate_pct": 51.19047619047619,
-          "sample_size": 84,
+          "mean_return_pct": 1.0230864519671938,
+          "positive_rate_pct": 50.54945054945055,
+          "sample_size": 91,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 1.6122015722059477,
-          "positive_rate_pct": 53.01204819277108,
-          "sample_size": 83,
+          "mean_return_pct": 1.148199559739316,
+          "positive_rate_pct": 51.111111111111114,
+          "sample_size": 90,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 3.44161916100942,
-          "positive_rate_pct": 55.42168674698795,
-          "sample_size": 83,
+          "mean_return_pct": 2.7256939661073045,
+          "positive_rate_pct": 53.333333333333336,
+          "sample_size": 90,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.4590365795405064,
-          "positive_rate_pct": 55.95238095238095,
-          "sample_size": 84,
+          "mean_return_pct": 0.5204109652203803,
+          "positive_rate_pct": 56.043956043956044,
+          "sample_size": 91,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 4.805960762875511,
-          "positive_rate_pct": 67.07317073170732,
-          "sample_size": 82,
+          "mean_return_pct": 3.999225263510655,
+          "positive_rate_pct": 61.79775280898876,
+          "sample_size": 89,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.8159530689437515,
-          "positive_rate_pct": 67.07317073170732,
-          "sample_size": 82,
+          "mean_return_pct": 3.036047402940787,
+          "positive_rate_pct": 61.79775280898876,
+          "sample_size": 89,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 133,
-        "triggered_count": 84
+        "snapshot_count": 145,
+        "triggered_count": 92
       }
     ],
     "by_recommendation": [
@@ -6108,7 +7018,7 @@
           "sample_size": 19,
           "status": "INSUFFICIENT_SAMPLE"
         },
-        "snapshot_count": 19,
+        "snapshot_count": 20,
         "triggered_count": 19
       },
       {
@@ -6150,7 +7060,7 @@
           "sample_size": 0,
           "status": "COUNTERFACTUAL_EXCLUDED"
         },
-        "snapshot_count": 204,
+        "snapshot_count": 231,
         "triggered_count": 0
       },
       {
@@ -6192,92 +7102,92 @@
           "sample_size": 0,
           "status": "INSUFFICIENT_SAMPLE"
         },
-        "snapshot_count": 34,
+        "snapshot_count": 35,
         "triggered_count": 0
       },
       {
         "counterfactual_only": false,
         "group": "MISSING",
         "return_12h": {
-          "mean_return_pct": 0.12852096618556122,
-          "positive_rate_pct": 46.63677130044843,
-          "sample_size": 446,
+          "mean_return_pct": 0.2437912318246916,
+          "positive_rate_pct": 46.96707105719238,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.4593370766048316,
-          "positive_rate_pct": 48.03695150115473,
-          "sample_size": 433,
+          "mean_return_pct": -0.1007000018543771,
+          "positive_rate_pct": 43.008849557522126,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 1.5111747457412164,
-          "positive_rate_pct": 48.711943793911004,
-          "sample_size": 427,
+          "mean_return_pct": 0.8794084767976983,
+          "positive_rate_pct": 43.1858407079646,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.02751671431950617,
-          "positive_rate_pct": 49.327354260089685,
-          "sample_size": 446,
+          "mean_return_pct": 0.1768386327968597,
+          "positive_rate_pct": 52.16637781629116,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.067478145246657,
-          "positive_rate_pct": 53.521126760563384,
-          "sample_size": 426,
+          "mean_return_pct": 1.684735273176448,
+          "positive_rate_pct": 46.39556377079482,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.381107620829102,
-          "positive_rate_pct": 51.40845070422535,
-          "sample_size": 426,
+          "mean_return_pct": 1.8950759666661547,
+          "positive_rate_pct": 44.177449168207026,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 479,
+        "snapshot_count": 577,
         "triggered_count": 0
       },
       {
         "counterfactual_only": false,
         "group": "SPECULATIVE_REVIEW",
         "return_12h": {
-          "mean_return_pct": 0.14479324611706848,
-          "positive_rate_pct": 49.66887417218543,
-          "sample_size": 151,
+          "mean_return_pct": 0.1289178479170163,
+          "positive_rate_pct": 46.875,
+          "sample_size": 192,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.24597303530501563,
-          "positive_rate_pct": 46.666666666666664,
-          "sample_size": 150,
+          "mean_return_pct": 0.038789975981897984,
+          "positive_rate_pct": 48.167539267015705,
+          "sample_size": 191,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 1.3177993302405064,
-          "positive_rate_pct": 47.333333333333336,
-          "sample_size": 150,
+          "mean_return_pct": 1.2277790300212201,
+          "positive_rate_pct": 46.560846560846564,
+          "sample_size": 189,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.08230169403208905,
-          "positive_rate_pct": 47.682119205298015,
-          "sample_size": 151,
+          "mean_return_pct": 0.1682395370339983,
+          "positive_rate_pct": 46.354166666666664,
+          "sample_size": 192,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.345851971862439,
-          "positive_rate_pct": 62.41610738255034,
-          "sample_size": 149,
+          "mean_return_pct": 2.0948971907797005,
+          "positive_rate_pct": 52.247191011235955,
+          "sample_size": 178,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.5683093888661324,
-          "positive_rate_pct": 67.78523489932886,
-          "sample_size": 149,
+          "mean_return_pct": 2.064791610705045,
+          "positive_rate_pct": 56.741573033707866,
+          "sample_size": 178,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 185,
-        "triggered_count": 152
+        "snapshot_count": 226,
+        "triggered_count": 193
       },
       {
         "counterfactual_only": false,
@@ -6318,7 +7228,7 @@
           "sample_size": 0,
           "status": "INSUFFICIENT_SAMPLE"
         },
-        "snapshot_count": 146,
+        "snapshot_count": 160,
         "triggered_count": 0
       }
     ],
@@ -6362,7 +7272,7 @@
           "sample_size": 0,
           "status": "COUNTERFACTUAL_EXCLUDED"
         },
-        "snapshot_count": 25,
+        "snapshot_count": 27,
         "triggered_count": 0
       },
       {
@@ -6404,133 +7314,133 @@
           "sample_size": 9,
           "status": "INSUFFICIENT_SAMPLE"
         },
-        "snapshot_count": 173,
+        "snapshot_count": 201,
         "triggered_count": 9
       },
       {
         "counterfactual_only": false,
         "group": "40-60",
         "return_12h": {
-          "mean_return_pct": 0.6193386672438782,
-          "positive_rate_pct": 51.886792452830186,
-          "sample_size": 106,
+          "mean_return_pct": 0.5853200973829591,
+          "positive_rate_pct": 51.61290322580645,
+          "sample_size": 124,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.5178672884704353,
-          "positive_rate_pct": 50.476190476190474,
-          "sample_size": 105,
+          "mean_return_pct": 0.3582718703166049,
+          "positive_rate_pct": 52.03252032520325,
+          "sample_size": 123,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 0.5628617541414478,
-          "positive_rate_pct": 47.61904761904762,
-          "sample_size": 105,
+          "mean_return_pct": 0.5708240061095333,
+          "positive_rate_pct": 47.93388429752066,
+          "sample_size": 121,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.38988478239230817,
-          "positive_rate_pct": 52.83018867924528,
-          "sample_size": 106,
+          "mean_return_pct": 0.5373681200941176,
+          "positive_rate_pct": 54.03225806451613,
+          "sample_size": 124,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 2.334935026242157,
-          "positive_rate_pct": 65.38461538461539,
-          "sample_size": 104,
+          "mean_return_pct": 1.6652441777050333,
+          "positive_rate_pct": 58.62068965517241,
+          "sample_size": 116,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 1.78552183279852,
-          "positive_rate_pct": 62.5,
-          "sample_size": 104,
+          "mean_return_pct": 1.0500213803031149,
+          "positive_rate_pct": 56.03448275862069,
+          "sample_size": 116,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 291,
-        "triggered_count": 106
+        "snapshot_count": 324,
+        "triggered_count": 125
       },
       {
         "counterfactual_only": false,
         "group": "60-80",
         "return_12h": {
-          "mean_return_pct": -0.2946925330972827,
-          "positive_rate_pct": 43.63636363636363,
-          "sample_size": 55,
+          "mean_return_pct": -0.2596081542512383,
+          "positive_rate_pct": 38.46153846153846,
+          "sample_size": 78,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.26306498315328813,
-          "positive_rate_pct": 49.09090909090909,
-          "sample_size": 55,
+          "mean_return_pct": -0.06038295601699586,
+          "positive_rate_pct": 48.717948717948715,
+          "sample_size": 78,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 4.859387595273833,
-          "positive_rate_pct": 58.18181818181818,
-          "sample_size": 55,
+          "mean_return_pct": 3.739454286199922,
+          "positive_rate_pct": 52.56410256410256,
+          "sample_size": 78,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.06686910558722069,
-          "positive_rate_pct": 50.90909090909091,
-          "sample_size": 55,
+          "mean_return_pct": -0.02248235691162253,
+          "positive_rate_pct": 43.58974358974359,
+          "sample_size": 78,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 6.978740571013976,
-          "positive_rate_pct": 63.63636363636363,
-          "sample_size": 55,
+          "mean_return_pct": 4.275769523228506,
+          "positive_rate_pct": 48.611111111111114,
+          "sample_size": 72,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 7.6690145147554505,
-          "positive_rate_pct": 74.54545454545455,
-          "sample_size": 55,
+          "mean_return_pct": 4.465866619053872,
+          "positive_rate_pct": 56.94444444444444,
+          "sample_size": 72,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 99,
-        "triggered_count": 56
+        "snapshot_count": 120,
+        "triggered_count": 78
       },
       {
         "counterfactual_only": false,
         "group": "MISSING",
         "return_12h": {
-          "mean_return_pct": 0.12852096618556122,
-          "positive_rate_pct": 46.63677130044843,
-          "sample_size": 446,
+          "mean_return_pct": 0.2437912318246916,
+          "positive_rate_pct": 46.96707105719238,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.4593370766048316,
-          "positive_rate_pct": 48.03695150115473,
-          "sample_size": 433,
+          "mean_return_pct": -0.1007000018543771,
+          "positive_rate_pct": 43.008849557522126,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 1.5111747457412164,
-          "positive_rate_pct": 48.711943793911004,
-          "sample_size": 427,
+          "mean_return_pct": 0.8794084767976983,
+          "positive_rate_pct": 43.1858407079646,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.02751671431950617,
-          "positive_rate_pct": 49.327354260089685,
-          "sample_size": 446,
+          "mean_return_pct": 0.1768386327968597,
+          "positive_rate_pct": 52.16637781629116,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.067478145246657,
-          "positive_rate_pct": 53.521126760563384,
-          "sample_size": 426,
+          "mean_return_pct": 1.684735273176448,
+          "positive_rate_pct": 46.39556377079482,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.381107620829102,
-          "positive_rate_pct": 51.40845070422535,
-          "sample_size": 426,
+          "mean_return_pct": 1.8950759666661547,
+          "positive_rate_pct": 44.177449168207026,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 479,
+        "snapshot_count": 577,
         "triggered_count": 0
       }
     ],
@@ -6574,7 +7484,7 @@
           "sample_size": 0,
           "status": "COUNTERFACTUAL_EXCLUDED"
         },
-        "snapshot_count": 204,
+        "snapshot_count": 231,
         "triggered_count": 0
       },
       {
@@ -6616,133 +7526,133 @@
           "sample_size": 2,
           "status": "INSUFFICIENT_SAMPLE"
         },
-        "snapshot_count": 2,
-        "triggered_count": 2
+        "snapshot_count": 3,
+        "triggered_count": 3
       },
       {
         "counterfactual_only": false,
         "group": "BUY_ON_BREAKOUT",
         "return_12h": {
-          "mean_return_pct": 1.2164506839790545,
-          "positive_rate_pct": 52.4390243902439,
-          "sample_size": 82,
+          "mean_return_pct": 1.0601278575486661,
+          "positive_rate_pct": 51.68539325842696,
+          "sample_size": 89,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 1.67424897202212,
-          "positive_rate_pct": 54.32098765432099,
-          "sample_size": 81,
+          "mean_return_pct": 1.194765870650415,
+          "positive_rate_pct": 52.27272727272727,
+          "sample_size": 88,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 3.5688099390941384,
-          "positive_rate_pct": 56.79012345679013,
-          "sample_size": 81,
+          "mean_return_pct": 2.8264962687784183,
+          "positive_rate_pct": 54.54545454545455,
+          "sample_size": 88,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.48307627485772847,
-          "positive_rate_pct": 56.09756097560975,
-          "sample_size": 82,
+          "mean_return_pct": 0.5439390976627618,
+          "positive_rate_pct": 56.17977528089887,
+          "sample_size": 89,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 5.100544761275272,
-          "positive_rate_pct": 68.75,
-          "sample_size": 80,
+          "mean_return_pct": 4.251561457456072,
+          "positive_rate_pct": 63.2183908045977,
+          "sample_size": 87,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.9035951357623295,
-          "positive_rate_pct": 67.5,
-          "sample_size": 80,
+          "mean_return_pct": 3.0987089433256183,
+          "positive_rate_pct": 62.06896551724138,
+          "sample_size": 87,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 97,
-        "triggered_count": 82
+        "snapshot_count": 107,
+        "triggered_count": 89
       },
       {
         "counterfactual_only": false,
         "group": "BUY_ON_PULLBACK",
         "return_12h": {
-          "mean_return_pct": -0.6967831668426522,
-          "positive_rate_pct": 47.674418604651166,
-          "sample_size": 86,
+          "mean_return_pct": -0.43031107456355927,
+          "positive_rate_pct": 44.166666666666664,
+          "sample_size": 120,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": -0.6281450660634743,
-          "positive_rate_pct": 47.674418604651166,
-          "sample_size": 86,
+          "mean_return_pct": -0.441939795400945,
+          "positive_rate_pct": 50.833333333333336,
+          "sample_size": 120,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 0.44764488817220677,
-          "positive_rate_pct": 46.51162790697674,
-          "sample_size": 86,
+          "mean_return_pct": 0.9594892452107529,
+          "positive_rate_pct": 46.610169491525426,
+          "sample_size": 118,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": -0.16150929359847715,
-          "positive_rate_pct": 46.51162790697674,
-          "sample_size": 86,
+          "mean_return_pct": -0.023447409095323977,
+          "positive_rate_pct": 44.166666666666664,
+          "sample_size": 120,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.0448584519295614,
-          "positive_rate_pct": 61.627906976744185,
-          "sample_size": 86,
+          "mean_return_pct": 1.6145862696348994,
+          "positive_rate_pct": 49.074074074074076,
+          "sample_size": 108,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.8322856817987043,
-          "positive_rate_pct": 67.44186046511628,
-          "sample_size": 86,
+          "mean_return_pct": 1.9271417517665779,
+          "positive_rate_pct": 53.7037037037037,
+          "sample_size": 108,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 105,
-        "triggered_count": 87
+        "snapshot_count": 136,
+        "triggered_count": 120
       },
       {
         "counterfactual_only": false,
         "group": "MISSING",
         "return_12h": {
-          "mean_return_pct": 0.12852096618556122,
-          "positive_rate_pct": 46.63677130044843,
-          "sample_size": 446,
+          "mean_return_pct": 0.2437912318246916,
+          "positive_rate_pct": 46.96707105719238,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.4593370766048316,
-          "positive_rate_pct": 48.03695150115473,
-          "sample_size": 433,
+          "mean_return_pct": -0.1007000018543771,
+          "positive_rate_pct": 43.008849557522126,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 1.5111747457412164,
-          "positive_rate_pct": 48.711943793911004,
-          "sample_size": 427,
+          "mean_return_pct": 0.8794084767976983,
+          "positive_rate_pct": 43.1858407079646,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.02751671431950617,
-          "positive_rate_pct": 49.327354260089685,
-          "sample_size": 446,
+          "mean_return_pct": 0.1768386327968597,
+          "positive_rate_pct": 52.16637781629116,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.067478145246657,
-          "positive_rate_pct": 53.521126760563384,
-          "sample_size": 426,
+          "mean_return_pct": 1.684735273176448,
+          "positive_rate_pct": 46.39556377079482,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.381107620829102,
-          "positive_rate_pct": 51.40845070422535,
-          "sample_size": 426,
+          "mean_return_pct": 1.8950759666661547,
+          "positive_rate_pct": 44.177449168207026,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 479,
+        "snapshot_count": 577,
         "triggered_count": 0
       },
       {
@@ -6784,7 +7694,7 @@
           "sample_size": 0,
           "status": "INSUFFICIENT_SAMPLE"
         },
-        "snapshot_count": 180,
+        "snapshot_count": 195,
         "triggered_count": 0
       }
     ],
@@ -6828,92 +7738,92 @@
           "sample_size": 8,
           "status": "INSUFFICIENT_SAMPLE"
         },
-        "snapshot_count": 124,
+        "snapshot_count": 141,
         "triggered_count": 8
       },
       {
         "counterfactual_only": false,
         "group": "20-40",
         "return_12h": {
-          "mean_return_pct": 1.387455777954581,
-          "positive_rate_pct": 45.65217391304348,
-          "sample_size": 46,
+          "mean_return_pct": 1.555544998943257,
+          "positive_rate_pct": 49.01960784313726,
+          "sample_size": 51,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 1.7199370153096825,
-          "positive_rate_pct": 57.77777777777778,
-          "sample_size": 45,
+          "mean_return_pct": 1.928833288850692,
+          "positive_rate_pct": 60.78431372549019,
+          "sample_size": 51,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 0.3813630677604539,
-          "positive_rate_pct": 42.22222222222222,
-          "sample_size": 45,
+          "mean_return_pct": 1.0367954751250248,
+          "positive_rate_pct": 42.857142857142854,
+          "sample_size": 49,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.7734073902754912,
-          "positive_rate_pct": 60.869565217391305,
-          "sample_size": 46,
+          "mean_return_pct": 1.003354920634313,
+          "positive_rate_pct": 64.70588235294117,
+          "sample_size": 51,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 4.14931043536858,
-          "positive_rate_pct": 64.44444444444444,
-          "sample_size": 45,
+          "mean_return_pct": 3.567598984150237,
+          "positive_rate_pct": 61.702127659574465,
+          "sample_size": 47,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 2.6601150886407066,
-          "positive_rate_pct": 64.44444444444444,
-          "sample_size": 45,
+          "mean_return_pct": 2.1455081658464077,
+          "positive_rate_pct": 61.702127659574465,
+          "sample_size": 47,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 237,
-        "triggered_count": 46
+        "snapshot_count": 269,
+        "triggered_count": 51
       },
       {
         "counterfactual_only": false,
         "group": "40-60",
         "return_12h": {
-          "mean_return_pct": -0.19275250496000895,
-          "positive_rate_pct": 50.48543689320388,
-          "sample_size": 103,
+          "mean_return_pct": -0.09544689178346896,
+          "positive_rate_pct": 45.86466165413534,
+          "sample_size": 133,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": -0.26462064958927367,
-          "positive_rate_pct": 45.63106796116505,
-          "sample_size": 103,
+          "mean_return_pct": -0.5962194496378911,
+          "positive_rate_pct": 46.21212121212121,
+          "sample_size": 132,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 2.2595808401060817,
-          "positive_rate_pct": 51.45631067961165,
-          "sample_size": 103,
+          "mean_return_pct": 1.809681687588788,
+          "positive_rate_pct": 50.0,
+          "sample_size": 132,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.03984373569069148,
-          "positive_rate_pct": 49.51456310679612,
-          "sample_size": 103,
+          "mean_return_pct": 0.18559019920927292,
+          "positive_rate_pct": 45.86466165413534,
+          "sample_size": 133,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.097340002760404,
-          "positive_rate_pct": 63.72549019607843,
-          "sample_size": 102,
+          "mean_return_pct": 1.8456565444397344,
+          "positive_rate_pct": 52.0,
+          "sample_size": 125,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.64879281681866,
-          "positive_rate_pct": 69.6078431372549,
-          "sample_size": 102,
+          "mean_return_pct": 2.0101387115158835,
+          "positive_rate_pct": 56.8,
+          "sample_size": 125,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 211,
-        "triggered_count": 103
+        "snapshot_count": 239,
+        "triggered_count": 134
       },
       {
         "counterfactual_only": false,
@@ -6921,89 +7831,89 @@
         "return_12h": {
           "mean_return_pct": null,
           "positive_rate_pct": null,
-          "sample_size": 13,
+          "sample_size": 19,
           "status": "INSUFFICIENT_SAMPLE"
         },
         "return_24h": {
           "mean_return_pct": null,
           "positive_rate_pct": null,
-          "sample_size": 13,
+          "sample_size": 19,
           "status": "INSUFFICIENT_SAMPLE"
         },
         "return_48h": {
           "mean_return_pct": null,
           "positive_rate_pct": null,
-          "sample_size": 13,
+          "sample_size": 19,
           "status": "INSUFFICIENT_SAMPLE"
         },
         "return_4h": {
           "mean_return_pct": null,
           "positive_rate_pct": null,
-          "sample_size": 13,
+          "sample_size": 19,
           "status": "INSUFFICIENT_SAMPLE"
         },
         "return_72h": {
           "mean_return_pct": null,
           "positive_rate_pct": null,
-          "sample_size": 13,
+          "sample_size": 17,
           "status": "INSUFFICIENT_SAMPLE"
         },
         "return_96h": {
           "mean_return_pct": null,
           "positive_rate_pct": null,
-          "sample_size": 13,
+          "sample_size": 17,
           "status": "INSUFFICIENT_SAMPLE"
         },
-        "snapshot_count": 16,
-        "triggered_count": 14
+        "snapshot_count": 23,
+        "triggered_count": 19
       },
       {
         "counterfactual_only": false,
         "group": "MISSING",
         "return_12h": {
-          "mean_return_pct": 0.12852096618556122,
-          "positive_rate_pct": 46.63677130044843,
-          "sample_size": 446,
+          "mean_return_pct": 0.2437912318246916,
+          "positive_rate_pct": 46.96707105719238,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_24h": {
-          "mean_return_pct": 0.4593370766048316,
-          "positive_rate_pct": 48.03695150115473,
-          "sample_size": 433,
+          "mean_return_pct": -0.1007000018543771,
+          "positive_rate_pct": 43.008849557522126,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_48h": {
-          "mean_return_pct": 1.5111747457412164,
-          "positive_rate_pct": 48.711943793911004,
-          "sample_size": 427,
+          "mean_return_pct": 0.8794084767976983,
+          "positive_rate_pct": 43.1858407079646,
+          "sample_size": 565,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_4h": {
-          "mean_return_pct": 0.02751671431950617,
-          "positive_rate_pct": 49.327354260089685,
-          "sample_size": 446,
+          "mean_return_pct": 0.1768386327968597,
+          "positive_rate_pct": 52.16637781629116,
+          "sample_size": 577,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_72h": {
-          "mean_return_pct": 3.067478145246657,
-          "positive_rate_pct": 53.521126760563384,
-          "sample_size": 426,
+          "mean_return_pct": 1.684735273176448,
+          "positive_rate_pct": 46.39556377079482,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
         "return_96h": {
-          "mean_return_pct": 3.381107620829102,
-          "positive_rate_pct": 51.40845070422535,
-          "sample_size": 426,
+          "mean_return_pct": 1.8950759666661547,
+          "positive_rate_pct": 44.177449168207026,
+          "sample_size": 541,
           "status": "FORWARD_SAMPLE_AVAILABLE"
         },
-        "snapshot_count": 479,
+        "snapshot_count": 577,
         "triggered_count": 0
       }
     ]
   },
   "totals": {
-    "events": 3948,
-    "snapshots": 1067
+    "events": 4997,
+    "snapshots": 1249
   },
-  "unresolved_observations": 533
+  "unresolved_observations": 621
 }
