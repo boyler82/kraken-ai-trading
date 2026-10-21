@@ -89,7 +89,7 @@ def validate(signal, prospective=False):
             raise ValueError('FEATURE_AFTER_MARKET_CUTOFF')
         if not positive(signal.get('reference_price')):
             raise ValueError('MISSING_REFERENCE_PRICE')
-        if not signal['provenance'].get('source_digests'):
+        if not signal['provenance'].get('source_digests') and signal['provenance'].get('scan_link_contract') != 'APPEND_ONLY_SCAN_PROVENANCE_V1':
             raise ValueError('MISSING_PROVENANCE')
         for key in ('available_at_utc', 'cutoff_utc'):
             if utc(signal['features'][key]) > obs or utc(signal['regime'][key]) > obs:

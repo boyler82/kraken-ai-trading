@@ -14,6 +14,10 @@ class Registry:
           CREATE TABLE IF NOT EXISTS signals(id TEXT PRIMARY KEY, payload TEXT NOT NULL);
           CREATE TABLE IF NOT EXISTS snapshots(id TEXT PRIMARY KEY, kind TEXT NOT NULL, payload TEXT NOT NULL);
           CREATE TABLE IF NOT EXISTS sources(id TEXT PRIMARY KEY, payload BLOB NOT NULL);
+          CREATE TRIGGER IF NOT EXISTS sources_no_update BEFORE UPDATE ON sources
+             BEGIN SELECT RAISE(ABORT,'IMMUTABLE_SOURCE_PROVENANCE'); END;
+          CREATE TRIGGER IF NOT EXISTS sources_no_delete BEFORE DELETE ON sources
+             BEGIN SELECT RAISE(ABORT,'IMMUTABLE_SOURCE_PROVENANCE'); END;
           CREATE TABLE IF NOT EXISTS outcomes(signal_id TEXT REFERENCES signals(id), basis TEXT,
              horizon INTEGER, payload TEXT NOT NULL, PRIMARY KEY(signal_id,basis,horizon));
           CREATE TABLE IF NOT EXISTS benchmark_measurements(id TEXT PRIMARY KEY,
@@ -27,6 +31,10 @@ class Registry:
           CREATE TABLE IF NOT EXISTS versions(id TEXT PRIMARY KEY, payload TEXT NOT NULL);
           CREATE TABLE IF NOT EXISTS governance_events(id TEXT PRIMARY KEY, payload TEXT NOT NULL);
           CREATE TABLE IF NOT EXISTS scan_runs(id TEXT PRIMARY KEY, payload TEXT NOT NULL);
+          CREATE TRIGGER IF NOT EXISTS scan_runs_no_update BEFORE UPDATE ON scan_runs
+             BEGIN SELECT RAISE(ABORT,'IMMUTABLE_SCAN_PROVENANCE'); END;
+          CREATE TRIGGER IF NOT EXISTS scan_runs_no_delete BEFORE DELETE ON scan_runs
+             BEGIN SELECT RAISE(ABORT,'IMMUTABLE_SCAN_PROVENANCE'); END;
         ''')
     def close(self):
         self.db.close()
@@ -48,6 +56,9 @@ class Registry:
     def source(self, value):
         key = digest(value)
         self.db.execute('INSERT OR IGNORE INTO sources VALUES(?,?)', (key, zlib.compress(canonical(value).encode())))
+        stored = self.db.execute('SELECT payload FROM sources WHERE id=?', (key,)).fetchone()[0]
+        if zlib.decompress(stored).decode() != canonical(value):
+            raise ValueError('IMMUTABLE_SOURCE_CONFLICT:' + key)
         return key
     def signals(self):
         return [strict_loads(x[0]) for x in self.db.execute('SELECT payload FROM signals ORDER BY id')]

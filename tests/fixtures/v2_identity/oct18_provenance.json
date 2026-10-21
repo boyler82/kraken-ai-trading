@@ -1,0 +1,126 @@
+{
+  "activation_level": null,
+  "asset": "PENGU",
+  "classification": "MEASURABLE",
+  "cluster_id": "GLOBAL_24H_UTC_V1:2026-10-18",
+  "cluster_method_version": "GLOBAL_24H_UTC_V1",
+  "cohort": "FORWARD_PROSPECTIVE_CLOSED_CANDLE",
+  "configuration_identity_contract": "RESEARCH_SEMANTICS_V1",
+  "configuration_version": "ea7148adf314e5aaa3a789ad32a8b1c7eed7162ce0dc473bf3e8f5ebebe8f477",
+  "decision_status": "RESEARCH_ONLY",
+  "direction": "LONG",
+  "event_study_levels": {
+    "invalidation": 0.0071197,
+    "semantics": "REFERENCE_LEVEL_TOUCH_NOT_EXECUTED_ORDER",
+    "target": 0.0075556
+  },
+  "event_type": "CLOSED_CANDLE_REFERENCE_EVENT",
+  "feature_cutoff_utc": "2026-10-18T19:00:00+00:00",
+  "features": {
+    "available_at_utc": "2026-10-18T19:10:38.975498+00:00",
+    "cutoff_utc": "2026-10-18T19:00:00+00:00",
+    "last_closed_candle_start_utc": "2026-10-18T18:00:00+00:00",
+    "missing": [
+      "volume_acceleration",
+      "range_position",
+      "ema20_distance",
+      "quote_notional"
+    ],
+    "normalization": "RAW_UNITS_NO_IMPUTATION",
+    "values": {
+      "breakout_distance": -13.46544108869524,
+      "ema20_distance": null,
+      "momentum_acceleration": 1.1540521473484722,
+      "quote_notional": null,
+      "range_position": null,
+      "realized_volatility": 86.20919220699153,
+      "return_1h": 0.1381406271584451,
+      "return_24h": -3.3853125416500096,
+      "return_4h": -0.7530120481927693,
+      "return_7d": -11.207741303282692,
+      "rs_acceleration": 0.4814415778742642,
+      "rs_btc": -4.253805172429937,
+      "rs_percentile": 65.0,
+      "volatility_expansion": 1.3735283461326961,
+      "volume_acceleration": null,
+      "volume_z": -0.04339361325732449
+    },
+    "version": "1.0.0"
+  },
+  "identity_version": "PARENT_SETUP_V2",
+  "invalidation_level": 0.0071197,
+  "market_data_cutoff_utc": "2026-10-18T19:00:00+00:00",
+  "observation_timestamp_utc": "2026-10-18T19:10:38.975498+00:00",
+  "pair": "PENGUUSD",
+  "parent_setup": {
+    "pair": "PENGUUSD",
+    "setup_episode_id": null,
+    "source_modules": [
+      "CONSOLIDATION",
+      "RANGE_PERSONALITY",
+      "RANGE_QUALITY"
+    ],
+    "source_timestamp": "2026-10-18T18:00:00+00:00",
+    "strategy_name": "CONSOLIDATION_RANGE"
+  },
+  "provenance": {
+    "configuration_digest": "ea7148adf314e5aaa3a789ad32a8b1c7eed7162ce0dc473bf3e8f5ebebe8f477",
+    "reference_candle_interval_seconds": 3600,
+    "retrieved_at_utc": "2026-10-18T19:10:38.975498+00:00",
+    "source_digests": [
+      "4ae5969c4a194e970f73148abc2d2aa097a5e43d2299b32e631ffba51853015b",
+      "7cee5f655ee7914cfe700a75187459821976b86f1c858c68257405334cf55898",
+      "f1419d034dd4a99fd15f67a60f728dff3a11d705221e2a916880dfd19b6ae5b8",
+      "cf8f26955fa90baf3089639234e758bf17e8810cc220415244575f38e3255b34",
+      "55f9b91d6b94ecfc7632738c3cb0e794f7f64f2676b666fc006a032fa48d608a",
+      "9a97885fc038b04fcebfc4e0bf629023c4073b45cc080d5a14a890709eaa005e",
+      "13f3e8b117159c2db9fd06bfeba3aca9b946a645c506bb6c1486fd218d40619c",
+      "6dcaf5cc1bd78b607895ef901baecece55de208d9e1f35979cbe257011e43cd9"
+    ],
+    "source_pipeline": "EXISTING_PAPER_SETUP_EXTRACTOR",
+    "source_timestamp_semantics": "CANDLE_START",
+    "transformation_version": "1.0.0"
+  },
+  "quality_flags": [],
+  "reason_codes": [],
+  "reference_candle_close_utc": "2026-10-18T19:00:00+00:00",
+  "reference_price": 0.007249,
+  "reference_price_timestamp_utc": "2026-10-18T19:00:00+00:00",
+  "regime": {
+    "available_at_utc": "2026-10-18T19:10:38.975498+00:00",
+    "cutoff_utc": "2026-10-18T19:00:00+00:00",
+    "missing": [
+      "sell_pressure",
+      "macro_state",
+      "liquidity_condition"
+    ],
+    "values": {
+      "breadth_above_ema20_pct": 6.557377049180328,
+      "btc_structure": null,
+      "liquidity_condition": null,
+      "macro_state": null,
+      "market_state": "UNAVAILABLE",
+      "realized_volatility": null,
+      "sell_pressure": null
+    },
+    "version": "RECORDED_MARKET_VECTOR_V1"
+  },
+  "regime_version": "RECORDED_MARKET_VECTOR_V1",
+  "research_uses": {
+    "cc_outcomes": true,
+    "inventory": true,
+    "recorded_component_description": true,
+    "versioned_strategy_evidence": true
+  },
+  "rr_status": "NOT_AN_EXECUTED_OR_ASSUMED_ACTIVATED_TRADE",
+  "schema_version": "1.0.0",
+  "signal_id": "v2p_0373b261890e415cede03754c402b860",
+  "signal_type": "QUALIFYING_RESEARCH_SETUP",
+  "source_event_id": "3ea0e3526ae8673daef7931dc172ec557371b3f81c21f4ce80d241cd432f3301",
+  "strategy_id": "MULTI_TP4_SL2",
+  "strategy_reference_price": 0.007265,
+  "strategy_version": "1.0.0:ea7148adf314",
+  "target_level": 0.0075556,
+  "theoretical_rr": null,
+  "timing_basis": "CLOSED_CANDLE_REFERENCE"
+}

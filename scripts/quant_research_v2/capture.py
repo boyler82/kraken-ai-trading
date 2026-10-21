@@ -30,9 +30,16 @@ def replay_event(event, old):
         event[key]=old[key]
     for section,key in (('features','available_at_utc'),('regime','available_at_utc'),('provenance','retrieved_at_utc')):
         event[section][key]=old[section][key]
-    if canonical(event)!=canonical(old):
+    # Report hashes identify a scan, not market/event facts. Legacy payloads
+    # retain their original hashes byte-for-byte; only comparison projects them out.
+    facts=deepcopy(event); prior_facts=deepcopy(old)
+    facts['provenance'].pop('source_digests',None)
+    prior_facts['provenance'].pop('source_digests',None)
+    if 'scan_link_contract' not in old['provenance'] and facts['provenance'].get('scan_link_contract')=='APPEND_ONLY_SCAN_PROVENANCE_V1':
+        facts['provenance'].pop('scan_link_contract')
+    if canonical(facts)!=canonical(prior_facts):
         raise ValueError('IMMUTABLE_PAYLOAD_CONFLICT:'+event['signal_id'])
-    return event
+    return deepcopy(old)
 
 FEATURE_MAPPING={'return_1h':'change_1h_pct','return_4h':'change_4h_pct','return_24h':'change_24h_pct',
  'return_7d':'change_7d_pct','momentum_acceleration':'acceleration_4h_pct',
@@ -112,7 +119,8 @@ def capture(registry, root, observed_at, activation_at, maximum_age_hours=8):
                  strategy_version=cfg['version']+':'+configuration_version[:12],configuration_version=configuration_version,
                  observation_time=observed_at,reference_close=close,reference_price=candle['close'],
                  features=features,regime=regime,
-                 provenance={'source_pipeline':'EXISTING_PAPER_SETUP_EXTRACTOR','source_digests':source_digests,
+                 provenance={'source_pipeline':'EXISTING_PAPER_SETUP_EXTRACTOR',
+                             'scan_link_contract':'APPEND_ONLY_SCAN_PROVENANCE_V1',
                              'transformation_version':VERSION,'retrieved_at_utc':observed_at,
                              'reference_candle_interval_seconds':3600,'source_timestamp_semantics':'CANDLE_START',
                              'configuration_digest':configuration_version},
@@ -144,7 +152,9 @@ def capture(registry, root, observed_at, activation_at, maximum_age_hours=8):
         captured.append(key)
     # Source-module qualification rules are reused; their individual gate decisions
     # are not all exposed by the extractor, so no fabricated rejection percentages.
-    diagnostics={'observation_timestamp_utc':observed_at,'eligible_setups':len(setups),
+    diagnostics={'provenance_contract':'APPEND_ONLY_SCAN_PROVENANCE_V1',
+                 'source_digests':{name:digest(report) for name,report in reports.items()},
+                 'observation_timestamp_utc':observed_at,'eligible_setups':len(setups),
                  'captured_signal_ids':captured,'measurement_exclusions':excluded,
                  'source_population':{k:len(v.get('assets',v.get('candidates',[]))) for k,v in reports.items()},
                  'gate_rejection_percentages':gates(reports),'gate_coverage_warning':'ROTATION_SOURCE_MAY_BE_TRUNCATED; COMBINATION_SIGNALS_ARE_DEPENDENT',
