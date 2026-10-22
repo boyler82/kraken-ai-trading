@@ -1,0 +1,929 @@
+{
+  "spec_sha256": "c8a8ba52f03c24645db0610ee8ed52a836059fd5fdac4f12358e85366163662f",
+  "code_sha256": "c51c50c4208da4dacb62d1713141ca3320ef077119879e0be1e3e3ce8e2910eb",
+  "python": "3.12.13",
+  "pandas": "2.2.3",
+  "numpy": "2.5.1",
+  "sources": [
+    {
+      "path": "DATASETS/market_intraday_weekly/AAVEUSD_1H.csv",
+      "sha256": "f60f9aa8dc2b79a936c9b934e3267f5638a20ce3aed2cc5049164ab903fc089c",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ADAUSD_1H.csv",
+      "sha256": "35addca9aad25c192754b9d1e3677071eea7c0e9a347b060d4d76ab29f145131",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/AEROUSD_1H.csv",
+      "sha256": "459248d453a3a41002448a44b4ec16cac450e118f10773eb326b029502d8a219",
+      "rows_before_cutoff": 2214,
+      "rejected": 0,
+      "start": "2026-07-21 18:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/AKEUSD_1H.csv",
+      "sha256": "227688e6418fc66d3cd20b23fe48b66810ba83659ca3f2d0e0fabd8cbd8f2147",
+      "rows_before_cutoff": 2309,
+      "rejected": 0,
+      "start": "2026-07-17 19:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ALGOUSD_1H.csv",
+      "sha256": "a143a5bec2f1d629cdff6e5624f0f8a90f2dc138addce81e6daa09f43ea5bbeb",
+      "rows_before_cutoff": 2623,
+      "rejected": 0,
+      "start": "2026-07-04 17:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/APTUSD_1H.csv",
+      "sha256": "f954fe2754c23e74de457f959301d7abfa7c6dc10c2dc15a47691425138d1cd1",
+      "rows_before_cutoff": 2168,
+      "rejected": 0,
+      "start": "2026-07-23 16:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ARBUSD_1H.csv",
+      "sha256": "f78a455e78c9256a8790efa8ba699f8566f9f6b8e84c6eed7a11214932918fff",
+      "rows_before_cutoff": 2214,
+      "rejected": 0,
+      "start": "2026-07-21 18:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ARUSD_1H.csv",
+      "sha256": "df1fee6c23db42063cc5c58b372103e0ac3addb2cd4312f0163b0c525470c542",
+      "rows_before_cutoff": 819,
+      "rejected": 0,
+      "start": "2026-08-21 15:00:00+00:00",
+      "end": "2026-09-24 17:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ASTERUSD_1H.csv",
+      "sha256": "f1e50742c2e8a7215be315083d0fbd486197dbad2b252b3e71970d91a1507fbe",
+      "rows_before_cutoff": 2214,
+      "rejected": 0,
+      "start": "2026-07-21 18:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ATOMUSD_1H.csv",
+      "sha256": "0ead758c48a56ee266a92ee25c9f66dc5bc1e80119f9be2aa7f387a69190c8f3",
+      "rows_before_cutoff": 2623,
+      "rejected": 0,
+      "start": "2026-07-04 17:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/AVAXUSD_1H.csv",
+      "sha256": "a93bad84616ba5d32ecdf523d3e43efa4168e6326d4b5f3b6994d5ac9a1c2d56",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/BATUSD_1H.csv",
+      "sha256": "47bf33bf314356336c8947b8df80abe2ce7d447fb2a8d3b4ea0e3e8b3c779f1a",
+      "rows_before_cutoff": 750,
+      "rejected": 0,
+      "start": "2026-09-20 18:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/BCHUSD_1H.csv",
+      "sha256": "6329668e3a08660d68813e7f207823f6c1994cbc4c60babe3e88b58beffb4c82",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/BNBUSD_1H.csv",
+      "sha256": "2612027c4541cc23453412fd61e734887468f7fbfd39905a52fe6649448ecc29",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/BONKUSD_1H.csv",
+      "sha256": "8df98cbf912a19d587c212f6d2ac9dc6bc84101db5e146939c5c29475b0e8b09",
+      "rows_before_cutoff": 1969,
+      "rejected": 0,
+      "start": "2026-07-21 19:00:00+00:00",
+      "end": "2026-10-11 19:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/BTCUSD_1H.csv",
+      "sha256": "10a85295294621e374a2a77ee4283ccdc8ddd226c921b6e1c9342c605ca2351a",
+      "rows_before_cutoff": 2351,
+      "rejected": 0,
+      "start": "2026-05-13 19:00:00+00:00",
+      "end": "2026-08-19 17:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/CAKEUSD_1H.csv",
+      "sha256": "4f5b4dacdd06e054d15f33260943ae45b03e4ce37c67d3119e3e2012d0937900",
+      "rows_before_cutoff": 1583,
+      "rejected": 0,
+      "start": "2026-07-23 16:00:00+00:00",
+      "end": "2026-09-27 14:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/CCUSD_1H.csv",
+      "sha256": "60f8fbd092ed17f8c0c1e99b708af0d1c7ed7c3bd5101573e47db0f5cbec59b0",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/CFXUSD_1H.csv",
+      "sha256": "3e7c4f13a194251f7b1754b6a5eee46bb780775d8bf2f3f97f83729a64d701d3",
+      "rows_before_cutoff": 762,
+      "rejected": 0,
+      "start": "2026-09-11 21:00:00+00:00",
+      "end": "2026-10-13 14:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/CROUSD_1H.csv",
+      "sha256": "95ccaf1d6f8fe929f1210718627b2e9a01ae9d9104521b05adca7d1eeafd79e1",
+      "rows_before_cutoff": 1489,
+      "rejected": 0,
+      "start": "2026-07-23 16:00:00+00:00",
+      "end": "2026-09-24 17:00:00+00:00",
+      "missing_hours": 25
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/CRVUSD_1H.csv",
+      "sha256": "cd5268023cdc61487cbd272b31688484809d2c151503a32892d825e69d83ceaf",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/CSPRUSD_1H.csv",
+      "sha256": "b82858a653b6ec5fdc3bca691d2a11e4d6adb35b619d04a841f1500c43df7bdc",
+      "rows_before_cutoff": 700,
+      "rejected": 0,
+      "start": "2026-07-21 14:00:00+00:00",
+      "end": "2026-08-19 17:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/DASHUSD_1H.csv",
+      "sha256": "cd38250d8de78c528e8cf94eba50fa6e548a48b1d79d3407d62771249558b433",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/DCRUSD_1H.csv",
+      "sha256": "edb7c2ed5d04de07570359d0eb554addabc9318607bf07aa8e06bb123cefde3d",
+      "rows_before_cutoff": 1356,
+      "rejected": 0,
+      "start": "2026-07-30 06:00:00+00:00",
+      "end": "2026-09-24 17:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/DOTUSD_1H.csv",
+      "sha256": "2e32562c9342af33ae71acad64914db5ec2824915f864049ecadf8bed52dcc10",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/DRVUSD_1H.csv",
+      "sha256": "aa45417865368e91c5e75d30ee358c64430b08ef7d4d129e6e2120a988633755",
+      "rows_before_cutoff": 1473,
+      "rejected": 0,
+      "start": "2026-08-21 15:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ENAUSD_1H.csv",
+      "sha256": "d21fefc57d9e240d9d610c2f68e03c531bc408c23ff73dfceecce46097a6fa32",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ETCUSD_1H.csv",
+      "sha256": "427ecf29157f939ee1d89b874bce31700f68910aca3ff2319392dfc9ba9b573a",
+      "rows_before_cutoff": 1583,
+      "rejected": 0,
+      "start": "2026-07-23 16:00:00+00:00",
+      "end": "2026-09-27 14:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ETHFIUSD_1H.csv",
+      "sha256": "4af2796f818b1eb18b880a1eaae5a475876d4091e84f13f3d5c1d6684f53a16d",
+      "rows_before_cutoff": 2160,
+      "rejected": 0,
+      "start": "2026-07-20 18:00:00+00:00",
+      "end": "2026-10-18 17:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ETHUSD_1H.csv",
+      "sha256": "5580b1d24baba7500cfc978d8e22266dd4a92480ea3abc22cf76889fe30cf632",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/EURCUSD_1H.csv",
+      "sha256": "88840cece44e79d8574a64b232b6d345be6f2afa6b26bdfd45dca286009f1603",
+      "rows_before_cutoff": 2524,
+      "rejected": 0,
+      "start": "2026-07-08 20:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/FETUSD_1H.csv",
+      "sha256": "1ad7eba4dfbfa7107fb7db1116bcb6239116e6dc5de209c47bce3b053dd0ef86",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/FILUSD_1H.csv",
+      "sha256": "b2f1e2b030628cc3a28805e10bd18e21c3c1df6c4050d877a3a2f818ed1017ed",
+      "rows_before_cutoff": 2524,
+      "rejected": 0,
+      "start": "2026-07-08 20:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/FLOKIUSD_1H.csv",
+      "sha256": "deb619b0f20a279d1028b3dda34525ef6af6e86b0f12421785ccf8b399f1f930",
+      "rows_before_cutoff": 744,
+      "rejected": 0,
+      "start": "2026-07-23 16:00:00+00:00",
+      "end": "2026-08-23 15:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/FLRUSD_1H.csv",
+      "sha256": "a1c54d35bf51a4e9b8b394b0f9486d9e967702a932c1fa7ef72319405630d586",
+      "rows_before_cutoff": 2457,
+      "rejected": 0,
+      "start": "2026-07-11 15:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/GRASSUSD_1H.csv",
+      "sha256": "8ec18002654bc2b970cf526ce605c0857ce4afc114f7899632294f4297604322",
+      "rows_before_cutoff": 1399,
+      "rejected": 0,
+      "start": "2026-08-24 17:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/GRTUSD_1H.csv",
+      "sha256": "7836905a150a16c3c0ce0cb80fadb39ae351d4353feef37d04a228a5eecd9813",
+      "rows_before_cutoff": 764,
+      "rejected": 0,
+      "start": "2026-08-26 19:00:00+00:00",
+      "end": "2026-09-27 14:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/HBARUSD_1H.csv",
+      "sha256": "c5b42243bc529f94ab0f0200229a66e2ffd52736e669f245951225154e6bda17",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/HYPEUSD_1H.csv",
+      "sha256": "74d3e9d494b77d34e2d5329deda6b76c40c9a20e2c00278e5fcf6a8bab8dde59",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ICPUSD_1H.csv",
+      "sha256": "29893b0064c65379e84a8d93a38b8b027d10efaeaba5eaab744efafa643471be",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/INJUSD_1H.csv",
+      "sha256": "373307d5065edfad543b7e7ef9198d21ebc4c12280efbabd281a08f7c2efe315",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/JTOUSD_1H.csv",
+      "sha256": "661e74add8d89d25886d8f6d51f6bad47b9ac805197f5cf050308a116c5a2dce",
+      "rows_before_cutoff": 1867,
+      "rejected": 0,
+      "start": "2026-07-23 16:00:00+00:00",
+      "end": "2026-10-11 19:00:00+00:00",
+      "missing_hours": 57
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/JUPUSD_1H.csv",
+      "sha256": "38dc4ae010d000df08822eecf1397e0e4c62d1af13c259a7e26c0791bb8c9c8f",
+      "rows_before_cutoff": 2524,
+      "rejected": 0,
+      "start": "2026-07-08 20:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/KAITOUSD_1H.csv",
+      "sha256": "78ae2ba41574f23876e7379d565ba2444ea6fc2e0bc130a1f289dfb2e07dcf3e",
+      "rows_before_cutoff": 721,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-08-01 21:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/KASUSD_1H.csv",
+      "sha256": "c83ace5ab57cc6fb34d5a11c95a1c8e992c97d10f7541492eb463c4ef6c00c5a",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/LDOUSD_1H.csv",
+      "sha256": "c6ab4d099b281de6336e28d1f1d409f1944337ad2e22db8afa515b02b2ceb10d",
+      "rows_before_cutoff": 2511,
+      "rejected": 0,
+      "start": "2026-07-06 03:00:00+00:00",
+      "end": "2026-10-18 17:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/LINKUSD_1H.csv",
+      "sha256": "9f4fed717164e41bf6e84645465ca44381568b274b0031f300db4b93a3f0c39b",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/LTCUSD_1H.csv",
+      "sha256": "1623fefc917d5f11fcaebe41c60d952f0e9e3ad40b04ddbb7ec03e8e0e45de36",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/MNTUSD_1H.csv",
+      "sha256": "4714b90c99ee7ea1647eac8b3f66c737bd957a419e27a8524aaad3b53b8f84b3",
+      "rows_before_cutoff": 1793,
+      "rejected": 0,
+      "start": "2026-07-12 15:00:00+00:00",
+      "end": "2026-09-25 07:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/MONUSD_1H.csv",
+      "sha256": "00b7afa2dbb4be3485f9368ffec1171a34c93a0fc322213b4f53e621844ac5e1",
+      "rows_before_cutoff": 2466,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-13 14:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/MORPHOUSD_1H.csv",
+      "sha256": "cc654448f309bc8a07f1a9238b9cb5a44389346c1d1cd37e83c7c61a70a09135",
+      "rows_before_cutoff": 2276,
+      "rejected": 0,
+      "start": "2026-07-19 04:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/MUSD_1H.csv",
+      "sha256": "9e4078fa0b478075a94f321a0e4f4f82b4c772de76f96d33f44cdef00d6455f1",
+      "rows_before_cutoff": 963,
+      "rejected": 0,
+      "start": "2026-07-11 15:00:00+00:00",
+      "end": "2026-08-20 17:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/NEARUSD_1H.csv",
+      "sha256": "cb9bc5059a5e12d6c7cc3a43a6265ea05fa5e0722072b6ea6abb89bc17bac958",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/NIGHTUSD_1H.csv",
+      "sha256": "76555b4c65711c93984f0974ee6a8050f5db9f9e35d64faae8206c290d3a55fc",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/OKBUSD_1H.csv",
+      "sha256": "90dcf75546b9a08f1597317beacf463dceb1e320d46f24f9ee5aab0b9c516ffb",
+      "rows_before_cutoff": 1128,
+      "rejected": 0,
+      "start": "2026-07-25 18:00:00+00:00",
+      "end": "2026-09-10 17:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ONDOUSD_1H.csv",
+      "sha256": "ce749284e867909ad59c411f100c8890a37a1c00d673a15ae4900ec51807721c",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/OPUSD_1H.csv",
+      "sha256": "1ef39c7fd458e378df83e786cab64313a860f7fb6fb464811f0c466bf60854c8",
+      "rows_before_cutoff": 1473,
+      "rejected": 0,
+      "start": "2026-08-21 15:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/PAXGUSD_1H.csv",
+      "sha256": "64d85a5deb7398d390514977b7f947f8b58f1a17e16fd80f92337ed17132bf12",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/PENDLEUSD_1H.csv",
+      "sha256": "f7c74eb35d69cc05a96b2d0d16573164194fb328d79afbe7433b4c442cac5e30",
+      "rows_before_cutoff": 2623,
+      "rejected": 0,
+      "start": "2026-07-04 17:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/PENGUUSD_1H.csv",
+      "sha256": "da1aba4950c85b987f1aa729099f4b6386b0b5b81df7dd8d52806b91136ec134",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/PEPEUSD_1H.csv",
+      "sha256": "6c44776ad66c9b54cf7801e9156aff515ff9f423cba0611cf6ff67403fc92d9a",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/PIEVERSEUSD_1H.csv",
+      "sha256": "69aefeb8db3ad7926455c10c40411084bb322e9f1c2e43b2ec568818e112fb67",
+      "rows_before_cutoff": 776,
+      "rejected": 0,
+      "start": "2026-08-19 17:00:00+00:00",
+      "end": "2026-09-21 00:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/POLUSD_1H.csv",
+      "sha256": "24cebb9aeb8aeb9bf2076eee3704093b0f9e47cdb67ae807f40a5312acb9fb07",
+      "rows_before_cutoff": 2589,
+      "rejected": 0,
+      "start": "2026-07-06 03:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/PUMPUSD_1H.csv",
+      "sha256": "631c93a5e6d6559c5dcd023015d343637c92339bae9959508f1f7be11f90870b",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/PYTHUSD_1H.csv",
+      "sha256": "f55ee3d12698e6cd5605db6d86d6cff25b4960df900240713ff0521370860cc8",
+      "rows_before_cutoff": 2168,
+      "rejected": 0,
+      "start": "2026-07-23 16:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/QNTUSD_1H.csv",
+      "sha256": "5d37fc5e70a505c03672cb4d124b03c66c086d061a3405de0946e79821316a57",
+      "rows_before_cutoff": 2589,
+      "rejected": 0,
+      "start": "2026-07-06 03:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/QUSD_1H.csv",
+      "sha256": "5585795540fd9fb794cd4437e712cf66668de065251e4295e66fa4cd2a8c8bbf",
+      "rows_before_cutoff": 797,
+      "rejected": 0,
+      "start": "2026-09-18 19:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/RAYUSD_1H.csv",
+      "sha256": "4014dde8c078e74a9e42f22b1894089a94e612bdbeb6478f4913759c4a8b07ae",
+      "rows_before_cutoff": 1818,
+      "rejected": 0,
+      "start": "2026-08-07 06:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/RENDERUSD_1H.csv",
+      "sha256": "ea14cd9eecc088a84db2f5695c0aabe92f63c19c8268e67463af6a296b4d839b",
+      "rows_before_cutoff": 2564,
+      "rejected": 0,
+      "start": "2026-07-07 04:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/SEIUSD_1H.csv",
+      "sha256": "f91d3409d690e286ac2aa6120725db91063b7a86c56bbc7857becfd2fee7912e",
+      "rows_before_cutoff": 2408,
+      "rejected": 0,
+      "start": "2026-07-13 16:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/SHIBUSD_1H.csv",
+      "sha256": "dd35f841a9478c677830183095c4309b74a3520ab848a7cfe88a1dd628322e6e",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/SKYUSD_1H.csv",
+      "sha256": "5559d4bde57119034ac9daa7517d77e93d610d939d5ecccdd26440c217668b3f",
+      "rows_before_cutoff": 2623,
+      "rejected": 0,
+      "start": "2026-07-04 17:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/SOFIDUSD_1H.csv",
+      "sha256": "8c2f907efd6b40fbb6ff0babea0d51f802f55cbde3032bf441593e65a50b3c5b",
+      "rows_before_cutoff": 39,
+      "rejected": 0,
+      "start": "2026-09-04 15:00:00+00:00",
+      "end": "2026-09-06 05:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/SOLUSD_1H.csv",
+      "sha256": "958adcbab76fb0727e3b66ffda02ee146c156435e3b7502c4e687329cd5192f2",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/SPXUSD_1H.csv",
+      "sha256": "7a6532d79f06bb5ae3a984db062eca8151d7643a2f0e28cbfd02e71f5ae27911",
+      "rows_before_cutoff": 2623,
+      "rejected": 0,
+      "start": "2026-07-04 17:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/STRKUSD_1H.csv",
+      "sha256": "5594f787e91a72a321777bd640ef80630fe13983df7c49c6027592ac5ff99ded",
+      "rows_before_cutoff": 1519,
+      "rejected": 0,
+      "start": "2026-08-19 17:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/STXUSD_1H.csv",
+      "sha256": "bb6da2a2a000a325e5593820eab666303fdbcfd51d0e4c17ee6d1821d1a0bd6d",
+      "rows_before_cutoff": 2168,
+      "rejected": 0,
+      "start": "2026-07-23 16:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/SUIUSD_1H.csv",
+      "sha256": "efa16eeca28bb400d78b43e7e70e4b70990be9722db49be5b1a1de67084cfdee",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/SYRUPUSD_1H.csv",
+      "sha256": "22aa5b1cd218a275bcdb598159c3edd3df31cd77e8d3be101aa4d3a82e9496fc",
+      "rows_before_cutoff": 1723,
+      "rejected": 0,
+      "start": "2026-08-06 06:00:00+00:00",
+      "end": "2026-10-18 17:00:00+00:00",
+      "missing_hours": 41
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/TAOUSD_1H.csv",
+      "sha256": "ac5d4192461bd4503d26cb11c454444ab6e74f29b3bb1e9ffcc9aea8869dd4c5",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/TIAUSD_1H.csv",
+      "sha256": "2b1d6bb38ea0bea4a03d8ae8490f4c95923f4d47f072d9f8f6ad4c927d0e2307",
+      "rows_before_cutoff": 2214,
+      "rejected": 0,
+      "start": "2026-07-21 18:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/TRUMPUSD_1H.csv",
+      "sha256": "372009da5dbb0c03bb6dfd5776a528eb49101e64954674172e641daa929c2ad7",
+      "rows_before_cutoff": 2589,
+      "rejected": 0,
+      "start": "2026-07-06 03:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/TRXUSD_1H.csv",
+      "sha256": "a2c0a89bdcb1c7275aadd844f005220385b75b70ec86089f0dc2a7d6da95c5c2",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/UNIUSD_1H.csv",
+      "sha256": "24bccde972827dd0650f9fd0b7ec1798ed6f225a6009efad3e65fa09bb7e859c",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/USELESSUSD_1H.csv",
+      "sha256": "696aa4480737455d34803b11d966809d5f185e62e3f27f56de99cb654de30658",
+      "rows_before_cutoff": 1107,
+      "rejected": 0,
+      "start": "2026-08-09 15:00:00+00:00",
+      "end": "2026-09-24 17:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/USUSD_1H.csv",
+      "sha256": "eabfead8e40425c3199e406971c11f11fccc0648b4c97922b185592198f3453b",
+      "rows_before_cutoff": 721,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-08-01 21:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/VELVETUSD_1H.csv",
+      "sha256": "b01bf222cc385b33612ccf1c666f5be0e6d251f72e0c2c93926ff305c70a7d8f",
+      "rows_before_cutoff": 768,
+      "rejected": 0,
+      "start": "2026-07-12 15:00:00+00:00",
+      "end": "2026-08-13 14:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/VETUSD_1H.csv",
+      "sha256": "e9e68006f3e591b1692187a5ff27e5a717dc720924ebb21adac25c9d3d9d15e0",
+      "rows_before_cutoff": 1391,
+      "rejected": 0,
+      "start": "2026-07-28 19:00:00+00:00",
+      "end": "2026-09-24 17:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/VIRTUALUSD_1H.csv",
+      "sha256": "64a5554cb4d496e0e3217d2eee5c4d9da8d92caa4440577853b83537e7deeaf7",
+      "rows_before_cutoff": 2408,
+      "rejected": 0,
+      "start": "2026-07-13 16:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/VVVUSD_1H.csv",
+      "sha256": "edb4db3c451d282a1e55446cfe409bb1e132e9915326b0754dc9100e7dae81de",
+      "rows_before_cutoff": 2589,
+      "rejected": 0,
+      "start": "2026-07-06 03:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/WLDUSD_1H.csv",
+      "sha256": "c73c258a7d5b57a5383bec48d0ccd5472aac801565359075f16498d08c6a721b",
+      "rows_before_cutoff": 2589,
+      "rejected": 0,
+      "start": "2026-07-06 03:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+      "sha256": "9191da10fd6f612be617be49bcc80b2434e45ac53618d4d1c4ec1af92717c178",
+      "rows_before_cutoff": 2144,
+      "rejected": 0,
+      "start": "2026-07-24 16:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/XDCUSD_1H.csv",
+      "sha256": "6cadac1769e9248a62b55189a08879a7b0937928a33002d585a52edf819a92f0",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/XDGUSD_1H.csv",
+      "sha256": "4730ce41c140b91335b9a63784ce1456c2c56a0fec30522f568f545d05b858b4",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/XLMUSD_1H.csv",
+      "sha256": "88447082fdf2e90c90e65073a235dce35a71d580c42ac3c1ea4b78e35740b21e",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+      "sha256": "910ec5a76325398962b6a17967ad59157df388dc51013460fd45b39efe7d6c53",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/XPLUSD_1H.csv",
+      "sha256": "3c739e40a88887c001f53ac1bb09cc75b253a6acd00144dce0b64f7b08c9936d",
+      "rows_before_cutoff": 2213,
+      "rejected": 0,
+      "start": "2026-07-21 19:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/XRPUSD_1H.csv",
+      "sha256": "455831a815dc56c35d578230d29327670028ea3d63e4b903979f3f7ec2e67500",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/XTZUSD_1H.csv",
+      "sha256": "34c181437e77fc6e1b503dc0e9e4e1ba22b9aa909b95b4cd1a78240649287ba3",
+      "rows_before_cutoff": 2090,
+      "rejected": 0,
+      "start": "2026-07-23 16:00:00+00:00",
+      "end": "2026-10-18 17:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ZECUSD_1H.csv",
+      "sha256": "538e9f82988894b339d29348e882baa137a5cf0398cbb4d9c0c6a3d6efb361a3",
+      "rows_before_cutoff": 2667,
+      "rejected": 0,
+      "start": "2026-07-02 21:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    },
+    {
+      "path": "DATASETS/market_intraday_weekly/ZROUSD_1H.csv",
+      "sha256": "d0f52ff44c7c7e911c22734f8e2515defebfc5f18a2537c29cc9af3afc73b8f5",
+      "rows_before_cutoff": 2433,
+      "rejected": 0,
+      "start": "2026-07-12 15:00:00+00:00",
+      "end": "2026-10-21 23:00:00+00:00",
+      "missing_hours": 0
+    }
+  ],
+  "accepted_before_outcome_filter": 1310,
+  "excluded_incomplete_outcome": 44,
+  "rows": 1266,
+  "unique_asset_signals": 1206,
+  "global_clusters": 1,
+  "checks": {
+    "unique_rows": true,
+    "finite": true,
+    "next_open": true,
+    "cycles": true
+  }
+}

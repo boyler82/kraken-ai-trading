@@ -1,0 +1,17 @@
+{
+  "name": "RANGE_CYCLE_V1",
+  "status": "RESEARCH_ONLY_TRADING_DISABLED",
+  "cutoff_exclusive_utc": "2026-10-22T00:00:00Z",
+  "windows_hours": [48, 96],
+  "variants": ["BASE_TOUCH", "CYCLE_TOUCH", "CYCLE_REJECT"],
+  "range": "Using previous W completed hours excluding signal: support=min(low), resistance=max(high); amplitude=(resistance/support-1) between 3% and 15%; close endpoint displacement / sum absolute close changes <=0.30; each window third high-low span >=0.50 of full width (reject single localized spike).",
+  "cycles": "Map past closes into lower <=20% or upper >=80% of frozen range, ignore middle and repeated same-side visits; require >=4 alternating transitions (two complete swings), median transition duration 2..24 hours. All computed at signal from prior window only.",
+  "events": "Support: signal low <=support+0.20*width and close between support and support+0.20*width. Resistance: signal high>=resistance-0.20*width and close between resistance-0.20*width and resistance. CYCLE_REJECT additionally requires support close>previous close, resistance close<previous close. BASE_TOUCH does not require cycles. All eligible event bars considered, 48h per-asset/variant/side cooldown after accepted signal, before outcome completeness exclusion.",
+  "execution": "Research long entry next open, exits next opens 12/24/48h after entry; primary 24h; no stops. Support is proposed long strategy; resistance long returns are diagnostic control only, no short implementation. MFE/MAE gross held-bar highs/lows, excluding exit bar.",
+  "risk": "At support, opposite boundary=resistance, failure=support-0.10*width; at resistance, opposite boundary=support, failure=resistance+0.10*width. Measure each touched within 24h and first-touch ordering; same-bar ties ambiguous. These are diagnostics, not executed exits.",
+  "liquidity": "Trailing 24h close*base-volume USD turnover >=1000000. Exclude stablecoin symbols. No present-day universe membership filter.",
+  "context": "Signal volume / previous24h mean: LOW<0.75 NORMAL<=1.5 HIGH>1.5. BTC trend close vs 168h mean and volatility 168h hourly-return std vs trailing720h median; missing regime UNKNOWN retained. Amplitude bins 3-6%,6-10%,10-15%; duration bins 2-6h,6-12h,12-24h.",
+  "costs": "Total round-trip percentage points: 0.30,0.60(base=0.40 fees+0.20 slippage),1.00,1.50. BTC same cost; geometric gross asset/BTC return also reported.",
+  "robustness": "All 6 variants, both sides, all costs/horizons; chronological midpoint halves, per-asset, leave-one-asset-out, remove-three-largest-return diagnostic; compare cycle variants with same-window baseline; shared-signal comparisons descriptive only; weekly bootstrap net mean 5000 seed20261022; global connected exposure clusters across all 48h holding windows.",
+  "integrity": "Local Kraken hourly CSVs only; hashes and coverage; reject invalid OHLC/off-grid/duplicate timestamps; no fills; require continuous past max(W,168) hours plus signal and 49 subsequent hours jointly with BTC. Completed-outcome conditioning is retrospective. Definitions frozen before first run. No network or trading integrations."
+}

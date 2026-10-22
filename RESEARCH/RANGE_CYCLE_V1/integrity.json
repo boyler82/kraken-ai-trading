@@ -1,0 +1,22 @@
+{
+  "deterministic_rerun": true,
+  "artifact_sha256": {
+    "summary.csv": "462ab23a3d20753ca5ec220803ae885b01264e8ea5f42dda61d24eb458cf7f70",
+    "duration.csv": "e7b3578f0403023dde1830cad770fb0572242eb668fa6005e5ed74823a751c65",
+    "assets.csv": "ea717346ae6cd89274de67bad72441ae46e3eedaa0c827c3468a1ee8ea591289",
+    "robustness.csv": "0a4f42ca3485ffc163f197fef99f1d7543fc1f92fb079cc2182a6388c658b1ef",
+    "clusters.csv": "4dd0b1c3c13a3b78b6c8b3a4018ba3a6738733ee7ce40c10806147eb2fdf0d17",
+    "regimes.csv": "284a945e9ef5e5f9c65615a5963bf2dad22e7a5834504fa2b819d16caabe5b6e",
+    "halves.csv": "ff8b0bb071620bdbb22882e6e990c3603fd3566cda3e5406647caaa8f271e860",
+    "comparisons.csv": "418b2949aee4f399799d16923d2429e8d0feb6a46f86c9b2570bcb4906f9e248",
+    "amplitude.csv": "f842dcc9b5b4bd57176e428070ca02d8af7eef2a9d14c37b81198d43922adb81",
+    "sensitivity.csv": "9153e9e76d7899cbcef63f393087c3eb027c2749dac12e7109cb6e6eb77c55f4",
+    "observations.csv": "0f57ca80faca8608dc8dd603d7c599c2701cb6a138f3982981d1c67c0da69aba",
+    "volume.csv": "90e35b67cb3c29e9cb567c52807d7255051731d0d49f067efbb40ddea7e2d6c5",
+    "manifest.json": "7bd75118908c31dcdb948fac1b0d5f80dc9158dc42a2b165f09651368ee2651a",
+    "verify.py": "ff829b590e51f194684314d36d1cc73a7b5c1bfe34dffa288ccbeb6d832c57f6",
+    "REPORT.md": "136d3550ef373871cea917ab64a719d5708737d29122758dc1ecca27f119a59a"
+  },
+  "independent_reconciliation": "PASS: 101 source hashes; all 1266 rows: horizon/BTC/relative returns, MFE/MAE, frozen boundaries, range amplitude/efficiency/third spans, transitions/rejection rules and first-touch diagnostics; synthetic oscillation/drift and prefix/future mutation checks.",
+  "scope": "Only new research artifacts; no trading integration"
+}
