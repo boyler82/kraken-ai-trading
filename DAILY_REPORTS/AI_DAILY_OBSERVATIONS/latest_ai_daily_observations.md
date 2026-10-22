@@ -1,19 +1,18 @@
 # AI Daily Observations
 
-## 2026-10-21
-- Market: key regime and breadth states had no material change.
-- Rotation: best_score_advantage changed from 7.988700000000009 to -0.2721000000000089.
-- New: AKE — ENTERED_CANDIDATE_SET.
-- New: BAT — ENTERED_CANDIDATE_SET.
-- Stronger: AAVE — DECISION_IMPACT_UP, RANGE_VALIDATED, SUPPORTING_MODULES_INCREASED.
-- Stronger: ADA — RANGE_VALIDATED.
-- Weaker: AAVE — PRIMARY_HYPOTHESIS_CHANGED, RELATIVE_STRENGTH_DETERIORATED.
+## 2026-10-22
+- Market: environment_status changed from DEFENSIVE to CAUTIOUS.
+- Market: opportunity_regime changed from EMPTY to ACTIVE.
+- Rotation: preferred_state changed from HOLD_BTC_BENCHMARK to MONITOR_ALT.
+- New: DOT — ENTERED_CANDIDATE_SET.
+- New: EURC — ENTERED_CANDIDATE_SET.
+- Stronger: AERO — DECISION_IMPACT_UP, SUPPORTING_MODULES_INCREASED.
+- Weaker: AAVE — DECISION_IMPACT_DOWN, RELATIVE_STRENGTH_DETERIORATED, SUPPORTING_MODULES_DECREASED.
 - Weaker: ADA — PRIMARY_HYPOTHESIS_CHANGED, RELATIVE_STRENGTH_DETERIORATED.
-- Confirmed: KAS — BREAKOUT_CONFIRMED.
-- Tomorrow: Check whether KAS remains above range low 0.03441.
-- Tomorrow: Check whether AAVE remains above range low 146.83.
-- Tomorrow: Check whether ADA remains above range low 0.214413.
+- Tomorrow: Check whether AERO remains above range low 0.77372.
+- Tomorrow: Check whether AAVE remains above range low 146.77.
+- Tomorrow: Check whether ADA remains above range low 0.214248.
 
 ### Conclusion
 
-ROTATION_WEAKENING.
+MARKET_DETERIORATING.

@@ -1,106 +1,120 @@
 # Daily Decision Brief
 
-Generated: 2026-10-21T16:19:55+00:00
+Generated: 2026-10-22T17:35:38+00:00
 Objective: BTC_ACCUMULATION
 
 ## 1. MARKET VERDICT
 
-- Preferred market state: HOLD_BTC_BENCHMARK
-- BTC benchmark score: 67.2004
-- Regime: BEAR / DEFENSIVE
-- Capital flow: NO_CLEAR_FLOW (confidence 30)
-- Interpretation: HOLD_BTC_BENCHMARK: BTC remains the benchmark; review tactical setups selectively under a BEAR regime and NO_CLEAR_FLOW capital-flow backdrop.
+- Preferred market state: MONITOR_ALT
+- BTC benchmark score: 37.7249
+- Regime: BEAR / CAUTIOUS
+- Capital flow: RISK_OFF_TO_USD (confidence 70)
+- Interpretation: MONITOR_ALT: BTC remains the benchmark; review tactical setups selectively under a BEAR regime and RISK_OFF_TO_USD capital-flow backdrop.
 
 ## 2. BEST DAILY OPPORTUNITIES
 
-### NEAR — SPECULATIVE_REVIEW
+### DASH — SPECULATIVE_REVIEW
 - Conviction / technical state: LOW / BUY_ON_BREAKOUT
-- Scores: setup 61.17 | actionability 69 | daily 69.64 | weekly 61.53
-- Analysis snapshot price: 5.3824
-- Analysis timestamp: 2026-10-21T15:00:00+00:00
-- Kraken live reference (best bid/ask midpoint): 5.3756
-- Live timestamp: 2026-10-21T16:23:03.110041+00:00
-- Drift since snapshot: -0.12633769%
+- Scores: setup 64.42 | actionability 69 | daily 52.97 | weekly 52.61
+- Analysis snapshot price: 50.358
+- Analysis timestamp: 2026-10-22T16:00:00+00:00
+- Kraken live reference (best bid/ask midpoint): 50.758
+- Live timestamp: 2026-10-22T17:39:02.506017+00:00
+- Drift since snapshot: 0.79431272%
 - Research conclusions are based on the analysis snapshot. Live reference price does not recompute the research hypothesis.
-- Entry / stop: 5.4369 / 4.8043
-- Stop distance: 11.6353% (VERY_WIDE)
-- Exit / holding: MOMENTUM_STRUCTURE_EXIT / 37.455206h
+- Entry / stop: 54.129 / 49.287
+- Stop distance: 8.9453% (VERY_WIDE)
+- Exit / holding: MOMENTUM_STRUCTURE_EXIT / 44.312526h
 - Exit support: family-level historical support only
 - Target: NOT VALIDATED
 - R/R: NOT ESTIMABLE
-- Why recommended: TECHNICAL_TRIGGER_PRESENT, SETUP_QUALITY_SUFFICIENT, ACTIONABILITY_SUFFICIENT, NON_NEGATIVE_BTC_RELATIVE_EDGE
-- Why not actionable: NEGATIVE_ROTATION_ADVANTAGE, LOW_CONFIDENCE, UNVALIDATED_EDGE, INSUFFICIENT_SAMPLE
+- Why recommended: TECHNICAL_TRIGGER_PRESENT, SETUP_QUALITY_SUFFICIENT, ACTIONABILITY_SUFFICIENT
+- Why not actionable: BTC_RELATIVE_EDGE_UNAVAILABLE, ROTATION_ADVANTAGE_UNAVAILABLE, LOW_CONFIDENCE, INSUFFICIENT_SAMPLE
 - Activation: CLOSE_ABOVE_BREAKOUT_LEVEL, BREAKOUT_CONFIRMATION_REQUIRED, CONFIDENCE_IMPROVEMENT, VALIDATION_REQUIRED
 - Warnings: TARGET_NOT_VALIDATED, RISK_REWARD_NOT_ESTIMABLE, WIDE_STOP_WITHOUT_VALIDATED_TARGET, SPECULATIVE_REVIEW_ONLY, OOS_POSITIVE_UNVALIDATED, OOS_NOT_FOR_OPTIMIZATION, CURRENT_SETUP_INSUFFICIENT_SAMPLE
 - Interpretation: speculative review only; this is not a buy recommendation.
 
-### KAS — SPECULATIVE_REVIEW
-- Conviction / technical state: LOW / BUY_NOW
-- Scores: setup 56.65 | actionability 83 | daily 67.46 | weekly 48.59
-- Analysis snapshot price: 0.03912
-- Analysis timestamp: 2026-10-21T15:00:00+00:00
-- Kraken live reference (best bid/ask midpoint): 0.03913
-- Live timestamp: 2026-10-21T16:23:03.110041+00:00
-- Drift since snapshot: 0.025562372%
+### EURC — SPECULATIVE_REVIEW
+- Conviction / technical state: LOW / BUY_ON_PULLBACK
+- Scores: setup 74.26 | actionability 51 | daily 47.31 | weekly 67.66
+- Analysis snapshot price: 1.12256
+- Analysis timestamp: 2026-10-22T16:00:00+00:00
+- Kraken live reference (best bid/ask midpoint): 1.12012
+- Live timestamp: 2026-10-22T17:39:02.506017+00:00
+- Drift since snapshot: -0.21736032%
 - Research conclusions are based on the analysis snapshot. Live reference price does not recompute the research hypothesis.
-- Entry / stop: 0.03912 / 0.03899
-- Stop distance: 0.3323% (NORMAL)
-- Exit / holding: MOMENTUM_STRUCTURE_EXIT / 37.455206h
+- Entry / stop: 1.119068 / 1.119068
+- Stop distance: null% (null)
+- Exit / holding: RANGE_STRUCTURE_EXIT / 77.617429h
 - Exit support: family-level historical support only
-- Target: NOT VALIDATED
+- Target: TP1=1.123199; TP2=1.12733
 - R/R: NOT ESTIMABLE
-- Why recommended: TECHNICAL_TRIGGER_PRESENT, SETUP_QUALITY_SUFFICIENT, ACTIONABILITY_SUFFICIENT
-- Why not actionable: BTC_RELATIVE_EDGE_UNAVAILABLE, ROTATION_ADVANTAGE_UNAVAILABLE, LOW_CONFIDENCE, INSUFFICIENT_SAMPLE
-- Activation: CLOSE_ABOVE_BREAKOUT_LEVEL, CONFIDENCE_IMPROVEMENT, VALIDATION_REQUIRED
-- Warnings: TARGET_NOT_VALIDATED, RISK_REWARD_NOT_ESTIMABLE, SPECULATIVE_REVIEW_ONLY, OOS_POSITIVE_UNVALIDATED, OOS_NOT_FOR_OPTIMIZATION, CURRENT_SETUP_INSUFFICIENT_SAMPLE
+- Why recommended: TECHNICAL_TRIGGER_PRESENT, SETUP_QUALITY_SUFFICIENT, NON_NEGATIVE_BTC_RELATIVE_EDGE, NON_NEGATIVE_ROTATION_ADVANTAGE
+- Why not actionable: ACTIONABILITY_BELOW_ACTIONABLE, LOW_CONFIDENCE, UNVALIDATED_EDGE, INSUFFICIENT_SAMPLE
+- Activation: CLOSE_ABOVE_BREAKOUT_LEVEL, MOMENTUM_ACTIVATION_REQUIRED, CONFIDENCE_IMPROVEMENT, VALIDATION_REQUIRED
+- Warnings: SPECULATIVE_REVIEW_ONLY, CURRENT_SETUP_INSUFFICIENT_SAMPLE
 - Interpretation: speculative review only; this is not a buy recommendation.
 
-### ADA — SPECULATIVE_REVIEW
+### AAVE — SPECULATIVE_REVIEW
 - Conviction / technical state: LOW / BUY_ON_BREAKOUT
-- Scores: setup 47.79 | actionability 63 | daily 54.45 | weekly 31.1
-- Analysis snapshot price: 0.22884
-- Analysis timestamp: 2026-10-21T15:00:00+00:00
-- Kraken live reference (best bid/ask midpoint): 0.228176
-- Live timestamp: 2026-10-21T16:23:03.110041+00:00
-- Drift since snapshot: -0.29015906%
+- Scores: setup 58.09 | actionability 66 | daily 46.89 | weekly 41.21
+- Analysis snapshot price: 145.91
+- Analysis timestamp: 2026-10-22T16:00:00+00:00
+- Kraken live reference (best bid/ask midpoint): 145.575
+- Live timestamp: 2026-10-22T17:39:02.506017+00:00
+- Drift since snapshot: -0.22959359%
 - Research conclusions are based on the analysis snapshot. Live reference price does not recompute the research hypothesis.
-- Entry / stop: 0.233164 / 0.219548
-- Stop distance: 5.8397% (WIDE)
-- Exit / holding: MOMENTUM_STRUCTURE_EXIT / 37.455206h
+- Entry / stop: 165.8 / 144.59
+- Stop distance: 12.7925% (VERY_WIDE)
+- Exit / holding: MOMENTUM_STRUCTURE_EXIT / 44.312526h
 - Exit support: family-level historical support only
 - Target: NOT VALIDATED
 - R/R: NOT ESTIMABLE
 - Why recommended: TECHNICAL_TRIGGER_PRESENT, SETUP_QUALITY_SUFFICIENT, ACTIONABILITY_SUFFICIENT
 - Why not actionable: BTC_RELATIVE_EDGE_UNAVAILABLE, ROTATION_ADVANTAGE_UNAVAILABLE, LOW_CONFIDENCE, INSUFFICIENT_SAMPLE
 - Activation: CLOSE_ABOVE_BREAKOUT_LEVEL, BREAKOUT_CONFIRMATION_REQUIRED, CONFIDENCE_IMPROVEMENT, VALIDATION_REQUIRED
-- Warnings: TARGET_NOT_VALIDATED, RISK_REWARD_NOT_ESTIMABLE, SPECULATIVE_REVIEW_ONLY, OOS_POSITIVE_UNVALIDATED, OOS_NOT_FOR_OPTIMIZATION, CURRENT_SETUP_INSUFFICIENT_SAMPLE
+- Warnings: TARGET_NOT_VALIDATED, RISK_REWARD_NOT_ESTIMABLE, WIDE_STOP_WITHOUT_VALIDATED_TARGET, SPECULATIVE_REVIEW_ONLY, OOS_POSITIVE_UNVALIDATED, OOS_NOT_FOR_OPTIMIZATION, CURRENT_SETUP_INSUFFICIENT_SAMPLE
 - Interpretation: speculative review only; this is not a buy recommendation.
 
 ## 3. HIGH PRIORITY WATCH
 
-No high-priority watch candidates.
+### Q — HIGH_PRIORITY_WATCH
+- Conviction / technical state: LOW / WATCH
+- Scores: setup 70.14 | actionability 29 | daily 31.43 | weekly 70.03
+- Analysis snapshot price: 0.117295
+- Analysis timestamp: 2026-10-22T16:00:00+00:00
+- Kraken live reference (best bid/ask midpoint): 0.118158
+- Live timestamp: 2026-10-22T17:39:02.506017+00:00
+- Drift since snapshot: 0.73575174%
+- Research conclusions are based on the analysis snapshot. Live reference price does not recompute the research hypothesis.
+- Entry / stop: 0.213 / 0.096001
+- Stop distance: 54.9291% (VERY_WIDE)
+- Exit / holding: MOMENTUM_STRUCTURE_EXIT / 44.312526h
+- Exit support: family-level historical support only
+- Target: NOT VALIDATED
+- R/R: NOT ESTIMABLE
+- Why recommended: HIGH_SETUP_QUALITY, CONCRETE_ACTIVATION_CONDITION
+- Why not actionable: ACTIONABILITY_BELOW_ACTIONABLE, LOW_CONFIDENCE, UNVALIDATED_EDGE, INSUFFICIENT_SAMPLE
+- Activation: CLOSE_ABOVE_BREAKOUT_LEVEL, MOMENTUM_ACTIVATION_REQUIRED, CONFIDENCE_IMPROVEMENT, VALIDATION_REQUIRED
+- Warnings: TARGET_NOT_VALIDATED, RISK_REWARD_NOT_ESTIMABLE, WIDE_STOP_WITHOUT_VALIDATED_TARGET, OOS_POSITIVE_UNVALIDATED, OOS_NOT_FOR_OPTIMIZATION, CURRENT_SETUP_INSUFFICIENT_SAMPLE
 
 ## 4. WEEKLY OPPORTUNITIES
 
-- NEAR: SPECULATIVE_REVIEW (LOW) | technical BUY_ON_BREAKOUT | weekly score 61.53 | entry 5.4369 | stop 4.8043 | Target: NOT VALIDATED | R/R: NOT ESTIMABLE
-- KAS: SPECULATIVE_REVIEW (LOW) | technical BUY_NOW | weekly score 48.59 | entry 0.03912 | stop 0.03899 | Target: NOT VALIDATED | R/R: NOT ESTIMABLE
-- BAT: SPECULATIVE_REVIEW (LOW) | technical BUY_ON_PULLBACK | weekly score 47.64 | entry 0.16803 | stop 0.16803 | Target: TP1=0.18914; TP2=0.21025 | R/R: NOT ESTIMABLE
-- AKE: SPECULATIVE_REVIEW (LOW) | technical BUY_ON_PULLBACK | weekly score 34.27 | entry 0.026415526 | stop 0.026415526 | Target: TP1=0.030519329; TP2=0.034623133 | R/R: NOT ESTIMABLE
-- AERO: WATCH (LOW) | technical WATCH | weekly score 33.27 | entry null | stop null | Target: NOT VALIDATED | R/R: NOT ESTIMABLE
+- Q: HIGH_PRIORITY_WATCH (LOW) | technical WATCH | weekly score 70.03 | entry 0.213 | stop 0.096001 | Target: NOT VALIDATED | R/R: NOT ESTIMABLE
+- EURC: SPECULATIVE_REVIEW (LOW) | technical BUY_ON_PULLBACK | weekly score 67.66 | entry 1.119068 | stop 1.119068 | Target: TP1=1.123199; TP2=1.12733 | R/R: NOT ESTIMABLE
+- TRX: SPECULATIVE_REVIEW (LOW) | technical BUY_ON_PULLBACK | weekly score 62.25 | entry 0.3288078 | stop 0.3288078 | Target: TP1=0.3320827; TP2=0.3353576 | R/R: NOT ESTIMABLE
+- DASH: SPECULATIVE_REVIEW (LOW) | technical BUY_ON_BREAKOUT | weekly score 52.61 | entry 54.129 | stop 49.287 | Target: NOT VALIDATED | R/R: NOT ESTIMABLE
+- DOT: WATCH (LOW) | technical WATCH | weekly score 47.32 | entry null | stop null | Target: NOT VALIDATED | R/R: NOT ESTIMABLE
 
 ## 5. AVOID / DO NOT CHASE
 
-- JUP: AVOID — INVALIDATED_SETUP, relative_strength, btc_rotation, capital_flow; setup quality 41.57.
-- XPL: AVOID — EXTENDED_MOVE, relative_strength, capital_flow; setup quality 27.72.
-- STRK: AVOID — INVALIDATED_SETUP; setup quality 27.35.
-- DASH: AVOID — EXTENDED_MOVE, relative_strength, capital_flow; setup quality 26.12.
-- XDC: AVOID — EXTENDED_MOVE, relative_strength, btc_rotation, capital_flow; setup quality 13.63.
+- AKE: AVOID — EXTENDED_MOVE; setup quality 27.93.
 
 ## 6. RESEARCH CONTEXT
 
 - Best strategy family: EARLY_EXPANSION / EE_DYNAMIC_BREAKOUT
 - OOS status: null
-- Sample size: 277
+- Sample size: 280
 - Important warnings: OOS_NOT_FOR_OPTIMIZATION, MULTIPLE_TESTING_RISK, DATA_SNOOPING_RISK, CORRELATED_VARIANT_SAMPLE, REGIME_IMBALANCE, CURRENT_TACTICAL_SETUPS_HAVE_INSUFFICIENT_SAMPLE
 
 Research only. User decision required. No order is executed by this report.

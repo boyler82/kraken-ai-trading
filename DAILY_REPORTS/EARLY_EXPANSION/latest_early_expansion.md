@@ -4,30 +4,72 @@ RESEARCH_ONLY | NOT_A_BUY_SIGNAL | NOT_A_SELL_SIGNAL | USER_DECISION_REQUIRED | 
 
 ## Market Summary
 
-- State: NO_QUALIFIED_PRE_MOVE_CANDIDATES
+- State: PRE_MOVE_CONDITIONS_PRESENT
 - Assets evaluated: 70
-- Pre-move candidates: 0
+- Pre-move candidates: 6
 - PRE_MOVE_STRONG: 0
-- PRE_MOVE_BUILDING: 0
-- Too late: 48
+- PRE_MOVE_BUILDING: 5
+- Too late: 7
 
 ## Top Pre-Move Candidates
 
+### TRX
+- Classification: PRE_MOVE_BUILDING | combined: 65.97 | energy: 61.42
+- Confidence: 69 (MEDIUM)
+- Range position: 21.13346972426626% | 24h return: -1.2841665539677583% | breakout distance: 2.4652%
+- Main strength: range_position
+- Primary risk: volume_buildup
+
+### DASH
+- Classification: PRE_MOVE_BUILDING | combined: 65.17 | energy: 55.46
+- Confidence: 69 (MEDIUM)
+- Range position: 51.06968452057985% | 24h return: -4.914937406771025% | breakout distance: 6.9667%
+- Main strength: momentum_precursor
+- Primary risk: range_position
+
+### DOT
+- Classification: PRE_MOVE_BUILDING | combined: 64.48 | energy: 53.7
+- Confidence: 69 (MEDIUM)
+- Range position: 42.332123411978266% | 24h return: -4.541974993620812% | breakout distance: 7.3092%
+- Main strength: data_quality
+- Primary risk: momentum_precursor
+
+### AAVE
+- Classification: EARLY_EXPANSION_DEVELOPING | combined: 63.99 | energy: 47.15
+- Confidence: 69 (MEDIUM)
+- Range position: 2.9451137884871375% | 24h return: -7.581707626045098% | breakout distance: 11.9964%
+- Main strength: range_position
+- Primary risk: cross_module_improvement
+
+### ARB
+- Classification: PRE_MOVE_BUILDING | combined: 60.68 | energy: 50.58
+- Confidence: 69 (MEDIUM)
+- Range position: 29.741196436147703% | 24h return: -6.84156378600822% | breakout distance: 11.0511%
+- Main strength: range_position
+- Primary risk: momentum_precursor
+
+### HYPE
+- Classification: PRE_MOVE_BUILDING | combined: 60.61 | energy: 55.6
+- Confidence: 69 (MEDIUM)
+- Range position: 18.082964156262765% | 24h return: -4.83831152801778% | breakout distance: 6.6021%
+- Main strength: range_position
+- Primary risk: relative_strength_delta
+
 ## Fastest Energy Build
 
-- DRV: energy 46.49, combined 57.71
-- BAT: energy 46.17, combined 66.21
-- PAXG: energy 43.85, combined 55.78
-- EURC: energy 42.49, combined 52.63
-- TRX: energy 37.92, combined 53.92
+- TRX: energy 61.42, combined 65.97
+- Q: energy 61.2, combined 51.44
+- SOL: energy 58.4, combined 59.6
+- INJ: energy 56.96, combined 59.7
+- BNB: energy 56.61, combined 56.87
 
 ## Too Late / Already Extended
 
-- ARB: UPPER_RANGE_POSITION, EXTREME_VOLUME_SPIKE
-- RENDER: UPPER_RANGE_POSITION
-- XLM: UPPER_RANGE_POSITION
-- HBAR: UPPER_RANGE_POSITION
-- OP: EXTREME_VOLUME_SPIKE
+- ETH: EXTREME_VOLUME_SPIKE
+- ICP: EXTREME_VOLUME_SPIKE
+- ASTER: EXTREME_VOLUME_SPIKE
+- ALGO: EXTREME_VOLUME_SPIKE
+- VIRTUAL: EXTREME_VOLUME_SPIKE
 
 ## PUMP Retrospective
 

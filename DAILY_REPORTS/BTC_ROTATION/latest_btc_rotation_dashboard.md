@@ -9,15 +9,15 @@ USER_DECISION_REQUIRED
 
 Objective: BTC_ACCUMULATION
 Benchmark: BTC
-Preferred state: HOLD_BTC_BENCHMARK
-BTC hold score: 67.20
+Preferred state: MONITOR_ALT
+BTC hold score: 37.72
 Market regime: BEAR
 
 ## Top candidates
 
-- #1 NEAR | score 66.93 | advantage -0.27 | net edge +11.68% | confidence LOW
-- #2 XDC | score 65.12 | advantage -2.09 | net edge +7.01% | confidence LOW
-- #3 JUP | score 60.80 | advantage -6.40 | net edge +3.22% | confidence LOW
+- #1 EURC | score 66.31 | advantage +28.58 | net edge +4.04% | confidence LOW
+- #2 TRX | score 64.84 | advantage +27.11 | net edge +2.20% | confidence LOW
+- #3 Q | score 63.00 | advantage +25.27 | net edge +14.40% | confidence LOW
 
 MANUAL_REVIEW_REQUIRED
 RESEARCH_ONLY
