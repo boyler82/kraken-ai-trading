@@ -1,0 +1,16 @@
+{
+  "deterministic_rerun": true,
+  "artifact_sha256": {
+    "summary.csv": "1875c574b417a1d8769ff53fc30423a48a8c737984bc72032579347fece6007e",
+    "paired.csv": "5dfe9106c75741569302767ee8c55b8a349cda29888e934f13dba3c679bd3fe5",
+    "assets.csv": "f44441ee8e7ed8598603aefb3e3b208fae7a25deb754e1059503784f0d72e4d8",
+    "clusters.csv": "c917d7f3d66e1f271d511afcb1255d11ab447f6cda767f05d777a906b36e81ca",
+    "regimes.csv": "d1dde1f13386795f9a7a29f8561dcc0e6be350ef36edcb903ab486aa841fcf89",
+    "halves.csv": "75c5290b1cc5b2122b758304eaabd4d1d89f959ba86ab13c2a5af452553d6d98",
+    "sensitivity.csv": "0de56c70528135b6fdf6f0ae08f1f2318823ec80c4293bef9819e86d72cf1691",
+    "observations.csv": "54452f8fb74f46a9d500a9af31557ce1ee85316d82210cee6a6e2a97b8a3e39d",
+    "manifest.json": "9196895204530e7bd2046e8736df470acece9fe6014b867f4aebc402137f66e7"
+  },
+  "independent_reconciliation": "PASS: 101 source hashes and 696 outcome rows; run verify.py against restored archive",
+  "scope": "New research directory only; no trading integrations"
+}

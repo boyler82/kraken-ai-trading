@@ -1,0 +1,15 @@
+{
+  "name": "RS_PULLBACK_V1",
+  "status": "RESEARCH_ONLY_TRADING_DISABLED",
+  "cutoff_exclusive_utc": "2026-10-22T00:00:00Z",
+  "leader": "Top quintile of eligible assets by close(asset/BTC) 168h return; positive 168h and 48h relative returns; trailing 24h USD turnover >= 1000000; at least 10 eligible assets cross-section",
+  "episode": "False-to-true leadership transition; minimum 168 hours between accepted signals per asset",
+  "variants": {"B_SHALLOW": [0.01, 0.03], "B_DEEP": [0.03, 0.05], "B_ATR": [0.5, 1.5]},
+  "pullback": "Within 24 hours of signal, first completed close in drawdown band from running maximum close including signal; close > previous close; 168h relative return still positive. ATR variant uses signal ATR14 divided by signal close, frozen. Invalidate variant immediately if drawdown exceeds upper bound.",
+  "execution": "A next hourly open. B next hourly open after confirmation. No stops. Primary common exit: open 72h after A entry. No fill holds zero-return USD cash. Also report 24/48/72h holding returns from each entry.",
+  "costs": "Base round trip: 0.40% fees + 0.20% slippage, matching existing research defaults; sensitivity total 0.30%, 0.60%, 1.00%, 1.50%; BTC same costs; no-fill zero cost",
+  "regime": "At original signal: BTC close vs trailing 168h mean (UP/DOWN), and BTC 168h return std vs its trailing 720h median (HIGH/LOW). Require full 720h volatility history.",
+  "clusters": "Connected components of overlapping signal-to-common-exit intervals across every asset; temporal separation is necessary, not sufficient, for independence. Also UTC weekly blocks for descriptive bootstrap only.",
+  "robustness": "All variants, all horizons/costs; chronological halves, per-asset results, leave-one-asset-out policy mean; week-block bootstrap paired policy differences; no variant selection or optimization",
+  "data_policy": "Existing local Kraken hourly CSV archive only; no downloads, no forward fills; reject duplicate/off-grid/invalid OHLC rows; require continuous joint asset/BTC history and outcome window. Present archive universe is not point-in-time membership. Commit summaries and manifests, not market archive."
+}
