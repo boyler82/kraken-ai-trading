@@ -101,6 +101,8 @@ def render(packet:dict)->str:
  lines+=['','## Current Candidates','']
  for x in packet['current_candidates']:lines += [f"### {x['asset']}",f"- Analysis snapshot price/time: {x['analysis_price']} / {x['analysis_price_timestamp']}",f"- Kraken live reference/time: {x['live_reference_price'] if x['live_price_status']=='LIVE_PRICE_AVAILABLE' else x['live_price_status']} / {x['live_reference_timestamp']}",f"- Setup quality: {x['setup_quality']}",f"- Evidence quality: {x['evidence_quality']}",f"- Actionability: {x['actionability']}",f"- Expected edge: {x['expected_edge']}",f"- R/R: {x['risk_reward']}",f"- Activation / invalidation: {x['activation']} / {x['invalidation']}"]
  for title,key in [('Forward Experiments','forward_experiments'),('Conflicts','conflicts'),('What We Do Not Know','what_we_do_not_know'),('Next Research Checks','next_research_checks')]:lines+=['',f'## {title}','']+[f"- {x if isinstance(x,str) else json.dumps(x,sort_keys=True)}" for x in packet[key]]
+ if 'TOP3_RANKING_OUTCOME_TRACKER' in packet:
+  lines+=['','## Top-3 Ranking Outcome Tracker','',json.dumps(packet['TOP3_RANKING_OUTCOME_TRACKER'],sort_keys=True)]
  return '\n'.join(lines)+'\n'
 
 def canonical_decision_sections(packet:dict,chief:dict,memory30:dict,opportunity:dict)->dict:
@@ -122,6 +124,25 @@ def canonical_decision_sections(packet:dict,chief:dict,memory30:dict,opportunity
   'SOURCE_REFERENCES':{'market_memory':str(MARKET_MEMORY_PATH.relative_to(ROOT)),'opportunity_observations':'DATASETS/TACTICAL_OUTCOMES/tactical_candidate_snapshots.jsonl','opportunity_events':'DATASETS/TACTICAL_OUTCOMES/tactical_outcome_events.jsonl','forward_registry':'RESEARCH_REPORTS/forward_validation_registry.json'},
  }
 
+def ranking_tracker_section(chief, opportunity, result, *, genuine, current):
+ # Prospective only: replay/reuse/custom runners must never create observations.
+ if not genuine:
+  return {'status':'SKIPPED_REPLAY_OR_REUSE','trading':'DISABLED'}
+ if not result.get('success'):
+  return {'status':'SKIPPED_FAILED_SCAN','trading':'DISABLED'}
+ try:
+  from top3_ranking_tracker import track_daily
+  relative=None
+  if result.get('modules',{}).get('statuses',{}).get('relative_strength')=='OK':
+   try:relative=read_json(ROOT/'DAILY_REPORTS/RELATIVE_STRENGTH/latest_relative_strength.json')
+   except (OSError,ValueError):pass
+  summary=track_daily(chief,opportunity,relative,current)
+  return {'status':'OK_WITH_WARNINGS' if summary['run_warnings'] else 'OK',
+          'summary_file':'DAILY_REPORTS/TOP3_RANKING_OUTCOMES/latest_summary.json',
+          'groups':summary['groups'],'warnings':summary['run_warnings'],'trading':'DISABLED'}
+ except Exception as exc:
+  return {'status':'UNAVAILABLE','warnings':[str(exc)],'trading':'DISABLED'}
+
 def orchestrate(objective='btc',as_of=None,no_network=False,reuse=False,runner:Callable[...,dict]=run_complete_research,out_dir:Path=OUT)->tuple[dict,Path,Path]:
  now=utc(as_of);order=['complete_daily_research'];result=runner(objective=objective,as_of=as_of,no_network=no_network,reuse=reuse);loaded={};warnings=[]
  if runner is run_complete_research:
@@ -141,6 +162,10 @@ def orchestrate(objective='btc',as_of=None,no_network=False,reuse=False,runner:C
  opportunity=opportunity_context(loaded['chief'],memory30,result.get('tactical_outcomes') or {})
  packet.update(canonical_decision_sections(packet,loaded['chief'],memory30,opportunity))
  packet['run_metadata']['dependency_order']+=['market_memory_30d','opportunity_discovery_v1','canonical_decision_handoff']
+ packet['TOP3_RANKING_OUTCOME_TRACKER']=ranking_tracker_section(
+  loaded['chief'],opportunity,result,
+  genuine=runner is run_complete_research and out_dir==OUT and as_of is None and not reuse,
+  current=utc())
  # Additive V2 measurement hook: genuine current scans only, never replay/backdate.
  if runner is run_complete_research and out_dir == OUT and as_of is None and not no_network and not reuse:
   from quant_research_v2.integration import extend_handoff

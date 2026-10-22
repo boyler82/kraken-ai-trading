@@ -48,6 +48,7 @@ logs/
 *.bak
 *.tmp
 *.lock.tmp
+DAILY_REPORTS/TOP3_RANKING_OUTCOMES/
 data/
 LOGS/
 audit_pack/
