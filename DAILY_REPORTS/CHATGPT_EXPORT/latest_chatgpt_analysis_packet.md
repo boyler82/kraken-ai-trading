@@ -1,39 +1,39 @@
 # ChatGPT Analysis Packet
 
-Generated: 2026-10-22T17:35:38+00:00
+Generated: 2026-10-24T14:47:55+00:00
 Objective: BTC_ACCUMULATION
 Research mode: MARKET_ONLY
 
 ## Top candidates
 
-- EURC | impact 59.0 | modules ai_confidence, btc_rotation, opportunity_aging, relative_strength
-- TRX | impact 59.0 | modules ai_confidence, btc_rotation, opportunity_aging, relative_strength
-- Q | impact 52.0 | modules ai_confidence, btc_rotation, opportunity_aging
-- DASH | impact 42.0 | modules ai_confidence, momentum, relative_strength
-- AERO | impact 38.0 | modules consolidation
-- INJ | impact 38.0 | modules consolidation
-- PYTH | impact 38.0 | modules consolidation
-- ZRO | impact 38.0 | modules consolidation
-- DOT | impact 35.0 | modules ai_confidence, relative_strength
-- AAVE | impact 28.0 | modules momentum
-- AKE | impact 28.0 | modules momentum
-- XMR | impact 28.0 | modules relative_strength
+- XMR | impact 59.0 | modules ai_confidence, btc_rotation, opportunity_aging, relative_strength
+- EURC | impact 52.0 | modules ai_confidence, btc_rotation, relative_strength
+- RAY | impact 52.0 | modules ai_confidence, consolidation, momentum
+- TRX | impact 52.0 | modules ai_confidence, btc_rotation, relative_strength
+- CRV | impact 49.0 | modules ai_confidence, consolidation, opportunity_aging, relative_strength
+- PUMP | impact 38.0 | modules consolidation
+- WLD | impact 38.0 | modules consolidation
+- PAXG | impact 35.0 | modules opportunity_aging, relative_strength
+- TIA | impact 35.0 | modules momentum, opportunity_aging
+- ASTER | impact 28.0 | modules momentum
+- MORPHO | impact 28.0 | modules momentum
+- POL | impact 28.0 | modules momentum
 
 ## Confirmations
 
-- {"asset": "AERO", "module": "ai_confidence", "modules": ["consolidation", "capital_flow"]}
-- {"asset": "DASH", "module": "ai_confidence", "modules": ["relative_strength", "capital_flow"]}
-- {"asset": "DOT", "module": "ai_confidence", "modules": ["relative_strength", "capital_flow"]}
+- {"asset": "CRV", "module": "ai_confidence", "modules": ["relative_strength", "consolidation", "capital_flow"]}
 - {"asset": "EURC", "module": "ai_confidence", "modules": ["relative_strength", "btc_rotation", "capital_flow"]}
-- {"asset": "INJ", "module": "ai_confidence", "modules": ["consolidation", "capital_flow"]}
+- {"asset": "PAXG", "module": "ai_confidence", "modules": ["relative_strength", "capital_flow"]}
+- {"asset": "PUMP", "module": "ai_confidence", "modules": ["consolidation", "capital_flow"]}
+- {"asset": "RAY", "module": "ai_confidence", "modules": ["momentum", "consolidation", "capital_flow"]}
 
 ## Conflicts
 
-- {"asset": "AAVE", "module": "ai_confidence", "oppose": ["market_regime", "momentum"], "support": ["capital_flow"]}
-- {"asset": "AERO", "module": "ai_confidence", "oppose": ["market_regime"], "support": ["consolidation", "capital_flow"]}
-- {"asset": "AKE", "module": "ai_confidence", "oppose": ["market_regime", "momentum"], "support": ["capital_flow"]}
-- {"asset": "BAT", "module": "ai_confidence", "oppose": ["market_regime"], "support": ["capital_flow"]}
-- {"asset": "DASH", "module": "ai_confidence", "oppose": ["market_regime", "momentum"], "support": ["relative_strength", "capital_flow"]}
+- {"asset": "AERO", "module": "ai_confidence", "oppose": ["market_regime"], "support": ["capital_flow"]}
+- {"asset": "ASTER", "module": "ai_confidence", "oppose": ["market_regime", "momentum"], "support": ["capital_flow"]}
+- {"asset": "CRV", "module": "ai_confidence", "oppose": ["market_regime"], "support": ["relative_strength", "consolidation", "capital_flow"]}
+- {"asset": "DASH", "module": "ai_confidence", "oppose": ["market_regime"], "support": ["capital_flow"]}
+- {"asset": "DOT", "module": "ai_confidence", "oppose": ["market_regime"], "support": ["capital_flow"]}
 
 ## Risks
 
@@ -54,6 +54,6 @@ Research mode: MARKET_ONLY
 - Which invalidations matter most for the market benchmark?
 - Does any candidate justify manual rotation review after costs?
 
-Full bundle: /Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/2026-10-22_chatgpt_full_research_bundle.json
+Full bundle: /Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/2026-10-24_chatgpt_full_research_bundle.json
 
 RESEARCH_ONLY | USER_DECISION_REQUIRED

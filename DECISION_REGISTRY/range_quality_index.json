@@ -3,26 +3,26 @@
   "deteriorating_ranges": [
     {
       "adjusted_rqi_priority": null,
-      "asset": "AVAX",
+      "asset": "AAVE",
       "components": {},
       "freshness": "FRESH",
-      "historical_sample_quality": "MEDIUM",
+      "historical_sample_quality": "LOW",
       "invalidation_condition": "BREAKDOWN_CONFIRMED",
       "main_strengths": [],
       "main_weaknesses": [
         "INVALID_RANGE"
       ],
-      "midpoint": 9.6955,
-      "pair": "AVAXUSD",
+      "midpoint": 151.005,
+      "pair": "AAVEUSD",
       "penalties": [],
-      "position_pct": -18.347667448527552,
+      "position_pct": -29.145361577794084,
       "position_zone": "OUTSIDE_RANGE",
       "primary_risk": "INVALID_RANGE",
-      "range_high": 10.0792,
-      "range_low": 9.3118,
+      "range_high": 157.85,
+      "range_low": 144.16,
       "range_state": "WEAK_RANGE",
       "range_valid": false,
-      "range_width_pct": 7.9150121190242935,
+      "range_width_pct": 9.065924969371872,
       "research_priority": "INVALID_OR_NOT_APPLICABLE",
       "rqi_classification": "NOT_APPLICABLE",
       "rqi_confidence_band": "LOW",
@@ -33,45 +33,11 @@
         "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
         "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
       ],
-      "source_timestamp": "2026-10-22T16:00:00+00:00"
+      "source_timestamp": "2026-10-24T13:00:00+00:00"
     },
     {
       "adjusted_rqi_priority": null,
-      "asset": "BTC",
-      "components": {},
-      "freshness": "FRESH",
-      "historical_sample_quality": "LOW",
-      "invalidation_condition": "BREAKOUT_CONFIRMED",
-      "main_strengths": [],
-      "main_weaknesses": [
-        "INVALID_RANGE"
-      ],
-      "midpoint": 82401.525,
-      "pair": "XBTUSD",
-      "penalties": [],
-      "position_pct": 23.381910379732197,
-      "position_zone": "LOWER_ZONE",
-      "primary_risk": "INVALID_RANGE",
-      "range_high": 83941.69,
-      "range_low": 80861.36,
-      "range_state": "WEAK_RANGE",
-      "range_valid": false,
-      "range_width_pct": 3.7381953792724123,
-      "research_priority": "INVALID_OR_NOT_APPLICABLE",
-      "rqi_classification": "NOT_APPLICABLE",
-      "rqi_confidence_band": "LOW",
-      "rqi_confidence_score": 0.0,
-      "rqi_score": null,
-      "rqi_status": "INVALID_RANGE",
-      "source_refs": [
-        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
-        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
-      ],
-      "source_timestamp": "2026-10-22T12:00:00+00:00"
-    },
-    {
-      "adjusted_rqi_priority": null,
-      "asset": "CC",
+      "asset": "ADA",
       "components": {},
       "freshness": "FRESH",
       "historical_sample_quality": "LOW",
@@ -80,17 +46,17 @@
       "main_weaknesses": [
         "INVALID_RANGE"
       ],
-      "midpoint": 0.114064,
-      "pair": "CCUSD",
+      "midpoint": 0.2185861,
+      "pair": "ADAUSD",
       "penalties": [],
-      "position_pct": 1.4975450081832704,
-      "position_zone": "LOWER_ZONE",
+      "position_pct": -10.605236668247956,
+      "position_zone": "OUTSIDE_RANGE",
       "primary_risk": "INVALID_RANGE",
-      "range_high": 0.126284,
-      "range_low": 0.101844,
+      "range_high": 0.22722900000000001,
+      "range_low": 0.2099432,
       "range_state": "WEAK_RANGE",
       "range_valid": false,
-      "range_width_pct": 21.426567541029602,
+      "range_width_pct": 7.908005129328909,
       "research_priority": "INVALID_OR_NOT_APPLICABLE",
       "rqi_classification": "NOT_APPLICABLE",
       "rqi_confidence_band": "LOW",
@@ -101,10 +67,44 @@
         "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
         "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
       ],
-      "source_timestamp": "2026-10-22T16:00:00+00:00"
+      "source_timestamp": "2026-10-24T13:00:00+00:00"
+    },
+    {
+      "adjusted_rqi_priority": null,
+      "asset": "AKE",
+      "components": {},
+      "freshness": "FRESH",
+      "historical_sample_quality": "LOW",
+      "invalidation_condition": "BREAKDOWN_CONFIRMED",
+      "main_strengths": [],
+      "main_weaknesses": [
+        "INVALID_RANGE"
+      ],
+      "midpoint": 0.031736495,
+      "pair": "AKEUSD",
+      "penalties": [],
+      "position_pct": 25.971682260195646,
+      "position_zone": "LOWER_ZONE",
+      "primary_risk": "INVALID_RANGE",
+      "range_high": 0.03725,
+      "range_low": 0.02622299,
+      "range_state": "WEAK_RANGE",
+      "range_valid": false,
+      "range_width_pct": 34.74551931459349,
+      "research_priority": "INVALID_OR_NOT_APPLICABLE",
+      "rqi_classification": "NOT_APPLICABLE",
+      "rqi_confidence_band": "LOW",
+      "rqi_confidence_score": 0.0,
+      "rqi_score": null,
+      "rqi_status": "INVALID_RANGE",
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
+      ],
+      "source_timestamp": "2026-10-24T13:00:00+00:00"
     }
   ],
-  "generated_at_utc": "2026-10-22T17:35:38+00:00",
+  "generated_at_utc": "2026-10-24T14:47:55+00:00",
   "labels": [
     "RESEARCH_ONLY",
     "NOT_A_BUY_SIGNAL",
@@ -115,41 +115,41 @@
   "module_name": "range_quality_index",
   "risks": [
     {
-      "asset": "AVAX",
+      "asset": "AAVE",
       "risk": "INVALID_RANGE"
     },
     {
-      "asset": "BTC",
+      "asset": "ADA",
       "risk": "INVALID_RANGE"
     },
     {
-      "asset": "CC",
+      "asset": "AKE",
       "risk": "INVALID_RANGE"
     },
     {
-      "asset": "ENA",
+      "asset": "ALGO",
       "risk": "INVALID_RANGE"
     },
     {
-      "asset": "GRASS",
+      "asset": "APT",
       "risk": "INVALID_RANGE"
     }
   ],
   "status": "OK",
   "top_candidates": [
     {
-      "adjusted_rqi_priority": 72.81,
-      "asset": "QNT",
+      "adjusted_rqi_priority": 66.8,
+      "asset": "SHIB",
       "components": {
-        "boundary_quality": 88.33,
-        "cycle_regularity": 66.78,
-        "false_break_reliability": 46.51,
-        "historical_personality": 81.7,
+        "boundary_quality": 82.5,
+        "cycle_regularity": 75.48,
+        "false_break_reliability": 34.06,
+        "historical_personality": 82.12,
         "liquidity_data_quality": 100.0,
-        "range_containment": 86.29,
-        "traversal_quality": 100.0,
-        "trend_flatness": 100.0,
-        "width_quality": 91.18
+        "range_containment": 83.75,
+        "traversal_quality": 79.17,
+        "trend_flatness": 89.05,
+        "width_quality": 89.18
       },
       "freshness": "FRESH",
       "historical_sample_quality": "MEDIUM",
@@ -157,69 +157,14 @@
       "liquidity_pass": true,
       "main_strengths": [
         "liquidity_data_quality",
-        "traversal_quality",
+        "width_quality",
         "trend_flatness"
       ],
       "main_weaknesses": [
         "false_break_reliability"
       ],
-      "median_cycle_hours": 48.0,
-      "midpoint": 197.346,
-      "pair": "QNTUSD",
-      "penalties": [
-        {
-          "code": "EXCESSIVE_FALSE_BREAKS",
-          "points": -12
-        }
-      ],
-      "position_pct": 9.593871595330752,
-      "position_zone": "LOWER_ZONE",
-      "primary_risk": "false_break_reliability",
-      "range_high": 205.57,
-      "range_low": 189.12199999999999,
-      "range_state": "VALID_RANGE",
-      "range_valid": true,
-      "range_width_pct": 8.334600143909684,
-      "research_priority": "HIGH_RESEARCH_PRIORITY",
-      "rqi_classification": "GOOD_RANGE",
-      "rqi_confidence_band": "HIGH",
-      "rqi_confidence_score": 83.1,
-      "rqi_score": 72.81,
-      "rqi_status": "APPLICABLE",
-      "source_refs": [
-        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
-        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
-      ],
-      "source_timestamp": "2026-10-22T16:00:00+00:00"
-    },
-    {
-      "adjusted_rqi_priority": 68.32,
-      "asset": "SHIB",
-      "components": {
-        "boundary_quality": 84.38,
-        "cycle_regularity": 75.48,
-        "false_break_reliability": 34.06,
-        "historical_personality": 82.15,
-        "liquidity_data_quality": 100.0,
-        "range_containment": 86.15,
-        "traversal_quality": 75.0,
-        "trend_flatness": 100.0,
-        "width_quality": 93.2
-      },
-      "freshness": "FRESH",
-      "historical_sample_quality": "MEDIUM",
-      "invalidation_condition": "Confirmed directional break or loss of current range validity",
-      "liquidity_pass": true,
-      "main_strengths": [
-        "liquidity_data_quality",
-        "trend_flatness",
-        "width_quality"
-      ],
-      "main_weaknesses": [
-        "false_break_reliability"
-      ],
       "median_cycle_hours": 58.0,
-      "midpoint": 5.0457e-06,
+      "midpoint": 5.04205e-06,
       "pair": "SHIBUSD",
       "penalties": [
         {
@@ -227,149 +172,39 @@
           "points": -12
         }
       ],
-      "position_pct": 30.838509316770235,
-      "position_zone": "LOWER_MIDDLE",
+      "position_pct": 9.059668853483315,
+      "position_zone": "LOWER_ZONE",
       "primary_risk": "false_break_reliability",
-      "range_high": 5.2067e-06,
-      "range_low": 4.8847e-06,
+      "range_high": 5.2021e-06,
+      "range_low": 4.882e-06,
       "range_state": "VALID_RANGE",
       "range_valid": true,
-      "range_width_pct": 6.381671522286296,
+      "range_width_pct": 6.348608204995977,
       "research_priority": "HIGH_RESEARCH_PRIORITY",
       "rqi_classification": "ACCEPTABLE_RANGE",
       "rqi_confidence_band": "HIGH",
       "rqi_confidence_score": 79.5,
-      "rqi_score": 68.32,
+      "rqi_score": 66.8,
       "rqi_status": "APPLICABLE",
       "source_refs": [
         "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
         "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
       ],
-      "source_timestamp": "2026-10-22T16:00:00+00:00"
+      "source_timestamp": "2026-10-24T13:00:00+00:00"
     },
     {
-      "adjusted_rqi_priority": 68.3,
-      "asset": "HYPE",
-      "components": {
-        "boundary_quality": 100.0,
-        "cycle_regularity": 61.44,
-        "false_break_reliability": 25.7,
-        "historical_personality": 81.59,
-        "liquidity_data_quality": 100.0,
-        "range_containment": 83.87,
-        "traversal_quality": 79.17,
-        "trend_flatness": 95.86,
-        "width_quality": 93.86
-      },
-      "freshness": "FRESH",
-      "historical_sample_quality": "MEDIUM",
-      "invalidation_condition": "Confirmed directional break or loss of current range validity",
-      "liquidity_pass": true,
-      "main_strengths": [
-        "boundary_quality",
-        "liquidity_data_quality",
-        "trend_flatness"
-      ],
-      "main_weaknesses": [
-        "false_break_reliability"
-      ],
-      "median_cycle_hours": 36.0,
-      "midpoint": 79.785,
-      "pair": "HYPEUSD",
-      "penalties": [
-        {
-          "code": "EXCESSIVE_FALSE_BREAKS",
-          "points": -12
-        }
-      ],
-      "position_pct": 18.082964156262765,
-      "position_zone": "LOWER_ZONE",
-      "primary_risk": "false_break_reliability",
-      "range_high": 82.268,
-      "range_low": 77.30199999999999,
-      "range_state": "VALID_RANGE",
-      "range_valid": true,
-      "range_width_pct": 6.224227611706472,
-      "research_priority": "HIGH_RESEARCH_PRIORITY",
-      "rqi_classification": "ACCEPTABLE_RANGE",
-      "rqi_confidence_band": "HIGH",
-      "rqi_confidence_score": 83.1,
-      "rqi_score": 68.3,
-      "rqi_status": "APPLICABLE",
-      "source_refs": [
-        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
-        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
-      ],
-      "source_timestamp": "2026-10-22T16:00:00+00:00"
-    },
-    {
-      "adjusted_rqi_priority": 67.0,
+      "adjusted_rqi_priority": 65.4,
       "asset": "NEAR",
       "components": {
-        "boundary_quality": 84.38,
+        "boundary_quality": 86.25,
         "cycle_regularity": 55.83,
         "false_break_reliability": 43.76,
-        "historical_personality": 79.53,
+        "historical_personality": 79.5,
         "liquidity_data_quality": 100.0,
-        "range_containment": 86.83,
+        "range_containment": 85.33,
         "traversal_quality": 75.0,
-        "trend_flatness": 100.0,
-        "width_quality": 91.55
-      },
-      "freshness": "FRESH",
-      "historical_sample_quality": "MEDIUM",
-      "invalidation_condition": "Confirmed directional break or loss of current range validity",
-      "liquidity_pass": true,
-      "main_strengths": [
-        "liquidity_data_quality",
-        "trend_flatness",
-        "width_quality"
-      ],
-      "main_weaknesses": [
-        "false_break_reliability"
-      ],
-      "median_cycle_hours": 60.0,
-      "midpoint": 4.998075,
-      "pair": "NEARUSD",
-      "penalties": [
-        {
-          "code": "EXCESSIVE_FALSE_BREAKS",
-          "points": -12
-        }
-      ],
-      "position_pct": 42.173025168034826,
-      "position_zone": "LOWER_MIDDLE",
-      "primary_risk": "false_break_reliability",
-      "range_high": 5.36779,
-      "range_low": 4.62836,
-      "range_state": "VALID_RANGE",
-      "range_valid": true,
-      "range_width_pct": 14.794295803884506,
-      "research_priority": "HIGH_RESEARCH_PRIORITY",
-      "rqi_classification": "ACCEPTABLE_RANGE",
-      "rqi_confidence_band": "HIGH",
-      "rqi_confidence_score": 81.3,
-      "rqi_score": 67.0,
-      "rqi_status": "APPLICABLE",
-      "source_refs": [
-        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
-        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
-      ],
-      "source_timestamp": "2026-10-22T16:00:00+00:00"
-    },
-    {
-      "adjusted_rqi_priority": 66.42,
-      "asset": "SOL",
-      "components": {
-        "boundary_quality": 93.0,
-        "cycle_regularity": 72.61,
-        "false_break_reliability": 17.45,
-        "historical_personality": 80.22,
-        "liquidity_data_quality": 100.0,
-        "range_containment": 82.31,
-        "traversal_quality": 75.0,
-        "trend_flatness": 100.0,
-        "width_quality": 88.45
+        "trend_flatness": 90.56,
+        "width_quality": 84.44
       },
       "freshness": "FRESH",
       "historical_sample_quality": "MEDIUM",
@@ -383,8 +218,121 @@
       "main_weaknesses": [
         "false_break_reliability"
       ],
+      "median_cycle_hours": 60.0,
+      "midpoint": 4.96976,
+      "pair": "NEARUSD",
+      "penalties": [
+        {
+          "code": "EXCESSIVE_FALSE_BREAKS",
+          "points": -12
+        }
+      ],
+      "position_pct": -11.384353916670856,
+      "position_zone": "OUTSIDE_RANGE",
+      "primary_risk": "false_break_reliability",
+      "range_high": 5.3581,
+      "range_low": 4.58142,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "range_width_pct": 15.628118862882728,
+      "research_priority": "HIGH_RESEARCH_PRIORITY",
+      "rqi_classification": "ACCEPTABLE_RANGE",
+      "rqi_confidence_band": "HIGH",
+      "rqi_confidence_score": 81.3,
+      "rqi_score": 65.4,
+      "rqi_status": "APPLICABLE",
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
+      ],
+      "source_timestamp": "2026-10-24T13:00:00+00:00"
+    },
+    {
+      "adjusted_rqi_priority": 63.3,
+      "asset": "ATOM",
+      "components": {
+        "boundary_quality": 100.0,
+        "cycle_regularity": 52.23,
+        "false_break_reliability": 31.39,
+        "historical_personality": 79.85,
+        "liquidity_data_quality": 100.0,
+        "range_containment": 79.67,
+        "traversal_quality": 50.0,
+        "trend_flatness": 100.0,
+        "width_quality": 94.98
+      },
+      "freshness": "FRESH",
+      "historical_sample_quality": "MEDIUM",
+      "invalidation_condition": "Confirmed directional break or loss of current range validity",
+      "liquidity_pass": true,
+      "main_strengths": [
+        "boundary_quality",
+        "liquidity_data_quality",
+        "trend_flatness"
+      ],
+      "main_weaknesses": [
+        "false_break_reliability",
+        "traversal_quality",
+        "cycle_regularity"
+      ],
+      "median_cycle_hours": 36.0,
+      "midpoint": 1.725325,
+      "pair": "ATOMUSD",
+      "penalties": [
+        {
+          "code": "EXCESSIVE_FALSE_BREAKS",
+          "points": -12
+        }
+      ],
+      "position_pct": 0.014696156954889416,
+      "position_zone": "LOWER_ZONE",
+      "primary_risk": "false_break_reliability",
+      "range_high": 1.79337,
+      "range_low": 1.65728,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "range_width_pct": 7.88778925709648,
+      "research_priority": "MEDIUM_RESEARCH_PRIORITY",
+      "rqi_classification": "ACCEPTABLE_RANGE",
+      "rqi_confidence_band": "HIGH",
+      "rqi_confidence_score": 79.5,
+      "rqi_score": 63.3,
+      "rqi_status": "APPLICABLE",
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
+      ],
+      "source_timestamp": "2026-10-24T13:00:00+00:00"
+    },
+    {
+      "adjusted_rqi_priority": 61.65,
+      "asset": "SOL",
+      "components": {
+        "boundary_quality": 86.0,
+        "cycle_regularity": 72.61,
+        "false_break_reliability": 17.45,
+        "historical_personality": 80.19,
+        "liquidity_data_quality": 100.0,
+        "range_containment": 79.24,
+        "traversal_quality": 50.0,
+        "trend_flatness": 98.63,
+        "width_quality": 94.79
+      },
+      "freshness": "FRESH",
+      "historical_sample_quality": "MEDIUM",
+      "invalidation_condition": "Confirmed directional break or loss of current range validity",
+      "liquidity_pass": true,
+      "main_strengths": [
+        "liquidity_data_quality",
+        "trend_flatness",
+        "width_quality"
+      ],
+      "main_weaknesses": [
+        "false_break_reliability",
+        "traversal_quality"
+      ],
       "median_cycle_hours": 54.0,
-      "midpoint": 105.018,
+      "midpoint": 104.71199999999999,
       "pair": "SOLUSD",
       "penalties": [
         {
@@ -392,46 +340,103 @@
           "points": -12
         }
       ],
-      "position_pct": 42.73455377574376,
-      "position_zone": "LOWER_MIDDLE",
+      "position_pct": 0.5360333531864413,
+      "position_zone": "LOWER_ZONE",
       "primary_risk": "false_break_reliability",
-      "range_high": 108.514,
-      "range_low": 101.522,
+      "range_high": 108.07,
+      "range_low": 101.354,
       "range_state": "VALID_RANGE",
       "range_valid": true,
-      "range_width_pct": 6.657906263688121,
-      "research_priority": "HIGH_RESEARCH_PRIORITY",
+      "range_width_pct": 6.413782565513021,
+      "research_priority": "MEDIUM_RESEARCH_PRIORITY",
       "rqi_classification": "ACCEPTABLE_RANGE",
       "rqi_confidence_band": "HIGH",
       "rqi_confidence_score": 79.5,
-      "rqi_score": 66.42,
+      "rqi_score": 61.65,
       "rqi_status": "APPLICABLE",
       "source_refs": [
         "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
         "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
       ],
-      "source_timestamp": "2026-10-22T16:00:00+00:00"
+      "source_timestamp": "2026-10-24T13:00:00+00:00"
+    },
+    {
+      "adjusted_rqi_priority": 59.87,
+      "asset": "CRV",
+      "components": {
+        "boundary_quality": 68.75,
+        "cycle_regularity": 54.12,
+        "false_break_reliability": 43.66,
+        "historical_personality": 80.48,
+        "liquidity_data_quality": 100.0,
+        "range_containment": 86.12,
+        "traversal_quality": 50.0,
+        "trend_flatness": 100.0,
+        "width_quality": 83.17
+      },
+      "freshness": "FRESH",
+      "historical_sample_quality": "MEDIUM",
+      "invalidation_condition": "Confirmed directional break or loss of current range validity",
+      "liquidity_pass": true,
+      "main_strengths": [
+        "liquidity_data_quality",
+        "trend_flatness",
+        "range_containment"
+      ],
+      "main_weaknesses": [
+        "false_break_reliability",
+        "traversal_quality",
+        "cycle_regularity"
+      ],
+      "median_cycle_hours": 48.0,
+      "midpoint": 0.3726345,
+      "pair": "CRVUSD",
+      "penalties": [
+        {
+          "code": "EXCESSIVE_FALSE_BREAKS",
+          "points": -12
+        }
+      ],
+      "position_pct": 8.877578690473774,
+      "position_zone": "LOWER_ZONE",
+      "primary_risk": "false_break_reliability",
+      "range_high": 0.39660500000000004,
+      "range_low": 0.348664,
+      "range_state": "VALID_RANGE",
+      "range_valid": true,
+      "range_width_pct": 12.86542174704706,
+      "research_priority": "MEDIUM_RESEARCH_PRIORITY",
+      "rqi_classification": "ACCEPTABLE_RANGE",
+      "rqi_confidence_band": "HIGH",
+      "rqi_confidence_score": 79.5,
+      "rqi_score": 59.87,
+      "rqi_status": "APPLICABLE",
+      "source_refs": [
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/DAILY_CONSOLIDATION/latest_daily_consolidation_scan.json",
+        "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RANGE_PERSONALITY/latest_range_personality.json"
+      ],
+      "source_timestamp": "2026-10-24T13:00:00+00:00"
     }
   ],
   "unknowns": [
     {
-      "asset": "ZRO",
+      "asset": "WLD",
       "unknown": "LOW_SAMPLE"
     },
     {
-      "asset": "AERO",
+      "asset": "PUMP",
       "unknown": "LOW_SAMPLE"
     },
     {
-      "asset": "ARB",
+      "asset": "RAY",
       "unknown": "LOW_SAMPLE"
     },
     {
-      "asset": "APT",
+      "asset": "KAS",
       "unknown": "LOW_SAMPLE"
     },
     {
-      "asset": "DRV",
+      "asset": "PENDLE",
       "unknown": "LOW_SAMPLE"
     }
   ]

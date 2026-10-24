@@ -38,11 +38,11 @@
       "frozen_strategy_spec_hash": null,
       "governance_state": "RESEARCH",
       "historical_clustered_ci_95": [
-        -0.8627075795521281,
-        0.1819127744396133
+        -0.8928685352566739,
+        0.1664945318545315
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
-      "historical_oos_ev_pct": -0.35063996314619084,
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
+      "historical_oos_ev_pct": -0.3761044163935925,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
       "major_warnings": [
@@ -96,11 +96,11 @@
       "frozen_strategy_spec_hash": null,
       "governance_state": "RESEARCH",
       "historical_clustered_ci_95": [
-        -0.7121772347778331,
-        0.4644727266895277
+        -0.7125929396921371,
+        0.46184895616296323
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
-      "historical_oos_ev_pct": -0.15286813404130092,
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
+      "historical_oos_ev_pct": -0.15568032794547515,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
       "major_warnings": [
@@ -154,11 +154,11 @@
       "frozen_strategy_spec_hash": null,
       "governance_state": "RESEARCH",
       "historical_clustered_ci_95": [
-        -0.8586640458818671,
-        0.26432616303756856
+        -1.0752104115797754,
+        0.15338846471220796
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
-      "historical_oos_ev_pct": -0.31348535453493065,
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
+      "historical_oos_ev_pct": -0.5015011476633582,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
       "major_warnings": [
@@ -212,11 +212,11 @@
       "frozen_strategy_spec_hash": null,
       "governance_state": "RESEARCH",
       "historical_clustered_ci_95": [
-        -0.7028961545247179,
-        0.5399789610101008
+        -0.733142261696145,
+        0.49447954124710736
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
-      "historical_oos_ev_pct": -0.1010925469244235,
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
+      "historical_oos_ev_pct": -0.13881190470669638,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
       "major_warnings": [
@@ -270,11 +270,11 @@
       "frozen_strategy_spec_hash": null,
       "governance_state": "RESEARCH",
       "historical_clustered_ci_95": [
-        -0.2834769039892111,
-        0.6948472522222953
+        -0.35216558075202625,
+        0.6335436699152573
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
-      "historical_oos_ev_pct": 0.1906823800304724,
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
+      "historical_oos_ev_pct": 0.11972742006273325,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
       "major_warnings": [
@@ -313,7 +313,7 @@
       },
       "evidence_result": "NOT_EVALUATED",
       "execution_definition_hash": "a67e1c4c6b2fc462fbc6750f6af73f1499ed7c5871f2cb1a8204f3c03f9ad9de",
-      "experiment_age_days": 54.72998948587963,
+      "experiment_age_days": 56.61647485675926,
       "forward_clustered_ci_95": [
         -2.4000000000000075,
         -2.399999999999996
@@ -329,11 +329,11 @@
       "frozen_strategy_spec_hash": "a3b6da1c58d0b03e6eed7f860be917f24fef0c14c8ad9c15945bf3ab139db4d9",
       "governance_state": "COLLECTING",
       "historical_clustered_ci_95": [
-        -0.576408606868618,
-        0.733076624319108
+        -0.856617168653224,
+        0.5412612898346036
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
-      "historical_oos_ev_pct": 0.022537325840307692,
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
+      "historical_oos_ev_pct": -0.19636905689270648,
       "independent_entry_timestamps": 8,
       "independent_signal_clusters": 1,
       "last_monitor_timestamp": "2026-09-01T19:00:00+00:00",
@@ -397,7 +397,7 @@
         null,
         null
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
       "historical_oos_ev_pct": null,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
@@ -455,11 +455,11 @@
       "frozen_strategy_spec_hash": null,
       "governance_state": "RESEARCH",
       "historical_clustered_ci_95": [
-        -0.313274195649716,
-        1.4151872982321692
+        -0.3304486846514037,
+        1.4039947975479572
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
-      "historical_oos_ev_pct": 0.46433781161496784,
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
+      "historical_oos_ev_pct": 0.4471113408541992,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
       "major_warnings": [
@@ -515,11 +515,11 @@
       "frozen_strategy_spec_hash": null,
       "governance_state": "CANDIDATE_FOR_FREEZE",
       "historical_clustered_ci_95": [
-        0.2388850843348854,
-        2.410321497542306
+        0.16282463543094014,
+        2.32495617192415
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
-      "historical_oos_ev_pct": 1.2794138613887547,
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
+      "historical_oos_ev_pct": 1.2208566710281699,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
       "major_warnings": [
@@ -576,11 +576,11 @@
       "frozen_strategy_spec_hash": null,
       "governance_state": "RESEARCH",
       "historical_clustered_ci_95": [
-        -0.8780148516711243,
-        0.2581118507179963
+        -1.0770318661956773,
+        0.2013090378615992
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
-      "historical_oos_ev_pct": -0.3095679018860199,
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
+      "historical_oos_ev_pct": -0.4598282689526672,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
       "major_warnings": [
@@ -634,11 +634,11 @@
       "frozen_strategy_spec_hash": null,
       "governance_state": "RESEARCH",
       "historical_clustered_ci_95": [
-        -0.5601025098753932,
-        0.8329638311105365
+        -0.5711097194625271,
+        0.7746382200041317
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
-      "historical_oos_ev_pct": 0.11884375594306361,
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
+      "historical_oos_ev_pct": 0.07780460490996075,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
       "major_warnings": [
@@ -695,7 +695,7 @@
         null,
         null
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
       "historical_oos_ev_pct": null,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
@@ -751,11 +751,11 @@
       "frozen_strategy_spec_hash": null,
       "governance_state": "RESEARCH",
       "historical_clustered_ci_95": [
-        -0.45024397449187453,
-        1.5123248469392383
+        -0.7017311860437604,
+        1.247131796763839
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
-      "historical_oos_ev_pct": 0.47164369581703497,
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
+      "historical_oos_ev_pct": 0.18942550109083087,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
       "major_warnings": [
@@ -813,7 +813,7 @@
         null,
         null
       ],
-      "historical_evidence_snapshot_hash": "efae5426fb4dd76b0add482f6a73bed8f1bb69185a28719d5a7cbd0d5c2c9f18",
+      "historical_evidence_snapshot_hash": "f5f82b5364d0d3892b8baf01c6bd80b8c8bfaebb1de04c009be9a1dd578c9961",
       "historical_oos_ev_pct": null,
       "independent_entry_timestamps": 0,
       "independent_signal_clusters": 0,
@@ -889,5 +889,5 @@
       "PAUSED"
     ]
   },
-  "updated_at_utc": "2026-10-22T17:31:11.091580+00:00"
+  "updated_at_utc": "2026-10-24T14:47:43.427624+00:00"
 }

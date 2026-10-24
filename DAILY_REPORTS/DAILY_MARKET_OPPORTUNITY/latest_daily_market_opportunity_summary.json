@@ -5,15 +5,15 @@
   "checkpoint_resume": false,
   "consolidation_to_breakout_transitions": [],
   "daily_consolidation_candidates": [
-    "ZRO",
-    "INJ",
-    "AERO",
-    "PYTH"
+    "WLD",
+    "PUMP",
+    "RAY",
+    "CRV"
   ],
-  "execution_duration_seconds": 119.8091981660109,
-  "fresh_data_assets": 70,
-  "generated_at_utc": "2026-10-22T17:35:38+00:00",
-  "kraken_mapped_assets": 70,
+  "execution_duration_seconds": 105.43542166601401,
+  "fresh_data_assets": 69,
+  "generated_at_utc": "2026-10-24T14:47:55+00:00",
+  "kraken_mapped_assets": 69,
   "labels": [
     "RESEARCH_ONLY",
     "NOT_A_BUY_SIGNAL",
@@ -22,9 +22,11 @@
     "LIVE_NOT_AUTHORIZED"
   ],
   "momentum_candidates": [
-    "AAVE",
-    "DASH",
-    "AKE"
+    "RAY",
+    "MORPHO",
+    "POL",
+    "TIA",
+    "ASTER"
   ],
   "universe_size": 150
 }

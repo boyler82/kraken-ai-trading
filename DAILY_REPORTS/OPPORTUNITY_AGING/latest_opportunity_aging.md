@@ -1,22 +1,22 @@
 # Opportunity Aging
 
-- btc_relative_leader:DOT | DECAYING | 1917.2h
-- sector_leadership:Other / Unclassified | DECAYING | 1917.2h
-- btc_relative_leader:DASH | EARLY | 25.3h
-- btc_relative_leader:XMR | EARLY | 47.8h
-- consolidation:AERO | ESTABLISHED | 1115.7h
-- consolidation:INJ | ESTABLISHED | 1917.0h
-- consolidation:PYTH | ESTABLISHED | 986.2h
-- consolidation:ZRO | ESTABLISHED | 1534.8h
-- momentum:AAVE | ESTABLISHED | 1717.9h
-- momentum:AKE | ESTABLISHED | 957.2h
-- momentum:DASH | ESTABLISHED | 1461.0h
-- sector_leadership:BTC | ESTABLISHED | 1750.0h
-- sector_leadership:RWA | ESTABLISHED | 1897.4h
+- consolidation:PUMP | DECAYING | 1821.9h
+- consolidation:WLD | DECAYING | 1866.2h
+- momentum:MORPHO | DECAYING | 1472.1h
+- momentum:POL | DECAYING | 1702.8h
+- sector_leadership:RWA | DECAYING | 1942.6h
+- btc_relative_leader:EURC | EARLY | 45.2h
+- btc_relative_leader:TRX | EARLY | 45.2h
+- rotation_candidate:EURC | EARLY | 45.2h
+- rotation_candidate:TRX | EARLY | 45.2h
+- consolidation:CRV | ESTABLISHED | 1629.6h
+- consolidation:RAY | ESTABLISHED | 861.6h
+- momentum:ASTER | ESTABLISHED | 1351.9h
+- momentum:RAY | ESTABLISHED | 1031.8h
+- sector_leadership:BTC | ESTABLISHED | 1795.2h
+- sector_leadership:Smart-contract platforms | ESTABLISHED | 1906.5h
 - btc_relative_leader:ADA | EXPIRED | 1823.2h
 - btc_relative_leader:ALGO | EXPIRED | 1823.2h
 - btc_relative_leader:ATOM | EXPIRED | 1701.4h
-- btc_relative_leader:HYPE | EXPIRED | 539.1h
-- btc_relative_leader:JUP | EXPIRED | 0.0h
-- btc_relative_leader:KAS | EXPIRED | 22.5h
-- btc_relative_leader:MON | EXPIRED | 290.9h
+- btc_relative_leader:DASH | EXPIRED | 25.3h
+- btc_relative_leader:DOT | EXPIRED | 1917.2h
