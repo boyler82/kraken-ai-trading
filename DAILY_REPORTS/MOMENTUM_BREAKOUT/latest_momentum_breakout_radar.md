@@ -8,15 +8,7 @@ LIVE_NOT_AUTHORIZED
 
 ## Top 10 Early Momentum
 
-- RAY | score 43.78 | 24h -2.7972027972028024%
-- MORPHO | score 39.05 | 24h -4.236194077205512%
-- POL | score 34.44 | 24h -1.9601437438745428%
-- TIA | score 31.22 | 24h -0.8211678832116931%
-- ASTER | score 28.78 | 24h -2.1204350766456104%
-- XRP | score 28.40 | 24h -2.933204112845833%
-- DOGE | score 26.93 | 24h -3.606592479076387%
-- HBAR | score 23.43 | 24h -4.283751717247409%
-- ALGO | score 22.27 | 24h -3.617904937701899%
+- ATOM | score 24.10 | 24h -2.0113897976493433%
 
 ## Top 10 Developing Breakouts
 
@@ -36,65 +28,65 @@ LIVE_NOT_AUTHORIZED
 
 ## Strongest Relative Strength vs BTC
 
-- EURC | relative_strength_vs_btc_24h_pct 1.738986643037288
-- TRX | relative_strength_vs_btc_24h_pct 1.57497021096068
-- TIA | relative_strength_vs_btc_24h_pct 0.7901834932196206
-- PAXG | relative_strength_vs_btc_24h_pct 0.7412924137578103
-- XMR | relative_strength_vs_btc_24h_pct 0.2673186176967546
-- BTC | relative_strength_vs_btc_24h_pct 0.0
-- QNT | relative_strength_vs_btc_24h_pct -0.014307674535296577
-- DRV | relative_strength_vs_btc_24h_pct -0.22615490281676642
-- ETH | relative_strength_vs_btc_24h_pct -0.3200743043153764
-- POL | relative_strength_vs_btc_24h_pct -0.34879236744322917
+- GRASS | relative_strength_vs_btc_24h_pct 8.421050877215109
+- ZEC | relative_strength_vs_btc_24h_pct 4.59516318756611
+- DASH | relative_strength_vs_btc_24h_pct 4.559229780622143
+- ENA | relative_strength_vs_btc_24h_pct 4.159620714304946
+- PYTH | relative_strength_vs_btc_24h_pct 3.646042584717357
+- QNT | relative_strength_vs_btc_24h_pct 3.285180846300906
+- VVV | relative_strength_vs_btc_24h_pct 2.708023280091376
+- ZRO | relative_strength_vs_btc_24h_pct 2.6382365170369737
+- XMR | relative_strength_vs_btc_24h_pct 2.2554522428635537
+- ASTER | relative_strength_vs_btc_24h_pct 2.0738022373737564
 
 ## Largest 24h Movers
 
-- EURC | change_24h_pct 0.12763526660597435
-- TRX | change_24h_pct -0.036381165470633636
-- TIA | change_24h_pct -0.8211678832116931
-- PAXG | change_24h_pct -0.8700589626735034
-- XMR | change_24h_pct -1.344032758734559
-- BTC | change_24h_pct -1.6113513764313137
-- QNT | change_24h_pct -1.6256590509666102
-- DRV | change_24h_pct -1.83750627924808
-- ETH | change_24h_pct -1.93142568074669
-- POL | change_24h_pct -1.9601437438745428
+- GRASS | change_24h_pct 8.050117462803442
+- ZEC | change_24h_pct 4.224229773154442
+- DASH | change_24h_pct 4.1882963662104755
+- ENA | change_24h_pct 3.7886872998932786
+- PYTH | change_24h_pct 3.27510917030569
+- QNT | change_24h_pct 2.9142474318892386
+- VVV | change_24h_pct 2.337089865679709
+- ZRO | change_24h_pct 2.2673031026253065
+- XMR | change_24h_pct 1.8845188284518866
+- ASTER | change_24h_pct 1.7028688229620892
 
 ## Largest 48h Movers
 
-- AKE | change_48h_pct 8.469851965353637
-- DASH | change_48h_pct 1.189860320744951
-- EURC | change_48h_pct 0.21977040246570212
-- BCH | change_48h_pct 0.0
-- TRX | change_48h_pct -0.17620185102770192
-- BNB | change_48h_pct -0.4024282108996524
-- ASTER | change_48h_pct -0.8322151483141527
-- GRASS | change_48h_pct -0.9002017693621078
-- BTC | change_48h_pct -1.2671736831722735
-- POL | change_48h_pct -1.4342018830742376
+- GRASS | change_48h_pct 3.216636744464396
+- QNT | change_48h_pct 1.241212653778545
+- XMR | change_48h_pct 0.5151575193184099
+- EURC | change_48h_pct 0.10532140880772367
+- TRX | change_48h_pct -0.2852889725655561
+- ASTER | change_48h_pct -0.4536744815148763
+- PAXG | change_48h_pct -0.8608847872335068
+- PYTH | change_48h_pct -1.2938230383973348
+- BNB | change_48h_pct -1.4952321087052578
+- XRP | change_48h_pct -1.9504217332707463
 
 ## Largest Positive Acceleration
 
-- AKE | acceleration_4h_pct 14.934813447627192
-- PEPE | acceleration_4h_pct 5.273258250937007
-- RAY | acceleration_4h_pct 4.873318718933984
-- HYPE | acceleration_4h_pct 3.347938275513729
-- NEAR | acceleration_4h_pct 3.26863026869314
-- MORPHO | acceleration_4h_pct 3.02514904144654
-- POL | acceleration_4h_pct 2.925453039012438
-- ASTER | acceleration_4h_pct 2.9174879847150947
-- XLM | acceleration_4h_pct 2.7984169244441803
-- DOT | acceleration_4h_pct 2.6627384505906626
+- AKE | acceleration_4h_pct 5.652741376786296
+- WLD | acceleration_4h_pct 4.418948404498513
+- NIGHT | acceleration_4h_pct 3.922508937676017
+- GRASS | acceleration_4h_pct 3.913634566324875
+- PENDLE | acceleration_4h_pct 3.72137136433891
+- ENA | acceleration_4h_pct 3.714986216033933
+- QNT | acceleration_4h_pct 3.68416784159864
+- VVV | acceleration_4h_pct 3.395174741874707
+- ZEC | acceleration_4h_pct 3.0634208870302992
+- INJ | acceleration_4h_pct 2.637022413493517
 
 ## Volume Expansion Leaders
 
-- AAVE | volume_z_score 3.8697761147499077
-- RAY | volume_z_score 2.487435868907316
-- STX | volume_z_score 1.7158665956876162
-- AERO | volume_z_score 1.4728981810048565
-- RENDER | volume_z_score 1.2051180186505777
-- TRX | volume_z_score 0.8977281282281316
-- VVV | volume_z_score 0.8842506323877344
-- XRP | volume_z_score 0.8404876296383934
-- PENDLE | volume_z_score 0.7513541082045958
-- WLD | volume_z_score 0.6907023337550711
+- XDC | volume_z_score 2.4111818764581248
+- GRASS | volume_z_score 2.1676688039743013
+- ENA | volume_z_score 1.4004876423726493
+- DASH | volume_z_score 1.1841298249988217
+- XLM | volume_z_score 0.95201219043771
+- AERO | volume_z_score 0.8813780902325942
+- ATOM | volume_z_score 0.7960602350063319
+- WLD | volume_z_score 0.6998182353605722
+- DRV | volume_z_score 0.3788080009157847
+- APT | volume_z_score 0.1889659400057917

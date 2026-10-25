@@ -1,64 +1,24 @@
 {
   "candidates": [
     {
-      "asset": "RAY",
-      "change_24h_pct": -2.7972027972028024,
+      "asset": "ATOM",
+      "change_24h_pct": -2.0113897976493433,
       "freshness_status": "FRESH",
-      "latest_completed_candle_timestamp": "2026-10-24T13:00:00+00:00",
-      "momentum_breakout_score": 43.7778,
+      "latest_completed_candle_timestamp": "2026-10-25T13:00:00+00:00",
+      "momentum_breakout_score": 24.0986,
       "momentum_stage": "EARLY_MOMENTUM",
       "overextension_risk": "LOW",
-      "relative_strength_vs_btc_24h_pct": -1.1858514207714888
-    },
-    {
-      "asset": "MORPHO",
-      "change_24h_pct": -4.236194077205512,
-      "freshness_status": "FRESH",
-      "latest_completed_candle_timestamp": "2026-10-24T13:00:00+00:00",
-      "momentum_breakout_score": 39.0515,
-      "momentum_stage": "EARLY_MOMENTUM",
-      "overextension_risk": "LOW",
-      "relative_strength_vs_btc_24h_pct": -2.624842700774199
-    },
-    {
-      "asset": "POL",
-      "change_24h_pct": -1.9601437438745428,
-      "freshness_status": "FRESH",
-      "latest_completed_candle_timestamp": "2026-10-24T13:00:00+00:00",
-      "momentum_breakout_score": 34.4351,
-      "momentum_stage": "EARLY_MOMENTUM",
-      "overextension_risk": "LOW",
-      "relative_strength_vs_btc_24h_pct": -0.3487923674432291
-    },
-    {
-      "asset": "TIA",
-      "change_24h_pct": -0.8211678832116931,
-      "freshness_status": "FRESH",
-      "latest_completed_candle_timestamp": "2026-10-24T13:00:00+00:00",
-      "momentum_breakout_score": 31.2191,
-      "momentum_stage": "EARLY_MOMENTUM",
-      "overextension_risk": "LOW",
-      "relative_strength_vs_btc_24h_pct": 0.7901834932196206
-    },
-    {
-      "asset": "ASTER",
-      "change_24h_pct": -2.1204350766456104,
-      "freshness_status": "FRESH",
-      "latest_completed_candle_timestamp": "2026-10-24T13:00:00+00:00",
-      "momentum_breakout_score": 28.7759,
-      "momentum_stage": "EARLY_MOMENTUM",
-      "overextension_risk": "LOW",
-      "relative_strength_vs_btc_24h_pct": -0.5090837002142967
+      "relative_strength_vs_btc_24h_pct": -1.6404563832376762
     }
   ],
   "freshness": "FRESH",
-  "generated_at_utc": "2026-10-24T14:47:55+00:00",
+  "generated_at_utc": "2026-10-25T14:30:39+00:00",
   "module_name": "momentum",
   "risks": [],
   "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
   "status": "OK",
   "summary": {
-    "active_count": 9
+    "active_count": 1
   },
   "unknowns": []
 }

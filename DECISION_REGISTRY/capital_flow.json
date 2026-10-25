@@ -1,7 +1,7 @@
 {
   "alternative_interpretations": [],
   "freshness": "FRESH",
-  "generated_at_utc": "2026-10-24T14:47:55+00:00",
+  "generated_at_utc": "2026-10-25T14:30:39+00:00",
   "module_name": "capital_flow",
   "primary_flows": [
     {
@@ -21,12 +21,12 @@
       ],
       "state": "RISK_OFF_TO_USD",
       "supporting_metrics": {
-        "breadth_positive_pct": 1.4492753623188406,
-        "btc_return_24h": -1.6113513764313137,
-        "large_return_24h": -3.6202928575969593,
-        "mid_return_24h": -5.478197485858722,
-        "momentum_participation": 13.043478260869565,
-        "small_return_24h": -5.396250702195953
+        "breadth_positive_pct": 24.637681159420293,
+        "btc_return_24h": -0.3709334144116671,
+        "large_return_24h": 0.01200059207999628,
+        "mid_return_24h": -0.8278528332018286,
+        "momentum_participation": 1.4492753623188406,
+        "small_return_24h": -1.3728416880198813
       },
       "to_group": "USD / defensive"
     }
@@ -34,7 +34,7 @@
   "risks": [
     "CAPITAL_FLOW_IS_INFERRED_NOT_OBSERVED"
   ],
-  "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/2026-10-24_capital_flow.json",
+  "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/2026-10-25_capital_flow.json",
   "status": "OK",
   "summary": {
     "capital_flow_confidence": 70,

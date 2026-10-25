@@ -1,13 +1,13 @@
 # Leadership Rotation
 
-- #1 RWA | INSUFFICIENT_DATA | 70.1
-- #2 BTC | INSUFFICIENT_DATA | 37.5
-- #3 Smart-contract platforms | INSUFFICIENT_DATA | 36.7
-- #4 Payments | STABLE_LEADERSHIP | 33.3
-- #5 Layer 1 | STABLE_LEADERSHIP | 31.1
-- #6 Infrastructure / Oracles | INSUFFICIENT_DATA | 31.0
-- #7 Other / Unclassified | STABLE_LEADERSHIP | 27.6
-- #8 DeFi | LAGGING | 26.6
-- #9 AI | LAGGING | 24.6
-- #10 Meme | LAGGING | 18.3
-- #11 Privacy | INSUFFICIENT_DATA | 16.9
+- #1 Privacy | INSUFFICIENT_DATA | 93.5
+- #2 RWA | INSUFFICIENT_DATA | 69.7
+- #3 Payments | CURRENT_LEADER | 56.0
+- #4 AI | STABLE_LEADERSHIP | 53.8
+- #5 Other / Unclassified | STABLE_LEADERSHIP | 49.0
+- #6 BTC | INSUFFICIENT_DATA | 36.9
+- #7 Meme | STABLE_LEADERSHIP | 36.2
+- #8 Layer 1 | LAGGING | 35.7
+- #9 Smart-contract platforms | INSUFFICIENT_DATA | 33.8
+- #10 Infrastructure / Oracles | INSUFFICIENT_DATA | 32.8
+- #11 DeFi | LAGGING | 31.4

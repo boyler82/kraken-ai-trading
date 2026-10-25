@@ -3,84 +3,112 @@
   "current_packet": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/latest_ai_chief_strategist_packet.json",
   "early_expansion_changes": [
     {
-      "asset": "AAVE",
-      "metric_changes": {},
-      "reason_codes": [
-        "EXITED_TOP_5_EARLY_EXPANSION"
-      ]
-    },
-    {
-      "asset": "ARB",
-      "metric_changes": {},
-      "reason_codes": [
-        "EXITED_TOP_5_EARLY_EXPANSION"
-      ]
-    },
-    {
       "asset": "ASTER",
+      "metric_changes": {},
+      "reason_codes": [
+        "EXITED_TOP_5_EARLY_EXPANSION"
+      ]
+    },
+    {
+      "asset": "BNB",
       "metric_changes": {
-        "combined_pre_move_score": {
-          "change": 13.83,
-          "current": 70.38,
-          "previous": 56.55
+        "classification": {
+          "current": "TOO_LATE",
+          "previous": null
         }
       },
       "reason_codes": [
-        "ENTERED_TOP_5_EARLY_EXPANSION",
-        "COMBINED_SCORE_CHANGE_AT_LEAST_10"
+        "EARLY_EXPANSION_CLASSIFICATION_MATERIAL_CHANGE"
       ]
     },
     {
       "asset": "CRV",
       "metric_changes": {},
       "reason_codes": [
-        "ENTERED_TOP_5_EARLY_EXPANSION"
+        "EXITED_TOP_5_EARLY_EXPANSION"
       ]
     },
     {
       "asset": "DASH",
-      "metric_changes": {},
+      "metric_changes": {
+        "classification": {
+          "current": "TOO_LATE",
+          "previous": null
+        }
+      },
       "reason_codes": [
-        "EXITED_TOP_5_EARLY_EXPANSION"
+        "EARLY_EXPANSION_CLASSIFICATION_MATERIAL_CHANGE"
       ]
     },
     {
-      "asset": "DOT",
+      "asset": "ETH",
       "metric_changes": {},
       "reason_codes": [
-        "EXITED_TOP_5_EARLY_EXPANSION"
+        "ENTERED_TOP_5_EARLY_EXPANSION"
+      ]
+    },
+    {
+      "asset": "GRASS",
+      "metric_changes": {
+        "classification": {
+          "current": "TOO_LATE",
+          "previous": null
+        }
+      },
+      "reason_codes": [
+        "EARLY_EXPANSION_CLASSIFICATION_MATERIAL_CHANGE"
+      ]
+    },
+    {
+      "asset": "HYPE",
+      "metric_changes": {},
+      "reason_codes": [
+        "ENTERED_TOP_5_EARLY_EXPANSION"
+      ]
+    },
+    {
+      "asset": "KAS",
+      "metric_changes": {},
+      "reason_codes": [
+        "ENTERED_TOP_5_EARLY_EXPANSION"
+      ]
+    },
+    {
+      "asset": "LTC",
+      "metric_changes": {},
+      "reason_codes": [
+        "ENTERED_TOP_5_EARLY_EXPANSION"
       ]
     },
     {
       "asset": "PENDLE",
-      "metric_changes": {},
+      "metric_changes": {
+        "energy_delta_score": {
+          "change": -20.35,
+          "current": 55.55,
+          "previous": 75.9
+        }
+      },
       "reason_codes": [
-        "ENTERED_TOP_5_EARLY_EXPANSION"
+        "ENERGY_DELTA_CHANGE_AT_LEAST_15"
       ]
     },
     {
       "asset": "POL",
       "metric_changes": {},
       "reason_codes": [
-        "ENTERED_TOP_5_EARLY_EXPANSION"
+        "EXITED_TOP_5_EARLY_EXPANSION"
       ]
     },
     {
       "asset": "RAY",
       "metric_changes": {},
       "reason_codes": [
-        "ENTERED_TOP_5_EARLY_EXPANSION"
-      ]
-    },
-    {
-      "asset": "TRX",
-      "metric_changes": {},
-      "reason_codes": [
         "EXITED_TOP_5_EARLY_EXPANSION"
       ]
     }
   ],
-  "generated_at_utc": "2026-10-24T14:47:55+00:00",
+  "generated_at_utc": "2026-10-25T14:30:39+00:00",
   "journal_version": "1.0.0",
   "labels": [
     "RESEARCH_ONLY",
@@ -90,46 +118,23 @@
   ],
   "market_changes": [
     {
-      "change": -9.8965,
-      "current": 7.246376811594203,
+      "change": 27.5362,
+      "current": 34.78260869565217,
       "field": "universe_outperforming_btc_24h_pct",
-      "previous": 17.142857142857142,
+      "previous": 7.246376811594203,
+      "reason_code": "BREADTH_CHANGE_AT_LEAST_5PP"
+    },
+    {
+      "change": 17.3913,
+      "current": 21.73913043478261,
+      "field": "universe_above_ema20_pct",
+      "previous": 4.3478260869565215,
       "reason_code": "BREADTH_CHANGE_AT_LEAST_5PP"
     }
   ],
   "new_candidates": [
     {
-      "asset": "CRV",
-      "current_state": "NO_MOMENTUM",
-      "interpretation": "Evidence strengthened under deterministic material-change rules.",
-      "metric_changes": {},
-      "previous_state": "UNKNOWN",
-      "reason_codes": [
-        "ENTERED_CANDIDATE_SET"
-      ]
-    },
-    {
-      "asset": "PAXG",
-      "current_state": "NO_MOMENTUM",
-      "interpretation": "Evidence strengthened under deterministic material-change rules.",
-      "metric_changes": {},
-      "previous_state": "UNKNOWN",
-      "reason_codes": [
-        "ENTERED_CANDIDATE_SET"
-      ]
-    },
-    {
-      "asset": "PUMP",
-      "current_state": "NO_MOMENTUM",
-      "interpretation": "Evidence strengthened under deterministic material-change rules.",
-      "metric_changes": {},
-      "previous_state": "UNKNOWN",
-      "reason_codes": [
-        "ENTERED_CANDIDATE_SET"
-      ]
-    },
-    {
-      "asset": "RAY",
+      "asset": "ATOM",
       "current_state": "EARLY_MOMENTUM",
       "interpretation": "Evidence strengthened under deterministic material-change rules.",
       "metric_changes": {},
@@ -139,7 +144,7 @@
       ]
     },
     {
-      "asset": "WLD",
+      "asset": "DASH",
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence strengthened under deterministic material-change rules.",
       "metric_changes": {},
@@ -149,7 +154,37 @@
       ]
     },
     {
-      "asset": "XMR",
+      "asset": "GRASS",
+      "current_state": "NO_MOMENTUM",
+      "interpretation": "Evidence strengthened under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "UNKNOWN",
+      "reason_codes": [
+        "ENTERED_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "KAS",
+      "current_state": "NO_MOMENTUM",
+      "interpretation": "Evidence strengthened under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "UNKNOWN",
+      "reason_codes": [
+        "ENTERED_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "PENDLE",
+      "current_state": "NO_MOMENTUM",
+      "interpretation": "Evidence strengthened under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "UNKNOWN",
+      "reason_codes": [
+        "ENTERED_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "QNT",
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence strengthened under deterministic material-change rules.",
       "metric_changes": {},
@@ -162,94 +197,13 @@
   "new_confirmations": [],
   "new_invalidations": [
     {
-      "asset": "AAVE",
-      "current_state": "NO_MOMENTUM",
-      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
-      "metric_changes": {
-        "momentum_stage": {
-          "current": "NO_MOMENTUM",
-          "previous": "EARLY_MOMENTUM"
-        },
-        "primary_hypothesis": {
-          "current": "NO_MOMENTUM",
-          "previous": "EARLY_MOMENTUM"
-        },
-        "range_validity": {
-          "current": false,
-          "previous": true
-        },
-        "relative_strength": {
-          "current": "RELATIVE_LAGGARD",
-          "previous": "NEUTRAL"
-        }
-      },
-      "previous_state": "EARLY_MOMENTUM",
-      "reason_codes": [
-        "RANGE_INVALIDATED"
-      ]
-    },
-    {
-      "asset": "ADA",
+      "asset": "AERO",
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {
         "range_validity": {
           "current": false,
           "previous": true
-        },
-        "relative_strength": {
-          "current": "NEUTRAL",
-          "previous": "DETERIORATING"
-        }
-      },
-      "previous_state": "NO_MOMENTUM",
-      "reason_codes": [
-        "RANGE_INVALIDATED"
-      ]
-    },
-    {
-      "asset": "AKE",
-      "current_state": "NO_MOMENTUM",
-      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
-      "metric_changes": {
-        "momentum_stage": {
-          "current": "NO_MOMENTUM",
-          "previous": "EXTENDED_MOVE"
-        },
-        "primary_hypothesis": {
-          "current": "NO_MOMENTUM",
-          "previous": "EXTENDED_MOVE"
-        },
-        "range_validity": {
-          "current": false,
-          "previous": true
-        },
-        "relative_strength": {
-          "current": "DETERIORATING",
-          "previous": "EMERGING_RELATIVE_LEADER"
-        }
-      },
-      "previous_state": "EXTENDED_MOVE",
-      "reason_codes": [
-        "RANGE_INVALIDATED"
-      ]
-    },
-    {
-      "asset": "TRX",
-      "current_state": "NO_MOMENTUM",
-      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
-      "metric_changes": {
-        "opportunity_age_status": {
-          "current": "EXPIRED",
-          "previous": "NEW"
-        },
-        "range_validity": {
-          "current": false,
-          "previous": true
-        },
-        "relative_strength": {
-          "current": "NEUTRAL",
-          "previous": "EMERGING_RELATIVE_LEADER"
         }
       },
       "previous_state": "NO_MOMENTUM",
@@ -259,11 +213,48 @@
     }
   ],
   "portfolio_relevant_changes": [],
-  "previous_packet": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/2026-10-22_ai_chief_strategist_packet.json",
-  "range_personality_changes": [],
+  "previous_packet": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/2026-10-24_ai_chief_strategist_packet.json",
+  "range_personality_changes": [
+    {
+      "asset": "XMR",
+      "current_classification": null,
+      "previous_classification": "RANGE_FRIENDLY",
+      "reason_code": "RANGE_PERSONALITY_CLASS_CHANGED"
+    }
+  ],
   "removed_candidates": [
     {
-      "asset": "DASH",
+      "asset": "AKE",
+      "current_state": "UNKNOWN",
+      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "NO_MOMENTUM",
+      "reason_codes": [
+        "LEFT_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "CRV",
+      "current_state": "UNKNOWN",
+      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "NO_MOMENTUM",
+      "reason_codes": [
+        "LEFT_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "PAXG",
+      "current_state": "UNKNOWN",
+      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
+      "metric_changes": {},
+      "previous_state": "NO_MOMENTUM",
+      "reason_codes": [
+        "LEFT_CANDIDATE_SET"
+      ]
+    },
+    {
+      "asset": "RAY",
       "current_state": "UNKNOWN",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {},
@@ -273,7 +264,7 @@
       ]
     },
     {
-      "asset": "DOT",
+      "asset": "TRX",
       "current_state": "UNKNOWN",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {},
@@ -283,37 +274,7 @@
       ]
     },
     {
-      "asset": "INJ",
-      "current_state": "UNKNOWN",
-      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
-      "metric_changes": {},
-      "previous_state": "NO_MOMENTUM",
-      "reason_codes": [
-        "LEFT_CANDIDATE_SET"
-      ]
-    },
-    {
-      "asset": "PYTH",
-      "current_state": "UNKNOWN",
-      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
-      "metric_changes": {},
-      "previous_state": "NO_MOMENTUM",
-      "reason_codes": [
-        "LEFT_CANDIDATE_SET"
-      ]
-    },
-    {
-      "asset": "Q",
-      "current_state": "UNKNOWN",
-      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
-      "metric_changes": {},
-      "previous_state": "NO_MOMENTUM",
-      "reason_codes": [
-        "LEFT_CANDIDATE_SET"
-      ]
-    },
-    {
-      "asset": "ZRO",
+      "asset": "WLD",
       "current_state": "UNKNOWN",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {},
@@ -323,19 +284,19 @@
       ]
     }
   ],
-  "report_date": "2026-10-24",
+  "report_date": "2026-10-25",
   "rotation_changes": [
     {
-      "change": -6.071,
-      "current": 22.509900000000002,
+      "change": 5.7117,
+      "current": 28.22160000000001,
       "field": "best_score_advantage",
-      "previous": 28.580900000000007,
+      "previous": 22.509900000000002,
       "reason_code": "ROTATION_ADVANTAGE_CHANGE_AT_LEAST_3"
     }
   ],
   "rqi_changes": [
     {
-      "asset": "AAVE",
+      "asset": "AERO",
       "metric_changes": {
         "rqi_classification": {
           "current": "NOT_APPLICABLE",
@@ -353,47 +314,23 @@
       "reason_codes": [
         "RQI_CLASSIFICATION_CHANGED",
         "RQI_CONFIDENCE_BAND_CHANGED",
-        "RQI_STATUS_CHANGED",
-        "ENTERED_TOP_5_RQI"
-      ]
-    },
-    {
-      "asset": "ADA",
-      "metric_changes": {
-        "rqi_classification": {
-          "current": "NOT_APPLICABLE",
-          "previous": null
-        },
-        "rqi_confidence_band": {
-          "current": "LOW",
-          "previous": null
-        },
-        "rqi_status": {
-          "current": "INVALID_RANGE",
-          "previous": null
-        }
-      },
-      "reason_codes": [
-        "RQI_CLASSIFICATION_CHANGED",
-        "RQI_CONFIDENCE_BAND_CHANGED",
-        "RQI_STATUS_CHANGED",
-        "ENTERED_TOP_5_RQI"
+        "RQI_STATUS_CHANGED"
       ]
     },
     {
       "asset": "AKE",
       "metric_changes": {
         "rqi_classification": {
-          "current": "NOT_APPLICABLE",
-          "previous": null
+          "current": null,
+          "previous": "NOT_APPLICABLE"
         },
         "rqi_confidence_band": {
-          "current": "LOW",
-          "previous": null
+          "current": null,
+          "previous": "LOW"
         },
         "rqi_status": {
-          "current": "INVALID_RANGE",
-          "previous": null
+          "current": null,
+          "previous": "INVALID_RANGE"
         }
       },
       "reason_codes": [
@@ -404,97 +341,6 @@
     },
     {
       "asset": "ATOM",
-      "metric_changes": {
-        "rqi_classification": {
-          "current": "ACCEPTABLE_RANGE",
-          "previous": null
-        },
-        "rqi_confidence_band": {
-          "current": "HIGH",
-          "previous": null
-        },
-        "rqi_status": {
-          "current": "APPLICABLE",
-          "previous": null
-        }
-      },
-      "reason_codes": [
-        "RQI_CLASSIFICATION_CHANGED",
-        "RQI_CONFIDENCE_BAND_CHANGED",
-        "RQI_STATUS_CHANGED",
-        "ENTERED_TOP_5_RQI"
-      ]
-    },
-    {
-      "asset": "AVAX",
-      "metric_changes": {
-        "rqi_classification": {
-          "current": null,
-          "previous": "NOT_APPLICABLE"
-        },
-        "rqi_confidence_band": {
-          "current": null,
-          "previous": "LOW"
-        },
-        "rqi_status": {
-          "current": null,
-          "previous": "INVALID_RANGE"
-        }
-      },
-      "reason_codes": [
-        "RQI_CLASSIFICATION_CHANGED",
-        "RQI_CONFIDENCE_BAND_CHANGED",
-        "RQI_STATUS_CHANGED",
-        "EXITED_TOP_5_RQI"
-      ]
-    },
-    {
-      "asset": "BTC",
-      "metric_changes": {
-        "rqi_classification": {
-          "current": null,
-          "previous": "NOT_APPLICABLE"
-        },
-        "rqi_confidence_band": {
-          "current": null,
-          "previous": "LOW"
-        },
-        "rqi_status": {
-          "current": null,
-          "previous": "INVALID_RANGE"
-        }
-      },
-      "reason_codes": [
-        "RQI_CLASSIFICATION_CHANGED",
-        "RQI_CONFIDENCE_BAND_CHANGED",
-        "RQI_STATUS_CHANGED",
-        "EXITED_TOP_5_RQI"
-      ]
-    },
-    {
-      "asset": "CC",
-      "metric_changes": {
-        "rqi_classification": {
-          "current": null,
-          "previous": "NOT_APPLICABLE"
-        },
-        "rqi_confidence_band": {
-          "current": null,
-          "previous": "LOW"
-        },
-        "rqi_status": {
-          "current": null,
-          "previous": "INVALID_RANGE"
-        }
-      },
-      "reason_codes": [
-        "RQI_CLASSIFICATION_CHANGED",
-        "RQI_CONFIDENCE_BAND_CHANGED",
-        "RQI_STATUS_CHANGED"
-      ]
-    },
-    {
-      "asset": "HYPE",
       "metric_changes": {
         "rqi_classification": {
           "current": null,
@@ -517,7 +363,7 @@
       ]
     },
     {
-      "asset": "NEAR",
+      "asset": "BCH",
       "metric_changes": {
         "rqi_classification": {
           "current": "ACCEPTABLE_RANGE",
@@ -540,11 +386,11 @@
       ]
     },
     {
-      "asset": "QNT",
+      "asset": "NEAR",
       "metric_changes": {
         "rqi_classification": {
           "current": null,
-          "previous": "GOOD_RANGE"
+          "previous": "ACCEPTABLE_RANGE"
         },
         "rqi_confidence_band": {
           "current": null,
@@ -561,6 +407,29 @@
         "RQI_STATUS_CHANGED",
         "EXITED_TOP_5_RQI"
       ]
+    },
+    {
+      "asset": "SOL",
+      "metric_changes": {
+        "rqi_classification": {
+          "current": "ACCEPTABLE_RANGE",
+          "previous": null
+        },
+        "rqi_confidence_band": {
+          "current": "HIGH",
+          "previous": null
+        },
+        "rqi_status": {
+          "current": "APPLICABLE",
+          "previous": null
+        }
+      },
+      "reason_codes": [
+        "RQI_CLASSIFICATION_CHANGED",
+        "RQI_CONFIDENCE_BAND_CHANGED",
+        "RQI_STATUS_CHANGED",
+        "ENTERED_TOP_5_RQI"
+      ]
     }
   ],
   "source_refs": [
@@ -569,24 +438,38 @@
       "source": "current_chief_strategist_packet"
     },
     {
-      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/2026-10-22_ai_chief_strategist_packet.json",
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CHATGPT_EXPORT/2026-10-24_ai_chief_strategist_packet.json",
       "source": "previous_chief_strategist_packet"
     }
   ],
   "status": "OK",
   "strengthening_candidates": [
     {
-      "asset": "EURC",
+      "asset": "XMR",
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence strengthened under deterministic material-change rules.",
       "metric_changes": {
+        "evidence_confidence_score": {
+          "change": -15.0,
+          "current": 25.0,
+          "previous": 40.0
+        },
         "opportunity_age_status": {
-          "current": "EARLY",
+          "current": "MATURING",
           "previous": "NEW"
+        },
+        "range_personality": {
+          "current": null,
+          "previous": "RANGE_FRIENDLY"
         },
         "relative_strength": {
           "current": "NEUTRAL",
           "previous": "ESTABLISHED_RELATIVE_LEADER"
+        },
+        "supporting_module_count": {
+          "change": -1,
+          "current": 2,
+          "previous": 3
         }
       },
       "previous_state": "NO_MOMENTUM",
@@ -596,22 +479,22 @@
     }
   ],
   "summary": {
-    "best_strengthening_candidate": "EURC",
+    "best_strengthening_candidate": "XMR",
     "capital_flow_state": "RISK_OFF_TO_USD",
     "dominant_market_change": "BREADTH_CHANGE_AT_LEAST_5PP",
-    "invalidated_opportunity_count": 4,
+    "invalidated_opportunity_count": 1,
     "journal_conclusion": "ROTATION_WEAKENING",
     "largest_weakening_candidate": "AAVE",
-    "material_change_count": 45,
+    "material_change_count": 42,
     "new_opportunity_count": 6,
     "portfolio_warning_count": 0,
     "rotation_state": "MONITOR_ALT"
   },
   "tomorrow_watch": [
-    "Check whether AAVE remains above range low 144.16.",
-    "Check whether ADA remains above range low 0.2099432.",
-    "Check whether AKE remains above range low 0.02622299.",
-    "Check whether TRX remains above range low 0.3284995.",
+    "Check whether AERO remains above range low 0.72051.",
+    "Check whether XMR remains above range low 577.02.",
+    "Check whether AAVE remains above range low 141.445.",
+    "Check whether ADA remains above range low 0.206186.",
     "Check whether BTC rotation remains MONITOR_ALT."
   ],
   "unchanged_key_states": [
@@ -628,27 +511,13 @@
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {
-        "momentum_stage": {
-          "current": "NO_MOMENTUM",
-          "previous": "EARLY_MOMENTUM"
-        },
-        "primary_hypothesis": {
-          "current": "NO_MOMENTUM",
-          "previous": "EARLY_MOMENTUM"
-        },
-        "range_validity": {
-          "current": false,
-          "previous": true
-        },
         "relative_strength": {
-          "current": "RELATIVE_LAGGARD",
-          "previous": "NEUTRAL"
+          "current": "NEUTRAL",
+          "previous": "RELATIVE_LAGGARD"
         }
       },
-      "previous_state": "EARLY_MOMENTUM",
+      "previous_state": "NO_MOMENTUM",
       "reason_codes": [
-        "PRIMARY_HYPOTHESIS_CHANGED",
-        "RANGE_INVALIDATED",
         "RELATIVE_STRENGTH_DETERIORATED"
       ]
     },
@@ -657,18 +526,13 @@
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {
-        "range_validity": {
-          "current": false,
-          "previous": true
-        },
         "relative_strength": {
-          "current": "NEUTRAL",
-          "previous": "DETERIORATING"
+          "current": "DETERIORATING",
+          "previous": "NEUTRAL"
         }
       },
       "previous_state": "NO_MOMENTUM",
       "reason_codes": [
-        "RANGE_INVALIDATED",
         "RELATIVE_STRENGTH_DETERIORATED"
       ]
     },
@@ -677,50 +541,14 @@
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {
-        "decision_impact_score": {
-          "change": -18.0,
-          "current": 47.5,
-          "previous": 65.5
-        },
-        "supporting_module_count": {
-          "change": -2,
-          "current": 0,
-          "previous": 2
+        "range_validity": {
+          "current": false,
+          "previous": true
         }
       },
       "previous_state": "NO_MOMENTUM",
       "reason_codes": [
-        "DECISION_IMPACT_DOWN",
-        "SUPPORTING_MODULES_DECREASED"
-      ]
-    },
-    {
-      "asset": "AKE",
-      "current_state": "NO_MOMENTUM",
-      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
-      "metric_changes": {
-        "momentum_stage": {
-          "current": "NO_MOMENTUM",
-          "previous": "EXTENDED_MOVE"
-        },
-        "primary_hypothesis": {
-          "current": "NO_MOMENTUM",
-          "previous": "EXTENDED_MOVE"
-        },
-        "range_validity": {
-          "current": false,
-          "previous": true
-        },
-        "relative_strength": {
-          "current": "DETERIORATING",
-          "previous": "EMERGING_RELATIVE_LEADER"
-        }
-      },
-      "previous_state": "EXTENDED_MOVE",
-      "reason_codes": [
-        "PRIMARY_HYPOTHESIS_CHANGED",
-        "RANGE_INVALIDATED",
-        "RELATIVE_STRENGTH_DETERIORATED"
+        "RANGE_INVALIDATED"
       ]
     },
     {
@@ -728,13 +556,41 @@
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {
+        "evidence_confidence_score": {
+          "change": -15.0,
+          "current": 25.0,
+          "previous": 40.0
+        },
         "opportunity_age_status": {
-          "current": "EARLY",
-          "previous": "NEW"
+          "current": "EXPIRED",
+          "previous": "EARLY"
         },
         "relative_strength": {
-          "current": "NEUTRAL",
-          "previous": "ESTABLISHED_RELATIVE_LEADER"
+          "current": "EMERGING_RELATIVE_LEADER",
+          "previous": "NEUTRAL"
+        },
+        "supporting_module_count": {
+          "change": -1,
+          "current": 2,
+          "previous": 3
+        }
+      },
+      "previous_state": "NO_MOMENTUM",
+      "reason_codes": [
+        "EVIDENCE_CONFIDENCE_DOWN",
+        "OPPORTUNITY_STATUS_WEAKENED",
+        "RELATIVE_STRENGTH_DETERIORATED",
+        "SUPPORTING_MODULES_DECREASED"
+      ]
+    },
+    {
+      "asset": "PUMP",
+      "current_state": "NO_MOMENTUM",
+      "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
+      "metric_changes": {
+        "relative_strength": {
+          "current": "RELATIVE_LAGGARD",
+          "previous": "NEUTRAL"
         }
       },
       "previous_state": "NO_MOMENTUM",
@@ -743,28 +599,39 @@
       ]
     },
     {
-      "asset": "TRX",
+      "asset": "XMR",
       "current_state": "NO_MOMENTUM",
       "interpretation": "Evidence weakened or risk increased under deterministic material-change rules.",
       "metric_changes": {
+        "evidence_confidence_score": {
+          "change": -15.0,
+          "current": 25.0,
+          "previous": 40.0
+        },
         "opportunity_age_status": {
-          "current": "EXPIRED",
+          "current": "MATURING",
           "previous": "NEW"
         },
-        "range_validity": {
-          "current": false,
-          "previous": true
+        "range_personality": {
+          "current": null,
+          "previous": "RANGE_FRIENDLY"
         },
         "relative_strength": {
           "current": "NEUTRAL",
-          "previous": "EMERGING_RELATIVE_LEADER"
+          "previous": "ESTABLISHED_RELATIVE_LEADER"
+        },
+        "supporting_module_count": {
+          "change": -1,
+          "current": 2,
+          "previous": 3
         }
       },
       "previous_state": "NO_MOMENTUM",
       "reason_codes": [
-        "OPPORTUNITY_STATUS_WEAKENED",
-        "RANGE_INVALIDATED",
-        "RELATIVE_STRENGTH_DETERIORATED"
+        "EVIDENCE_CONFIDENCE_DOWN",
+        "RANGE_PERSONALITY_DETERIORATED",
+        "RELATIVE_STRENGTH_DETERIORATED",
+        "SUPPORTING_MODULES_DECREASED"
       ]
     }
   ]

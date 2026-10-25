@@ -1,10 +1,10 @@
 # BTC Rotation Analyst Handoff
 
-Report timestamp: 2026-10-24T14:47:55+00:00
+Report timestamp: 2026-10-25T14:30:39+00:00
 Objective: BTC_ACCUMULATION
 Current holding: not applicable (INTENTIONALLY_ABSENT_MARKET_ONLY; benchmark BTC)
 Capital reference: not provided
-BTC hold score: 42.4701
+BTC hold score: 39.8351
 Market regime: BEAR
 Preferred state: MONITOR_ALT
 Cost guard: PASS
@@ -14,9 +14,9 @@ Invalidation: ALT/BTC closes below relative EMA20
 
 ## Top candidates
 
-- XMR | score 64.98 | advantage +22.51 | relative 24h 0.2716966046759195% | upside/downside 4.77%/-1.55% | R/R 2.6920928913514035 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
-- TRX | score 58.4804 | advantage +16.01 | relative 24h 1.6007641460616506% | upside/downside 1.60%/-0.50% | R/R 2.001528292123301 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
-- EURC | score 56.3768 | advantage +13.91 | relative 24h 1.7674667427241442% | upside/downside 2.13%/-0.50% | R/R 3.0616825241160504 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
+- GRASS | score 68.0567 | advantage +28.22 | relative 24h 8.452403666735986% | upside/downside 15.00%/-3.11% | R/R 4.628820042647797 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
+- DASH | score 64.5183 | advantage +24.68 | relative 24h 4.576204452046562% | upside/downside 9.65%/-2.29% | R/R 3.9616062408253776 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
+- QNT | score 57.748 | advantage +17.91 | relative 24h 3.2974120494029924% | upside/downside 3.30%/-1.87% | R/R 1.4438859703954845 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
 
 ## Unknowns
 
