@@ -2,10 +2,82 @@
   "candidates": [
     {
       "agreement_level": "MIXED",
+      "asset": "HYPE",
+      "confidence_band": "MEDIUM",
+      "conflict_count": 1,
+      "evidence_confidence_score": 53.2468,
+      "evidence_strength": "MODERATE",
+      "freshness_quality": "FRESH",
+      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+      "liquidity_quality": "UNKNOWN",
+      "opposing_modules": [
+        "market_regime"
+      ],
+      "primary_risk": "LOW_SAMPLE_QUALITY",
+      "regime_alignment": "UNKNOWN_OR_CONFLICT",
+      "sample_quality": "LOW",
+      "strongest_conflict": "market_regime",
+      "strongest_support": "relative_strength",
+      "support_count": 4,
+      "supporting_modules": [
+        "relative_strength",
+        "momentum",
+        "btc_rotation",
+        "capital_flow"
+      ],
+      "unavailable_modules": [
+        "consolidation",
+        "leadership_rotation",
+        "validation"
+      ],
+      "unknowns": [
+        "Evidence score is not a probability"
+      ],
+      "weighted_conflict": 15.0,
+      "weighted_support": 51.25
+    },
+    {
+      "agreement_level": "MIXED",
+      "asset": "NIGHT",
+      "confidence_band": "MEDIUM",
+      "conflict_count": 1,
+      "evidence_confidence_score": 53.2468,
+      "evidence_strength": "MODERATE",
+      "freshness_quality": "FRESH",
+      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+      "liquidity_quality": "UNKNOWN",
+      "opposing_modules": [
+        "market_regime"
+      ],
+      "primary_risk": "LOW_SAMPLE_QUALITY",
+      "regime_alignment": "UNKNOWN_OR_CONFLICT",
+      "sample_quality": "LOW",
+      "strongest_conflict": "market_regime",
+      "strongest_support": "relative_strength",
+      "support_count": 4,
+      "supporting_modules": [
+        "relative_strength",
+        "momentum",
+        "btc_rotation",
+        "capital_flow"
+      ],
+      "unavailable_modules": [
+        "consolidation",
+        "leadership_rotation",
+        "validation"
+      ],
+      "unknowns": [
+        "Evidence score is not a probability"
+      ],
+      "weighted_conflict": 15.0,
+      "weighted_support": 51.25
+    },
+    {
+      "agreement_level": "MIXED",
       "asset": "DASH",
       "confidence_band": "LOW",
       "conflict_count": 1,
-      "evidence_confidence_score": 40.0,
+      "evidence_confidence_score": 25.0,
       "evidence_strength": "WEAK",
       "freshness_quality": "FRESH",
       "invalidation_condition": "Supporting module evidence weakens or becomes stale",
@@ -18,15 +90,15 @@
       "sample_quality": "LOW",
       "strongest_conflict": "market_regime",
       "strongest_support": "relative_strength",
-      "support_count": 3,
+      "support_count": 2,
       "supporting_modules": [
         "relative_strength",
-        "btc_rotation",
         "capital_flow"
       ],
       "unavailable_modules": [
         "momentum",
         "consolidation",
+        "btc_rotation",
         "leadership_rotation",
         "validation"
       ],
@@ -34,83 +106,11 @@
         "Evidence score is not a probability"
       ],
       "weighted_conflict": 15.0,
-      "weighted_support": 40.0
+      "weighted_support": 25.0
     },
     {
       "agreement_level": "MIXED",
-      "asset": "GRASS",
-      "confidence_band": "LOW",
-      "conflict_count": 1,
-      "evidence_confidence_score": 40.0,
-      "evidence_strength": "WEAK",
-      "freshness_quality": "FRESH",
-      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
-      "liquidity_quality": "UNKNOWN",
-      "opposing_modules": [
-        "market_regime"
-      ],
-      "primary_risk": "LOW_SAMPLE_QUALITY",
-      "regime_alignment": "UNKNOWN_OR_CONFLICT",
-      "sample_quality": "LOW",
-      "strongest_conflict": "market_regime",
-      "strongest_support": "relative_strength",
-      "support_count": 3,
-      "supporting_modules": [
-        "relative_strength",
-        "btc_rotation",
-        "capital_flow"
-      ],
-      "unavailable_modules": [
-        "momentum",
-        "consolidation",
-        "leadership_rotation",
-        "validation"
-      ],
-      "unknowns": [
-        "Evidence score is not a probability"
-      ],
-      "weighted_conflict": 15.0,
-      "weighted_support": 40.0
-    },
-    {
-      "agreement_level": "MIXED",
-      "asset": "QNT",
-      "confidence_band": "LOW",
-      "conflict_count": 1,
-      "evidence_confidence_score": 40.0,
-      "evidence_strength": "WEAK",
-      "freshness_quality": "FRESH",
-      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
-      "liquidity_quality": "UNKNOWN",
-      "opposing_modules": [
-        "market_regime"
-      ],
-      "primary_risk": "LOW_SAMPLE_QUALITY",
-      "regime_alignment": "UNKNOWN_OR_CONFLICT",
-      "sample_quality": "LOW",
-      "strongest_conflict": "market_regime",
-      "strongest_support": "relative_strength",
-      "support_count": 3,
-      "supporting_modules": [
-        "relative_strength",
-        "btc_rotation",
-        "capital_flow"
-      ],
-      "unavailable_modules": [
-        "momentum",
-        "consolidation",
-        "leadership_rotation",
-        "validation"
-      ],
-      "unknowns": [
-        "Evidence score is not a probability"
-      ],
-      "weighted_conflict": 15.0,
-      "weighted_support": 40.0
-    },
-    {
-      "agreement_level": "MIXED",
-      "asset": "EURC",
+      "asset": "MON",
       "confidence_band": "LOW",
       "conflict_count": 1,
       "evidence_confidence_score": 25.0,
@@ -146,7 +146,43 @@
     },
     {
       "agreement_level": "MIXED",
-      "asset": "XMR",
+      "asset": "SPX",
+      "confidence_band": "LOW",
+      "conflict_count": 1,
+      "evidence_confidence_score": 25.0,
+      "evidence_strength": "WEAK",
+      "freshness_quality": "FRESH",
+      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+      "liquidity_quality": "UNKNOWN",
+      "opposing_modules": [
+        "market_regime"
+      ],
+      "primary_risk": "LOW_SAMPLE_QUALITY",
+      "regime_alignment": "UNKNOWN_OR_CONFLICT",
+      "sample_quality": "LOW",
+      "strongest_conflict": "market_regime",
+      "strongest_support": "btc_rotation",
+      "support_count": 2,
+      "supporting_modules": [
+        "btc_rotation",
+        "capital_flow"
+      ],
+      "unavailable_modules": [
+        "relative_strength",
+        "momentum",
+        "consolidation",
+        "leadership_rotation",
+        "validation"
+      ],
+      "unknowns": [
+        "Evidence score is not a probability"
+      ],
+      "weighted_conflict": 15.0,
+      "weighted_support": 25.0
+    },
+    {
+      "agreement_level": "MIXED",
+      "asset": "XDC",
       "confidence_band": "LOW",
       "conflict_count": 1,
       "evidence_confidence_score": 25.0,
@@ -182,7 +218,7 @@
     },
     {
       "agreement_level": "MIXED",
-      "asset": "KAS",
+      "asset": "BONK",
       "confidence_band": "LOW",
       "conflict_count": 1,
       "evidence_confidence_score": 22.0779,
@@ -197,15 +233,15 @@
       "regime_alignment": "UNKNOWN_OR_CONFLICT",
       "sample_quality": "LOW",
       "strongest_conflict": "market_regime",
-      "strongest_support": "consolidation",
+      "strongest_support": "momentum",
       "support_count": 2,
       "supporting_modules": [
-        "consolidation",
+        "momentum",
         "capital_flow"
       ],
       "unavailable_modules": [
         "relative_strength",
-        "momentum",
+        "consolidation",
         "btc_rotation",
         "leadership_rotation",
         "validation"
@@ -218,43 +254,7 @@
     },
     {
       "agreement_level": "MIXED",
-      "asset": "PENDLE",
-      "confidence_band": "LOW",
-      "conflict_count": 1,
-      "evidence_confidence_score": 22.0779,
-      "evidence_strength": "WEAK",
-      "freshness_quality": "FRESH",
-      "invalidation_condition": "Supporting module evidence weakens or becomes stale",
-      "liquidity_quality": "UNKNOWN",
-      "opposing_modules": [
-        "market_regime"
-      ],
-      "primary_risk": "LOW_SAMPLE_QUALITY",
-      "regime_alignment": "UNKNOWN_OR_CONFLICT",
-      "sample_quality": "LOW",
-      "strongest_conflict": "market_regime",
-      "strongest_support": "consolidation",
-      "support_count": 2,
-      "supporting_modules": [
-        "consolidation",
-        "capital_flow"
-      ],
-      "unavailable_modules": [
-        "relative_strength",
-        "momentum",
-        "btc_rotation",
-        "leadership_rotation",
-        "validation"
-      ],
-      "unknowns": [
-        "Evidence score is not a probability"
-      ],
-      "weighted_conflict": 15.0,
-      "weighted_support": 21.25
-    },
-    {
-      "agreement_level": "MIXED",
-      "asset": "PUMP",
+      "asset": "CRV",
       "confidence_band": "LOW",
       "conflict_count": 1,
       "evidence_confidence_score": 22.0779,
@@ -291,37 +291,37 @@
   ],
   "confirmations": [
     {
-      "asset": "DASH",
+      "asset": "BONK",
       "modules": [
-        "relative_strength",
-        "btc_rotation",
+        "momentum",
         "capital_flow"
       ]
     },
     {
-      "asset": "EURC",
-      "modules": [
-        "relative_strength",
-        "capital_flow"
-      ]
-    },
-    {
-      "asset": "GRASS",
-      "modules": [
-        "relative_strength",
-        "btc_rotation",
-        "capital_flow"
-      ]
-    },
-    {
-      "asset": "KAS",
+      "asset": "CRV",
       "modules": [
         "consolidation",
         "capital_flow"
       ]
     },
     {
-      "asset": "PENDLE",
+      "asset": "DASH",
+      "modules": [
+        "relative_strength",
+        "capital_flow"
+      ]
+    },
+    {
+      "asset": "HYPE",
+      "modules": [
+        "relative_strength",
+        "momentum",
+        "btc_rotation",
+        "capital_flow"
+      ]
+    },
+    {
+      "asset": "JUP",
       "modules": [
         "consolidation",
         "capital_flow"
@@ -330,12 +330,12 @@
   ],
   "conflicts": [
     {
-      "asset": "ATOM",
+      "asset": "BONK",
       "oppose": [
-        "market_regime",
-        "momentum"
+        "market_regime"
       ],
       "support": [
+        "momentum",
         "capital_flow"
       ]
     },
@@ -345,6 +345,7 @@
         "market_regime"
       ],
       "support": [
+        "consolidation",
         "capital_flow"
       ]
     },
@@ -355,7 +356,6 @@
       ],
       "support": [
         "relative_strength",
-        "btc_rotation",
         "capital_flow"
       ]
     },
@@ -365,7 +365,6 @@
         "market_regime"
       ],
       "support": [
-        "relative_strength",
         "capital_flow"
       ]
     },
@@ -375,18 +374,16 @@
         "market_regime"
       ],
       "support": [
-        "relative_strength",
-        "btc_rotation",
         "capital_flow"
       ]
     }
   ],
   "errors": [],
   "freshness": "FRESH",
-  "generated_at_utc": "2026-10-25T14:30:39+00:00",
+  "generated_at_utc": "2026-10-26T17:57:41+00:00",
   "module_name": "ai_confidence",
   "module_version": "1.0.0",
-  "report_date": "2026-10-25",
+  "report_date": "2026-10-26",
   "risks": [
     "LOW_SAMPLE_QUALITY_CAP_APPLIED"
   ],

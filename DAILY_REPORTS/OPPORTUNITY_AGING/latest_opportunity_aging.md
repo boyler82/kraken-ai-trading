@@ -1,22 +1,22 @@
 # Opportunity Aging
 
-- consolidation:RAY | DECAYING | 885.3h
-- momentum:ATOM | DECAYING | 1985.4h
-- sector_leadership:Payments | DECAYING | 1603.7h
-- sector_leadership:Privacy | DECAYING | 1986.1h
-- sector_leadership:RWA | DECAYING | 1966.3h
-- btc_relative_leader:EURC | EARLY | 68.9h
-- consolidation:KAS | ESTABLISHED | 1653.3h
-- consolidation:PENDLE | ESTABLISHED | 764.9h
-- consolidation:PUMP | ESTABLISHED | 1845.6h
+- consolidation:CRV | DECAYING | 1680.8h
+- consolidation:JUP | DECAYING | 1917.4h
+- consolidation:PUMP | DECAYING | 1873.1h
+- momentum:HYPE | DECAYING | 1993.7h
+- momentum:NIGHT | DECAYING | 1982.0h
+- momentum:UNI | DECAYING | 1969.5h
+- sector_leadership:Meme | DECAYING | 2013.6h
+- sector_leadership:Privacy | DECAYING | 2013.6h
+- btc_relative_leader:HYPE | ESTABLISHED | 1917.4h
+- btc_relative_leader:MON | ESTABLISHED | 1669.1h
+- consolidation:KAS | ESTABLISHED | 1680.8h
+- rotation_candidate:HYPE | ESTABLISHED | 2013.6h
+- sector_leadership:RWA | ESTABLISHED | 1993.7h
 - btc_relative_leader:ADA | EXPIRED | 1823.2h
 - btc_relative_leader:ALGO | EXPIRED | 1823.2h
 - btc_relative_leader:ATOM | EXPIRED | 1701.4h
 - btc_relative_leader:CRV | EXPIRED | 0.0h
 - btc_relative_leader:DOT | EXPIRED | 1917.2h
-- btc_relative_leader:HYPE | EXPIRED | 539.1h
-- btc_relative_leader:JUP | EXPIRED | 0.0h
-- btc_relative_leader:KAS | EXPIRED | 22.5h
-- btc_relative_leader:MON | EXPIRED | 290.9h
-- btc_relative_leader:NEAR | EXPIRED | 22.4h
-- btc_relative_leader:PAXG | EXPIRED | 0.0h
+- btc_relative_leader:EURC | EXPIRED | 68.9h
+- btc_relative_leader:GRASS | EXPIRED | 0.0h

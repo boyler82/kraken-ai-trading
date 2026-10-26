@@ -1,20 +1,18 @@
 # AI Daily Observations
 
-## 2026-10-25
-- Market: universe_outperforming_btc_24h_pct changed from 7.246376811594203 to 34.78260869565217.
-- Market: universe_above_ema20_pct changed from 4.3478260869565215 to 21.73913043478261.
-- Rotation: best_score_advantage changed from 22.509900000000002 to 28.22160000000001.
-- New: ATOM — ENTERED_CANDIDATE_SET.
-- New: DASH — ENTERED_CANDIDATE_SET.
-- Stronger: XMR — OPPORTUNITY_STATUS_IMPROVED.
-- Weaker: AAVE — RELATIVE_STRENGTH_DETERIORATED.
+## 2026-10-26
+- Market: environment_status changed from CAUTIOUS to DEFENSIVE.
+- Market: opportunity_regime changed from ACTIVE to QUIET.
+- Rotation: best_score_advantage changed from 28.22160000000001 to 38.8365.
+- New: BONK — ENTERED_CANDIDATE_SET.
+- New: CRV — ENTERED_CANDIDATE_SET.
+- Stronger: DASH — OPPORTUNITY_STATUS_IMPROVED.
 - Weaker: ADA — RELATIVE_STRENGTH_DETERIORATED.
-- Invalidated: AERO — RANGE_INVALIDATED.
-- Range personality: XMR changed from RANGE_FRIENDLY to None.
-- Tomorrow: Check whether AERO remains above range low 0.72051.
-- Tomorrow: Check whether XMR remains above range low 577.02.
-- Tomorrow: Check whether AAVE remains above range low 141.445.
+- Weaker: AERO — PRIMARY_HYPOTHESIS_CHANGED, RELATIVE_STRENGTH_DETERIORATED.
+- Tomorrow: Check whether DASH remains above range low 47.7364.
+- Tomorrow: Check whether ADA remains above range low 0.2023481.
+- Tomorrow: Check whether AERO remains above range low 0.67853.
 
 ### Conclusion
 
-ROTATION_WEAKENING.
+MARKET_DETERIORATING.

@@ -1,23 +1,26 @@
 {
   "ada_like_movements": [
-    "GRASS",
-    "ENA",
+    "NIGHT",
+    "UNI",
+    "SPX",
+    "QNT",
     "ZEC",
-    "DASH",
-    "PYTH"
+    "XDC",
+    "PYTH",
+    "ENA"
   ],
   "checkpoint_resume": false,
   "consolidation_to_breakout_transitions": [],
   "daily_consolidation_candidates": [
     "PUMP",
-    "RAY",
-    "PENDLE",
+    "JUP",
+    "CRV",
     "KAS"
   ],
-  "execution_duration_seconds": 102.68468429101631,
-  "fresh_data_assets": 69,
-  "generated_at_utc": "2026-10-25T14:30:39+00:00",
-  "kraken_mapped_assets": 69,
+  "execution_duration_seconds": 92.71372266699973,
+  "fresh_data_assets": 65,
+  "generated_at_utc": "2026-10-26T17:57:41+00:00",
+  "kraken_mapped_assets": 65,
   "labels": [
     "RESEARCH_ONLY",
     "NOT_A_BUY_SIGNAL",
@@ -26,7 +29,11 @@
     "LIVE_NOT_AUTHORIZED"
   ],
   "momentum_candidates": [
-    "ATOM"
+    "NIGHT",
+    "STRK",
+    "HYPE",
+    "BONK",
+    "UNI"
   ],
   "universe_size": 150
 }
