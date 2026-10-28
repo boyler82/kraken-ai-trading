@@ -18,12 +18,12 @@
       ],
       "state": "NO_CLEAR_FLOW",
       "supporting_metrics": {
-        "breadth_positive_pct": 38.46153846153847,
-        "btc_return_24h": -0.7152655665059404,
-        "large_return_24h": -0.5107854769463405,
-        "mid_return_24h": -0.38392128877956816,
-        "momentum_participation": 24.615384615384617,
-        "small_return_24h": 0.18136176644961896
+        "breadth_positive_pct": 91.37931034482759,
+        "btc_return_24h": 1.5858880332400904,
+        "large_return_24h": 2.7574203136384634,
+        "mid_return_24h": 2.3997330519686426,
+        "momentum_participation": 10.344827586206897,
+        "small_return_24h": 1.4931195825967987
       },
       "to_group": "mixed"
     }
@@ -32,10 +32,10 @@
   "conflicts": [],
   "errors": [],
   "freshness": "FRESH",
-  "generated_at_utc": "2026-10-26T17:57:41+00:00",
+  "generated_at_utc": "2026-10-28T05:58:13+00:00",
   "module_name": "capital_flow",
   "module_version": "1.0.0",
-  "report_date": "2026-10-26",
+  "report_date": "2026-10-28",
   "risks": [
     "CAPITAL_FLOW_IS_INFERRED_NOT_OBSERVED"
   ],

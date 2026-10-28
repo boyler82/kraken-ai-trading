@@ -1,64 +1,64 @@
 {
   "candidates": [
     {
-      "asset": "NIGHT",
-      "change_24h_pct": 6.251655629139075,
+      "asset": "PEPE",
+      "change_24h_pct": 11.798794622160424,
       "freshness_status": "FRESH",
-      "latest_completed_candle_timestamp": "2026-10-26T16:00:00+00:00",
-      "momentum_breakout_score": 67.0,
+      "latest_completed_candle_timestamp": "2026-10-28T04:00:00+00:00",
+      "momentum_breakout_score": 65.8017,
       "momentum_stage": "EARLY_MOMENTUM",
       "overextension_risk": "MEDIUM",
-      "relative_strength_vs_btc_24h_pct": 6.966921195645015
+      "relative_strength_vs_btc_24h_pct": 10.212906588920337
     },
     {
-      "asset": "STRK",
-      "change_24h_pct": 0.1536772777168016,
+      "asset": "LINK",
+      "change_24h_pct": 3.6017749744843064,
       "freshness_status": "FRESH",
-      "latest_completed_candle_timestamp": "2026-10-26T16:00:00+00:00",
-      "momentum_breakout_score": 56.0189,
+      "latest_completed_candle_timestamp": "2026-10-28T04:00:00+00:00",
+      "momentum_breakout_score": 43.2704,
       "momentum_stage": "EARLY_MOMENTUM",
-      "overextension_risk": "LOW",
-      "relative_strength_vs_btc_24h_pct": 0.868942844222742
+      "overextension_risk": "MEDIUM",
+      "relative_strength_vs_btc_24h_pct": 2.015886941244216
     },
     {
-      "asset": "HYPE",
-      "change_24h_pct": 1.266477125872334,
+      "asset": "AKE",
+      "change_24h_pct": -28.554831987496755,
       "freshness_status": "FRESH",
-      "latest_completed_candle_timestamp": "2026-10-26T16:00:00+00:00",
-      "momentum_breakout_score": 51.1526,
+      "latest_completed_candle_timestamp": "2026-10-28T04:00:00+00:00",
+      "momentum_breakout_score": 39.407,
       "momentum_stage": "EARLY_MOMENTUM",
       "overextension_risk": "LOW",
-      "relative_strength_vs_btc_24h_pct": 1.9817426923782744
+      "relative_strength_vs_btc_24h_pct": -30.140720020736843
     },
     {
-      "asset": "BONK",
-      "change_24h_pct": 0.8261731658955718,
+      "asset": "XLM",
+      "change_24h_pct": 2.5079156460959373,
       "freshness_status": "FRESH",
-      "latest_completed_candle_timestamp": "2026-10-26T16:00:00+00:00",
-      "momentum_breakout_score": 50.1846,
+      "latest_completed_candle_timestamp": "2026-10-28T04:00:00+00:00",
+      "momentum_breakout_score": 36.0658,
       "momentum_stage": "EARLY_MOMENTUM",
       "overextension_risk": "LOW",
-      "relative_strength_vs_btc_24h_pct": 1.5414387324015122
+      "relative_strength_vs_btc_24h_pct": 0.9220276128558468
     },
     {
-      "asset": "UNI",
-      "change_24h_pct": 1.5507552566147886,
+      "asset": "HBAR",
+      "change_24h_pct": 0.3937007874015741,
       "freshness_status": "FRESH",
-      "latest_completed_candle_timestamp": "2026-10-26T16:00:00+00:00",
-      "momentum_breakout_score": 49.6218,
+      "latest_completed_candle_timestamp": "2026-10-28T04:00:00+00:00",
+      "momentum_breakout_score": 33.1669,
       "momentum_stage": "EARLY_MOMENTUM",
       "overextension_risk": "LOW",
-      "relative_strength_vs_btc_24h_pct": 2.266020823120729
+      "relative_strength_vs_btc_24h_pct": -1.1921872458385163
     }
   ],
   "freshness": "FRESH",
-  "generated_at_utc": "2026-10-26T17:57:41+00:00",
+  "generated_at_utc": "2026-10-28T05:58:13+00:00",
   "module_name": "momentum",
   "risks": [],
   "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
   "status": "OK",
   "summary": {
-    "active_count": 16
+    "active_count": 6
   },
   "unknowns": []
 }

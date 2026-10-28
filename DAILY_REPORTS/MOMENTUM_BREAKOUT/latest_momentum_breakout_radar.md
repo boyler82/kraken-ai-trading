@@ -8,21 +8,16 @@ LIVE_NOT_AUTHORIZED
 
 ## Top 10 Early Momentum
 
-- NIGHT | score 67.00 | 24h 6.251655629139075%
-- STRK | score 56.02 | 24h 0.15367727771680162%
-- HYPE | score 51.15 | 24h 1.266477125872334%
-- BONK | score 50.18 | 24h 0.8261731658955718%
-- UNI | score 49.62 | 24h 1.5507552566147886%
-- LDO | score 48.66 | 24h 0.5434782608695565%
-- MORPHO | score 42.25 | 24h -1.9216930214941752%
-- VVV | score 40.57 | 24h -1.1234616911472872%
-- INJ | score 38.09 | 24h 0.9002057613168857%
-- PENGU | score 34.97 | 24h 0.0%
+- PEPE | score 65.80 | 24h 11.798794622160425%
+- LINK | score 43.27 | 24h 3.6017749744843064%
+- AKE | score 39.41 | 24h -28.554831987496755%
+- XLM | score 36.07 | 24h 2.5079156460959373%
+- HBAR | score 33.17 | 24h 0.3937007874015741%
+- DOGE | score 30.20 | 24h 2.877742476688794%
 
 ## Top 10 Developing Breakouts
 
-- EURC | score 45.35 | 24h -0.18995300223840772%
-- BNB | score 35.98 | 24h 0.06732646603380132%
+- None
 
 ## Confirmed Breakouts
 
@@ -30,7 +25,7 @@ LIVE_NOT_AUTHORIZED
 
 ## Extended Moves
 
-- OUSD | score 14.53 | 24h 0.0%
+- None
 
 ## Failed Breakouts
 
@@ -38,65 +33,65 @@ LIVE_NOT_AUTHORIZED
 
 ## Strongest Relative Strength vs BTC
 
-- QNT | relative_strength_vs_btc_24h_pct 11.463028668338062
-- XDC | relative_strength_vs_btc_24h_pct 7.220367607322276
-- NIGHT | relative_strength_vs_btc_24h_pct 6.966921195645015
-- PYTH | relative_strength_vs_btc_24h_pct 5.296054017366569
-- SPX | relative_strength_vs_btc_24h_pct 4.998992965671456
-- MON | relative_strength_vs_btc_24h_pct 3.1051437295799733
-- POL | relative_strength_vs_btc_24h_pct 2.5415960987188235
-- ENA | relative_strength_vs_btc_24h_pct 2.423415883733848
-- ZEC | relative_strength_vs_btc_24h_pct 2.402894008758305
-- UNI | relative_strength_vs_btc_24h_pct 2.266020823120729
+- PEPE | relative_strength_vs_btc_24h_pct 10.212906588920335
+- GRASS | relative_strength_vs_btc_24h_pct 8.930336155550455
+- ZEC | relative_strength_vs_btc_24h_pct 6.026699115808354
+- ZRO | relative_strength_vs_btc_24h_pct 5.396655607657652
+- NIGHT | relative_strength_vs_btc_24h_pct 5.269361711917919
+- BCH | relative_strength_vs_btc_24h_pct 4.536415407658478
+- NEAR | relative_strength_vs_btc_24h_pct 4.127556564690127
+- FET | relative_strength_vs_btc_24h_pct 3.824234130808768
+- PUMP | relative_strength_vs_btc_24h_pct 3.578204630852566
+- PENGU | relative_strength_vs_btc_24h_pct 3.5032048393301096
 
 ## Largest 24h Movers
 
-- QNT | change_24h_pct 10.74776310183212
-- XDC | change_24h_pct 6.505102040816335
-- NIGHT | change_24h_pct 6.251655629139075
-- PYTH | change_24h_pct 4.580788450860629
-- SPX | change_24h_pct 4.283727399165516
-- MON | change_24h_pct 2.389878163074033
-- POL | change_24h_pct 1.826330532212883
-- ENA | change_24h_pct 1.7081503172279078
-- ZEC | change_24h_pct 1.6876284422523646
-- UNI | change_24h_pct 1.5507552566147886
+- PEPE | change_24h_pct 11.798794622160425
+- GRASS | change_24h_pct 10.516224188790545
+- ZEC | change_24h_pct 7.612587149048444
+- ZRO | change_24h_pct 6.982543640897743
+- NIGHT | change_24h_pct 6.85524974515801
+- BCH | change_24h_pct 6.122303440898569
+- NEAR | change_24h_pct 5.713444597930217
+- FET | change_24h_pct 5.410122164048858
+- PUMP | change_24h_pct 5.1640926640926565
+- PENGU | change_24h_pct 5.0890928725702
 
 ## Largest 48h Movers
 
-- QNT | change_48h_pct 17.056969151092094
-- ENA | change_48h_pct 11.087420042643936
-- GRASS | change_48h_pct 10.519563822963441
-- SPX | change_48h_pct 10.362084191934052
-- PYTH | change_48h_pct 9.125144843568943
-- NIGHT | change_48h_pct 8.346839546191266
-- ZEC | change_48h_pct 6.922571611319506
-- UNI | change_48h_pct 6.131338620523907
-- DASH | change_48h_pct 4.850088183421519
-- MON | change_48h_pct 4.846449136276387
+- NIGHT | change_48h_pct 13.847407005158828
+- PEPE | change_48h_pct 10.315645013723707
+- MORPHO | change_48h_pct 9.475313510529215
+- SPX | change_48h_pct 9.438202247191008
+- ZEC | change_48h_pct 9.117114422901196
+- DASH | change_48h_pct 7.457136146559162
+- HYPE | change_48h_pct 7.34634661039304
+- GRASS | change_48h_pct 6.707490743377953
+- XDC | change_48h_pct 5.982905982905984
+- BCH | change_48h_pct 5.655152827576426
 
 ## Largest Positive Acceleration
 
-- NIGHT | acceleration_4h_pct 3.812465755919092
-- STRK | acceleration_4h_pct 3.6171627423559394
-- MON | acceleration_4h_pct 3.1026320926600848
-- VVV | acceleration_4h_pct 2.685264630740425
-- PEPE | acceleration_4h_pct 2.3728329494026035
-- AERO | acceleration_4h_pct 2.191963727419033
-- MORPHO | acceleration_4h_pct 2.0594949604999413
-- UNI | acceleration_4h_pct 1.97898878974343
-- CC | acceleration_4h_pct 1.5709385356335148
-- BONK | acceleration_4h_pct 1.5338097905011283
+- AKE | acceleration_4h_pct 6.347738769443533
+- PEPE | acceleration_4h_pct 2.760331349277778
+- XDC | acceleration_4h_pct 1.592805203666503
+- DASH | acceleration_4h_pct 1.479805478003604
+- ZRO | acceleration_4h_pct 1.000382070536654
+- UNI | acceleration_4h_pct 0.9847730540784472
+- ALGO | acceleration_4h_pct 0.9396204963099342
+- BNB | acceleration_4h_pct 0.9225947123228773
+- ZEC | acceleration_4h_pct 0.8537657647432972
+- INJ | acceleration_4h_pct 0.851426024344093
 
 ## Volume Expansion Leaders
 
-- PENGU | volume_z_score 9.247358818221969
-- NEAR | volume_z_score 6.98085275772029
-- ZRO | volume_z_score 6.44342153234949
-- BONK | volume_z_score 5.636779830126613
-- AAVE | volume_z_score 4.674244067354391
-- ADA | volume_z_score 4.631273776265587
-- APT | volume_z_score 4.381415930194011
-- ONDO | volume_z_score 4.3254119711347485
-- NIGHT | volume_z_score 4.0553634183591685
-- MON | volume_z_score 3.989373329000694
+- KAS | volume_z_score 4.012539299032019
+- HBAR | volume_z_score 2.714294664979506
+- SKY | volume_z_score 2.483356046695405
+- PEPE | volume_z_score 2.4665654601407105
+- LINK | volume_z_score 2.0755371295315106
+- ZRO | volume_z_score 1.814899158060617
+- STRK | volume_z_score 1.2926499402299299
+- UNI | volume_z_score 1.0368716123940862
+- BONK | volume_z_score 0.793331503771271
+- AVAX | volume_z_score 0.6346229157784997

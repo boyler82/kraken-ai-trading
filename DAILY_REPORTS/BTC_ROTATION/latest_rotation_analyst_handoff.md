@@ -1,12 +1,12 @@
 # BTC Rotation Analyst Handoff
 
-Report timestamp: 2026-10-26T17:57:41+00:00
+Report timestamp: 2026-10-28T05:58:13+00:00
 Objective: BTC_ACCUMULATION
 Current holding: not applicable (INTENTIONALLY_ABSENT_MARKET_ONLY; benchmark BTC)
 Capital reference: not provided
-BTC hold score: 37.163
+BTC hold score: 66.6426
 Market regime: BEAR
-Preferred state: MONITOR_ALT
+Preferred state: HOLD_BTC_BENCHMARK
 Cost guard: PASS
 Cooldown: PASS
 Confidence: LOW
@@ -14,9 +14,9 @@ Invalidation: ALT/BTC closes below relative EMA20
 
 ## Top candidates
 
-- SPX | score 75.9995 | advantage +38.84 | relative 24h 5.03500663439862% | upside/downside 9.82%/-1.72% | R/R 5.362849152495968 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE,RECENCY_BIAS_RISK
-- NIGHT | score 73.05 | advantage +35.89 | relative 24h 7.017112182852059% | upside/downside 8.96%/-5.50% | R/R 1.5206918079270415 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
-- HYPE | score 71.1629 | advantage +34.00 | relative 24h 1.9960195327970887% | upside/downside 3.12%/-1.64% | R/R 1.5378988271313045 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
+- NIGHT | score 70.8966 | advantage +4.25 | relative 24h 5.187100111969989% | upside/downside 9.68%/-2.00% | R/R 4.5476513085439105 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE,RECENCY_BIAS_RISK
+- PEPE | score 68.8034 | advantage +2.16 | relative 24h 10.053469814211358% | upside/downside 14.71%/-4.42% | R/R 3.191615212440039 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
+- ZRO | score 63.9895 | advantage -2.65 | relative 24h 5.312406784190138% | upside/downside 5.31%/-1.42% | R/R 3.3117311240274643 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
 
 ## Unknowns
 

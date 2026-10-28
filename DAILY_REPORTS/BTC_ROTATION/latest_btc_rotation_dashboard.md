@@ -9,15 +9,15 @@ USER_DECISION_REQUIRED
 
 Objective: BTC_ACCUMULATION
 Benchmark: BTC
-Preferred state: MONITOR_ALT
-BTC hold score: 37.16
+Preferred state: HOLD_BTC_BENCHMARK
+BTC hold score: 66.64
 Market regime: BEAR
 
 ## Top candidates
 
-- #1 SPX | score 76.00 | advantage +38.84 | net edge +9.22% | confidence LOW
-- #2 NIGHT | score 73.05 | advantage +35.89 | net edge +8.36% | confidence LOW
-- #3 HYPE | score 71.16 | advantage +34.00 | net edge +2.52% | confidence LOW
+- #1 NIGHT | score 70.90 | advantage +4.25 | net edge +9.08% | confidence LOW
+- #2 PEPE | score 68.80 | advantage +2.16 | net edge +14.11% | confidence LOW
+- #3 ZRO | score 63.99 | advantage -2.65 | net edge +4.71% | confidence LOW
 
 MANUAL_REVIEW_REQUIRED
 RESEARCH_ONLY
