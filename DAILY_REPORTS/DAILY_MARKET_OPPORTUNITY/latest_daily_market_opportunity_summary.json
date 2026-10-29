@@ -1,38 +1,38 @@
 {
   "ada_like_movements": [
     "PEPE",
-    "LINK",
-    "NIGHT",
-    "ZRO",
-    "SPX",
-    "ZEC",
-    "BCH",
-    "HYPE",
-    "GRASS",
-    "TAO",
-    "NEAR",
-    "PENGU",
+    "VVV",
     "BONK",
-    "SUI",
-    "AVAX",
+    "INJ",
+    "MORPHO",
     "PUMP",
-    "FET",
-    "DASH",
-    "AERO",
-    "MORPHO"
+    "KAS",
+    "ZEC",
+    "ENA",
+    "UNI",
+    "HYPE",
+    "ZRO",
+    "ARB",
+    "TIA"
   ],
   "checkpoint_resume": false,
-  "consolidation_to_breakout_transitions": [],
-  "daily_consolidation_candidates": [
-    "CRV",
-    "KAS",
-    "QNT",
-    "ENA"
+  "consolidation_to_breakout_transitions": [
+    "PEPE",
+    "PUMP",
+    "ZEC",
+    "XMR",
+    "HYPE"
   ],
-  "execution_duration_seconds": 82.62172508299773,
-  "fresh_data_assets": 58,
-  "generated_at_utc": "2026-10-28T05:58:13+00:00",
-  "kraken_mapped_assets": 58,
+  "daily_consolidation_candidates": [
+    "DASH",
+    "PEPE",
+    "QNT",
+    "NIGHT"
+  ],
+  "execution_duration_seconds": 95.93630570800451,
+  "fresh_data_assets": 68,
+  "generated_at_utc": "2026-10-29T17:47:41+00:00",
+  "kraken_mapped_assets": 68,
   "labels": [
     "RESEARCH_ONLY",
     "NOT_A_BUY_SIGNAL",
@@ -42,10 +42,10 @@
   ],
   "momentum_candidates": [
     "PEPE",
-    "LINK",
-    "AKE",
-    "XLM",
-    "HBAR"
+    "VVV",
+    "BONK",
+    "INJ",
+    "PENGU"
   ],
   "universe_size": 150
 }

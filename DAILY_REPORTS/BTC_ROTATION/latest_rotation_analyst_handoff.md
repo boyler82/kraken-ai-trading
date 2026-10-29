@@ -1,10 +1,10 @@
 # BTC Rotation Analyst Handoff
 
-Report timestamp: 2026-10-28T05:58:13+00:00
+Report timestamp: 2026-10-29T17:47:41+00:00
 Objective: BTC_ACCUMULATION
 Current holding: not applicable (INTENTIONALLY_ABSENT_MARKET_ONLY; benchmark BTC)
 Capital reference: not provided
-BTC hold score: 66.6426
+BTC hold score: 65.0076
 Market regime: BEAR
 Preferred state: HOLD_BTC_BENCHMARK
 Cost guard: PASS
@@ -14,9 +14,9 @@ Invalidation: ALT/BTC closes below relative EMA20
 
 ## Top candidates
 
-- NIGHT | score 70.8966 | advantage +4.25 | relative 24h 5.187100111969989% | upside/downside 9.68%/-2.00% | R/R 4.5476513085439105 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE,RECENCY_BIAS_RISK
-- PEPE | score 68.8034 | advantage +2.16 | relative 24h 10.053469814211358% | upside/downside 14.71%/-4.42% | R/R 3.191615212440039 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
-- ZRO | score 63.9895 | advantage -2.65 | relative 24h 5.312406784190138% | upside/downside 5.31%/-1.42% | R/R 3.3117311240274643 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
+- UNI | score 71.5585 | advantage +6.55 | relative 24h 3.2062452943219855% | upside/downside 6.13%/-1.90% | R/R 2.9173878975881284 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
+- INJ | score 71.0018 | advantage +5.99 | relative 24h 4.4130537115465% | upside/downside 5.58%/-2.10% | R/R 2.365893416897532 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
+- ZEC | score 70.4906 | advantage +5.48 | relative 24h 4.567256738485037% | upside/downside 10.16%/-3.66% | R/R 2.6117293151752774 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
 
 ## Unknowns
 

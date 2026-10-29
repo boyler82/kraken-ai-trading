@@ -5,36 +5,50 @@ RESEARCH_ONLY | NOT_A_BUY_SIGNAL | NOT_A_SELL_SIGNAL | USER_DECISION_REQUIRED | 
 ## Market Summary
 
 - State: PRE_MOVE_CONDITIONS_PRESENT
-- Assets evaluated: 58
-- Pre-move candidates: 1
+- Assets evaluated: 68
+- Pre-move candidates: 3
 - PRE_MOVE_STRONG: 0
-- PRE_MOVE_BUILDING: 0
-- Too late: 16
+- PRE_MOVE_BUILDING: 2
+- Too late: 39
 
 ## Top Pre-Move Candidates
 
-### AKE
-- Classification: EARLY_EXPANSION_DEVELOPING | combined: 58.15 | energy: 50.0
+### DASH
+- Classification: PRE_MOVE_BUILDING | combined: 72.22 | energy: 58.87
 - Confidence: 69 (MEDIUM)
-- Range position: 6.157128749270145% | 24h return: -28.554831987496755% | breakout distance: 45.4948%
+- Range position: 25.20214140668269% | 24h return: -2.4586617505972685% | breakout distance: 7.2183%
 - Main strength: range_position
 - Primary risk: volatility_compression
 
+### NEAR
+- Classification: PRE_MOVE_BUILDING | combined: 66.22 | energy: 65.21
+- Confidence: 69 (MEDIUM)
+- Range position: 65.17190503867299% | 24h return: 0.09363091997822703% | breakout distance: 8.2017%
+- Main strength: data_quality
+- Primary risk: volatility_compression
+
+### PYTH
+- Classification: EARLY_EXPANSION_DEVELOPING | combined: 58.01 | energy: 50.0
+- Confidence: 69 (MEDIUM)
+- Range position: 61.106046794287586% | 24h return: 1.426352210139803% | breakout distance: 6.4478%
+- Main strength: volume_buildup
+- Primary risk: cross_module_improvement
+
 ## Fastest Energy Build
 
-- XMR: energy 60.35, combined 58.33
-- AKE: energy 50.0, combined 58.15
-- EURC: energy 41.04, combined 55.19
-- CRV: energy 40.85, combined 54.07
-- TIA: energy 40.27, combined 50.96
+- NEAR: energy 65.21, combined 66.22
+- DASH: energy 58.87, combined 72.22
+- ICP: energy 55.95, combined 58.46
+- PYTH: energy 50.0, combined 58.01
+- VIRTUAL: energy 50.0, combined 53.36
 
 ## Too Late / Already Extended
 
-- PEPE: RETURN_24H_EXCEEDED, RETURN_48H_EXCEEDED, UPPER_RANGE_POSITION
-- KAS: EXTREME_VOLUME_SPIKE
-- ASTER: UPPER_RANGE_POSITION
-- TAO: UPPER_RANGE_POSITION
-- DOGE: UPPER_RANGE_POSITION
+- PUMP: RETURN_24H_EXCEEDED, UPPER_RANGE_POSITION
+- BONK: UPPER_RANGE_POSITION
+- XMR: EMA_ATR_EXTENSION
+- ONDO: UPPER_RANGE_POSITION
+- PENGU: UPPER_RANGE_POSITION
 
 ## PUMP Retrospective
 

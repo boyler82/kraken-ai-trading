@@ -10,14 +10,14 @@ USER_DECISION_REQUIRED
 Objective: BTC_ACCUMULATION
 Benchmark: BTC
 Preferred state: HOLD_BTC_BENCHMARK
-BTC hold score: 66.64
+BTC hold score: 65.01
 Market regime: BEAR
 
 ## Top candidates
 
-- #1 NIGHT | score 70.90 | advantage +4.25 | net edge +9.08% | confidence LOW
-- #2 PEPE | score 68.80 | advantage +2.16 | net edge +14.11% | confidence LOW
-- #3 ZRO | score 63.99 | advantage -2.65 | net edge +4.71% | confidence LOW
+- #1 UNI | score 71.56 | advantage +6.55 | net edge +5.53% | confidence LOW
+- #2 INJ | score 71.00 | advantage +5.99 | net edge +4.98% | confidence LOW
+- #3 ZEC | score 70.49 | advantage +5.48 | net edge +9.56% | confidence LOW
 
 MANUAL_REVIEW_REQUIRED
 RESEARCH_ONLY

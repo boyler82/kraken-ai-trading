@@ -1,5 +1,5 @@
 asset,regime,signals,win_rate_pct,avg_return_pct,median_return_pct,worst_return_pct,best_return_pct
 BTC,BELOW_MA200,102,58.82,0.37,0.55,-10.52,11.85
-BTC,ABOVE_MA200,58,58.62,0.04,0.32,-5.88,6.31
-ETH,ABOVE_MA200,50,56.0,0.62,0.55,-8.09,18.54
+BTC,ABOVE_MA200,59,59.32,0.06,0.34,-5.88,6.31
+ETH,ABOVE_MA200,51,56.86,0.62,0.42,-8.09,18.54
 ETH,BELOW_MA200,98,62.24,0.41,0.75,-19.54,14.52
