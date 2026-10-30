@@ -1,5 +1,6 @@
 from __future__ import annotations
 import copy,json,sys
+import pytest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 import run_daily_quant_system as q
@@ -48,3 +49,44 @@ def test_orchestration_dependency_order(monkeypatch,tmp_path):
 def test_no_private_api_order_or_v2_runner_invocation():
  source=Path(q.__file__).read_text().lower();assert '/private/' not in source;assert 'addorder' not in source and 'cancelorder' not in source
  assert 'range_fixed_5_v2_official_runner.py' in source and 'subprocess' not in source
+
+
+@pytest.mark.parametrize('offline,refresh_fails', [(False,False),(True,False),(False,True)])
+def test_top3_benchmark_dependency_is_refreshed_before_capture(monkeypatch,tmp_path,offline,refresh_fails):
+ import quant_research_v2.benchmark_refresh as benchmark
+ import quant_research_v2.integration as integration
+ paths,*_=fixtures(tmp_path)
+ calls=[]
+ runner=lambda **kwargs:{'success':True,'warnings':[]}
+ monkeypatch.setattr(q,'run_complete_research',runner)
+ monkeypatch.setattr(q,'PATHS',paths)
+ monkeypatch.setattr(q,'OUT',tmp_path/'out')
+ real_utc=q.utc
+ monkeypatch.setattr(q,'utc',lambda value=None:real_utc(NOW if value is None else value))
+ monkeypatch.setattr(q,'transition_changes',lambda now:([],[]))
+ monkeypatch.setattr(q,'read_v2_status',lambda db,now:{})
+ monkeypatch.setattr(q,'clock_safety_preflight',lambda:{'status':'SAFE'})
+ monkeypatch.setattr(q,'run_evidence_audit',lambda:None)
+ monkeypatch.setattr(q,'refresh_forward_board',lambda **kwargs:None)
+ monkeypatch.setattr(q,'build_market_memory',lambda **kwargs:{})
+ monkeypatch.setattr(q,'write_memory',lambda memory:None)
+ monkeypatch.setattr(q,'append_opportunity_observations',lambda chief:None)
+ monkeypatch.setattr(q,'opportunity_context',lambda *args:{})
+ monkeypatch.setattr(q,'canonical_decision_sections',lambda *args:{})
+ monkeypatch.setattr(q,'render',lambda packet:'test')
+ def refresh(*args):
+  calls.append('refresh')
+  if refresh_fails:raise ValueError('offline')
+ monkeypatch.setattr(benchmark,'refresh_hourly_btc',refresh)
+ def capture(*args,**kwargs):
+  assert kwargs['genuine']
+  assert calls==([] if offline else ['refresh'])
+  calls.append('capture')
+  return {'status':'OK'}
+ monkeypatch.setattr(q,'ranking_tracker_section',capture)
+ monkeypatch.setattr(integration,'extend_handoff',lambda *args:calls.append('v2'))
+ packet,_,_=q.orchestrate(runner=runner,no_network=offline,out_dir=q.OUT)
+ assert calls==(['capture'] if offline else ['refresh','capture','v2'])
+ if refresh_fails:
+  assert any('TOP3_BTC_REFRESH_UNAVAILABLE' in x for x in packet['system_health']['warnings'])
+  assert packet['run_metadata']['pipeline_status']=='OK_WITH_WARNINGS'

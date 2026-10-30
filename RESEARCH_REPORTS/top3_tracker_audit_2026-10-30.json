@@ -1,0 +1,4318 @@
+{
+  "as_of": "2026-10-30T16:10:41.465134+00:00",
+  "inspected_at": "2026-10-30T16:49:44.091233+00:00",
+  "trading": "DISABLED",
+  "policy": "READ_ONLY_NO_HISTORICAL_REFERENCE_BACKFILL",
+  "totals": {
+    "observations": 52,
+    "price_completed": 9,
+    "price_pending": 43,
+    "reference_missing": 34,
+    "price_not_yet_mature": 18,
+    "price_mature_reference_missing": 25,
+    "price_mature_window_pending": 0
+  },
+  "statuses": {
+    "NOT_YET_MATURE": 18,
+    "COMPLETED": 9,
+    "IMMUTABLE_REFERENCE_UNAVAILABLE": 25
+  },
+  "table_hashes": {
+    "scans": "14dd134ecfce1dcbf39ab6af6e1f752104e9b400ff5e7904a45577a1ca489e59",
+    "observations": "b3e8a6a10d181c617438d9ae03f46503fec926868a007e21f13cbb1b98d936f1",
+    "outcomes": "f3f8df13e67f5d71ceda390ce19e0ec8131c6d8e52f30530428008110b5245c7"
+  },
+  "groups": [
+    {
+      "level": "TYPE",
+      "ranking_type": "CONTINUATION",
+      "rank": null,
+      "regime": null,
+      "observations": 18,
+      "price_completed": 3,
+      "rank_completed": 12,
+      "price_pending": 15,
+      "rank_pending": 6,
+      "scans": 6,
+      "reference_missing": 12,
+      "mean_return_24h_pct": -0.5247535424011499,
+      "win_rate_pct": 33.333333333333336,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": -0.15439282255780654,
+      "mean_mfe_pct": 1.3729163803569107,
+      "mean_mae_pct": -2.0186364236754426,
+      "remained_top3_pct": 8.333333333333334,
+      "remained_top10_pct": 25.0,
+      "rank_change_known": 3,
+      "mean_rank_change": -2.0,
+      "price_not_yet_mature": 6,
+      "price_mature_reference_missing": 9,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK",
+      "ranking_type": "CONTINUATION",
+      "rank": 1,
+      "regime": null,
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": -3.4364940419043366,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": -3.0769741527781336,
+      "mean_mfe_pct": 0.759586604167839,
+      "mean_mae_pct": -3.84311289320608,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 0.0,
+      "rank_change_known": 0,
+      "mean_rank_change": null,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_REGIME",
+      "ranking_type": "CONTINUATION",
+      "rank": null,
+      "regime": "BEAR",
+      "observations": 18,
+      "price_completed": 3,
+      "rank_completed": 12,
+      "price_pending": 15,
+      "rank_pending": 6,
+      "scans": 6,
+      "reference_missing": 12,
+      "mean_return_24h_pct": -0.5247535424011499,
+      "win_rate_pct": 33.333333333333336,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": -0.15439282255780654,
+      "mean_mfe_pct": 1.3729163803569107,
+      "mean_mae_pct": -2.0186364236754426,
+      "remained_top3_pct": 8.333333333333334,
+      "remained_top10_pct": 25.0,
+      "rank_change_known": 3,
+      "mean_rank_change": -2.0,
+      "price_not_yet_mature": 6,
+      "price_mature_reference_missing": 9,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK_REGIME",
+      "ranking_type": "CONTINUATION",
+      "rank": 1,
+      "regime": "BEAR",
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": -3.4364940419043366,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": -3.0769741527781336,
+      "mean_mfe_pct": 0.759586604167839,
+      "mean_mae_pct": -3.84311289320608,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 0.0,
+      "rank_change_known": 0,
+      "mean_rank_change": null,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK",
+      "ranking_type": "CONTINUATION",
+      "rank": 2,
+      "regime": null,
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": 1.8845188284518866,
+      "win_rate_pct": 100.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 2.2638496175470646,
+      "mean_mfe_pct": 3.2334728033472926,
+      "mean_mae_pct": -1.8945606694560801,
+      "remained_top3_pct": 25.0,
+      "remained_top10_pct": 50.0,
+      "rank_change_known": 2,
+      "mean_rank_change": -1.5,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK_REGIME",
+      "ranking_type": "CONTINUATION",
+      "rank": 2,
+      "regime": "BEAR",
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": 1.8845188284518866,
+      "win_rate_pct": 100.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 2.2638496175470646,
+      "mean_mfe_pct": 3.2334728033472926,
+      "mean_mae_pct": -1.8945606694560801,
+      "remained_top3_pct": 25.0,
+      "remained_top10_pct": 50.0,
+      "rank_change_known": 2,
+      "mean_rank_change": -1.5,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK",
+      "ranking_type": "CONTINUATION",
+      "rank": 3,
+      "regime": null,
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": -0.022285413750999794,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 0.34994606755764934,
+      "mean_mfe_pct": 0.12568973355560065,
+      "mean_mae_pct": -0.31823570836416737,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 25.0,
+      "rank_change_known": 1,
+      "mean_rank_change": -3.0,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK_REGIME",
+      "ranking_type": "CONTINUATION",
+      "rank": 3,
+      "regime": "BEAR",
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": -0.022285413750999794,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 0.34994606755764934,
+      "mean_mfe_pct": 0.12568973355560065,
+      "mean_mae_pct": -0.31823570836416737,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 25.0,
+      "rank_change_known": 1,
+      "mean_rank_change": -3.0,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE",
+      "ranking_type": "REVERSAL",
+      "rank": null,
+      "regime": null,
+      "observations": 16,
+      "price_completed": 3,
+      "rank_completed": 10,
+      "price_pending": 13,
+      "rank_pending": 6,
+      "scans": 6,
+      "reference_missing": 10,
+      "mean_return_24h_pct": -1.0838667866642189,
+      "win_rate_pct": 33.333333333333336,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": -0.7155877262386016,
+      "mean_mfe_pct": 1.6328644803417374,
+      "mean_mae_pct": -3.0350276737732425,
+      "remained_top3_pct": 10.0,
+      "remained_top10_pct": 30.0,
+      "rank_change_known": 3,
+      "mean_rank_change": -1.3333333333333333,
+      "price_not_yet_mature": 6,
+      "price_mature_reference_missing": 7,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK",
+      "ranking_type": "REVERSAL",
+      "rank": 1,
+      "regime": null,
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": -1.6996251465402068,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": -1.3336386434847358,
+      "mean_mfe_pct": 0.9055340335100803,
+      "mean_mae_pct": -3.3674094586575665,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 25.0,
+      "rank_change_known": 1,
+      "mean_rank_change": -3.0,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_REGIME",
+      "ranking_type": "REVERSAL",
+      "rank": null,
+      "regime": "BEAR",
+      "observations": 16,
+      "price_completed": 3,
+      "rank_completed": 10,
+      "price_pending": 13,
+      "rank_pending": 6,
+      "scans": 6,
+      "reference_missing": 10,
+      "mean_return_24h_pct": -1.0838667866642189,
+      "win_rate_pct": 33.333333333333336,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": -0.7155877262386016,
+      "mean_mfe_pct": 1.6328644803417374,
+      "mean_mae_pct": -3.0350276737732425,
+      "remained_top3_pct": 10.0,
+      "remained_top10_pct": 30.0,
+      "rank_change_known": 3,
+      "mean_rank_change": -1.3333333333333333,
+      "price_not_yet_mature": 6,
+      "price_mature_reference_missing": 7,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK_REGIME",
+      "ranking_type": "REVERSAL",
+      "rank": 1,
+      "regime": "BEAR",
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": -1.6996251465402068,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": -1.3336386434847358,
+      "mean_mfe_pct": 0.9055340335100803,
+      "mean_mae_pct": -3.3674094586575665,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 25.0,
+      "rank_change_known": 1,
+      "mean_rank_change": -3.0,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK",
+      "ranking_type": "REVERSAL",
+      "rank": 2,
+      "regime": null,
+      "observations": 5,
+      "price_completed": 1,
+      "rank_completed": 3,
+      "price_pending": 4,
+      "rank_pending": 2,
+      "scans": 5,
+      "reference_missing": 3,
+      "mean_return_24h_pct": -3.4364940419043366,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": -3.0769741527781336,
+      "mean_mfe_pct": 0.759586604167839,
+      "mean_mae_pct": -3.84311289320608,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 0.0,
+      "rank_change_known": 0,
+      "mean_rank_change": null,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 2,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK_REGIME",
+      "ranking_type": "REVERSAL",
+      "rank": 2,
+      "regime": "BEAR",
+      "observations": 5,
+      "price_completed": 1,
+      "rank_completed": 3,
+      "price_pending": 4,
+      "rank_pending": 2,
+      "scans": 5,
+      "reference_missing": 3,
+      "mean_return_24h_pct": -3.4364940419043366,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": -3.0769741527781336,
+      "mean_mfe_pct": 0.759586604167839,
+      "mean_mae_pct": -3.84311289320608,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 0.0,
+      "rank_change_known": 0,
+      "mean_rank_change": null,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 2,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK",
+      "ranking_type": "REVERSAL",
+      "rank": 3,
+      "regime": null,
+      "observations": 5,
+      "price_completed": 1,
+      "rank_completed": 3,
+      "price_pending": 4,
+      "rank_pending": 2,
+      "scans": 5,
+      "reference_missing": 3,
+      "mean_return_24h_pct": 1.8845188284518866,
+      "win_rate_pct": 100.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 2.2638496175470646,
+      "mean_mfe_pct": 3.2334728033472926,
+      "mean_mae_pct": -1.8945606694560801,
+      "remained_top3_pct": 33.333333333333336,
+      "remained_top10_pct": 66.66666666666667,
+      "rank_change_known": 2,
+      "mean_rank_change": -0.5,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 2,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK_REGIME",
+      "ranking_type": "REVERSAL",
+      "rank": 3,
+      "regime": "BEAR",
+      "observations": 5,
+      "price_completed": 1,
+      "rank_completed": 3,
+      "price_pending": 4,
+      "rank_pending": 2,
+      "scans": 5,
+      "reference_missing": 3,
+      "mean_return_24h_pct": 1.8845188284518866,
+      "win_rate_pct": 100.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 2.2638496175470646,
+      "mean_mfe_pct": 3.2334728033472926,
+      "mean_mae_pct": -1.8945606694560801,
+      "remained_top3_pct": 33.333333333333336,
+      "remained_top10_pct": 66.66666666666667,
+      "rank_change_known": 2,
+      "mean_rank_change": -0.5,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 2,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": null,
+      "regime": null,
+      "observations": 18,
+      "price_completed": 3,
+      "rank_completed": 12,
+      "price_pending": 15,
+      "rank_pending": 6,
+      "scans": 6,
+      "reference_missing": 12,
+      "mean_return_24h_pct": 0.5377450063625444,
+      "win_rate_pct": 33.333333333333336,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 0.912061561867176,
+      "mean_mfe_pct": 1.1302347851973444,
+      "mean_mae_pct": -0.8833786084712747,
+      "remained_top3_pct": 16.666666666666668,
+      "remained_top10_pct": 50.0,
+      "rank_change_known": 6,
+      "mean_rank_change": -2.8333333333333335,
+      "price_not_yet_mature": 6,
+      "price_mature_reference_missing": 9,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 1,
+      "regime": null,
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": 1.8845188284518866,
+      "win_rate_pct": 100.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 2.2638496175470646,
+      "mean_mfe_pct": 3.2334728033472926,
+      "mean_mae_pct": -1.8945606694560801,
+      "remained_top3_pct": 50.0,
+      "remained_top10_pct": 50.0,
+      "rank_change_known": 2,
+      "mean_rank_change": -2.0,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_REGIME",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": null,
+      "regime": "BEAR",
+      "observations": 18,
+      "price_completed": 3,
+      "rank_completed": 12,
+      "price_pending": 15,
+      "rank_pending": 6,
+      "scans": 6,
+      "reference_missing": 12,
+      "mean_return_24h_pct": 0.5377450063625444,
+      "win_rate_pct": 33.333333333333336,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 0.912061561867176,
+      "mean_mfe_pct": 1.1302347851973444,
+      "mean_mae_pct": -0.8833786084712747,
+      "remained_top3_pct": 16.666666666666668,
+      "remained_top10_pct": 50.0,
+      "rank_change_known": 6,
+      "mean_rank_change": -2.8333333333333335,
+      "price_not_yet_mature": 6,
+      "price_mature_reference_missing": 9,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK_REGIME",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 1,
+      "regime": "BEAR",
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": 1.8845188284518866,
+      "win_rate_pct": 100.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 2.2638496175470646,
+      "mean_mfe_pct": 3.2334728033472926,
+      "mean_mae_pct": -1.8945606694560801,
+      "remained_top3_pct": 50.0,
+      "remained_top10_pct": 50.0,
+      "rank_change_known": 2,
+      "mean_rank_change": -2.0,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 2,
+      "regime": null,
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": -0.022285413750999794,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 0.34994606755764934,
+      "mean_mfe_pct": 0.12568973355560065,
+      "mean_mae_pct": -0.31823570836416737,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 50.0,
+      "rank_change_known": 2,
+      "mean_rank_change": -4.0,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK_REGIME",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 2,
+      "regime": "BEAR",
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": -0.022285413750999794,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 0.34994606755764934,
+      "mean_mfe_pct": 0.12568973355560065,
+      "mean_mae_pct": -0.31823570836416737,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 50.0,
+      "rank_change_known": 2,
+      "mean_rank_change": -4.0,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 3,
+      "regime": null,
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": -0.24899839561325354,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 0.12238900049681423,
+      "mean_mfe_pct": 0.0315418186891403,
+      "mean_mae_pct": -0.43733944759357657,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 50.0,
+      "rank_change_known": 2,
+      "mean_rank_change": -2.5,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    },
+    {
+      "level": "TYPE_RANK_REGIME",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 3,
+      "regime": "BEAR",
+      "observations": 6,
+      "price_completed": 1,
+      "rank_completed": 4,
+      "price_pending": 5,
+      "rank_pending": 2,
+      "scans": 6,
+      "reference_missing": 4,
+      "mean_return_24h_pct": -0.24899839561325354,
+      "win_rate_pct": 0.0,
+      "mean_btc_return_pct": -0.37093341441166716,
+      "mean_btc_relative_return_pct": 0.12238900049681423,
+      "mean_mfe_pct": 0.0315418186891403,
+      "mean_mae_pct": -0.43733944759357657,
+      "remained_top3_pct": 0.0,
+      "remained_top10_pct": 50.0,
+      "rank_change_known": 2,
+      "mean_rank_change": -2.5,
+      "price_not_yet_mature": 2,
+      "price_mature_reference_missing": 3,
+      "price_mature_window_pending": 0
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "14b0d1b71f4fc8d73e4a2410facd11048ff87fae7945d263c58affce9bf736b0",
+      "observed_at": "2026-10-29T17:50:21.431379+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 1,
+      "asset": "DASH",
+      "pair": "DASHUSD",
+      "price_timestamp": "2026-10-29T17:00:00+00:00",
+      "target_timestamp": "2026-10-30T17:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-30T17:50:21.431379+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [],
+      "frozen_asset_t0": 51.852,
+      "frozen_btc_t0": 81174.8,
+      "reasons": [
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 51.852,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/DASHUSD_1H.csv",
+            "sha256": "d174ac9f83e9c86954744b25229dbc246a64d3bba9048e54eab5aa0f79d38e92",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 81174.8,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "2afc89fcb18d2657da14d87daed38bf3b80875c609b64ad8d4fad439354effff",
+      "observed_at": "2026-10-29T17:50:21.431379+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 2,
+      "asset": "NIGHT",
+      "pair": "NIGHTUSD",
+      "price_timestamp": "2026-10-29T17:00:00+00:00",
+      "target_timestamp": "2026-10-30T17:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-30T17:50:21.431379+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [],
+      "frozen_asset_t0": 0.03996,
+      "frozen_btc_t0": 81174.8,
+      "reasons": [
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.03996,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/NIGHTUSD_1H.csv",
+            "sha256": "33fa14603ad2570e0fe4389c537ed27494bda7abb728f51a0d70cb8025d47c6f",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 81174.8,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "e632b8e75e2caa636e78252576de0845c2e4af64ae00fa3b31f1cca9583d83f0",
+      "observed_at": "2026-10-29T17:50:21.431379+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 3,
+      "asset": "AERO",
+      "pair": "AEROUSD",
+      "price_timestamp": "2026-10-29T17:00:00+00:00",
+      "target_timestamp": "2026-10-30T17:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-30T17:50:21.431379+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [],
+      "frozen_asset_t0": 0.6968,
+      "frozen_btc_t0": 81174.8,
+      "reasons": [
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.6968,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AEROUSD_1H.csv",
+            "sha256": "bac7383b6c268b19ec2581e8937588e1303d7e6138a69c98e8f09ff74c5e6f26",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 81174.8,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "385d98061c2c74bf7569295bd29b7cbfe2e199b63b1f3fb283626115085c88b4",
+      "observed_at": "2026-10-30T16:10:41.465134+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 1,
+      "asset": "POL",
+      "pair": "POLUSD",
+      "price_timestamp": "2026-10-30T16:00:00+00:00",
+      "target_timestamp": "2026-10-31T16:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-31T16:10:41.465134+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 0.09367,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0",
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.09367,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/POLUSD_1H.csv",
+            "sha256": "91a17115df31d95622e1cd12ab105245a8da2ca109c1d16f46a43a0b000cc86a",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 77479.4,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "131e821847f72b57a2667c8a349ed75d5fdc2fba701212c2cc277d24245eea84",
+      "observed_at": "2026-10-30T16:10:41.465134+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 2,
+      "asset": "XLM",
+      "pair": "XLMUSD",
+      "price_timestamp": "2026-10-30T16:00:00+00:00",
+      "target_timestamp": "2026-10-31T16:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-31T16:10:41.465134+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 0.17257,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0",
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.17257,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XLMUSD_1H.csv",
+            "sha256": "6d226ccd0640c7da8fff5f9a0deae76b39437fad7c4531bbea908bf4e6af36ff",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 77479.4,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "e960d4a693137ace2db183b44af08640a05024116f57fe7b8b697e7c195c61ed",
+      "observed_at": "2026-10-30T16:10:41.465134+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 3,
+      "asset": "BCH",
+      "pair": "BCHUSD",
+      "price_timestamp": "2026-10-30T16:00:00+00:00",
+      "target_timestamp": "2026-10-31T16:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-31T16:10:41.465134+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 292.34,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0",
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 292.34,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/BCHUSD_1H.csv",
+            "sha256": "e249dc232f8e19b2ccadf5ec3e55a6c61f37bb9a5d13540ee9dde8662f8d834b",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 77479.4,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "5213253ec10f54090fd0768b4e308b7141a0468fbdc83716af4df324359a0ef6",
+      "observed_at": "2026-10-24T14:54:01.588894+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 1,
+      "asset": "ADA",
+      "pair": "ADAUSD",
+      "price_timestamp": "2026-10-24T14:00:00+00:00",
+      "target_timestamp": "2026-10-25T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-25T14:54:01.588894+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "COMPLETED",
+      "immutable_missing": [],
+      "frozen_asset_t0": 0.207281,
+      "frozen_btc_t0": 80580.5,
+      "reasons": [],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.207281,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ADAUSD_1H.csv",
+            "sha256": "da6bcac282f5d37e34456752ecf3069db12d275e38eb2765d0f6dc10bee3d336",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.203758,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ADAUSD_1H.csv",
+            "sha256": "da6bcac282f5d37e34456752ecf3069db12d275e38eb2765d0f6dc10bee3d336",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ADAUSD_1H.csv",
+            "sha256": "da6bcac282f5d37e34456752ecf3069db12d275e38eb2765d0f6dc10bee3d336"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80580.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "e95e68c86e3feba84e55233571d5fa273295a82160400abc6a3f51839b2f4740",
+      "observed_at": "2026-10-24T14:54:01.588894+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 2,
+      "asset": "CRV",
+      "pair": "CRVUSD",
+      "price_timestamp": "2026-10-24T14:00:00+00:00",
+      "target_timestamp": "2026-10-25T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-25T14:54:01.588894+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "COMPLETED",
+      "immutable_missing": [],
+      "frozen_asset_t0": 0.35414,
+      "frozen_btc_t0": 80580.5,
+      "reasons": [],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.35414,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/CRVUSD_1H.csv",
+            "sha256": "97528583585b694aa934025cdda3f6c5f428820aa2cfe5a461e83ea898a893e3",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.34197,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/CRVUSD_1H.csv",
+            "sha256": "97528583585b694aa934025cdda3f6c5f428820aa2cfe5a461e83ea898a893e3",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/CRVUSD_1H.csv",
+            "sha256": "97528583585b694aa934025cdda3f6c5f428820aa2cfe5a461e83ea898a893e3"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80580.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "9f1d84308d6f54e6d1137622a4013a16cb9aa4e0f235c4900fae13af3e6e76a8",
+      "observed_at": "2026-10-24T14:54:01.588894+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 3,
+      "asset": "XMR",
+      "pair": "XMRUSD",
+      "price_timestamp": "2026-10-24T14:00:00+00:00",
+      "target_timestamp": "2026-10-25T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-25T14:54:01.588894+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "COMPLETED",
+      "immutable_missing": [],
+      "frozen_asset_t0": 597.5,
+      "frozen_btc_t0": 80580.5,
+      "reasons": [],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 597.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 608.76,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80580.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "cd82b61be9d6390f7e75c3c62e3471f7a502083270d375ba784686c22efe299e",
+      "observed_at": "2026-10-24T14:54:01.588894+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 1,
+      "asset": "CRV",
+      "pair": "CRVUSD",
+      "price_timestamp": "2026-10-24T14:00:00+00:00",
+      "target_timestamp": "2026-10-25T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-25T14:54:01.588894+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "COMPLETED",
+      "immutable_missing": [],
+      "frozen_asset_t0": 0.35414,
+      "frozen_btc_t0": 80580.5,
+      "reasons": [],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.35414,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/CRVUSD_1H.csv",
+            "sha256": "97528583585b694aa934025cdda3f6c5f428820aa2cfe5a461e83ea898a893e3",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.34197,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/CRVUSD_1H.csv",
+            "sha256": "97528583585b694aa934025cdda3f6c5f428820aa2cfe5a461e83ea898a893e3",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/CRVUSD_1H.csv",
+            "sha256": "97528583585b694aa934025cdda3f6c5f428820aa2cfe5a461e83ea898a893e3"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80580.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "08f12b31265116ae395450b46c85eda9c359cd51744581cb8c8a299cd6ad9bf6",
+      "observed_at": "2026-10-24T14:54:01.588894+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 2,
+      "asset": "XMR",
+      "pair": "XMRUSD",
+      "price_timestamp": "2026-10-24T14:00:00+00:00",
+      "target_timestamp": "2026-10-25T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-25T14:54:01.588894+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "COMPLETED",
+      "immutable_missing": [],
+      "frozen_asset_t0": 597.5,
+      "frozen_btc_t0": 80580.5,
+      "reasons": [],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 597.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 608.76,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80580.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "b17074ddccbd77dd531f64ad7a5817686d5bf497de878acf0fd0c09e468b6e54",
+      "observed_at": "2026-10-24T14:54:01.588894+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 3,
+      "asset": "EURC",
+      "pair": "EURCUSD",
+      "price_timestamp": "2026-10-24T14:00:00+00:00",
+      "target_timestamp": "2026-10-25T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-25T14:54:01.588894+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "COMPLETED",
+      "immutable_missing": [],
+      "frozen_asset_t0": 1.12181,
+      "frozen_btc_t0": 80580.5,
+      "reasons": [],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 1.12181,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/EURCUSD_1H.csv",
+            "sha256": "a7a0df22dce8e1272db2390e13c8efa2cb763d43e3f938325543002f4d6b8385",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 1.12156,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/EURCUSD_1H.csv",
+            "sha256": "a7a0df22dce8e1272db2390e13c8efa2cb763d43e3f938325543002f4d6b8385",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/EURCUSD_1H.csv",
+            "sha256": "a7a0df22dce8e1272db2390e13c8efa2cb763d43e3f938325543002f4d6b8385"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80580.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "3eeab410764813b5c059bb1662c3cc2668689887cb470336f0a5937aff444e60",
+      "observed_at": "2026-10-25T14:34:10.061240+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 1,
+      "asset": "ATOM",
+      "pair": "ATOMUSD",
+      "price_timestamp": "2026-10-25T14:00:00+00:00",
+      "target_timestamp": "2026-10-26T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-26T14:34:10.061240+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 1.6174,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 1.6174,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ATOMUSD_1H.csv",
+            "sha256": "d25c44cfdc1c6d8ce06c765fbb19e40911db1c9a675147a7c3469ac85ed84bca",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 1.6387,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ATOMUSD_1H.csv",
+            "sha256": "d25c44cfdc1c6d8ce06c765fbb19e40911db1c9a675147a7c3469ac85ed84bca",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ATOMUSD_1H.csv",
+            "sha256": "d25c44cfdc1c6d8ce06c765fbb19e40911db1c9a675147a7c3469ac85ed84bca"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 79565.2,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "8dfd28b8b20e689716b67567a4ef6ad0fbe4ad019416edfbef8ffacfb6792f9f",
+      "observed_at": "2026-10-25T14:34:10.061240+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 2,
+      "asset": "GRASS",
+      "pair": "GRASSUSD",
+      "price_timestamp": "2026-10-25T14:00:00+00:00",
+      "target_timestamp": "2026-10-26T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-26T14:34:10.061240+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 0.6899,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.6899,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/GRASSUSD_1H.csv",
+            "sha256": "378dc025084efb7599f5048c24ef0679fed7ecc4638cb92e45a9e32ae988aff6",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.7017,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/GRASSUSD_1H.csv",
+            "sha256": "378dc025084efb7599f5048c24ef0679fed7ecc4638cb92e45a9e32ae988aff6",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/GRASSUSD_1H.csv",
+            "sha256": "378dc025084efb7599f5048c24ef0679fed7ecc4638cb92e45a9e32ae988aff6"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 79565.2,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "3b7144064aed9e6c11ff01b5b08428e8ee9bc52d85e92af654494eaefaa1f0d0",
+      "observed_at": "2026-10-25T14:34:10.061240+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 3,
+      "asset": "QNT",
+      "pair": "QNTUSD",
+      "price_timestamp": "2026-10-25T14:00:00+00:00",
+      "target_timestamp": "2026-10-26T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-26T14:34:10.061240+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 184.34,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 184.34,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/QNTUSD_1H.csv",
+            "sha256": "92af54d6b26ca73f25f3e66c9f324746987539568e76f028944164cc202bb1d2",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 211.14,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/QNTUSD_1H.csv",
+            "sha256": "92af54d6b26ca73f25f3e66c9f324746987539568e76f028944164cc202bb1d2",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/QNTUSD_1H.csv",
+            "sha256": "92af54d6b26ca73f25f3e66c9f324746987539568e76f028944164cc202bb1d2"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 79565.2,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "47eff5b6b3563c5836c909afa0e8d02d335d399d4e5a5605ac9b9eea727ec888",
+      "observed_at": "2026-10-25T14:34:10.061240+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 1,
+      "asset": "ATOM",
+      "pair": "ATOMUSD",
+      "price_timestamp": "2026-10-25T14:00:00+00:00",
+      "target_timestamp": "2026-10-26T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-26T14:34:10.061240+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 1.6174,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 1.6174,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ATOMUSD_1H.csv",
+            "sha256": "d25c44cfdc1c6d8ce06c765fbb19e40911db1c9a675147a7c3469ac85ed84bca",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 1.6387,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ATOMUSD_1H.csv",
+            "sha256": "d25c44cfdc1c6d8ce06c765fbb19e40911db1c9a675147a7c3469ac85ed84bca",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ATOMUSD_1H.csv",
+            "sha256": "d25c44cfdc1c6d8ce06c765fbb19e40911db1c9a675147a7c3469ac85ed84bca"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 79565.2,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "7409f048161227bb8ebd62aea38397803dff01e2b90e9e591c8c60ae52ea00af",
+      "observed_at": "2026-10-25T14:34:10.061240+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 2,
+      "asset": "PENDLE",
+      "pair": "PENDLEUSD",
+      "price_timestamp": "2026-10-25T14:00:00+00:00",
+      "target_timestamp": "2026-10-26T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-26T14:34:10.061240+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 1.975,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0",
+        "ASSET_24H_WINDOW_UNAVAILABLE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 1.975,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/PENDLEUSD_1H.csv",
+            "sha256": "b74ee0b53b900badacb5a81135a5bd6189ab835f3c55aed23160c6a77879b507",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "KeyError: Timestamp('2026-10-26 13:00:00+0000', tz='UTC')"
+        },
+        "window": {
+          "available": false,
+          "reason": "ValueError: Incomplete 24h hourly window",
+          "missing_or_rejected_candle_starts": [
+            "2026-10-25T19:00:00+00:00",
+            "2026-10-25T20:00:00+00:00",
+            "2026-10-25T21:00:00+00:00",
+            "2026-10-25T22:00:00+00:00",
+            "2026-10-25T23:00:00+00:00",
+            "2026-10-26T00:00:00+00:00",
+            "2026-10-26T01:00:00+00:00",
+            "2026-10-26T02:00:00+00:00",
+            "2026-10-26T03:00:00+00:00",
+            "2026-10-26T04:00:00+00:00",
+            "2026-10-26T05:00:00+00:00",
+            "2026-10-26T06:00:00+00:00",
+            "2026-10-26T07:00:00+00:00",
+            "2026-10-26T08:00:00+00:00",
+            "2026-10-26T09:00:00+00:00",
+            "2026-10-26T10:00:00+00:00",
+            "2026-10-26T11:00:00+00:00",
+            "2026-10-26T12:00:00+00:00",
+            "2026-10-26T13:00:00+00:00"
+          ]
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 79565.2,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "be5613b377c2e39f0b1b0b0a92a660582eebf6a5dacd822404019f990dddf322",
+      "observed_at": "2026-10-25T14:34:10.061240+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 3,
+      "asset": "AERO",
+      "pair": "AEROUSD",
+      "price_timestamp": "2026-10-25T14:00:00+00:00",
+      "target_timestamp": "2026-10-26T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-26T14:34:10.061240+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 0.6846,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.6846,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AEROUSD_1H.csv",
+            "sha256": "bac7383b6c268b19ec2581e8937588e1303d7e6138a69c98e8f09ff74c5e6f26",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.6684,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AEROUSD_1H.csv",
+            "sha256": "bac7383b6c268b19ec2581e8937588e1303d7e6138a69c98e8f09ff74c5e6f26",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AEROUSD_1H.csv",
+            "sha256": "bac7383b6c268b19ec2581e8937588e1303d7e6138a69c98e8f09ff74c5e6f26"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 79565.2,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "2edbda800717f0bb17b29564220f19abdd417fb5685306f16661f396d3b1fbf5",
+      "observed_at": "2026-10-24T14:54:01.588894+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 1,
+      "asset": "XMR",
+      "pair": "XMRUSD",
+      "price_timestamp": "2026-10-24T14:00:00+00:00",
+      "target_timestamp": "2026-10-25T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-25T14:54:01.588894+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "COMPLETED",
+      "immutable_missing": [],
+      "frozen_asset_t0": 597.5,
+      "frozen_btc_t0": 80580.5,
+      "reasons": [],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 597.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 608.76,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80580.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "eb0aa236f155f31aacd9d9949a2a4ad006481488e64390f04650eed2daca0e35",
+      "observed_at": "2026-10-24T14:54:01.588894+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 2,
+      "asset": "EURC",
+      "pair": "EURCUSD",
+      "price_timestamp": "2026-10-24T14:00:00+00:00",
+      "target_timestamp": "2026-10-25T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-25T14:54:01.588894+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "COMPLETED",
+      "immutable_missing": [],
+      "frozen_asset_t0": 1.12181,
+      "frozen_btc_t0": 80580.5,
+      "reasons": [],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 1.12181,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/EURCUSD_1H.csv",
+            "sha256": "a7a0df22dce8e1272db2390e13c8efa2cb763d43e3f938325543002f4d6b8385",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 1.12156,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/EURCUSD_1H.csv",
+            "sha256": "a7a0df22dce8e1272db2390e13c8efa2cb763d43e3f938325543002f4d6b8385",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/EURCUSD_1H.csv",
+            "sha256": "a7a0df22dce8e1272db2390e13c8efa2cb763d43e3f938325543002f4d6b8385"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80580.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "9eeda8514d2bb2cd98ad7f8267e4dc5024805894685049517b8ab0c244ae1ac5",
+      "observed_at": "2026-10-24T14:54:01.588894+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 3,
+      "asset": "TRX",
+      "pair": "TRXUSD",
+      "price_timestamp": "2026-10-24T14:00:00+00:00",
+      "target_timestamp": "2026-10-25T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-25T14:54:01.588894+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "COMPLETED",
+      "immutable_missing": [],
+      "frozen_asset_t0": 0.329721,
+      "frozen_btc_t0": 80580.5,
+      "reasons": [],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.329721,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/TRXUSD_1H.csv",
+            "sha256": "f02eaf57ce93062e5392f618667699b6b2f718bb7c7c752b58609944b62958ba",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.3289,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/TRXUSD_1H.csv",
+            "sha256": "f02eaf57ce93062e5392f618667699b6b2f718bb7c7c752b58609944b62958ba",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/TRXUSD_1H.csv",
+            "sha256": "f02eaf57ce93062e5392f618667699b6b2f718bb7c7c752b58609944b62958ba"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80580.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-24T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "b334821b08302f4ff9da5ba70dcda265325142fe0ead0011d7331d9215e320cd",
+      "observed_at": "2026-10-30T16:10:41.465134+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 1,
+      "asset": "XLM",
+      "pair": "XLMUSD",
+      "price_timestamp": "2026-10-30T16:00:00+00:00",
+      "target_timestamp": "2026-10-31T16:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-31T16:10:41.465134+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 0.17257,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0",
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.17257,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XLMUSD_1H.csv",
+            "sha256": "6d226ccd0640c7da8fff5f9a0deae76b39437fad7c4531bbea908bf4e6af36ff",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 77479.4,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "9bb8c015b76a137070333edf0c1fbbdf93d936fc39d5bdbe212bc72a41c0d526",
+      "observed_at": "2026-10-30T16:10:41.465134+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 2,
+      "asset": "ENA",
+      "pair": "ENAUSD",
+      "price_timestamp": "2026-10-30T16:00:00+00:00",
+      "target_timestamp": "2026-10-31T16:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-31T16:10:41.465134+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 0.1893,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0",
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.1893,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ENAUSD_1H.csv",
+            "sha256": "026890cf75938a4bc588e5b1016f80340eb58131a9279ec4e9eea0354ace0d3c",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 77479.4,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "996e5fdd6e6800968c472c79287c44373f443ca9adaa05f6e51230c5e0315176",
+      "observed_at": "2026-10-30T16:10:41.465134+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 3,
+      "asset": "AKE",
+      "pair": "AKEUSD",
+      "price_timestamp": "2026-10-30T16:00:00+00:00",
+      "target_timestamp": "2026-10-31T16:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-31T16:10:41.465134+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 0.01890069,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0",
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.01890069,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AKEUSD_1H.csv",
+            "sha256": "1cc149dacaf52152697d0e40e482a16eef80a48605733d52652b041b0f1bcc36",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 77479.4,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "25394a7213c7b170ecc82b049805790b2a67e4a2bddcf12eada3aa6178c24d30",
+      "observed_at": "2026-10-29T17:50:21.431379+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 1,
+      "asset": "ZEC",
+      "pair": "ZECUSD",
+      "price_timestamp": "2026-10-29T17:00:00+00:00",
+      "target_timestamp": "2026-10-30T17:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-30T17:50:21.431379+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [],
+      "frozen_asset_t0": 1344.01,
+      "frozen_btc_t0": 81174.8,
+      "reasons": [
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 1344.01,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ZECUSD_1H.csv",
+            "sha256": "2fe52cf60d9894c9338fd529c3b161837d0dd5a801bdd0653b86d6000ff129db",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 81174.8,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "1067bc09a73237bbfe2682781c815216e0a16d99f0cb3e11374c2925c2e2fffc",
+      "observed_at": "2026-10-29T17:50:21.431379+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 2,
+      "asset": "UNI",
+      "pair": "UNIUSD",
+      "price_timestamp": "2026-10-29T17:00:00+00:00",
+      "target_timestamp": "2026-10-30T17:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-30T17:50:21.431379+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [],
+      "frozen_asset_t0": 7.368,
+      "frozen_btc_t0": 81174.8,
+      "reasons": [
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 7.368,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/UNIUSD_1H.csv",
+            "sha256": "683492c287e427e1520ac49371c7666de98f271d44293f17711040edd5e29163",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 81174.8,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "9f7f09c6173d1b9d38fdb2a86cc77a744e0d754fff3c95cafc72633c04182d02",
+      "observed_at": "2026-10-29T17:50:21.431379+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 3,
+      "asset": "PEPE",
+      "pair": "PEPEUSD",
+      "price_timestamp": "2026-10-29T17:00:00+00:00",
+      "target_timestamp": "2026-10-30T17:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-30T17:50:21.431379+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [],
+      "frozen_asset_t0": 5.389e-06,
+      "frozen_btc_t0": 81174.8,
+      "reasons": [
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 5.389e-06,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/PEPEUSD_1H.csv",
+            "sha256": "c8288edcdd2047cdc035ed28ab605253f46f16677d19c102d6e471a461cd7b18",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 81174.8,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "81015acd742be81aec0cd3751dc9f012274e8b6bd5468efd184d700e0ff48b7d",
+      "observed_at": "2026-10-30T16:10:41.465134+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 1,
+      "asset": "XPL",
+      "pair": "XPLUSD",
+      "price_timestamp": "2026-10-30T16:00:00+00:00",
+      "target_timestamp": "2026-10-31T16:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-31T16:10:41.465134+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 0.0778,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0",
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.0778,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XPLUSD_1H.csv",
+            "sha256": "3cdb8236a3478697989c934ef62ce5dc491403dc8c0373a373551984746def53",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 77479.4,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "eb8906e16a2b100c3c8c4e93ffaa9f47e65b0816a45e42b3c937f1a2ef726e6d",
+      "observed_at": "2026-10-30T16:10:41.465134+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 2,
+      "asset": "XLM",
+      "pair": "XLMUSD",
+      "price_timestamp": "2026-10-30T16:00:00+00:00",
+      "target_timestamp": "2026-10-31T16:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-31T16:10:41.465134+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 0.17257,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0",
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.17257,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XLMUSD_1H.csv",
+            "sha256": "6d226ccd0640c7da8fff5f9a0deae76b39437fad7c4531bbea908bf4e6af36ff",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 77479.4,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "623da42e876bb688ad61f4068f3e466bbfc3c4e17d7e3abf66724300bacc6206",
+      "observed_at": "2026-10-30T16:10:41.465134+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 3,
+      "asset": "ENA",
+      "pair": "ENAUSD",
+      "price_timestamp": "2026-10-30T16:00:00+00:00",
+      "target_timestamp": "2026-10-31T16:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-31T16:10:41.465134+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 0.1893,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0",
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.1893,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ENAUSD_1H.csv",
+            "sha256": "026890cf75938a4bc588e5b1016f80340eb58131a9279ec4e9eea0354ace0d3c",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 77479.4,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-30T15:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "9356c8870bda89cc664ab70d329af8b416b3cf8803adbc876a6da80fffc3b16c",
+      "observed_at": "2026-10-26T18:00:17.914518+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 1,
+      "asset": "AERO",
+      "pair": "AEROUSD",
+      "price_timestamp": "2026-10-26T18:00:00+00:00",
+      "target_timestamp": "2026-10-27T18:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-27T18:00:17.914518+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.6823,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AEROUSD_1H.csv",
+            "sha256": "bac7383b6c268b19ec2581e8937588e1303d7e6138a69c98e8f09ff74c5e6f26",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.6956,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AEROUSD_1H.csv",
+            "sha256": "bac7383b6c268b19ec2581e8937588e1303d7e6138a69c98e8f09ff74c5e6f26",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AEROUSD_1H.csv",
+            "sha256": "bac7383b6c268b19ec2581e8937588e1303d7e6138a69c98e8f09ff74c5e6f26"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80220.7,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80400.3,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "e32f071d53ac3dd71a5cf4ccf365f61109e3c3796ebc6a735c8dd19212118e1e",
+      "observed_at": "2026-10-26T18:00:17.914518+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 2,
+      "asset": "AAVE",
+      "pair": "AAVEUSD",
+      "price_timestamp": "2026-10-26T18:00:00+00:00",
+      "target_timestamp": "2026-10-27T18:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-27T18:00:17.914518+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 136.11,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AAVEUSD_1H.csv",
+            "sha256": "da980b2e09a532cafcddff1088a133ddfcd0d95f083e8048f526d9d0c45b804b",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 131.95,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AAVEUSD_1H.csv",
+            "sha256": "da980b2e09a532cafcddff1088a133ddfcd0d95f083e8048f526d9d0c45b804b",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AAVEUSD_1H.csv",
+            "sha256": "da980b2e09a532cafcddff1088a133ddfcd0d95f083e8048f526d9d0c45b804b"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80220.7,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80400.3,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "378ecdcb610583467500341926c1427fecb9e6c124a06060f11451fc85d562b6",
+      "observed_at": "2026-10-26T18:00:17.914518+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 3,
+      "asset": "PUMP",
+      "pair": "PUMPUSD",
+      "price_timestamp": "2026-10-26T18:00:00+00:00",
+      "target_timestamp": "2026-10-27T18:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-27T18:00:17.914518+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.004255,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/PUMPUSD_1H.csv",
+            "sha256": "7adab596920223add4774aec2f942d23571d9bf54abe44675e9b9ef243c1c6b8",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.004254,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/PUMPUSD_1H.csv",
+            "sha256": "7adab596920223add4774aec2f942d23571d9bf54abe44675e9b9ef243c1c6b8",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/PUMPUSD_1H.csv",
+            "sha256": "7adab596920223add4774aec2f942d23571d9bf54abe44675e9b9ef243c1c6b8"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80220.7,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80400.3,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "73c899238684fde515c426657a490e4f26b6f2c3244a36d07c1fd58466693253",
+      "observed_at": "2026-10-25T14:34:10.061240+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 1,
+      "asset": "DASH",
+      "pair": "DASHUSD",
+      "price_timestamp": "2026-10-25T14:00:00+00:00",
+      "target_timestamp": "2026-10-26T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-26T14:34:10.061240+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 52.986,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 52.986,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/DASHUSD_1H.csv",
+            "sha256": "d174ac9f83e9c86954744b25229dbc246a64d3bba9048e54eab5aa0f79d38e92",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 52.264,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/DASHUSD_1H.csv",
+            "sha256": "d174ac9f83e9c86954744b25229dbc246a64d3bba9048e54eab5aa0f79d38e92",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/DASHUSD_1H.csv",
+            "sha256": "d174ac9f83e9c86954744b25229dbc246a64d3bba9048e54eab5aa0f79d38e92"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 79565.2,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "34b57538c2fb89924688b53e92f9d16b801ec7014aea2b4bd62814cb96ac3a99",
+      "observed_at": "2026-10-25T14:34:10.061240+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 2,
+      "asset": "QNT",
+      "pair": "QNTUSD",
+      "price_timestamp": "2026-10-25T14:00:00+00:00",
+      "target_timestamp": "2026-10-26T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-26T14:34:10.061240+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 184.34,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 184.34,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/QNTUSD_1H.csv",
+            "sha256": "92af54d6b26ca73f25f3e66c9f324746987539568e76f028944164cc202bb1d2",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 211.14,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/QNTUSD_1H.csv",
+            "sha256": "92af54d6b26ca73f25f3e66c9f324746987539568e76f028944164cc202bb1d2",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/QNTUSD_1H.csv",
+            "sha256": "92af54d6b26ca73f25f3e66c9f324746987539568e76f028944164cc202bb1d2"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 79565.2,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "7214416eb116131d18cf1aa4b03984fe5fb03dfb0e485f17242ae03c53cba0be",
+      "observed_at": "2026-10-25T14:34:10.061240+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 3,
+      "asset": "XMR",
+      "pair": "XMRUSD",
+      "price_timestamp": "2026-10-25T14:00:00+00:00",
+      "target_timestamp": "2026-10-26T14:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-26T14:34:10.061240+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": 608.76,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 608.76,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 591.17,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XMRUSD_1H.csv",
+            "sha256": "71659042ed4057ff9e04e7bc7fb71a5c5a473d31b2294e97214e1ad604456632"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80281.6,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-25T13:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 79565.2,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T13:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "b8e06ff76e13823bc8a129eead62ebfe819496044878ee2ab37b40c8bf5529fc",
+      "observed_at": "2026-10-29T17:50:21.431379+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 1,
+      "asset": "ZEC",
+      "pair": "ZECUSD",
+      "price_timestamp": "2026-10-29T17:00:00+00:00",
+      "target_timestamp": "2026-10-30T17:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-30T17:50:21.431379+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [],
+      "frozen_asset_t0": 1344.01,
+      "frozen_btc_t0": 81174.8,
+      "reasons": [
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 1344.01,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/ZECUSD_1H.csv",
+            "sha256": "2fe52cf60d9894c9338fd529c3b161837d0dd5a801bdd0653b86d6000ff129db",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 81174.8,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "f2c3003ea8f5c7a375bf86a0d6d4e2854fc9307e1afbfd14e9c1c94b96267b11",
+      "observed_at": "2026-10-29T17:50:21.431379+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 2,
+      "asset": "UNI",
+      "pair": "UNIUSD",
+      "price_timestamp": "2026-10-29T17:00:00+00:00",
+      "target_timestamp": "2026-10-30T17:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-30T17:50:21.431379+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [],
+      "frozen_asset_t0": 7.368,
+      "frozen_btc_t0": 81174.8,
+      "reasons": [
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 7.368,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/UNIUSD_1H.csv",
+            "sha256": "683492c287e427e1520ac49371c7666de98f271d44293f17711040edd5e29163",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 81174.8,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "3cda75ea6021cf9209a4d02af513618d59bf5414cb375fccb93c450670b28a99",
+      "observed_at": "2026-10-29T17:50:21.431379+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 3,
+      "asset": "BONK",
+      "pair": "BONKUSD",
+      "price_timestamp": "2026-10-29T17:00:00+00:00",
+      "target_timestamp": "2026-10-30T17:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-30T17:50:21.431379+00:00",
+      "scan_24h_elapsed": false,
+      "mature": false,
+      "status": "NOT_YET_MATURE",
+      "immutable_missing": [],
+      "frozen_asset_t0": 3.184e-06,
+      "frozen_btc_t0": 81174.8,
+      "reasons": [
+        "NOT_YET_MATURE"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 3.184e-06,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/BONKUSD_1H.csv",
+            "sha256": "704b83508c2627cd030cd10bc9eae08d9de41ab012531ea013c04fa490e24a28",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 81174.8,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T16:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        },
+        "window": {
+          "available": false,
+          "reason": "NOT_YET_DUE"
+        }
+      }
+    },
+    {
+      "observation_id": "30fbfcafa6d1f37a9031d89bed5fea147fee488828164348df256b768bb88975",
+      "observed_at": "2026-10-26T18:00:17.914518+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 1,
+      "asset": "NIGHT",
+      "pair": "NIGHTUSD",
+      "price_timestamp": "2026-10-26T18:00:00+00:00",
+      "target_timestamp": "2026-10-27T18:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-27T18:00:17.914518+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.04131,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/NIGHTUSD_1H.csv",
+            "sha256": "33fa14603ad2570e0fe4389c537ed27494bda7abb728f51a0d70cb8025d47c6f",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.03976,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/NIGHTUSD_1H.csv",
+            "sha256": "33fa14603ad2570e0fe4389c537ed27494bda7abb728f51a0d70cb8025d47c6f",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/NIGHTUSD_1H.csv",
+            "sha256": "33fa14603ad2570e0fe4389c537ed27494bda7abb728f51a0d70cb8025d47c6f"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80220.7,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80400.3,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "f648020ae6baa0f7daa490bb27c55aac90c2fed571d0c5c5973697e23373a945",
+      "observed_at": "2026-10-26T18:00:17.914518+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 2,
+      "asset": "AERO",
+      "pair": "AEROUSD",
+      "price_timestamp": "2026-10-26T18:00:00+00:00",
+      "target_timestamp": "2026-10-27T18:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-27T18:00:17.914518+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.6823,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AEROUSD_1H.csv",
+            "sha256": "bac7383b6c268b19ec2581e8937588e1303d7e6138a69c98e8f09ff74c5e6f26",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.6956,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AEROUSD_1H.csv",
+            "sha256": "bac7383b6c268b19ec2581e8937588e1303d7e6138a69c98e8f09ff74c5e6f26",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AEROUSD_1H.csv",
+            "sha256": "bac7383b6c268b19ec2581e8937588e1303d7e6138a69c98e8f09ff74c5e6f26"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80220.7,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80400.3,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "b0bbf81c8f05fc1c61d0c22bceef1c294291d0605c6b0dbcc1085acd4b6f50b8",
+      "observed_at": "2026-10-26T18:00:17.914518+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 3,
+      "asset": "BONK",
+      "pair": "BONKUSD",
+      "price_timestamp": "2026-10-26T18:00:00+00:00",
+      "target_timestamp": "2026-10-27T18:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-27T18:00:17.914518+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 3.048e-06,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/BONKUSD_1H.csv",
+            "sha256": "704b83508c2627cd030cd10bc9eae08d9de41ab012531ea013c04fa490e24a28",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 3.073e-06,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/BONKUSD_1H.csv",
+            "sha256": "704b83508c2627cd030cd10bc9eae08d9de41ab012531ea013c04fa490e24a28",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/BONKUSD_1H.csv",
+            "sha256": "704b83508c2627cd030cd10bc9eae08d9de41ab012531ea013c04fa490e24a28"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80220.7,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80400.3,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "7c5d043e1ee6bcbaeaa28dd2c94d50d46e0b55aab8c63f15bd8ba65433e5bb41",
+      "observed_at": "2026-10-28T06:00:38.930999+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 1,
+      "asset": "AKE",
+      "pair": "AKEUSD",
+      "price_timestamp": "2026-10-28T06:00:00+00:00",
+      "target_timestamp": "2026-10-29T06:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-29T06:00:38.930999+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.02154437,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AKEUSD_1H.csv",
+            "sha256": "1cc149dacaf52152697d0e40e482a16eef80a48605733d52652b041b0f1bcc36",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.02099968,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AKEUSD_1H.csv",
+            "sha256": "1cc149dacaf52152697d0e40e482a16eef80a48605733d52652b041b0f1bcc36",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AKEUSD_1H.csv",
+            "sha256": "1cc149dacaf52152697d0e40e482a16eef80a48605733d52652b041b0f1bcc36"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80776.9,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80124.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "4ba3389673f7c8887a9c1c55712d30684e5b91bbea930b2ec3c41a70716cd9da",
+      "observed_at": "2026-10-28T06:00:38.930999+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 2,
+      "asset": "PEPE",
+      "pair": "PEPEUSD",
+      "price_timestamp": "2026-10-28T06:00:00+00:00",
+      "target_timestamp": "2026-10-29T06:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-29T06:00:38.930999+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 4.774e-06,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/PEPEUSD_1H.csv",
+            "sha256": "c8288edcdd2047cdc035ed28ab605253f46f16677d19c102d6e471a461cd7b18",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 5.037e-06,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/PEPEUSD_1H.csv",
+            "sha256": "c8288edcdd2047cdc035ed28ab605253f46f16677d19c102d6e471a461cd7b18",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/PEPEUSD_1H.csv",
+            "sha256": "c8288edcdd2047cdc035ed28ab605253f46f16677d19c102d6e471a461cd7b18"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80776.9,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80124.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "97db1ddfae736d568b258b02854fd310b1bd243b4f8a258c2456e8a5ca58aec4",
+      "observed_at": "2026-10-28T06:00:38.930999+00:00",
+      "ranking_type": "CONTINUATION",
+      "rank": 3,
+      "asset": "SPX",
+      "pair": "SPXUSD",
+      "price_timestamp": "2026-10-28T06:00:00+00:00",
+      "target_timestamp": "2026-10-29T06:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-29T06:00:38.930999+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.3877,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/SPXUSD_1H.csv",
+            "sha256": "206733fd882b4377903fa32699f2e96fbfd0df98f01d4d3b0f70b4922b2c7d4e",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.3982,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/SPXUSD_1H.csv",
+            "sha256": "206733fd882b4377903fa32699f2e96fbfd0df98f01d4d3b0f70b4922b2c7d4e",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/SPXUSD_1H.csv",
+            "sha256": "206733fd882b4377903fa32699f2e96fbfd0df98f01d4d3b0f70b4922b2c7d4e"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80776.9,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80124.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "80ef92b7a1760190a6411ddce7d7d60aeefe36444142930d460ff1b29598cb84",
+      "observed_at": "2026-10-28T06:00:38.930999+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 1,
+      "asset": "SPX",
+      "pair": "SPXUSD",
+      "price_timestamp": "2026-10-28T06:00:00+00:00",
+      "target_timestamp": "2026-10-29T06:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-29T06:00:38.930999+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.3877,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/SPXUSD_1H.csv",
+            "sha256": "206733fd882b4377903fa32699f2e96fbfd0df98f01d4d3b0f70b4922b2c7d4e",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.3982,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/SPXUSD_1H.csv",
+            "sha256": "206733fd882b4377903fa32699f2e96fbfd0df98f01d4d3b0f70b4922b2c7d4e",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/SPXUSD_1H.csv",
+            "sha256": "206733fd882b4377903fa32699f2e96fbfd0df98f01d4d3b0f70b4922b2c7d4e"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80776.9,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80124.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "24758ea39afcbaf2691b40a88224e054e21a423fd807e1965b8ad0355e295c26",
+      "observed_at": "2026-10-28T06:00:38.930999+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 2,
+      "asset": "BCH",
+      "pair": "BCHUSD",
+      "price_timestamp": "2026-10-28T06:00:00+00:00",
+      "target_timestamp": "2026-10-29T06:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-29T06:00:38.930999+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 298.79,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/BCHUSD_1H.csv",
+            "sha256": "e249dc232f8e19b2ccadf5ec3e55a6c61f37bb9a5d13540ee9dde8662f8d834b",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 281.06,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/BCHUSD_1H.csv",
+            "sha256": "e249dc232f8e19b2ccadf5ec3e55a6c61f37bb9a5d13540ee9dde8662f8d834b",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/BCHUSD_1H.csv",
+            "sha256": "e249dc232f8e19b2ccadf5ec3e55a6c61f37bb9a5d13540ee9dde8662f8d834b"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80776.9,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80124.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "d13348ea5a014c15f45989db3f143ac342136a749b4265b076c68fade10927bd",
+      "observed_at": "2026-10-28T06:00:38.930999+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 3,
+      "asset": "MORPHO",
+      "pair": "MORPHOUSD",
+      "price_timestamp": "2026-10-28T06:00:00+00:00",
+      "target_timestamp": "2026-10-29T06:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-29T06:00:38.930999+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 2.20733,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/MORPHOUSD_1H.csv",
+            "sha256": "3cf3c4d9e6124dab5b53cf310b93067a9408eaf9cd44e0c35a83d4fda1a53c0c",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 2.19864,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/MORPHOUSD_1H.csv",
+            "sha256": "3cf3c4d9e6124dab5b53cf310b93067a9408eaf9cd44e0c35a83d4fda1a53c0c",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/MORPHOUSD_1H.csv",
+            "sha256": "3cf3c4d9e6124dab5b53cf310b93067a9408eaf9cd44e0c35a83d4fda1a53c0c"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80776.9,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80124.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "d63e2538c83b96f66557e4bd6065accd4b8924321618c4851677b1895ab38e6b",
+      "observed_at": "2026-10-28T06:00:38.930999+00:00",
+      "ranking_type": "REVERSAL",
+      "rank": 1,
+      "asset": "AKE",
+      "pair": "AKEUSD",
+      "price_timestamp": "2026-10-28T06:00:00+00:00",
+      "target_timestamp": "2026-10-29T06:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-29T06:00:38.930999+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.02154437,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AKEUSD_1H.csv",
+            "sha256": "1cc149dacaf52152697d0e40e482a16eef80a48605733d52652b041b0f1bcc36",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.02099968,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AKEUSD_1H.csv",
+            "sha256": "1cc149dacaf52152697d0e40e482a16eef80a48605733d52652b041b0f1bcc36",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/AKEUSD_1H.csv",
+            "sha256": "1cc149dacaf52152697d0e40e482a16eef80a48605733d52652b041b0f1bcc36"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80776.9,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-28T05:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80124.5,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-29T05:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "211ba83dc2136df8c3e57f3fd823ff2b93f398a899631d808f776e4d1e3e0573",
+      "observed_at": "2026-10-26T18:00:17.914518+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 1,
+      "asset": "XDC",
+      "pair": "XDCUSD",
+      "price_timestamp": "2026-10-26T18:00:00+00:00",
+      "target_timestamp": "2026-10-27T18:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-27T18:00:17.914518+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.03364,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XDCUSD_1H.csv",
+            "sha256": "d2dea137127b505c7e9bf1055154fbb3326a782cf588076b5bd2488c7455a761",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.03428,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XDCUSD_1H.csv",
+            "sha256": "d2dea137127b505c7e9bf1055154fbb3326a782cf588076b5bd2488c7455a761",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XDCUSD_1H.csv",
+            "sha256": "d2dea137127b505c7e9bf1055154fbb3326a782cf588076b5bd2488c7455a761"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80220.7,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80400.3,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "9e6b7612afe860df7cc93d0ef0e5cabb3668753307568a043997aaafd3bc5ad2",
+      "observed_at": "2026-10-26T18:00:17.914518+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 2,
+      "asset": "NIGHT",
+      "pair": "NIGHTUSD",
+      "price_timestamp": "2026-10-26T18:00:00+00:00",
+      "target_timestamp": "2026-10-27T18:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-27T18:00:17.914518+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 0.04131,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/NIGHTUSD_1H.csv",
+            "sha256": "33fa14603ad2570e0fe4389c537ed27494bda7abb728f51a0d70cb8025d47c6f",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 0.03976,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/NIGHTUSD_1H.csv",
+            "sha256": "33fa14603ad2570e0fe4389c537ed27494bda7abb728f51a0d70cb8025d47c6f",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/NIGHTUSD_1H.csv",
+            "sha256": "33fa14603ad2570e0fe4389c537ed27494bda7abb728f51a0d70cb8025d47c6f"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80220.7,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80400.3,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    },
+    {
+      "observation_id": "5e586e69417adda02907288c1c8e92cf8b65cea26a2983ceb8e84137c8eaec32",
+      "observed_at": "2026-10-26T18:00:17.914518+00:00",
+      "ranking_type": "RELATIVE_STRENGTH",
+      "rank": 3,
+      "asset": "DASH",
+      "pair": "DASHUSD",
+      "price_timestamp": "2026-10-26T18:00:00+00:00",
+      "target_timestamp": "2026-10-27T18:00:00+00:00",
+      "scan_24h_timestamp": "2026-10-27T18:00:17.914518+00:00",
+      "scan_24h_elapsed": true,
+      "mature": true,
+      "status": "IMMUTABLE_REFERENCE_UNAVAILABLE",
+      "immutable_missing": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "frozen_asset_t0": null,
+      "frozen_btc_t0": null,
+      "reasons": [
+        "ASSET_T0",
+        "BTC_T0"
+      ],
+      "local_asset": {
+        "t0": {
+          "available": true,
+          "price": 53.036,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/DASHUSD_1H.csv",
+            "sha256": "d174ac9f83e9c86954744b25229dbc246a64d3bba9048e54eab5aa0f79d38e92",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 54.804,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/DASHUSD_1H.csv",
+            "sha256": "d174ac9f83e9c86954744b25229dbc246a64d3bba9048e54eab5aa0f79d38e92",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/DASHUSD_1H.csv",
+            "sha256": "d174ac9f83e9c86954744b25229dbc246a64d3bba9048e54eab5aa0f79d38e92"
+          }
+        }
+      },
+      "local_btc": {
+        "t0": {
+          "available": true,
+          "price": 80220.7,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-26T17:00:00+00:00"
+          }
+        },
+        "t24": {
+          "available": true,
+          "price": 80400.3,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08",
+            "candle_start": "2026-10-27T17:00:00+00:00"
+          }
+        },
+        "window": {
+          "available": true,
+          "source": {
+            "path": "DATASETS/market_intraday_weekly/XBTUSD_1H.csv",
+            "sha256": "3f5b84c06220839b4428ad9c1163dd947164a08324bfd9ffaac9e28a8ebdbc08"
+          }
+        }
+      }
+    }
+  ]
+}

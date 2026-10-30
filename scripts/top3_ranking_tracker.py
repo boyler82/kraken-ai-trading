@@ -197,7 +197,67 @@ def mature(db, now, archive):
     return warnings
 
 
-def aggregate(db):
+def price_diagnostics(db, now, archive):
+    """Read-only per-record audit; local prices never repair immutable T0 nulls."""
+    now = utc(now)
+    rows = []
+    for row in db.execute('SELECT id,payload FROM observations ORDER BY scan_id,rank'):
+        obs = json.loads(row['payload'])
+        boundary = utc(obs['price_timestamp'])
+        target = boundary + timedelta(hours=24)
+        completed = db.execute("SELECT 1 FROM outcomes WHERE observation_id=? AND kind='PRICE_24H'",
+                               (row['id'],)).fetchone() is not None
+        missing = [name for name, key in [('ASSET_T0', 'reference_price'), ('BTC_T0', 'btc_reference_price')]
+                   if obs[key] is None]
+        status = ('COMPLETED' if completed else 'NOT_YET_MATURE' if now < target
+                  else 'IMMUTABLE_REFERENCE_UNAVAILABLE' if missing else 'PRICE_WINDOW_PENDING')
+        item = dict(observation_id=row['id'], observed_at=obs['observed_at'],
+                    ranking_type=obs['ranking_type'], rank=obs['rank'], asset=obs['asset'],
+                    pair=obs['pair'], price_timestamp=boundary.isoformat(), target_timestamp=target.isoformat(),
+                    scan_24h_timestamp=(utc(obs['observed_at']) + timedelta(hours=24)).isoformat(),
+                    scan_24h_elapsed=utc(obs['observed_at']) + timedelta(hours=24) <= now,
+                    mature=target <= now, status=status, immutable_missing=missing,
+                    frozen_asset_t0=obs['reference_price'], frozen_btc_t0=obs['btc_reference_price'],
+                    reasons=[] if completed else missing + (['NOT_YET_MATURE'] if now < target else []))
+        for name, asset, pair in [('asset', obs['asset'], obs['pair']), ('btc', 'BTC', 'XBTUSD')]:
+            evidence = {}
+            for label, timestamp in [('t0', boundary), ('t24', target)]:
+                if timestamp > now:
+                    evidence[label] = dict(available=False, reason='NOT_YET_DUE')
+                    continue
+                try:
+                    value, source = archive.reference(asset, pair, timestamp)
+                    evidence[label] = dict(available=True, price=value, source=source)
+                except (OSError, KeyError, ValueError) as exc:
+                    evidence[label] = dict(available=False, reason=f'{type(exc).__name__}: {exc}')
+            if target <= now:
+                try:
+                    _, source = archive.window(asset, pair, boundary)
+                    evidence['window'] = dict(available=True, source=source)
+                except (OSError, KeyError, ValueError) as exc:
+                    evidence['window'] = dict(available=False, reason=f'{type(exc).__name__}: {exc}')
+                    try:
+                        bars, _, _ = archive.bars(asset, pair)
+                        evidence['window']['missing_or_rejected_candle_starts'] = [
+                            stamp.isoformat() for stamp in pd.date_range(boundary, periods=24, freq='h')
+                            if stamp not in bars.index]
+                    except (OSError, KeyError, ValueError):
+                        pass  # Preserve the actual source/parse failure above.
+                    if not completed:
+                        item['reasons'].append(f'{name.upper()}_24H_WINDOW_UNAVAILABLE')
+            else:
+                evidence['window'] = dict(available=False, reason='NOT_YET_DUE')
+            item[f'local_{name}'] = evidence
+        if not completed and target <= now and not missing and all(
+                item[f'local_{name}']['window']['available'] for name in ('asset', 'btc')):
+            item['status'] = 'READY_TO_MEASURE'
+            item['reasons'].append('READY_TO_MEASURE')
+        rows.append(item)
+    return rows
+
+
+def aggregate(db, now=None):
+    current = utc(now) if now is not None else None
     groups = {}
     for row in db.execute('SELECT * FROM observations'):
         obs = json.loads(row['payload'])
@@ -224,6 +284,13 @@ def aggregate(db):
                         remained_top10_pct=mean([100.*p['remained_top10'] for p in ranks]),
                         rank_change_known=sum(p['rank_change'] is not None for p in ranks),
                         mean_rank_change=mean([p['rank_change'] for p in ranks if p['rank_change'] is not None])))
+        if current is not None:
+            pending = [o for o, e in entries if 'PRICE_24H' not in e]
+            immature = [o for o in pending if utc(o['price_timestamp']) + timedelta(hours=24) > current]
+            mature = [o for o in pending if utc(o['price_timestamp']) + timedelta(hours=24) <= current]
+            missing = sum(o['reference_price'] is None or o['btc_reference_price'] is None for o in mature)
+            out[-1].update(price_not_yet_mature=len(immature), price_mature_reference_missing=missing,
+                           price_mature_window_pending=len(mature)-missing)
     return dict(schema_version=1, trading='DISABLED', groups=out,
                 warnings=['GROSS_RETURNS_NOT_EXECUTED_TRADES', 'OVERLAPPING_SCANS_AND_ASSETS_NOT_INDEPENDENT',
                           'RANK_PERSISTENCE_IS_NEXT_DAY_ENDPOINT_ONLY', 'NO_HISTORICAL_BACKFILL'])
@@ -252,7 +319,7 @@ def track_daily(chief, opportunity, relative, now, path=STORE, report=REPORT, ar
     with closing(connect(path)) as db:
         warnings = capture(db, chief['generated_at_utc'], now, str(chief.get('market_state', {}).get('crypto_regime') or 'UNKNOWN'), rankings, archive)
         warnings += mature(db, now, archive)
-        summary = aggregate(db)
+        summary = aggregate(db, now)
         summary['run_warnings'] = warnings
         summary['generated_at_utc'] = now.isoformat()
         from weekly_consolidation_common import atomic_write

@@ -233,3 +233,50 @@ def test_missing_next_day_is_not_replaced_with_later_day(tmp_path):
         assert not any(e['kind']=='NEXT_DAY_RANK' for e in events(db))
         group=next(g for g in t.aggregate(db)['groups'] if g['level']=='TYPE')
         assert group['rank_pending']==1 and group['rank_completed']==0
+
+
+@pytest.mark.parametrize('pair, index, frozen', [
+    ('ALT', 0, True), ('XBT', 0, True), ('ALT', 24, False), ('XBT', 24, False),
+])
+def test_diagnostics_distinguish_missing_t0_endpoints_and_maturity(tmp_path, pair, index, frozen):
+    setup(tmp_path)
+    path = tmp_path/f'DATASETS/market_intraday_weekly/{pair}USD_1H.csv'
+    full = path.read_bytes()
+    pd.read_csv(path).drop(index=index).to_csv(path, index=False)
+    a = t.HourlyArchive(tmp_path)
+    with closing(t.connect(tmp_path/'db')) as db:
+        t.capture(db, 's', START, 'BEAR', rankings(), a)
+        immutable = obs(db)
+        immature = t.price_diagnostics(db, START+timedelta(hours=23), a)[0]
+        assert immature['status'] == 'NOT_YET_MATURE'
+        assert immature['local_asset']['t24']['reason'] == 'NOT_YET_DUE'
+        t.mature(db, START+timedelta(hours=24), a)
+        assert events(db) == []
+        mature = t.price_diagnostics(db, START+timedelta(hours=24), a)[0]
+        assert mature['status'] == ('IMMUTABLE_REFERENCE_UNAVAILABLE' if frozen else 'PRICE_WINDOW_PENDING')
+        group = next(g for g in t.aggregate(db, START+timedelta(hours=24))['groups'] if g['level']=='TYPE')
+        assert group['price_mature_reference_missing'] == int(frozen)
+        assert group['price_mature_window_pending'] == int(not frozen)
+        path.write_bytes(full)
+        t.mature(db, START+timedelta(hours=24), t.HourlyArchive(tmp_path))
+        completed = events(db)
+        assert len(completed) == int(not frozen)
+        t.mature(db, START+timedelta(hours=24), t.HourlyArchive(tmp_path))
+        assert events(db) == completed and obs(db) == immutable
+
+
+def test_diagnostics_and_aggregate_match_source_records_read_only(tmp_path):
+    from audit_top3_ranking_tracker import audit, table_hash
+    a = setup(tmp_path)
+    with closing(t.connect(tmp_path/'db')) as db:
+        t.capture(db, 'old', START, 'BEAR', rankings(), a)
+        t.mature(db, START+timedelta(hours=24), a)
+        t.capture(db, 'young', START+timedelta(hours=24), 'BEAR', rankings(), a)
+        hashes = {name: table_hash(db, name) for name in ('scans', 'observations', 'outcomes')}
+        report = audit(tmp_path/'db', START+timedelta(hours=24), tmp_path)
+        assert report['table_hashes'] == hashes
+        assert report['totals']['observations'] == 2
+        assert report['totals']['price_completed'] == report['totals']['price_not_yet_mature'] == 1
+        assert report['totals']['price_mature_reference_missing'] == report['totals']['price_mature_window_pending'] == 0
+        assert report['statuses'] == {'COMPLETED': 1, 'NOT_YET_MATURE': 1}
+        assert all(table_hash(db, name) == digest for name, digest in hashes.items())

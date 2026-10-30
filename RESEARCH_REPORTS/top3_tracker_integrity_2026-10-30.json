@@ -1,0 +1,41 @@
+{
+  "as_of": "2026-10-30T16:10:41.465134+00:00",
+  "production_ledger_sha256": "9f67aa9d29ff462b29f9456ad63808615422acd8a9bd51631c3d3ea142a80a4a",
+  "production_ledger_unchanged": true,
+  "table_hashes_before": {
+    "scans": "14dd134ecfce1dcbf39ab6af6e1f752104e9b400ff5e7904a45577a1ca489e59",
+    "observations": "b3e8a6a10d181c617438d9ae03f46503fec926868a007e21f13cbb1b98d936f1",
+    "outcomes": "f3f8df13e67f5d71ceda390ce19e0ec8131c6d8e52f30530428008110b5245c7"
+  },
+  "table_hashes_after_two_maturity_passes": {
+    "scans": "14dd134ecfce1dcbf39ab6af6e1f752104e9b400ff5e7904a45577a1ca489e59",
+    "observations": "b3e8a6a10d181c617438d9ae03f46503fec926868a007e21f13cbb1b98d936f1",
+    "outcomes": "f3f8df13e67f5d71ceda390ce19e0ec8131c6d8e52f30530428008110b5245c7"
+  },
+  "completed_price_outcomes_unchanged": 9,
+  "recovered_price_outcomes": 0,
+  "first_pass_warnings": 25,
+  "second_pass_warnings": 25,
+  "integrity_check": "ok",
+  "xlm": {
+    "retrieved_at": "2026-10-30T16:45:40.839784+00:00",
+    "endpoints": [
+      "https://api.kraken.com/0/public/Ticker?pair=XLMUSD,ETHUSD",
+      "https://api.kraken.com/0/public/AssetPairs?pair=XLMUSD,ETHUSD"
+    ],
+    "ticker_response_keys": [
+      "XETHZUSD",
+      "XXLMZUSD"
+    ],
+    "asset_pairs": {
+      "XETHZUSD": {
+        "altname": "ETHUSD",
+        "wsname": "ETH/USD"
+      },
+      "XXLMZUSD": {
+        "altname": "XLMUSD",
+        "wsname": "XLM/USD"
+      }
+    }
+  }
+}

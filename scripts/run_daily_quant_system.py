@@ -162,6 +162,15 @@ def orchestrate(objective='btc',as_of=None,no_network=False,reuse=False,runner:C
  opportunity=opportunity_context(loaded['chief'],memory30,result.get('tactical_outcomes') or {})
  packet.update(canonical_decision_sections(packet,loaded['chief'],memory30,opportunity))
  packet['run_metadata']['dependency_order']+=['market_memory_30d','opportunity_discovery_v1','canonical_decision_handoff']
+ # Top-3 freezes BTC T0 permanently. Refresh its hourly dependency before capture,
+ # rather than relying on the later V2 hook to populate it after capture.
+ if runner is run_complete_research and out_dir == OUT and as_of is None and not no_network and not reuse:
+  try:
+   from quant_research_v2.benchmark_refresh import refresh_hourly_btc
+   refresh_hourly_btc(ROOT, utc().isoformat())
+  except Exception as exc:
+   packet['system_health']['warnings'].append(f'TOP3_BTC_REFRESH_UNAVAILABLE: {exc}')
+   if packet['run_metadata']['pipeline_status']=='OK':packet['run_metadata']['pipeline_status']='OK_WITH_WARNINGS'
  packet['TOP3_RANKING_OUTCOME_TRACKER']=ranking_tracker_section(
   loaded['chief'],opportunity,result,
   genuine=runner is run_complete_research and out_dir==OUT and as_of is None and not reuse,

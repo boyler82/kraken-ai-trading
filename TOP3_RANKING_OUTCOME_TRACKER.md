@@ -43,6 +43,22 @@ Reports group by ranking type, type/rank, type/regime and type/rank/regime. Each
 
 Price means use completed price outcomes only. Retention uses completed rank outcomes only. Rank-change means use exact known next ranks only. Null metrics mean no applicable matured sample, not zero performance. Multiple scans, shared assets and overlapping horizons are dependent; aggregates do not establish predictive edge or provide independent confidence intervals.
 
+### Reference diagnostics (2026-10-30)
+
+The canonical online workflow now refreshes the existing public hourly BTC dependency **before** Top-3 capture; previously only the later V2 hook refreshed it. The tracker itself still reads local archives only. Offline/replay behavior is unchanged. An unavailable reference remains null and fail-closed; crossing an hourly boundary can still leave a reference unavailable. No historical T0 is repaired.
+
+Daily aggregates additionally separate `price_not_yet_mature`, `price_mature_reference_missing`, and `price_mature_window_pending` (mature, frozen T0 present, outcome not yet recorded). Together with `price_completed` they sum to observations. `reference_missing` remains the original all-age count and is **not** a count of overdue outcomes. The read-only audit below checks actual endpoint/window availability and distinguishes `READY_TO_MEASURE` from gaps.
+
+```
+.venv-research/bin/python scripts/audit_top3_ranking_tracker.py \
+  --as-of 2026-10-30T16:10:41.465134+00:00 \
+  --out /tmp/top3_tracker_audit
+```
+
+The JSON/CSV audit lists every observation, immutable asset/BTC T0, independently labelled current local endpoint availability, complete-window availability, and reasons for pending outcomes. It never fetches data, writes the ledger, or treats a currently available price as evidence that it was captured historically. `--as-of` is the maturity evaluation time for the current ledger, not a replay of past ledger contents. Reference-boundary +24h and elapsed scan-wall-clock +24h are reported separately, preserving existing measurement semantics.
+
+See `RESEARCH_REPORTS/top3_tracker_diagnosis_2026-10-30.md` and its linked evidence for the 52-observation audit. The nine historical completed price outcomes and every immutable record remain unchanged.
+
 ## Validation and historical state
 
 Focused checks:

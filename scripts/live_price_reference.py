@@ -15,7 +15,9 @@ LIVE_REFERENCE_SEMANTICS = "MIDPOINT_OF_KRAKEN_BEST_BID_AND_BEST_ASK"
 def _canonical_pair(value: str) -> str:
     pair = str(value).upper()
     if pair.endswith("ZUSD"): pair = pair[:-4] + "USD"
-    if pair.startswith("X") and pair not in {"XBTUSD"}: pair = pair[1:]
+    # Strip Kraken's legacy asset prefix only on legacy ZUSD response keys.
+    # Modern symbols such as XLMUSD, XRPUSD and XMRUSD start with a real X.
+    if str(value).upper().endswith("ZUSD") and pair.startswith("X"): pair = pair[1:]
     return pair
 
 def _utc(value: Any = None) -> datetime:
@@ -42,8 +44,6 @@ def fetch_public_mid_prices(pairs: list[str], opener: Callable[..., Any] = urlli
     result = payload["result"];quotes = {}
     for pair in requested:
         row = result.get(pair) or next((value for key, value in result.items() if _canonical_pair(key) == _canonical_pair(pair)), None)
-        if row is None and len(requested) == 1 and len(result) == 1:
-            row = next(iter(result.values()))
         if not isinstance(row, dict):
             continue
         bid = float(row["b"][0]);ask = float(row["a"][0])

@@ -44,3 +44,23 @@ def test_only_public_ticker_market_data_capability_exists():
     assert "/private/" not in source
     assert "addorder" not in source and "cancelorder" not in source
     assert "api-key" not in source and "api-sign" not in source
+
+
+def test_legacy_ticker_keys_preserve_real_x_prefix_and_do_not_guess():
+    class Response:
+        def __enter__(self): return self
+        def __exit__(self, *args): pass
+        def read(self):
+            return json.dumps({'error': [], 'result': {
+                key: {'b': ['100'], 'a': ['102']} for key in
+                ('XXLMZUSD', 'XXRPZUSD', 'XXMRZUSD', 'XXBTZUSD', 'XETHZUSD')
+            }}).encode()
+    quotes = live.fetch_public_mid_prices(
+        ['XLMUSD', 'XRPUSD', 'XMRUSD', 'XBTUSD', 'ETHUSD', 'WRONGUSD'],
+        opener=lambda *args, **kwargs: Response())
+    assert set(quotes) == {'XLMUSD', 'XRPUSD', 'XMRUSD', 'XBTUSD', 'ETHUSD'}
+    assert all(q['price'] == 101 for q in quotes.values())
+    class Unrelated(Response):
+        def read(self):
+            return json.dumps({'error': [], 'result': {'ETHUSD': {'b': ['100'], 'a': ['102']}}}).encode()
+    assert live.fetch_public_mid_prices(['XLMUSD'], opener=lambda *a, **k: Unrelated()) == {}
