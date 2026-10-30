@@ -1,37 +1,18 @@
 {
   "ada_like_movements": [
-    "PEPE",
-    "VVV",
-    "BONK",
-    "INJ",
-    "MORPHO",
-    "PUMP",
-    "KAS",
-    "ZEC",
-    "ENA",
-    "UNI",
-    "HYPE",
-    "ZRO",
-    "ARB",
-    "TIA"
-  ],
-  "checkpoint_resume": false,
-  "consolidation_to_breakout_transitions": [
-    "PEPE",
-    "PUMP",
-    "ZEC",
-    "XMR",
     "HYPE"
   ],
+  "checkpoint_resume": false,
+  "consolidation_to_breakout_transitions": [],
   "daily_consolidation_candidates": [
+    "ENA",
     "DASH",
-    "PEPE",
-    "QNT",
-    "NIGHT"
+    "UNI",
+    "MORPHO"
   ],
-  "execution_duration_seconds": 95.93630570800451,
+  "execution_duration_seconds": 90.56670075000147,
   "fresh_data_assets": 68,
-  "generated_at_utc": "2026-10-29T17:47:41+00:00",
+  "generated_at_utc": "2026-10-30T16:08:05+00:00",
   "kraken_mapped_assets": 68,
   "labels": [
     "RESEARCH_ONLY",
@@ -41,11 +22,11 @@
     "LIVE_NOT_AUTHORIZED"
   ],
   "momentum_candidates": [
-    "PEPE",
-    "VVV",
-    "BONK",
-    "INJ",
-    "PENGU"
+    "BCH",
+    "XLM",
+    "ZRO",
+    "AKE",
+    "KAS"
   ],
   "universe_size": 150
 }

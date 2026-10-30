@@ -1,48 +1,47 @@
 {
   "alternative_interpretations": [],
   "freshness": "FRESH",
-  "generated_at_utc": "2026-10-29T17:47:41+00:00",
+  "generated_at_utc": "2026-10-30T16:08:05+00:00",
   "module_name": "capital_flow",
   "primary_flows": [
     {
-      "confidence": 30,
-      "contradicting_metrics": [
-        "group returns are fragmented"
-      ],
+      "confidence": 70,
+      "contradicting_metrics": [],
       "evidence": [
-        "proxy signals lack alignment"
+        "negative BTC return",
+        "weak breadth"
       ],
-      "from_group": "mixed",
+      "from_group": "crypto risk",
       "inception_timestamp": null,
-      "invalidation_condition": "Multiple group proxies align",
+      "invalidation_condition": "Breadth recovers above 50%",
       "observation_type": "INFERENCE_FROM_DERIVED_PROXIES",
       "persistence": "NEW_OR_UNVERIFIED",
       "risk_flags": [
         "INFERENCE_NOT_DIRECT_FLOW_MEASUREMENT"
       ],
-      "state": "NO_CLEAR_FLOW",
+      "state": "RISK_OFF_TO_USD",
       "supporting_metrics": {
-        "breadth_positive_pct": 80.88235294117648,
-        "btc_return_24h": 0.8376345488537273,
-        "large_return_24h": 2.5980498789605355,
-        "mid_return_24h": 2.8868610309626472,
-        "momentum_participation": 51.470588235294116,
-        "small_return_24h": 0.8078628238259582
+        "breadth_positive_pct": 4.411764705882353,
+        "btc_return_24h": -5.1467005536008585,
+        "large_return_24h": -4.732940412737284,
+        "mid_return_24h": -6.767955645920529,
+        "momentum_participation": 14.705882352941178,
+        "small_return_24h": -7.879646605364525
       },
-      "to_group": "mixed"
+      "to_group": "USD / defensive"
     }
   ],
   "risks": [
     "CAPITAL_FLOW_IS_INFERRED_NOT_OBSERVED"
   ],
-  "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/2026-10-29_capital_flow.json",
+  "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/2026-10-30_capital_flow.json",
   "status": "OK",
   "summary": {
-    "capital_flow_confidence": 30,
+    "capital_flow_confidence": 70,
     "derived_proxy": "group breadth and relative performance",
     "inference_disclaimer": "Inferred proxy; not direct measurement of capital transfers",
     "observed_data": "completed-candle returns and volumes",
-    "primary_state": "NO_CLEAR_FLOW"
+    "primary_state": "RISK_OFF_TO_USD"
   },
   "unknowns": [
     "Stablecoin flow data unavailable",

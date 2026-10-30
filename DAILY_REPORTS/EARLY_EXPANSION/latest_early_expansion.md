@@ -6,49 +6,83 @@ RESEARCH_ONLY | NOT_A_BUY_SIGNAL | NOT_A_SELL_SIGNAL | USER_DECISION_REQUIRED | 
 
 - State: PRE_MOVE_CONDITIONS_PRESENT
 - Assets evaluated: 68
-- Pre-move candidates: 3
+- Pre-move candidates: 8
 - PRE_MOVE_STRONG: 0
-- PRE_MOVE_BUILDING: 2
-- Too late: 39
+- PRE_MOVE_BUILDING: 6
+- Too late: 4
 
 ## Top Pre-Move Candidates
 
-### DASH
-- Classification: PRE_MOVE_BUILDING | combined: 72.22 | energy: 58.87
+### SPX
+- Classification: PRE_MOVE_BUILDING | combined: 74.63 | energy: 68.82
 - Confidence: 69 (MEDIUM)
-- Range position: 25.20214140668269% | 24h return: -2.4586617505972685% | breakout distance: 7.2183%
+- Range position: 35.083333333333385% | 24h return: -9.041095890410954% | breakout distance: 12.464%
+- Main strength: relative_strength_delta
+- Primary risk: volume_buildup
+
+### XRP
+- Classification: PRE_MOVE_BUILDING | combined: 70.91 | energy: 68.54
+- Confidence: 69 (MEDIUM)
+- Range position: 3.9742096605711916% | 24h return: -4.206343141001145% | breakout distance: 6.6581%
 - Main strength: range_position
-- Primary risk: volatility_compression
+- Primary risk: volume_buildup
 
-### NEAR
-- Classification: PRE_MOVE_BUILDING | combined: 66.22 | energy: 65.21
+### XDC
+- Classification: PRE_MOVE_BUILDING | combined: 70.14 | energy: 67.25
 - Confidence: 69 (MEDIUM)
-- Range position: 65.17190503867299% | 24h return: 0.09363091997822703% | breakout distance: 8.2017%
-- Main strength: data_quality
-- Primary risk: volatility_compression
+- Range position: 12.53731343283582% | 24h return: -5.5622369212266936% | breakout distance: 11.2712%
+- Main strength: range_position
+- Primary risk: volume_buildup
 
-### PYTH
-- Classification: EARLY_EXPANSION_DEVELOPING | combined: 58.01 | energy: 50.0
+### NIGHT
+- Classification: PRE_MOVE_BUILDING | combined: 67.48 | energy: 61.17
 - Confidence: 69 (MEDIUM)
-- Range position: 61.106046794287586% | 24h return: 1.426352210139803% | breakout distance: 6.4478%
-- Main strength: volume_buildup
+- Range position: 47.752702446425104% | 24h return: -3.125000000000011% | breakout distance: 8.5674%
+- Main strength: relative_strength_delta
+- Primary risk: momentum_precursor
+
+### ENA
+- Classification: EARLY_EXPANSION_DEVELOPING | combined: 66.35 | energy: 49.35
+- Confidence: 69 (MEDIUM)
+- Range position: 17.244829886591006% | 24h return: -11.500701262272095% | breakout distance: 13.0055%
+- Main strength: range_position
 - Primary risk: cross_module_improvement
+
+### MORPHO
+- Classification: EARLY_EXPANSION_DEVELOPING | combined: 66.26 | energy: 42.67
+- Confidence: 69 (MEDIUM)
+- Range position: 27.640343123218003% | 24h return: -8.531490719359791% | breakout distance: 9.8328%
+- Main strength: range_position
+- Primary risk: cross_module_improvement
+
+### LTC
+- Classification: PRE_MOVE_BUILDING | combined: 62.66 | energy: 51.81
+- Confidence: 69 (MEDIUM)
+- Range position: 11.764705882352972% | 24h return: -4.985487450913439% | breakout distance: 6.8307%
+- Main strength: range_position
+- Primary risk: volume_buildup
+
+### DASH
+- Classification: PRE_MOVE_BUILDING | combined: 62.48 | energy: 51.66
+- Confidence: 69 (MEDIUM)
+- Range position: 4.511366991437925% | 24h return: -5.129051038230159% | breakout distance: 12.3292%
+- Main strength: range_position
+- Primary risk: volume_buildup
 
 ## Fastest Energy Build
 
-- NEAR: energy 65.21, combined 66.22
-- DASH: energy 58.87, combined 72.22
-- ICP: energy 55.95, combined 58.46
-- PYTH: energy 50.0, combined 58.01
-- VIRTUAL: energy 50.0, combined 53.36
+- SPX: energy 68.82, combined 74.63
+- XRP: energy 68.54, combined 70.91
+- XDC: energy 67.25, combined 70.14
+- NIGHT: energy 61.17, combined 67.48
+- LTC: energy 51.81, combined 62.66
 
 ## Too Late / Already Extended
 
-- PUMP: RETURN_24H_EXCEEDED, UPPER_RANGE_POSITION
-- BONK: UPPER_RANGE_POSITION
-- XMR: EMA_ATR_EXTENSION
-- ONDO: UPPER_RANGE_POSITION
-- PENGU: UPPER_RANGE_POSITION
+- BCH: UPPER_RANGE_POSITION
+- POL: UPPER_RANGE_POSITION
+- XPL: UPPER_RANGE_POSITION
+- PEPE: UPPER_RANGE_POSITION
 
 ## PUMP Retrospective
 

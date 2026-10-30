@@ -1,22 +1,22 @@
 # Opportunity Aging
 
-- consolidation:NIGHT | DECAYING | 2085.2h
-- momentum:INJ | DECAYING | 1717.6h
-- momentum:PENGU | DECAYING | 1703.0h
-- momentum:VVV | DECAYING | 1679.5h
-- sector_leadership:Meme | DECAYING | 2085.4h
-- btc_relative_leader:MORPHO | EARLY | 35.8h
-- momentum:BONK | EARLY | 71.8h
-- btc_relative_leader:ZEC | ESTABLISHED | 2053.8h
-- consolidation:DASH | ESTABLISHED | 2029.5h
-- consolidation:PEPE | ESTABLISHED | 1873.7h
-- consolidation:QNT | ESTABLISHED | 2041.4h
-- momentum:PEPE | ESTABLISHED | 1729.5h
-- rotation_candidate:ZEC | ESTABLISHED | 1944.9h
-- sector_leadership:DeFi | ESTABLISHED | 2029.5h
-- sector_leadership:Privacy | ESTABLISHED | 2085.4h
+- momentum:KAS | DECAYING | 2011.5h
+- momentum:ZRO | DECAYING | 1920.4h
+- btc_relative_leader:BCH | EARLY | 58.2h
+- consolidation:DASH | ESTABLISHED | 2051.8h
+- consolidation:ENA | ESTABLISHED | 1884.4h
+- consolidation:MORPHO | ESTABLISHED | 1248.5h
+- consolidation:UNI | ESTABLISHED | 2076.1h
+- momentum:AKE | ESTABLISHED | 1147.7h
+- momentum:BCH | ESTABLISHED | 1716.4h
+- momentum:XLM | ESTABLISHED | 1884.4h
+- rotation_candidate:ZRO | ESTABLISHED | 238.3h
+- sector_leadership:Other / Unclassified | ESTABLISHED | 2107.7h
+- sector_leadership:Payments | ESTABLISHED | 1725.3h
+- sector_leadership:RWA | ESTABLISHED | 2087.9h
 - btc_relative_leader:ADA | EXPIRED | 1823.2h
 - btc_relative_leader:ALGO | EXPIRED | 1823.2h
 - btc_relative_leader:ATOM | EXPIRED | 1701.4h
-- btc_relative_leader:BCH | EXPIRED | 0.0h
+- btc_relative_leader:BONK | EXPIRED | 0.0h
 - btc_relative_leader:CRV | EXPIRED | 0.0h
+- btc_relative_leader:DASH | EXPIRED | 121.6h
