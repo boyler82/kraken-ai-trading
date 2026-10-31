@@ -1,10 +1,10 @@
 # BTC Rotation Analyst Handoff
 
-Report timestamp: 2026-10-30T16:08:05+00:00
+Report timestamp: 2026-10-31T12:11:38+00:00
 Objective: BTC_ACCUMULATION
 Current holding: not applicable (INTENTIONALLY_ABSENT_MARKET_ONLY; benchmark BTC)
 Capital reference: not provided
-BTC hold score: 28.4917
+BTC hold score: 47.1388
 Market regime: BEAR
 Preferred state: MONITOR_ALT
 Cost guard: PASS
@@ -14,9 +14,9 @@ Invalidation: ALT/BTC closes below relative EMA20
 
 ## Top candidates
 
-- BCH | score 68.2196 | advantage +39.73 | relative 24h 7.133706458263767% | upside/downside 10.73%/-3.73% | R/R 2.718179455147774 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
-- ZRO | score 66.8013 | advantage +38.31 | relative 24h 4.410524223706469% | upside/downside 5.14%/-4.92% | R/R 0.9228845646513313 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
-- XPL | score 66.4383 | advantage +37.95 | relative 24h 3.8245514209853004% | upside/downside 6.14%/-2.69% | R/R 2.05496761226454 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
+- QNT | score 61.0582 | advantage +13.92 | relative 24h 1.6495427207510849% | upside/downside 8.79%/-1.01% | R/R 8.146409461839754 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
+- BEAM | score 56.7956 | advantage +9.66 | relative 24h 6.080543426303042% | upside/downside 15.00%/-3.29% | R/R 4.37840052312072 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE,RECENCY_BIAS_RISK
+- XMR | score 55.381 | advantage +8.24 | relative 24h 1.2143188901414748% | upside/downside 3.41%/-5.19% | R/R 0.5403845672163023 | costs 0.6000000000000001% | sample 0 | confidence LOW | risks LOW_CONFIDENCE
 
 ## Unknowns
 

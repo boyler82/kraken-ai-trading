@@ -9,27 +9,27 @@ Market regime: BEAR
 
 ## Best Candidates
 
-- 1. PENGU | score=81.02 | liquidity=GOOD | setups=1
-- 2. DRV | score=79.85 | liquidity=GOOD | setups=1
-- 3. XMR | score=79.49 | liquidity=GOOD | setups=1
-- 4. INJ | score=79.26 | liquidity=GOOD | setups=1
-- 5. PYTH | score=78.62 | liquidity=GOOD | setups=1
-- 6. GRASS | score=78.51 | liquidity=GOOD | setups=1
-- 7. UNI | score=78.49 | liquidity=GOOD | setups=2
-- 8. PUMP | score=78.18 | liquidity=GOOD | setups=1
-- 9. NEAR | score=78.17 | liquidity=GOOD | setups=1
-- 10. RAY | score=78.14 | liquidity=GOOD | setups=1
+- 1. UNI | score=80.24 | liquidity=GOOD | setups=1
+- 2. NIGHT | score=78.68 | liquidity=GOOD | setups=3
+- 3. ZRO | score=78.52 | liquidity=GOOD | setups=2
+- 4. ZEC | score=78.5 | liquidity=GOOD | setups=3
+- 5. BCH | score=78.03 | liquidity=GOOD | setups=2
+- 6. SKY | score=78.03 | liquidity=GOOD | setups=4
+- 7. PUMP | score=77.89 | liquidity=GOOD | setups=1
+- 8. DASH | score=77.86 | liquidity=GOOD | setups=1
+- 9. ENA | score=77.4 | liquidity=GOOD | setups=2
+- 10. GRASS | score=77.38 | liquidity=GOOD | setups=1
 
 ## Fast Range Candidates
 
-- HYPE | median move=4.89% | cycle=13.0h | liquidity=GOOD | score=76.47
-- XLM | median move=5.25% | cycle=12.0h | liquidity=GOOD | score=75.71
-- SHIB | median move=4.51% | cycle=12.0h | liquidity=GOOD | score=73.91
-- LINK | median move=4.61% | cycle=12.0h | liquidity=GOOD | score=73.83
-- LTC | median move=3.95% | cycle=12.0h | liquidity=GOOD | score=70.86
-- SOL | median move=3.66% | cycle=16.0h | liquidity=GOOD | score=68.57
-- ETH | median move=3.30% | cycle=23.0h | liquidity=GOOD | score=65.99
-- XDG | median move=4.05% | cycle=14.5h | liquidity=GOOD | score=62.61
+- HYPE | median move=4.99% | cycle=13.0h | liquidity=GOOD | score=75.26
+- XLM | median move=4.57% | cycle=12.0h | liquidity=GOOD | score=74.95
+- LINK | median move=4.57% | cycle=12.0h | liquidity=GOOD | score=73.7
+- SHIB | median move=4.59% | cycle=12.0h | liquidity=GOOD | score=72.91
+- LTC | median move=3.82% | cycle=12.0h | liquidity=GOOD | score=70.34
+- SOL | median move=3.70% | cycle=16.0h | liquidity=GOOD | score=68.86
+- ETH | median move=3.21% | cycle=23.0h | liquidity=GOOD | score=64.74
+- XDG | median move=4.10% | cycle=14.5h | liquidity=GOOD | score=62.85
 
 ## Warnings
 

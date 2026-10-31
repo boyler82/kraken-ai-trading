@@ -20,18 +20,18 @@
     "Does any candidate justify manual rotation review after costs?"
   ],
   "capital_flow": {
-    "capital_flow_confidence": 70,
+    "capital_flow_confidence": 60,
     "derived_proxy": "group breadth and relative performance",
     "inference_disclaimer": "Inferred proxy; not direct measurement of capital transfers",
     "observed_data": "completed-candle returns and volumes",
-    "primary_state": "RISK_OFF_TO_USD"
+    "primary_state": "DEFENSIVE_TO_BTC"
   },
   "data_quality": {},
   "decision_summary": {
     "candidate_count": 12,
     "rotation_state": "MONITOR_ALT"
   },
-  "generated_at_utc": "2026-10-30T16:08:05+00:00",
+  "generated_at_utc": "2026-10-31T12:11:38+00:00",
   "market_context": {
     "average_confidence_score": "68.61",
     "crypto_bear_count": "9",
@@ -39,33 +39,31 @@
     "crypto_count": "9",
     "crypto_mixed_count": "0",
     "crypto_regime": "BEAR",
-    "current_opportunity_count": "3",
-    "environment_score": "40",
-    "environment_status": "CAUTIOUS",
+    "current_opportunity_count": "0",
+    "environment_score": "20",
+    "environment_status": "DEFENSIVE",
     "equity_bear_count": "0",
     "equity_bull_count": "0",
     "equity_count": "0",
     "equity_mixed_count": "0",
     "equity_regime": "MIXED",
-    "median_atr_pct": "4.95",
-    "opportunity_regime": "ACTIVE",
+    "median_atr_pct": "4.91",
+    "opportunity_regime": "EMPTY",
     "volatility_regime": "NORMAL"
   },
   "module_confirmations": [
     {
-      "asset": "AKE",
+      "asset": "AAVE",
       "module": "ai_confidence",
       "modules": [
-        "momentum",
+        "relative_strength",
         "capital_flow"
       ]
     },
     {
-      "asset": "BCH",
+      "asset": "BEAM",
       "module": "ai_confidence",
       "modules": [
-        "relative_strength",
-        "momentum",
         "btc_rotation",
         "capital_flow"
       ]
@@ -79,7 +77,7 @@
       ]
     },
     {
-      "asset": "ENA",
+      "asset": "DOGE",
       "module": "ai_confidence",
       "modules": [
         "consolidation",
@@ -87,7 +85,7 @@
       ]
     },
     {
-      "asset": "FLR",
+      "asset": "MORPHO",
       "module": "ai_confidence",
       "modules": [
         "relative_strength",
@@ -97,13 +95,23 @@
   ],
   "module_conflicts": [
     {
+      "asset": "AAVE",
+      "module": "ai_confidence",
+      "oppose": [
+        "market_regime"
+      ],
+      "support": [
+        "relative_strength",
+        "capital_flow"
+      ]
+    },
+    {
       "asset": "AKE",
       "module": "ai_confidence",
       "oppose": [
         "market_regime"
       ],
       "support": [
-        "momentum",
         "capital_flow"
       ]
     },
@@ -114,18 +122,17 @@
         "market_regime"
       ],
       "support": [
-        "relative_strength",
-        "momentum",
-        "btc_rotation"
+        "capital_flow"
       ]
     },
     {
-      "asset": "BONK",
+      "asset": "BEAM",
       "module": "ai_confidence",
       "oppose": [
         "market_regime"
       ],
       "support": [
+        "btc_rotation",
         "capital_flow"
       ]
     },
@@ -139,37 +146,26 @@
         "consolidation",
         "capital_flow"
       ]
-    },
-    {
-      "asset": "ENA",
-      "module": "ai_confidence",
-      "oppose": [
-        "market_regime"
-      ],
-      "support": [
-        "consolidation",
-        "capital_flow"
-      ]
     }
   ],
   "objective": "BTC_ACCUMULATION",
   "opportunity_aging": {
-    "decaying": 2,
-    "new": 5,
-    "tracked": 224
+    "decaying": 5,
+    "new": 2,
+    "tracked": 226
   },
   "packet_compression": {
-    "final_bytes": 18995,
-    "original_bytes": 18995,
+    "final_bytes": 17754,
+    "original_bytes": 17754,
     "records_removed": 0,
     "rules_applied": []
   },
   "packet_version": "1.0.0",
   "relative_strength": {
-    "eligible_assets": 67,
-    "relative_strength_breadth_pct": 29.850746268656714
+    "eligible_assets": 68,
+    "relative_strength_breadth_pct": 54.41176470588235
   },
-  "report_date": "2026-10-30",
+  "report_date": "2026-10-31",
   "research_mode": "MARKET_ONLY",
   "risks": [
     {
@@ -186,8 +182,8 @@
     }
   ],
   "rotation": {
-    "best_score_advantage": 39.7279,
-    "btc_hold_score": 28.4917,
+    "best_score_advantage": 13.919399999999996,
+    "btc_hold_score": 47.1388,
     "confidence": "LOW",
     "current_holding": null,
     "market_regime": "BEAR",
@@ -211,106 +207,106 @@
   "sector_leadership": {
     "mapped_assets": 17,
     "sector_count": 11,
-    "unmapped_assets": 51
+    "unmapped_assets": 52
   },
   "source_index": [
     {
       "config_version": "1.0",
       "freshness": "FRESH",
       "module": "relative_strength",
-      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-30_relative_strength.json",
-      "timestamp": "2026-10-30T16:08:05+00:00"
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-31_relative_strength.json",
+      "timestamp": "2026-10-31T12:11:38+00:00"
     },
     {
       "config_version": "1.0",
       "freshness": "FRESH",
       "module": "leadership_rotation",
-      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/LEADERSHIP_ROTATION/2026-10-30_leadership_rotation.json",
-      "timestamp": "2026-10-30T16:08:05+00:00"
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/LEADERSHIP_ROTATION/2026-10-31_leadership_rotation.json",
+      "timestamp": "2026-10-31T12:11:38+00:00"
     },
     {
       "config_version": "1.0",
       "freshness": "FRESH",
       "module": "capital_flow",
-      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/2026-10-30_capital_flow.json",
-      "timestamp": "2026-10-30T16:08:05+00:00"
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/CAPITAL_FLOW/2026-10-31_capital_flow.json",
+      "timestamp": "2026-10-31T12:11:38+00:00"
     },
     {
       "config_version": "1.0",
       "freshness": "FRESH",
       "module": "ai_confidence",
-      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-30_ai_confidence.json",
-      "timestamp": "2026-10-30T16:08:05+00:00"
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-31_ai_confidence.json",
+      "timestamp": "2026-10-31T12:11:38+00:00"
     },
     {
       "config_version": "1.0",
       "freshness": "FRESH",
       "module": "opportunity_aging",
-      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-30_opportunity_aging.json",
-      "timestamp": "2026-10-30T16:08:05+00:00"
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-31_opportunity_aging.json",
+      "timestamp": "2026-10-31T12:11:38+00:00"
     },
     {
       "config_version": "1.0",
       "freshness": "FRESH",
       "module": "consolidation",
       "path": "/Users/tron/kraken-ai-trading/WATCHLISTS/consolidation_daily_watchlist.csv",
-      "timestamp": "2026-10-30T16:08:05+00:00"
+      "timestamp": "2026-10-31T12:11:38+00:00"
     },
     {
       "config_version": "1.0",
       "freshness": "FRESH",
       "module": "momentum",
       "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
-      "timestamp": "2026-10-30T16:08:05+00:00"
+      "timestamp": "2026-10-31T12:11:38+00:00"
     },
     {
       "config_version": "1.0",
       "freshness": "FRESH",
       "module": "btc_rotation",
       "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json",
-      "timestamp": "2026-10-30T16:08:05+00:00"
+      "timestamp": "2026-10-31T12:11:38+00:00"
     },
     {
       "config_version": "1.0",
       "freshness": "FRESH",
       "module": "market_regime",
-      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-10-30_research_regime.csv",
-      "timestamp": "2026-10-30T16:08:05+00:00"
+      "path": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/2026-10-31_research_regime.csv",
+      "timestamp": "2026-10-31T12:11:38+00:00"
     },
     {
       "config_version": "1.0",
       "freshness": "FRESH",
       "module": "portfolio",
       "path": "/Users/tron/kraken-ai-trading/journal/portfolio_positions.csv",
-      "timestamp": "2026-10-30T16:08:05+00:00"
+      "timestamp": "2026-10-31T12:11:38+00:00"
     }
   ],
   "top_candidates": [
     {
-      "asset": "BCH",
+      "asset": "QNT",
       "decision_impact_components": {
         "confidence": 6,
-        "cross_module_agreement": 10,
+        "cross_module_agreement": 8,
         "freshness": 10,
         "risk_magnitude": 15,
         "signal_evidence_strength": 20
       },
-      "decision_impact_score": 61,
+      "decision_impact_score": 59,
       "evidence": {
         "ai_confidence": {
-          "asset": "BCH",
+          "asset": "QNT",
           "confidence_band": "MEDIUM",
           "config_version": "1.0",
           "evidence_confidence_score": 53.2468,
           "freshness": "FRESH",
           "invalidation_condition": "Supporting module evidence weakens or becomes stale",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-30_ai_confidence.json",
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-31_ai_confidence.json",
           "source_module": "ai_confidence",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         },
         "btc_rotation": {
-          "alt_rotation_score": 68.2196,
-          "asset": "BCH",
+          "alt_rotation_score": 61.0582,
+          "asset": "QNT",
           "config_version": "1.0",
           "freshness": "FRESH",
           "freshness_status": "FRESH",
@@ -320,47 +316,37 @@
           "risk_flags": [
             "LOW_CONFIDENCE"
           ],
-          "score_advantage": 39.7279,
+          "score_advantage": 13.919399999999996,
           "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json",
           "source_module": "btc_rotation",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         },
         "momentum": {
-          "asset": "BCH",
+          "asset": "QNT",
           "config_version": "1.0",
           "freshness": "FRESH",
           "freshness_status": "FRESH",
-          "momentum_breakout_score": 56.0296,
+          "momentum_breakout_score": 47.6395,
           "momentum_stage": "EARLY_MOMENTUM",
           "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
           "source_module": "momentum",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        },
-        "opportunity_aging": {
-          "age_hours": 0,
-          "asset": "BCH",
-          "classification": "NEW",
-          "config_version": "1.0",
-          "freshness": "FRESH",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-30_opportunity_aging.json",
-          "source_module": "opportunity_aging",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         },
         "relative_strength": {
-          "asset": "BCH",
+          "asset": "QNT",
           "classification": "ESTABLISHED_RELATIVE_LEADER",
           "config_version": "1.0",
           "freshness": "FRESH",
-          "rank": 3,
-          "relative_strength_score": 84.331,
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-30_relative_strength.json",
+          "rank": 5,
+          "relative_strength_score": 76.8875,
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-31_relative_strength.json",
           "source_module": "relative_strength",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         }
       }
     },
     {
-      "asset": "ZRO",
+      "asset": "BEAM",
       "decision_impact_components": {
         "confidence": 6,
         "cross_module_agreement": 6,
@@ -371,144 +357,97 @@
       "decision_impact_score": 52,
       "evidence": {
         "ai_confidence": {
-          "asset": "ZRO",
+          "asset": "BEAM",
           "confidence_band": "LOW",
           "config_version": "1.0",
-          "evidence_confidence_score": 37.6623,
+          "evidence_confidence_score": 25.0,
           "freshness": "FRESH",
           "invalidation_condition": "Supporting module evidence weakens or becomes stale",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-30_ai_confidence.json",
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-31_ai_confidence.json",
           "source_module": "ai_confidence",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         },
         "btc_rotation": {
-          "alt_rotation_score": 66.8013,
-          "asset": "ZRO",
-          "config_version": "1.0",
-          "freshness": "FRESH",
-          "freshness_status": "FRESH",
-          "invalidation_condition": "ALT/BTC closes below relative EMA20",
-          "momentum_stage": "EARLY_MOMENTUM",
-          "rank": 2,
-          "risk_flags": [
-            "LOW_CONFIDENCE"
-          ],
-          "score_advantage": 38.309599999999996,
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json",
-          "source_module": "btc_rotation",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        },
-        "momentum": {
-          "asset": "ZRO",
-          "config_version": "1.0",
-          "freshness": "FRESH",
-          "freshness_status": "FRESH",
-          "momentum_breakout_score": 42.0468,
-          "momentum_stage": "EARLY_MOMENTUM",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
-          "source_module": "momentum",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        }
-      }
-    },
-    {
-      "asset": "XLM",
-      "decision_impact_components": {
-        "confidence": 6,
-        "cross_module_agreement": 8,
-        "freshness": 10,
-        "risk_magnitude": 5,
-        "signal_evidence_strength": 20
-      },
-      "decision_impact_score": 49,
-      "evidence": {
-        "ai_confidence": {
-          "asset": "XLM",
-          "confidence_band": "LOW",
-          "config_version": "1.0",
-          "evidence_confidence_score": 37.6623,
-          "freshness": "FRESH",
-          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-30_ai_confidence.json",
-          "source_module": "ai_confidence",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        },
-        "momentum": {
-          "asset": "XLM",
-          "config_version": "1.0",
-          "freshness": "FRESH",
-          "freshness_status": "FRESH",
-          "momentum_breakout_score": 55.2298,
-          "momentum_stage": "EARLY_MOMENTUM",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
-          "source_module": "momentum",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        },
-        "opportunity_aging": {
-          "age_hours": 0,
-          "asset": "XLM",
-          "classification": "NEW",
-          "config_version": "1.0",
-          "freshness": "FRESH",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-30_opportunity_aging.json",
-          "source_module": "opportunity_aging",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        },
-        "relative_strength": {
-          "asset": "XLM",
-          "classification": "ESTABLISHED_RELATIVE_LEADER",
-          "config_version": "1.0",
-          "freshness": "FRESH",
-          "rank": 2,
-          "relative_strength_score": 86.459,
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-30_relative_strength.json",
-          "source_module": "relative_strength",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        }
-      }
-    },
-    {
-      "asset": "XPL",
-      "decision_impact_components": {
-        "confidence": 6,
-        "cross_module_agreement": 4,
-        "freshness": 10,
-        "risk_magnitude": 15,
-        "signal_evidence_strength": 10
-      },
-      "decision_impact_score": 45,
-      "evidence": {
-        "btc_rotation": {
-          "alt_rotation_score": 66.4383,
-          "asset": "XPL",
+          "alt_rotation_score": 56.7956,
+          "asset": "BEAM",
           "config_version": "1.0",
           "freshness": "FRESH",
           "freshness_status": "FRESH",
           "invalidation_condition": "ALT/BTC closes below relative EMA20",
           "momentum_stage": "NO_MOMENTUM",
-          "rank": 3,
+          "rank": 2,
           "risk_flags": [
-            "LOW_CONFIDENCE"
+            "LOW_CONFIDENCE",
+            "RECENCY_BIAS_RISK"
           ],
-          "score_advantage": 37.9466,
+          "score_advantage": 9.656799999999997,
           "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json",
           "source_module": "btc_rotation",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         },
         "opportunity_aging": {
           "age_hours": 0,
-          "asset": "XPL",
+          "asset": "BEAM",
           "classification": "NEW",
           "config_version": "1.0",
           "freshness": "FRESH",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-30_opportunity_aging.json",
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-31_opportunity_aging.json",
           "source_module": "opportunity_aging",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         }
       }
     },
     {
-      "asset": "FLR",
+      "asset": "XDC",
+      "decision_impact_components": {
+        "confidence": 6,
+        "cross_module_agreement": 6,
+        "freshness": 10,
+        "risk_magnitude": 15,
+        "signal_evidence_strength": 15
+      },
+      "decision_impact_score": 52,
+      "evidence": {
+        "ai_confidence": {
+          "asset": "XDC",
+          "confidence_band": "LOW",
+          "config_version": "1.0",
+          "evidence_confidence_score": 35.1351,
+          "freshness": "FRESH",
+          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-31_ai_confidence.json",
+          "source_module": "ai_confidence",
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
+        },
+        "consolidation": {
+          "asset": "XDC",
+          "config_version": "1.0",
+          "freshness": "FRESH",
+          "freshness_status": "FRESH",
+          "position_pct": 10.669975186104216,
+          "range_quality": 70.87,
+          "rank": 6,
+          "risk_flags": "EXCESSIVE_FALSE_BREAKS",
+          "simple_zone": "LOWER_RANGE",
+          "source_file": "/Users/tron/kraken-ai-trading/WATCHLISTS/consolidation_daily_watchlist.csv",
+          "source_module": "consolidation",
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
+        },
+        "momentum": {
+          "asset": "XDC",
+          "config_version": "1.0",
+          "freshness": "FRESH",
+          "freshness_status": "FRESH",
+          "momentum_breakout_score": 44.7666,
+          "momentum_stage": "EARLY_MOMENTUM",
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
+          "source_module": "momentum",
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
+        }
+      }
+    },
+    {
+      "asset": "AAVE",
       "decision_impact_components": {
         "confidence": 6,
         "cross_module_agreement": 6,
@@ -519,86 +458,41 @@
       "decision_impact_score": 42,
       "evidence": {
         "ai_confidence": {
-          "asset": "FLR",
+          "asset": "AAVE",
           "confidence_band": "LOW",
           "config_version": "1.0",
           "evidence_confidence_score": 25.0,
           "freshness": "FRESH",
           "invalidation_condition": "Supporting module evidence weakens or becomes stale",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-30_ai_confidence.json",
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-31_ai_confidence.json",
           "source_module": "ai_confidence",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         },
         "opportunity_aging": {
           "age_hours": 0,
-          "asset": "FLR",
+          "asset": "AAVE",
           "classification": "NEW",
           "config_version": "1.0",
           "freshness": "FRESH",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-30_opportunity_aging.json",
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-31_opportunity_aging.json",
           "source_module": "opportunity_aging",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         },
         "relative_strength": {
-          "asset": "FLR",
+          "asset": "AAVE",
           "classification": "ESTABLISHED_RELATIVE_LEADER",
           "config_version": "1.0",
           "freshness": "FRESH",
-          "rank": 5,
-          "relative_strength_score": 80.2921,
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-30_relative_strength.json",
+          "rank": 4,
+          "relative_strength_score": 77.1473,
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-31_relative_strength.json",
           "source_module": "relative_strength",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         }
       }
     },
     {
-      "asset": "POL",
-      "decision_impact_components": {
-        "confidence": 6,
-        "cross_module_agreement": 6,
-        "freshness": 10,
-        "risk_magnitude": 5,
-        "signal_evidence_strength": 15
-      },
-      "decision_impact_score": 42,
-      "evidence": {
-        "ai_confidence": {
-          "asset": "POL",
-          "confidence_band": "LOW",
-          "config_version": "1.0",
-          "evidence_confidence_score": 25.0,
-          "freshness": "FRESH",
-          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-30_ai_confidence.json",
-          "source_module": "ai_confidence",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        },
-        "opportunity_aging": {
-          "age_hours": 0,
-          "asset": "POL",
-          "classification": "NEW",
-          "config_version": "1.0",
-          "freshness": "FRESH",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/OPPORTUNITY_AGING/2026-10-30_opportunity_aging.json",
-          "source_module": "opportunity_aging",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        },
-        "relative_strength": {
-          "asset": "POL",
-          "classification": "ESTABLISHED_RELATIVE_LEADER",
-          "config_version": "1.0",
-          "freshness": "FRESH",
-          "rank": 1,
-          "relative_strength_score": 91.5384,
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-30_relative_strength.json",
-          "source_module": "relative_strength",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        }
-      }
-    },
-    {
-      "asset": "ENA",
+      "asset": "DASH",
       "decision_impact_components": {
         "confidence": 6,
         "cross_module_agreement": 2,
@@ -609,93 +503,102 @@
       "decision_impact_score": 38,
       "evidence": {
         "consolidation": {
-          "asset": "ENA",
-          "config_version": "1.0",
-          "freshness": "FRESH",
-          "freshness_status": "FRESH",
-          "position_pct": 17.244829886591006,
-          "range_quality": 63.34,
-          "rank": 1,
-          "risk_flags": "RANGE_TOO_WIDE_HIGH_BREAKOUT_RISK|EXCESSIVE_FALSE_BREAKS|ASYMMETRIC_BOUNDARY_TESTS",
-          "simple_zone": "LOWER_RANGE",
-          "source_file": "/Users/tron/kraken-ai-trading/WATCHLISTS/consolidation_daily_watchlist.csv",
-          "source_module": "consolidation",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        }
-      }
-    },
-    {
-      "asset": "AKE",
-      "decision_impact_components": {
-        "confidence": 6,
-        "cross_module_agreement": 2,
-        "freshness": 10,
-        "risk_magnitude": 5,
-        "signal_evidence_strength": 5
-      },
-      "decision_impact_score": 28,
-      "evidence": {
-        "momentum": {
-          "asset": "AKE",
-          "config_version": "1.0",
-          "freshness": "FRESH",
-          "freshness_status": "FRESH",
-          "momentum_breakout_score": 41.4815,
-          "momentum_stage": "EARLY_MOMENTUM",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
-          "source_module": "momentum",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
-        }
-      }
-    },
-    {
-      "asset": "DASH",
-      "decision_impact_components": {
-        "confidence": 6,
-        "cross_module_agreement": 2,
-        "freshness": 10,
-        "risk_magnitude": 5,
-        "signal_evidence_strength": 5
-      },
-      "decision_impact_score": 28,
-      "evidence": {
-        "consolidation": {
           "asset": "DASH",
           "config_version": "1.0",
           "freshness": "FRESH",
           "freshness_status": "FRESH",
-          "position_pct": 4.511366991437925,
-          "range_quality": 65.24,
-          "rank": 3,
-          "risk_flags": null,
+          "position_pct": 2.134121428376878,
+          "range_quality": 62.42,
+          "rank": 4,
+          "risk_flags": "RANGE_TOO_WIDE_HIGH_BREAKOUT_RISK|EXCESSIVE_FALSE_BREAKS",
           "simple_zone": "LOWER_RANGE",
           "source_file": "/Users/tron/kraken-ai-trading/WATCHLISTS/consolidation_daily_watchlist.csv",
           "source_module": "consolidation",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         }
       }
     },
     {
-      "asset": "KAS",
+      "asset": "DOGE",
       "decision_impact_components": {
         "confidence": 6,
         "cross_module_agreement": 2,
         "freshness": 10,
-        "risk_magnitude": 5,
+        "risk_magnitude": 15,
         "signal_evidence_strength": 5
       },
-      "decision_impact_score": 28,
+      "decision_impact_score": 38,
       "evidence": {
-        "momentum": {
-          "asset": "KAS",
+        "consolidation": {
+          "asset": "DOGE",
           "config_version": "1.0",
           "freshness": "FRESH",
           "freshness_status": "FRESH",
-          "momentum_breakout_score": 37.8767,
-          "momentum_stage": "EARLY_MOMENTUM",
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
-          "source_module": "momentum",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "position_pct": 7.228865388348452,
+          "range_quality": 66.64,
+          "rank": 11,
+          "risk_flags": "EXCESSIVE_FALSE_BREAKS",
+          "simple_zone": "LOWER_RANGE",
+          "source_file": "/Users/tron/kraken-ai-trading/WATCHLISTS/consolidation_daily_watchlist.csv",
+          "source_module": "consolidation",
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
+        }
+      }
+    },
+    {
+      "asset": "SPX",
+      "decision_impact_components": {
+        "confidence": 6,
+        "cross_module_agreement": 2,
+        "freshness": 10,
+        "risk_magnitude": 15,
+        "signal_evidence_strength": 5
+      },
+      "decision_impact_score": 38,
+      "evidence": {
+        "consolidation": {
+          "asset": "SPX",
+          "config_version": "1.0",
+          "freshness": "FRESH",
+          "freshness_status": "FRESH",
+          "position_pct": 16.749999999999986,
+          "range_quality": 70.03,
+          "rank": 5,
+          "risk_flags": "EXCESSIVE_FALSE_BREAKS|ASYMMETRIC_BOUNDARY_TESTS",
+          "simple_zone": "LOWER_RANGE",
+          "source_file": "/Users/tron/kraken-ai-trading/WATCHLISTS/consolidation_daily_watchlist.csv",
+          "source_module": "consolidation",
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
+        }
+      }
+    },
+    {
+      "asset": "XMR",
+      "decision_impact_components": {
+        "confidence": 6,
+        "cross_module_agreement": 2,
+        "freshness": 10,
+        "risk_magnitude": 15,
+        "signal_evidence_strength": 5
+      },
+      "decision_impact_score": 38,
+      "evidence": {
+        "btc_rotation": {
+          "alt_rotation_score": 55.381,
+          "asset": "XMR",
+          "config_version": "1.0",
+          "freshness": "FRESH",
+          "freshness_status": "FRESH",
+          "invalidation_condition": "ALT/BTC closes below relative EMA20",
+          "momentum_stage": "NO_MOMENTUM",
+          "rank": 3,
+          "risk_flags": [
+            "LOW_CONFIDENCE"
+          ],
+          "score_advantage": 8.242199999999997,
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/BTC_ROTATION/latest_btc_rotation_dashboard.json",
+          "source_module": "btc_rotation",
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         }
       }
     },
@@ -703,31 +606,39 @@
       "asset": "MORPHO",
       "decision_impact_components": {
         "confidence": 6,
-        "cross_module_agreement": 2,
+        "cross_module_agreement": 4,
         "freshness": 10,
         "risk_magnitude": 5,
-        "signal_evidence_strength": 5
+        "signal_evidence_strength": 10
       },
-      "decision_impact_score": 28,
+      "decision_impact_score": 35,
       "evidence": {
-        "consolidation": {
+        "ai_confidence": {
           "asset": "MORPHO",
+          "confidence_band": "LOW",
+          "config_version": "1.0",
+          "evidence_confidence_score": 25.0,
+          "freshness": "FRESH",
+          "invalidation_condition": "Supporting module evidence weakens or becomes stale",
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/AI_CONFIDENCE/2026-10-31_ai_confidence.json",
+          "source_module": "ai_confidence",
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
+        },
+        "relative_strength": {
+          "asset": "MORPHO",
+          "classification": "ESTABLISHED_RELATIVE_LEADER",
           "config_version": "1.0",
           "freshness": "FRESH",
-          "freshness_status": "FRESH",
-          "position_pct": 27.640343123218003,
-          "range_quality": 69.05,
-          "rank": 5,
-          "risk_flags": null,
-          "simple_zone": "LOWER_RANGE",
-          "source_file": "/Users/tron/kraken-ai-trading/WATCHLISTS/consolidation_daily_watchlist.csv",
-          "source_module": "consolidation",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "rank": 1,
+          "relative_strength_score": 84.7889,
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-31_relative_strength.json",
+          "source_module": "relative_strength",
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         }
       }
     },
     {
-      "asset": "QNT",
+      "asset": "PEPE",
       "decision_impact_components": {
         "confidence": 6,
         "cross_module_agreement": 2,
@@ -738,15 +649,63 @@
       "decision_impact_score": 28,
       "evidence": {
         "relative_strength": {
-          "asset": "QNT",
+          "asset": "PEPE",
           "classification": "ESTABLISHED_RELATIVE_LEADER",
           "config_version": "1.0",
           "freshness": "FRESH",
-          "rank": 4,
-          "relative_strength_score": 81.875,
-          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-30_relative_strength.json",
+          "rank": 3,
+          "relative_strength_score": 77.166,
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-31_relative_strength.json",
           "source_module": "relative_strength",
-          "source_timestamp": "2026-10-30T16:08:05+00:00"
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
+        }
+      }
+    },
+    {
+      "asset": "SKY",
+      "decision_impact_components": {
+        "confidence": 6,
+        "cross_module_agreement": 2,
+        "freshness": 10,
+        "risk_magnitude": 5,
+        "signal_evidence_strength": 5
+      },
+      "decision_impact_score": 28,
+      "evidence": {
+        "relative_strength": {
+          "asset": "SKY",
+          "classification": "ESTABLISHED_RELATIVE_LEADER",
+          "config_version": "1.0",
+          "freshness": "FRESH",
+          "rank": 2,
+          "relative_strength_score": 82.0888,
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/RELATIVE_STRENGTH/2026-10-31_relative_strength.json",
+          "source_module": "relative_strength",
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
+        }
+      }
+    },
+    {
+      "asset": "STX",
+      "decision_impact_components": {
+        "confidence": 6,
+        "cross_module_agreement": 2,
+        "freshness": 10,
+        "risk_magnitude": 5,
+        "signal_evidence_strength": 5
+      },
+      "decision_impact_score": 28,
+      "evidence": {
+        "momentum": {
+          "asset": "STX",
+          "config_version": "1.0",
+          "freshness": "FRESH",
+          "freshness_status": "FRESH",
+          "momentum_breakout_score": 55.0,
+          "momentum_stage": "EXTENDED_MOVE",
+          "source_file": "/Users/tron/kraken-ai-trading/DAILY_REPORTS/MOMENTUM_BREAKOUT/latest_momentum_breakout_radar.csv",
+          "source_module": "momentum",
+          "source_timestamp": "2026-10-31T12:11:38+00:00"
         }
       }
     }

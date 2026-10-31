@@ -1,19 +1,29 @@
 {
   "ada_like_movements": [
-    "HYPE"
+    "STX",
+    "BEAM",
+    "PENDLE",
+    "AAVE",
+    "MORPHO",
+    "XPL",
+    "LINK",
+    "ZEC",
+    "OP",
+    "ENA",
+    "ONDO"
   ],
   "checkpoint_resume": false,
   "consolidation_to_breakout_transitions": [],
   "daily_consolidation_candidates": [
-    "ENA",
     "DASH",
-    "UNI",
-    "MORPHO"
+    "SPX",
+    "XDC",
+    "DOGE"
   ],
-  "execution_duration_seconds": 90.56670075000147,
-  "fresh_data_assets": 68,
-  "generated_at_utc": "2026-10-30T16:08:05+00:00",
-  "kraken_mapped_assets": 68,
+  "execution_duration_seconds": 106.22307649999857,
+  "fresh_data_assets": 69,
+  "generated_at_utc": "2026-10-31T12:11:38+00:00",
+  "kraken_mapped_assets": 69,
   "labels": [
     "RESEARCH_ONLY",
     "NOT_A_BUY_SIGNAL",
@@ -22,11 +32,9 @@
     "LIVE_NOT_AUTHORIZED"
   ],
   "momentum_candidates": [
-    "BCH",
-    "XLM",
-    "ZRO",
-    "AKE",
-    "KAS"
+    "QNT",
+    "XDC",
+    "STX"
   ],
   "universe_size": 150
 }

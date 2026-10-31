@@ -5,84 +5,62 @@ RESEARCH_ONLY | NOT_A_BUY_SIGNAL | NOT_A_SELL_SIGNAL | USER_DECISION_REQUIRED | 
 ## Market Summary
 
 - State: PRE_MOVE_CONDITIONS_PRESENT
-- Assets evaluated: 68
-- Pre-move candidates: 8
+- Assets evaluated: 69
+- Pre-move candidates: 5
 - PRE_MOVE_STRONG: 0
-- PRE_MOVE_BUILDING: 6
-- Too late: 4
+- PRE_MOVE_BUILDING: 5
+- Too late: 3
 
 ## Top Pre-Move Candidates
 
-### SPX
-- Classification: PRE_MOVE_BUILDING | combined: 74.63 | energy: 68.82
-- Confidence: 69 (MEDIUM)
-- Range position: 35.083333333333385% | 24h return: -9.041095890410954% | breakout distance: 12.464%
-- Main strength: relative_strength_delta
-- Primary risk: volume_buildup
-
-### XRP
-- Classification: PRE_MOVE_BUILDING | combined: 70.91 | energy: 68.54
-- Confidence: 69 (MEDIUM)
-- Range position: 3.9742096605711916% | 24h return: -4.206343141001145% | breakout distance: 6.6581%
-- Main strength: range_position
-- Primary risk: volume_buildup
-
 ### XDC
-- Classification: PRE_MOVE_BUILDING | combined: 70.14 | energy: 67.25
+- Classification: PRE_MOVE_BUILDING | combined: 73.18 | energy: 58.43
 - Confidence: 69 (MEDIUM)
-- Range position: 12.53731343283582% | 24h return: -5.5622369212266936% | breakout distance: 11.2712%
+- Range position: 10.669975186104217% | 24h return: 0.5734310289901234% | breakout distance: 10.8192%
+- Main strength: range_position
+- Primary risk: capital_flow_alignment
+
+### QNT
+- Classification: PRE_MOVE_BUILDING | combined: 70.7 | energy: 60.07
+- Confidence: 69 (MEDIUM)
+- Range position: 57.85263705534241% | 24h return: 1.9497738262361564% | breakout distance: 12.2763%
+- Main strength: momentum_precursor
+- Primary risk: range_position
+
+### XMR
+- Classification: PRE_MOVE_BUILDING | combined: 66.55 | energy: 62.89
+- Confidence: 69 (MEDIUM)
+- Range position: 39.26955397543637% | 24h return: 1.513264522733082% | breakout distance: 8.3739%
+- Main strength: data_quality
+- Primary risk: volume_buildup
+
+### BNB
+- Classification: PRE_MOVE_BUILDING | combined: 62.54 | energy: 59.0
+- Confidence: 69 (MEDIUM)
+- Range position: 1.9556820491969713% | 24h return: 0.779662956710836% | breakout distance: 7.7726%
 - Main strength: range_position
 - Primary risk: volume_buildup
 
-### NIGHT
-- Classification: PRE_MOVE_BUILDING | combined: 67.48 | energy: 61.17
-- Confidence: 69 (MEDIUM)
-- Range position: 47.752702446425104% | 24h return: -3.125000000000011% | breakout distance: 8.5674%
-- Main strength: relative_strength_delta
-- Primary risk: momentum_precursor
-
-### ENA
-- Classification: EARLY_EXPANSION_DEVELOPING | combined: 66.35 | energy: 49.35
-- Confidence: 69 (MEDIUM)
-- Range position: 17.244829886591006% | 24h return: -11.500701262272095% | breakout distance: 13.0055%
-- Main strength: range_position
-- Primary risk: cross_module_improvement
-
-### MORPHO
-- Classification: EARLY_EXPANSION_DEVELOPING | combined: 66.26 | energy: 42.67
-- Confidence: 69 (MEDIUM)
-- Range position: 27.640343123218003% | 24h return: -8.531490719359791% | breakout distance: 9.8328%
-- Main strength: range_position
-- Primary risk: cross_module_improvement
-
-### LTC
-- Classification: PRE_MOVE_BUILDING | combined: 62.66 | energy: 51.81
-- Confidence: 69 (MEDIUM)
-- Range position: 11.764705882352972% | 24h return: -4.985487450913439% | breakout distance: 6.8307%
-- Main strength: range_position
-- Primary risk: volume_buildup
-
-### DASH
-- Classification: PRE_MOVE_BUILDING | combined: 62.48 | energy: 51.66
-- Confidence: 69 (MEDIUM)
-- Range position: 4.511366991437925% | 24h return: -5.129051038230159% | breakout distance: 12.3292%
+### ASTER
+- Classification: PRE_MOVE_BUILDING | combined: 60.03 | energy: 56.34
+- Confidence: 66 (MEDIUM)
+- Range position: 27.107415850878514% | 24h return: 1.506019679439241% | breakout distance: 5.322%
 - Main strength: range_position
 - Primary risk: volume_buildup
 
 ## Fastest Energy Build
 
-- SPX: energy 68.82, combined 74.63
-- XRP: energy 68.54, combined 70.91
-- XDC: energy 67.25, combined 70.14
-- NIGHT: energy 61.17, combined 67.48
-- LTC: energy 51.81, combined 62.66
+- XMR: energy 62.89, combined 66.55
+- QNT: energy 60.07, combined 70.7
+- BNB: energy 59.0, combined 62.54
+- XDC: energy 58.43, combined 73.18
+- ASTER: energy 56.34, combined 60.03
 
 ## Too Late / Already Extended
 
-- BCH: UPPER_RANGE_POSITION
-- POL: UPPER_RANGE_POSITION
-- XPL: UPPER_RANGE_POSITION
-- PEPE: UPPER_RANGE_POSITION
+- SKY: UPPER_RANGE_POSITION
+- STX: RETURN_24H_EXCEEDED, RETURN_48H_EXCEEDED, UPPER_RANGE_POSITION, HIGH_EXTENSION_RISK, EXTENDED_MOVE, EXTREME_VOLUME_SPIKE, EMA_ATR_EXTENSION
+- XPL: RETURN_24H_EXCEEDED, UPPER_RANGE_POSITION
 
 ## PUMP Retrospective
 

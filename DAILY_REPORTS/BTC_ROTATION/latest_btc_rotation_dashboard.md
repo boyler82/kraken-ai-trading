@@ -10,14 +10,14 @@ USER_DECISION_REQUIRED
 Objective: BTC_ACCUMULATION
 Benchmark: BTC
 Preferred state: MONITOR_ALT
-BTC hold score: 28.49
+BTC hold score: 47.14
 Market regime: BEAR
 
 ## Top candidates
 
-- #1 BCH | score 68.22 | advantage +39.73 | net edge +10.13% | confidence LOW
-- #2 ZRO | score 66.80 | advantage +38.31 | net edge +4.54% | confidence LOW
-- #3 XPL | score 66.44 | advantage +37.95 | net edge +5.54% | confidence LOW
+- #1 QNT | score 61.06 | advantage +13.92 | net edge +8.19% | confidence LOW
+- #2 BEAM | score 56.80 | advantage +9.66 | net edge +14.40% | confidence LOW
+- #3 XMR | score 55.38 | advantage +8.24 | net edge +2.81% | confidence LOW
 
 MANUAL_REVIEW_REQUIRED
 RESEARCH_ONLY
